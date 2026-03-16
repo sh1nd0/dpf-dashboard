@@ -838,6 +838,7 @@ async function submitPassword() {{
     document.getElementById('authError').textContent = '';
     input.value = '';
     checkAuth();
+    if (typeof render === 'function') render();
   }} else {{
     document.getElementById('authError').textContent = 'Incorrect password';
   }}
@@ -2084,8 +2085,10 @@ function renderFutures() {{
       const filtered = prospects.filter(p => p.name.toLowerCase().includes(q));
 
       prospectsBody.innerHTML = filtered.map((p, idx) => {{
-        const fvColor = p.fv >= 70 ? '#daa520' : p.fv >= 60 ? 'var(--green)' : p.fv >= 55 ? '#4a90e2' : p.fv >= 50 ? 'var(--text)' : 'var(--text2)';
-        const fvBg = p.fv >= 70 ? 'rgba(218,165,32,0.1)' : p.fv >= 60 ? 'rgba(22,163,74,0.1)' : p.fv >= 55 ? 'rgba(74,144,226,0.1)' : 'transparent';
+        const fv = p.fv || 0;
+        const age = p.age || 0;
+        const fvColor = fv >= 70 ? '#daa520' : fv >= 60 ? 'var(--green)' : fv >= 55 ? '#4a90e2' : fv >= 50 ? 'var(--text)' : 'var(--text2)';
+        const fvBg = fv >= 70 ? 'rgba(218,165,32,0.1)' : fv >= 60 ? 'rgba(22,163,74,0.1)' : fv >= 55 ? 'rgba(74,144,226,0.1)' : 'transparent';
 
         // Check if rostered
         const rosterPlayer = ALL.find(pl => pl.name === p.name);
@@ -2115,10 +2118,10 @@ function renderFutures() {{
           <td style="padding:6px 10px;font-size:12px;">${{p.name}}${{ownerBadge}}</td>
           <td style="padding:6px 10px;font-size:12px;">${{p.team}}</td>
           <td style="padding:6px 10px;text-align:center;font-size:12px;">${{p.pos}}</td>
-          <td style="padding:6px 10px;text-align:center;font-size:12px;">${{p.age.toFixed(1)}}</td>
-          <td style="padding:6px 10px;text-align:center;font-size:12px;background:${{fvBg}};color:${{fvColor}};font-weight:600;">${{p.fv}}</td>
-          <td style="padding:6px 10px;text-align:center;font-size:12px;">${{p.fg_rank}}</td>
-          <td style="padding:6px 10px;text-align:center;font-size:12px;">${{p.jb_rank}}</td>
+          <td style="padding:6px 10px;text-align:center;font-size:12px;">${{age ? age.toFixed(1) : '—'}}</td>
+          <td style="padding:6px 10px;text-align:center;font-size:12px;background:${{fvBg}};color:${{fvColor}};font-weight:600;">${{fv || '—'}}</td>
+          <td style="padding:6px 10px;text-align:center;font-size:12px;">${{p.fg_rank || '—'}}</td>
+          <td style="padding:6px 10px;text-align:center;font-size:12px;">${{p.jb_rank || '—'}}</td>
           <td style="padding:6px 10px;text-align:center;font-size:12px;">${{p.bp_rank || '—'}}</td>
           <td style="padding:6px 10px;text-align:center;font-size:12px;font-weight:600;">${{p.avg_rank.toFixed(1)}}</td>
           <td style="padding:6px 10px;text-align:center;font-size:12px;">${{heliumIcon}}${{trendArrow}}</td>
@@ -2171,7 +2174,7 @@ function renderFutures() {{
         html += `<div style="padding:8px;background:var(--surface2);border-radius:4px;margin-bottom:6px;font-size:12px;">
           <div style="font-weight:600;">${{r.name}}</div>
           <div style="color:var(--text2);font-size:11px;margin-top:2px;">
-            Rank #${{r.prospect.avg_rank.toFixed(0)}} • FV ${{r.prospect.fv}} • Keeper cost: ${{r.keeperInfo.nextKeepCost}}<${{r.keeperInfo.nextKeepRound}}> ${{lcvStr}}
+            Rank #${{r.prospect.avg_rank ? r.prospect.avg_rank.toFixed(0) : '?'}} • FV ${{r.prospect.fv || '?'}} • ${{r.keeperInfo.keepable2027 ? 'R' + r.keeperInfo.cost2027 + ' in 2027 (' + r.keeperInfo.yearsLeft + 'yr control)' : 'Not keepable'}} ${{lcvStr}}
           </div>
         </div>`;
       }});
