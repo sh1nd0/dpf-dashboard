@@ -898,8 +898,8 @@ tabs.forEach(t => t.addEventListener('click', () => {
 
 // ── Mode toggle (Draft vs Season) ─────────────────────────────────────────
 if (!state._mode) state._mode = 'draft';
-const DRAFT_TABS = ['all','bat','pit','roster','board','mock','league'];
-const SEASON_TABS = ['all','bat','pit','roster','league'];
+const DRAFT_TABS = ['all','bat','pit','roster','board','mock','league','txns'];
+const SEASON_TABS = ['all','bat','pit','roster','league','txns'];
 
 function updateModeUI() {
   const isDraft = state._mode === 'draft';
