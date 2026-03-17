@@ -4503,28 +4503,42 @@ function renderRoster() {{
         return {{ name, lcv, tv: tradeVal(name), fillsMyNeed: bestFill, fillPos }};
       }}).filter(Boolean).filter(x => x.fillsMyNeed > 0.2).sort((a,b) => b.fillsMyNeed - a.fillsMyNeed);
 
-      // 1-for-1 trades — fringey: tighter value window, heavy need weighting
+      // Helper: primary position of a player (for cross-position detection)
+      function primaryPos(name) {{
+        const p = ALL.find(x => x.name === name);
+        return p ? (p.primaryPos || p.pos || '').split('/')[0] : '';
+      }}
+
+      // 1-for-1 trades — prioritize cross-position swaps (strength for need)
       for (const give of iCanGive.slice(0, 10)) {{
         for (const get of theyCanGive.slice(0, 10)) {{
           if (give.name === get.name) continue;
           const myGain = get.tv - give.tv;
           const myLcvGain = get.lcv - give.lcv;
+          // Detect same-position swap — heavily penalize
+          const givePos = primaryPos(give.name);
+          const getPos = primaryPos(get.name);
+          const samePos = givePos === getPos;
+          // Skip pure same-position swaps unless the need gap is huge
+          if (samePos && (give.fillsTheirNeed < 0.8 || get.fillsMyNeed < 0.8)) continue;
           // Accept trades where value is close but positional fit is strong
           if (myGain >= -1.0 && myGain <= 4.0 && myLcvGain > -4 && (get.fillsMyNeed > 0.2 && give.fillsTheirNeed > 0.2)) {{
             const mutualFit = get.fillsMyNeed + give.fillsTheirNeed;
             const favorMe = myGain * 0.3 + myLcvGain * 0.1;
+            // Cross-position bonus: reward trading from surplus to fill a different need
+            const crossBonus = samePos ? 0 : 0.5;
             trades.push({{
               team: ownerName, teamName: t.name,
               give: [give], get: [get],
               mutualFit, favorMe,
-              score: mutualFit * 0.75 + Math.max(0, favorMe) * 0.25,
+              score: (mutualFit + crossBonus) * 0.75 + Math.max(0, favorMe) * 0.25,
               type: '1-for-1'
             }});
           }}
         }}
       }}
 
-      // 2-for-2 trades — fringey pairs
+      // 2-for-2 trades — prioritize cross-position swaps
       for (let i = 0; i < Math.min(iCanGive.length, 6); i++) {{
         for (let j = i+1; j < Math.min(iCanGive.length, 7); j++) {{
           const g1 = iCanGive[i], g2 = iCanGive[j];
@@ -4532,12 +4546,20 @@ function renderRoster() {{
             for (let l = k+1; l < Math.min(theyCanGive.length, 7); l++) {{
               const r1 = theyCanGive[k], r2 = theyCanGive[l];
               if ([g1.name,g2.name].includes(r1.name) || [g1.name,g2.name].includes(r2.name)) continue;
+              // Skip if all 4 players share same primary position
+              const givePositions = new Set([primaryPos(g1.name), primaryPos(g2.name)]);
+              const getPositions = new Set([primaryPos(r1.name), primaryPos(r2.name)]);
+              const allSame = givePositions.size === 1 && getPositions.size === 1 && [...givePositions][0] === [...getPositions][0];
+              if (allSame) continue;
               const giveTv = g1.tv + g2.tv;
               const getTv = r1.tv + r2.tv;
               const giveLcv = g1.lcv + g2.lcv;
               const getLcv = r1.lcv + r2.lcv;
               const myGain = getTv - giveTv;
               const myLcvGain = getLcv - giveLcv;
+              // Count how many cross-position swaps
+              const crossCount = [...givePositions].filter(p => !getPositions.has(p)).length + [...getPositions].filter(p => !givePositions.has(p)).length;
+              const crossBonus = crossCount * 0.3;
               if (myGain >= -1.5 && myGain <= 6.0 && myLcvGain > -6 && ((r1.fillsMyNeed + r2.fillsMyNeed) > 0.5 && (g1.fillsTheirNeed + g2.fillsTheirNeed) > 0.5)) {{
                 const mutualFit = r1.fillsMyNeed + r2.fillsMyNeed + g1.fillsTheirNeed + g2.fillsTheirNeed;
                 const favorMe = myGain * 0.3 + myLcvGain * 0.1;
@@ -4545,7 +4567,7 @@ function renderRoster() {{
                   team: ownerName, teamName: t.name,
                   give: [g1, g2], get: [r1, r2],
                   mutualFit, favorMe,
-                  score: mutualFit * 0.7 + Math.max(0, favorMe) * 0.3,
+                  score: (mutualFit + crossBonus) * 0.7 + Math.max(0, favorMe) * 0.3,
                   type: '2-for-2'
                 }});
               }}
