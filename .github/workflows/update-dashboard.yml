@@ -2,8 +2,8 @@ name: Update Dashboard
 
 on:
   schedule:
-    # Runs daily at 12:00 UTC (8am ET / 5am PT)
-    - cron: '0 12 * * *'
+    # Runs daily at 10:00 UTC (6am ET / 3am PT)
+    - cron: '0 10 * * *'
   push:
     branches: [main]
   workflow_dispatch: # Allow manual trigger from GitHub UI
@@ -15,8 +15,7 @@ permissions:
 
 jobs:
   update:
-    # Only fetch stats + rebuild on schedule or manual trigger, not on every push
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    # Rebuild on schedule, manual trigger, or push
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
