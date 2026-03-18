@@ -841,9 +841,18 @@ save();
 // LIVE_PICKS above unconditionally re-adds all drafted players to rosters.
 // We must apply CBS transactions (trades, adds, drops) AFTER that so trades
 // properly remove players from their original teams.
+// CRITICAL: Only apply POST-DRAFT transactions. Pre-draft roster moves (drops
+// before the draft) are already reflected in LIVE_PICKS. Applying them after
+// would incorrectly remove drafted players from rosters.
+const DRAFT_DATE = parseCbsDate('3/15/26 12:00 PM ET');
+
 if (CBS_TRANSACTIONS.length > 0) {
   const sorted = [...CBS_TRANSACTIONS].sort((a,b) => parseCbsDate(a.date) - parseCbsDate(b.date));
-  sorted.forEach(txn => {
+  const postDraft = sorted.filter(txn => parseCbsDate(txn.date) > DRAFT_DATE);
+  const preDraft = sorted.filter(txn => parseCbsDate(txn.date) <= DRAFT_DATE);
+  if (preDraft.length > 0) console.log(`Skipping ${preDraft.length} pre-draft CBS transaction(s)`);
+
+  postDraft.forEach(txn => {
     const teamName = resolveCbsTeam(txn);
     txn.players.forEach(p => {
       const found = _plyrI(p.name);
@@ -864,9 +873,9 @@ if (CBS_TRANSACTIONS.length > 0) {
     });
   });
 
-  // Rebuild transaction log from CBS data
+  // Rebuild transaction log from CBS data (post-draft only)
   state.transactions = [];
-  sorted.forEach(txn => {
+  postDraft.forEach(txn => {
     const teamName = resolveCbsTeam(txn);
     txn.players.forEach(p => {
       const action = p.action || '';
@@ -878,7 +887,7 @@ if (CBS_TRANSACTIONS.length > 0) {
   });
 
   save();
-  console.log(`Applied ${CBS_TRANSACTIONS.length} CBS transactions`);
+  console.log(`Applied ${postDraft.length} post-draft CBS transaction(s)`);
 }
 
 // ── Sleepers & Busts buzz from expert articles ───────────────────────────
@@ -1678,7 +1687,7 @@ function renderTransactions() {
       const latest = await resp.json();
       // Find new transactions not in baked-in data
       const existingKeys = new Set(CBS_TRANSACTIONS.map(t => t.date + '|' + t.teamId + '|' + t.players.map(p => p.name).join(',')));
-      const newTxns = latest.filter(t => !existingKeys.has(t.date + '|' + t.teamId + '|' + t.players.map(p => p.name).join(',')));
+      const newTxns = latest.filter(t => !existingKeys.has(t.date + '|' + t.teamId + '|' + t.players.map(p => p.name).join(',')) && parseCbsDate(t.date) > DRAFT_DATE);
       if (newTxns.length === 0) {
         checkBtn.textContent = '✓ Up to date';
         setTimeout(() => { checkBtn.textContent = '↻ Check CBS'; checkBtn.disabled = false; }, 2000);
