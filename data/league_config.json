@@ -1,0 +1,158 @@
+{
+  "teams": [
+    {
+      "pick": 1,
+      "name": "choured in the usa.",
+      "owner": "Chris Kaskie"
+    },
+    {
+      "pick": 2,
+      "name": "Father Jhon Kensy",
+      "owner": "Mark Pytlik",
+      "mine": true
+    },
+    {
+      "pick": 3,
+      "name": "Turangerine Dream",
+      "owner": "David Roth"
+    },
+    {
+      "pick": 4,
+      "name": "Whoop Whoop that's the sound of Dylan Cease",
+      "owner": "Andrew Gaerig"
+    },
+    {
+      "pick": 5,
+      "name": "Lil Thumpers",
+      "owner": "Fran Devinney"
+    },
+    {
+      "pick": 6,
+      "name": "A Pete Crow-Armstrong Looked at Me",
+      "owner": "Ian Wolfe"
+    },
+    {
+      "pick": 7,
+      "name": "Dinosaur Jr Caminero",
+      "owner": "Anthony Rescan"
+    },
+    {
+      "pick": 8,
+      "name": "No men in Nolan's land",
+      "owner": "Mark Azar"
+    },
+    {
+      "pick": 9,
+      "name": "Misiorowski Business",
+      "owner": "Blake Murphy"
+    },
+    {
+      "pick": 10,
+      "name": "Buddy Buddy Buddy All On Base",
+      "owner": "Trei Brundrett"
+    },
+    {
+      "pick": 11,
+      "name": "Are we not men? We are Devers!",
+      "owner": "Eno Sarris"
+    },
+    {
+      "pick": 12,
+      "name": "Psycho Keller, Qu'est-ce que Cey",
+      "owner": "Matt Dennewitz"
+    }
+  ],
+  "rookies": {
+    "Azar": [
+      "Liam Doyle",
+      "Burns",
+      "Hagen Smith",
+      "Lawlar"
+    ],
+    "Dennewitz": [
+      "Ralphy Velazquez",
+      "Zyhir Hope",
+      "Emmanuel Rodriguez"
+    ],
+    "Devinney": [
+      "Travis Bazzana",
+      "Justin Crawford",
+      "Josue De Paula",
+      "Andrew Painter"
+    ],
+    "Gaerig": [
+      "Konnor Griffin",
+      "Kevin McGonigle",
+      "Walker Jenkins",
+      "Luis Peña"
+    ],
+    "Kaskie": [
+      "JJ Wetherholt",
+      "Carson Williams",
+      "Owen Caissie",
+      "George Lombard Jr."
+    ],
+    "Murphy": [
+      "Trey Yesavage",
+      "Jett Williams",
+      "Kade Anderson",
+      "Edward Florentino"
+    ],
+    "Brundrett": [
+      "Jacob Reimer",
+      "Caleb Bonemer",
+      "Quinn Mathews",
+      "Robby Snelling"
+    ],
+    "Pytlik": [
+      "Charlie Condon",
+      "Max Clark",
+      "Ethan Holliday",
+      "Eli Willits"
+    ],
+    "Rescan": [
+      "Leo De Vries",
+      "Aidan Miller",
+      "Samuel Basallo",
+      "Bubba Chandler"
+    ],
+    "Roth": [
+      "Nolan McLean",
+      "Carson Benge",
+      "Bryce Eldridge",
+      "Jonah Tong"
+    ],
+    "Sarris": [
+      "Connelly Early",
+      "Tommy Troy",
+      "Chase DeLauter",
+      "Spencer Jones"
+    ],
+    "Wolfe": [
+      "Sal Stewart",
+      "Jesús Made",
+      "Colt Emerson",
+      "Sebastian Walcott"
+    ]
+  },
+  "untouchable": [
+    "Shohei Ohtani",
+    "Juan Soto",
+    "Bobby Witt Jr.",
+    "Aaron Judge",
+    "Yoshinobu Yamamoto",
+    "Tarik Skubal",
+    "Paul Skenes",
+    "Gunnar Henderson",
+    "Elly De La Cruz",
+    "Mookie Betts",
+    "Trea Turner",
+    "Corey Seager",
+    "Ronald Acuna Jr.",
+    "Fernando Tatis Jr.",
+    "Corbin Carroll",
+    "Julio Rodriguez",
+    "Jackson Chourio",
+    "Marcell Ozuna"
+  ]
+}
