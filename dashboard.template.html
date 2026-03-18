@@ -346,6 +346,7 @@ function _plyrI(name) {
 // ── CBS League Transactions (scraped daily) ─────────────────────────────
 const CBS_TRANSACTIONS = __CBS_TXNS_JSON__;
 const TXN_BUILD_TIME = '__BUILD_TIME__';
+const PLAYER_NEWS = __PLAYER_NEWS_JSON__;
 
 // ── Prospects data ───────────────────────────────────────────────────────
 const PROSPECTS = __PROSPECTS_JSON__;
@@ -3415,18 +3416,17 @@ function renderRoster() {
       if (!p) return null;
       const ki = getKeeperInfo(n);
       const lcv = p.lcv || 0;
-      // Droppability: low LCV + not keepable + not at a scarce position
       const posGap = _wwNeeds[p.primaryPos] || 0;
       let dropScore = 0;
-      // Low production = more droppable
-      dropScore += Math.max(0, 5 - lcv) * 1.5;
-      // Not keepable = more droppable
-      if (!ki.keepable2027) dropScore += 2.0;
+      // LCV is the primary signal: lower LCV = more droppable, high LCV strongly protects
+      dropScore += (5 - lcv) * 1.5; // goes negative for good players, protecting them
+      // Keeper value matters but shouldn't override elite production
+      if (!ki.keepable2027) dropScore += 1.5;
       else dropScore -= ki.yearsLeft * 0.5;
-      // Position where I'm strong = more droppable
-      if (posGap > 0.5) dropScore += posGap * 1.0;
-      // Position where I'm weak = less droppable
-      if (posGap < -0.5) dropScore -= (-posGap) * 1.5;
+      // Position surplus = more droppable
+      if (posGap > 0.5) dropScore += posGap * 0.8;
+      // Position weakness = less droppable
+      if (posGap < -0.5) dropScore -= (-posGap) * 1.2;
       // High multi-year surplus = less droppable
       dropScore -= Math.max(0, ki.multiYearSurplus || 0) * 0.8;
       return { name: n, p, ki, lcv, dropScore };
@@ -3454,6 +3454,34 @@ function renderRoster() {
       html += '</table>';
     }
     html += '</div>';
+
+    // ── Player News (from CBS) ──
+    const myTeamNames = new Set((state.myTeam || []).map(n => n.toLowerCase()));
+    const relevantNews = (PLAYER_NEWS || []).filter(n => myTeamNames.has(n.name.toLowerCase()));
+    if (relevantNews.length > 0) {
+      // Sort by date descending (MM/DD format, assume 2026 for spring, 2025 for fall)
+      relevantNews.sort((a, b) => {
+        const [am, ad] = (a.date || '01/01').split('/').map(Number);
+        const [bm, bd] = (b.date || '01/01').split('/').map(Number);
+        const ay = am >= 8 ? 2025 : 2026;
+        const by = bm >= 8 ? 2025 : 2026;
+        return (by * 10000 + bm * 100 + bd) - (ay * 10000 + am * 100 + ad);
+      });
+      html += '<div style="background:var(--surface2);border-radius:8px;padding:10px;margin-top:12px;">';
+      html += '<h3 style="font-size:13px;margin-bottom:6px;">Player News</h3>';
+      html += '<div style="font-size:10px;color:var(--text2);margin-bottom:6px;">Latest news for your rostered players from CBS.</div>';
+      relevantNews.forEach(n => {
+        const p = _plyrI(n.name);
+        const pos = p ? p.primaryPos : '';
+        const isRecent = (() => { const [m,d] = (n.date||'').split('/').map(Number); return m === 3 && d >= 10; })();
+        const dateClr = isRecent ? 'color:var(--green);' : 'color:var(--text2);';
+        html += `<div style="padding:4px 0;border-bottom:1px solid var(--border);font-size:11px;">`;
+        html += `<div><span style="font-weight:600;">${n.name}</span> <span style="color:var(--text2);font-size:10px;">${pos}</span> <span style="font-size:9px;${dateClr}">${n.date}</span></div>`;
+        html += `<div style="color:var(--text2);font-size:10px;margin-top:1px;">${n.headline}</div>`;
+        html += `</div>`;
+      });
+      html += '</div>';
+    }
   }
 
   // ── Transaction Log ──
@@ -4024,15 +4052,17 @@ function renderRoster() {
 
     // Composite trade value: weights current production, keeper surplus, and prospect upside
     function tradeVal(prof) {
-      // Current-year value
+      // Current-year production is always the foundation of trade value
       const thisYear = prof.lcv;
-      // Multi-year keeper surplus (biggest driver in keeper leagues)
+      // Multi-year keeper surplus (big driver in keeper leagues)
       const keeperVal = Math.max(0, prof.multiYearSurplus);
       // Prospect kicker
       const prospVal = prof.prospectVal;
-      // Non-keepable penalty: if you can't keep them, their value is just this year
-      if (!prof.keepable) return thisYear * 0.9 + prospVal;
-      return thisYear * 0.6 + keeperVal * 1.4 + prospVal + prof.yearsLeft * 0.3;
+      // Non-keepable players: full current-year value (elite bats/arms still command big returns)
+      // but no keeper premium — they're rentals
+      if (!prof.keepable) return thisYear * 1.0 + prospVal;
+      // Keepable players: current value + keeper premium
+      return thisYear * 0.7 + keeperVal * 1.2 + prospVal + prof.yearsLeft * 0.3;
     }
 
     // ── 2. Build roster profiles ──

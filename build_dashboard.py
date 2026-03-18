@@ -483,6 +483,16 @@ league_rookies_json = json.dumps(league_config['rookies'])
 untouchable_json = json.dumps(league_config['untouchable'])
 print(f"League config loaded: {len(league_config['teams'])} teams, {len(league_config['untouchable'])} untouchables")
 
+# ── Player news (scraped from CBS My Team > News) ────────────────────────
+_news_path = 'data/player_news.json'
+if os.path.exists(_news_path):
+    player_news = json.load(open(_news_path))
+    print(f"Player news loaded: {len(player_news)} items")
+else:
+    player_news = []
+    print("No player news file found")
+player_news_json = json.dumps(player_news)
+
 from zoneinfo import ZoneInfo
 build_time = datetime.now(ZoneInfo('America/Los_Angeles')).strftime('%b %d, %Y %I:%M %p PST')
 
@@ -512,6 +522,7 @@ _replacements = {
     '__LEAGUE_TEAMS_JSON__': league_teams_json,
     '__LEAGUE_ROOKIES_JSON__': league_rookies_json,
     '__UNTOUCHABLE_JSON__': untouchable_json,
+    '__PLAYER_NEWS_JSON__': player_news_json,
 }
 for _token, _value in _replacements.items():
     html = html.replace(_token, _value)
