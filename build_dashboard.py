@@ -4965,7 +4965,7 @@ function renderDraftBoard() {{
 }}
 
 // ── League comparison view ────────────────────────────────────────────────
-/function calcOptimalLCV(playerNames) {{
+function calcOptimalLCV(playerNames) {{
   // Given a list of player names, compute the best possible starting lineup LCV
   // by assigning players to roster slots optimally
   const players = playerNames.map(n => ALL.find(x => x.name === n)).filter(Boolean);
