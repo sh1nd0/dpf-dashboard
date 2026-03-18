@@ -899,7 +899,7 @@ if (CBS_TRANSACTIONS.length > 0) {
       let txType = 'add';
       if (action === 'Dropped') txType = 'drop';
       else if (action.startsWith('Traded from')) txType = 'trade';
-      state.transactions.push({ type: txType, player: p.name, date: txn.date.split(' ')[0], from: teamName, source: 'CBS' });
+      state.transactions.push({ type: txType, player: p.name, date: txn.date.split(' ')[0], from: teamName, cbsAction: action, source: 'CBS' });
     });
   });
 
@@ -1650,7 +1650,7 @@ function renderTransactions() {
     const actionIcon = tx.action === 'Added' ? '+' : tx.action === 'Dropped' ? '−' : '↔';
     const player = _plyrI(tx.player);
     const lcv = player ? player.lcv.toFixed(1) : '—';
-    const isMine = (tx.teamId === 4) || tx.team === 'Father Jhon Kensy';
+    const isMine = (tx.teamId === 4) || tx.team === 'Father Jhon Kensy' || (tx.action && tx.action.includes('Father Jhon Kensy'));
     const rowBg = isMine ? 'rgba(74,107,255,0.06)' : (idx % 2 === 0 ? 'transparent' : 'var(--surface)');
     const filterAction = isTrade ? 'Traded' : tx.action;
     html += `<tr class="txn-row" data-team="${tx.team}" data-action="${filterAction}" style="background:${rowBg};">`;
@@ -3428,8 +3428,20 @@ function renderRoster() {
   teamMilb.forEach(name => {
     const p = _plyrI(name);
     const isPit = p && ['SP','RP'].includes(p.primaryPos);
-    if (p) html += rowFn(p, 'MiLB', '<span style="color:var(--accent);">MiLB</span>', isPit);
-    else html += `<tr><td style="padding:3px 6px;font-weight:600;width:30px;font-size:11px;">MiLB</td><td colspan="${colSpan-1}" style="padding:3px 6px;font-size:12px;">${name} <span style="color:var(--accent);font-size:10px;">MiLB</span></td></tr>`;
+    if (p) {
+      html += rowFn(p, 'MiLB', '<span style="color:var(--accent);">MiLB</span>', isPit);
+    } else {
+      // Show prospect info for MiLB keepers not in main player pool
+      const pr = findProspect(name);
+      const prPos = pr ? pr.pos : '';
+      const prOrg = pr ? pr.team : '';
+      const prFV = pr ? `FV${pr.fv}` : '';
+      const prRank = pr && pr.avg_rank ? `#${Math.round(pr.avg_rank)}` : '';
+      const prAge = pr && pr.age ? `${pr.age.toFixed(0)}y` : '';
+      const prInfo = [prPos, prOrg, prFV, prRank, prAge].filter(Boolean).join(' · ');
+      const colsUsed = rosterView === 'player' ? numBatCols : colSpan;
+      html += `<tr><td style="padding:3px 6px;font-weight:600;font-size:11px;">MiLB</td><td colspan="${colsUsed-1}" style="padding:3px 6px;font-size:12px;">${name}${_injBadge(name)} <span style="color:var(--accent);font-size:10px;">${prInfo}</span></td></tr>`;
+    }
   });
   if (teamMilb.length === 0) html += `<tr><td colspan="${colSpan}" style="padding:4px 6px;color:var(--text2);font-size:11px;">No minor leaguers</td></tr>`;
   html += '</tbody></table>';
@@ -3649,15 +3661,25 @@ function renderRoster() {
       },
 
       'most-droppable': () => {
+        // Count players at each position (surplus = 3+, since 2 = starter + backup)
+        const _posCounts = {};
+        (state.myTeam || []).forEach(n => {
+          const p = _plyrI(n); if (!p) return;
+          const pos = p.primaryPos || 'UT';
+          _posCounts[pos] = (_posCounts[pos] || 0) + 1;
+        });
         const _dropPlayers = (state.myTeam || []).map(n => {
           const p = _plyrI(n); if (!p) return null;
-          const ki = getKeeperInfo(n); const lcv = p.lcv || 0; const posGap = _wwNeeds[p.primaryPos] || 0;
+          const ki = getKeeperInfo(n); const lcv = p.lcv || 0;
+          const posCount = _posCounts[p.primaryPos] || 0;
+          const hasSurplus = posCount >= 3; // 3+ means real surplus
+          const isScarcity = posCount <= 1; // only 1 at position
           let dropScore = (5 - lcv) * 1.5;
           if (!ki.keepable2027) dropScore += 1.5; else dropScore -= ki.yearsLeft * 0.5;
-          if (posGap > 0.5) dropScore += posGap * 0.8;
-          if (posGap < -0.5) dropScore -= (-posGap) * 1.2;
+          if (hasSurplus) dropScore += (posCount - 2) * 0.8;
+          if (isScarcity) dropScore -= 2.0;
           dropScore -= Math.max(0, ki.multiYearSurplus || 0) * 0.8;
-          return { name: n, p, ki, lcv, dropScore };
+          return { name: n, p, ki, lcv, dropScore, posCount };
         }).filter(Boolean).sort((a,b) => b.dropScore - a.dropScore).slice(0, 5);
         return gmPanel('most-droppable', 'Most Droppable', () => {
           let h = '<div style="font-size:10px;color:var(--text2);margin-bottom:4px;">Players with the lowest combined production + keeper value.</div>';
@@ -3669,8 +3691,7 @@ function renderRoster() {
               const reasons = [];
               if (t.lcv < 2) reasons.push('low production'); else if (t.lcv < 4) reasons.push('below avg production');
               if (!t.ki.keepable2027) reasons.push('not keepable');
-              const posGap = _wwNeeds[t.p.primaryPos] || 0;
-              if (posGap > 0.5) reasons.push(`${t.p.primaryPos} surplus`);
+              if (t.posCount >= 3) reasons.push(`${t.p.primaryPos} surplus (${t.posCount})`);
               const why = reasons.length > 0 ? reasons.slice(0,2).join(', ') : 'marginal value';
               h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:3px 4px;font-weight:600;">${t.name}</td><td style="padding:3px 4px;text-align:center;">${t.p.primaryPos}</td><td style="text-align:right;padding:3px 4px;">${t.lcv.toFixed(1)}</td><td style="text-align:center;padding:3px 4px;font-size:10px;">${keepTag}</td><td style="padding:3px 4px;font-size:10px;color:var(--red);">${why}</td></tr>`;
             });
@@ -3740,7 +3761,7 @@ function renderRoster() {
   if (txFilterMine) {
     const myNames = new Set(state.myTeam || []);
     const myTeamName = MY_TEAM ? MY_TEAM.name : '';
-    txnsSorted = txnsSorted.filter(tx => myNames.has(tx.player) || (tx.team && tx.team === myTeamName));
+    txnsSorted = txnsSorted.filter(tx => myNames.has(tx.player) || (tx.from && tx.from === myTeamName) || (tx.cbsAction && tx.cbsAction.includes(myTeamName)));
   }
   const txns = txnsSorted.slice(0, 25);
   if (txns.length === 0) {
@@ -4516,10 +4537,31 @@ function renderRoster() {
             bestNeedHelp = -need; bestNeedPos = pos;
           }
         });
+        // Upgrade bonus: even if I'm above average at a position, this player might
+        // upgrade my starter or bench at that position
+        let upgradeBonus = 0;
+        let upgradePos = '';
+        prof.positions.forEach(pos => {
+          if (pos === 'DH') return;
+          const myAtPos = (myAssign3[pos] || []);
+          if (myAtPos.length === 0) return;
+          // Compare to my weakest player at this position (starter or bench)
+          const myWorstLcv = Math.min(...myAtPos.map(p => p.lcv || 0));
+          const uplift = prof.lcv - myWorstLcv;
+          if (uplift > 0.5 && uplift > upgradeBonus) {
+            upgradeBonus = uplift;
+            upgradePos = pos;
+          }
+        });
+        // If this player matches a goal position, boost the upgrade bonus
+        const isGoalPos = prof.positions.some(p => goalPositions.has(p));
+        if (isGoalPos) upgradeBonus *= 1.5;
+
         // Keeper upside bonus: if they're very keepable and I can benefit
         const keeperBonus = prof.keepable ? prof.yearsLeft * 0.4 + Math.max(0, prof.multiYearSurplus) * 0.3 : 0;
         const gf = goalFit(prof);
-        return { ...prof, wantScore: bestNeedHelp * 2.0 + keeperBonus + prof.lcv * 0.15 + gf * 1.5, goalFit: gf, helpPos: bestNeedPos, needHelp: bestNeedHelp, tv: tradeVal(prof) };
+        const wantScore = bestNeedHelp * 2.0 + upgradeBonus * 0.8 + keeperBonus + prof.lcv * 0.15 + gf * 1.5;
+        return { ...prof, wantScore, goalFit: gf, helpPos: bestNeedPos || upgradePos, needHelp: Math.max(bestNeedHelp, upgradeBonus * 0.5), tv: tradeVal(prof) };
       }).filter(x => {
         // When goals are specified, strongly prefer players that match at least one goal
         if (goalPositions.size > 0 || goalStats.size > 0) return x.goalFit > 0 || x.wantScore > 2.0;
@@ -4550,8 +4592,12 @@ function renderRoster() {
       for (const give of myAvailable.slice(0, 12)) {
         for (const get of theirAvailable.slice(0, 12)) {
           if (give.name === get.name) continue;
-          // Don't swap same primary position (boring, lateral move)
-          if (give.primaryPos === get.primaryPos && give.helpPos === give.primaryPos) continue;
+          // Allow same-position swaps if the get player is a goal-matched upgrade
+          if (give.primaryPos === get.primaryPos) {
+            const isGoalPos = goalPositions.has(get.primaryPos) || get.positions.some(p => goalPositions.has(p));
+            const isUpgrade = get.lcv > give.lcv;
+            if (!isGoalPos || !isUpgrade) continue; // block lateral same-pos trades unless goal upgrade
+          }
 
           const tvDiff = get.tv - give.tv;
           const lcvDiff = get.lcv - give.lcv;
@@ -5024,11 +5070,15 @@ function renderDraftBoard() {
       const rk = milbList[mi];
       if (rk) {
         const p = _plyrI(rk);
-        const pos = p ? p.primaryPos : '?';
+        const pr = findProspect(rk);
+        const pos = p ? p.primaryPos : (pr ? pr.pos : '?');
         const pnav = p ? (p.pnav||0).toFixed(1) : '';
+        const prFV = pr ? `FV${pr.fv}` : '';
+        const prRank = pr && pr.avg_rank ? `#${Math.round(pr.avg_rank)}` : '';
+        const detail = p ? `${pos} ${pnav}` : [pos, prFV, prRank].filter(Boolean).join(' ');
         const bg = isMe ? 'background:rgba(99,102,241,0.12);' : 'background:rgba(245,158,11,0.08);';
         const clr = isMe ? 'color:var(--accent);' : 'color:var(--orange);';
-        html += `<td style="padding:3px 4px;text-align:center;vertical-align:top;min-width:70px;${bg}" title="${rk} (${pos}) MiLB keeper"><span style="font-weight:600;font-size:10px;${clr}">${rk}</span><br><small style="opacity:0.5;font-size:9px;">${pos} ${pnav}</small></td>`;
+        html += `<td style="padding:3px 4px;text-align:center;vertical-align:top;min-width:70px;${bg}" title="${rk} (${pos}) MiLB keeper"><span style="font-weight:600;font-size:10px;${clr}">${rk}</span><br><small style="opacity:0.5;font-size:9px;">${detail}</small></td>`;
       } else {
         html += `<td style="padding:3px 4px;text-align:center;opacity:0.15;">—</td>`;
       }
