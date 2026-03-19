@@ -1650,6 +1650,7 @@ function renderTransactions() {
   html += '<th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;color:var(--text2);background:var(--surface2);border-bottom:2px solid var(--border);">Pos</th>';
   html += '<th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;color:var(--text2);background:var(--surface2);border-bottom:2px solid var(--border);">MLB</th>';
   html += '<th style="padding:10px 12px;text-align:right;font-size:11px;text-transform:uppercase;color:var(--text2);background:var(--surface2);border-bottom:2px solid var(--border);">LCV</th>';
+  html += '<th style="padding:10px 12px;text-align:right;font-size:11px;text-transform:uppercase;color:var(--text2);background:var(--surface2);border-bottom:2px solid var(--border);">TV</th>';
   html += '<th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;color:var(--text2);background:var(--surface2);border-bottom:2px solid var(--border);">Effective</th>';
   html += '</tr></thead><tbody>';
 
@@ -1669,7 +1670,16 @@ function renderTransactions() {
     const actionColor = tx.action === 'Added' ? 'var(--green)' : tx.action === 'Dropped' ? 'var(--red)' : 'var(--accent)';
     const actionIcon = tx.action === 'Added' ? '+' : tx.action === 'Dropped' ? '−' : '↔';
     const player = _plyrI(tx.player);
-    const lcv = player ? player.lcv.toFixed(1) : '—';
+    const lcv = player ? (player.lcv||0).toFixed(1) : '—';
+    let tvVal = '—';
+    if (player) {
+      const ki = getKeeperInfo(tx.player);
+      const pr = findProspect(tx.player);
+      const pv = pr ? Math.max(0, ((pr.fv||0) - 40) * 0.15) : 0;
+      const plLcv = player.lcv || 0;
+      if (!ki.keepable2027) { tvVal = (plLcv * 0.8 + pv).toFixed(1); }
+      else { const eMYS = ki.multiYearSurplus > 1.0 ? ki.multiYearSurplus : (ki.multiYearSurplus||0) * 0.3; tvVal = (plLcv * 0.5 + Math.max(0, eMYS) * 1.0 + pv + (ki.yearsLeft >= 2 && ki.multiYearSurplus > 1.0 ? ki.yearsLeft * 0.3 : 0)).toFixed(1); }
+    }
     const isMine = (tx.teamId === 4) || tx.team === 'Father Jhon Kensy' || (tx.action && tx.action.includes('Father Jhon Kensy'));
     const rowBg = isMine ? 'rgba(74,107,255,0.06)' : (idx % 2 === 0 ? 'transparent' : 'var(--surface)');
     const filterAction = isTrade ? 'Traded' : tx.action;
@@ -1681,12 +1691,13 @@ function renderTransactions() {
     html += `<td style="padding:8px 12px;"><span class="pos-badge pos-${(tx.pos||'').split(',')[0]}">${tx.pos}</span></td>`;
     html += `<td style="padding:8px 12px;font-size:12px;color:var(--text2);">${tx.mlbTeam}</td>`;
     html += `<td style="padding:8px 12px;text-align:right;font-size:12px;font-variant-numeric:tabular-nums;">${lcv}</td>`;
+    html += `<td style="padding:8px 12px;text-align:right;font-size:12px;font-variant-numeric:tabular-nums;">${tvVal}</td>`;
     html += `<td style="padding:8px 12px;font-size:12px;color:var(--text2);">${tx.effective}</td>`;
     html += '</tr>';
   });
 
   if (allTxns.length === 0) {
-    html += '<tr><td colspan="8" style="padding:40px;text-align:center;color:var(--text2);font-size:13px;">No transactions yet. Transactions will appear here once the scheduled task runs.</td></tr>';
+    html += '<tr><td colspan="9" style="padding:40px;text-align:center;color:var(--text2);font-size:13px;">No transactions yet. Transactions will appear here once the scheduled task runs.</td></tr>';
   }
 
   html += '</tbody></table></div>';
@@ -2253,11 +2264,7 @@ function render() {
         return `<td style="text-align:right;color:var(--green);">${v.toFixed(1)}</td>`;
       }
       if (c.key === 'tradeValue') {
-        const ki = getKeeperInfo(p.name);
-        const mys = Math.max(0, ki.multiYearSurplus);
-        const pr = findProspect(p.name);
-        const pv = pr ? Math.max(0, ((pr.fv||0) - 40) * 0.15) : 0;
-        const tv = mys + pv;
+        const tv = p._tradeValue || 0;
         const clr = tv > 3 ? 'var(--green)' : tv > 0 ? 'var(--text)' : 'var(--text2)';
         return `<td style="text-align:right;color:${clr};font-weight:600;">${tv.toFixed(1)}</td>`;
       }
@@ -2341,12 +2348,23 @@ function render() {
             const myT = LEAGUE_TEAMS.find(t => t.mine);
             ownerLabel = myT ? myT.owner : 'My Team';
           } else {
-            // Find which team owns this player
+            // Find which team owns this player via roster data or draft picks
             const ownerTeam = LEAGUE_TEAMS.find(t => {
               const pl = t.mine ? (state.myTeam || []) : (state.leagueTeams[t.name] || []);
               return pl.includes(p.name);
             });
-            ownerLabel = ownerTeam ? (ownerTeam.owner || ownerTeam.name) : 'Drafted';
+            if (ownerTeam) {
+              ownerLabel = ownerTeam.owner || ownerTeam.name;
+            } else {
+              // Fallback to draft pick data
+              const dp = PICK_BY_NAME[p.name];
+              if (dp && dp.team) {
+                const dpTeam = LEAGUE_TEAMS.find(t => t.name === dp.team);
+                ownerLabel = dpTeam ? (dpTeam.owner || dpTeam.name) : dp.team;
+              } else {
+                ownerLabel = 'Owned';
+              }
+            }
           }
           const rdInfo = dInfo.round ? ' R' + dInfo.round : '';
           if (!dInfo.mine) {
@@ -6437,6 +6455,9 @@ function renderAnalytics() {
   document.getElementById('rosterSection').style.display = 'none';
   document.getElementById('txnsSection').style.display = 'none';
   section.style.display = '';
+  try { _renderAnalyticsInner(section); } catch(e) { section.innerHTML = '<div style="padding:20px;color:var(--red);"><b>Analytics Error:</b> ' + e.message + '<br><pre style="font-size:10px;margin-top:8px;">' + (e.stack||'').replace(/</g,'&lt;') + '</pre></div>'; console.error('Analytics render error:', e); }
+}
+function _renderAnalyticsInner(section) {
 
   // ── Shared helpers ──
   const myTeam = state.myTeam || [];
