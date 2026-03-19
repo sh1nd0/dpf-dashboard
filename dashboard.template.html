@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23fff' stroke='%23dc2626' stroke-width='3'/><path d='M30 20 Q50 50 30 80' fill='none' stroke='%23dc2626' stroke-width='2'/><path d='M70 20 Q50 50 70 80' fill='none' stroke='%23dc2626' stroke-width='2'/></svg>">
 <title>DPF 2026 Draft Dashboard</title>
 <style>
@@ -1727,13 +1730,21 @@ function renderTransactions() {
   if (teamFilter) teamFilter.addEventListener('change', applyFilters);
   if (typeFilter) typeFilter.addEventListener('change', applyFilters);
 
-  // Wire Check CBS button — fetch latest transactions from GitHub
+  // Wire Check CBS button — fetch latest transactions from raw GitHub (bypasses Pages CDN cache)
   const checkBtn = document.getElementById('checkCbsBtn');
   if (checkBtn) checkBtn.addEventListener('click', async () => {
     checkBtn.disabled = true;
     checkBtn.textContent = '↻ Checking...';
     try {
-      const resp = await fetch('./data/cbs_transactions.json?t=' + Date.now());
+      // Fetch from raw GitHub content to bypass GitHub Pages CDN cache
+      // Falls back to local ./data/ path if raw fetch fails (e.g. CORS or private repo)
+      let resp;
+      try {
+        resp = await fetch('https://raw.githubusercontent.com/Mark-Pytlik/dpf-dashboard/main/data/cbs_transactions.json?t=' + Date.now());
+      } catch(e) { /* CORS or network error — fall back */ }
+      if (!resp || !resp.ok) {
+        resp = await fetch('./data/cbs_transactions.json?t=' + Date.now());
+      }
       if (!resp.ok) throw new Error('Fetch failed: ' + resp.status);
       const latest = await resp.json();
       // Find new transactions not in baked-in data
