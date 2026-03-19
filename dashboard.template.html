@@ -103,7 +103,7 @@ a[title^="Sleeper"] { color:var(--green); } a[title^="Avoid"] { color:var(--red)
 .autocomplete div { padding:8px 12px; cursor:pointer; font-size:13px; }
 .autocomplete div:hover, .autocomplete div.selected { background:var(--accent2); color:#fff; }
 .autocomplete div small { color:var(--text2); margin-left:6px; }
-.roster-section { padding:20px; }
+.roster-section { padding:20px; overflow-x:auto; }
 .roster-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:10px; min-height:40px; }
 .roster-card { background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:12px; transition:transform 0.15s, box-shadow 0.15s; }
 .roster-card[draggable="true"] { cursor:grab; }
@@ -3358,8 +3358,7 @@ function renderRoster() {
   // Player view colgroups: Slot(38) + Player(130) + Pos(36) + stat cols(36px each)
   // Batting: 3 fixed + 30 stat cols (10 per group × 3 groups)
   const playerBatColgroup = '<colgroup><col style="width:38px"><col style="width:130px"><col style="width:36px">' + '<col style="width:36px">'.repeat(30) + '</colgroup>';
-  // Pitching: 3 fixed + 24 stat cols (8 per group × 3 groups)
-  const playerPitColgroup = '<colgroup><col style="width:38px"><col style="width:130px"><col style="width:36px">' + '<col style="width:36px">'.repeat(24) + '</colgroup>';
+  // (Pitching tables now use playerBatColgroup with padded rows for consistent alignment)
 
   // Choose columns based on view
   const activeCols = rosterView === 'player' ? playerBatStatCols : rosterCols;
@@ -3368,7 +3367,8 @@ function renderRoster() {
   const numPitCols = activeColsPit.length;
 
   // Player view header builder with group headers
-  function buildPlayerStatHeader(cols, isPit) {
+  // padToCols: if set, pad headers to this many total columns (for consistent widths)
+  function buildPlayerStatHeader(cols, isPit, padToCols) {
     let hdr = '';
     // Group header row (2025 / 2026 Proj / 2026 Actual)
     const statCols = cols.filter(c => c.group);
@@ -3376,11 +3376,12 @@ function renderRoster() {
     const g26p = statCols.filter(c => c.group === '26p').length;
     const g26a = statCols.filter(c => c.group === '26a').length;
     const fixedCols = cols.length - statCols.length; // slot + name + pos
+    const padExtra = padToCols ? padToCols - cols.length : 0;
     hdr += '<tr style="background:var(--surface2);font-size:9px;text-transform:uppercase;color:var(--text2);">';
     hdr += `<th colspan="${fixedCols}" style="padding:2px 4px;"></th>`;
     hdr += `<th colspan="${g25}" style="padding:2px 6px;text-align:center;border-left:2px solid var(--border);color:var(--text2);">2025 Actual</th>`;
     hdr += `<th colspan="${g26p}" style="padding:2px 6px;text-align:center;border-left:2px solid var(--border);color:var(--accent);">2026 Projected</th>`;
-    hdr += `<th colspan="${g26a}" style="padding:2px 6px;text-align:center;border-left:2px solid var(--border);color:var(--green);">2026 Actual</th>`;
+    hdr += `<th colspan="${g26a + padExtra}" style="padding:2px 6px;text-align:center;border-left:2px solid var(--border);color:var(--green);">2026 Actual</th>`;
     hdr += '</tr>';
     // Stat name header row
     hdr += '<tr style="background:var(--surface2);font-size:10px;text-transform:uppercase;color:var(--text2);">';
@@ -3391,6 +3392,8 @@ function renderRoster() {
       prevGroup = c.group || prevGroup;
       hdr += `<th${tipAttr} style="text-align:${c.align};padding:3px 4px;${borderLeft}user-select:none;white-space:nowrap;">${c.label}</th>`;
     });
+    // Pad extra header cells
+    for (let i = 0; i < padExtra; i++) hdr += '<th style="padding:3px 4px;"></th>';
     hdr += '</tr>';
     return hdr;
   }
@@ -3403,7 +3406,7 @@ function renderRoster() {
     html += '<thead>' + buildPlayerStatHeader(playerBatStatCols, false) + '</thead>';
     html += '<tbody>';
   } else {
-    html += '<table style="width:100%;border-collapse:collapse;font-size:12px;margin-bottom:6px;">';
+    html += '<table style="width:100%;border-collapse:collapse;font-size:12px;margin-bottom:6px;table-layout:fixed;">';
     html += rosterColgroup;
     html += '<thead><tr style="background:var(--surface2);font-size:10px;text-transform:uppercase;color:var(--text2);">';
     rosterCols.forEach(c => {
@@ -3420,7 +3423,7 @@ function renderRoster() {
   // Row builder helper: picks GM pRow or Player pRowStats based on view
   const rowFn = (p, slot, tag, isPit, padToCols) => rosterView === 'player' ? pRowStats(p, slot, tag, isPit, padToCols) : pRow(p, slot, tag);
   const colSpan = rosterView === 'player' ? numBatCols : 12;
-  const colSpanPit = rosterView === 'player' ? numPitCols : 12;
+  const colSpanPit = rosterView === 'player' ? numBatCols : 12;
 
   if (rsc && rosterView !== 'player') {
     // Flat sorted view (GM only) — all roster players sorted by chosen column
@@ -3479,8 +3482,8 @@ function renderRoster() {
     if (rosterView === 'player') {
       html += '</tbody></table>';
       html += '<table style="width:100%;border-collapse:collapse;font-size:12px;margin-top:8px;margin-bottom:6px;table-layout:fixed;">';
-      html += playerPitColgroup;
-      html += '<thead>' + buildPlayerStatHeader(playerPitStatCols, true) + '</thead>';
+      html += playerBatColgroup;
+      html += '<thead>' + buildPlayerStatHeader(playerPitStatCols, true, playerBatStatCols.length) + '</thead>';
       html += '<tbody>';
       html += `<tr><td colspan="${colSpanPit}" style="padding:6px 6px 2px;font-weight:700;font-size:11px;color:var(--green);border-bottom:1px solid var(--border);">PITCHING (${(bySlot['SP']||[]).length + (bySlot['RP']||[]).length})</td></tr>`;
     } else {
@@ -3491,7 +3494,7 @@ function renderRoster() {
       const count = ROSTER_SLOTS[slot] || 5;
       for (let i = 0; i < count; i++) {
         const p = bySlot[slot][i];
-        const inner = rowFn(p, slot, '', true);
+        const inner = rowFn(p, slot, '', true, playerBatStatCols.length);
         html += `<tr class="roster-section" data-slot="${slot}">${inner.replace(/^<tr[^>]*>|<\/tr>$/g, '')}</tr>`;
       }
     }
