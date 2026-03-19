@@ -1272,7 +1272,8 @@ const pitCols25 = [
 // Unified All-tab columns for 2025: bat+pit stats in one row (non-applicable show —)
 const allCols25 = [
   {key:'name',label:'Player',w:160}, {key:'team',label:'Team',w:50}, {key:'pos',label:'Pos',w:60},
-  {key:'type',label:'Type',w:50}, {key:'age',label:'Age',w:40}, {key:'dp',label:'Pick',w:55,cls:'pnav-col'},
+  {key:'type',label:'Type',w:50}, {key:'age',label:'Age',w:40}, {key:'lcv',label:'LCV',w:55,cls:'lcv-col'}, {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
+  {key:'dp',label:'Pick',w:55,cls:'pnav-col'},
   {key:'trend',label:'Trend',w:55,cls:'pnav-col',tip:trendTip},
   {key:'s25_pa',label:'PA',w:45}, {key:'s25_avg',label:'AVG',w:50}, {key:'s25_obp',label:'OBP',w:50},
   {key:'s25_slg',label:'SLG',w:50}, {key:'s25_r',label:'R',w:38}, {key:'s25_rbi',label:'RBI',w:38},
@@ -1308,7 +1309,8 @@ const pitCols26 = [
 // Unified All-tab columns for 2026: bat+pit stats in one row
 const allCols26 = [
   {key:'name',label:'Player',w:160}, {key:'team',label:'Team',w:50}, {key:'pos',label:'Pos',w:60},
-  {key:'type',label:'Type',w:50}, {key:'age',label:'Age',w:40}, {key:'dp',label:'Pick',w:55,cls:'pnav-col'},
+  {key:'type',label:'Type',w:50}, {key:'age',label:'Age',w:40}, {key:'lcv',label:'LCV',w:55,cls:'lcv-col'}, {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
+  {key:'dp',label:'Pick',w:55,cls:'pnav-col'},
   {key:'trend',label:'Trend',w:55,cls:'pnav-col',tip:trendTip},
   {key:'pa',label:'PA',w:45}, {key:'avg',label:'AVG',w:50}, {key:'obp',label:'OBP',w:50},
   {key:'slg',label:'SLG',w:50}, {key:'r',label:'R',w:38}, {key:'rbi',label:'RBI',w:38},
@@ -1335,7 +1337,7 @@ const pitCols26A = [
 ];
 const allCols26A = [
   {key:'name',label:'Player',w:160}, {key:'team',label:'Team',w:50}, {key:'pos',label:'Pos',w:60},
-  {key:'type',label:'Type',w:50}, {key:'age',label:'Age',w:40}, {key:'lcv',label:'LCV',w:55},
+  {key:'type',label:'Type',w:50}, {key:'age',label:'Age',w:40}, {key:'lcv',label:'LCV',w:55,cls:'lcv-col'}, {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
   {key:'s26_pa',label:'PA',w:45}, {key:'s26_avg',label:'AVG',w:50}, {key:'s26_obp',label:'OBP',w:50},
   {key:'s26_slg',label:'SLG',w:50}, {key:'s26_r',label:'R',w:38}, {key:'s26_rbi',label:'RBI',w:38},
   {key:'s26_sb',label:'SB',w:38}, {key:'s26_hr',label:'HR',w:38}, {key:'s26_so',label:'K',w:38},
@@ -1371,7 +1373,7 @@ const pitColsAVP = [
 ];
 const allColsAVP = [
   {key:'name',label:'Player',w:150}, {key:'pos',label:'Pos',w:50},
-  {key:'type',label:'Type',w:45}, {key:'lcv',label:'LCV',w:50},
+  {key:'type',label:'Type',w:45}, {key:'lcv',label:'LCV',w:50,cls:'lcv-col'}, {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
   {key:'avg',label:'pAVG',w:48,tip:'Projected'}, {key:'s26_avg',label:'aAVG',w:48,tip:'Actual'},
   {key:'hr',label:'pHR',w:38,tip:'Projected'}, {key:'s26_hr',label:'aHR',w:38,tip:'Actual'},
   {key:'r',label:'pR',w:36,tip:'Projected'}, {key:'s26_r',label:'aR',w:36,tip:'Actual'},
@@ -1417,6 +1419,7 @@ const allCols = [
   {key:'war',label:'WAR',w:50},
   {key:'dp',label:'Pick',w:60,cls:'pnav-col',tip:'Draft Priority = 0.4×LCV + 0.6×PNAV. The single "who should I pick" metric. Higher = pick this player first. Updates in real-time as you draft.'},
   {key:'lcv',label:'LCV',w:60,cls:'lcv-col',tip:'League Category Value — z-score sum across all counted league categories (8 batting or 8 pitching). Higher = more valuable to your league scoring.'},
+  {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
   {key:'pnav',label:'PNAV',w:65,cls:'pnav-col',tip:'Positional Need-Adjusted Value = LCV × Position Multiplier × Scarcity Factor. Updates dynamically as you draft players and your positional needs change.'},
   {key:'upside',label:'Upside',w:65,cls:'pnav-col',tip:'UPSIDE = LCV × Age Factor. Raw value weighted by age — young players get boosted, older players penalized. Position-agnostic long-term ceiling.'},
   {key:'trend',label:'Trend',w:60,cls:'pnav-col',tip:trendTip},
@@ -2166,27 +2169,28 @@ function render() {
     return true;
   });
 
-  // Compute sortable GM values if in GM view
-  if (currentView === 'gm') {
-    filtered.forEach(p => {
-      const ki = getKeeperInfo(p.name);
+  // Compute trade value and prospect value for ALL views (needed for TV column)
+  filtered.forEach(p => {
+    const ki = getKeeperInfo(p.name);
+    const pr = findProspect(p.name);
+    p._prospectValue = pr ? Math.max(0, ((pr.fv||0) - 40) * 0.15) : 0;
+    // Trade value: production-first, keeper premium only when surplus justifies the slot
+    const pLcv = p.lcv || 0;
+    if (!ki.keepable2027) {
+      p._tradeValue = pLcv * 0.8 + p._prospectValue;
+    } else {
+      const effMYS = (ki.multiYearSurplus || 0) > 1.0 ? (ki.multiYearSurplus || 0) : (ki.multiYearSurplus || 0) * 0.3;
+      p._tradeValue = pLcv * 0.5 + Math.max(0, effMYS) * 1.0 + p._prospectValue + (ki.yearsLeft >= 2 && (ki.multiYearSurplus || 0) > 1.0 ? ki.yearsLeft * 0.3 : 0);
+    }
+    // Compute additional GM values only when in GM view
+    if (currentView === 'gm') {
       p._keeperRound = ki.draftRound || 99;
       p._keeperCost2027 = ki.keepable2027 ? ki.cost2027 : 99;
       p._yearsControl = ki.yearsLeft || 0;
       p._surplusNow = ki.surplusNow || 0;
       p._multiYearSurplus = Math.max(0, ki.multiYearSurplus || 0);
-      const pr = findProspect(p.name);
-      p._prospectValue = pr ? Math.max(0, ((pr.fv||0) - 40) * 0.15) : 0;
-      // Trade value: production-first, keeper premium only when surplus justifies the slot
-      const pLcv = p.lcv || 0;
-      if (!ki.keepable2027) {
-        p._tradeValue = pLcv * 0.8 + p._prospectValue;
-      } else {
-        const effMYS = (ki.multiYearSurplus || 0) > 1.0 ? (ki.multiYearSurplus || 0) : (ki.multiYearSurplus || 0) * 0.3;
-        p._tradeValue = pLcv * 0.5 + Math.max(0, effMYS) * 1.0 + p._prospectValue + (ki.yearsLeft >= 2 && (ki.multiYearSurplus || 0) > 1.0 ? ki.yearsLeft * 0.3 : 0);
-      }
-    });
-  }
+    }
+  });
 
   // Map GM sort keys to computed property names
   const gmSortMap = {keeperRound:'_keeperRound',keeperCost2027:'_keeperCost2027',yearsControl:'_yearsControl',surplusNow:'_surplusNow',multiYearSurplus:'_multiYearSurplus',prospectValue:'_prospectValue',tradeValue:'_tradeValue'};
