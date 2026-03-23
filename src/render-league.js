@@ -60,6 +60,7 @@ function calcOptimalLCV(playerNames) {
   for (const p of players) totalLCV += (p.lcv || 0);
 
   return { startingLCV, totalLCV, count: players.length };
+}
 
 function renderLeague() {
   const section = document.getElementById('rosterSection');
@@ -620,7 +621,3 @@ function renderLeague() {
 // (renderLeagueRosters removed — combined into renderRoster)
 
 // (renderFreeAgents removed — use All/Drafted/Available filter on main player tables instead)
-
-// ══════════════════════════════════════════════════════════════════════════
-// ██ ANALYTICS TAB
-// ══════════════════════════════════════════════════════════════════════════
