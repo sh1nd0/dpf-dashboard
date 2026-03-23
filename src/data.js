@@ -113,8 +113,16 @@ function _injBadge(name) {
   const s = inj.status;
   const clr = s === 'O' || s === 'IL' ? 'var(--red)' : s === 'DTD' ? '#e88a0a' : '#c49000';
   const label = s === 'IL' ? 'IL' : s === 'O' ? 'OUT' : s === 'DTD' ? 'DTD' : 'Q';
-  const tip = `${inj.injury}${inj.return ? ' · ETA ' + inj.return : ''}`;
-  return ` <span title="${tip}" style="font-size:8px;background:${clr};color:#fff;padding:1px 3px;border-radius:2px;font-weight:600;cursor:help;">${label}</span>`;
+  // Extract short return date from "Expected to be out until at least Apr 10" → "Apr 10"
+  const rd = inj.returnDate || '';
+  const dateMatch = rd.match(/(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d+/);
+  const shortReturn = dateMatch ? dateMatch[0] : '';
+  const tip = `${inj.injury}${rd ? ' · ' + rd : ''}`;
+  let html = ` <span class="pbadge" title="${tip}" style="background:${clr};color:#fff;">${label}</span>`;
+  if (shortReturn && (s === 'O' || s === 'IL')) {
+    html += `<span style="font-size:8px;color:${clr};margin-left:2px;cursor:help;" title="${rd}">~${shortReturn}</span>`;
+  }
+  return html;
 }
 
 // ── New analytics data (v5.0) ────────────────────────────────────────────
@@ -197,6 +205,16 @@ function getKadjBadge(player) {
   // Negative zSo = low K player = GAINS value in our league (standard rankings undervalue them)
   if (zSo <= -1.0) return '<span class="pbadge" title="Low-K hitter: gains value in -K league (zK=' + zSo.toFixed(1) + ')" style="background:#16a34a;color:#fff;">LK</span>';
   if (zSo >= 1.5) return '<span class="pbadge" title="High-K hitter: loses value in -K league (zK=' + zSo.toFixed(1) + ')" style="background:#dc2626;color:#fff;">HK</span>';
+  return '';
+}
+
+// ── Stuff+ year-over-year trend badge ───────────────────────────────────
+function stuffTrendBadge(player) {
+  if (!player || player.type !== 'PIT') return '';
+  const delta = player.stuffTrend;
+  if (delta === '' || delta === undefined || delta === null) return '';
+  if (delta >= 8) return '<span class="pbadge" title="Stuff+ improved +' + delta + ' vs 2024 (' + (player.s24_stuff||'?') + '→' + (player.s25_stuff||'?') + ')" style="background:#16a34a;color:#fff;">STF↑</span>';
+  if (delta <= -8) return '<span class="pbadge" title="Stuff+ declined ' + delta + ' vs 2024 (' + (player.s24_stuff||'?') + '→' + (player.s25_stuff||'?') + ')" style="background:#dc2626;color:#fff;">STF↓</span>';
   return '';
 }
 

@@ -61,6 +61,15 @@ function getKeeperInfo(playerName) {
     multiYearSurplus += (playerLCV * ageDec - futureSlotVal) * Math.pow(0.85, yr); // 15% annual discount + age decay
   }
 
+  // Prospect FV bonus: high-FV prospects add future value to keeper calculations
+  // FV² × 0.0001 gives: FV50=0.25, FV55=0.30, FV60=0.36, FV70=0.49
+  const pr = (typeof findProspect === 'function') ? findProspect(playerName) : null;
+  const prospectFV = pr ? (pr.fv || 0) : 0;
+  const prospectBonus = prospectFV >= 50 ? (prospectFV * prospectFV * 0.0001) : 0;
+  if (prospectBonus > 0 && yearsLeft >= 1) {
+    multiYearSurplus += prospectBonus * yearsLeft * 0.8; // FV bonus scales with years of control
+  }
+
   return {
     draftRound: draftRound,
     wasKeeper: wasKeeper2026,
@@ -71,7 +80,8 @@ function getKeeperInfo(playerName) {
     surplusNow: surplusNow,
     surplus2027: surplus2027,
     multiYearSurplus: multiYearSurplus,
-    roundValue: roundValue
+    roundValue: roundValue,
+    prospectFV: prospectFV
   };
 }
 

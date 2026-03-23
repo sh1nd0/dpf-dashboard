@@ -60,6 +60,8 @@ function render() {
     if (tagFilter === 'closer' && p.bpRole !== 'CL') return false;
     if (tagFilter === 'setup' && p.bpRole !== 'SU') return false;
     if (tagFilter === 'handcuff' && p.bpRole !== 'HC') return false;
+    if (tagFilter === 'stuff-up' && !(p.type === 'PIT' && p.stuffTrend >= 8)) return false;
+    if (tagFilter === 'stuff-down' && !(p.type === 'PIT' && p.stuffTrend <= -8)) return false;
     // For s26/avp views, only show players with actual 2026 data
     if ((currentView === 's26' || currentView === 'avp') && !p.s26_pa && !p.s26_ip) return false;
     return true;
@@ -86,6 +88,7 @@ function render() {
     p._kAdj = getKadjBadge(p);
     p._parkBadge = parkBadge(p);
     p._closerBadge = closerBadge(p);
+    p._stuffTrend = stuffTrendBadge(p);
     // Compute additional GM values only when in GM view
     if (currentView === 'gm') {
       p._keeperRound = ki.draftRound || 99;
@@ -315,7 +318,7 @@ function render() {
         if (p._buySell === 'buy') aBadges += ' <span class="pbadge" title="Buy-low: xwOBA ' + ((p.s25_delta||0)*1000).toFixed(0) + ' pts above wOBA" style="background:#16a34a;color:#fff;">BUY</span>';
         if (p._buySell === 'sell') aBadges += ' <span class="pbadge" title="Sell-high: xwOBA ' + (Math.abs(p.s25_delta||0)*1000).toFixed(0) + ' pts below wOBA" style="background:#dc2626;color:#fff;">SELL</span>';
         if (p._sbBreakout) aBadges += ' <span class="pbadge" title="SB breakout: ' + (p.sprintSpeed||'?') + ' ft/s speed, only ' + (p.sb||0) + ' proj SB" style="background:#7c3aed;color:#fff;">SB</span>';
-        aBadges += (p._kAdj || '') + (p._parkBadge || '') + (p._closerBadge || '');
+        aBadges += (p._kAdj || '') + (p._parkBadge || '') + (p._closerBadge || '') + (p._stuffTrend || '');
         return `<td style="font-weight:600;white-space:nowrap;">${val}${_injBadge(p.name)}${enoR}${aBadges}${tagHtml}${kp}${ownerBadge}${tagBtns}</td>`;
       }
       return `<td class="${cls}">${val}</td>`;

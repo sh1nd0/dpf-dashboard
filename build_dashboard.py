@@ -75,7 +75,22 @@ for _, r in stuff_df.iterrows():
         'loc': int(r['location_plus']),
         'pitching': int(r['pitching_plus'])
     }
-print(f"Stuff+ loaded: {len(stuff_lookup)} pitchers")
+print(f"Stuff+ 2025 loaded: {len(stuff_lookup)} pitchers")
+
+# Stuff+ for pitchers — 2024 (for year-over-year trend)
+stuff24_lookup = {}
+_stuff24_path = 'data/stuff_plus_2024.csv'
+if os.path.exists(_stuff24_path):
+    stuff24_df = pd.read_csv(_stuff24_path, sep='|')
+    for _, r in stuff24_df.iterrows():
+        stuff24_lookup[r['name']] = {
+            'stuff': int(r['stuff_plus']),
+            'loc': int(r['location_plus']),
+            'pitching': int(r['pitching_plus'])
+        }
+    print(f"Stuff+ 2024 loaded: {len(stuff24_lookup)} pitchers")
+else:
+    print("No 2024 Stuff+ file found (data/stuff_plus_2024.csv)")
 
 # ── Eno's 150 Best Pitchers list ─────────────────────────────────────────
 eno_rank = json.load(open('data/eno_rankings.json'))
@@ -475,12 +490,18 @@ for _, r in pit_pool.iterrows():
         's25_qs': s25.get('qs', ''),
         'trend': round(r['trend'], 2) if not pd.isna(r['trend']) else '',
     })
-    # Add Stuff+ data
+    # Add Stuff+ data (2025 + 2024 for trend)
     st = stuff_lookup.get(r['name'], {})
     if st:
         pit_records[-1].update({
             's25_stuff': st['stuff'], 's25_loc': st['loc'], 's25_pitching': st['pitching']
         })
+    st24 = stuff24_lookup.get(r['name'], {})
+    if st24:
+        pit_records[-1]['s24_stuff'] = st24['stuff']
+    # Stuff+ trend: delta between 2025 and 2024
+    if st and st24:
+        pit_records[-1]['stuffTrend'] = st['stuff'] - st24['stuff']
     # Add Eno Sarris rank
     er = eno_rank.get(r['name'], '')
     if er:
