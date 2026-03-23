@@ -1,5 +1,5 @@
 // ── State ─────────────────────────────────────────────────────────────────
-const STATE_VERSION = 18;
+const STATE_VERSION = 19;
 const DEFAULT_KEEPERS = ['James Wood', 'MacKenzie Gore', 'Zach Neto', 'Nick Kurtz', 'Jo Adell'];
 const DEFAULT_KEEPER_ROUNDS = {'James Wood':12, 'MacKenzie Gore':13, 'Jo Adell':10, 'Zach Neto':14, 'Nick Kurtz':11};
 
@@ -96,8 +96,8 @@ if (_saved) {
   state = Object.assign({}, _defaults, _saved);
   // v17 migration: CBS_TEAM_MAP was wrong in v16, corrupting leagueTeams rosters.
   // Reset leagueTeams so they rebuild cleanly from keepers + CBS transactions.
-  if (!_saved._v || _saved._v < 18) {
-    console.log('v18 migration: resetting leagueTeams (trade alias fix)');
+  if (!_saved._v || _saved._v < 19) {
+    console.log('v19 migration: resetting rosters (CBS ID 1/3 swap + trade aliases)');
     state.leagueTeams = {};
     state.leagueMilbKeepers = {};
     // Also clean stale team names from teamOwners
@@ -162,13 +162,14 @@ const CBS_ID_TO_LEAGUE = {};
 // Map CBS team names to league team names by matching known CBS team IDs to LEAGUE_TEAMS
 // CBS IDs verified from CBS transaction data:
 // 1=Kaskie (pick 1), 2=Rescan (pick 7, no txns), 3=Roth (pick 3), 4=Pytlik (pick 2),
+// 1=Roth, 3=Kaskie (was "choured in the usa."), 4=Pytlik (was "Father Jhon Kensy")
 // 5=Devinney (pick 5), 6=Wolfe (pick 6), 7=Gaerig (pick 4, no txns),
 // 8=Azar (pick 8, no txns), 9=Murphy (pick 9), 10=Brundrett (pick 10),
 // 11=Sarris (pick 11, no txns), 12=Dennewitz (pick 12)
 const CBS_TEAM_MAP = {
-  1: LEAGUE_TEAMS.find(t => t.owner === 'Chris Kaskie')?.name || 'Dennis Santana - Smooth ft. Rob Thomas',
+  1: LEAGUE_TEAMS.find(t => t.owner === 'David Roth')?.name || 'Dennis Santana - Smooth ft. Rob Thomas',
   2: LEAGUE_TEAMS.find(t => t.owner === 'Anthony Rescan')?.name || 'Dinosaur Jr Caminero',
-  3: LEAGUE_TEAMS.find(t => t.owner === 'David Roth')?.name || "Colonel Corbin's Ascent",
+  3: LEAGUE_TEAMS.find(t => t.owner === 'Chris Kaskie')?.name || "Colonel Corbin's Ascent",
   4: LEAGUE_TEAMS.find(t => t.mine)?.name || 'Okamotomami',
   5: LEAGUE_TEAMS.find(t => t.owner === 'Fran Devinney')?.name || 'Buddy Buddy Buddy All On Base',
   6: LEAGUE_TEAMS.find(t => t.owner === 'Ian Wolfe')?.name || 'A Pete Crow-Armstrong Looked at Me',
@@ -211,7 +212,7 @@ CBS_TRANSACTIONS.forEach(txn => {
 // at the time of the trade, but teams rename frequently. This table lets us resolve
 // "Traded from <old name>" actions correctly, even in multi-team trades.
 const CBS_OLD_NAMES = {
-  'choured in the usa.': 1,   // Kaskie (now Dennis Santana - Smooth ft. Rob Thomas)
+  'choured in the usa.': 3,   // Kaskie (now Colonel Corbin's Ascent)
   'Father Jhon Kensy': 4,     // Pytlik (now Okamotomami)
 };
 for (const [oldName, cbsId] of Object.entries(CBS_OLD_NAMES)) {
