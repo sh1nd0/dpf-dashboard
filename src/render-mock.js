@@ -761,7 +761,12 @@ function _renderAnalyticsInner(section) {
           pt[cat] = pits.reduce((s,p) => s + (p[cat]||0), 0);
         }
       });
-      return { bat: bt, pit: pt };
+      // Bench = everyone NOT in the starting lineup
+      const startNames = new Set([...bats.map(p=>p.name), ...pits.map(p=>p.name)]);
+      const benchBats = allBats.filter(p => !startNames.has(p.name));
+      const benchPits = [...allSP.slice(5), ...allRP.slice(5)];
+      const benchLcv = [...benchBats, ...benchPits].reduce((s,p) => s + (p.lcv||0), 0);
+      return { bat: bt, pit: pt, benchBats: benchBats.length, benchPits: benchPits.length, benchLcv: Math.round(benchLcv * 10) / 10 };
     }
 
     // Build data for all teams
@@ -833,7 +838,31 @@ function _renderAnalyticsInner(section) {
     h += `<div style="background:var(--surface2);border-radius:6px;padding:8px 12px;flex:1;min-width:120px;"><div style="font-size:10px;color:var(--text2);">Pitching Points</div><div style="font-size:20px;font-weight:800;">${totalPitPts}</div></div>`;
     h += '</div>';
 
-    h += '<div style="margin-top:10px;font-size:10px;color:var(--text2);">Based on projected 2026 stats. During the season, this will update with actual pace data to project end-of-year totals.</div>';
+    // ── Bench Depth Comparison ────────────────────────────────────
+    h += '<div style="margin-top:16px;margin-bottom:8px;">';
+    h += '<div style="font-weight:700;font-size:12px;margin-bottom:6px;">Bench Depth</div>';
+    h += '<table style="width:100%;border-collapse:collapse;font-size:11px;">';
+    h += '<thead><tr style="background:var(--surface2);font-size:10px;color:var(--text2);text-transform:uppercase;"><th style="padding:4px 6px;text-align:left;">Team</th><th style="padding:4px 6px;text-align:center;">Bat</th><th style="padding:4px 6px;text-align:center;">Pit</th><th style="padding:4px 6px;text-align:right;">Bench LCV</th><th style="padding:4px 6px;text-align:center;">Rank</th></tr></thead>';
+    h += '<tbody>';
+    // Rank teams by bench LCV
+    const benchRanked = [...teamCats].sort((a,b) => b.benchLcv - a.benchLcv);
+    benchRanked.forEach((t, i) => {
+      const rank = i + 1;
+      const isMine = t.mine;
+      const bg = isMine ? 'rgba(74,107,255,0.08)' : (i % 2 === 0 ? 'transparent' : 'var(--surface)');
+      const nameWt = isMine ? 'font-weight:700;' : '';
+      const rankClr = rank <= 3 ? 'var(--green)' : rank >= 10 ? 'var(--red)' : 'var(--text)';
+      h += `<tr style="background:${bg};border-bottom:1px solid var(--border);">`;
+      h += `<td style="padding:4px 6px;${nameWt}">${isMine ? '★ ' : ''}${t.name}</td>`;
+      h += `<td style="padding:4px 6px;text-align:center;">${t.benchBats}</td>`;
+      h += `<td style="padding:4px 6px;text-align:center;">${t.benchPits}</td>`;
+      h += `<td style="padding:4px 6px;text-align:right;font-weight:600;">${t.benchLcv.toFixed(1)}</td>`;
+      h += `<td style="padding:4px 6px;text-align:center;font-weight:700;color:${rankClr};">${rank}</td>`;
+      h += '</tr>';
+    });
+    h += '</tbody></table></div>';
+
+    h += '<div style="margin-top:10px;font-size:10px;color:var(--text2);">Based on projected 2026 stats. Bench depth = total LCV of non-starting rostered players. Updates with CBS transactions.</div>';
     return h;
   });
 
