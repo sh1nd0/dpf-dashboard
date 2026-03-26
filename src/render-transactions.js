@@ -157,15 +157,18 @@ function _renderTransactionsInner(section) {
 
   // Wire Check CBS button — compare VERSION file on server vs baked-in version
   // If server has a newer build, hard-reload to get the latest dashboard
+  // Falls back to hard-reload if fetching VERSION fails (e.g. file:// protocol)
   const checkBtn = document.getElementById('checkCbsBtn');
   if (checkBtn) checkBtn.addEventListener('click', async () => {
     checkBtn.disabled = true;
     checkBtn.textContent = '↻ Checking...';
+    const currentVersion = '__VERSION__';
     try {
+      // If opened as a local file, fetch won't work — skip straight to reload
+      if (location.protocol === 'file:') throw new Error('local file');
       const resp = await fetch('./VERSION?v=' + Date.now(), {cache: 'no-store'});
       if (!resp.ok) throw new Error('Fetch failed: ' + resp.status);
       const serverVersion = (await resp.text()).trim();
-      const currentVersion = '__VERSION__';
       if (serverVersion !== currentVersion) {
         checkBtn.textContent = '↻ Updating to v' + serverVersion + '...';
         setTimeout(() => location.reload(true), 500);
@@ -174,9 +177,10 @@ function _renderTransactionsInner(section) {
         setTimeout(() => { checkBtn.textContent = '↻ Check for updates'; checkBtn.disabled = false; }, 3000);
       }
     } catch (err) {
-      console.error('Check update error:', err);
-      checkBtn.textContent = '✗ Error — try refreshing';
-      setTimeout(() => { checkBtn.textContent = '↻ Check for updates'; checkBtn.disabled = false; }, 3000);
+      // Fetch failed (local file, network error, etc.) — hard-reload the page
+      console.log('VERSION fetch unavailable, reloading page:', err.message);
+      checkBtn.textContent = '↻ Reloading...';
+      setTimeout(() => location.reload(true), 300);
     }
   });
 

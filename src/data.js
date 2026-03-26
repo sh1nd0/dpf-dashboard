@@ -129,6 +129,7 @@ function _injBadge(name) {
 const PARK_FACTORS = __PARK_FACTORS_JSON__;
 const SPRINT_SPEEDS = __SPRINT_SPEED_JSON__;
 const BULLPEN_ROLES = __BULLPEN_ROLES_JSON__;
+const SEASON_STATUS = __SEASON_STATUS_JSON__;
 
 // Sprint speed lookup by name
 const SPEED_MAP = new Map();

@@ -583,6 +583,16 @@ else:
     print("No injuries file found")
 injuries_json = json.dumps(injuries)
 
+# ── Season status (scraped from CBS — schedule, standings, current matchup) ──
+_season_path = 'data/season_status.json'
+if os.path.exists(_season_path):
+    season_status = json.load(open(_season_path))
+    print(f"Season status loaded: period {season_status.get('currentPeriod','?')}")
+else:
+    season_status = {}
+    print("No season status file found (data/season_status.json)")
+season_status_json = json.dumps(season_status)
+
 from zoneinfo import ZoneInfo
 build_time = datetime.now(ZoneInfo('America/Los_Angeles')).strftime('%b %d, %Y %I:%M %p PST')
 
@@ -660,6 +670,7 @@ _replacements = {
     '__PARK_FACTORS_JSON__': park_factors_json,
     '__SPRINT_SPEED_JSON__': sprint_speed_json,
     '__BULLPEN_ROLES_JSON__': bullpen_roles_json,
+    '__SEASON_STATUS_JSON__': season_status_json,
 }
 for _token, _value in _replacements.items():
     html = html.replace(_token, _value)

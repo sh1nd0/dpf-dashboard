@@ -449,8 +449,9 @@ function _renderAnalyticsInner(section) {
   const myPit = myProfiles.filter(x => x.isPit);
 
   // ── Shared category helpers ──
-  const _batCats = ['avg','hr','r','rbi','sb','obp'];
-  const _pitCats = ['era','whip','so','w','sv','qs'];
+  // League uses 16 categories: 8 batting + 8 pitching
+  const _batCats = ['avg','hr','r','rbi','sb','obp','slg','so'];
+  const _pitCats = ['era','whip','so','w','sv','qs','hld','hr'];
   // Compute projected season totals for ROSTERED (starting lineup) players only.
   function teamCatTotals(teamPlayers) {
     const allPlayers = teamPlayers.map(n => _plyrI(n)).filter(Boolean);
@@ -472,7 +473,7 @@ function _renderAnalyticsInner(section) {
     const benchLcv = [...benchBats, ...benchPits].reduce((s,p) => s + (p.lcv||0), 0);
     const bt = {};
     _batCats.forEach(cat => {
-      if (cat === 'avg' || cat === 'obp') { let tp=0,w=0; bats.forEach(p=>{const pa=p.pa||500;w+=(p[cat]||0)*pa;tp+=pa;}); bt[cat]=tp>0?w/tp:0; }
+      if (cat === 'avg' || cat === 'obp' || cat === 'slg') { let tp=0,w=0; bats.forEach(p=>{const pa=p.pa||500;w+=(p[cat]||0)*pa;tp+=pa;}); bt[cat]=tp>0?w/tp:0; }
       else bt[cat] = bats.reduce((s,p)=>s+(p[cat]||0),0);
     });
     const pt = {};
@@ -503,6 +504,94 @@ function _renderAnalyticsInner(section) {
 
   let html = '<h2 style="font-size:22px;font-weight:800;margin-bottom:16px;">Analytics</h2>';
   html += '<div style="font-size:12px;color:var(--text2);margin-bottom:20px;">Advanced tools for managing your roster, evaluating trades, and tracking your season.</div>';
+
+  // ═══════════════════════════════════════════════
+  // 0. SEASON STATUS / CURRENT MATCHUP
+  // ═══════════════════════════════════════════════
+  html += aPanel('season-status', 'Season Status', '⚾', () => {
+    let h = '';
+    const ss = (typeof SEASON_STATUS !== 'undefined') ? SEASON_STATUS : {};
+    // Calculate current period from known league rules:
+    // Season started March 25, 2026. Bi-weekly periods starting Mondays.
+    // Period 1: Mon Mar 30 – Sun Apr 12, Period 2: Mon Apr 13 – Sun Apr 26, etc.
+    const seasonStart = new Date('2026-03-25');
+    const period1Start = new Date('2026-03-30'); // First Monday after Opening Day
+    const now = new Date();
+    const msPerDay = 86400000;
+    const daysSinceP1 = Math.max(0, Math.floor((now - period1Start) / msPerDay));
+    const currentPeriod = ss.currentPeriod || (daysSinceP1 >= 0 ? Math.floor(daysSinceP1 / 14) + 1 : 0);
+    const periodStart = ss.periodStart || (currentPeriod > 0 ? new Date(period1Start.getTime() + (currentPeriod - 1) * 14 * msPerDay).toISOString().slice(0,10) : '');
+    const periodEnd = ss.periodEnd || (currentPeriod > 0 ? new Date(period1Start.getTime() + currentPeriod * 14 * msPerDay - msPerDay).toISOString().slice(0,10) : '');
+    const daysSinceStart = Math.floor((now - seasonStart) / msPerDay);
+    const daysLeftInPeriod = periodEnd ? Math.max(0, Math.ceil((new Date(periodEnd) - now) / msPerDay)) : 0;
+
+    // Pre-period 1 (Opening Day through first Sunday)
+    const inSeason = daysSinceStart >= 0;
+    const preFirstPeriod = inSeason && currentPeriod < 1;
+
+    if (!inSeason) {
+      h += '<div style="text-align:center;padding:12px;color:var(--text2);font-size:13px;">Season starts March 25, 2026.</div>';
+    } else {
+      // Season banner
+      h += '<div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px;">';
+      h += `<div style="background:var(--surface2);border-radius:6px;padding:8px 12px;flex:1;min-width:100px;"><div style="font-size:10px;color:var(--text2);">Season Day</div><div style="font-size:20px;font-weight:800;">${daysSinceStart + 1}</div></div>`;
+      if (currentPeriod > 0) {
+        h += `<div style="background:var(--surface2);border-radius:6px;padding:8px 12px;flex:1;min-width:100px;"><div style="font-size:10px;color:var(--text2);">Period</div><div style="font-size:20px;font-weight:800;">${currentPeriod} <span style="font-size:11px;color:var(--text2);">of 11</span></div></div>`;
+        h += `<div style="background:var(--surface2);border-radius:6px;padding:8px 12px;flex:1;min-width:100px;"><div style="font-size:10px;color:var(--text2);">Days Left</div><div style="font-size:20px;font-weight:800;color:${daysLeftInPeriod <= 3 ? 'var(--red)' : 'var(--text)'};">${daysLeftInPeriod}</div></div>`;
+      } else {
+        h += `<div style="background:var(--surface2);border-radius:6px;padding:8px 12px;flex:1;min-width:100px;"><div style="font-size:10px;color:var(--text2);">Status</div><div style="font-size:14px;font-weight:700;">Pre-Period 1</div><div style="font-size:10px;color:var(--text2);">H2H matchups start Mon Mar 30</div></div>`;
+      }
+      h += '</div>';
+
+      // Current matchup info (from CBS scrape)
+      if (ss.opponent) {
+        h += '<div style="background:var(--surface2);border-radius:8px;padding:12px 16px;margin-bottom:12px;">';
+        h += `<div style="font-weight:700;font-size:13px;margin-bottom:6px;">Current Matchup: Period ${currentPeriod}</div>`;
+        h += '<div style="display:flex;align-items:center;justify-content:center;gap:16px;padding:8px 0;">';
+        const myName = LEAGUE_TEAMS.find(t => t.mine)?.owner || 'You';
+        h += `<div style="text-align:center;"><div style="font-weight:700;font-size:14px;">${myName}</div>`;
+        if (ss.currentScore) h += `<div style="font-size:28px;font-weight:800;color:var(--green);">${ss.currentScore.me}</div>`;
+        h += '</div>';
+        h += '<div style="font-size:11px;color:var(--text2);">vs</div>';
+        h += `<div style="text-align:center;"><div style="font-weight:700;font-size:14px;">${ss.opponent}</div>`;
+        if (ss.currentScore) h += `<div style="font-size:28px;font-weight:800;color:var(--red);">${ss.currentScore.opp}</div>`;
+        h += '</div>';
+        h += '</div>';
+        if (ss.currentScore && ss.currentScore.tied) h += `<div style="text-align:center;font-size:11px;color:var(--text2);">${ss.currentScore.tied} tied</div>`;
+        h += '</div>';
+      } else if (currentPeriod > 0) {
+        h += '<div style="background:var(--surface2);border-radius:8px;padding:12px 16px;margin-bottom:12px;text-align:center;">';
+        h += '<div style="font-size:11px;color:var(--text2);">Current matchup data will appear once the daily update scrapes CBS standings.</div>';
+        h += '<div style="margin-top:6px;"><a href="https://dpf.baseball.cbssports.com/scoring/live" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:underline;">View live scoring on CBS</a></div>';
+        h += '</div>';
+      }
+
+      // H2H standings (from CBS scrape)
+      if (ss.standings && ss.standings.length > 0) {
+        h += '<div style="font-weight:700;font-size:12px;margin-bottom:6px;">H2H Standings</div>';
+        h += '<table style="width:100%;border-collapse:collapse;font-size:11px;">';
+        h += '<thead><tr style="background:var(--surface2);font-size:10px;color:var(--text2);text-transform:uppercase;"><th style="padding:4px 6px;text-align:left;">Team</th><th style="padding:4px 6px;text-align:center;">W</th><th style="padding:4px 6px;text-align:center;">L</th><th style="padding:4px 6px;text-align:center;">T</th><th style="padding:4px 6px;text-align:right;">Pts</th></tr></thead>';
+        h += '<tbody>';
+        ss.standings.forEach((t, i) => {
+          const isMine = t.mine;
+          const bg = isMine ? 'rgba(74,107,255,0.08)' : (i % 2 === 0 ? 'transparent' : 'var(--surface)');
+          h += `<tr style="background:${bg};border-bottom:1px solid var(--border);"><td style="padding:3px 6px;${isMine?'font-weight:700;':''}">${isMine ? '★ ' : ''}${t.team}</td><td style="padding:3px 6px;text-align:center;">${t.w}</td><td style="padding:3px 6px;text-align:center;">${t.l}</td><td style="padding:3px 6px;text-align:center;">${t.t||0}</td><td style="padding:3px 6px;text-align:right;font-weight:700;">${t.pts}</td></tr>`;
+        });
+        h += '</tbody></table>';
+      }
+
+      // Quick links
+      h += '<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;">';
+      h += '<a href="https://dpf.baseball.cbssports.com/scoring/live" target="_blank" style="font-size:11px;color:var(--accent);padding:4px 8px;background:var(--surface2);border-radius:4px;text-decoration:none;">Live Scoring</a>';
+      h += '<a href="https://dpf.baseball.cbssports.com/standings" target="_blank" style="font-size:11px;color:var(--accent);padding:4px 8px;background:var(--surface2);border-radius:4px;text-decoration:none;">Standings</a>';
+      h += '<a href="https://dpf.baseball.cbssports.com/transactions" target="_blank" style="font-size:11px;color:var(--accent);padding:4px 8px;background:var(--surface2);border-radius:4px;text-decoration:none;">Transactions</a>';
+      h += '<a href="https://dpf.baseball.cbssports.com/roster" target="_blank" style="font-size:11px;color:var(--accent);padding:4px 8px;background:var(--surface2);border-radius:4px;text-decoration:none;">My Roster</a>';
+      h += '<a href="https://dpf.baseball.cbssports.com/free-agents" target="_blank" style="font-size:11px;color:var(--accent);padding:4px 8px;background:var(--surface2);border-radius:4px;text-decoration:none;">Free Agents</a>';
+      h += '</div>';
+    }
+
+    return h;
+  });
 
   // ═══════════════════════════════════════════════
   // 1. KEEPER PLANNER
@@ -747,9 +836,9 @@ function _renderAnalyticsInner(section) {
     let h = '<div style="font-size:11px;color:var(--text2);margin-bottom:10px;">Project your end-of-season category totals and see where you rank. Identifies which categories have the best improvement ROI.</div>';
 
     const batCats = _batCats;
-    const batLabels = {avg:'AVG',hr:'HR',r:'R',rbi:'RBI',sb:'SB',obp:'OBP'};
+    const batLabels = {avg:'BA',hr:'HR',r:'R',rbi:'RBI',sb:'SB',obp:'OBP',slg:'SLG',so:'KO'};
     const pitCats = _pitCats;
-    const pitLabels = {era:'ERA',whip:'WHIP',so:'K',w:'W',sv:'SV',qs:'QS'};
+    const pitLabels = {era:'ERA',whip:'WHIP',so:'K',w:'W',sv:'S',qs:'QS',hld:'HD',hr:'HRA'};
 
     // Build data for all teams
     const teamCats = LEAGUE_TEAMS.map(t => {
@@ -777,16 +866,17 @@ function _renderAnalyticsInner(section) {
     h += '<tbody>';
     let totalBatPts = 0;
     batCats.forEach(cat => {
-      const r = rankIn(cat, 'bat', false);
+      const lowerBetter = (cat === 'so'); // KO: fewer batter strikeouts is better
+      const r = rankIn(cat, 'bat', lowerBetter);
       totalBatPts += r.pts;
-      const isRate = (cat === 'avg' || cat === 'obp');
+      const isRate = (cat === 'avg' || cat === 'obp' || cat === 'slg');
       const fmt = v => isRate ? v.toFixed(3).replace(/^0\./,'.') : Math.round(v);
       const leader = r.all[0];
       // Gap to the rank above me (to improve 1 spot)
       const nextUp = r.rank > 1 ? r.all[r.rank - 2] : null;
-      const gap = nextUp ? (isRate ? (nextUp.val - r.val).toFixed(3) : Math.round(nextUp.val - r.val)) : '—';
+      const gap = nextUp ? (isRate ? Math.abs(nextUp.val - r.val).toFixed(3) : Math.abs(Math.round(nextUp.val - r.val))) : '—';
       const rankClr = r.rank <= 3 ? 'var(--green)' : r.rank >= 10 ? 'var(--red)' : 'var(--text)';
-      h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:4px 6px;font-weight:700;">${batLabels[cat]}</td><td style="padding:4px 6px;text-align:right;">${fmt(r.val)}</td><td style="padding:4px 6px;text-align:center;font-weight:700;color:${rankClr};">${r.rank}/${LEAGUE_TEAMS.length}</td><td style="padding:4px 6px;text-align:center;">${r.pts}</td><td style="padding:4px 6px;text-align:right;color:var(--text2);">${fmt(leader.val)}</td><td style="padding:4px 6px;text-align:right;color:var(--accent);">${gap !== '—' ? '+' + gap : gap}</td></tr>`;
+      h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:4px 6px;font-weight:700;">${batLabels[cat]}</td><td style="padding:4px 6px;text-align:right;">${fmt(r.val)}</td><td style="padding:4px 6px;text-align:center;font-weight:700;color:${rankClr};">${r.rank}/${LEAGUE_TEAMS.length}</td><td style="padding:4px 6px;text-align:center;">${r.pts}</td><td style="padding:4px 6px;text-align:right;color:var(--text2);">${fmt(leader.val)}</td><td style="padding:4px 6px;text-align:right;color:var(--accent);">${gap !== '—' ? (lowerBetter ? '-' : '+') + gap : gap}</td></tr>`;
     });
     h += '</tbody></table></div>';
 
@@ -798,7 +888,7 @@ function _renderAnalyticsInner(section) {
     h += '<tbody>';
     let totalPitPts = 0;
     pitCats.forEach(cat => {
-      const lowerBetter = (cat === 'era' || cat === 'whip');
+      const lowerBetter = (cat === 'era' || cat === 'whip' || cat === 'hr'); // ERA, WHIP, HRA: lower is better
       const r = rankIn(cat, 'pit', lowerBetter);
       totalPitPts += r.pts;
       const isRate = (cat === 'era' || cat === 'whip');
@@ -1017,19 +1107,21 @@ function _renderAnalyticsInner(section) {
     h += '<table style="width:100%;border-collapse:collapse;font-size:11px;">';
     h += `<thead><tr style="background:var(--surface2);font-size:10px;color:var(--text2);text-transform:uppercase;"><th style="padding:4px 6px;text-align:left;">Cat</th><th style="padding:4px 6px;text-align:right;">You</th><th style="padding:4px 6px;text-align:right;">${oppName.slice(0,12)}</th><th style="padding:4px 6px;text-align:center;">Edge</th></tr></thead>`;
     h += '<tbody>';
+    const batLabelsM = {avg:'BA',hr:'HR',r:'R',rbi:'RBI',sb:'SB',obp:'OBP',slg:'SLG',so:'KO'};
     let myBatWins = 0, oppBatWins = 0;
-    ['avg','hr','r','rbi','sb','obp'].forEach(cat => {
+    _batCats.forEach(cat => {
       const my = myTotals.bat[cat] || 0;
       const opp = oppTotals.bat[cat] || 0;
-      const isRate = (cat === 'avg' || cat === 'obp');
+      const isRate = (cat === 'avg' || cat === 'obp' || cat === 'slg');
+      const lowerBetter = (cat === 'so'); // KO: fewer batter strikeouts is better
       const fmt = v => isRate ? v.toFixed(3).replace(/^0\./,'.') : Math.round(v);
       const tied = isRate ? Math.abs(my - opp) < 0.0005 : Math.round(my) === Math.round(opp);
-      const iWin = !tied && my > opp;
-      const oppWin = !tied && opp > my;
+      const iWin = !tied && (lowerBetter ? (my < opp) : (my > opp));
+      const oppWin = !tied && (lowerBetter ? (opp < my) : (opp > my));
       if (tied) { myBatWins += 0.5; oppBatWins += 0.5; }
       else if (iWin) myBatWins++; else oppBatWins++;
       const edgeIcon = tied ? '<span style="color:var(--text2);">½-½</span>' : iWin ? '<span style="color:var(--green);font-weight:700;">✓ You</span>' : `<span style="color:var(--red);">✗ ${oppName.slice(0,8)}</span>`;
-      h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:3px 6px;font-weight:700;">${cat.toUpperCase()}</td><td style="padding:3px 6px;text-align:right;${iWin?'color:var(--green);font-weight:700;':''}">${fmt(my)}</td><td style="padding:3px 6px;text-align:right;${oppWin?'color:var(--green);font-weight:700;':''}">${fmt(opp)}</td><td style="padding:3px 6px;text-align:center;">${edgeIcon}</td></tr>`;
+      h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:3px 6px;font-weight:700;">${batLabelsM[cat]||cat.toUpperCase()}</td><td style="padding:3px 6px;text-align:right;${iWin?'color:var(--green);font-weight:700;':''}">${fmt(my)}</td><td style="padding:3px 6px;text-align:right;${oppWin?'color:var(--green);font-weight:700;':''}">${fmt(opp)}</td><td style="padding:3px 6px;text-align:center;">${edgeIcon}</td></tr>`;
     });
     h += '</tbody></table>';
     const batFmt = v => v % 1 === 0 ? v : v.toFixed(1);
@@ -1042,20 +1134,21 @@ function _renderAnalyticsInner(section) {
     h += '<table style="width:100%;border-collapse:collapse;font-size:11px;">';
     h += `<thead><tr style="background:var(--surface2);font-size:10px;color:var(--text2);text-transform:uppercase;"><th style="padding:4px 6px;text-align:left;">Cat</th><th style="padding:4px 6px;text-align:right;">You</th><th style="padding:4px 6px;text-align:right;">${oppName.slice(0,12)}</th><th style="padding:4px 6px;text-align:center;">Edge</th></tr></thead>`;
     h += '<tbody>';
+    const pitLabelsM = {era:'ERA',whip:'WHIP',so:'K',w:'W',sv:'S',qs:'QS',hld:'HD',hr:'HRA'};
     let myPitWins = 0, oppPitWins = 0;
-    ['era','whip','so','w','sv','qs'].forEach(cat => {
+    _pitCats.forEach(cat => {
       const my = myTotals.pit[cat] || 0;
       const opp = oppTotals.pit[cat] || 0;
       const isRate = (cat === 'era' || cat === 'whip');
       const fmt = v => isRate ? v.toFixed(2) : Math.round(v);
-      const lowerBetter = (cat === 'era' || cat === 'whip');
+      const lowerBetter = (cat === 'era' || cat === 'whip' || cat === 'hr'); // ERA, WHIP, HRA: lower is better
       const tied = isRate ? Math.abs(my - opp) < 0.005 : Math.round(my) === Math.round(opp);
       const iWin = !tied && (lowerBetter ? (my < opp) : (my > opp));
       const oppWin = !tied && (lowerBetter ? (opp < my) : (opp > my));
       if (tied) { myPitWins += 0.5; oppPitWins += 0.5; }
       else if (iWin) myPitWins++; else oppPitWins++;
       const edgeIcon = tied ? '<span style="color:var(--text2);">½-½</span>' : iWin ? '<span style="color:var(--green);font-weight:700;">✓ You</span>' : `<span style="color:var(--red);">✗ ${oppName.slice(0,8)}</span>`;
-      h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:3px 6px;font-weight:700;">${cat === 'so' ? 'K' : cat.toUpperCase()}</td><td style="padding:3px 6px;text-align:right;${iWin?'color:var(--green);font-weight:700;':''}">${fmt(my)}</td><td style="padding:3px 6px;text-align:right;${oppWin?'color:var(--green);font-weight:700;':''}">${fmt(opp)}</td><td style="padding:3px 6px;text-align:center;">${edgeIcon}</td></tr>`;
+      h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:3px 6px;font-weight:700;">${pitLabelsM[cat]||cat.toUpperCase()}</td><td style="padding:3px 6px;text-align:right;${iWin?'color:var(--green);font-weight:700;':''}">${fmt(my)}</td><td style="padding:3px 6px;text-align:right;${oppWin?'color:var(--green);font-weight:700;':''}">${fmt(opp)}</td><td style="padding:3px 6px;text-align:center;">${edgeIcon}</td></tr>`;
     });
     h += '</tbody></table>';
     const pitFmt = v => v % 1 === 0 ? v : v.toFixed(1);
