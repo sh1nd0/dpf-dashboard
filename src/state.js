@@ -1,5 +1,5 @@
 // ── State ─────────────────────────────────────────────────────────────────
-const STATE_VERSION = 21;
+const STATE_VERSION = 22;
 const DEFAULT_KEEPERS = ['James Wood', 'MacKenzie Gore', 'Zach Neto', 'Nick Kurtz', 'Jo Adell'];
 const DEFAULT_KEEPER_ROUNDS = {'James Wood':12, 'MacKenzie Gore':13, 'Jo Adell':10, 'Zach Neto':14, 'Nick Kurtz':11};
 
@@ -96,8 +96,8 @@ if (_saved) {
   state = Object.assign({}, _defaults, _saved);
   // v17 migration: CBS_TEAM_MAP was wrong in v16, corrupting leagueTeams rosters.
   // Reset leagueTeams so they rebuild cleanly from keepers + CBS transactions.
-  if (!_saved._v || _saved._v < 21) {
-    console.log('v21 migration: resetting rosters+drafted (Cade Smith name collision fix)');
+  if (!_saved._v || _saved._v < 22) {
+    console.log('v22 migration: resetting rosters+drafted (re-scraped CBS transactions — fixed bogus PCA drop)');
     state.leagueTeams = {};
     state.leagueMilbKeepers = {};
     state.drafted = {};
@@ -167,19 +167,21 @@ const CBS_ID_TO_LEAGUE = {};
 // 5=Devinney (pick 5), 6=Wolfe (pick 6), 7=Gaerig (pick 4, no txns),
 // 8=Azar (pick 8, no txns), 9=Murphy (pick 9), 10=Brundrett (pick 10),
 // 11=Sarris (pick 11, no txns), 12=Dennewitz (pick 12)
+// CBS team IDs → team names (verified from CBS transactions page dropdown)
+// NOTE: CBS IDs do NOT correspond to draft pick numbers!
 const CBS_TEAM_MAP = {
-  1: LEAGUE_TEAMS.find(t => t.owner === 'David Roth')?.name || 'Dennis Santana - Smooth ft. Rob Thomas',
-  2: LEAGUE_TEAMS.find(t => t.owner === 'Anthony Rescan')?.name || 'Dinosaur Jr Caminero',
-  3: LEAGUE_TEAMS.find(t => t.owner === 'Chris Kaskie')?.name || "Colonel Corbin's Ascent",
-  4: LEAGUE_TEAMS.find(t => t.mine)?.name || 'Okamotomami',
-  5: LEAGUE_TEAMS.find(t => t.owner === 'Fran Devinney')?.name || 'Buddy Buddy Buddy All On Base',
-  6: LEAGUE_TEAMS.find(t => t.owner === 'Ian Wolfe')?.name || 'A Pete Crow-Armstrong Looked at Me',
-  7: LEAGUE_TEAMS.find(t => t.owner === 'Andrew Gaerig')?.name || "Whoop Whoop that's the sound of Dylan Cease",
-  8: LEAGUE_TEAMS.find(t => t.owner === 'Mark Azar')?.name || "Ballesteros, Let the Rhythm Take You Over",
-  9: LEAGUE_TEAMS.find(t => t.owner === 'Blake Murphy')?.name || 'Yesavage Garden',
-  10: LEAGUE_TEAMS.find(t => t.owner === 'Trei Brundrett')?.name || 'Blame it on the Rainiel',
-  11: LEAGUE_TEAMS.find(t => t.owner === 'Eno Sarris')?.name || 'Are we not men? We are Devers!',
-  12: LEAGUE_TEAMS.find(t => t.owner === 'Matt Dennewitz')?.name || "Popped A Mahle I'm Sweating"
+  1: 'Weird Fishes / Arrighetti',          // Chris Kaskie (renamed from "Dennis Santana...")
+  2: 'Dinosaur Jr Caminero',               // Anthony Rescan
+  3: "Colonel Corbin's Ascent",             // David Roth
+  4: 'Okamotomami',                         // Mark Pytlik (mine)
+  5: 'Buddy Buddy Buddy All On Base',       // Fran Devinney
+  6: 'A Pete Crow-Armstrong Looked at Me',  // Ian Wolfe
+  7: "Whoop Whoop that's the sound of Dylan Cease", // Andrew Gaerig
+  8: 'Ballesteros, Let the Rhythm Take You Over',   // Mark Azar
+  9: 'Yesavage Garden',                     // Blake Murphy
+  10: 'Blame it on the Rainiel',            // Trei Brundrett
+  11: 'Before and After Shohei',            // Eno Sarris (renamed)
+  12: "Popped A Mahle I'm Sweating"          // Matt Dennewitz
 };
 // Also build reverse lookup: CBS display team name → league team name
 const CBS_NAME_TO_LEAGUE = {};
@@ -213,8 +215,10 @@ CBS_TRANSACTIONS.forEach(txn => {
 // at the time of the trade, but teams rename frequently. This table lets us resolve
 // "Traded from <old name>" actions correctly, even in multi-team trades.
 const CBS_OLD_NAMES = {
-  'choured in the usa.': 3,   // Kaskie (now Colonel Corbin's Ascent)
+  'choured in the usa.': 1,   // Kaskie's old-old name (CBS ID 1)
+  'Dennis Santana - Smooth ft. Rob Thomas': 1, // Kaskie's previous name (CBS ID 1)
   'Father Jhon Kensy': 4,     // Pytlik (now Okamotomami)
+  'Are we not men? We are Devers!': 11, // Sarris's previous name (CBS ID 11)
 };
 for (const [oldName, cbsId] of Object.entries(CBS_OLD_NAMES)) {
   if (CBS_TEAM_MAP[cbsId] && !CBS_NAME_TO_LEAGUE[oldName]) {
