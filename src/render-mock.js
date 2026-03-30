@@ -555,7 +555,10 @@ function _renderAnalyticsInner(section) {
         if (ss.currentScore) h += `<div style="font-size:28px;font-weight:800;color:var(--green);">${ss.currentScore.me}</div>`;
         h += '</div>';
         h += '<div style="font-size:11px;color:var(--text2);">vs</div>';
-        h += `<div style="text-align:center;"><div style="font-weight:700;font-size:14px;">${ss.opponentTeam || ss.opponent}</div>${ss.opponentTeam && ss.opponent ? `<div style="font-size:10px;color:var(--text2);">${ss.opponent}</div>` : ''}`;
+        const oppTeamName = ss.opponentTeam || ss.opponent;
+        const oppTeamObj = LEAGUE_TEAMS.find(t => t.name === oppTeamName);
+        const oppOwnerName = oppTeamObj?.owner || '';
+        h += `<div style="text-align:center;"><div style="font-weight:700;font-size:14px;">${oppTeamName}</div>${oppOwnerName ? `<div style="font-size:10px;color:var(--text2);">${oppOwnerName}</div>` : ''}`;
         if (ss.currentScore) h += `<div style="font-size:28px;font-weight:800;color:var(--red);">${ss.currentScore.opp}</div>`;
         h += '</div>';
         h += '</div>';
@@ -1168,6 +1171,147 @@ function _renderAnalyticsInner(section) {
     return h;
   });
 
+  // ═══════════════════════════════════════════════
+  // PLAYER COMPARISON TOOL
+  // ═══════════════════════════════════════════════
+  html += aPanel('player-compare', 'Player Comparison', '🔄', () => {
+    let h = '<div style="font-size:11px;color:var(--text2);margin-bottom:10px;">Select players to compare their projected vs actual stats side by side. Type a name to search.</div>';
+
+    // Search input
+    h += '<div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center;">';
+    h += '<input id="cmpSearch" type="text" placeholder="Search player name..." style="padding:6px 10px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--text);font-size:12px;width:220px;">';
+    h += '<div id="cmpSuggestions" style="position:relative;"></div>';
+    h += '<button id="cmpAddMyTeam" class="btn btn-secondary" style="padding:4px 10px;font-size:11px;">+ My Roster</button>';
+    h += '<button id="cmpClear" class="btn btn-secondary" style="padding:4px 10px;font-size:11px;">Clear All</button>';
+    h += '</div>';
+
+    // Selected player chips
+    if (!state._cmpPlayers) state._cmpPlayers = [];
+    const cmpList = state._cmpPlayers;
+    if (cmpList.length > 0) {
+      h += '<div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:10px;">';
+      cmpList.forEach(name => {
+        h += `<span class="cmp-chip" data-name="${encodeURIComponent(name)}" style="display:inline-flex;align-items:center;gap:4px;padding:3px 8px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;font-size:11px;cursor:pointer;" title="Click to remove">${name} <span style="color:var(--text2);font-weight:700;">×</span></span>`;
+      });
+      h += '</div>';
+    }
+
+    // Comparison table
+    const cmpProfiles = cmpList.map(n => _plyrI(n)).filter(Boolean);
+    if (cmpProfiles.length > 0) {
+      const hasBat = cmpProfiles.some(p => !['SP','RP'].includes(p.primaryPos));
+      const hasPit = cmpProfiles.some(p => ['SP','RP'].includes(p.primaryPos));
+
+      if (hasBat) {
+        const bats = cmpProfiles.filter(p => !['SP','RP'].includes(p.primaryPos));
+        h += '<div style="font-weight:700;font-size:12px;margin:8px 0 4px;">Batters — Projected vs Actual</div>';
+        h += '<div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:11px;">';
+        h += '<thead><tr style="background:var(--surface2);font-size:10px;text-transform:uppercase;color:var(--text2);">';
+        h += '<th style="padding:4px 6px;text-align:left;">Player</th><th style="padding:4px 6px;">Pos</th><th style="padding:4px 6px;">LCV</th><th style="padding:4px 6px;">aLCV</th><th style="padding:4px 6px;">\u0394LCV</th>';
+        h += '<th style="padding:4px 6px;border-left:2px solid var(--border);">pAVG</th><th style="padding:4px 6px;">aAVG</th>';
+        h += '<th style="padding:4px 6px;">pOBP</th><th style="padding:4px 6px;">aOBP</th>';
+        h += '<th style="padding:4px 6px;">pSLG</th><th style="padding:4px 6px;">aSLG</th>';
+        h += '<th style="padding:4px 6px;border-left:2px solid var(--border);">pHR</th><th style="padding:4px 6px;">aHR</th>';
+        h += '<th style="padding:4px 6px;">pR</th><th style="padding:4px 6px;">aR</th>';
+        h += '<th style="padding:4px 6px;">pRBI</th><th style="padding:4px 6px;">aRBI</th>';
+        h += '<th style="padding:4px 6px;">pSB</th><th style="padding:4px 6px;">aSB</th>';
+        h += '<th style="padding:4px 6px;">pK</th><th style="padding:4px 6px;">aK</th>';
+        h += '</tr></thead><tbody>';
+        bats.forEach((p, i) => {
+          const bg = i % 2 === 0 ? 'transparent' : 'var(--surface)';
+          const alcv = p.actualLcv != null ? p.actualLcv.toFixed(1) : '—';
+          const dlcv = p.lcvDelta != null ? ((p.lcvDelta > 0 ? '+' : '') + p.lcvDelta.toFixed(1)) : '—';
+          const dlcvClr = p.lcvDelta != null ? (p.lcvDelta >= 0 ? 'var(--green)' : 'var(--red)') : 'var(--text2)';
+          function _cmpCell(proj, act, isRate) {
+            const pv = proj != null && proj !== '' ? (isRate ? parseFloat(proj).toFixed(3) : proj) : '—';
+            const av = act != null && act !== '' ? (isRate ? parseFloat(act).toFixed(3) : act) : '—';
+            const avClr = (proj != null && act != null && proj !== '' && act !== '') ? (isRate ? (parseFloat(act) >= parseFloat(proj) ? 'var(--green)' : 'var(--red)') : (parseInt(act) >= parseInt(proj) ? 'var(--green)' : 'var(--red)')) : '';
+            return `<td style="padding:3px 6px;text-align:right;">${pv}</td><td style="padding:3px 6px;text-align:right;${avClr ? 'color:'+avClr+';font-weight:600;' : ''}">${av}</td>`;
+          }
+          h += `<tr style="background:${bg};border-bottom:1px solid var(--border);">`;
+          h += `<td style="padding:3px 6px;font-weight:600;">${p.name}</td>`;
+          h += `<td style="padding:3px 6px;text-align:center;"><span class="pos-badge pos-${p.primaryPos}" style="padding:1px 4px;font-size:9px;">${p.primaryPos}</span></td>`;
+          h += `<td style="padding:3px 6px;text-align:right;">${(p.lcv||0).toFixed(1)}</td>`;
+          h += `<td style="padding:3px 6px;text-align:right;font-weight:600;">${alcv}</td>`;
+          h += `<td style="padding:3px 6px;text-align:right;color:${dlcvClr};font-weight:600;">${dlcv}</td>`;
+          h += '<td style="border-left:2px solid var(--border);"></td>';
+          // Remove the extra border cell, integrate into first rate pair
+          h = h.slice(0, -('</td>'.length + '<td style="border-left:2px solid var(--border);"></td>'.length));
+          h += `<td style="padding:3px 6px;text-align:right;border-left:2px solid var(--border);">${p.avg != null ? parseFloat(p.avg).toFixed(3) : '—'}</td>`;
+          h += `<td style="padding:3px 6px;text-align:right;${p.s26_avg != null && p.s26_avg !== '' ? (parseFloat(p.s26_avg) >= parseFloat(p.avg) ? 'color:var(--green);font-weight:600;' : 'color:var(--red);font-weight:600;') : ''}">${p.s26_avg != null && p.s26_avg !== '' ? parseFloat(p.s26_avg).toFixed(3) : '—'}</td>`;
+          h += _cmpCell(p.obp, p.s26_obp, true);
+          h += _cmpCell(p.slg, p.s26_slg, true);
+          h += `<td style="padding:3px 6px;text-align:right;border-left:2px solid var(--border);">${p.hr||0}</td><td style="padding:3px 6px;text-align:right;">${p.s26_hr != null && p.s26_hr !== '' ? p.s26_hr : '—'}</td>`;
+          h += _cmpCell(p.r, p.s26_r, false);
+          h += _cmpCell(p.rbi, p.s26_rbi, false);
+          h += _cmpCell(p.sb, p.s26_sb, false);
+          h += _cmpCell(p.so, p.s26_so, false);
+          h += '</tr>';
+        });
+        h += '</tbody></table></div>';
+      }
+
+      if (hasPit) {
+        const pits = cmpProfiles.filter(p => ['SP','RP'].includes(p.primaryPos));
+        h += '<div style="font-weight:700;font-size:12px;margin:12px 0 4px;">Pitchers — Projected vs Actual</div>';
+        h += '<div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:11px;">';
+        h += '<thead><tr style="background:var(--surface2);font-size:10px;text-transform:uppercase;color:var(--text2);">';
+        h += '<th style="padding:4px 6px;text-align:left;">Player</th><th style="padding:4px 6px;">Pos</th><th style="padding:4px 6px;">LCV</th><th style="padding:4px 6px;">aLCV</th><th style="padding:4px 6px;">\u0394LCV</th>';
+        h += '<th style="padding:4px 6px;border-left:2px solid var(--border);">pERA</th><th style="padding:4px 6px;">aERA</th>';
+        h += '<th style="padding:4px 6px;">pWHIP</th><th style="padding:4px 6px;">aWHIP</th>';
+        h += '<th style="padding:4px 6px;border-left:2px solid var(--border);">pK</th><th style="padding:4px 6px;">aK</th>';
+        h += '<th style="padding:4px 6px;">pW</th><th style="padding:4px 6px;">aW</th>';
+        h += '<th style="padding:4px 6px;">pSV</th><th style="padding:4px 6px;">aSV</th>';
+        h += '<th style="padding:4px 6px;">pHD</th><th style="padding:4px 6px;">aHD</th>';
+        h += '<th style="padding:4px 6px;">pQS</th><th style="padding:4px 6px;">aQS</th>';
+        h += '<th style="padding:4px 6px;">pHRA</th><th style="padding:4px 6px;">aHRA</th>';
+        h += '</tr></thead><tbody>';
+        pits.forEach((p, i) => {
+          const bg = i % 2 === 0 ? 'transparent' : 'var(--surface)';
+          const alcv = p.actualLcv != null ? p.actualLcv.toFixed(1) : '—';
+          const dlcv = p.lcvDelta != null ? ((p.lcvDelta > 0 ? '+' : '') + p.lcvDelta.toFixed(1)) : '—';
+          const dlcvClr = p.lcvDelta != null ? (p.lcvDelta >= 0 ? 'var(--green)' : 'var(--red)') : 'var(--text2)';
+          // For ERA/WHIP, lower actual is better (green)
+          function _pitCell(proj, act, isRate, lowerBetter) {
+            const pv = proj != null && proj !== '' ? (isRate ? parseFloat(proj).toFixed(2) : proj) : '—';
+            const av = act != null && act !== '' ? (isRate ? parseFloat(act).toFixed(2) : act) : '—';
+            let avClr = '';
+            if (proj != null && act != null && proj !== '' && act !== '') {
+              if (lowerBetter) avClr = parseFloat(act) <= parseFloat(proj) ? 'var(--green)' : 'var(--red)';
+              else avClr = (isRate ? parseFloat(act) >= parseFloat(proj) : parseInt(act) >= parseInt(proj)) ? 'var(--green)' : 'var(--red)';
+            }
+            return `<td style="padding:3px 6px;text-align:right;">${pv}</td><td style="padding:3px 6px;text-align:right;${avClr ? 'color:'+avClr+';font-weight:600;' : ''}">${av}</td>`;
+          }
+          h += `<tr style="background:${bg};border-bottom:1px solid var(--border);">`;
+          h += `<td style="padding:3px 6px;font-weight:600;">${p.name}</td>`;
+          h += `<td style="padding:3px 6px;text-align:center;"><span class="pos-badge pos-${p.primaryPos}" style="padding:1px 4px;font-size:9px;">${p.primaryPos}</span></td>`;
+          h += `<td style="padding:3px 6px;text-align:right;">${(p.lcv||0).toFixed(1)}</td>`;
+          h += `<td style="padding:3px 6px;text-align:right;font-weight:600;">${alcv}</td>`;
+          h += `<td style="padding:3px 6px;text-align:right;color:${dlcvClr};font-weight:600;">${dlcv}</td>`;
+          h += `<td style="padding:3px 6px;text-align:right;border-left:2px solid var(--border);">${p.era != null ? parseFloat(p.era).toFixed(2) : '—'}</td>`;
+          h += `<td style="padding:3px 6px;text-align:right;${p.s26_era != null && p.s26_era !== '' ? (parseFloat(p.s26_era) <= parseFloat(p.era) ? 'color:var(--green);font-weight:600;' : 'color:var(--red);font-weight:600;') : ''}">${p.s26_era != null && p.s26_era !== '' ? parseFloat(p.s26_era).toFixed(2) : '—'}</td>`;
+          h += _pitCell(p.whip, p.s26_whip, true, true);
+          h += `<td style="padding:3px 6px;text-align:right;border-left:2px solid var(--border);">${p.so||0}</td><td style="padding:3px 6px;text-align:right;">${p.s26_so != null && p.s26_so !== '' ? p.s26_so : '—'}</td>`;
+          h += _pitCell(p.w, p.s26_w, false, false);
+          h += _pitCell(p.sv, p.s26_sv, false, false);
+          h += _pitCell(p.hld, p.s26_hld, false, false);
+          h += _pitCell(p.qs, p.s26_qs, false, false);
+          h += _pitCell(p.hr, p.s26_hr, false, true); // HRA: lower is better
+          h += '</tr>';
+        });
+        h += '</tbody></table></div>';
+      }
+
+      if (cmpProfiles.length === 0 && cmpList.length > 0) {
+        h += '<div style="padding:8px;color:var(--text2);font-size:11px;">No matching players found in the player pool.</div>';
+      }
+    } else {
+      h += '<div style="padding:12px;text-align:center;color:var(--text2);font-size:11px;">Add players above to compare their projected vs actual performance.</div>';
+    }
+
+    return h;
+  });
+
   section.innerHTML = html;
 
   // ── Wire panel collapse/expand ──
@@ -1200,6 +1344,78 @@ function _renderAnalyticsInner(section) {
   if (oppSelect) {
     oppSelect.addEventListener('change', () => {
       state._matchupOpponent = oppSelect.value;
+      save();
+      renderAnalytics();
+    });
+  }
+
+  // ── Wire Player Comparison tool ──
+  const cmpSearchInput = document.getElementById('cmpSearch');
+  const cmpSugBox = document.getElementById('cmpSuggestions');
+  if (cmpSearchInput) {
+    let _cmpDebounce = null;
+    cmpSearchInput.addEventListener('input', () => {
+      clearTimeout(_cmpDebounce);
+      _cmpDebounce = setTimeout(() => {
+        const q = cmpSearchInput.value.trim().toLowerCase();
+        if (q.length < 2) { cmpSugBox.innerHTML = ''; return; }
+        const matches = ALL.filter(p => p.name.toLowerCase().includes(q)).slice(0, 8);
+        if (matches.length === 0) { cmpSugBox.innerHTML = ''; return; }
+        let sh = '<div style="position:absolute;top:0;left:0;z-index:100;background:var(--surface);border:1px solid var(--border);border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,0.15);max-height:200px;overflow-y:auto;min-width:220px;">';
+        matches.forEach(p => {
+          const already = (state._cmpPlayers || []).includes(p.name);
+          sh += `<div class="cmp-sug-item" data-name="${encodeURIComponent(p.name)}" style="padding:6px 10px;cursor:${already?'default':'pointer'};font-size:12px;border-bottom:1px solid var(--border);${already?'opacity:0.4;':''}display:flex;justify-content:space-between;">${p.name} <span style="font-size:10px;color:var(--text2);">${p.primaryPos || p.type}</span></div>`;
+        });
+        sh += '</div>';
+        cmpSugBox.innerHTML = sh;
+        cmpSugBox.querySelectorAll('.cmp-sug-item').forEach(item => {
+          item.addEventListener('click', () => {
+            const name = decodeURIComponent(item.dataset.name);
+            if (!state._cmpPlayers) state._cmpPlayers = [];
+            if (!state._cmpPlayers.includes(name)) {
+              state._cmpPlayers.push(name);
+              save();
+              renderAnalytics();
+            }
+          });
+        });
+      }, 150);
+    });
+    // Close suggestions on outside click
+    document.addEventListener('click', (e) => {
+      if (cmpSugBox && !cmpSugBox.contains(e.target) && e.target !== cmpSearchInput) {
+        cmpSugBox.innerHTML = '';
+      }
+    });
+  }
+  // Remove chip
+  section.querySelectorAll('.cmp-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const name = decodeURIComponent(chip.dataset.name);
+      if (state._cmpPlayers) {
+        state._cmpPlayers = state._cmpPlayers.filter(n => n !== name);
+        save();
+        renderAnalytics();
+      }
+    });
+  });
+  // Add My Roster button
+  const cmpAddMyBtn = document.getElementById('cmpAddMyTeam');
+  if (cmpAddMyBtn) {
+    cmpAddMyBtn.addEventListener('click', () => {
+      if (!state._cmpPlayers) state._cmpPlayers = [];
+      (state.myTeam || []).forEach(n => {
+        if (!state._cmpPlayers.includes(n)) state._cmpPlayers.push(n);
+      });
+      save();
+      renderAnalytics();
+    });
+  }
+  // Clear All button
+  const cmpClearBtn = document.getElementById('cmpClear');
+  if (cmpClearBtn) {
+    cmpClearBtn.addEventListener('click', () => {
+      state._cmpPlayers = [];
       save();
       renderAnalytics();
     });

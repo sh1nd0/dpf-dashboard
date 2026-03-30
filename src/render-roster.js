@@ -238,7 +238,7 @@ function renderRoster() {
   // ── Player View row builder ──
   // padToCols: if set, pad with empty tds to reach this total (for mixed bat/pit tables)
   function pRowStats(p, slot, tag, isPitcher, padToCols) {
-    const cols = isPitcher ? playerPitStatCols : playerBatStatCols;
+    const cols = isPitcher ? filteredPitStatCols : filteredBatStatCols;
     const numCols = cols.length;
     const targetCols = padToCols || numCols;
     if (!p) return `<tr style="opacity:0.3;"><td style="padding:3px 6px;font-weight:600;font-size:11px;">${slot}</td><td colspan="${targetCols-1}" style="padding:3px 6px;color:var(--text2);">—</td></tr>`;
@@ -317,6 +317,17 @@ function renderRoster() {
   html += `<button class="view-btn roster-view-btn ${rosterView==='player'?'active':''}" data-view="player">Player</button>`;
   html += `<button class="view-btn roster-view-btn ${rosterView==='gm'?'active':''}" data-view="gm">GM</button>`;
   html += '</div>';
+  // Stat set toggle (Player view only): pick 2 of 3 stat groups
+  if (!state._statSets) state._statSets = '25,26p,26a'; // default: all three
+  const _ss = state._statSets;
+  if (rosterView === 'player') {
+    html += '<div class="view-toggle" style="margin-left:6px;">';
+    html += `<button class="view-btn stat-set-btn ${_ss==='25,26p'?'active':''}" data-sets="25,26p" title="Show 2025 Actual + 2026 Projected">25A+26P</button>`;
+    html += `<button class="view-btn stat-set-btn ${_ss==='25,26a'?'active':''}" data-sets="25,26a" title="Show 2025 Actual + 2026 Actual">25A+26A</button>`;
+    html += `<button class="view-btn stat-set-btn ${_ss==='26p,26a'?'active':''}" data-sets="26p,26a" title="Show 2026 Projected + 2026 Actual">26P+26A</button>`;
+    html += `<button class="view-btn stat-set-btn ${_ss==='25,26p,26a'?'active':''}" data-sets="25,26p,26a" title="Show all three stat sets">All</button>`;
+    html += '</div>';
+  }
   html += '<span style="width:8px;"></span>';
   html += `<span style="font-size:13px;font-weight:600;">Starting LCV: ${teamLCV.startingLCV.toFixed(1)}</span>`;
   html += `<span style="font-size:11px;color:var(--text2);margin-left:8px;">Total: ${teamLCV.totalLCV.toFixed(1)} | Players: ${teamPlayers.length}</span>`;
@@ -408,6 +419,14 @@ function renderRoster() {
     {key:'s26_sv',label:'SV',align:'right',group:'26a',tip:'2026 Actual Saves'}
   ];
 
+  // Filter stat columns by active stat sets
+  const _activeSets = new Set((_ss || '25,26p,26a').split(','));
+  function _filterStatCols(cols) {
+    return cols.filter(c => !c.group || _activeSets.has(c.group));
+  }
+  const filteredBatStatCols = _filterStatCols(playerBatStatCols);
+  const filteredPitStatCols = _filterStatCols(playerPitStatCols);
+
   // GM view columns (original)
   const rosterCols = [
     {key:null,label:'Slot',align:'left'},
@@ -428,13 +447,13 @@ function renderRoster() {
   // Shared colgroup for all roster tables (main + bench + IL + MiLB) — GM view
   const rosterColgroup = '<colgroup><col style="width:38px"><col style="width:150px"><col style="width:56px"><col style="width:48px"><col style="width:64px"><col style="width:48px"><col style="width:48px"><col style="width:36px"><col style="width:34px"><col style="width:42px"><col style="width:42px"><col style="width:42px"></colgroup>';
   // Player view colgroups: Slot(38) + Player(130) + Pos(36) + stat cols(36px each)
-  // Batting: 3 fixed + 30 stat cols (10 per group × 3 groups)
-  const playerBatColgroup = '<colgroup><col style="width:38px"><col style="width:130px"><col style="width:36px">' + '<col style="width:36px">'.repeat(30) + '</colgroup>';
-  // (Pitching tables now use playerBatColgroup with padded rows for consistent alignment)
+  // Dynamic based on how many stat columns are active
+  const _filteredStatCount = filteredBatStatCols.filter(c => c.group).length;
+  const playerBatColgroup = '<colgroup><col style="width:38px"><col style="width:130px"><col style="width:36px">' + '<col style="width:36px">'.repeat(_filteredStatCount) + '</colgroup>';
 
   // Choose columns based on view
-  const activeCols = rosterView === 'player' ? playerBatStatCols : rosterCols;
-  const activeColsPit = rosterView === 'player' ? playerPitStatCols : rosterCols;
+  const activeCols = rosterView === 'player' ? filteredBatStatCols : rosterCols;
+  const activeColsPit = rosterView === 'player' ? filteredPitStatCols : rosterCols;
   const numBatCols = activeCols.length;
   const numPitCols = activeColsPit.length;
 
@@ -475,7 +494,7 @@ function renderRoster() {
     // Offense table
     html += '<table style="width:100%;border-collapse:collapse;font-size:12px;margin-bottom:6px;table-layout:fixed;">';
     html += playerBatColgroup;
-    html += '<thead>' + buildPlayerStatHeader(playerBatStatCols, false) + '</thead>';
+    html += '<thead>' + buildPlayerStatHeader(filteredBatStatCols, false) + '</thead>';
     html += '<tbody>';
   } else {
     html += '<table style="width:100%;border-collapse:collapse;font-size:12px;margin-bottom:6px;table-layout:fixed;">';
@@ -566,7 +585,7 @@ function renderRoster() {
       html += '</tbody></table>';
       html += '<table style="width:100%;border-collapse:collapse;font-size:12px;margin-top:8px;margin-bottom:6px;table-layout:fixed;">';
       html += playerBatColgroup;
-      html += '<thead>' + buildPlayerStatHeader(playerPitStatCols, true, playerBatStatCols.length) + '</thead>';
+      html += '<thead>' + buildPlayerStatHeader(filteredPitStatCols, true, filteredBatStatCols.length) + '</thead>';
       html += '<tbody>';
       html += `<tr><td colspan="${colSpanPit}" style="padding:6px 6px 2px;font-weight:700;font-size:11px;color:var(--green);border-bottom:1px solid var(--border);">PITCHING (${(bySlot['SP']||[]).length + (bySlot['RP']||[]).length})</td></tr>`;
     } else {
@@ -577,7 +596,7 @@ function renderRoster() {
       const count = ROSTER_SLOTS[slot] || 5;
       for (let i = 0; i < count; i++) {
         const p = bySlot[slot][i];
-        const inner = rowFn(p, slot, '', true, playerBatStatCols.length);
+        const inner = rowFn(p, slot, '', true, filteredBatStatCols.length);
         html += `<tr class="roster-section" data-slot="${slot}">${inner.replace(/^<tr[^>]*>|<\/tr>$/g, '')}</tr>`;
       }
     }
@@ -587,7 +606,7 @@ function renderRoster() {
       const pitBenchColSpan = rosterView === 'player' ? colSpanPit : colSpan;
       html += `<tr><td colspan="${pitBenchColSpan}" style="padding:6px 6px 2px;font-weight:700;font-size:10px;color:var(--text2);border-bottom:1px solid var(--border);">PITCHER'S BENCH (${pitBench.length})</td></tr>`;
       pitBench.forEach(p => {
-        html += rowFn(p, 'BN', '', true, playerBatStatCols.length);
+        html += rowFn(p, 'BN', '', true, filteredBatStatCols.length);
       });
       if (pitBench.length === 0) html += `<tr><td colspan="${pitBenchColSpan}" style="padding:4px 6px;color:var(--text2);font-size:11px;">No pitcher bench players</td></tr>`;
     }
@@ -602,7 +621,7 @@ function renderRoster() {
     html += '<tbody>';
     ilPlayers.forEach(p => {
       const isPit = p && ['SP','RP'].includes(p.primaryPos);
-      html += rowFn(p, 'IL', '<span style="color:var(--red);">IL</span>', isPit, playerBatStatCols.length);
+      html += rowFn(p, 'IL', '<span style="color:var(--red);">IL</span>', isPit, filteredBatStatCols.length);
     });
     if (ilPlayers.length === 0) html += `<tr><td colspan="${colSpan}" style="padding:4px 6px;color:var(--text2);font-size:11px;">No IL players</td></tr>`;
     html += '</tbody></table>';
@@ -617,7 +636,7 @@ function renderRoster() {
     const p = _plyrI(name);
     const isPit = p && ['SP','RP'].includes(p.primaryPos);
     if (p) {
-      html += rowFn(p, 'MiLB', '<span style="color:var(--accent);">MiLB</span>', isPit, playerBatStatCols.length);
+      html += rowFn(p, 'MiLB', '<span style="color:var(--accent);">MiLB</span>', isPit, filteredBatStatCols.length);
     } else {
       // Show prospect info for MiLB keepers not in main player pool
       const pr = findProspect(name);
@@ -998,6 +1017,14 @@ function renderRoster() {
   section.querySelectorAll('.roster-view-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       state._rosterView = btn.dataset.view;
+      renderRoster();
+    });
+  });
+
+  // ── Wire Stat Set toggle ──
+  section.querySelectorAll('.stat-set-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state._statSets = btn.dataset.sets;
       renderRoster();
     });
   });
