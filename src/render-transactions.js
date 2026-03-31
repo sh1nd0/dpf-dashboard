@@ -101,7 +101,10 @@ function _renderTransactionsInner(section) {
     const actionIcon = tx.action === 'Added' ? '+' : tx.action === 'Dropped' ? '−' : '↔';
     let player = _plyrI(tx.player);
     // Cross-check MLB team to avoid name collisions (e.g. Cade Smith NYY vs CLE)
-    if (player && tx.mlbTeam && player.team && player.team !== tx.mlbTeam) player = null;
+    // Normalize CBS↔FanGraphs abbreviations before comparing
+    const _cbsFg = {KC:'KCR',SF:'SFG',TB:'TBR',WAS:'WSN',AZ:'ARI',CWS:'CHW',SD:'SDP'};
+    const _nt = t => _cbsFg[t] || t;
+    if (player && tx.mlbTeam && player.team && _nt(player.team) !== _nt(tx.mlbTeam)) player = null;
     const lcv = player ? (player.lcv||0).toFixed(1) : '—';
     let tvVal = '—';
     if (player) {

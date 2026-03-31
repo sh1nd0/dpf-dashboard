@@ -258,6 +258,7 @@ function renderRoster() {
       } else {
         val = p[c.key];
       }
+      if (c.pad) { tr += '<td></td>'; return; }
       if (val === undefined || val === null || val === '') { tr += `<td style="padding:3px 4px;text-align:right;font-size:10px;color:var(--text2);">—</td>`; return; }
       // Format stat values
       let display;
@@ -390,7 +391,7 @@ function renderRoster() {
     {key:null,label:'Slot',align:'left'},
     {key:'name',label:'Player',align:'left'},
     {key:'pos',label:'Pos',align:'center'},
-    // 2025 Actual — IP W K QS WHIP ERA HD SV
+    // 2025 Actual — IP W K QS WHIP ERA HD SV + 2 spacers to match batter column count
     {key:'s25_ip',label:'IP',align:'right',group:'25',tip:'2025 Actual IP'},
     {key:'s25_w',label:'W',align:'right',group:'25',tip:'2025 Actual Wins'},
     {key:'s25_so',label:'K',align:'right',group:'25',tip:'2025 Actual K'},
@@ -399,6 +400,8 @@ function renderRoster() {
     {key:'s25_era',label:'ERA',align:'right',group:'25',tip:'2025 Actual ERA'},
     {key:'s25_hld',label:'HD',align:'right',group:'25',tip:'2025 Actual Holds'},
     {key:'s25_sv',label:'SV',align:'right',group:'25',tip:'2025 Actual Saves'},
+    {key:'s25_hr',label:'HRA',align:'right',group:'25',tip:'2025 Actual Home Runs Allowed'},
+    {key:'_pad25',label:'',align:'right',group:'25',pad:true},
     // 2026 Projected
     {key:'ip',label:'IP',align:'right',group:'26p',tip:'2026 Projected IP'},
     {key:'w',label:'W',align:'right',group:'26p',tip:'2026 Projected Wins'},
@@ -408,6 +411,8 @@ function renderRoster() {
     {key:'era',label:'ERA',align:'right',group:'26p',tip:'2026 Projected ERA'},
     {key:'hld',label:'HD',align:'right',group:'26p',tip:'2026 Projected Holds'},
     {key:'sv',label:'SV',align:'right',group:'26p',tip:'2026 Projected Saves'},
+    {key:'hr',label:'HRA',align:'right',group:'26p',tip:'2026 Projected Home Runs Allowed'},
+    {key:'_pad26p',label:'',align:'right',group:'26p',pad:true},
     // 2026 Actual
     {key:'s26_ip',label:'IP',align:'right',group:'26a',tip:'2026 Actual IP'},
     {key:'s26_w',label:'W',align:'right',group:'26a',tip:'2026 Actual Wins'},
@@ -416,7 +421,9 @@ function renderRoster() {
     {key:'s26_whip',label:'WHIP',align:'right',group:'26a',tip:'2026 Actual WHIP'},
     {key:'s26_era',label:'ERA',align:'right',group:'26a',tip:'2026 Actual ERA'},
     {key:'s26_hld',label:'HD',align:'right',group:'26a',tip:'2026 Actual Holds'},
-    {key:'s26_sv',label:'SV',align:'right',group:'26a',tip:'2026 Actual Saves'}
+    {key:'s26_sv',label:'SV',align:'right',group:'26a',tip:'2026 Actual Saves'},
+    {key:'s26_hr',label:'HRA',align:'right',group:'26a',tip:'2026 Actual Home Runs Allowed'},
+    {key:'_pad26a',label:'',align:'right',group:'26a',pad:true}
   ];
 
   // Filter stat columns by active stat sets
@@ -478,6 +485,7 @@ function renderRoster() {
     hdr += '<tr style="background:var(--surface2);font-size:10px;text-transform:uppercase;color:var(--text2);">';
     let prevGroup = null;
     cols.forEach(c => {
+      if (c.pad) { hdr += '<th style="padding:3px 4px;"></th>'; return; }
       const tipAttr = c.tip ? ` title="${c.tip}"` : '';
       const borderLeft = (c.group && c.group !== prevGroup) ? 'border-left:2px solid var(--border);' : '';
       prevGroup = c.group || prevGroup;
