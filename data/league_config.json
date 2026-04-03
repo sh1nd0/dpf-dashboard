@@ -1,9 +1,9 @@
 {
   "teams": [
     {
-      "pick": 3,
+      "pick": 5,
       "name": "Weird Fishes / Arrighetti",
-      "owner": "Chris Kaskie"
+      "owner": "Fran Devinney"
     },
     {
       "pick": 2,
@@ -14,7 +14,7 @@
     {
       "pick": 1,
       "name": "Colonel Corbin's Ascent",
-      "owner": "David Roth"
+      "owner": "Chris Kaskie"
     },
     {
       "pick": 4,
@@ -22,9 +22,9 @@
       "owner": "Andrew Gaerig"
     },
     {
-      "pick": 5,
+      "pick": 10,
       "name": "Buddy Buddy Buddy All On Base",
-      "owner": "Fran Devinney"
+      "owner": "Trei Brundrett"
     },
     {
       "pick": 6,
@@ -37,9 +37,9 @@
       "owner": "Anthony Rescan"
     },
     {
-      "pick": 8,
+      "pick": 12,
       "name": "Ballesteros, Let the Rhythm Take You Over",
-      "owner": "Mark Azar"
+      "owner": "Matt Dennewitz"
     },
     {
       "pick": 9,
@@ -47,9 +47,9 @@
       "owner": "Blake Murphy"
     },
     {
-      "pick": 10,
+      "pick": 8,
       "name": "Blame it on the Rainiel",
-      "owner": "Trei Brundrett"
+      "owner": "Mark Azar"
     },
     {
       "pick": 11,
@@ -57,9 +57,9 @@
       "owner": "Eno Sarris"
     },
     {
-      "pick": 12,
+      "pick": 3,
       "name": "Popped A Mahle I'm Sweating",
-      "owner": "Matt Dennewitz"
+      "owner": "David Roth"
     }
   ],
   "rookies": {

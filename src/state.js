@@ -1,5 +1,5 @@
 // ── State ─────────────────────────────────────────────────────────────────
-const STATE_VERSION = 28;
+const STATE_VERSION = 29;
 // Build hash injected at build time — changes whenever source files change.
 // If the stored hash doesn't match, localStorage is automatically flushed
 // so the user always sees correct data after a deploy without hard-refreshing.
@@ -10,7 +10,7 @@ const DEFAULT_KEEPER_ROUNDS = {'James Wood':12, 'MacKenzie Gore':13, 'Jo Adell':
 // All league keepers from 2026 keeper sheet (clamped rounds)
 const DEFAULT_LEAGUE_KEEPERS = {
   'Weird Fishes / Arrighetti': [
-    {name:'Jose Ramirez',rd:1}, {name:'Trea Turner',rd:4}, {name:'Devin Williams',rd:7}, {name:'Brandon Woodruff',rd:10}, {name:'Dylan Crews',rd:15}
+    {name:'Manny Machado',rd:1}, {name:'Spencer Strider',rd:6}, {name:'Colson Montgomery',rd:14}, {name:'Cameron Schlittler',rd:15}, {name:'Ceddanne Rafaela',rd:22}
   ],
   'Okamotomami': [
     {name:'Jo Adell',rd:10}, {name:'Nick Kurtz',rd:11}, {name:'James Wood',rd:12}, {name:'MacKenzie Gore',rd:13}, {name:'Zach Neto',rd:14}
@@ -22,7 +22,7 @@ const DEFAULT_LEAGUE_KEEPERS = {
     {name:'Juan Soto',rd:4}, {name:'Bo Bichette',rd:5}, {name:'Geraldo Perdomo',rd:15}, {name:'Gerrit Cole',rd:26}, {name:'Spencer Torkelson',rd:27}
   ],
   'Blame it on the Rainiel': [
-    {name:'Manny Machado',rd:1}, {name:'Spencer Strider',rd:6}, {name:'Colson Montgomery',rd:14}, {name:'Cameron Schlittler',rd:15}, {name:'Ceddanne Rafaela',rd:22}
+    {name:'Ketel Marte',rd:1}, {name:'Oneil Cruz',rd:8}, {name:'Aroldis Chapman',rd:11}, {name:'Roman Anthony',rd:15}, {name:'Shea Langeliers',rd:16}
   ],
   'A Pete Crow-Armstrong Looked at Me': [
     {name:'Mookie Betts',rd:2}, {name:'Bryce Harper',rd:5}, {name:'Elly De La Cruz',rd:6}, {name:'Pete Crow-Armstrong',rd:11}, {name:'Hunter Goodman',rd:15}
@@ -31,7 +31,7 @@ const DEFAULT_LEAGUE_KEEPERS = {
     {name:'Fernando Tatis Jr.',rd:4}, {name:'Julio Rodriguez',rd:5}, {name:'Gunnar Henderson',rd:6}, {name:'Junior Caminero',rd:12}, {name:'Jackson Holliday',rd:16}
   ],
   "Ballesteros, Let the Rhythm Take You Over": [
-    {name:'Ketel Marte',rd:1}, {name:'Oneil Cruz',rd:8}, {name:'Aroldis Chapman',rd:11}, {name:'Roman Anthony',rd:15}, {name:'Shea Langeliers',rd:16}
+    {name:'Kyle Tucker',rd:2}, {name:'Aaron Judge',rd:3}, {name:'Bobby Witt Jr.',rd:4}, {name:'Paul Skenes',rd:10}, {name:'Garrett Crochet',rd:11}
   ],
   'Yesavage Garden': [
     {name:'CJ Abrams',rd:8}, {name:'Jeremy Pena',rd:15}, {name:'Brent Rooker',rd:17}, {name:'Max Muncy',rd:21}, {name:'Eury Perez',rd:24}
@@ -43,24 +43,24 @@ const DEFAULT_LEAGUE_KEEPERS = {
     {name:'Shohei Ohtani',rd:1}, {name:'Francisco Lindor',rd:3}, {name:'Jackson Merrill',rd:10}, {name:'Tarik Skubal',rd:11}, {name:'Maikel Garcia',rd:15}
   ],
   "Popped A Mahle I'm Sweating": [
-    {name:'Kyle Tucker',rd:2}, {name:'Aaron Judge',rd:3}, {name:'Bobby Witt Jr.',rd:4}, {name:'Paul Skenes',rd:10}, {name:'Garrett Crochet',rd:11}
+    {name:'Jose Ramirez',rd:1}, {name:'Trea Turner',rd:4}, {name:'Devin Williams',rd:7}, {name:'Brandon Woodruff',rd:10}, {name:'Dylan Crews',rd:15}
   ],
 };
 const DEFAULT_MILB_KEEPERS = ['Charlie Condon', 'Max Clark', 'Ethan Holliday', 'Eli Willits'];
 
 // All league rookie/MiLB keepers from 2026 keeper sheet
 const DEFAULT_LEAGUE_MILB_KEEPERS = {
-  'Weird Fishes / Arrighetti': ['Nolan McLean', 'Carson Benge', 'Bryce Eldridge', 'Jonah Tong'],
+  'Weird Fishes / Arrighetti': ['Travis Bazzana', 'Justin Crawford', 'Josue De Paula', 'Andrew Painter'],
   "Colonel Corbin's Ascent": ['JJ Wetherholt', 'Carson Williams', 'George Lombard'],
   "Whoop Whoop that's the sound of Dylan Cease": ['Konnor Griffin', 'Kevin McGonigle', 'Walker Jenkins', 'Luis Pena'],
-  'Blame it on the Rainiel': ['Travis Bazzana', 'Justin Crawford', 'Josue De Paula', 'Andrew Painter'],
+  'Blame it on the Rainiel': ['Liam Doyle', 'Chase Burns', 'Hagen Smith', 'Jordan Lawlar'],
   'A Pete Crow-Armstrong Looked at Me': ['Sal Stewart', 'Jesus Made', 'Colt Emerson', 'Sebastian Wolcott'],
   'Dinosaur Jr Caminero': ['Leo De Vries', 'Aidan Miller', 'Samuel Basallo', 'Bubba Chandler'],
-  "Ballesteros, Let the Rhythm Take You Over": ['Liam Doyle', 'Chase Burns', 'Hagen Smith', 'Jordan Lawlar'],
+  "Ballesteros, Let the Rhythm Take You Over": ['Ralphy Velazquez', 'Zyhir Hope', 'Emmanuel Rodriguez'],
   'Yesavage Garden': ['Trey Yesavage', 'Jett Williams', 'Kade Anderson', 'Edward Florentino'],
   'Buddy Buddy Buddy All On Base': ['Jacob Reimer', 'Caleb Bonemer', 'Quinn Mathews', 'Robby Snelling'],
   'Before and After Shohei': ['Connolly Early', 'Tommy Troy', 'Chase deLauter', 'Spencer Jones'],
-  "Popped A Mahle I'm Sweating": ['Ralphy Velazquez', 'Zyhir Hope', 'Emmanuel Rodriguez']
+  "Popped A Mahle I'm Sweating": ['Nolan McLean', 'Carson Benge', 'Bryce Eldridge', 'Jonah Tong']
 };
 
 // Draft order (pick 1 → pick 12) = reverse of last year's standings
