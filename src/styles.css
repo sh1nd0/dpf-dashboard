@@ -185,6 +185,11 @@ a[title^="Sleeper"] { color:var(--green); } a[title^="Avoid"] { color:var(--red)
   .tag-btns { visibility: visible; } /* Always show tag buttons on touch */
   /* Pace tracker / matchup panels */
   .mock-player-row { font-size: 12px; }
+  /* Action items mobile */
+  .action-items-container { padding: 0 4px; }
+  .action-items-card { padding: 10px; margin-bottom: 10px; }
+  .action-items-badge { font-size: 9px; padding: 3px 6px; }
+  .action-items-row { font-size: 10px; padding: 6px; }
   /* League comparison table */
   .roster-section table { font-size: 11px; }
   .roster-section table td, .roster-section table th { padding: 4px 6px; }
