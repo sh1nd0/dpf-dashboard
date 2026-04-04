@@ -315,6 +315,71 @@
     ]
   },
   {
+    "date": "3/19/26 3:05 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Carson Williams",
+        "pos": "SS",
+        "mlbTeam": "TB",
+        "action": "Dropped"
+      }
+    ]
+  },
+  {
+    "date": "3/19/26 3:06 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Nasim Nunez",
+        "pos": "SS",
+        "mlbTeam": "WAS",
+        "action": "Dropped"
+      }
+    ]
+  },
+  {
+    "date": "3/19/26 3:14 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Shawn Armstrong",
+        "pos": "RP",
+        "mlbTeam": "CLE",
+        "action": "Dropped"
+      }
+    ]
+  },
+  {
+    "date": "3/19/26 3:16 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Camilo Doval",
+        "pos": "RP",
+        "mlbTeam": "NYY",
+        "action": "Dropped"
+      }
+    ]
+  },
+  {
+    "date": "3/19/26 3:16 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Colt Keith",
+        "pos": "2B,3B",
+        "mlbTeam": "DET",
+        "action": "Dropped"
+      }
+    ]
+  },
+  {
     "date": "3/19/26 7:23 AM ET",
     "teamId": "6",
     "teamName": "A Pete Crow-Armstrong Looked at Me",
@@ -453,6 +518,19 @@
         "name": "Alfredo Duno",
         "pos": "C",
         "mlbTeam": "CIN",
+        "action": "Dropped"
+      }
+    ]
+  },
+  {
+    "date": "3/19/26 11:27 PM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "George Lombard",
+        "pos": "SS",
+        "mlbTeam": "NYY",
         "action": "Dropped"
       }
     ]
