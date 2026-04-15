@@ -4,7 +4,26 @@ import pandas as pd
 import numpy as np
 import json
 import re
+import unicodedata
 from datetime import datetime
+
+# ── Accent-normalized name matching ──────────────────────────────────────
+# Matches player names across data sources that differ in accents
+# (e.g. "José" vs "Jose", "Sánchez" vs "Sanchez")
+def _norm_name(s):
+    """Strip accents and lowercase for fuzzy name matching."""
+    return ''.join(
+        c for c in unicodedata.normalize('NFD', str(s))
+        if unicodedata.category(c) != 'Mn'
+    ).lower().strip()
+
+def _build_norm(d):
+    """Build a secondary accent-stripped lookup dict from an existing dict."""
+    return {_norm_name(k): v for k, v in d.items()}
+
+def _get(lookup, norm_lookup, name):
+    """Look up by exact name first, then accent-stripped fallback."""
+    return lookup.get(name) or norm_lookup.get(_norm_name(name)) or {}
 
 # ── Read data ──────────────────────────────────────────────────────────────
 bat = pd.read_csv('data/dc_bat_full.csv', sep='|')
@@ -48,10 +67,13 @@ if os.path.exists(_bat26_path):
         bat26_lookup[r['name']] = {
             'pa': int(r.get('pa',0)), 'hr': int(r.get('hr',0)), 'r': int(r.get('r',0)),
             'rbi': int(r.get('rbi',0)), 'sb': int(r.get('sb',0)), 'so': int(r.get('so',0)),
+            'bb': int(r.get('bb',0)), 'h': int(r.get('h',0)), 'ab': int(r.get('ab',0)),
+            'sf': int(r.get('sf',0)),
             'avg': round(float(r.get('avg',0)), 3), 'obp': round(float(r.get('obp',0)), 3),
             'slg': round(float(r.get('slg',0)), 3)
         }
     print(f"2026 batter stats loaded: {len(bat26_lookup)} players")
+bat26_norm = _build_norm(bat26_lookup)
 if os.path.exists(_pit26_path):
     pit26 = pd.read_csv(_pit26_path, sep='|')
     for _, r in pit26.iterrows():
@@ -59,9 +81,11 @@ if os.path.exists(_pit26_path):
             'ip': round(float(r.get('ip',0)), 1), 'w': int(r.get('w',0)), 'sv': int(r.get('sv',0)),
             'hld': int(r.get('hld',0)), 'era': round(float(r.get('era',0)), 2),
             'whip': round(float(r.get('whip',0)), 3), 'so': int(r.get('so',0)),
-            'hr': int(r.get('hr',0)), 'qs': int(r.get('qs',0))
+            'hr': int(r.get('hr',0)), 'qs': int(r.get('qs',0)),
+            'bb': int(r.get('bb',0)), 'hbp': int(r.get('hbp',0)), 'bf': int(r.get('bf',0))
         }
     print(f"2026 pitcher stats loaded: {len(pit26_lookup)} players")
+pit26_norm = _build_norm(pit26_lookup)
 if not bat26_lookup and not pit26_lookup:
     print("No 2026 in-season stats found (expected before season starts)")
 
@@ -112,48 +136,42 @@ for _, r in statcast_df.iterrows():
         'delta': round(xwoba - woba, 3)
     }
 print(f"Statcast loaded: {len(statcast_lookup)} batters")
+statcast_norm = _build_norm(statcast_lookup)
+stuff_norm = _build_norm(stuff_lookup)
+stuff24_norm = _build_norm(stuff24_lookup)
 
-# ── 2026 Statcast (in-season advanced metrics) ───────────────────────────
-statcast26_lookup = {}
+# ── 2026 Stuff+ (in-season, for trend vs 2025) ───────────────────────────
+stuff26_lookup = {}
+_stuff26_path = 'data/stuff_plus_2026.csv'
+if os.path.exists(_stuff26_path):
+    stuff26_df = pd.read_csv(_stuff26_path, sep='|')
+    for _, r in stuff26_df.iterrows():
+        stuff26_lookup[r['name']] = {
+            'stuff': int(r['stuff_plus']),
+            'loc': int(r['location_plus']),
+            'pitching': int(r['pitching_plus'])
+        }
+    print(f"Stuff+ 2026 loaded: {len(stuff26_lookup)} pitchers")
+else:
+    print("No 2026 Stuff+ file found (data/stuff_plus_2026.csv)")
+stuff26_norm = _build_norm(stuff26_lookup)
+
+# ── 2026 Statcast (batter advanced metrics) ──────────────────────────────
+sc26_lookup = {}
 _sc26_path = 'data/bat_statcast_2026.csv'
 if os.path.exists(_sc26_path):
     sc26_df = pd.read_csv(_sc26_path, sep='|')
     for _, r in sc26_df.iterrows():
-        woba = float(r['woba']) if 'woba' in r and r['woba'] not in ('', None) else 0
-        xwoba = float(r['xwoba']) if 'xwoba' in r and r['xwoba'] not in ('', None) else 0
-        entry = {'woba': round(woba, 3), 'xwoba': round(xwoba, 3), 'delta': round(xwoba - woba, 3)}
-        if 'barrel_pct' in r and pd.notna(r.get('barrel_pct')):
-            brl = float(r['barrel_pct'])
-            if brl <= 1.0:  # source returns proportion (0-1), convert to pct
-                brl *= 100
-            entry['barrel'] = round(brl, 1)
-        if 'hard_hit_pct' in r and pd.notna(r.get('hard_hit_pct')):
-            hh = float(r['hard_hit_pct'])
-            if hh <= 1.0:  # source returns proportion (0-1), convert to pct
-                hh *= 100
-            entry['hardhit'] = round(hh, 1)
-        statcast26_lookup[r['name']] = entry
-    print(f"Statcast 2026 loaded: {len(statcast26_lookup)} batters")
+        sc26_lookup[r['name']] = {
+            'barrel': round(float(r.get('barrel_pct', 0) or 0), 3),
+            'hardhit': round(float(r.get('hard_hit_pct', 0) or 0), 3),
+            'woba': round(float(r.get('woba', 0) or 0), 3),
+            'xwoba': round(float(r.get('xwoba', 0) or 0), 3),
+        }
+    print(f"Statcast 2026 loaded: {len(sc26_lookup)} batters")
 else:
     print("No 2026 Statcast file found (data/bat_statcast_2026.csv)")
-
-stuff26_lookup = {}
-_stf26_path = 'data/stuff_plus_2026.csv'
-if os.path.exists(_stf26_path):
-    stf26_df = pd.read_csv(_stf26_path, sep='|')
-    for _, r in stf26_df.iterrows():
-        entry = {}
-        if 'stuff_plus' in r and pd.notna(r.get('stuff_plus')):
-            entry['stuff'] = int(r['stuff_plus'])
-        if 'location_plus' in r and pd.notna(r.get('location_plus')):
-            entry['loc'] = int(r['location_plus'])
-        if 'pitching_plus' in r and pd.notna(r.get('pitching_plus')):
-            entry['pitching'] = int(r['pitching_plus'])
-        if entry:
-            stuff26_lookup[r['name']] = entry
-    print(f"Stuff+ 2026 loaded: {len(stuff26_lookup)} pitchers")
-else:
-    print("No 2026 Stuff+ file found (data/stuff_plus_2026.csv)")
+sc26_norm = _build_norm(sc26_lookup)
 
 # ── Park factors ──────────────────────────────────────────────────────────
 _pf_path = 'data/park_factors_2025.json'
@@ -278,14 +296,6 @@ bat_pool['lcv'] = (bat_pool['z_avg'] + bat_pool['z_hr'] + bat_pool['z_obp'] +
                    bat_pool['z_slg'] + bat_pool['z_r'] + bat_pool['z_rbi'] +
                    bat_pool['z_sb'] - bat_pool['z_so'])
 
-# Save projected pool means/stds for actual LCV computation (same scale)
-bat_proj_stats = {}
-for col in ['avg','hr','obp','slg','r','rbi','sb','so']:
-    bat_proj_stats[col] = {'mean': bat_pool[col].mean(), 'std': bat_pool[col].std()}
-def zscore_with(val, mean, std):
-    if std == 0: return 0.0
-    return (val - mean) / std
-
 # ── Pitcher LCV ───────────────────────────────────────────────────────────
 pit_pool['z_era']  = zscore(pit_pool['era'])
 pit_pool['z_hld']  = zscore(pit_pool['hld'])
@@ -299,10 +309,6 @@ pit_pool['z_qs']   = zscore(pit_pool['qs'])
 pit_pool['lcv'] = (-pit_pool['z_era'] + pit_pool['z_hld'] - pit_pool['z_hr'] +
                    pit_pool['z_so'] + pit_pool['z_sv'] + pit_pool['z_w'] -
                    pit_pool['z_whip'] + pit_pool['z_qs'])
-
-pit_proj_stats = {}
-for col in ['era','hld','hr','so','sv','w','whip','qs']:
-    pit_proj_stats[col] = {'mean': pit_pool[col].mean(), 'std': pit_pool[col].std()}
 
 # ── Position multipliers & scarcity (updated for LF/CF/RF) ──────────────
 POS_MULT = {'C': 1.0, '1B': 0.4, '2B': 1.2, '3B': 1.2, 'SS': 0.7,
@@ -461,8 +467,8 @@ for _, r in bat_pool.iterrows():
     upside = round(r['lcv'] * af, 2)
     # Draft Priority = 0.4*LCV + 0.6*PNAV (normalized blend favoring positional need)
     dp = round(0.4 * r['lcv'] + 0.6 * r['pnav'], 2)
-    # 2025 actual stats
-    s25 = bat25_lookup.get(r['name'], {})
+    # 2025 actual stats (accent-safe)
+    s25 = bat25_lookup.get(r['name']) or {_norm_name(k): v for k, v in bat25_lookup.items()}.get(_norm_name(r['name'])) or {}
     bat_records.append({
         'name': r['name'], 'team': r['team'], 'pos': r['elig'],
         'type': 'BAT', 'primaryPos': r['primary_pos'],
@@ -485,33 +491,15 @@ for _, r in bat_pool.iterrows():
         's25_slg': s25.get('slg', ''),
         'trend': round(r['trend'], 2) if not pd.isna(r['trend']) else '',
     })
-    # Add Statcast data (2025 baseline)
-    sc = statcast_lookup.get(r['name'], {})
+    # Add Statcast data (accent-safe)
+    sc = _get(statcast_lookup, statcast_norm, r['name'])
     if sc:
         bat_records[-1].update({
             's25_barrel': sc['barrel'], 's25_hardhit': sc['hardhit'],
             's25_woba': sc['woba'], 's25_xwoba': sc['xwoba'], 's25_delta': sc['delta']
         })
-    # Add 2026 Statcast data + divergence from 2025
-    sc26 = statcast26_lookup.get(r['name'], {})
-    if sc26:
-        bat_records[-1].update({
-            's26_barrel': sc26.get('barrel', ''), 's26_hardhit': sc26.get('hardhit', ''),
-            's26_woba': sc26.get('woba', ''), 's26_xwoba': sc26.get('xwoba', ''),
-            's26_xwDelta': sc26.get('delta', '')
-        })
-        # Divergence: 2026 metric minus 2025 metric (positive = improvement)
-        if sc:
-            if sc26.get('barrel') and sc.get('barrel'):
-                bat_records[-1]['dBarrel'] = round(sc26['barrel'] - sc['barrel'], 1)
-            if sc26.get('hardhit') and sc.get('hardhit'):
-                bat_records[-1]['dHardhit'] = round(sc26['hardhit'] - sc['hardhit'], 1)
-            if sc26.get('woba') and sc.get('woba'):
-                bat_records[-1]['dWoba'] = round(sc26['woba'] - sc['woba'], 3)
-            if sc26.get('xwoba') and sc.get('xwoba'):
-                bat_records[-1]['dXwoba'] = round(sc26['xwoba'] - sc['xwoba'], 3)
-    # Add sprint speed
-    ss = sprint_lookup.get(r['name'], {})
+    # Add sprint speed (accent-safe)
+    ss = sprint_lookup.get(r['name']) or sprint_lookup.get(_norm_name(r['name'])) or {}
     if ss:
         bat_records[-1]['sprintSpeed'] = ss['speed']
         bat_records[-1]['speedTier'] = ss['tier']
@@ -521,33 +509,54 @@ for _, r in bat_pool.iterrows():
         bat_records[-1]['parkHR'] = pf.get('hr', 1.0)
         bat_records[-1]['parkR'] = pf.get('r', 1.0)
         bat_records[-1]['parkH'] = pf.get('h', 1.0)
-    # Add 2026 in-season stats if available
-    s26 = bat26_lookup.get(r['name'], {})
+    # Add 2026 in-season stats if available (accent-safe lookup)
+    s26 = _get(bat26_lookup, bat26_norm, r['name'])
     if s26:
+        pa26 = s26.get('pa', 0) or 0
+        so26 = s26.get('so', 0) or 0
+        bb26 = s26.get('bb', 0) or 0
+        avg26 = s26.get('avg', 0) or 0
+        slg26 = s26.get('slg', 0) or 0
+        h26 = s26.get('h', 0) or 0
+        ab26 = s26.get('ab', 0) or 0
+        hr26 = s26.get('hr', 0) or 0
+        sf26 = s26.get('sf', 0) or 0
         bat_records[-1].update({
-            's26_pa': s26.get('pa', ''), 's26_hr': s26.get('hr', ''),
+            's26_pa': pa26, 's26_hr': hr26,
             's26_r': s26.get('r', ''), 's26_rbi': s26.get('rbi', ''),
-            's26_sb': s26.get('sb', ''), 's26_so': s26.get('so', ''),
-            's26_avg': s26.get('avg', ''), 's26_obp': s26.get('obp', ''),
-            's26_slg': s26.get('slg', ''),
+            's26_sb': s26.get('sb', ''), 's26_so': so26,
+            's26_avg': avg26, 's26_obp': s26.get('obp', ''), 's26_slg': slg26,
+            's26_bb': bb26,
         })
-        # Compute actual LCV from 2026 stats, pace-adjusted to full season
-        # Rate stats (AVG/OBP/SLG) are already on the right scale.
-        # Counting stats (HR/R/RBI/SB/SO) are annualized: actual * (projectedPA / actualPA)
-        # Minimum 10 PA to avoid extreme noise from tiny samples
-        a_pa  = s26.get('pa', 0)
-        if a_pa and a_pa >= 10:
-            pace = int(r['pa']) / a_pa  # scale factor to full season
-            a_lcv = (zscore_with(s26.get('avg',0), bat_proj_stats['avg']['mean'], bat_proj_stats['avg']['std'])
-                   + zscore_with(s26.get('hr',0)*pace, bat_proj_stats['hr']['mean'], bat_proj_stats['hr']['std'])
-                   + zscore_with(s26.get('obp',0), bat_proj_stats['obp']['mean'], bat_proj_stats['obp']['std'])
-                   + zscore_with(s26.get('slg',0), bat_proj_stats['slg']['mean'], bat_proj_stats['slg']['std'])
-                   + zscore_with(s26.get('r',0)*pace, bat_proj_stats['r']['mean'], bat_proj_stats['r']['std'])
-                   + zscore_with(s26.get('rbi',0)*pace, bat_proj_stats['rbi']['mean'], bat_proj_stats['rbi']['std'])
-                   + zscore_with(s26.get('sb',0)*pace, bat_proj_stats['sb']['mean'], bat_proj_stats['sb']['std'])
-                   - zscore_with(s26.get('so',0)*pace, bat_proj_stats['so']['mean'], bat_proj_stats['so']['std']))
-            bat_records[-1]['actualLcv'] = round(a_lcv, 2)
-            bat_records[-1]['lcvDelta'] = round(a_lcv - r['lcv'], 2)
+        # Derived: K%, BB%, ISO, BABIP
+        if pa26 >= 5:
+            bat_records[-1]['s26_kpct'] = round(so26 / pa26 * 100, 1)
+            bat_records[-1]['s26_bbpct'] = round(bb26 / pa26 * 100, 1)
+        if slg26 and avg26:
+            bat_records[-1]['s26_iso'] = round(slg26 - avg26, 3)
+        # BABIP = (H - HR) / (AB - K - HR + SF)
+        denom = ab26 - so26 - hr26 + sf26
+        if denom > 0:
+            bat_records[-1]['s26_babip'] = round((h26 - hr26) / denom, 3)
+    # 2026 Statcast advanced metrics (accent-safe lookup)
+    sc26 = _get(sc26_lookup, sc26_norm, r['name'])
+    if sc26:
+        bat_records[-1].update({
+            's26_barrel': sc26.get('barrel', ''),
+            's26_hardhit': sc26.get('hardhit', ''),
+            's26_woba': sc26.get('woba', ''),
+            's26_xwoba': sc26.get('xwoba', ''),
+        })
+        sc25 = _get(statcast_lookup, statcast_norm, r['name'])
+        if sc25:
+            b26 = sc26.get('barrel', ''); b25 = sc25.get('barrel', '')
+            h26v = sc26.get('hardhit', ''); h25 = sc25.get('hardhit', '')
+            w26 = sc26.get('woba', ''); w25 = sc25.get('woba', '')
+            x26 = sc26.get('xwoba', ''); x25 = sc25.get('xwoba', '')
+            if b26 != '' and b25 != '': bat_records[-1]['dBarrel'] = round(float(b26) - float(b25), 3)
+            if h26v != '' and h25 != '': bat_records[-1]['dHardhit'] = round(float(h26v) - float(h25), 3)
+            if w26 != '' and w25 != '': bat_records[-1]['dWoba'] = round(float(w26) - float(w25), 3)
+            if x26 != '' and x25 != '': bat_records[-1]['dXwoba'] = round(float(x26) - float(x25), 3)
 
 pit_records = []
 for _, r in pit_pool.iterrows():
@@ -555,8 +564,8 @@ for _, r in pit_pool.iterrows():
     af = age_factor(age)
     upside = round(r['lcv'] * af, 2)
     dp = round(0.4 * r['lcv'] + 0.6 * r['pnav'], 2)
-    # 2025 actual stats
-    s25 = pit25_lookup.get(r['name'], {})
+    # 2025 actual stats (accent-safe)
+    s25 = pit25_lookup.get(r['name']) or {_norm_name(k): v for k, v in pit25_lookup.items()}.get(_norm_name(r['name'])) or {}
     pit_records.append({
         'name': r['name'], 'team': r['team'], 'pos': r['role'],
         'type': 'PIT', 'primaryPos': r['primary_pos'],
@@ -580,31 +589,17 @@ for _, r in pit_pool.iterrows():
         'trend': round(r['trend'], 2) if not pd.isna(r['trend']) else '',
     })
     # Add Stuff+ data (2025 + 2024 for trend)
-    st = stuff_lookup.get(r['name'], {})
+    st = _get(stuff_lookup, stuff_norm, r['name'])
     if st:
         pit_records[-1].update({
             's25_stuff': st['stuff'], 's25_loc': st['loc'], 's25_pitching': st['pitching']
         })
-    st24 = stuff24_lookup.get(r['name'], {})
+    st24 = _get(stuff24_lookup, stuff24_norm, r['name'])
     if st24:
         pit_records[-1]['s24_stuff'] = st24['stuff']
     # Stuff+ trend: delta between 2025 and 2024
     if st and st24:
         pit_records[-1]['stuffTrend'] = st['stuff'] - st24['stuff']
-    # Add 2026 Stuff+ data + divergence from 2025
-    st26 = stuff26_lookup.get(r['name'], {})
-    if st26:
-        if 'stuff' in st26: pit_records[-1]['s26_stuff'] = st26['stuff']
-        if 'loc' in st26: pit_records[-1]['s26_loc'] = st26['loc']
-        if 'pitching' in st26: pit_records[-1]['s26_pitching'] = st26['pitching']
-        # Divergence: 2026 minus 2025 (positive = improvement)
-        if st:
-            if 'stuff' in st26 and 'stuff' in st:
-                pit_records[-1]['dStuff'] = st26['stuff'] - st['stuff']
-            if 'loc' in st26 and 'loc' in st:
-                pit_records[-1]['dLoc'] = st26['loc'] - st['loc']
-            if 'pitching' in st26 and 'pitching' in st:
-                pit_records[-1]['dPitching'] = st26['pitching'] - st['pitching']
     # Add Eno Sarris rank
     er = eno_rank.get(r['name'], '')
     if er:
@@ -624,34 +619,83 @@ for _, r in pit_pool.iterrows():
     if pf:
         pit_records[-1]['parkHR'] = pf.get('hr', 1.0)
         pit_records[-1]['parkR'] = pf.get('r', 1.0)
-    # Add 2026 in-season stats if available
-    s26 = pit26_lookup.get(r['name'], {})
+    # Add 2026 in-season stats if available (accent-safe lookup)
+    s26 = _get(pit26_lookup, pit26_norm, r['name'])
     if s26:
+        ip26 = s26.get('ip', 0) or 0
+        so26 = s26.get('so', 0) or 0
+        hr26 = s26.get('hr', 0) or 0
+        bb26 = s26.get('bb', 0) or 0
+        hbp26 = s26.get('hbp', 0) or 0
+        bf26 = s26.get('bf', 0) or 0
         pit_records[-1].update({
-            's26_ip': s26.get('ip', ''), 's26_w': s26.get('w', ''),
+            's26_ip': ip26, 's26_w': s26.get('w', ''),
             's26_sv': s26.get('sv', ''), 's26_hld': s26.get('hld', ''),
             's26_era': s26.get('era', ''), 's26_whip': s26.get('whip', ''),
-            's26_so': s26.get('so', ''), 's26_hr': s26.get('hr', ''),
-            's26_qs': s26.get('qs', ''),
+            's26_so': so26, 's26_hr': hr26, 's26_qs': s26.get('qs', ''),
+            's26_bb': bb26,
         })
-        # Compute actual LCV from 2026 stats, pace-adjusted to full season
-        # Rate stats (ERA/WHIP) are already on the right scale.
-        # Counting stats (W/SV/HD/SO/HR/QS) are annualized: actual * (projectedIP / actualIP)
-        # IP threshold: 1 IP for RPs (short outings), 3 IP for SPs (need ~half a start)
-        a_ip = s26.get('ip', 0)
-        _min_ip = 1.0 if r['role'] == 'RP' else 3.0
-        if a_ip and a_ip >= _min_ip:
-            pace = float(r['ip']) / a_ip  # scale factor to full season
-            a_lcv = (-zscore_with(s26.get('era',0), pit_proj_stats['era']['mean'], pit_proj_stats['era']['std'])
-                   + zscore_with(s26.get('hld',0)*pace, pit_proj_stats['hld']['mean'], pit_proj_stats['hld']['std'])
-                   - zscore_with(s26.get('hr',0)*pace, pit_proj_stats['hr']['mean'], pit_proj_stats['hr']['std'])
-                   + zscore_with(s26.get('so',0)*pace, pit_proj_stats['so']['mean'], pit_proj_stats['so']['std'])
-                   + zscore_with(s26.get('sv',0)*pace, pit_proj_stats['sv']['mean'], pit_proj_stats['sv']['std'])
-                   + zscore_with(s26.get('w',0)*pace, pit_proj_stats['w']['mean'], pit_proj_stats['w']['std'])
-                   - zscore_with(s26.get('whip',0), pit_proj_stats['whip']['mean'], pit_proj_stats['whip']['std'])
-                   + zscore_with(s26.get('qs',0)*pace, pit_proj_stats['qs']['mean'], pit_proj_stats['qs']['std']))
-            pit_records[-1]['actualLcv'] = round(a_lcv, 2)
-            pit_records[-1]['lcvDelta'] = round(a_lcv - r['lcv'], 2)
+        # FIP = (13×HR + 3×(BB+HBP) − 2×K) / IP + 3.10
+        if ip26 and ip26 > 0:
+            fip26 = round((13 * hr26 + 3 * (bb26 + hbp26) - 2 * so26) / ip26 + 3.10, 2)
+            pit_records[-1]['s26_fip'] = fip26
+            pit_records[-1]['s26_hr9'] = round(hr26 * 9 / ip26, 2)
+        # K% and BB% relative to batters faced
+        if bf26 and bf26 > 0:
+            pit_records[-1]['s26_kpct'] = round(so26 / bf26 * 100, 1)
+            pit_records[-1]['s26_bbpct'] = round(bb26 / bf26 * 100, 1)
+    # 2026 Stuff+ — accent-safe lookup
+    st26 = _get(stuff26_lookup, stuff26_norm, r['name'])
+    if st26:
+        pit_records[-1].update({
+            's26_stuff': st26['stuff'],
+            's26_loc': st26['loc'],
+            's26_pitching': st26['pitching'],
+        })
+        st25 = _get(stuff_lookup, stuff_norm, r['name'])
+        if st25:
+            pit_records[-1]['dStuff'] = st26['stuff'] - st25['stuff']
+            pit_records[-1]['dLoc'] = st26['loc'] - st25['loc']
+            pit_records[-1]['dPitching'] = st26['pitching'] - st25['pitching']
+
+# ── Compute actualLcv and lcvDelta from 2026 in-season stats ─────────────
+# actualLcv = same z-score formula as projected LCV but computed over 2026 actuals
+# lcvDelta = actualLcv - projected lcv (positive = outperforming)
+def _compute_actual_lcv(records, stat_cols_signs, min_key, min_val):
+    """Compute actualLcv in-place for records with sufficient stats."""
+    pool = [r for r in records
+            if isinstance(r.get(min_key), (int, float)) and r.get(min_key, 0) >= min_val]
+    if len(pool) < 15:
+        return
+    for stat, sign in stat_cols_signs:
+        vals = [r[stat] for r in pool if isinstance(r.get(stat), (int, float)) and r.get(stat) != '']
+        if len(vals) < 5:
+            continue
+        m = sum(vals) / len(vals)
+        s = (sum((v - m)**2 for v in vals) / len(vals)) ** 0.5
+        if s == 0:
+            continue
+        for r in pool:
+            v = r.get(stat)
+            if isinstance(v, (int, float)) and v != '':
+                r['_alv'] = r.get('_alv', 0) + sign * (v - m) / s
+    for r in pool:
+        if '_alv' in r:
+            r['actualLcv'] = round(r.pop('_alv'), 2)
+            r['lcvDelta'] = round(r['actualLcv'] - r.get('lcv', 0), 2)
+
+_bat_s26_stats = [
+    ('s26_avg', 1), ('s26_hr', 1), ('s26_obp', 1), ('s26_slg', 1),
+    ('s26_r', 1), ('s26_rbi', 1), ('s26_sb', 1), ('s26_so', -1),
+]
+_pit_s26_stats = [
+    ('s26_era', -1), ('s26_hld', 1), ('s26_hr', -1), ('s26_so', 1),
+    ('s26_sv', 1), ('s26_w', 1), ('s26_whip', -1), ('s26_qs', 1),
+]
+_compute_actual_lcv(bat_records, _bat_s26_stats, 's26_pa', 10)
+_compute_actual_lcv(pit_records, _pit_s26_stats, 's26_ip', 5)
+print(f"actualLcv computed for {sum(1 for r in bat_records if 'actualLcv' in r)} batters, "
+      f"{sum(1 for r in pit_records if 'actualLcv' in r)} pitchers")
 
 # Sanitize NaN/None values before JSON serialization
 import math as _math
@@ -717,8 +761,6 @@ season_status_json = json.dumps(season_status)
 from zoneinfo import ZoneInfo
 build_time = datetime.now(ZoneInfo('America/Los_Angeles')).strftime('%b %d, %Y %I:%M %p PST')
 
-import hashlib
-
 # ── Version: read from VERSION file ───────────────────────────────────────
 version = open('VERSION').read().strip() if os.path.exists('VERSION') else '0.0'
 print(f"Version: {version}")
@@ -739,7 +781,6 @@ for r in bat_records[:5]:
 
 _JS_MODULES = [
     'src/data.js',
-    'src/time-splits.js',
     'src/keepers.js',
     'src/state.js',
     'src/draft-data.js',
@@ -757,18 +798,6 @@ _JS_MODULES = [
     'src/ui.js',
     'src/init.js',
 ]
-
-# ── Build hash: content-based fingerprint of all source files ─────────────
-# Changes to ANY source file (JS, CSS, data, config) produce a new hash,
-# which triggers an automatic localStorage flush on the client side.
-_hash_sources = _JS_MODULES + ['src/styles.css', 'dashboard.shell.html',
-    'data/cbs_transactions.json', 'data/league_config.json']
-_hasher = hashlib.sha256()
-for _hf in sorted(_hash_sources):
-    if os.path.exists(_hf):
-        _hasher.update(open(_hf, 'rb').read())
-build_hash = _hasher.hexdigest()[:12]
-print(f"Build hash: {build_hash}")
 
 if os.path.exists('dashboard.shell.html') and os.path.exists('src/data.js'):
     print("Building from modular sources (shell + src/*.js)...")
@@ -790,60 +819,6 @@ else:
         html = _tf.read()
 
 # Inject data into template placeholders
-# ── Load daily snapshots for time-split analysis ────────────────────────
-import glob as _glob
-_snap_dir = 'data/snapshots'
-_snapshots = {'dates': [], 'bat': {}, 'pit': {}}
-if os.path.isdir(_snap_dir):
-    # Batting snapshots
-    _bat_snaps = sorted(_glob.glob(os.path.join(_snap_dir, 'bat_*.csv')))
-    _bat_dates = []
-    for _sf in _bat_snaps:
-        _d = os.path.basename(_sf).replace('bat_', '').replace('.csv', '')
-        _bat_dates.append(_d)
-        _sdf = pd.read_csv(_sf, sep='|')
-        for _, _sr in _sdf.iterrows():
-            _name = _sr['name']
-            if _name not in _snapshots['bat']:
-                _snapshots['bat'][_name] = {}
-            # Store as compact array: [pa, ab, h, hr, r, rbi, sb, so, bb, hbp, sf, x1b, x2b, x3b]
-            _row = []
-            for _c in ['pa','ab','h','hr','r','rbi','sb','so','bb','hbp','sf','x1b','x2b','x3b']:
-                _row.append(int(_sr[_c]) if _c in _sr and pd.notna(_sr[_c]) else 0)
-            _snapshots['bat'][_name][_d] = _row
-
-    # Pitching snapshots
-    _pit_snaps = sorted(_glob.glob(os.path.join(_snap_dir, 'pit_*.csv')))
-    _pit_dates = []
-    for _sf in _pit_snaps:
-        _d = os.path.basename(_sf).replace('pit_', '').replace('.csv', '')
-        _pit_dates.append(_d)
-        _sdf = pd.read_csv(_sf, sep='|')
-        for _, _sr in _sdf.iterrows():
-            _name = _sr['name']
-            if _name not in _snapshots['pit']:
-                _snapshots['pit'][_name] = {}
-            # Store as compact array: [ip, w, sv, hld, so, hr, qs, er, h, bb, tbf]
-            _row = []
-            for _c in ['ip','w','sv','hld','so','hr','qs','er','h','bb','tbf']:
-                _row.append(float(_sr[_c]) if _c in _sr and pd.notna(_sr[_c]) else 0)
-            _snapshots['pit'][_name][_d] = _row
-
-    _snapshots['dates'] = sorted(set(_bat_dates + _pit_dates))
-    print(f"Snapshots loaded: {len(_bat_snaps)} batting, {len(_pit_snaps)} pitching, {len(_snapshots['dates'])} unique dates")
-else:
-    print("No snapshots directory found (data/snapshots/) — time splits disabled")
-_snapshots_json = json.dumps(_snapshots)
-
-# ── LCV z-score means/stds for client-side LCV computation ──────────────
-_lcv_stats = {
-    'bat': {col: {'mean': round(bat_proj_stats[col]['mean'], 4), 'std': round(bat_proj_stats[col]['std'], 4)}
-            for col in bat_proj_stats},
-    'pit': {col: {'mean': round(pit_proj_stats[col]['mean'], 4), 'std': round(pit_proj_stats[col]['std'], 4)}
-            for col in pit_proj_stats}
-}
-_lcv_stats_json = json.dumps(_lcv_stats)
-
 _replacements = {
     '__BAT_JSON__': bat_json,
     '__PIT_JSON__': pit_json,
@@ -851,7 +826,6 @@ _replacements = {
     '__CBS_TXNS_JSON__': cbs_txns_json,
     '__PROSPECTS_JSON__': prospects_json,
     '__BUILD_TIME__': build_time,
-    '__BUILD_HASH__': build_hash,
     '__VERSION__': version,
     '__LEAGUE_TEAMS_JSON__': league_teams_json,
     '__LEAGUE_ROOKIES_JSON__': league_rookies_json,
@@ -862,8 +836,6 @@ _replacements = {
     '__SPRINT_SPEED_JSON__': sprint_speed_json,
     '__BULLPEN_ROLES_JSON__': bullpen_roles_json,
     '__SEASON_STATUS_JSON__': season_status_json,
-    '__SNAPSHOTS_JSON__': _snapshots_json,
-    '__LCV_STATS_JSON__': _lcv_stats_json,
 }
 for _token, _value in _replacements.items():
     html = html.replace(_token, _value)

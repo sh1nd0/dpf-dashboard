@@ -93,6 +93,9 @@ def fetch_pitching_stats():
             'whip': safe_float(stat.get('whip')),
             'so': int(stat.get('strikeOuts', 0) or 0),
             'hr': int(stat.get('homeRuns', 0) or 0),
+            'bb': int(stat.get('baseOnBalls', 0) or 0),
+            'hbp': int(stat.get('hitBatsmen', 0) or 0),
+            'bf': int(stat.get('battersFaced', 0) or 0),
             'qs': 0,
             '_pid': pid,
             '_gs': gs,
@@ -153,7 +156,7 @@ def fetch_pitching_stats():
 
     # Write to CSV
     path = os.path.join(OUTDIR, 'pit_2026.csv')
-    cols = ['name', 'team', 'ip', 'w', 'sv', 'hld', 'era', 'whip', 'so', 'hr', 'qs']
+    cols = ['name', 'team', 'ip', 'w', 'sv', 'hld', 'era', 'whip', 'so', 'hr', 'qs', 'bb', 'hbp', 'bf']
     with open(path, 'w') as f:
         f.write('|'.join(cols) + '\n')
         for row in out_rows:
@@ -204,6 +207,10 @@ def fetch_batting_stats():
             'rbi': int(stat.get('rbi', 0) or 0),
             'sb': int(stat.get('stolenBases', 0) or 0),
             'so': int(stat.get('strikeOuts', 0) or 0),
+            'bb': int(stat.get('baseOnBalls', 0) or 0),
+            'h':  int(stat.get('hits', 0) or 0),
+            'ab': int(stat.get('atBats', 0) or 0),
+            'sf': int(stat.get('sacFlies', 0) or 0),
             'avg': safe_float_b(stat.get('avg')),
             'obp': safe_float_b(stat.get('obp')),
             'slg': safe_float_b(stat.get('slg')),
@@ -214,7 +221,7 @@ def fetch_batting_stats():
         return False
 
     path = os.path.join(OUTDIR, 'bat_2026.csv')
-    cols = ['name', 'team', 'pa', 'hr', 'r', 'rbi', 'sb', 'so', 'avg', 'obp', 'slg']
+    cols = ['name', 'team', 'pa', 'hr', 'r', 'rbi', 'sb', 'so', 'bb', 'h', 'ab', 'sf', 'avg', 'obp', 'slg']
     with open(path, 'w') as f:
         f.write('|'.join(cols) + '\n')
         for row in out_rows:
