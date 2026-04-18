@@ -131,7 +131,7 @@ LEAGUE_TEAMS.forEach(t => {
 // Pre-populate league keepers (fuzzy-match names to player pool)
 // Skip the "mine" team — its keepers are handled via state.keepers / state.myTeam
 const _myTeamName = LEAGUE_TEAMS.find(t => t.mine)?.name;
-for (const [teamName, keepers] of Object.entries(DEFAULT_LEAGUE_KEEPERS)) {
+for (const [teamName, keepers] of Object.entries(LEAGUE_KEEPERS)) {
   if (teamName === _myTeamName) continue; // mine team keepers handled separately
   if (!state.leagueTeams[teamName] || state.leagueTeams[teamName].length === 0) {
     const matched = [];
@@ -139,9 +139,9 @@ for (const [teamName, keepers] of Object.entries(DEFAULT_LEAGUE_KEEPERS)) {
       const found = _plyrI(k.name);
       if (found) {
         matched.push(found.name);
-        if (!state.drafted[found.name]) state.drafted[found.name] = { time: Date.now(), mine: false, round: k.rd };
+        if (!state.drafted[found.name]) state.drafted[found.name] = { time: Date.now(), mine: false, round: k.round };
         if (!state.keeperRounds) state.keeperRounds = {};
-        state.keeperRounds[found.name] = k.rd;
+        state.keeperRounds[found.name] = k.round;
       }
     });
     state.leagueTeams[teamName] = matched;

@@ -371,7 +371,7 @@ function renderMockDraftUI() {
     });
     save();
     mockState = null;
-    DPF.ui.currentTab = 'roster';
+    currentTab = 'roster';
     document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === 'roster'));
     render();
   });
@@ -977,7 +977,7 @@ function _renderAnalyticsInner(section) {
     // Collect all MiLB keepers across the league
     const allMilb = [];
     LEAGUE_TEAMS.forEach(t => {
-      const milbList = t.mine ? (state.milbKeepers || []) : (DEFAULT_LEAGUE_MILB_KEEPERS[t.name] || []);
+      const milbList = t.mine ? (state.milbKeepers || []) : (LEAGUE_MILB_KEEPERS[t.name] || []);
       const owner = t.owner || t.name;
       milbList.forEach(name => {
         const pr = findProspect(name);

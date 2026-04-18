@@ -8,12 +8,12 @@ function renderDraftBoard() {
   const keeperGrid = {};  // round -> pickSlot(1-12) -> keeper info
   for (let r = 1; r <= TOTAL_ROUNDS; r++) keeperGrid[r] = {};
 
-  // Place keepers directly from DEFAULT_LEAGUE_KEEPERS (authoritative source)
-  for (const [teamName, keepers] of Object.entries(DEFAULT_LEAGUE_KEEPERS)) {
+  // Place keepers directly from LEAGUE_KEEPERS (authoritative source)
+  for (const [teamName, keepers] of Object.entries(LEAGUE_KEEPERS)) {
     const team = LEAGUE_TEAMS.find(t => t.name === teamName);
     if (!team) continue;
     keepers.forEach(k => {
-      const rd = k.rd;
+      const rd = k.round;
       if (rd && rd >= 1 && rd <= TOTAL_ROUNDS) {
         const p = _plyrI(k.name);
         const nm = p ? p.name : k.name;
@@ -152,7 +152,7 @@ function renderDraftBoard() {
     for (let col = 1; col <= TEAMS; col++) {
       const team = LEAGUE_TEAMS.find(t => t.pick === col);
       const isMe = team && team.mine;
-      const milbList = isMe ? (state.milbKeepers || []) : (DEFAULT_LEAGUE_MILB_KEEPERS[team.name] || []);
+      const milbList = isMe ? (state.milbKeepers || []) : (LEAGUE_MILB_KEEPERS[team.name] || []);
       const rk = milbList[mi];
       if (rk) {
         const p = _plyrI(rk);

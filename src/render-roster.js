@@ -51,7 +51,7 @@ function renderRoster() {
   const isMine = state._rosterTeam === '__mine__';
   const selTeamName = isMine ? LEAGUE_TEAMS.find(t=>t.mine)?.name : state._rosterTeam;
   const teamPlayers = isMine ? (state.myTeam || []) : (state.leagueTeams[selTeamName] || []);
-  const teamMilb = isMine ? (state.milbKeepers || []) : (DEFAULT_LEAGUE_MILB_KEEPERS[selTeamName] || []);
+  const teamMilb = isMine ? (state.milbKeepers || []) : (LEAGUE_MILB_KEEPERS[selTeamName] || []);
   const overrides = isMine ? state.rosterOverrides : (state.leagueRosterOverrides[selTeamName] || {});
 
   // ── Auto-assign logic ──
@@ -291,7 +291,7 @@ function renderRoster() {
 
   // ── HTML ──
   let html = '';
-  const isMyRosterTab = (DPF.ui.currentTab === 'myRoster');
+  const isMyRosterTab = (currentTab === 'myRoster');
 
   // View mode: 'player' or 'gm' — applies to all roster tabs
   if (!state._rosterView) state._rosterView = isMyRosterTab ? 'gm' : 'player';

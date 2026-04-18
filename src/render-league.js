@@ -151,11 +151,11 @@ function renderLeague() {
     LEAGUE_TEAMS.forEach(t => {
       const isMine = t.mine;
       const teamPlayers = isMine ? (state.myTeam || []) : (state.leagueTeams[t.name] || []);
-      const keepers = DEFAULT_LEAGUE_KEEPERS[t.name] || [];
+      const keepers = LEAGUE_KEEPERS[t.name] || [];
       const keeperNames = new Set(keepers.map(k => k.name));
       const keeperRdMap = {};
-      keepers.forEach(k => { keeperRdMap[k.name] = k.rd; });
-      const milb = DEFAULT_LEAGUE_MILB_KEEPERS[t.name] || (t.mine ? (DEFAULT_MILB_KEEPERS || []) : []);
+      keepers.forEach(k => { keeperRdMap[k.name] = k.round; });
+      const milb = LEAGUE_MILB_KEEPERS[t.name] || (t.mine ? (MY_MILB_KEEPERS || []) : []);
       const milbNames = new Set(milb);
       const allRostered = teamPlayers.filter(n => !milbNames.has(n));
       if (allRostered.length === 0 && milb.length === 0) return;
