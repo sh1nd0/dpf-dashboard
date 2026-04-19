@@ -624,7 +624,7 @@
     "name": "Willi Castro",
     "team": "COL",
     "pos": "LF",
-    "status": "DTD",
+    "status": "IL",
     "injury": "Hand",
     "returnDate": "Probable for Apr 18",
     "updated": "Fri, Apr 17"
@@ -777,7 +777,7 @@
     "name": "Isaac Paredes",
     "team": "HOU",
     "pos": "3B",
-    "status": "DTD",
+    "status": "IL",
     "injury": "Leg",
     "returnDate": "Probable for Apr 18",
     "updated": "Fri, Apr 17"
@@ -786,7 +786,7 @@
     "name": "Joey Loperfido",
     "team": "HOU",
     "pos": "OF",
-    "status": "DTD",
+    "status": "IL",
     "injury": "Quadriceps",
     "returnDate": "Probable for Apr 18",
     "updated": "Fri, Apr 17"
@@ -903,7 +903,7 @@
     "name": "Isaac Collins",
     "team": "KC",
     "pos": "LF",
-    "status": "DTD",
+    "status": "IL",
     "injury": "Knee",
     "returnDate": "Probable for Apr 18",
     "updated": "Sat, Apr 18"
@@ -1137,7 +1137,7 @@
     "name": "Graham Pauley",
     "team": "MIA",
     "pos": "3B",
-    "status": "DTD",
+    "status": "IL",
     "injury": "Oblique",
     "returnDate": "Probable for Apr 18",
     "updated": "Fri, Apr 17"
@@ -1317,7 +1317,7 @@
     "name": "Jorge Polanco",
     "team": "NYM",
     "pos": "1B",
-    "status": "DTD",
+    "status": "IL",
     "injury": "Achilles",
     "returnDate": "Probable for Apr 18",
     "updated": "Fri, Apr 17"
@@ -1497,7 +1497,7 @@
     "name": "Freddy Fermin",
     "team": "SD",
     "pos": "C",
-    "status": "DTD",
+    "status": "IL",
     "injury": "Head",
     "returnDate": "Probable for Apr 18",
     "updated": "Fri, Apr 17"
@@ -1650,7 +1650,7 @@
     "name": "Brendan Donovan",
     "team": "SEA",
     "pos": "2B",
-    "status": "DTD",
+    "status": "IL",
     "injury": "Hip",
     "returnDate": "Probable for Apr 18",
     "updated": "Sat, Apr 18"
@@ -1875,7 +1875,7 @@
     "name": "Daulton Varsho",
     "team": "TOR",
     "pos": "LF",
-    "status": "DTD",
+    "status": "IL",
     "injury": "Knee",
     "returnDate": "Probable for Apr 18",
     "updated": "Fri, Apr 17"
