@@ -781,9 +781,35 @@ player_news_json = json.dumps(player_news)
 
 # ── Injuries (scraped from CBS injuries page) ────────────────────────────
 _injuries_path = 'data/injuries.json'
+
+def _unmangle_injury_name(s):
+    """Strip 'X. LastFirst Last' scraper artifact by finding the longest
+    suffix that appears twice (the surname) and keeping the trailing full
+    name. See tools/clean_injuries.py for the canonical implementation."""
+    if not s:
+        return s
+    n = len(s)
+    for length in range(min(n // 2, 30), 3, -1):
+        suffix = s[-length:]
+        earlier = s.rfind(suffix, 0, n - length)
+        if earlier > 0:
+            candidate = s[earlier + length:].strip()
+            if candidate and candidate[0].isupper() and (' ' in candidate or '-' in candidate):
+                return candidate
+    return s
+
 if os.path.exists(_injuries_path):
     injuries = json.load(open(_injuries_path))
-    print(f"Injuries loaded: {len(injuries)} players")
+    # Defensive normalization: even if the file still has mangled names,
+    # the dashboard should see them cleaned.
+    _fixed = 0
+    for _row in injuries:
+        _orig = _row.get('name', '')
+        _clean = _unmangle_injury_name(_orig)
+        if _clean != _orig:
+            _row['name'] = _clean
+            _fixed += 1
+    print(f"Injuries loaded: {len(injuries)} players ({_fixed} names normalized)")
 else:
     injuries = []
     print("No injuries file found")

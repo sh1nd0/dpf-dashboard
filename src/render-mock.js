@@ -551,28 +551,34 @@ function _renderAnalyticsInner(section) {
       }
       h += '</div>';
 
-      // Current matchup info (from CBS scrape) — only show if the scraped
-      // data is for the CURRENT period. Stale period-N data must not
-      // render when we've moved to period N+1.
-      if (ss.opponent && ssPeriodMatches) {
+      // Current matchup info (from CBS scrape). If the scraped period
+      // matches today we show live data; if it's stale (scraper lagged) we
+      // still surface the last-known opponent so the user knows who they
+      // were last facing, clearly labeled as stale.
+      if (ss.opponent) {
+        const staleByPeriod = ss.currentPeriod && ss.currentPeriod !== computedPeriod;
+        const label = staleByPeriod
+          ? `Last Known Matchup: Period ${ss.currentPeriod} <span style="font-size:10px;color:var(--red);font-weight:600;">(stale — waiting on CBS scrape for period ${currentPeriod})</span>`
+          : `Current Matchup: Period ${currentPeriod}`;
         h += '<div style="background:var(--surface2);border-radius:8px;padding:12px 16px;margin-bottom:12px;">';
-        h += `<div style="font-weight:700;font-size:13px;margin-bottom:6px;">Current Matchup: Period ${currentPeriod}</div>`;
+        h += `<div style="font-weight:700;font-size:13px;margin-bottom:6px;">${label}</div>`;
         h += '<div style="display:flex;align-items:center;justify-content:center;gap:16px;padding:8px 0;">';
         const myTeamObj = LEAGUE_TEAMS.find(t => t.mine);
         const myTeamName = myTeamObj?.name || 'My Team';
         const myOwnerName = myTeamObj?.owner || 'You';
         h += `<div style="text-align:center;"><div style="font-weight:700;font-size:14px;">${myTeamName}</div><div style="font-size:10px;color:var(--text2);">${myOwnerName}</div>`;
-        if (ss.currentScore) h += `<div style="font-size:28px;font-weight:800;color:var(--green);">${ss.currentScore.me}</div>`;
+        if (ss.currentScore && !staleByPeriod) h += `<div style="font-size:28px;font-weight:800;color:var(--green);">${ss.currentScore.me}</div>`;
         h += '</div>';
         h += '<div style="font-size:11px;color:var(--text2);">vs</div>';
         const oppTeamName = ss.opponentTeam || ss.opponent;
         const oppTeamObj = LEAGUE_TEAMS.find(t => t.name === oppTeamName);
         const oppOwnerName = oppTeamObj?.owner || '';
         h += `<div style="text-align:center;"><div style="font-weight:700;font-size:14px;">${oppTeamName}</div>${oppOwnerName ? `<div style="font-size:10px;color:var(--text2);">${oppOwnerName}</div>` : ''}`;
-        if (ss.currentScore) h += `<div style="font-size:28px;font-weight:800;color:var(--red);">${ss.currentScore.opp}</div>`;
+        if (ss.currentScore && !staleByPeriod) h += `<div style="font-size:28px;font-weight:800;color:var(--red);">${ss.currentScore.opp}</div>`;
         h += '</div>';
         h += '</div>';
-        if (ss.currentScore && ss.currentScore.tied) h += `<div style="text-align:center;font-size:11px;color:var(--text2);">${ss.currentScore.tied} tied</div>`;
+        if (ss.currentScore && ss.currentScore.tied && !staleByPeriod) h += `<div style="text-align:center;font-size:11px;color:var(--text2);">${ss.currentScore.tied} tied</div>`;
+        if (staleByPeriod) h += `<div style="text-align:center;font-size:11px;color:var(--text2);">Run the daily CBS scrape to refresh period ${currentPeriod} data.</div>`;
         h += '</div>';
       } else if (currentPeriod > 0) {
         h += '<div style="background:var(--surface2);border-radius:8px;padding:12px 16px;margin-bottom:12px;text-align:center;">';
@@ -583,12 +589,16 @@ function _renderAnalyticsInner(section) {
 
       // H2H standings (from CBS scrape)
       if (ss.standings && ss.standings.length > 0) {
-        h += '<div style="font-weight:700;font-size:12px;margin-bottom:6px;">H2H Standings</div>';
+        const _stUpdated = ss.lastUpdated ? `<span style="font-size:10px;color:var(--text2);font-weight:400;margin-left:8px;">last updated ${ss.lastUpdated}</span>` : '';
+        const _stStale = ss.currentPeriod && ss.currentPeriod !== computedPeriod
+          ? `<span style="font-size:10px;color:var(--red);font-weight:600;margin-left:8px;">stale — period ${ss.currentPeriod} data</span>` : '';
+        h += `<div style="font-weight:700;font-size:12px;margin-bottom:6px;">H2H Standings${_stUpdated}${_stStale}</div>`;
         h += '<table style="width:100%;border-collapse:collapse;font-size:11px;">';
         h += '<thead><tr style="background:var(--surface2);font-size:10px;color:var(--text2);text-transform:uppercase;"><th style="padding:4px 6px;text-align:left;">Team</th><th style="padding:4px 6px;text-align:center;">W</th><th style="padding:4px 6px;text-align:center;">L</th><th style="padding:4px 6px;text-align:center;">T</th><th style="padding:4px 6px;text-align:right;">Pts</th></tr></thead>';
         h += '<tbody>';
+        const _myTeamNameForStandings = (LEAGUE_TEAMS.find(t => t.mine) || {}).name;
         ss.standings.forEach((t, i) => {
-          const isMine = t.mine;
+          const isMine = t.mine === true || t.team === _myTeamNameForStandings;
           const bg = isMine ? 'rgba(74,107,255,0.08)' : (i % 2 === 0 ? 'transparent' : 'var(--surface)');
           h += `<tr style="background:${bg};border-bottom:1px solid var(--border);"><td style="padding:3px 6px;${isMine?'font-weight:700;':''}">${isMine ? '★ ' : ''}${t.team}</td><td style="padding:3px 6px;text-align:center;">${t.w}</td><td style="padding:3px 6px;text-align:center;">${t.l}</td><td style="padding:3px 6px;text-align:center;">${t.t||0}</td><td style="padding:3px 6px;text-align:right;font-weight:700;">${t.pts}</td></tr>`;
         });

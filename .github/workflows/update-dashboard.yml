@@ -49,6 +49,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Validate data (safeguards)
+        run: python validate.py
+
       - name: Build dashboard
         run: python build_dashboard.py
 

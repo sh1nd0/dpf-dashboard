@@ -242,8 +242,11 @@ if (CBS_TRANSACTIONS.length > 0) {
     });
   });
 
-  // Rebuild transaction log from CBS data (post-draft only)
+  // Rebuild transaction log from CBS data (post-draft only).
+  // Defensive dedup: collapse byte-identical duplicates AND same-player-on-
+  // same-date-and-team duplicates that slip through the scraper-side cleaner.
   state.transactions = [];
+  const _txnSeen = new Set();
   postDraft.forEach(txn => {
     const teamName = resolveCbsTeam(txn);
     txn.players.forEach(p => {
@@ -260,7 +263,14 @@ if (CBS_TRANSACTIONS.length > 0) {
       let txType = 'add';
       if (action === 'Dropped') txType = 'drop';
       else if (action.startsWith('Traded from')) txType = 'trade';
-      state.transactions.push({ type: txType, player: p.name, date: txn.date.split(' ')[0], from: teamName, cbsAction: action, source: 'CBS', mlbTeam: p.mlbTeam || '' });
+      const dateKey = (txn.date || '').split(' ')[0];
+      // Normalize the "from" key too — mojibake copies of the same team name
+      // would otherwise evade dedup.
+      const fromKey = (teamName || '').replace(/\u2019/g, "'").toLowerCase().trim();
+      const sig = [txType, p.name.toLowerCase(), dateKey, fromKey, (p.mlbTeam || '').toUpperCase()].join('|');
+      if (_txnSeen.has(sig)) return;
+      _txnSeen.add(sig);
+      state.transactions.push({ type: txType, player: p.name, date: dateKey, from: teamName, cbsAction: action, source: 'CBS', mlbTeam: p.mlbTeam || '' });
     });
   });
 

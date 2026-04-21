@@ -328,6 +328,115 @@ def check_roster_sizes(report: Report, cfg: dict | None):
                 report.warn(f"{owner_ln}: keeper '{n}' not on any CBS roster")
 
 
+
+# ── Additional sanity checks (added after trade/injury data-drift incidents) ──
+INJURIES_PATH = os.path.join(DATA_DIR, 'injuries.json')
+
+
+def _mojibake_count(s: str) -> int:
+    if not s:
+        return 0
+    return s.count('Ã') + s.count('Â')
+
+
+def _looks_mangled(name: str) -> bool:
+    """True when a name looks like 'X. LastFirst Last' (scraper concat artifact).
+
+    Uses the same duplicate-suffix detection as tools/clean_injuries.py — if
+    the cleaner would change this name, we flag it.
+    """
+    if not name:
+        return False
+    n = len(name)
+    for length in range(min(n // 2, 30), 3, -1):
+        suffix = name[-length:]
+        earlier = name.rfind(suffix, 0, n - length)
+        if earlier > 0:
+            candidate = name[earlier + length:].strip()
+            if candidate and candidate[0].isupper() and (' ' in candidate or '-' in candidate):
+                return True
+    return False
+
+
+def check_injuries(report: Report):
+    report.section("injuries.json")
+    if not os.path.exists(INJURIES_PATH):
+        report.warn(f"no injuries file at {INJURIES_PATH}")
+        return None
+    inj = _load_json(INJURIES_PATH, report)
+    if not isinstance(inj, list):
+        report.err("injuries.json must be a JSON array")
+        return None
+
+    mangled = [r for r in inj if _looks_mangled((r or {}).get('name', ''))]
+    if mangled:
+        sample = ', '.join(r['name'] for r in mangled[:5])
+        report.err(f"{len(mangled)} injury names look mangled (e.g. {sample}). "
+                   f"Run tools/clean_injuries.py.")
+    return inj
+
+
+def check_rostered_injured(report: Report, cfg: dict | None, inj_list):
+    """Cross-check: every rostered player who has an IL entry in injuries.json
+    should be reachable — i.e. the scraper produced a clean name that the
+    dashboard can match."""
+    report.section("rostered × injuries cross-check")
+    if inj_list is None:
+        return
+    path = CBS_ROSTERS if os.path.exists(CBS_ROSTERS) else CBS_ROSTERS_FALLBACK
+    if not os.path.exists(path):
+        return
+    rosters_raw = _load_json(path, report) or {}
+    rostered = set()
+    for value in rosters_raw.values():
+        if isinstance(value, dict) and 'players' in value:
+            for p in value['players']:
+                if isinstance(p, dict) and p.get('name'):
+                    rostered.add(_strip_accents(p['name']))
+        elif isinstance(value, list):
+            for p in value:
+                if isinstance(p, str):
+                    rostered.add(_strip_accents(p))
+                elif isinstance(p, dict) and p.get('name'):
+                    rostered.add(_strip_accents(p['name']))
+
+    inj_names_norm = {_strip_accents((r or {}).get('name', '')) for r in inj_list}
+    rostered_il = rostered & inj_names_norm
+    # Purely informational: ensure at least a few rostered players are injured.
+    # If ZERO rostered players are in the injury list but the list is non-empty,
+    # that strongly suggests a name-mangling scraper issue.
+    if inj_list and rostered and not rostered_il:
+        report.err("no rostered players found in injuries.json — likely "
+                   "name-mangling issue; check injury name normalization.")
+
+
+def check_tx_mojibake(report: Report, txns):
+    if not txns:
+        return
+    moji_rows = [t for t in txns if _mojibake_count((t.get('teamName') or t.get('team') or '')) > 0]
+    if moji_rows:
+        report.err(f"{len(moji_rows)} transactions have mojibake in team name. "
+                   f"Run tools/clean_transactions.py.")
+
+
+def check_trade_integrity(report: Report, txns):
+    """Every trade date should produce symmetric moves — each team that sent
+    player(s) should also have a receiving row mentioning the other team."""
+    if not txns:
+        return
+    by_date = defaultdict(list)
+    for t in txns:
+        if any('Traded' in (p.get('action') or '') for p in t.get('players') or []):
+            by_date[t.get('date', '')].append(t)
+    broken = []
+    for date, rows in by_date.items():
+        if len(rows) < 2:
+            broken.append((date, len(rows)))
+    if broken:
+        report.warn(f"{len(broken)} trade dates have fewer than 2 rows "
+                    f"(suggests a missing counter-party): {broken[:3]}")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('--fail-on-warn', action='store_true')
@@ -335,8 +444,12 @@ def main() -> int:
 
     report = Report()
     cfg = check_league_config(report)
-    check_transactions(report, cfg)
+    txns, _ = check_transactions(report, cfg)
+    check_tx_mojibake(report, txns)
+    check_trade_integrity(report, txns)
     check_roster_sizes(report, cfg)
+    inj_list = check_injuries(report)
+    check_rostered_injured(report, cfg, inj_list)
     return report.summary(args.fail_on_warn)
 
 

@@ -5,16 +5,18 @@ Usage:
   python3 merge_tx.py new_transactions.json          # merge from file
   echo '[...]' | python3 merge_tx.py -                # merge from stdin
 
-The script deduplicates by (date, teamId, player names) and sorts by date ascending.
-Team names are unstable in CBS (users rename their teams mid-season), so the stable
-team identifier is teamId. If a record lacks teamId, we fall back to a normalized
-team-name key so legacy exports still dedup correctly.
-It NEVER overwrites — it only adds transactions that don't already exist.
+After the raw append+dedup pass, this runs tools/clean_transactions.py to
+collapse partial/duplicate scraper rows into canonical per-transaction
+entries. That keeps the file safe to consume by the dashboard even when the
+scraper emits inconsistent rows (mojibake team names, partial player lists,
+int-vs-str teamId, multiple passes of the same trade, etc).
 """
-import json, sys
+import json
+import os
+import subprocess
+import sys
 from datetime import datetime
 
-# CBS team ID mapping (verified from CBS dropdown April 2026)
 TEAM_IDS = {
     "Weird Fishes / Arrighetti": 1,
     "Dinosaur Jr Caminero": 2,
@@ -30,26 +32,28 @@ TEAM_IDS = {
     "Popped A Mahle I'm Sweating": 12,
 }
 
+
 def normalize_date(d):
-    """Normalize date string by replacing non-breaking spaces with regular spaces."""
     return d.replace('\u00a0', ' ').replace('\xa0', ' ').strip() if d else ''
 
-def tx_key(tx):
-    """Unique key for deduplication.
 
-    Prefer teamId because CBS team names are unstable (owners rename frequently).
-    If teamId is missing (older exports), fall back to a lowercased team-name hash
-    so the key still dedups cleanly across the two formats.
+def tx_key(tx):
+    """Best-effort dedup key applied before the heavy consolidation pass.
+
+    Uses teamId when available (normalized to string) and a sorted player-name
+    tuple. This catches byte-identical duplicates cheaply; the full cleaner
+    handles the semantic (partial-row / mojibake / mis-attributed) cases.
     """
-    players = ",".join(sorted(p["name"] for p in tx.get("players", [])))
+    players = ",".join(sorted((p.get("name") or "").strip() for p in tx.get("players", [])))
     date = normalize_date(tx.get("date", ""))
-    team_id = str(tx.get("teamId") or "").strip()
-    if team_id:
-        team_key = f"id:{team_id}"
+    raw_id = tx.get("teamId")
+    if raw_id not in (None, "", 0, "0"):
+        team_key = f"id:{str(raw_id)}"
     else:
         team_name = (tx.get("teamName") or tx.get("team") or "").strip().lower()
         team_key = f"name:{team_name}"
     return (date, team_key, players)
+
 
 def parse_date(d):
     try:
@@ -57,8 +61,17 @@ def parse_date(d):
     except Exception:
         return datetime.min
 
+
+def run_cleaner():
+    """Run the heavy consolidation pass to collapse scraper duplicates."""
+    cleaner = os.path.join(os.path.dirname(__file__), "tools", "clean_transactions.py")
+    if not os.path.exists(cleaner):
+        print(f"Skipping consolidation pass (missing {cleaner})")
+        return
+    subprocess.check_call([sys.executable, cleaner])
+
+
 def merge(new_txs, filepath="data/cbs_transactions.json"):
-    # Load existing
     try:
         with open(filepath) as f:
             existing = json.load(f)
@@ -67,7 +80,6 @@ def merge(new_txs, filepath="data/cbs_transactions.json"):
 
     existing_keys = set(tx_key(tx) for tx in existing)
 
-    # Add teamId if missing, then merge
     added = 0
     for tx in new_txs:
         if "teamId" not in tx:
@@ -80,14 +92,18 @@ def merge(new_txs, filepath="data/cbs_transactions.json"):
             existing_keys.add(k)
             added += 1
 
-    # Sort by date ascending
     existing.sort(key=lambda x: parse_date(x.get("date", "")))
 
     with open(filepath, "w") as f:
         json.dump(existing, f, indent=2)
 
-    print(f"Merged: {added} new, {len(existing)} total")
+    print(f"Merged: {added} new, {len(existing)} total (pre-clean)")
+
+    # Run the deep consolidation pass — collapses scraper-duplicated rows
+    # (partial player sets, mojibake team names, int-vs-str teamId, etc.)
+    run_cleaner()
     return added, len(existing)
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
