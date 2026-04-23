@@ -220,7 +220,7 @@ function renderMockDraftUI() {
         const border = isKeeper ? 'var(--accent)' : 'var(--green)';
         html += `<div style="background:${bg};border:1px solid ${border};border-radius:4px;padding:2px 6px;font-size:10px;white-space:nowrap;">`;
         const enoTag = p.eno_rank ? ` <span class="eno-rank" style="font-size:8px;" title="Eno 150 Best Pitchers #${p.eno_rank}">P${p.eno_rank}</span>` : '';
-        html += `<span style="color:var(--text2);font-weight:600;">${pos}</span> ${p.name}${_injBadge(p.name)}${enoTag} <small style="opacity:0.6">${(p.lcv||0).toFixed(1)}</small>`;
+        html += `<span style="color:var(--text2);font-weight:600;">${pos}</span> ${p.name}${_injBadge(p.name)}${enoTag} <small style="opacity:0.6">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</small>`;
         if (isKeeper) html += ' <small style="color:var(--accent);">K</small>';
         html += '</div>';
       } else {
@@ -322,7 +322,7 @@ function renderMockDraftUI() {
       html += `<td style="padding:4px 6px;">${tagDot}${p.name} ${enoB}</td>`;
       html += `<td style="padding:4px 6px;">${p.pos}</td>`;
       html += `<td style="padding:4px 6px;">${p.team}</td>`;
-      html += `<td style="text-align:right;padding:4px 6px;">${p.lcv.toFixed(1)}</td>`;
+      html += `<td style="text-align:right;padding:4px 6px;">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</td>`;
       html += `<td style="text-align:right;padding:4px 6px;">${p.pnav.toFixed(1)}</td>`;
       html += `<td style="text-align:right;padding:4px 6px;color:${trendColor};">${trendStr}</td>`;
       html += `<td style="text-align:center;padding:4px 6px;"><button class="btn btn-primary mock-pick-btn" style="padding:2px 10px;font-size:10px;" data-name="${encodeURIComponent(p.name)}">Draft</button></td>`;
@@ -672,7 +672,7 @@ function _renderAnalyticsInner(section) {
       h += `<td style="padding:4px 6px;text-align:center;"><input type="checkbox" class="keeper-plan-cb" data-name="${encodeURIComponent(x.name)}" ${checked} style="cursor:pointer;"></td>`;
       h += `<td style="padding:4px 6px;font-weight:600;">${x.name}${_injBadge(x.name)}</td>`;
       h += `<td style="padding:4px 6px;text-align:center;"><span class="pos-badge pos-${x.primaryPos}">${x.primaryPos}</span></td>`;
-      h += `<td style="padding:4px 6px;text-align:right;">${x.lcv.toFixed(1)}</td>`;
+      h += `<td style="padding:4px 6px;text-align:right;">${(Number.isFinite(x.lcvPlus) ? Math.round(x.lcvPlus).toString() : '—')}</td>`;
       h += `<td style="padding:4px 6px;text-align:center;font-weight:700;">R${x.ki.cost2027}</td>`;
       h += `<td style="padding:4px 6px;text-align:right;">${x.ki.yearsLeft}</td>`;
       h += `<td style="padding:4px 6px;text-align:right;color:${x.ki.surplus2027>=0?'var(--green)':'var(--red)'};">${x.ki.surplus2027.toFixed(1)}</td>`;
@@ -683,7 +683,7 @@ function _renderAnalyticsInner(section) {
     if (notKeepable.length > 0) {
       h += `<tr><td colspan="8" style="padding:8px 6px 4px;font-weight:700;font-size:10px;color:var(--text2);border-top:2px solid var(--border);">NOT KEEPABLE (${notKeepable.length})</td></tr>`;
       notKeepable.sort((a,b) => b.lcv - a.lcv).forEach(x => {
-        h += `<tr style="opacity:0.5;border-bottom:1px solid var(--border);"><td style="padding:4px 6px;text-align:center;">—</td><td style="padding:4px 6px;">${x.name}</td><td style="padding:4px 6px;text-align:center;">${x.primaryPos}</td><td style="padding:4px 6px;text-align:right;">${x.lcv.toFixed(1)}</td><td colspan="4" style="padding:4px 6px;color:var(--red);font-size:10px;">Cannot keep — R${x.ki.effectiveRound} → cost below floor</td></tr>`;
+        h += `<tr style="opacity:0.5;border-bottom:1px solid var(--border);"><td style="padding:4px 6px;text-align:center;">—</td><td style="padding:4px 6px;">${x.name}</td><td style="padding:4px 6px;text-align:center;">${x.primaryPos}</td><td style="padding:4px 6px;text-align:right;">${(Number.isFinite(x.lcvPlus) ? Math.round(x.lcvPlus).toString() : '—')}</td><td colspan="4" style="padding:4px 6px;color:var(--red);font-size:10px;">Cannot keep — R${x.ki.effectiveRound} → cost below floor</td></tr>`;
       });
     }
     h += '</tbody></table>';
@@ -748,7 +748,7 @@ function _renderAnalyticsInner(section) {
         h += '<div style="flex:1;"><div style="font-size:10px;color:var(--red);font-weight:700;margin-bottom:4px;">SENT →</div>';
         trade.sent.forEach(tx => {
           const p = _plyrI(tx.player);
-          const lcv = p ? (p.lcv||0).toFixed(1) : '?';
+          const lcv = p ? (Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—') : '?';
           const alcvPlus = p && p.aLCVPlus != null ? p.aLCVPlus : null;
           const alcvClr = alcvPlus != null ? (alcvPlus >= 115 ? 'var(--green)' : alcvPlus >= 100 ? 'var(--green)' : alcvPlus <= 85 ? 'var(--red)' : 'var(--text2)') : 'var(--text2)';
           let stats = `<span style="color:var(--text2);">(${lcv} LCV`;
@@ -763,7 +763,7 @@ function _renderAnalyticsInner(section) {
         h += '<div style="flex:1;"><div style="font-size:10px;color:var(--green);font-weight:700;margin-bottom:4px;">← RECEIVED</div>';
         trade.received.forEach(tx => {
           const p = _plyrI(tx.player);
-          const lcv = p ? (p.lcv||0).toFixed(1) : '?';
+          const lcv = p ? (Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—') : '?';
           const alcvPlus = p && p.aLCVPlus != null ? p.aLCVPlus : null;
           const alcvClr = alcvPlus != null ? (alcvPlus >= 115 ? 'var(--green)' : alcvPlus >= 100 ? 'var(--green)' : alcvPlus <= 85 ? 'var(--red)' : 'var(--text2)') : 'var(--text2)';
           let stats = `<span style="color:var(--text2);">(${lcv} LCV`;
@@ -823,7 +823,7 @@ function _renderAnalyticsInner(section) {
         h += `<span style="font-weight:700;font-size:12px;">${inj.name}</span>`;
         h += `<span style="font-size:9px;background:${statusClr};color:#fff;padding:1px 4px;border-radius:3px;">${injInfo.status}</span>`;
         const _injAlcv = inj.p && inj.p.aLCVPlus != null ? ` → ${Math.round(inj.p.aLCVPlus)} aLCV+` : (inj.actualLcv != null ? ` → ${inj.actualLcv.toFixed(1)} aLCV` : '');
-        h += `<span style="font-size:10px;color:var(--text2);">${inj.primaryPos} · ${inj.lcv.toFixed(1)} LCV${_injAlcv}</span>`;
+        h += `<span style="font-size:10px;color:var(--text2);">${inj.primaryPos} · ${(Number.isFinite(inj.lcvPlus) ? Math.round(inj.lcvPlus).toString() : '—')} LCV${_injAlcv}</span>`;
         if (injInfo.injury) h += `<span style="font-size:10px;color:var(--text2);">— ${injInfo.injury}</span>`;
         if (injInfo.return) h += `<span style="font-size:10px;color:var(--accent);">ETA: ${injInfo.return}</span>`;
         h += '</div>';
@@ -865,7 +865,7 @@ function _renderAnalyticsInner(section) {
             const _rp = _plyrI(r.name);
             const _rAlcv = _rp && _rp.aLCVPlus != null ? Math.round(_rp.aLCVPlus).toString() : '—';
             const _rAlcvClr = _rp && _rp.aLCVPlus != null ? (_rp.aLCVPlus >= 115 ? 'color:var(--green);font-weight:700;' : _rp.aLCVPlus >= 100 ? 'color:var(--green);' : _rp.aLCVPlus <= 85 ? 'color:var(--red);' : 'color:var(--text2);') : 'color:var(--text2);';
-            h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:3px 4px;font-weight:600;">${r.name}${injTag}</td><td style="padding:3px 4px;text-align:center;">${r.pos}</td><td style="text-align:right;padding:3px 4px;">${r.lcv.toFixed(1)}</td><td style="text-align:right;padding:3px 4px;${_rAlcvClr}">${_rAlcv}</td><td style="text-align:right;padding:3px 4px;color:${diffClr};font-weight:600;">${diff>=0?'+':''}${diff.toFixed(1)}</td><td style="text-align:center;padding:3px 4px;">${srcBadge}</td></tr>`;
+            h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:3px 4px;font-weight:600;">${r.name}${injTag}</td><td style="padding:3px 4px;text-align:center;">${r.pos}</td><td style="text-align:right;padding:3px 4px;">${(Number.isFinite(r.lcvPlus) ? Math.round(r.lcvPlus).toString() : '—')}</td><td style="text-align:right;padding:3px 4px;${_rAlcvClr}">${_rAlcv}</td><td style="text-align:right;padding:3px 4px;color:${diffClr};font-weight:600;">${diff>=0?'+':''}${diff.toFixed(1)}</td><td style="text-align:center;padding:3px 4px;">${srcBadge}</td></tr>`;
           });
           h += '</table>';
         } else {
@@ -1276,7 +1276,7 @@ function _renderAnalyticsInner(section) {
           h += `<tr style="background:${bg};border-bottom:1px solid var(--border);">`;
           h += `<td style="padding:3px 6px;font-weight:600;">${p.name}</td>`;
           h += `<td style="padding:3px 6px;text-align:center;"><span class="pos-badge pos-${p.primaryPos}" style="padding:1px 4px;font-size:9px;">${p.primaryPos}</span></td>`;
-          h += `<td style="padding:3px 6px;text-align:right;">${(p.lcv||0).toFixed(1)}</td>`;
+          h += `<td style="padding:3px 6px;text-align:right;">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</td>`;
           h += `<td style="padding:3px 6px;text-align:right;font-weight:600;${alcvClr}">${alcv}</td>`;
           h += `<td style="padding:3px 6px;text-align:right;color:${dlcvClr};font-weight:600;">${dlcv}</td>`;
           h += '<td style="border-left:2px solid var(--border);"></td>';
@@ -1331,7 +1331,7 @@ function _renderAnalyticsInner(section) {
           h += `<tr style="background:${bg};border-bottom:1px solid var(--border);">`;
           h += `<td style="padding:3px 6px;font-weight:600;">${p.name}</td>`;
           h += `<td style="padding:3px 6px;text-align:center;"><span class="pos-badge pos-${p.primaryPos}" style="padding:1px 4px;font-size:9px;">${p.primaryPos}</span></td>`;
-          h += `<td style="padding:3px 6px;text-align:right;">${(p.lcv||0).toFixed(1)}</td>`;
+          h += `<td style="padding:3px 6px;text-align:right;">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</td>`;
           h += `<td style="padding:3px 6px;text-align:right;font-weight:600;${alcvClr}">${alcv}</td>`;
           h += `<td style="padding:3px 6px;text-align:right;color:${dlcvClr};font-weight:600;">${dlcv}</td>`;
           h += `<td style="padding:3px 6px;text-align:right;border-left:2px solid var(--border);">${p.era != null ? parseFloat(p.era).toFixed(2) : '—'}</td>`;

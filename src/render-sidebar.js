@@ -40,7 +40,7 @@ function renderLiveSidebar() {
         const border = isKeeper ? 'var(--accent)' : 'var(--green)';
         const enoTag = p.eno_rank ? ` <span class="eno-rank" style="font-size:8px;" title="Eno 150 Best Pitchers #${p.eno_rank}">P${p.eno_rank}</span>` : '';
         html += `<div style="background:${bg};border:1px solid ${border};border-radius:4px;padding:2px 6px;font-size:10px;white-space:nowrap;">`;
-        html += `<span style="color:var(--text2);font-weight:600;">${pos}</span> ${p.name}${_injBadge(p.name)}${enoTag} <small style="opacity:0.6">${(p.lcv||0).toFixed(1)}</small>`;
+        html += `<span style="color:var(--text2);font-weight:600;">${pos}</span> ${p.name}${_injBadge(p.name)}${enoTag} <small style="opacity:0.6">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</small>`;
         if (isKeeper) html += ' <small style="color:var(--accent);">K</small>';
         html += '</div>';
       } else {

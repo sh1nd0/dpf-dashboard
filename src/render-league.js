@@ -231,7 +231,7 @@ function renderLeague() {
       rows.forEach(row => {
         const p = row.p;
         const ki = row.ki;
-        const lcv = p ? (p.lcv||0).toFixed(1) : '?';
+        const lcv = p ? (Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—') : '?';
         const pnav = p ? (p.pnav||0).toFixed(1) : '?';
         const keeperStr = row.keeperRd ? `<span style="color:var(--accent);font-weight:600;">R${row.keeperRd}</span>` : '<span style="color:var(--text2);">—</span>';
         const costStr = ki.keepable2027 ? `R${ki.cost2027}` : '✕';
@@ -546,7 +546,7 @@ function renderLeague() {
           <td style="font-weight:600">${p.name}</td>
           <td>${p.pos}</td>
           <td style="font-size:11px">${p.team}</td>
-          <td>${p.lcv.toFixed(1)}</td>
+          <td>${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</td>
           <td style="font-weight:700;color:var(--accent)">${p.dp.toFixed(1)}</td>
         </tr>`;
       });

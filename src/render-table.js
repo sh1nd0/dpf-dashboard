@@ -294,6 +294,15 @@ function render() {
         cls += v >= 110 ? ' val-pos' : v <= 90 ? ' val-neg' : '';
       }
       else if (c.key === 'war') val = val.toFixed(1);
+      else if (c.key === 'lcvPlus') {
+        // Projected LCV+ on wRC+ scale: 100 = pool average, 115 = +1sigma, 85 = -1sigma.
+        const v = parseFloat(val);
+        if (!isFinite(v)) { val = '—'; }
+        else {
+          cls += v >= 115 ? ' val-pos val-pos-strong' : v >= 100 ? ' val-pos' : v <= 85 ? ' val-neg' : '';
+          val = Math.round(v).toString();
+        }
+      }
       else if (c.key === 'aLCVPlus') {
         // aLCV+ on wRC+ scale: 100 = pool average, 115 = +1sigma, 85 = -1sigma
         const v = parseFloat(val);

@@ -332,7 +332,7 @@ function renderFutures() {
         const fvColor = fv >= 70 ? '#daa520' : fv >= 60 ? 'var(--green)' : fv >= 55 ? '#4a90e2' : fv >= 50 ? 'var(--text)' : 'var(--text2)';
         const avgRank = pr && pr.avg_rank ? pr.avg_rank.toFixed(1) : '—';
         const pos = pr ? (pr.pos || '?') : '?';
-        const lcv = r.player && r.player.lcv ? r.player.lcv.toFixed(1) : '—';
+        const lcv = r.player && r.player.lcv ? (Number.isFinite(r.player.lcvPlus) ? Math.round(r.player.lcvPlus).toString() : '—') : '—';
 
         let heliumStr = '';
         if (pr) {

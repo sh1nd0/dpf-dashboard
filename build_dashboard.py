@@ -766,6 +766,20 @@ print(f"actualLcv computed for {sum(1 for r in bat_records if 'actualLcv' in r)}
       f"(SP/RP pools split)")
 
 
+# ── lcvPlus: PROJECTED LCV on the wRC+-style 100-scale ────────────────────
+# Mirrors aLCVPlus, but on projected LCV (the pre-season expectation) rather
+# than the actualLcv (in-season z-scores). Same role buckets so a +1sigma
+# projected SP and a +1sigma projected RP both map to ~115 within their own
+# pool. Drives every place that used to display raw projected lcv.
+_pit_sp_records = [r for r in pit_records if r.get('pos') == 'SP']
+_pit_rp_records = [r for r in pit_records if r.get('pos') != 'SP']
+_apply_plus_metric(bat_records,    'lcv', 'lcvPlus')
+_apply_plus_metric(_pit_sp_records, 'lcv', 'lcvPlus')
+_apply_plus_metric(_pit_rp_records, 'lcv', 'lcvPlus')
+print(f"lcvPlus computed for {sum(1 for r in bat_records if 'lcvPlus' in r)} batters, "
+      f"{sum(1 for r in pit_records if 'lcvPlus' in r)} pitchers")
+
+
 # ── recScore: blended recommendation score ───────────────────────────────
 # 60% aLCV + 15% posFlex + 15% age + 10% LCV  (each z-scored within pool)
 # Drives Roster / Trade Suggestions / Waiver recommendations.

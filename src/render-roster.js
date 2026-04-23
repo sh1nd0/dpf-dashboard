@@ -225,7 +225,7 @@ function renderRoster() {
       `<td style="padding:3px 4px;text-align:center;white-space:nowrap;">${keepHtml}</td>` +
       `<td style="padding:3px 4px;font-size:11px;color:var(--text2);white-space:nowrap;">${p.team||''}</td>` +
       `<td style="padding:3px 4px;font-size:10px;white-space:nowrap;">${(p.pos||p.primaryPos||'').split('/').map(pos => '<span class="pos-badge pos-'+pos+'" style="padding:1px 4px;font-size:9px;margin-right:1px;">'+pos+'</span>').join('')}</td>` +
-      `<td style="padding:3px 4px;text-align:right;font-size:11px;color:${c};font-weight:600;">${(p.lcv||0).toFixed(1)}</td>` +
+      `<td style="padding:3px 4px;text-align:right;font-size:11px;color:${c};font-weight:600;">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</td>` +
       `<td style="padding:3px 4px;text-align:right;font-size:10px;${p.aLCVPlus != null ? (p.aLCVPlus >= 115 ? 'color:var(--green);font-weight:700;' : p.aLCVPlus >= 100 ? 'color:var(--green);' : p.aLCVPlus <= 85 ? 'color:var(--red);' : 'color:var(--text2);') : 'color:var(--text2);'}">${p.aLCVPlus != null ? Math.round(p.aLCVPlus).toString() : '—'}</td>` +
       `<td style="padding:3px 4px;text-align:right;font-size:10px;font-weight:700;${p.rollingLcvPlus14 != null ? (p.rollingLcvPlus14 >= 115 ? 'color:var(--green);font-weight:800;' : p.rollingLcvPlus14 >= 100 ? 'color:var(--green);' : p.rollingLcvPlus14 <= 85 ? 'color:var(--red);' : 'color:var(--text2);') : 'color:var(--text2);'}">${p.rollingLcvPlus14 != null ? Math.round(p.rollingLcvPlus14).toString() : '—'}</td>` +
       `<td style="padding:3px 4px;text-align:right;font-size:11px;">${(p.pnav||0).toFixed(1)}</td>` +
@@ -567,7 +567,7 @@ function renderRoster() {
       if (rsc === 'name') return rsd * a.p.name.localeCompare(b.p.name);
       if (rsc === 'team') return rsd * (a.p.team||'').localeCompare(b.p.team||'');
       if (rsc === 'pos') return rsd * (a.p.pos||'').localeCompare(b.p.pos||'');
-      if (['lcv','pnav','age','actualLcv','aLCVPlus','lcvDelta'].includes(rsc)) {
+      if (['lcv','lcvPlus','pnav','age','actualLcv','aLCVPlus','lcvDelta','rollingLcvPlus14'].includes(rsc)) {
         av = a.p[rsc] != null ? a.p[rsc] : -Infinity;
         bv = b.p[rsc] != null ? b.p[rsc] : -Infinity;
       }
@@ -912,7 +912,7 @@ function renderRoster() {
               const _wRollClr = t.p.rollingLcvPlus14 != null ? (t.p.rollingLcvPlus14 >= 115 ? 'color:var(--green);font-weight:700;' : t.p.rollingLcvPlus14 >= 100 ? 'color:var(--green);' : t.p.rollingLcvPlus14 <= 85 ? 'color:var(--red);' : 'color:var(--text2);') : 'color:var(--text2);';
               const _wRec = t.p.recScorePlus != null ? Math.round(t.p.recScorePlus).toString() : '—';
               const _wRecClr = t.p.recScorePlus != null ? (t.p.recScorePlus >= 109 ? 'color:var(--green);font-weight:700;' : t.p.recScorePlus >= 100 ? 'color:var(--green);' : t.p.recScorePlus <= 88 ? 'color:var(--red);' : 'color:var(--text2);') : 'color:var(--text2);';
-              h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:3px 4px;font-weight:600;">${t.p.name}</td><td style="padding:3px 4px;text-align:center;">${t.p.primaryPos}</td><td style="text-align:right;padding:3px 4px;${_wRecClr}">${_wRec}</td><td style="text-align:right;padding:3px 4px;${_wAlcvClr}">${_wAlcv}</td><td style="text-align:right;padding:3px 4px;${_wRollClr}">${_wRoll}</td><td style="text-align:right;padding:3px 4px;color:var(--text2);">${(t.p.lcv||0).toFixed(1)}</td><td style="text-align:center;padding:3px 4px;font-size:10px;">${keepTag}</td><td style="padding:3px 4px;font-size:10px;color:var(--accent);">${why}</td></tr>`;
+              h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:3px 4px;font-weight:600;">${t.p.name}</td><td style="padding:3px 4px;text-align:center;">${t.p.primaryPos}</td><td style="text-align:right;padding:3px 4px;${_wRecClr}">${_wRec}</td><td style="text-align:right;padding:3px 4px;${_wAlcvClr}">${_wAlcv}</td><td style="text-align:right;padding:3px 4px;${_wRollClr}">${_wRoll}</td><td style="text-align:right;padding:3px 4px;color:var(--text2);">${(Number.isFinite(t.p.lcvPlus) ? Math.round(t.p.lcvPlus).toString() : '—')}</td><td style="text-align:center;padding:3px 4px;font-size:10px;">${keepTag}</td><td style="padding:3px 4px;font-size:10px;color:var(--accent);">${why}</td></tr>`;
             });
             h += '</table>';
           } else { h += '<div style="font-size:11px;color:var(--text2);">No strong waiver targets found.</div>'; }
@@ -966,7 +966,7 @@ function renderRoster() {
               const _dRollClr = t.p.rollingLcvPlus14 != null ? (t.p.rollingLcvPlus14 >= 115 ? 'color:var(--green);font-weight:700;' : t.p.rollingLcvPlus14 >= 100 ? 'color:var(--green);' : t.p.rollingLcvPlus14 <= 85 ? 'color:var(--red);' : 'color:var(--text2);') : 'color:var(--text2);';
               const _dRec = t.p.recScorePlus != null ? Math.round(t.p.recScorePlus).toString() : '—';
               const _dRecClr = t.p.recScorePlus != null ? (t.p.recScorePlus >= 109 ? 'color:var(--green);font-weight:700;' : t.p.recScorePlus >= 100 ? 'color:var(--green);' : t.p.recScorePlus <= 88 ? 'color:var(--red);' : 'color:var(--text2);') : 'color:var(--text2);';
-              h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:3px 4px;font-weight:600;">${t.name}</td><td style="padding:3px 4px;text-align:center;">${t.p.primaryPos}</td><td style="text-align:right;padding:3px 4px;${_dRecClr}">${_dRec}</td><td style="text-align:right;padding:3px 4px;${_dAlcvClr}">${_dAlcv}</td><td style="text-align:right;padding:3px 4px;${_dRollClr}">${_dRoll}</td><td style="text-align:right;padding:3px 4px;color:var(--text2);">${t.lcv.toFixed(1)}</td><td style="text-align:center;padding:3px 4px;font-size:10px;">${keepTag}</td><td style="padding:3px 4px;font-size:10px;color:var(--red);">${why}</td></tr>`;
+              h += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:3px 4px;font-weight:600;">${t.name}</td><td style="padding:3px 4px;text-align:center;">${t.p.primaryPos}</td><td style="text-align:right;padding:3px 4px;${_dRecClr}">${_dRec}</td><td style="text-align:right;padding:3px 4px;${_dAlcvClr}">${_dAlcv}</td><td style="text-align:right;padding:3px 4px;${_dRollClr}">${_dRoll}</td><td style="text-align:right;padding:3px 4px;color:var(--text2);">${(Number.isFinite(t.lcvPlus) ? Math.round(t.lcvPlus).toString() : '—')}</td><td style="text-align:center;padding:3px 4px;font-size:10px;">${keepTag}</td><td style="padding:3px 4px;font-size:10px;color:var(--red);">${why}</td></tr>`;
             });
             h += '</table>';
           }
@@ -1045,7 +1045,7 @@ function renderRoster() {
       const icon = tx.type === 'add' ? '<span style="color:var(--green);font-weight:700;">+</span>' : tx.type === 'drop' ? '<span style="color:var(--red);font-weight:700;">−</span>' : '<span style="color:var(--accent);font-weight:700;">↔</span>';
       const cbsBadge = tx.source === 'CBS' ? ' <span style="font-size:8px;background:var(--accent);color:#fff;padding:1px 3px;border-radius:2px;">CBS</span>' : '';
       const _txP = _plyrI(tx.player);
-      let _txLcv = _txP ? ` <span style="color:var(--text2);font-size:9px;">(${(_txP.lcv||0).toFixed(1)}` : '';
+      let _txLcv = _txP ? ` <span style="color:var(--text2);font-size:9px;">(${(Number.isFinite(_txP.lcvPlus) ? Math.round(_txP.lcvPlus).toString() : '—')}` : '';
       if (_txP && _txP.aLCVPlus != null) {
         const _txPClr = _txP.aLCVPlus >= 115 ? 'var(--green)' : _txP.aLCVPlus >= 100 ? 'var(--green)' : _txP.aLCVPlus <= 85 ? 'var(--red)' : 'var(--text2)';
         _txLcv += ` → <span style="color:${_txPClr};font-weight:600;">${Math.round(_txP.aLCVPlus)}</span>`;
@@ -1287,7 +1287,7 @@ function renderRoster() {
   function tradePlayerTag(n) {
     const p = _plyrI(n);
     const ki = getKeeperInfoCached(n);
-    const lcvStr = p ? (p.lcv||0).toFixed(1) : '?';
+    const lcvStr = p ? (Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—') : '?';
     const rdStr = ki.draftRound ? `R${ki.draftRound}` : 'FA';
     const keeperBadge = ki.keepable2027
       ? `<span style="color:var(--green);font-size:10px;" title="2027 keeper cost R${ki.cost2027}, ${ki.yearsLeft}yr control">${rdStr}→R${ki.cost2027} (${ki.yearsLeft}yr)</span>`
@@ -1340,7 +1340,7 @@ function renderRoster() {
           const ki = getKeeperInfoCached(p.name);
           const rdTag = ki.draftRound ? `R${ki.draftRound}` : 'FA';
           const costTag = ki.keepable2027 ? `→R${ki.cost2027}` : '';
-          return `<div class="trade-ac-item" data-name="${encodeURIComponent(p.name)}" style="padding:4px 6px;font-size:11px;cursor:pointer;border-bottom:1px solid var(--border);">${p.name} <small style="color:var(--text2)">${p.primaryPos} LCV:${(p.lcv||0).toFixed(1)} ${rdTag}${costTag}</small></div>`;
+          return `<div class="trade-ac-item" data-name="${encodeURIComponent(p.name)}" style="padding:4px 6px;font-size:11px;cursor:pointer;border-bottom:1px solid var(--border);">${p.name} <small style="color:var(--text2)">${p.primaryPos} LCV:${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')} ${rdTag}${costTag}</small></div>`;
         }).join('') + '</div>';
       acDiv.querySelectorAll('.trade-ac-item').forEach(item => {
         item.addEventListener('click', () => {
@@ -1617,7 +1617,7 @@ function renderRoster() {
       sh += `<td style="text-align:center;padding:3px;">${c.pos} ${gapStr}</td>`;
       sh += `<td style="text-align:right;padding:3px;${recClr}">${recStr}</td>`;
       sh += `<td style="text-align:right;padding:3px;${alcvClr}">${alcvStr}</td>`;
-      sh += `<td style="text-align:right;padding:3px;color:var(--text2);">${c.lcv.toFixed(1)}</td>`;
+      sh += `<td style="text-align:right;padding:3px;color:var(--text2);">${(Number.isFinite(c.lcvPlus) ? Math.round(c.lcvPlus).toString() : '—')}</td>`;
       sh += `<td style="text-align:center;padding:3px;">${keepStr}</td>`;
       sh += `<td style="text-align:right;padding:3px;font-weight:600;color:var(--accent);">${c.score.toFixed(1)}</td>`;
       sh += '</tr>';
@@ -2147,7 +2147,7 @@ function renderRoster() {
         const keepTag = g.keepable
           ? `<span style="color:var(--green);font-size:8px;margin-left:2px;" title="${g.yearsLeft}yr control">K${g.yearsLeft}</span>`
           : `<span style="color:var(--red);font-size:8px;margin-left:2px;" title="Not keepable">NK</span>`;
-        return `<span style="color:${color};font-weight:600;">${g.name}</span> <span style="color:var(--text2);font-size:9px;">${g.primaryPos} ${g.lcv.toFixed(1)}</span>${keepTag}`;
+        return `<span style="color:${color};font-weight:600;">${g.name}</span> <span style="color:var(--text2);font-size:9px;">${g.primaryPos} ${(Number.isFinite(g.lcvPlus) ? Math.round(g.lcvPlus).toString() : '—')}</span>${keepTag}`;
       }
 
       const giveStr = tr.give.map(g => playerTag(g, 'var(--red)')).join(' + ');

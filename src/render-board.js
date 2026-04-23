@@ -101,7 +101,7 @@ function renderDraftBoard() {
         // Live draft pick from CBS
         const lp = _plyrI(livePick.name);
         const pos = lp ? lp.primaryPos : '';
-        const lcv = lp ? (lp.lcv||0).toFixed(1) : '';
+        const lcv = lp ? (Number.isFinite(lp.lcvPlus) ? Math.round(lp.lcvPlus).toString() : '—') : '';
         const enoR = lp && lp.eno_rank ? ' P' + lp.eno_rank : '';
         if (livePick.mine) {
           cellBg = 'background:rgba(34,197,94,0.15);border:2px solid rgba(34,197,94,0.4);';
@@ -227,7 +227,7 @@ function renderDraftBoard() {
         const brd = isK ? 'var(--accent)' : 'var(--green)';
         const eTag = p.eno_rank ? ` <span class="eno-rank" style="font-size:8px;">P${p.eno_rank}</span>` : '';
         html += `<div style="background:${bg};border:1px solid ${brd};border-radius:4px;padding:3px 8px;font-size:11px;white-space:nowrap;">`;
-        html += `<b style="color:var(--text2);">${pos}</b> ${p.name}${_injBadge(p.name)}${eTag} <small style="opacity:0.6">${(p.lcv||0).toFixed(1)}</small>`;
+        html += `<b style="color:var(--text2);">${pos}</b> ${p.name}${_injBadge(p.name)}${eTag} <small style="opacity:0.6">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</small>`;
         if (isK) html += ' <small style="color:var(--accent);">K</small>';
         html += '</div>';
       } else {

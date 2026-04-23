@@ -77,22 +77,40 @@ def bat_row_to_snapshot(row):
 def pit_row_to_snapshot(row):
     ip = to_float(row.get('ip'))
     era = to_float(row.get('era'))
+    whip = to_float(row.get('whip'))
+    bb = to_int(row.get('bb'))
+    so = to_int(row.get('so'))
+    # ER: prefer raw, else derive from era * ip / 9
     er = to_int(row.get('er'))
     if er == 0 and ip > 0 and era > 0:
-        # Legacy CSV without ER — derive from ERA and IP
         er = round(era * ip / 9.0)
+    # H (hits allowed): prefer raw, else derive from whip * ip - bb. Snapshots
+    # pre-schema-bump didn't have h; same-day stats may not have h either if
+    # fetch_stats.py ran before the column was added. Without this fallback,
+    # window-subtracting an h=0 snapshot from a real-h snapshot gives nonsense
+    # (negative h → negative WHIP → garbage z-score). The Dollander 14d+ = 88
+    # bug came from exactly this.
+    h = to_int(row.get('h'))
+    if h == 0 and ip > 0 and whip > 0:
+        derived = round(whip * ip - bb)
+        if derived > 0:
+            h = derived
+    # tbf / bf field-name normalization across schemas
+    tbf = to_int(row.get('tbf'))
+    if tbf == 0:
+        tbf = to_int(row.get('bf'))
     return [
         ip,
         to_int(row.get('w')),
         to_int(row.get('sv')),
         to_int(row.get('hld')),
-        to_int(row.get('so')),
+        so,
         to_int(row.get('hr')),
         to_int(row.get('qs')),
         er,
-        to_int(row.get('h')),                # 0 in legacy CSVs (only used for displayed split stats, not LCV)
-        to_int(row.get('bb')),
-        to_int(row.get('bf')),               # tbf — we store as bf in CSV, time-splits.js reads as tbf
+        h,
+        bb,
+        tbf,
     ]
 
 
