@@ -436,9 +436,12 @@ function render() {
           if (_ki && _ki.keepable2027) {
             const _selected = isKeeper;
             const _round = _ki.cost2027;
+            // Selected keepers: solid accent + bold + subtle pill background.
+            // Eligible-but-not-selected: same accent color but with a clearly
+            // legible weight (was opacity 0.55 — too faint over the row).
             const _style = _selected
-              ? 'color:var(--accent);font-weight:700;'
-              : 'color:var(--accent);opacity:0.55;';
+              ? 'color:#fff;font-weight:700;background:var(--accent);padding:1px 5px;border-radius:3px;'
+              : 'color:var(--accent);font-weight:600;border:1px solid var(--accent);padding:0 4px;border-radius:3px;opacity:0.85;';
             const _title = _selected ? 'Selected as 2027 keeper' : 'Eligible to keep in 2027';
             kp = ` <small style="${_style}" title="${_title}">[K${_round}]</small>`;
           }

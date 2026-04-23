@@ -1,8 +1,24 @@
 // ── Draft Picks & Keeper Cost Model ──────────────────────────────────────
+// Constants encode the league rules in LEAGUE_RULES.md. If the rules change,
+// update both this file AND that doc. See "Keepers — Major League" section.
+//
+//   KEEPER_ADVANCE = 4         → "Annual Advancement: each keeper moves up 4 rounds per year"
+//   KEEPER_FLOOR = 4           → "Players valued in R1-R4 are not keepable; once a player
+//                                  reaches R1-R4, he becomes permanently ineligible". The
+//                                  > comparison below means a player whose 2026 cost is R5
+//                                  (advancing to R1 in 2027) is correctly flagged as not
+//                                  keepable for 2027.
+//   UNDRAFTED_KEEPER_START=15  → "Undrafted players begin keeper life in Round 15. Former
+//                                  rookie keepers converting to major league status also
+//                                  begin in Round 15. All then advance 4 rounds annually."
+//
+// NOT yet encoded here (handled manually by commissioner via league_config.json):
+//   - 2026 One-Time Mulligan (per-team flag on a keeper entry; valid 2026 only)
+//   - Round Conflicts (when two keepers land in the same round, owner picks)
 const DRAFT_PICKS = __DRAFT_PICKS_JSON__;
-const KEEPER_ADVANCE = 4;  // rounds per year
-const KEEPER_FLOOR = 4;    // rounds 1-4 = permanently ineligible
-const UNDRAFTED_KEEPER_START = 15;  // FA pickups start keeper life at R15
+const KEEPER_ADVANCE = 4;  // LEAGUE_RULES.md → Annual Advancement
+const KEEPER_FLOOR = 4;    // LEAGUE_RULES.md → Eligibility Limits (R1-R4 ineligible going forward)
+const UNDRAFTED_KEEPER_START = 15;  // LEAGUE_RULES.md → Undrafted & Rookie Conversions
 
 // Build lookup: player name → { round, pick, team, keeper }
 const PICK_BY_NAME = {};

@@ -96,7 +96,7 @@
       "Konnor Griffin",
       "Kevin McGonigle",
       "Walker Jenkins",
-      "Luis Peña"
+      "Luis Pe\u00f1a"
     ],
     "Kaskie": [
       "JJ Wetherholt",
@@ -141,7 +141,7 @@
     ],
     "Wolfe": [
       "Sal Stewart",
-      "Jesús Made",
+      "Jes\u00fas Made",
       "Colt Emerson",
       "Sebastian Walcott"
     ]
@@ -501,9 +501,10 @@
     ]
   },
   "_notes": {
-    "keys": "teams[] keyed by cbs_id+pick+owner+name. keepers and milb_keepers are keyed by owner LAST NAME (stable — team names change frequently). build_dashboard.py resolves owner→team at build time.",
+    "keys": "teams[] keyed by cbs_id+pick+owner+name. keepers and milb_keepers are keyed by owner LAST NAME (stable \u2014 team names change frequently). build_dashboard.py resolves owner\u2192team at build time.",
     "keepers": "Source of truth for who starts 2026 on each team. Update when a player is traded or dropped. state.js reads this at load time.",
     "milb_keepers": "Minor-league keepers (max 4 per team). Separate from MLB-level keepers.",
-    "rookies": "Legacy duplicate of milb_keepers — retained for existing code paths; should be merged into milb_keepers in a follow-up."
+    "rookies": "Legacy duplicate of milb_keepers \u2014 retained for existing code paths; should be merged into milb_keepers in a follow-up.",
+    "mulligan2026": "Per LEAGUE_RULES.md: each team has ONE 2026-only mulligan that lets them keep a player whose natural advancement would put them at or below R0 (permanently ineligible). The mulligan-kept player is assigned to R1. If a team uses theirs, add `\"mulligan2026\": true` to the relevant keeper entry in `keepers.{owner}`. Most R1-R4 keepers are NOT mulligans \u2014 they're standard final-year keepers (R5 \u2192 R1, R6 \u2192 R2, etc.); only flag the ones the commissioner explicitly designates as mulligan uses."
   }
 }
