@@ -69,7 +69,7 @@ Each team keeps five (5) MLB-level players from its final roster.
 
 - **Annual advancement:** +4 rounds/year (R8 keeper → R4 keeper the next year).
 - **Eligibility floor:** players valued in Rounds 1–4 are NOT keepable. Once a player reaches R1–R4, they are permanently ineligible.
-- **2026 One-Time Mulligan:** each team may keep one player who would otherwise fall in R1–R4. That player is assigned to Round 1. May not be kept again. Valid 2026 only.
+- **2026 One-Time Mulligan:** each team may keep one player who would otherwise fall in R1–R4 (i.e. would advance into the ineligibility band and be lost). That player is assigned to Round 1 for the 2026 draft. **The mulligan is a draft-day affordance only — it does NOT extend the player's keeper life.** From 2027 onward, every player kept at R1–R4 in 2026 (whether via mulligan, natural advancement, or otherwise) is permanently ineligible. Valid for the 2026 draft only; no future-year keeper math should treat mulligan-kept players differently from any other R1–R4 keeper. The dashboard's `keepable2027 = (2026_round - 4) > 4` check already enforces this — a R1 mulligan keeper has cost2027 = -3, well below the floor.
 - **Undrafted / rookie conversion:** undrafted FA pickups begin keeper life at Round 15. Former rookie keepers converting to major-league status also start at R15. Both then advance +4 rounds/year.
 - **Round conflicts:** if two keepers occupy the same round, one stays and the other(s) move to the next *earlier available* round. Owner selects which stays.
 - **Deadline:** keepers due one week prior to draft; commissioners publish simultaneously.

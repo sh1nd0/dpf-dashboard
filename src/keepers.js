@@ -13,7 +13,13 @@
 //                                  begin in Round 15. All then advance 4 rounds annually."
 //
 // NOT yet encoded here (handled manually by commissioner via league_config.json):
-//   - 2026 One-Time Mulligan (per-team flag on a keeper entry; valid 2026 only)
+//   - 2026 One-Time Mulligan: a draft-day-only affordance that lets one player
+//     per team be kept at R1 despite normally being ineligible. It does NOT
+//     extend the player's keeper life into 2027 — every R1-R4 keeper in 2026
+//     is unkeepable for 2027, mulligan or not. The keepable2027 math here
+//     already enforces this (a R1 mulligan-keeper has cost2027 = -3, fails
+//     the > KEEPER_FLOOR test). So no special-casing is needed in this file;
+//     the per-team flag in league_config.json is purely informational.
 //   - Round Conflicts (when two keepers land in the same round, owner picks)
 const DRAFT_PICKS = __DRAFT_PICKS_JSON__;
 const KEEPER_ADVANCE = 4;  // LEAGUE_RULES.md → Annual Advancement

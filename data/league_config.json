@@ -149,7 +149,7 @@
   "untouchable": [
     "Shohei Ohtani",
     "Juan Soto",
-    "Bobby Witt Jr.",
+    "Bobby Witt",
     "Aaron Judge",
     "Yoshinobu Yamamoto",
     "Tarik Skubal",
@@ -221,7 +221,7 @@
         "round": 3
       },
       {
-        "name": "Bobby Witt Jr.",
+        "name": "Bobby Witt",
         "round": 4
       },
       {
@@ -301,7 +301,7 @@
     ],
     "Murphy": [
       {
-        "name": "CJ Abrams",
+        "name": "C.J. Abrams",
         "round": 8
       },
       {
@@ -335,7 +335,7 @@
         "round": 13
       },
       {
-        "name": "Zach Neto",
+        "name": "Zachary Neto",
         "round": 14
       }
     ],
@@ -505,6 +505,6 @@
     "keepers": "Source of truth for who starts 2026 on each team. Update when a player is traded or dropped. state.js reads this at load time.",
     "milb_keepers": "Minor-league keepers (max 4 per team). Separate from MLB-level keepers.",
     "rookies": "Legacy duplicate of milb_keepers \u2014 retained for existing code paths; should be merged into milb_keepers in a follow-up.",
-    "mulligan2026": "Per LEAGUE_RULES.md: each team has ONE 2026-only mulligan that lets them keep a player whose natural advancement would put them at or below R0 (permanently ineligible). The mulligan-kept player is assigned to R1. If a team uses theirs, add `\"mulligan2026\": true` to the relevant keeper entry in `keepers.{owner}`. Most R1-R4 keepers are NOT mulligans \u2014 they're standard final-year keepers (R5 \u2192 R1, R6 \u2192 R2, etc.); only flag the ones the commissioner explicitly designates as mulligan uses."
+    "mulligan2026": "DRAFT-DAY ONLY rule per LEAGUE_RULES.md. Each team had ONE 2026-only mulligan to keep a player at R1 despite the normal R1-R4 ineligibility. The flag is informational \u2014 keepable2027 already correctly returns False for any R1-R4 keeper, mulligan or not. If a team used theirs, add `\"mulligan2026\": true` to the relevant keeper entry in `keepers.{owner}` so it's recorded in league history. Future seasons should not treat mulligan-kept players any differently from other R1-R4 keepers \u2014 they are all permanently ineligible from 2027 forward."
   }
 }
