@@ -1,5 +1,5 @@
 {
-  "completedAt": "2026-04-23T18:14:25.441863Z",
+  "completedAt": "2026-04-24T13:18:24.381385Z",
   "phaseA": {
     "stats": "ok",
     "injuries": "ok",
@@ -12,11 +12,12 @@
     "matchup": "ok"
   },
   "notes": [
-    "Phase B re-run after user signed in to CBS in Chrome.",
-    "League host moved from cbssports.com/fantasy/baseball/league/* to dpf.baseball.cbssports.com \u2014 scrape_cbs.py has dpf2026.baseball.cbssports.com hardcoded which is dead.",
-    "TXNS source switched to /transactions?print_rows=9999 (one URL, all 209 rows uncapped) instead of per-team /transactions/{id}/all_but_lineup which CBS truncates to ~30 rows. Authoritative file replaces (not merges) cbs_transactions.json so stale phantom rows can age out \u2014 fixed an Andy-Pages-3/21-Dropped phantom that had been propagating via merge_tx.py for days.",
-    "roster_sync.py NOT run this pass \u2014 print-all view is uncapped, so we no longer need synthetic-add backfills; doing so would have generated 312 fake adds.",
-    "Draft URL: /draft/results \u2014 confirmed data/cbs_picks_full.json (372 picks, 60 keepers) matches the live draft room exactly; no refresh needed.",
-    "fetch_stuffplus.py ran but pybaseball not installed in sandbox; non-fatal."
+    "CBS auth active via dpf.baseball.cbssports.com (the cbssports.com/fantasy/baseball/league/* URLs 404 \u2014 kept the host-swap fix from previous runs).",
+    "TXNS: 214 raw rows scraped from /transactions?print_rows=9999; cleaner collapsed to 178. Authoritative replace of data/cbs_transactions.json (not merge).",
+    "Team 7 is currently named 'Everythings McGonigle Green' on CBS (previously 'Whoop Whoop that's the sound of Dylan Cease'). Mapped to id 7.",
+    "Rosters: /teams/{id} gives full player names; /teams/roster-grid only has initials so not usable.",
+    "Matchup summary: Period 2 (Apr 13 - Apr 26). Okamotomami vs Dinosaur Jr Caminero (RESCAN) currently 12 - 4. CBS's /scoring/standard/2/4 summary only exposes 10 cats (BA/HR/RBI/R/SB/K/ERA/WHIP/W/S). Preserved yesterday's KO/OBP/SLG/HD/HRA/QS values since no detailed view found; updated the 10 visible ones.",
+    "fetch_stuffplus.py skipped (pybaseball not installed in sandbox; non-fatal as expected).",
+    "CBS player news pagination URL is /players/news/all/both/{N}/ \u2014 /news/{N}/ returns 404."
   ]
 }
