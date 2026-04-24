@@ -460,7 +460,7 @@ function renderRoster() {
     {key:'_cost2027',label:'Keeper',align:'center',tip:'Keeper round → 2027 cost'},
     {key:'team',label:'Team',align:'left'},
     {key:'pos',label:'Elig',align:'left'},
-    {key:'lcvPlus',label:'LCV+',align:'right',tip:'LCV+: projected LCV on the wRC+-style 100-scale (100 = pool average, 115 = +1sigma). Sum of z-scores across the 8 league categories using pre-season projections.'},
+    {key:'lcvPlus',label:'pLCV+',align:'right',tip:'pLCV+: projected LCV on the wRC+-style 100-scale (100 = pool average, 115 = +1sigma). Sum of z-scores across the 8 league categories using pre-season projections.'},
     {key:'aLCVPlus',label:'aLCV+',align:'right',tip:'aLCV+: 100 = pool average, 115 = +1sigma (wRC+ scale). From 2026 in-season stats.'},
     {key:'rollingLcvPlus14',label:'14d+',align:'right',tip:'14d+: rolling 14-day LCV on the wRC+ scale (100 = pool avg, 115 = +1sigma). Same scale as aLCV+ but only the last 14 snapshots.'},
     {key:'pnav',label:'PNAV',align:'right',tip:'Positional Need-Adjusted Value: LCV weighted by positional scarcity'},
@@ -1783,7 +1783,7 @@ function renderRoster() {
 
     let sh = '<div style="font-size:10px;color:var(--text2);margin-bottom:4px;">Click a player to add them to "I Get"</div>';
     sh += '<table style="width:100%;font-size:10px;border-collapse:collapse;">';
-    sh += '<tr style="color:var(--text2);font-size:9px;"><th style="text-align:left;padding:2px 3px;">Player</th><th style="text-align:left;padding:2px 3px;">Team</th><th style="text-align:center;padding:2px 3px;">Fills</th><th style="text-align:right;padding:2px 3px;" title="Rec+: blended recommendation on wRC+ scale. 100 = pool average, 115 = +1sigma.">Rec+</th><th style="text-align:right;padding:2px 3px;" title="aLCV+ on wRC+ scale: 100 = pool average, 115 = +1sigma">aLCV+</th><th style="text-align:right;padding:2px 3px;" title="LCV+: projected LCV on the wRC+ scale (100 = pool avg, 115 = +1sigma)">LCV+</th><th style="text-align:center;padding:2px 3px;">Keeper</th><th style="text-align:right;padding:2px 3px;">Fit</th></tr>';
+    sh += '<tr style="color:var(--text2);font-size:9px;"><th style="text-align:left;padding:2px 3px;">Player</th><th style="text-align:left;padding:2px 3px;">Team</th><th style="text-align:center;padding:2px 3px;">Fills</th><th style="text-align:right;padding:2px 3px;" title="Rec+: blended recommendation on wRC+ scale. 100 = pool average, 115 = +1sigma.">Rec+</th><th style="text-align:right;padding:2px 3px;" title="aLCV+ on wRC+ scale: 100 = pool average, 115 = +1sigma">aLCV+</th><th style="text-align:right;padding:2px 3px;" title="pLCV+: projected LCV on the wRC+ scale (100 = pool avg, 115 = +1sigma)">pLCV+</th><th style="text-align:center;padding:2px 3px;">Keeper</th><th style="text-align:right;padding:2px 3px;">Fit</th></tr>';
     top12.forEach(c => {
       const keepStr = c.ki.keepable2027 ? `R${c.ki.cost2027} (${c.ki.yearsLeft}yr)` : '<span style="color:var(--red);">N/A</span>';
       const gapStr = c.gap < -1 ? '<span style="color:var(--red);">⚠</span>' : '';

@@ -26,7 +26,7 @@ const pitCols25 = [
 // Unified All-tab columns for 2025: bat+pit stats in one row (non-applicable show —)
 const allCols25 = [
   {key:'name',label:'Player',w:160}, {key:'team',label:'Team',w:50}, {key:'pos',label:'Pos',w:60},
-  {key:'type',label:'Type',w:50}, {key:'age',label:'Age',w:40}, {key:'lcvPlus',label:'LCV+',w:55,cls:'lcv-col'}, {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
+  {key:'type',label:'Type',w:50}, {key:'age',label:'Age',w:40}, {key:'lcvPlus',label:'pLCV+',w:55,cls:'lcv-col'}, {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
   {key:'dp',label:'Pick',w:55,cls:'pnav-col'},
   {key:'trend',label:'Trend',w:55,cls:'pnav-col',tip:trendTip},
   {key:'s25_pa',label:'PA',w:45}, {key:'s25_avg',label:'AVG',w:50}, {key:'s25_obp',label:'OBP',w:50},
@@ -63,7 +63,7 @@ const pitCols26 = [
 // Unified All-tab columns for 2026: bat+pit stats in one row
 const allCols26 = [
   {key:'name',label:'Player',w:160}, {key:'team',label:'Team',w:50}, {key:'pos',label:'Pos',w:60},
-  {key:'type',label:'Type',w:50}, {key:'age',label:'Age',w:40}, {key:'lcvPlus',label:'LCV+',w:55,cls:'lcv-col'}, {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
+  {key:'type',label:'Type',w:50}, {key:'age',label:'Age',w:40}, {key:'lcvPlus',label:'pLCV+',w:55,cls:'lcv-col'}, {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
   {key:'dp',label:'Pick',w:55,cls:'pnav-col'},
   {key:'trend',label:'Trend',w:55,cls:'pnav-col',tip:trendTip},
   {key:'pa',label:'PA',w:45}, {key:'avg',label:'AVG',w:50}, {key:'obp',label:'OBP',w:50},
@@ -145,7 +145,7 @@ const allCols26A = [
 // Actual vs Projected comparison columns (side by side: proj then actual then delta)
 const batColsAVP = [
   {key:'name',label:'Player',w:150}, {key:'pos',label:'Pos',w:50},
-  {key:'lcvPlus',label:'LCV+',w:50},
+  {key:'lcvPlus',label:'pLCV+',w:50},
   {key:'pa',label:'pPA',w:45,tip:'Projected PA'}, {key:'s26_pa',label:'aPA',w:45,tip:'Actual PA'},
   {key:'avg',label:'pAVG',w:52,tip:'Projected AVG'}, {key:'s26_avg',label:'aAVG',w:52,tip:'Actual AVG'},
   {key:'obp',label:'pOBP',w:52,tip:'Projected OBP'}, {key:'s26_obp',label:'aOBP',w:52,tip:'Actual OBP'},
@@ -157,7 +157,7 @@ const batColsAVP = [
 ];
 const pitColsAVP = [
   {key:'name',label:'Player',w:150}, {key:'pos',label:'Pos',w:50},
-  {key:'lcvPlus',label:'LCV+',w:50},
+  {key:'lcvPlus',label:'pLCV+',w:50},
   {key:'ip',label:'pIP',w:45,tip:'Projected IP'}, {key:'s26_ip',label:'aIP',w:45,tip:'Actual IP'},
   {key:'era',label:'pERA',w:50,tip:'Projected ERA'}, {key:'s26_era',label:'aERA',w:50,tip:'Actual ERA'},
   {key:'whip',label:'pWHIP',w:55,tip:'Projected WHIP'}, {key:'s26_whip',label:'aWHIP',w:55,tip:'Actual WHIP'},
@@ -169,7 +169,7 @@ const pitColsAVP = [
 ];
 const allColsAVP = [
   {key:'name',label:'Player',w:150}, {key:'pos',label:'Pos',w:50},
-  {key:'type',label:'Type',w:45}, {key:'lcvPlus',label:'LCV+',w:50,cls:'lcv-col'}, {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
+  {key:'type',label:'Type',w:45}, {key:'lcvPlus',label:'pLCV+',w:50,cls:'lcv-col'}, {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
   {key:'avg',label:'pAVG',w:48,tip:'Projected'}, {key:'s26_avg',label:'aAVG',w:48,tip:'Actual'},
   {key:'hr',label:'pHR',w:38,tip:'Projected'}, {key:'s26_hr',label:'aHR',w:38,tip:'Actual'},
   {key:'r',label:'pR',w:36,tip:'Projected'}, {key:'s26_r',label:'aR',w:36,tip:'Actual'},
@@ -185,7 +185,7 @@ const batCols = [
   {key:'name',label:'Player',w:160}, {key:'team',label:'Team',w:50}, {key:'pos',label:'Pos',w:60},
   {key:'war',label:'WAR',w:50},
   {key:'dp',label:'Pick',w:60,cls:'pnav-col',tip:'Draft Priority = 0.4×LCV + 0.6×PNAV. Single metric combining raw value with positional need. Higher = pick this player. Updates in real-time as you draft.'},
-  {key:'lcvPlus',label:'LCV+',w:60,cls:'lcv-col',tip:'LCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
+  {key:'lcvPlus',label:'pLCV+',w:60,cls:'lcv-col',tip:'pLCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
   {key:'upside',label:'Upside',w:65,cls:'pnav-col',tip:'UPSIDE = LCV × Age Factor. Raw value weighted by age — young players (≤24) get up to 35%% boost; older players (32+) get penalized. Position-agnostic long-term ceiling.'},
   {key:'trend',label:'Trend',w:60,cls:'pnav-col',tip:trendTip},
   {key:'s25_barrel',label:'Brl%',w:50}, {key:'s25_hardhit',label:'HH%',w:50},
@@ -199,7 +199,7 @@ const pitCols = [
   {key:'name',label:'Player',w:160}, {key:'team',label:'Team',w:50}, {key:'pos',label:'Pos',w:50},
   {key:'war',label:'WAR',w:50},
   {key:'dp',label:'Pick',w:60,cls:'pnav-col',tip:'Draft Priority = 0.4×LCV + 0.6×PNAV. Single metric combining raw value with positional need. Higher = pick this player. Updates in real-time as you draft.'},
-  {key:'lcvPlus',label:'LCV+',w:60,cls:'lcv-col',tip:'LCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
+  {key:'lcvPlus',label:'pLCV+',w:60,cls:'lcv-col',tip:'pLCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
   {key:'upside',label:'Upside',w:65,cls:'pnav-col',tip:'UPSIDE = LCV × Age Factor. Raw value weighted by age — young players (≤24) get up to 35%% boost; older players (32+) get penalized. Position-agnostic long-term ceiling.'},
   {key:'trend',label:'Trend',w:60,cls:'pnav-col',tip:trendTip},
   {key:'s25_stuff',label:'Stf+',w:50,tip:'Stuff+ measures pitch quality based on movement/velo. 100=avg'},
@@ -214,7 +214,7 @@ const allCols = [
   {key:'type',label:'Type',w:50}, {key:'age',label:'Age',w:40},
   {key:'war',label:'WAR',w:50},
   {key:'dp',label:'Pick',w:60,cls:'pnav-col',tip:'Draft Priority = 0.4×LCV + 0.6×PNAV. The single "who should I pick" metric. Higher = pick this player first. Updates in real-time as you draft.'},
-  {key:'lcvPlus',label:'LCV+',w:60,cls:'lcv-col',tip:'LCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
+  {key:'lcvPlus',label:'pLCV+',w:60,cls:'lcv-col',tip:'pLCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
   {key:'tradeValue',label:'TV',w:55,tip:'Trade value: production + keeper premium + prospect value'},
   {key:'pnav',label:'PNAV',w:65,cls:'pnav-col',tip:'Positional Need-Adjusted Value = LCV × Position Multiplier × Scarcity Factor. Updates dynamically as you draft players and your positional needs change.'},
   {key:'upside',label:'Upside',w:65,cls:'pnav-col',tip:'UPSIDE = LCV × Age Factor. Raw value weighted by age — young players get boosted, older players penalized. Position-agnostic long-term ceiling.'},
@@ -231,7 +231,7 @@ const allCols = [
 const batColsGM = [
   {key:'name',label:'Player',w:160}, {key:'team',label:'Team',w:50}, {key:'pos',label:'Pos',w:60},
   {key:'age',label:'Age',w:40},
-  {key:'lcvPlus',label:'LCV+',w:60,cls:'lcv-col',tip:'LCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
+  {key:'lcvPlus',label:'pLCV+',w:60,cls:'lcv-col',tip:'pLCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
   {key:'upside',label:'Upside',w:65,cls:'pnav-col',tip:'Upside score based on percentile ceiling and statcast metrics'},
   {key:'keeperRound',label:'Keeper Rd',w:70,tip:'Round player was drafted. R1-4 cannot be kept.'},
   {key:'keeperCost2027',label:'2027 Cost',w:70,tip:'Draft round cost to keep this player in 2027 (advances 4 rounds/year)'},
@@ -245,7 +245,7 @@ const batColsGM = [
 const pitColsGM = [
   {key:'name',label:'Player',w:160}, {key:'team',label:'Team',w:50}, {key:'pos',label:'Pos',w:60},
   {key:'age',label:'Age',w:40},
-  {key:'lcvPlus',label:'LCV+',w:60,cls:'lcv-col',tip:'LCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
+  {key:'lcvPlus',label:'pLCV+',w:60,cls:'lcv-col',tip:'pLCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
   {key:'upside',label:'Upside',w:65,cls:'pnav-col',tip:'Upside score based on percentile ceiling and statcast metrics'},
   {key:'keeperRound',label:'Keeper Rd',w:70,tip:'Round player was drafted. R1-4 cannot be kept.'},
   {key:'keeperCost2027',label:'2027 Cost',w:70,tip:'Draft round cost to keep this player in 2027 (advances 4 rounds/year)'},
@@ -260,7 +260,7 @@ const allColsGM = [
   {key:'name',label:'Player',w:160}, {key:'team',label:'Team',w:50}, {key:'pos',label:'Pos',w:60},
   {key:'type',label:'Type',w:50},
   {key:'age',label:'Age',w:40},
-  {key:'lcvPlus',label:'LCV+',w:60,cls:'lcv-col',tip:'LCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
+  {key:'lcvPlus',label:'pLCV+',w:60,cls:'lcv-col',tip:'pLCV+: projected LCV on the wRC+-style scale (100 = pool average, 115 = +1sigma). Same scale as aLCV+ but for the pre-season projection.'},
   {key:'upside',label:'Upside',w:65,cls:'pnav-col',tip:'Upside score based on percentile ceiling and statcast metrics'},
   {key:'keeperRound',label:'Keeper Rd',w:70,tip:'Round player was drafted. R1-4 cannot be kept.'},
   {key:'keeperCost2027',label:'2027 Cost',w:70,tip:'Draft round cost to keep this player in 2027 (advances 4 rounds/year)'},
