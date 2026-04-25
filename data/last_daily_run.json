@@ -1,20 +1,21 @@
 {
-  "completedAt": "2026-04-25T16:09:20.880074Z",
+  "completedAt": "2026-04-25T16:32:33.345106Z",
   "phaseA": {
     "stats": "ok",
     "injuries": "ok",
-    "news": "ok"
+    "news": "ok",
+    "stuffplus": "skipped (FanGraphs 403, expected)"
   },
   "phaseB": {
     "cbs_auth": "ok",
-    "transactions": "ok",
-    "rosters": "ok",
-    "matchup": "partial"
+    "transactions": "ok (54 new merged, 192 cleaned)",
+    "rosters": "ok (12 teams)",
+    "matchup": "ok (period 2, OMM 9-7 RESCAN)"
   },
   "notes": [
-    "fetch_stuffplus.py 403/skipped (pybaseball not installed) \u2014 non-fatal as documented.",
-    "LEAGUE_HOST in scrape_cbs.py was stale (dpf2026 \u2192 dpf); fixed.",
-    "User signed in to CBS in Chrome MCP browser; transactions/rosters/scoreboard pulled live.",
-    "Score updated from rendered scoreboard breakdown (OMM 9.0 - DJC 7.0). Per-category breakdown not refreshed \u2014 page is JS-rendered and category data lives on a sub-route I couldn't fully wire up in this session."
+    "fetch_stuffplus.py 403 from FanGraphs \u2014 known non-fatal",
+    "Trades page (dpf.baseball.cbssports.com/trades/recent) was empty; relied on per-team transaction pages which already include 'Traded from' rows",
+    "All 6 known transaction action types observed: Added, Added off Waivers, Dropped, Activated, Moved to IR, Traded from <Team> \u2014 no new types",
+    "Standings still show legacy team-7 name 'Everythings McGonigle Green' on CBS overall standings page"
   ]
 }
