@@ -40,19 +40,19 @@
     "returnDate": "Expected to return Apr 28"
   },
   {
-    "name": "Adrian Del Castillo",
-    "team": "ARI",
-    "pos": "C",
-    "status": "IL",
-    "injury": "Finger",
-    "returnDate": "Expected to return Apr 28"
-  },
-  {
     "name": "Geraldo Perdomo",
     "team": "ARI",
     "pos": "SS",
     "status": "IL",
     "injury": "Ankle",
+    "returnDate": "Expected to return Apr 28"
+  },
+  {
+    "name": "Adrian Del Castillo",
+    "team": "ARI",
+    "pos": "C",
+    "status": "IL",
+    "injury": "Finger",
     "returnDate": "Expected to return Apr 28"
   },
   {
@@ -88,12 +88,12 @@
     "returnDate": "Expected to return Jun 15"
   },
   {
-    "name": "Blake Walston",
+    "name": "Cristian Mena",
     "team": "ARI",
     "pos": "SP",
     "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to return Jul 1"
+    "injury": "Shoulder",
+    "returnDate": "Expected to return Jun 1"
   },
   {
     "name": "Tyler Locklear",
@@ -104,20 +104,12 @@
     "returnDate": "Expected to return May 18"
   },
   {
-    "name": "Cristian Mena",
-    "team": "ARI",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Expected to return Jun 1"
-  },
-  {
-    "name": "Corbin Burnes",
+    "name": "Blake Walston",
     "team": "ARI",
     "pos": "SP",
     "status": "IL",
     "injury": "Elbow",
-    "returnDate": "Expected to return Jul 17"
+    "returnDate": "Expected to return Jul 1"
   },
   {
     "name": "Andrew Saalfrank",
@@ -126,6 +118,14 @@
     "status": "IL",
     "injury": "Shoulder",
     "returnDate": "Expected to return Feb 1"
+  },
+  {
+    "name": "Corbin Burnes",
+    "team": "ARI",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to return Jul 17"
   },
   {
     "name": "Justin Martinez",
@@ -232,6 +232,14 @@
     "returnDate": "Expected to return May 15"
   },
   {
+    "name": "Dietrich Enns",
+    "team": "BAL",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Foot",
+    "returnDate": "Expected to return Apr 28"
+  },
+  {
     "name": "Heston Kjerstad",
     "team": "BAL",
     "pos": "DH",
@@ -248,12 +256,12 @@
     "returnDate": "Expected to return May 15"
   },
   {
-    "name": "Dietrich Enns",
+    "name": "Ryan Mountcastle",
     "team": "BAL",
-    "pos": "RP",
+    "pos": "1B",
     "status": "IL",
     "injury": "Foot",
-    "returnDate": "Expected to return Apr 28"
+    "returnDate": "Expected to return Jun 19"
   },
   {
     "name": "Yaramil Hiraldo",
@@ -262,14 +270,6 @@
     "status": "IL",
     "injury": "Shoulder",
     "returnDate": "Expected to return Jun 4"
-  },
-  {
-    "name": "Ryan Mountcastle",
-    "team": "BAL",
-    "pos": "1B",
-    "status": "IL",
-    "injury": "Foot",
-    "returnDate": "Expected to return Jun 19"
   },
   {
     "name": "Felix Bautista",
@@ -592,6 +592,14 @@
     "returnDate": "Expected to return May 15"
   },
   {
+    "name": "Jeff Criswell",
+    "team": "COL",
+    "pos": "P",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to return May 4"
+  },
+  {
     "name": "Willi Castro",
     "team": "COL",
     "pos": "LF",
@@ -606,14 +614,6 @@
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to return May 29"
-  },
-  {
-    "name": "Jeff Criswell",
-    "team": "COL",
-    "pos": "P",
-    "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to return May 1"
   },
   {
     "name": "Kyle Freeland",
@@ -776,20 +776,20 @@
     "returnDate": "Expected to return May 1"
   },
   {
-    "name": "Cristian Javier",
-    "team": "HOU",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Expected to return Jun 8"
-  },
-  {
     "name": "Nick Allen",
     "team": "HOU",
     "pos": "SS",
     "status": "IL",
     "injury": "Back",
     "returnDate": "Expected to return Apr 28"
+  },
+  {
+    "name": "Cristian Javier",
+    "team": "HOU",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Shoulder",
+    "returnDate": "Expected to return Jun 8"
   },
   {
     "name": "Joey Loperfido",
@@ -976,12 +976,12 @@
     "returnDate": "Expected to return Feb 1"
   },
   {
-    "name": "Landon Knack",
+    "name": "Mookie Betts",
     "team": "LAD",
-    "pos": "SP",
+    "pos": "RF",
     "status": "IL",
-    "injury": "Chest",
-    "returnDate": "Expected to return Apr 27"
+    "injury": "Oblique",
+    "returnDate": "Expected to return May 4"
   },
   {
     "name": "Brock Stewart",
@@ -992,12 +992,12 @@
     "returnDate": "Expected to return Apr 27"
   },
   {
-    "name": "Mookie Betts",
+    "name": "Landon Knack",
     "team": "LAD",
-    "pos": "RF",
+    "pos": "SP",
     "status": "IL",
-    "injury": "Oblique",
-    "returnDate": "Expected to return May 4"
+    "injury": "Chest",
+    "returnDate": "Expected to return Apr 27"
   },
   {
     "name": "Will Smith",
@@ -1048,14 +1048,6 @@
     "returnDate": "Expected to return May 22"
   },
   {
-    "name": "Gavin Stone",
-    "team": "LAD",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Expected to return May 22"
-  },
-  {
     "name": "Jake Cousins",
     "team": "LAD",
     "pos": "RP",
@@ -1064,12 +1056,12 @@
     "returnDate": "Expected to return Aug 1"
   },
   {
-    "name": "Tommy Edman",
+    "name": "Gavin Stone",
     "team": "LAD",
-    "pos": "2B",
+    "pos": "SP",
     "status": "IL",
-    "injury": "Ankle",
-    "returnDate": "Expected to return May 29"
+    "injury": "Shoulder",
+    "returnDate": "Expected to return May 22"
   },
   {
     "name": "Bobby Miller",
@@ -1077,6 +1069,14 @@
     "pos": "SP",
     "status": "IL",
     "injury": "Shoulder",
+    "returnDate": "Expected to return May 29"
+  },
+  {
+    "name": "Tommy Edman",
+    "team": "LAD",
+    "pos": "2B",
+    "status": "IL",
+    "injury": "Ankle",
     "returnDate": "Expected to return May 29"
   },
   {
@@ -1120,20 +1120,20 @@
     "returnDate": "Expected to return Feb 1"
   },
   {
+    "name": "Quinn Priester",
+    "team": "MIL",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Wrist",
+    "returnDate": "Expected to return May 12"
+  },
+  {
     "name": "Jared Koenig",
     "team": "MIL",
     "pos": "SP",
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to return May 3"
-  },
-  {
-    "name": "Quinn Priester",
-    "team": "MIL",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Wrist",
-    "returnDate": "Expected to return May 8"
   },
   {
     "name": "Andrew Vaughn",
@@ -1221,7 +1221,7 @@
     "pos": "1B",
     "status": "IL",
     "injury": "Wrist",
-    "returnDate": "Expected to return Apr 28"
+    "returnDate": "Expected to return May 8"
   },
   {
     "name": "Francisco Lindor",
@@ -1264,14 +1264,6 @@
     "returnDate": "Expected to return May 27"
   },
   {
-    "name": "Dedniel Nunez",
-    "team": "NYM",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to return Sep 1"
-  },
-  {
     "name": "Tylor Megill",
     "team": "NYM",
     "pos": "SP",
@@ -1286,6 +1278,14 @@
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to return Feb 1"
+  },
+  {
+    "name": "Dedniel Nunez",
+    "team": "NYM",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to return Sep 1"
   },
   {
     "name": "Giancarlo Stanton",
@@ -1328,20 +1328,20 @@
     "returnDate": "Expected to return Aug 1"
   },
   {
-    "name": "J.T. Realmuto",
-    "team": "PHI",
-    "pos": "C",
-    "status": "IL",
-    "injury": "Back",
-    "returnDate": "Expected to return May 2"
-  },
-  {
     "name": "Max Lazar",
     "team": "PHI",
     "pos": "P",
     "status": "IL",
     "injury": "Oblique",
     "returnDate": "Expected to return May 23"
+  },
+  {
+    "name": "J.T. Realmuto",
+    "team": "PHI",
+    "pos": "C",
+    "status": "IL",
+    "injury": "Back",
+    "returnDate": "Expected to return May 2"
   },
   {
     "name": "Jhoan Duran",
@@ -1504,12 +1504,12 @@
     "returnDate": "Expected to return Jun 9"
   },
   {
-    "name": "Rowan Wick",
+    "name": "Jason Foley",
     "team": "SF",
     "pos": "RP",
     "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to return Feb 1"
+    "injury": "Shoulder",
+    "returnDate": "Expected to return Jul 1"
   },
   {
     "name": "Randy Rodriguez",
@@ -1520,20 +1520,12 @@
     "returnDate": "Expected to return Feb 1"
   },
   {
-    "name": "Jason Foley",
+    "name": "Rowan Wick",
     "team": "SF",
     "pos": "RP",
     "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Expected to return Jul 1"
-  },
-  {
-    "name": "Victor Robles",
-    "team": "SEA",
-    "pos": "CF",
-    "status": "IL",
-    "injury": "Pectoral",
-    "returnDate": "Expected to return Apr 27"
+    "injury": "Elbow",
+    "returnDate": "Expected to return Feb 1"
   },
   {
     "name": "Patrick Wisdom",
@@ -1541,6 +1533,14 @@
     "pos": "3B",
     "status": "IL",
     "injury": "Oblique",
+    "returnDate": "Expected to return Apr 27"
+  },
+  {
+    "name": "Victor Robles",
+    "team": "SEA",
+    "pos": "CF",
+    "status": "IL",
+    "injury": "Pectoral",
     "returnDate": "Expected to return Apr 27"
   },
   {
@@ -1728,14 +1728,6 @@
     "returnDate": "Expected to return May 1"
   },
   {
-    "name": "Cody Bradford",
-    "team": "TEX",
-    "pos": "RP",
-    "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to return May 26"
-  },
-  {
     "name": "Luis Curvelo",
     "team": "TEX",
     "pos": "RP",
@@ -1750,6 +1742,14 @@
     "status": "IL",
     "injury": "Biceps",
     "returnDate": "Expected to return May 1"
+  },
+  {
+    "name": "Cody Bradford",
+    "team": "TEX",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to return May 26"
   },
   {
     "name": "Cody Freeman",
@@ -1776,20 +1776,20 @@
     "returnDate": "Expected to return May 5"
   },
   {
-    "name": "Yimi Garcia",
-    "team": "TOR",
-    "pos": "RP",
-    "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to return May 24"
-  },
-  {
     "name": "Trey Yesavage",
     "team": "TOR",
     "pos": "SP",
     "status": "IL",
     "injury": "Shoulder",
     "returnDate": "Expected to return Apr 28"
+  },
+  {
+    "name": "Yimi Garcia",
+    "team": "TOR",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to return May 24"
   },
   {
     "name": "Addison Barger",
@@ -1888,19 +1888,19 @@
     "returnDate": "Expected to return May 29"
   },
   {
-    "name": "Davidjohn Herz",
-    "team": "WAS",
-    "pos": "P",
-    "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to return Jul 1"
-  },
-  {
     "name": "Trevor Williams",
     "team": "WAS",
     "pos": "SP",
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to return Jun 1"
+  },
+  {
+    "name": "Davidjohn Herz",
+    "team": "WAS",
+    "pos": "P",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to return Jul 1"
   }
 ]

@@ -1,13 +1,253 @@
 [
   {
+    "player": "Ryan Weiss",
+    "team": "HOU",
+    "pos": "SP",
+    "headline": "Astros' Ryan Weiss: Appears headed back to bullpen",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/astros-ryan-weiss-appears-headed-back-to-bullpen/",
+    "time": "8M ago",
+    "byline": "By RotoWire Staff",
+    "body": "Weiss appears headed back to the Astros' bullpen after Kai-Wei Teng was named the team's starter for Tuesday's game in Baltimore, Matt Kawahara of the Houston Chronicle reports."
+  },
+  {
+    "player": "Edgardo Henriquez",
+    "team": "LAD",
+    "pos": "SP",
+    "headline": "Dodgers' Edgardo Henriquez: Works around wildness Sunday",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/dodgers-edgardo-henriquez-works-around-wildness-sunday/",
+    "time": "14M ago",
+    "byline": "By RotoWire Staff",
+    "body": "Henriquez walked two batters and struck out one in a scoreless relief inning versus the Cubs on Sunday."
+  },
+  {
+    "player": "Kai-Wei Teng",
+    "team": "HOU",
+    "pos": "SP",
+    "headline": "Astros' Kai-Wei Teng: Tapped for start Tuesday",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/astros-kai-wei-teng-tapped-for-start-tuesday/",
+    "time": "19M ago",
+    "byline": "By RotoWire Staff",
+    "body": "Teng will be the Astros' starting pitcher for Tuesday's game in Baltimore, Matt Kawahara of the Houston Chronicle reports."
+  },
+  {
+    "player": "David Morgan",
+    "team": "SD",
+    "pos": "P",
+    "headline": "Padres' David Morgan: Hammered by D-backs on Sunday",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/padres-david-morgan-hammered-by-d-backs-on-sunday/",
+    "time": "22M ago",
+    "byline": "By RotoWire Staff",
+    "body": "Morgan retired only one batter and gave up four runs on four hits in a relief outing Sunday versus Arizona."
+  },
+  {
+    "player": "A.J. Ewing",
+    "team": "NYM",
+    "pos": "LF",
+    "headline": "Mets' A.J. Ewing: Elevated to Triple-A",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/mets-a-j-ewing-elevated-to-triple-a/",
+    "time": "27M ago",
+    "byline": "By RotoWire Staff",
+    "body": "The Mets promoted Ewing from Double-A Binghamton to Triple-A Syracuse on Monday, Anthony DiComo of MLB.com reports."
+  },
+  {
+    "player": "Juan Soto",
+    "team": "NYM",
+    "pos": "LF",
+    "headline": "Mets' Juan Soto: On base four times in twin bill",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/mets-juan-soto-on-base-four-times-in-twin-bill/",
+    "time": "33M ago",
+    "byline": "By RotoWire Staff",
+    "body": "Soto went 1-for-5 with three walks across both games of Sunday's doubleheader against the Rockies."
+  },
+  {
+    "player": "Owen Caissie",
+    "team": "MIA",
+    "pos": "OF",
+    "headline": "Marlins' Owen Caissie: Struggles continue Sunday",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/marlins-owen-caissie-struggles-continue-sunday/",
+    "time": "45M ago",
+    "byline": "By RotoWire Staff",
+    "body": "Caissie went 0-for-3 with a strikeout in Sunday's loss to the Giants."
+  },
+  {
+    "player": "Ha-seong Kim",
+    "team": "ATL",
+    "pos": "2B",
+    "headline": "Braves' Ha-Seong Kim: Cleared for rehab games",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/braves-ha-seong-kim-cleared-for-rehab-games/",
+    "time": "1H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Kim (finger) will begin a rehab assignment with Double-A Columbus this week, Grant McAuley of the Marietta Daily Journal reports."
+  },
+  {
+    "player": "Kyle Stowers",
+    "team": "MIA",
+    "pos": "RF",
+    "headline": "Marlins' Kyle Stowers: Makes first career start at 1B",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/marlins-kyle-stowers-makes-first-career-start-at-1b/",
+    "time": "1H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Stowers got the start at first base Sunday and went 0-for-4 in a loss to the Giants."
+  },
+  {
+    "player": "Vladimir Guerrero Jr.",
+    "team": "TOR",
+    "pos": "1B",
+    "headline": "Blue Jays' Vladimir Guerrero: Three more hits Sunday",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/blue-jays-vladimir-guerrero-three-more-hits-sunday/",
+    "time": "1H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Guerrero went 3-for-4 with a double, a run scored and an RBI in Sunday's win over the Guardians."
+  },
+  {
+    "player": "Michael Harris",
+    "team": "ATL",
+    "pos": "CF",
+    "headline": "Braves' Michael Harris: At DH again Sunday",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/braves-michael-harris-at-dh-again-sunday/",
+    "time": "1H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Harris went 0-for-3 with a walk and two strikeouts in Sunday's win over the Phillies."
+  },
+  {
+    "player": "Eli White",
+    "team": "ATL",
+    "pos": "CF",
+    "headline": "Braves' Eli White: Goes yard in Sunday's win",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/braves-eli-white-goes-yard-in-sundays-win/",
+    "time": "1H ago",
+    "byline": "By RotoWire Staff",
+    "body": "White went 1-for-4 with a two-run home run in Sunday's win over the Phillies."
+  },
+  {
+    "player": "Jacob Lopez",
+    "team": "ATH",
+    "pos": "RP",
+    "headline": "Athletics' Jacob Lopez: Allows one run in relief outing",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/athletics-jacob-lopez-allows-one-run-in-relief-outing/",
+    "time": "1H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Lopez allowed one run on a hit and two walks over one-plus inning Sunday against the Rangers. He struck out one."
+  },
+  {
+    "player": "Ronald Acuna Jr.",
+    "team": "ATL",
+    "pos": "RF",
+    "headline": "Braves' Ronald Acuna: Swipes sixth bag",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/braves-ronald-acuna-swipes-sixth-bag/",
+    "time": "1H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Acuna went 2-for-3 with a walk, two runs scored and a stolen base in Sunday's win over the Phillies."
+  },
+  {
+    "player": "Justin Sterner",
+    "team": "ATH",
+    "pos": "RP",
+    "headline": "Athletics' Justin Sterner: Picks up first win",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/athletics-justin-sterner-picks-up-first-win/",
+    "time": "1H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Sterner (1-2) earned the win in Sunday's 2-1 victory over the Rangers. He allowed a hit and no walks while striking out two over a scoreless inning."
+  },
+  {
+    "player": "Lucas Sims",
+    "team": "CHW",
+    "pos": "RP",
+    "headline": "Lucas Sims: Elects free agency",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/lucas-sims-elects-free-agency/",
+    "time": "1H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Sims elected to become a free agent Saturday."
+  },
+  {
+    "player": "Quinn Priester",
+    "team": "MIL",
+    "pos": "SP",
+    "headline": "Brewers' Quinn Priester: Lacks control in second rehab start",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/brewers-quinn-priester-lacks-control-in-second-rehab-start/",
+    "time": "2H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Priester (wrist) struck out two and allowed zero hits and issued three walks across 2.1 innings in his rehab start Sunday with Triple-A Nashville."
+  },
+  {
+    "player": "Spencer Strider",
+    "team": "ATL",
+    "pos": "SP",
+    "headline": "Braves' Spencer Strider: Piles up seven Ks in rehab start",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/braves-spencer-strider-piles-up-seven-ks-in-rehab-start/",
+    "time": "2H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Strider (oblique) struck out seven and allowed two earned runs on four hits and two walks across five innings Sunday in a rehab start for Triple-A Gwinnett."
+  },
+  {
+    "player": "Austin Warren",
+    "team": "NYM",
+    "pos": "RP",
+    "headline": "Mets' Austin Warren: Sent back down",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/mets-austin-warren-sent-back-down/",
+    "time": "2H ago",
+    "byline": "By RotoWire Staff",
+    "body": "The Mets optioned Warren to Triple-A Syracuse on Monday."
+  },
+  {
+    "player": "Jarren Duran",
+    "team": "BOS",
+    "pos": "CF",
+    "headline": "Red Sox's Jarren Duran: Remains at leadoff",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/red-soxs-jarren-duran-remains-at-leadoff/",
+    "time": "2H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Duran batted leadoff and went 0-for-4 with a walk, a stolen base and a run scored in Sunday's 5-3 win over the Orioles."
+  },
+  {
+    "player": "Jesus Valdez",
+    "team": "ARI",
+    "pos": "2B",
+    "headline": "Diamondbacks' Jesus Valdez: Optioned to Triple-A",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/diamondbacks-jesus-valdez-optioned-to-triple-a/",
+    "time": "2H ago",
+    "byline": "By RotoWire Staff",
+    "body": "The Diamondbacks optioned Valdez to Triple-A Reno on Monday."
+  },
+  {
+    "player": "Roman Anthony",
+    "team": "BOS",
+    "pos": "RF",
+    "headline": "Red Sox's Roman Anthony: Dropped to third in order",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/red-soxs-roman-anthony-dropped-to-third-in-order/",
+    "time": "2H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Anthony batted third and went 0-for-3 with a walk in Sunday's 5-3 win over Baltimore."
+  },
+  {
+    "player": "Sung-Mun Song",
+    "team": "SD",
+    "pos": "3B",
+    "headline": "Padres' Sung-Mun Song: Sent back to minors",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/padres-sung-mun-song-sent-back-to-minors/",
+    "time": "3H ago",
+    "byline": "By RotoWire Staff",
+    "body": "The Padres optioned Song to Triple-A El Paso on Monday."
+  },
+  {
+    "player": "Steven Kwan",
+    "team": "CLE",
+    "pos": "LF",
+    "headline": "Guardians' Steven Kwan: Returns from neck injury",
+    "link": "https://www.cbssports.com/fantasy/baseball/news/guardians-steven-kwan-returns-from-neck-injury/",
+    "time": "3H ago",
+    "byline": "By RotoWire Staff",
+    "body": "Kwan started in center field and went 1-for-5 in Sunday's 4-2 loss to the Blue Jays."
+  },
+  {
     "player": "Nick Lodolo",
     "team": "CIN",
     "pos": "SP",
     "headline": "Reds' Nick Lodolo: Fires five scoreless in rehab start",
     "link": "https://www.cbssports.com/fantasy/baseball/news/reds-nick-lodolo-fires-five-scoreless-in-rehab-start/",
-    "time": "25M ago",
+    "time": "3H ago",
     "byline": "By RotoWire Staff",
-    "body": "Lodolo (finger) allowed two hits and struck out seven over five scoreless innings for High-A Dayton on Sunday. Lodolo, who's been on the 15-day injured list since Opening Day due to a blister, kicked off a second rehab assignment Sunday. The left-hander was sharp, throwing 39 strikes among his 51 pitches. His first rehab was cut short when the blister resurfaced as he tried to throw a slider during a start for Dayton on April 2, per Mark Sheldon of MLB.com. There was no data or reporting on how many sliders Lodolo used Sunday."
+    "body": "Lodolo (finger) allowed two hits and struck out seven over five scoreless innings for High-A Dayton on Sunday."
   },
   {
     "player": "Nolan Arenado",
@@ -15,9 +255,9 @@
     "pos": "3B",
     "headline": "Diamondbacks' Nolan Arenado: Multiple hits Sunday",
     "link": "https://www.cbssports.com/fantasy/baseball/news/diamondbacks-nolan-arenado-multiple-hits-sunday/",
-    "time": "39M ago",
+    "time": "4H ago",
     "byline": "By RotoWire Staff",
-    "body": "Arenado went 2-for-3 with a walk and two runs scored in Sunday's 12-7 win over the Padres. Arenado extended a hit streak to five games and recorded his seventh multi-hit game over the last 11 contests. He's gone 17-for-41 (.415) during that stretch with four home runs, 11 RBI and 10 runs scored. The 35-year-old third baseman has turned around a season that started with a .167 average and two RBI over the first 13 games."
+    "body": "Arenado went 2-for-3 with a walk and two runs scored in Sunday's 12-7 win over the Padres."
   },
   {
     "player": "Gabriel Moreno",
@@ -25,9 +265,9 @@
     "pos": "C",
     "headline": "Diamondbacks' Gabriel Moreno: Return date updated",
     "link": "https://www.cbssports.com/fantasy/baseball/news/diamondbacks-gabriel-moreno-return-date-updated/",
-    "time": "1H ago",
+    "time": "4H ago",
     "byline": "By RotoWire Staff",
-    "body": "Moreno (oblique) is expected to rejoin the Diamondbacks during the series against the Cubs that begins Friday, Nick Piecoro of the Arizona Republic reports. The most recent news had Moreno returning Tuesday for the series against the Brewers, but it's been pushed back until at least Friday. The Diamondbacks are getting by with backups behind the plate, but Adrian Del Castillo (finger) is day-to-day after being removed from Sunday's game. James McCann and Aramis Garcia are still on the 26-man roster to carry the catching load until Moreno and/or Del Castillo are ready."
+    "body": "Moreno (oblique) is expected to rejoin the Diamondbacks during the series against the Cubs that begins Friday, Nick Piecoro of the Arizona Republic reports."
   },
   {
     "player": "Jesus Sanchez",
@@ -35,9 +275,9 @@
     "pos": "RF",
     "headline": "Blue Jays' Jesus Sanchez: Homers, drives in three",
     "link": "https://www.cbssports.com/fantasy/baseball/news/blue-jays-jesus-sanchez-homers-drives-in-three/",
-    "time": "1H ago",
+    "time": "4H ago",
     "byline": "By RotoWire Staff",
-    "body": "Sanchez went 1-for-3 with a two-run homer and a sacrifice fly in Sunday's 4-2 victory over the Guardians. After driving in a run with a sac fly in the first inning, Sanchez put the Jays ahead for good in the sixth inning with his two-run shot off Slade Cecconi, his fourth long ball this year. Sanchez has been swinging the bat well of late, logging at least one hit in four of his last five games -- he's gone 4-for-13 (.308) with a pair of homers in that span. The 28-year-old outfielder is batting .266 with a .771 OPS and 15 RBI through 26 games this season."
+    "body": "Sanchez went 1-for-3 with a two-run homer and a sacrifice fly in Sunday's 4-2 victory over the Guardians."
   },
   {
     "player": "Samuel Basallo",
@@ -45,9 +285,9 @@
     "pos": "C",
     "headline": "Orioles' Samuel Basallo: Homers again Sunday",
     "link": "https://www.cbssports.com/fantasy/baseball/news/orioles-samuel-basallo-homers-again-sunday/",
-    "time": "1H ago",
+    "time": "4H ago",
     "byline": "By RotoWire Staff",
-    "body": "Basallo went 2-for-4 with a solo home run in Sunday's 5-3 loss to the Red Sox. Basallo, who started at catcher Sunday with Adley Rutschman serving as the DH, got the Orioles on the board in the fifth inning with a 392-foot blast off Connelly Early, his fifth homer of the season and first against a left-handed pitcher. The 21-year-old Basallo has now homered in back-to-back starts while going 6-for-9 in that span. He's boosted his slash line to .233/.325/.452 with eight RBI and 10 runs scored through his first 83 plate appearances this season."
+    "body": "Basallo went 2-for-4 with a solo home run in Sunday's 5-3 loss to the Red Sox."
   },
   {
     "player": "Kirby Yates",
@@ -55,9 +295,9 @@
     "pos": "RP",
     "headline": "Angels' Kirby Yates: Struggling during rehab stint",
     "link": "https://www.cbssports.com/fantasy/baseball/news/angels-kirby-yates-struggling-during-rehab-stint/",
-    "time": "6H ago",
+    "time": "9H ago",
     "byline": "By RotoWire Staff",
-    "body": "Yates (knee) has made three minor-league rehab outings since April 17, giving up a combined seven runs on seven hits while posting a 5:1 K:BB over three innings. Yates' rehab appearances have been spread out, as he's had at least two days off between each outing. The veteran reliever has given up at least one run in each of his one-inning appearances and has served up two homers across his three frames. It's not clear how long the Angels plan to keep Yates on his rehab assignment, and his struggles may not be helping his cause for rejoining the big-league roster in short order. After Jordan Romano was designated for assignment Sunday, the Angels' closer situation is extremely murky, and Yates is a clear candidate to take on the role given his 98 career regular-season saves. However, the club may want to see Yates put together some better outings before feeling comfortable handing him the ball in the ninth inning of close contests."
+    "body": "Yates (knee) has made three minor-league rehab outings since April 17, giving up a combined seven runs on seven hits while posting a 5:1 K:BB over three innings."
   },
   {
     "player": "Grayson Rodriguez",
@@ -65,9 +305,9 @@
     "pos": "SP",
     "headline": "Angels' Grayson Rodriguez: Making progress, next step TBD",
     "link": "https://www.cbssports.com/fantasy/baseball/news/angels-grayson-rodriguez-making-progress-next-step-tbd/",
-    "time": "6H ago",
+    "time": "9H ago",
     "byline": "By RotoWire Staff",
-    "body": "Rodriguez (shoulder) threw to live hitters in Arizona on Friday, and the Angels are evaluating how he came out of that session before determining the next step in his throwing program, Jeff Fletcher of the Orange County Register reports. Rodriguez reportedly threw the equivalent of three innings in the live session Friday. The right-handed hurler felt \"good\" while throwing, according to manager Kurt Suzuki, but the team still wants to see how he recovers before determining his next step. Rodriguez could be headed for a minor-league rehab stint soon, and there's a chance he'll be able to join the Angels sometime in May."
+    "body": "Rodriguez (shoulder) threw to live hitters in Arizona on Friday, and the Angels are evaluating how he came out of that session before determining the next step in his throwing program, Jeff Fletcher of the Orange County Register reports."
   },
   {
     "player": "Mookie Betts",
@@ -75,9 +315,9 @@
     "pos": "RF",
     "headline": "Dodgers' Mookie Betts: May begin rehab stint within week",
     "link": "https://www.cbssports.com/fantasy/baseball/news/dodgers-mookie-betts-may-begin-rehab-stint-within-week/",
-    "time": "6H ago",
+    "time": "9H ago",
     "byline": "By RotoWire Staff",
-    "body": "Betts (oblique) could kick off a minor-league rehab assignment as soon as the weekend of May 1-3, per MLB.com. Betts has been sidelined since early April due to a right oblique strain. The star shortstop resumed swinging a bat about two weeks later and has continued to take batting practice in the cage. Manager Dave Roberts said Friday that Betts is in line to start a rehab stint either during the coming weekend or the following week, so a return to the big-league roster during the first half of May appears to be feasible."
+    "body": "Betts (oblique) could kick off a minor-league rehab assignment as soon as the weekend of May 1-3, per MLB.com."
   },
   {
     "player": "Tommy Edman",
@@ -85,9 +325,9 @@
     "pos": "2B",
     "headline": "Dodgers' Tommy Edman: Slowly building up running",
     "link": "https://www.cbssports.com/fantasy/baseball/news/dodgers-tommy-edman-slowly-building-up-running/",
-    "time": "6H ago",
+    "time": "9H ago",
     "byline": "By RotoWire Staff",
-    "body": "Edman (ankle) has been facing live pitching but is still doing only straight-line running, per MLB.com. Edman continues to rehab from the right ankle surgery he underwent last November. The utility man began taking live at-bats in mid-April and has continued to do so, but the organization is having him build up his running progression slowly. Edman isn't likely to be activated from the injured list until at least late May."
+    "body": "Edman (ankle) has been facing live pitching but is still doing only straight-line running, per MLB.com."
   },
   {
     "player": "Giancarlo Stanton",
@@ -95,9 +335,9 @@
     "pos": "DH",
     "headline": "Yankees' Giancarlo Stanton: Decision on IL stint coming Monday",
     "link": "https://www.cbssports.com/fantasy/baseball/news/yankees-giancarlo-stanton-decision-on-il-stint-coming-monday/",
-    "time": "7H ago",
+    "time": "10H ago",
     "byline": "By RotoWire Staff",
-    "body": "Manager Aaron Boone said Sunday that the Yankees will make a decision on Stanton , who is nursing right calf soreness, before Monday's game versus the Rangers, Gary Phillips of the New York Daily News reports. Stanton made an early exit from Friday's game against Houston and hasn't played since. While the team hasn't yet announced whether the veteran slugger will need an IL stint, a clue may have been dropped with the news that outfielder Jasson Dominguez is set to be called up from Triple-A Scranton/Wilkes-Barre. Fantasy managers who roster Stanton should get a definitive answer on whether he'll be placed on the IL ahead of Monday's 6:05 PM ET contest in Texas."
+    "body": "Manager Aaron Boone said Sunday that the Yankees will make a decision on Stanton, who is nursing right calf soreness, before Monday's game versus the Rangers, Gary Phillips of the New York Daily News reports."
   },
   {
     "player": "Will Wagner",
@@ -105,9 +345,9 @@
     "pos": "2B",
     "headline": "Padres' Will Wagner: Playing in extended spring games",
     "link": "https://www.cbssports.com/fantasy/baseball/news/padres-will-wagner-playing-in-extended-spring-games/",
-    "time": "7H ago",
+    "time": "10H ago",
     "byline": "By RotoWire Staff",
-    "body": "Wagner (oblique) has been participating in extended spring-training games at the Padres ' complex in Arizona, per MLB.com. Wagner suffered a strained right oblique in early March after appearing in just five Cactus League contests. He seems to be showing improvement but hasn't yet set out on a rehab assignment. It's unclear if there will be room for Wagner on the big-league roster when he's back to full health."
+    "body": "Wagner (oblique) has been participating in extended spring-training games at the Padres' complex in Arizona, per MLB.com."
   },
   {
     "player": "Yuki Matsui",
@@ -115,9 +355,9 @@
     "pos": "RP",
     "headline": "Padres' Yuki Matsui: May rejoin Padres soon",
     "link": "https://www.cbssports.com/fantasy/baseball/news/padres-yuki-matsui-may-rejoin-padres-soon/",
-    "time": "7H ago",
+    "time": "10H ago",
     "byline": "By RotoWire Staff",
-    "body": "Matsui (groin) may be nearing activation from the 15-day injured list, per MLB.com. Matsui didn't get to participate in any spring contests, so San Diego has elected to keep him on his rehab assignment for an extended period. The lefty reliever has made nine rehab appearances with Triple-A El Paso, posting a 3.72 ERA, 1.52 WHIP and 12:1 K:BB over 9.2 innings. Matsui's activation from the IL could be coming soon, though he may not be thrust into high-leverage work right away."
+    "body": "Matsui (groin) may be nearing activation from the 15-day injured list, per MLB.com."
   },
   {
     "player": "Jeremiah Estrada",
@@ -125,9 +365,9 @@
     "pos": "RP",
     "headline": "Padres' Jeremiah Estrada: Begins rehab stint",
     "link": "https://www.cbssports.com/fantasy/baseball/news/padres-jeremiah-estrada-begins-rehab-stint/",
-    "time": "7H ago",
+    "time": "10H ago",
     "byline": "By RotoWire Staff",
-    "body": "Estrada (elbow) kicked off a minor-league rehab assignment with Single-A Lake Elsinore on Friday, per MLB.com. Estrada landed on the injured list April 10 due to tightness in his right elbow. The righty reliever resumed playing catch shortly thereafter and is now pitching in games again. Estrada tossed a clean inning with one strikeout in his first rehab appearance Friday and may not need a lengthy stint in the minors before he's brought back up to the big-league bullpen."
+    "body": "Estrada (elbow) kicked off a minor-league rehab assignment with Single-A Lake Elsinore on Friday, per MLB.com."
   },
   {
     "player": "Anthony Volpe",
@@ -135,9 +375,9 @@
     "pos": "SS",
     "headline": "Yankees' Anthony Volpe: Likely to return during coming week",
     "link": "https://www.cbssports.com/fantasy/baseball/news/yankees-anthony-volpe-likely-to-return-during-coming-week/",
-    "time": "7H ago",
+    "time": "10H ago",
     "byline": "By RotoWire Staff",
-    "body": "Volpe (shoulder) is slated to join the Yankees \"between Wednesday and Thursday,\" Francys Romero of BeisbolFR.com reports. Volpe is eight games into a rehab stint that has been split between Double-A Somerset and Triple-A Scranton/Wilkes-Barre. The soon-to-be 25-year-old has looked good so far, slashing .308/.333/.423 with a home run, three RBI and two stolen bases, though he's also posted a 1:7 BB:K. Per Romero, Volpe is expected to play a couple more games with Somerset before making his long-awaited return to the big-league club \"between\" Wednesday and Thursday. The Yankees have an early game Wednesday and are off Thursday, so it sounds like Volpe's season debut won't come until at least Friday against Baltimore. Once he's activated, Volpe is likely to start regularly at shortstop, which could cut into Jose Caballero's playing time considerably."
+    "body": "Volpe (shoulder) is slated to join the Yankees \"between Wednesday and Thursday,\" Francys Romero of BeisbolFR.com reports."
   },
   {
     "player": "Troy Johnston",
@@ -145,9 +385,9 @@
     "pos": "RF",
     "headline": "Rockies' Troy Johnston: RBI in four straight games",
     "link": "https://www.cbssports.com/fantasy/baseball/news/rockies-troy-johnston-rbi-in-four-straight-games/",
-    "time": "8H ago",
+    "time": "11H ago",
     "byline": "By RotoWire Staff",
-    "body": "Johnston went 2-for-7 with two RBI and a walk across both games of Sunday's doubleheader against the Mets. Johnston carried over a strong homestand to Colorado's weekend series in New York. Despite going only 3-for-12, Johnston managed to drive in four runs across the three-game set. He's maintained a .315 average across 98 plate appearances to begin the season, also driving in 16 runs."
+    "body": "Johnston went 2-for-7 with two RBI and a walk across both games of Sunday's doubleheader against the Mets."
   },
   {
     "player": "Edouard Julien",
@@ -155,9 +395,9 @@
     "pos": "2B",
     "headline": "Rockies' Edouard Julien: Strong showing across doubleheader",
     "link": "https://www.cbssports.com/fantasy/baseball/news/rockies-edouard-julien-strong-showing-across-doubleheader/",
-    "time": "8H ago",
+    "time": "11H ago",
     "byline": "By RotoWire Staff",
-    "body": "Julien went 3-for-8 with three runs scored and a walk across both games of Sunday's doubleheader against the Mets. Julien served as the leadoff hitter in both contests and continued his recent success of getting on base and scoring runs. He extended his hitting streak to six games, and he also has seven runs scored and five RBI in that span. Julien has started 18 of the Rockies ' last 19 contests against right-handed pitching, and his strong start to the season should keep his role secure for the foreseeable future."
+    "body": "Julien went 3-for-8 with three runs scored and a walk across both games of Sunday's doubleheader against the Mets."
   },
   {
     "player": "Kyle Schwarber",
@@ -165,9 +405,9 @@
     "pos": "LF",
     "headline": "Phillies' Kyle Schwarber: Smashes ninth homer Sunday",
     "link": "https://www.cbssports.com/fantasy/baseball/news/phillies-kyle-schwarber-smashes-ninth-homer-sunday/",
-    "time": "10H ago",
+    "time": "13H ago",
     "byline": "By RotoWire Staff",
-    "body": "Schwarber went 2-for-3 with a solo home run and a walk in Sunday's 6-2 loss to Atlanta. Schwarber clubbed homer No. 9 on Sunday, taking Atlanta southpaw Aaron Bummer deep in the eighth inning. The All-Star slugger has just three multi-hit games and zero stolen bases through 28 contests, hurting fantasy managers in batting average and steals, but he continues to deliver in the power department. Schwarber is batting only .196, but he does have 14 extra-base hits, 17 RBI, 19 walks and 17 runs scored over 102 at-bats."
+    "body": "Schwarber went 2-for-3 with a solo home run and a walk in Sunday's 6-2 loss to Atlanta."
   },
   {
     "player": "Isaac Paredes",
@@ -175,9 +415,9 @@
     "pos": "3B",
     "headline": "Astros' Isaac Paredes: Continues to heat up with homer",
     "link": "https://www.cbssports.com/fantasy/baseball/news/astros-isaac-paredes-continues-to-heat-up-with-homer/",
-    "time": "10H ago",
+    "time": "13H ago",
     "byline": "By RotoWire Staff",
-    "body": "Paredes went 2-for-4 with a home run, three RBI and three runs scored in Sunday's 7-4 win over the Yankees. Paredes crossed the plate a season-high three times, also tallying a season-most three RBI. As long as the infielder continues to occupy a premium spot in Houston's lineup -- he's hit third in three straight games -- Paredes should continue to carry plenty of RBI upside. He's gone 9-for-27 (.333) with three homers and eight RBI over his past seven outings to raise his OPS to .711 for the year."
+    "body": "Paredes went 2-for-4 with a home run, three RBI and three runs scored in Sunday's 7-4 win over the Yankees."
   },
   {
     "player": "Carlos Cortes",
@@ -185,9 +425,9 @@
     "pos": "LF",
     "headline": "Athletics' Carlos Cortes: Keeps rolling with first triple",
     "link": "https://www.cbssports.com/fantasy/baseball/news/athletics-carlos-cortes-keeps-rolling-with-first-triple/",
-    "time": "10H ago",
+    "time": "13H ago",
     "byline": "By RotoWire Staff",
-    "body": "Cortes went 3-for-4 with a two-run triple in Sunday's 2-1 win over the Rangers. The three-bagger was Cortes' first of the season and the second of his career. The 28-year-old outfielder has been a pleasant surprise so far for the A's, posting a 1.122 OPS over his first 61 at-bats. Cortes has been especially hot in his last seven outings, during which he's batting .538 with three home runs, three doubles and seven RBI covering 26 at-bats."
+    "body": "Cortes went 3-for-4 with a two-run triple in Sunday's 2-1 win over the Rangers."
   },
   {
     "player": "Joshua Lowe",
@@ -195,9 +435,9 @@
     "pos": "RF",
     "headline": "Angels' Josh Lowe: Knocks three hits Sunday",
     "link": "https://www.cbssports.com/fantasy/baseball/news/angels-josh-lowe-knocks-three-hits-sunday/",
-    "time": "10H ago",
+    "time": "13H ago",
     "byline": "By RotoWire Staff",
-    "body": "Lowe went 3-for-4 with a run scored in Sunday's 11-9 extra-inning loss to the Royals. Lowe was lifted for a pinch runner in the seventh inning, with Jeff Fletcher of The Orange County Register noting that the outfielder may have tweaked his calf. However, Fletcher added that it might have been a planned replacement, and the Angels didn't provide an update on Lowe after the game, so it's safe to assume he's fine until information to the contrary surfaces. Lowe's big game lifted his average to .188 on the year, and he's added a .583 OPS, three home runs, nine RBI, six runs scored and a stolen base across 77 plate appearances. He is primarily working on the strong side of a platoon in left field, and a run of four straight left-handed starters against the Angels had limited Lowe to a bench role for much of the past week."
+    "body": "Lowe went 3-for-4 with a run scored in Sunday's 11-9 extra-inning loss to the Royals."
   },
   {
     "player": "Jack Perkins",
@@ -205,9 +445,9 @@
     "pos": "P",
     "headline": "Athletics' Jack Perkins: Tallies second six-out save",
     "link": "https://www.cbssports.com/fantasy/baseball/news/athletics-jack-perkins-tallies-second-six-out-save/",
-    "time": "10H ago",
+    "time": "13H ago",
     "byline": "By RotoWire Staff",
-    "body": "Perkins notched the save Sunday against the Rangers, allowing one hit and no walks in two scoreless innings. He struck out three. The Athletics were forced into something of a bullpen game once starter J.T. Ginn (shoulder) left in the fourth inning, and they deployed primary closer Joel Kuhnel during the fourth frame. Perkins stepped in while the club hung onto a 2-1 lead in the eighth, recording his second two-inning save of 2026. The right-hander is emerging as a bit of a multi-inning weapon for the A's, boasting a 3.18 ERA, 1.15 WHIP and 15:3 K:BB over 11.1 frames."
+    "body": "Perkins notched the save Sunday against the Rangers, allowing one hit and no walks in two scoreless innings. He struck out three."
   },
   {
     "player": "Zachary Neto",
@@ -215,9 +455,9 @@
     "pos": "SS",
     "headline": "Angels' Zach Neto: Three-hit effort Sunday",
     "link": "https://www.cbssports.com/fantasy/baseball/news/angels-zach-neto-three-hit-effort-sunday/",
-    "time": "10H ago",
+    "time": "13H ago",
     "byline": "By RotoWire Staff",
-    "body": "Neto went 3-for-5 with two doubles, a walk, two RBI and two runs scored in Sunday's 11-9 extra-inning loss to the Royals. This was Neto's first multi-hit effort over his last eight games. The shortstop has gone 7-for-30 (.233) in that span, though he has added four doubles, four RBI and three stolen bases. For the season, he's batting .243 with an .803 OPS, five home runs, eight doubles, four steals, 14 RBI and 21 runs scored across 29 contests. Neto has also drawn 20 walks so far, which has helped him function effectively as a leadoff hitter."
+    "body": "Neto went 3-for-5 with two doubles, a walk, two RBI and two runs scored in Sunday's 11-9 extra-inning loss to the Royals."
   },
   {
     "player": "Mike Trout",
@@ -225,9 +465,9 @@
     "pos": "CF",
     "headline": "Angels' Mike Trout: Goes yard in loss",
     "link": "https://www.cbssports.com/fantasy/baseball/news/angels-mike-trout-goes-yard-in-loss-999926/",
-    "time": "10H ago",
+    "time": "13H ago",
     "byline": "By RotoWire Staff",
-    "body": "Trout went 1-for-5 with a two-run home run and a walk in Sunday's 11-9 extra-inning loss to the Royals. Trout gave the Angels a fast start with his first-inning blast. The veteran outfielder has cooled off a bit after his power binge in the middle of April -- he's now gone 10 games without a multi-hit effort. While he's batting just .232 on the year, he has a .960 OPS, nine long balls, 20 RBI, 26 runs scored, four stolen bases and four doubles across 28 contests this season. The biggest question with Trout is durability, but he has been in near-vintage form over the first month of 2026."
+    "body": "Trout went 1-for-5 with a two-run home run and a walk in Sunday's 11-9 extra-inning loss to the Royals."
   },
   {
     "player": "Kumar Rocker",
@@ -235,9 +475,9 @@
     "pos": "P",
     "headline": "Rangers' Kumar Rocker: Tough-luck loss Sunday",
     "link": "https://www.cbssports.com/fantasy/baseball/news/rangers-kumar-rocker-tough-luck-loss-sunday/",
-    "time": "10H ago",
+    "time": "13H ago",
     "byline": "By RotoWire Staff",
-    "body": "Rocker (1-2) took the loss Sunday against the Athletics, allowing two runs on six hits and two walks in six innings. He struck out three. The Athletics got to the 26-year-old right-hander early, scoring both of their runs in the opening frame, but Rocker regained his footing thereafter. While he did tie a season low in strikeouts, Rocker turned in his second straight start of at least six frames while yielding two runs or fewer. Rocker has a respectable 3.38 ERA, 1.31 WHIP and 22:10 K:BB across his first 26.2 innings, but a tough assignment against the Tigers is on tap for his next outing."
+    "body": "Rocker (1-2) took the loss Sunday against the Athletics, allowing two runs on six hits and two walks in six innings. He struck out three."
   },
   {
     "player": "Drew Pomeranz",
@@ -245,258 +485,8 @@
     "pos": "RP",
     "headline": "Angels' Drew Pomeranz: Blows save chance",
     "link": "https://www.cbssports.com/fantasy/baseball/news/angels-drew-pomeranz-blows-save-chance/",
-    "time": "10H ago",
+    "time": "13H ago",
     "byline": "By RotoWire Staff",
-    "body": "Pomeranz took a blown save in Sunday's 11-9 extra-inning loss to the Royals, allowing one run on one hit over one-third of an inning. He didn't strike out or walk a batter. Pomeranz was brought into a tough spot after Brent Suter allowed a two-out RBI single to Salvador Perez. The switch didn't work out, as Jac Caglianone tied the game with a two-run home run, sticking Pomeranz with his first blown save of the season. Over 11 appearances, Pomeranz has a 7.84 ERA, 1.65 WHIP and 7:5 K:BB through 10.1 innings. The Angels designated Jordan Romano for assignment Sunday, but Pomeranz's performance has hardly been encouraging in the late innings. Kirby Yates (knee) is on a rehab assignment and will likely get the chance to close once he's off the injured list, relegating Pomeranz back to a setup role if he can keep his spot on the major-league roster. Ben Joyce (shoulder) could also be in the long-term mix for saves, but he is still working his way back from a torn labrum."
-  },
-  {
-    "player": "Reid Detmers",
-    "team": "LAA",
-    "pos": "SP",
-    "headline": "Angels' Reid Detmers: Takes no-decision Sunday",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/angels-reid-detmers-takes-no-decision-sunday/",
-    "time": "10H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Detmers allowed three runs on five hits and a walk while striking out five over five innings in a no-decision Sunday versus the Royals. Detmers has been serviceable in his return to the rotation this year after functioning as a reliever in 2025. That said, he has rarely been all that impressive, allowing at least three runs in four of his six starts. He's at a 4.28 ERA, 1.10 WHIP and 36:9 K:BB through 33.2 innings. The Angels don't have a lot of rotation depth, so average or slightly better will likely be enough for Detmers to stay in a starting role. His next start is projected to be at home versus the Mets."
-  },
-  {
-    "player": "Isaac Collins",
-    "team": "KC",
-    "pos": "LF",
-    "headline": "Royals' Isaac Collins: Blasts second homer",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/royals-isaac-collins-blasts-second-homer/",
-    "time": "10H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Collins went 2-for-4 with a solo home run, an additional RBI and a walk in Sunday's 11-9 extra-inning win over the Angels. Collins has gone 6-for-19 (.316) with four RBI and four walks over his last five games. The outfielder was part of the Royals ' comeback effort Sunday, delivering an RBI single in the fifth inning and a solo shot in the seventh. He's hitting a modest .232 with a .679 OPS, two homers, eight RBI, 12 runs scored, one double and no stolen bases on two attempts over 81 plate appearances. Collins is working primarily as the starting left fielder for the Royals this season, though the switch hitter has ceded a little playing time to Lane Thomas against right-handed pitchers."
-  },
-  {
-    "player": "Jac Caglianone",
-    "team": "KC",
-    "pos": "1B",
-    "headline": "Royals' Jac Caglianone: Ties game with homer",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/royals-jac-caglianone-ties-game-with-homer/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Caglianone went 1-for-2 with a two-run home run in Sunday's 11-9 extra-inning win over the Angels. Caglianone was on the bench to start the contest, but he came in as a pinch hitter for Starling Marte in the eighth inning. Caglianone struck out in that at-bat, but he came through an inning later with a game-tying homer when the Royals were down to their last out. He's hit safely in nine of his last 10 games, going 11-for-36 (.306) with two homers, four RBI and a 4:12 BB:K in that span. For the season, Caglianone is batting .263 with a .769 OPS, two homers, four RBI, 11 runs scored, five doubles, one triple and no stolen bases across 90 plate appearances. He continues to hold down a strong-side platoon role in right field."
-  },
-  {
-    "player": "Lane Thomas",
-    "team": "KC",
-    "pos": "RF",
-    "headline": "Royals' Lane Thomas: Delivers walk-off blast",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/royals-lane-thomas-delivers-walk-off-blast/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Thomas went 3-for-6 with a three-run home run and an additional run scored in Sunday's 11-9 extra-inning win over the Angels. The Royals trailed for much of the game, but Jac Caglianone forced an extra inning with his homer in the ninth. The Angels took the lead in the 10th, but Thomas replied with his first homer of the year to walk it off. This was also Thomas' first multi-hit effort of the campaign. The outfielder is batting .226 with a .661 OPS, five RBI, six runs scored, two stolen bases and one double across 64 plate appearances. He has worked as a platoon partner for Kyle Isbel in center field, though Thomas also occasionally challenges Isaac Collins for at-bats against right-handers in left field."
-  },
-  {
-    "player": "Bobby Witt",
-    "team": "KC",
-    "pos": "SS",
-    "headline": "Royals' Bobby Witt: Swats first homer of season",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/royals-bobby-witt-swats-first-homer-of-season/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Witt went 2-for-5 with a two-run home run and a triple in Sunday's 11-9 extra-inning win over the Angels. Witt decided that one month was long enough, taking Reid Detmers deep in the sixth inning. This was Witt's first homer of the season. He's made up for the lack of power with consistency at the plate, hitting safely in eight straight games, and he's been held hitless just six times in 28 contests overall. The shortstop is batting .294 with a .790 OPS, nine stolen bases, 12 RBI, seven runs scored and nine doubles over 125 plate appearances. He has some catching up to do in the power department -- Witt has hit at least 20 homers in each of his first four years in the majors, but he may need a hot stretch or two to reach that mark in 2026."
-  },
-  {
-    "player": "Jose Fernandez",
-    "team": "ARI",
-    "pos": "SS",
-    "headline": "Diamondbacks' Jose Fernandez: Deposits third homer",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/diamondbacks-jose-fernandez-deposits-third-homer/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Fernandez went 3-for-4 with a solo home run and two additional runs scored in Sunday's win over San Diego. Fernandez was a pest at the plate, putting Arizona on the board with a solo homer in the sixth inning before the offense awoke and rallied for a come-from-behind victory. It marked his second three-hit performance and eighth multi-hit effort of 2026. The rookie has been a pleasant surprise when called upon, slashing .342/.359/.500 with three homers, 12 RBI, 17 runs and a stolen base in 22 games. With Geraldo Perdomo sitting Sunday, Fernandez started at shortstop, though he has seen action across the infield, and his versatility should help him continue to earn playing time."
-  },
-  {
-    "player": "Tim Tawa",
-    "team": "ARI",
-    "pos": "2B",
-    "headline": "Diamondbacks' Tim Tawa: Slugs grand slam Sunday",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/diamondbacks-tim-tawa-slugs-grand-slam-sunday/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Tawa went 1-for-4 with a grand slam in Sunday's 12-7 win over San Diego. Tawa's first homer of the season was a big one, as his seventh-inning grand slam cut Arizona's deficit to one run before the offense kept humming to complete a come-from-behind victory. It was a much-needed moment for the 27-year-old, who has seen his playing time dwindle and his place on the roster come under scrutiny. In 48 plate appearances, Tawa is slashing .146/.234/.268 with three extra-base hits, six RBI and two runs."
-  },
-  {
-    "player": "Seth Lugo",
-    "team": "KC",
-    "pos": "SP",
-    "headline": "Royals' Seth Lugo: Knocked around Sunday",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/royals-seth-lugo-knocked-around-sunday/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Lugo allowed seven runs on 14 hits and a walk while striking out three over 6.1 innings in a no-decision versus the Angels on Sunday. Lugo really didn't have his best stuff, but he was left in the game longer than most starters would be with those kinds of numbers being put up against him. He ultimately threw 72 of 97 pitches for strikes but was simply too hittable in this outing, though the Royals were able to provide some surprises late in the game to get him off the hook. Chalk this up as just an off performance for Lugo, who hadn't allowed more than two runs in any of his first five starts of the campaign. He's at a 2.63 ERA, 1.17 WHIP and 31:11 K:BB through 37.2 innings over six starts this season. Lugo's chance at a bounce-back effort is projected to be on the road against the Mariners."
-  },
-  {
-    "player": "Ildemaro Vargas",
-    "team": "ARI",
-    "pos": "3B",
-    "headline": "Diamondbacks' Ildemaro Vargas: Huge offensive performance in win",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/diamondbacks-ildemaro-vargas-huge-offensive-performance-in-win/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Vargas went 3-for-5 with a solo home run, a three-RBI triple, a double and two additional runs scored in Sunday's victory over San Diego. Vargas was a catalyst in Arizona's come-from-behind win, launching a solo homer in the sixth inning before adding a three-run triple in the eighth inning to extend the lead. While he fell a single shy of the cycle Sunday, the veteran journeyman has rarely come up short throughout the 2026 campaign. Vargas has never produced an OPS+ above 100 in a season since debuting in 2017, yet he's slashing an eye-popping .367/.383/.722 with six homers, 20 RBI and 18 runs through 20 contests."
-  },
-  {
-    "player": "Hunter Goodman",
-    "team": "COL",
-    "pos": "RF",
-    "headline": "Rockies' Hunter Goodman: Lifts seventh homer in nightcap",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/rockies-hunter-goodman-lifts-seventh-homer-in-nightcap/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Goodman went 1-for-4 with a two-run home run in a 3-0 win over the Mets in Game 2 of Sunday's doubleheader. Goodman didn't feature in the matinee game, but he started and caught all nine innings in the nightcap. He also had the game's biggest hit when he took Kodai Senga deep in the third inning. Goodman has gone 12-for-41 (.293) with five homers and six RBI across his last 10 contests. Overall, he's batting .263 with an .887 OPS, seven homers, 11 RBI, 19 runs scored, six doubles and a stolen base over 26 contests. The catcher's steady power is nice, though it comes with some risk since he's striking out a 37.8 percent clip this year."
-  },
-  {
-    "player": "Zach Agnos",
-    "team": "COL",
-    "pos": "P",
-    "headline": "Rockies' Zach Agnos: Collects second save",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/rockies-zach-agnos-collects-second-save/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Agnos allowed a hit and didn't walk or strike out a batter over a scoreless inning to earn the save in a 3-0 win over the Mets in Game 2 of Sunday's doubleheader. Agnos got the opportunity for this save since Victor Vodnik worked a perfect frame to earn the save in the matinee game. This was the second save of the season for Agnos, who previously pitched 3.1 scoreless innings to close out the Rockies ' win over the Astros on April 8. He's primarily worked as a multi-inning option this season, and he's allowed at least two runs in five of his nine appearances, so steady high-leverage usage doesn't seem likely. The right-hander sports a 5.71 ERA, 1.62 WHIP and 16:7 K:BB over 17.1 innings."
-  },
-  {
-    "player": "Chase Dollander",
-    "team": "COL",
-    "pos": "SP",
-    "headline": "Rockies' Chase Dollander: Cruises to win in nightcap",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/rockies-chase-dollander-cruises-to-win-in-nightcap/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Dollander (3-2) gave up five hits and two walks while striking out seven over seven shutout innings to earn the win in Game 2 of Sunday's doubleheader versus the Mets. This was Dollander's first start of the season, and he delivered his best outing yet. He's allowed one run or less over each of his last six games, five of which have been multi-inning performances. The right-hander appears to be fully stretched out after throwing 105 pitches (63 strikes) in this start, so it wouldn't be surprising to see him stick in the rotation. Over seven appearances spanning 32 innings, Dollander has a 2.25 ERA, 1.00 WHIP and 39:9 K:BB this season. His next outing is projected to be a tough test at home against Atlanta."
-  },
-  {
-    "player": "Kodai Senga",
-    "team": "NYM",
-    "pos": "SP",
-    "headline": "Mets' Kodai Senga: Remains winless",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/mets-kodai-senga-remains-winless/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Senga (0-4) took the loss in the second game of Sunday's doubleheader versus the Rockies. He allowed three runs on three hits and three walks while striking out one over 2.2 innings. Senga was pulled in the third inning. He allowed a two-run home run to Hunter Goodman in that frame and put more traffic on the bases before Carl Edwards was brought in for mop-up duty. Senga landed 30 of 50 pitches for strikes in this outing, but he continues to struggle -- this was his third straight start that lasted less than four innings, and he's given up five homers in that span. For the season, he has a 9.00 ERA, 1.95 WHIP and 23:13 K:BB across 20 innings over five starts. Senga is tentatively projected to make his next start against the Angels, but it's unclear how much longer the Mets will tolerate his struggles on the mound, as it already looks like he's operating on a short leash."
-  },
-  {
-    "player": "Luis Campusano",
-    "team": "SD",
-    "pos": "C",
-    "headline": "Padres' Luis Campusano: Tallies two extra-base hits",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/padres-luis-campusano-tallies-two-extra-base-hits/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Campusano went 2-for-4 with a solo home run, a double and an additional RBI in Sunday's loss to the Diamondbacks. Campusano drew the start behind the plate to wrap up the weekend in Mexico City, doubling and homering Sunday after slugging two doubles and a homer in his previous start Wednesday against the Rockies. After going hitless in 10 regular-season games at the big-league level in 2025, the 27-year-old has been on fire to begin 2026, slashing .350/.395/.750 with three homers, nine RBI and eight runs through 14 games. Freddy Fermin is the lead catcher and is more well regarded on the defensive side, but Campusano's continued success should earn him opportunities in the lineup."
-  },
-  {
-    "player": "Tyrone Taylor",
-    "team": "NYM",
-    "pos": "RF",
-    "headline": "Mets' Tyrone Taylor: Provides lone run in Game 1 loss",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/mets-tyrone-taylor-provides-lone-run-in-game-1-loss/",
-    "time": "11H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Taylor went 1-for-3 with a solo home run in a 3-1 loss to the Rockies in Game 1 of Sunday's doubleheader. Taylor went deep off Jose Quintana in the fifth inning of the matinee game. This was Taylor's second homer of the season, though he entered Sunday just 4-for-19 (.211) over his previous nine games. The outfielder reverted to his usual recent form by going 0-for-3 in the nightcap, ending the day at .214/.233/.381 slash line with two homers, seven RBI, four runs scored and no stolen bases over 45 plate appearances. Taylor is working as a fourth outfielder for now and will likely earn most of his plate appearances against southpaws, though the newly signed Austin Slater could end up filling a similar role."
-  },
-  {
-    "player": "Nolan McLean",
-    "team": "NYM",
-    "pos": "SP",
-    "headline": "Mets' Nolan McLean: Strikes out seven in loss",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/mets-nolan-mclean-strikes-out-seven-in-loss/",
-    "time": "12H ago",
-    "byline": "By RotoWire Staff",
-    "body": "McLean (1-2) allowed two runs (one earned) on five hits and two walks while striking out seven over five-plus innings to take the loss in Game 1 of Sunday's doubleheader versus the Rockies. McLean was charged with a single run in the fourth and sixth innings, though the second run on his line came after Huascar Brazoban allowed an inherited runner to score. This was tied for McLean's shortest start of the season, but he's yet to give up more than three runs in any of his six outings, and he's logged at least seven strikeouts on five occasions. He's at a 2.55 ERA, 0.85 WHIP and 45:10 K:BB through 35.1 innings. McLean's next outing is projected to be on the road versus the Angels, though wins could remain tough to come by if the Mets don't give him better run support."
-  },
-  {
-    "player": "Victor Vodnik",
-    "team": "COL",
-    "pos": "RP",
-    "headline": "Rockies' Victor Vodnik: Earns save in Game 1 of twin bill",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/rockies-victor-vodnik-earns-save-in-game-1-of-twin-bill/",
-    "time": "12H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Vodnik struck out two in a perfect inning to earn the save in a 3-1 win over the Mets in Game 1 of Sunday's doubleheader. Vodnik had allowed seven runs across his last 1.2 innings, so it was encouraging to see him pitch a clean frame Sunday. He has converted four of six save chances this season while pitching to a 6.94 ERA, 1.97 WHIP and 10:6 K:BB over 11.2 innings. Vodnik is operating as the Rockies ' closer for now, but he can't afford to have too many more bad outings. Antonio Senzatela and Zach Agnos (two each) are the other relievers to log multiple saves so far for the Rockies this season, though both of them are capable of long-relief assignments and may not see steady late-inning work."
-  },
-  {
-    "player": "Manny Machado",
-    "team": "SD",
-    "pos": "3B",
-    "headline": "Padres' Manny Machado: Blasts two homers in loss",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/padres-manny-machado-blasts-two-homers-in-loss/",
-    "time": "12H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Machado went 2-for-5 with two homers and five RBI in Sunday's 12-7 loss to the Diamondbacks. Machado took advantage of the hitter-friendly backdrop at Estadio Alfredo Harp Helu, launching a two-run homer in the third inning before adding a three-run shot in the fifth frame, both off Ryne Nelson. Although the Padres ultimately lost, it was a much-needed offensive outburst for the third baseman, who entered Sunday's contest with a .615 OPS. The 33-year-old is now slashing .209/.327/.363 with four homers, 16 RBI and 15 runs through 26 games in 2026."
-  },
-  {
-    "player": "Jose Quintana",
-    "team": "COL",
-    "pos": "SP",
-    "headline": "Rockies' Jose Quintana: Picks up first win of season",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/rockies-jose-quintana-picks-up-first-win-of-season/",
-    "time": "12H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Quintana (1-2) allowed one run on two hits and two walks while striking out five over 5.1 innings to earn the win in the first game of Sunday's doubleheader versus the Mets. Quintana's start was pushed back a day by Saturday's rainout. He ended up having his best outing of the season, limiting the damage to a fifth-inning solo shot by Tyrone Taylor. While three of Quintana's four starts have come on the road, he still has an uninspiring 4.91 ERA, 1.53 WHIP and 9:11 K:BB across 18.1 innings this season. That doesn't bode well for when he sees a steadier stretch of time at Coors Field. Quintana is tentatively projected for a brutal matchup at home against Atlanta in his next start."
-  },
-  {
-    "player": "Hoby Milner",
-    "team": "CHC",
-    "pos": "RP",
-    "headline": "Cubs' Hoby Milner: Pitching well so far",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/cubs-hoby-milner-pitching-well-so-far/",
-    "time": "12H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Through 13 appearances this season, Milner has a 2.70 ERA and 1.05 WHIP out of Chicago's bullpen. Milner served up a solo home run across an inning of relief Sunday, but it's still been a good start to the season for the veteran lefty. He's logged 10 scoreless outings in his 13 appearances overall and has recorded two holds as well. However, Milner has tallied only three strikeouts over 13.1 innings, and his lack of swing-and-miss stuff gives him a smaller margin of error compared to other relievers."
-  },
-  {
-    "player": "Ryne Nelson",
-    "team": "ARI",
-    "pos": "SP",
-    "headline": "Diamondbacks' Ryne Nelson: Surrenders six runs in no-decision",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/diamondbacks-ryne-nelson-surrenders-six-runs-in-no-decision/",
-    "time": "12H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Nelson did not factor into the decision Sunday, allowing six runs on seven hits and two walks over five innings against the Padres. He struck out four. Nelson was hit hard by the Padres in this neutral-site matchup at hitter-friendly Estadio Alfredo Harp Helu, serving up a pair of homers to Manny Machado. An offensive outburst from the Diamondbacks spared Nelson from taking the loss, but the right-hander's numbers are trending in the wrong direction. After posting a 3.54 ERA and 1.03 WHIP through his first five starts, the 28-year-old has allowed 14 runs over his past two outings and now owns a 7.71 ERA and 1.52 WHIP across 25.2 innings. He'll look to get back on track in his next start, tentatively scheduled for Saturday against the Cubs."
-  },
-  {
-    "player": "Patrick Corbin",
-    "team": "TOR",
-    "pos": "SP",
-    "headline": "Blue Jays' Patrick Corbin: Goes 4.2 innings Sunday",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/blue-jays-patrick-corbin-goes-4-2-innings-sunday/",
-    "time": "12H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Corbin did not factor into the decision Sunday against the Guardians, allowing two runs on six hits and two walks over 4.2 innings. He struck out four. Corbin was solid early, holding Cleveland scoreless through four innings, but he ran into trouble in the fifth, when he allowed four hits before he was pulled with two outs in the frame. Since stepping into Toronto's injury-plagued rotation, Corbin has posted a 3.72 ERA with a 1.24 WHIP and 16:6 K:BB across four outings (19.1 innings). He's tentatively lined up to face the Twins on the road in his next start."
-  },
-  {
-    "player": "Michael King",
-    "team": "SD",
-    "pos": "SP",
-    "headline": "Padres' Michael King: Strong showing in no-decision",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/padres-michael-king-strong-showing-in-no-decision/",
-    "time": "12H ago",
-    "byline": "By RotoWire Staff",
-    "body": "King did not factor into the decision Sunday, allowing two runs on three hits and a walk over six innings against the Diamondbacks. He struck out eight. King was mostly excellent, striking out a season-high eight batters while maintaining strong command, with the only damage coming on solo homers by Jose Fernandez and Ildemaro Vargas in the fifth and sixth innings. A bullpen collapse prevented King from earning his fourth win of the season, but it was another strong outing for the right-hander, who owns a 2.41 ERA and 1.04 WHIP with a 34:15 K:BB across 33.2 innings (six starts). His next start is projected for Saturday against the White Sox."
-  },
-  {
-    "player": "Yohendrick Pinango",
-    "team": "TOR",
-    "pos": "LF",
-    "headline": "Blue Jays' Yohendrick Pinango: Singles in debut",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/blue-jays-yohendrick-pinango-singles-in-debut/",
-    "time": "12H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Pinango went 1-for-2 in Sunday's 4-2 win over the Guardians. After flying out in his first at-bat, Pinango laced a two-out single off Slade Cecconi in the fourth inning for his first big-league hit. Myles Straw would later pinch hit for PInango in the sixth inning against lefty Tim Herrin. The 23-year-old Pinango got off to a nice start with Triple-A Buffalo this year, slashing .288/.370/.488 with three homers in his first 22 games. He should see regular at-bats against right-handed pitching while Addison Barger (ankle) and Nathan Lukes (hamstring) are sidelined."
-  },
-  {
-    "player": "J.T. Ginn",
-    "team": "ATH",
-    "pos": "P",
-    "headline": "Athletics' J.T. Ginn: Injury-shortened start Sunday",
-    "link": "https://www.cbssports.com/fantasy/baseball/news/athletics-j-t-ginn-injury-shortened-start-sunday/",
-    "time": "12H ago",
-    "byline": "By RotoWire Staff",
-    "body": "Ginn left Sunday's start against the Rangers in the fourth inning with right shoulder soreness, Dave Sessions of MLB.com reports. Ginn cruised through three scoreless frames before hitting Evan Carter with a pitch with one out in the bottom of the fourth. The right-handed pitcher then appeared to be favoring his right side after delivering a 94.1 mph sinker to Jake Burger at the plate, and he was ultimately forced to exit the contest as a result. Manager Mark Kotsay explained following the team's 2-1 victory that Ginn was dealing with \"some form of a stinger in the shoulder area\" and that the team wasn't going to \"risk anything further.\" The club is expected to re-evaluate Ginn on Monday."
+    "body": "Pomeranz took a blown save in Sunday's 11-9 extra-inning loss to the Royals, allowing one run on one hit over one-third of an inning. He didn't strike out or walk a batter."
   }
 ]
