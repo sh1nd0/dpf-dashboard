@@ -1,140 +1,110 @@
 {
-  "currentPeriod": 2,
-  "periodStart": "2026-04-13",
-  "periodEnd": "2026-04-26",
-  "opponent": "Dinosaur Jr Caminero",
-  "opponentTeam": "Dinosaur Jr Caminero",
+  "currentPeriod": 3,
+  "periodStart": "2026-04-27",
+  "periodEnd": "2026-05-10",
+  "opponent": "A Pete Crow-Armstrong Looked at Me",
+  "opponentTeam": "A Pete Crow-Armstrong Looked at Me",
   "currentScore": {
-    "me": 9,
-    "opp": 7,
+    "me": 8,
+    "opp": 8,
     "tied": 0
   },
   "categoryBreakdown": {
     "BA": {
-      "me": "0.244",
-      "opp": "0.251",
+      "me": "0",
+      "opp": "0",
       "won": false
     },
     "HR": {
-      "me": "18",
-      "opp": "20",
+      "me": "0",
+      "opp": "0",
       "won": false
     },
     "RBI": {
-      "me": "66",
-      "opp": "51",
-      "won": true
+      "me": "0",
+      "opp": "0",
+      "won": false
     },
     "R": {
-      "me": "67",
-      "opp": "54",
-      "won": true
+      "me": "0",
+      "opp": "0",
+      "won": false
     },
     "SB": {
-      "me": "12",
-      "opp": "7",
-      "won": true
+      "me": "0",
+      "opp": "0",
+      "won": false
     },
     "KO": {
-      "me": "106",
-      "opp": "95",
+      "me": "0",
+      "opp": "0",
       "won": false
     },
     "OBP": {
-      "me": "0.334",
-      "opp": "0.319",
-      "won": true
+      "me": "0",
+      "opp": "0",
+      "won": false
     },
     "SLG": {
-      "me": "0.420",
-      "opp": "0.441",
+      "me": "0",
+      "opp": "0",
       "won": false
     },
     "K": {
-      "me": "86",
-      "opp": "110",
+      "me": "0",
+      "opp": "0",
       "won": false
     },
     "ERA": {
-      "me": "3.4688",
-      "opp": "4.8242",
-      "won": true
+      "me": "0",
+      "opp": "0",
+      "won": false
     },
     "WHIP": {
-      "me": "1.2083",
-      "opp": "1.3660",
-      "won": true
+      "me": "0",
+      "opp": "0",
+      "won": false
     },
     "W": {
-      "me": "4",
-      "opp": "8",
+      "me": "0",
+      "opp": "0",
       "won": false
     },
     "S": {
-      "me": "6",
-      "opp": "1",
-      "won": true
+      "me": "0",
+      "opp": "0",
+      "won": false
     },
     "HD": {
-      "me": "5",
-      "opp": "2",
-      "won": true
+      "me": "0",
+      "opp": "0",
+      "won": false
     },
     "HRA": {
-      "me": "10",
-      "opp": "12",
-      "won": true
+      "me": "0",
+      "opp": "0",
+      "won": false
     },
     "QS": {
-      "me": "5",
-      "opp": "6",
+      "me": "0",
+      "opp": "0",
       "won": false
     }
   },
   "allMatchups": [
     {
-      "away": "Blame it on the Rainiel",
-      "home": "Popped A Mahle I'm Sweating",
-      "awayScore": 7.5,
-      "homeScore": 8.5
-    },
-    {
-      "away": "Ballesteros, Let the Rhythm Take You Over",
-      "home": "Weird Fishes / Arrighetti",
-      "awayScore": 5.0,
-      "homeScore": 11.0
-    },
-    {
-      "away": "Before and After Shohei",
-      "home": "Colonel Corbin's Ascent",
-      "awayScore": 4.5,
-      "homeScore": 11.5
-    },
-    {
       "away": "Okamotomami",
-      "home": "Dinosaur Jr Caminero",
-      "awayScore": 9.0,
-      "homeScore": 7.0
-    },
-    {
-      "away": "A Pete Crow-Armstrong Looked at Me",
-      "home": "Everythings McGonigle Green",
-      "awayScore": 9.5,
-      "homeScore": 6.5
-    },
-    {
-      "away": "Buddy Buddy Buddy All On Base",
-      "home": "Yesavage Garden",
-      "awayScore": 9.0,
-      "homeScore": 7.0
+      "home": "A Pete Crow-Armstrong Looked at Me",
+      "awayScore": 8.0,
+      "homeScore": 8.0
     }
   ],
-  "myRecord": "1-0-0",
+  "myRecord": "2-0-0",
   "standings": [
     {
       "team": "Weird Fishes / Arrighetti",
       "mine": false,
-      "w": 1,
+      "w": 2,
       "l": 0,
       "t": 0,
       "pts": 0
@@ -142,7 +112,7 @@
     {
       "team": "Colonel Corbin's Ascent",
       "mine": false,
-      "w": 1,
+      "w": 2,
       "l": 0,
       "t": 0,
       "pts": 0
@@ -150,15 +120,7 @@
     {
       "team": "Okamotomami",
       "mine": true,
-      "w": 1,
-      "l": 0,
-      "t": 0,
-      "pts": 0
-    },
-    {
-      "team": "Everythings McGonigle Green",
-      "mine": false,
-      "w": 1,
+      "w": 2,
       "l": 0,
       "t": 0,
       "pts": 0
@@ -166,31 +128,15 @@
     {
       "team": "Blame it on the Rainiel",
       "mine": false,
-      "w": 1,
+      "w": 2,
       "l": 0,
-      "t": 0,
-      "pts": 0
-    },
-    {
-      "team": "Before and After Shohei",
-      "mine": false,
-      "w": 1,
-      "l": 0,
-      "t": 0,
-      "pts": 0
-    },
-    {
-      "team": "Dinosaur Jr Caminero",
-      "mine": false,
-      "w": 0,
-      "l": 1,
       "t": 0,
       "pts": 0
     },
     {
       "team": "Buddy Buddy Buddy All On Base",
       "mine": false,
-      "w": 0,
+      "w": 1,
       "l": 1,
       "t": 0,
       "pts": 0
@@ -198,8 +144,32 @@
     {
       "team": "A Pete Crow-Armstrong Looked at Me",
       "mine": false,
-      "w": 0,
+      "w": 1,
       "l": 1,
+      "t": 0,
+      "pts": 0
+    },
+    {
+      "team": "Everythings McGonigle Green",
+      "mine": false,
+      "w": 1,
+      "l": 1,
+      "t": 0,
+      "pts": 0
+    },
+    {
+      "team": "Before and After Shohei",
+      "mine": false,
+      "w": 1,
+      "l": 1,
+      "t": 0,
+      "pts": 0
+    },
+    {
+      "team": "Dinosaur Jr Caminero",
+      "mine": false,
+      "w": 0,
+      "l": 2,
       "t": 0,
       "pts": 0
     },
@@ -207,7 +177,7 @@
       "team": "Ballesteros, Let the Rhythm Take You Over",
       "mine": false,
       "w": 0,
-      "l": 1,
+      "l": 2,
       "t": 0,
       "pts": 0
     },
@@ -215,7 +185,7 @@
       "team": "Yesavage Garden",
       "mine": false,
       "w": 0,
-      "l": 1,
+      "l": 2,
       "t": 0,
       "pts": 0
     },
@@ -223,11 +193,10 @@
       "team": "Popped A Mahle I'm Sweating",
       "mine": false,
       "w": 0,
-      "l": 1,
+      "l": 2,
       "t": 0,
       "pts": 0
     }
   ],
-  "updated": "2026-04-26T16:22:44.810102Z",
-  "lastUpdated": "2026-04-26 (period 2 in progress)"
+  "lastUpdated": "2026-04-27"
 }
