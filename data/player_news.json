@@ -1,102 +1,472 @@
 [
   {
-    "name": "Tyler Heineman",
-    "player": "Tyler Heineman",
-    "pos": "",
-    "team": "TOR",
-    "when": "2D ago",
-    "headline": "Blue Jays' Tyler Heineman: Resting Saturday",
-    "url": "https://www.cbssports.com/fantasy/baseball/news/blue-jays-tyler-heineman-resting-saturday/",
-    "body": "Heineman isn't in the lineup for Saturday's game against Minnesota.\n\nAfter starting the season with a .188 batting average and .423 OPS through 20 games, Heineman will take a seat on the bench for the third time in Toronto's last four games while Brandon Valenzuela starts at catcher."
-  },
-  {
-    "name": "Luis Arraez",
-    "player": "Luis Arraez",
-    "pos": "",
+    "name": "Tyler Mahle",
+    "player": "Tyler Mahle",
+    "pos": "SP",
     "team": "SF",
-    "when": "3D ago",
-    "headline": "Giants' Luis Arraez: Doubles in loss Friday",
-    "url": "https://www.cbssports.com/fantasy/baseball/news/giants-luis-arraez-doubles-in-loss-friday/",
-    "body": "Arraez went 1-for-4 with a double in Friday's 3-0 loss to the Rays.\n\nArraez accounted for the Giants ' lone extra-base hit with a double in the fourth inning, though he was thrown out attempting to stretch it into a triple. The 29-year-old infielder has recorded at least one hit in eight of the last 10 games, batting .300 with five RBI, three doubles, two stolen bases and a run scored in 42 plate appearances during that span. He's slashing .303/.331/.369 with 11 RBI, 11 runs scored and four stolen bases across 132 plate appearances on the campaign."
+    "when": "2M ago",
+    "headline": "Giants' Tyler Mahle: Dazzles over 5.1 innings Sunday",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/giants-tyler-mahle-dazzles-over-5-1-innings-sunday/",
+    "body": "Mahle didn't factor into the decision Sunday against the Rays, allowing four hits and one walk with five strikeouts across 5.1 shutout innings.\n\nMahle was in line for the victory before Ryan Walker allowed the tying run to cross in the bottom of the eighth. Sunday was Mahle's second scoreless outing in his last three starts, and all four hits he allowed to Tampa Bay were singles. After posting an ugly 7.23 ERA through his first four starts, Mahle now owns a 5.00 ERA and 34:18 K:BB across 35 innings. The right-hander should make his next start in next weekend's home series against the Pirates."
   },
   {
-    "name": "Brennan Bernardino",
-    "player": "Brennan Bernardino",
-    "pos": "",
+    "name": "Mickey Moniak",
+    "player": "Mickey Moniak",
+    "pos": "CF",
     "team": "COL",
-    "when": "28D ago",
-    "headline": "Rockies' Brennan Bernardino: Working as opener",
-    "url": "https://www.cbssports.com/fantasy/baseball/news/rockies-brennan-bernardino-working-as-opener/",
-    "body": "Bernardino will serve as the Rockies ' opener Saturday against Atlanta.\n\nThe Rockies have typically used an opener in front of Chase Dollander this season, and the team will call upon Bernardino to handle the first inning of Saturday's contest. The 34-year-old southpaw has been one of the most effective members of Colorado's entire pitching staff this season, turning in a 0.71 ERA and 1.03 WHIP through 12.2 innings."
+    "when": "7M ago",
+    "headline": "Rockies' Mickey Moniak: Goes deep twice in loss",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/rockies-mickey-moniak-goes-deep-twice-in-loss/",
+    "body": "Moniak went 2-for-4 with two homers, three RBI and a walk in Sunday's 11-6 loss to Atlanta.\n\nMoniak went deep twice, unloading a 422-foot two-run laser off Aaron Bummer in a lefty-lefty matchup in the fourth inning before adding a solo shot in the eighth inning off Tyler Kinley. The outfielder remains red hot, as he's now up to four multi-homer games in 2026 and carries a 16-game hitting streak. Overall, Moniak is slashing .327/.374/.724 with 11 homers, six doubles, 21 RBI, 19 runs and a stolen base across 27 games."
   },
   {
-    "name": "Luis Torrens",
-    "player": "Luis Torrens",
-    "pos": "",
+    "name": "Jonathan Aranda",
+    "player": "Jonathan Aranda",
+    "pos": "1B",
+    "team": "TB",
+    "when": "9M ago",
+    "headline": "Rays' Jonathan Aranda: Walks off Giants in four-hit day",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/rays-jonathan-aranda-walks-off-giants-in-four-hit-day/",
+    "body": "Aranda went 4-for-5 with an RBI in Sunday's 2-1 win over the Giants.\n\nAll four of Aranda's hits were singles, including the walk-off winner in the 10th inning, and all eight of Tampa Bay's hits as a team Sunday were singles. It was Aranda's first career four-hit game, and he's now slashing .252/.352/.462 with seven home runs, 28 RBI, 17 runs scored and a 19:35 BB:K across 142 plate appearances this season."
+  },
+  {
+    "name": "Steven Matz",
+    "player": "Steven Matz",
+    "pos": "SP",
+    "team": "TB",
+    "when": "14M ago",
+    "headline": "Rays' Steven Matz: Cruises through six innings vs. SFG",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/rays-steven-matz-cruises-through-six-innings-vs-sfg/",
+    "body": "Matz didn't factor into the decision Sunday against the Giants, allowing one run on four hits and two walks with one strikeout across six innings.\n\nThe Giants entered Sunday 29th in OPS as a team, and they managed to scored two total runs in the three-game set with Tampa Bay. Matz was just the latest starter to sit San Francisco down with relative ease. The left-hander has now posted back-to-back quality starts, though he clearly didn't have the strikeout stuff going Sunday. Matz has been solid in his return to starting this season, registering a 4-1 record, 3.86 ERA and 28:13 K:BB across 37.1 innings. He's lined up to start in Boston during next weekend's four-game series."
+  },
+  {
+    "name": "Jorge Mateo",
+    "player": "Jorge Mateo",
+    "pos": "SS",
+    "team": "ATL",
+    "when": "16M ago",
+    "headline": "Braves' Jorge Mateo: Slugs homer Sunday",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/braves-jorge-mateo-slugs-homer-sunday/",
+    "body": "Mateo went 2-for-5 with a two-run home run and a stolen base in Sunday's 11-6 win over Colorado.\n\nMateo drew his fourth straight start at shortstop and delivered with his second homer of the season, a two-run blast off Kyle Freeland in the second inning to go back-to-back with Jonah Heim. Mateo has generally been effective when called upon in 2026, as the veteran speedster is hitting .286/.318/.476 with two homers, two doubles, five RBI, 12 runs and three steals across 44 plate appearances."
+  },
+  {
+    "name": "Jesus Valdez",
+    "player": "Jesus Valdez",
+    "pos": "2B",
+    "team": "ARI",
+    "when": "20M ago",
+    "headline": "Diamondbacks' Jesus Valdez: Outrighted to Double-A",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/diamondbacks-jesus-valdez-outrighted-to-double-a/",
+    "body": "Valdez was removed from the Diamondbacks ' 40-man roster and outrighted to Double-A Amarillo on Sunday.\n\nValdez will remain with Arizona's organization, but he will now drop down a level in the minor-league system. The 28-year-old had his contract selected by the Diamondbacks to serve as the team's 27th man during the squad's Mexico City Series against the Padres in late April, but he failed to appear in a contest before being optioned to Triple-A Reno on April 27."
+  },
+  {
+    "name": "Jonah Heim",
+    "player": "Jonah Heim",
+    "pos": "C",
+    "team": "ATL",
+    "when": "25M ago",
+    "headline": "Braves' Jonah Heim: Tallies five RBI in win",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/braves-jonah-heim-tallies-five-rbi-in-win/",
+    "body": "Heim went 2-for-4 with a two-run homer, a double, three additional RBI and an additional run scored in Sunday's 11-6 win over Colorado.\n\nWith Drake Baldwin at designated hitter, Heim drew the start at catcher and made the most of it, matching a career high with five RBI. He opened the scoring for Atlanta with a two-run blast in the second inning before adding another extra-base hit with a two-RBI double in the ninth to extend the lead. The 30-year-old's playing time has been limited with Baldwin's success behind the plate, as Heim has logged 45 plate appearances in 2026, slashing .231/.311/.410 with a homer, four doubles, eight RBI and four runs."
+  },
+  {
+    "name": "Gabriel Moreno",
+    "player": "Gabriel Moreno",
+    "pos": "C",
+    "team": "ARI",
+    "when": "27M ago",
+    "headline": "Diamondbacks' Gabriel Moreno: Dropped in order",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/diamondbacks-gabriel-moreno-dropped-in-order/",
+    "body": "Moreno batted seventh and went 1-for-4 with a home run and two RBI in Sunday's 8-4 loss to the Cubs.\n\nMoreno made his second start in three days since being activated off the injured list Friday. The homer was the first for the catcher, who had missed three weeks due to an oblique injury. Sunday was his first time batting in the lower third of the order after serving primarily as the team's cleanup batter when healthy."
+  },
+  {
+    "name": "Jesus Rodriguez",
+    "player": "Jesus Rodriguez",
+    "pos": "C",
+    "team": "SF",
+    "when": "34M ago",
+    "headline": "Giants' Jesus Rodriguez: Set to be called up Monday",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/giants-jesus-rodriguez-set-to-be-called-up-monday/",
+    "body": "Rodriguez is expected to be called up from Triple-A Sacramento on Monday, Susan Slusser of the San Francisco Chronicle reports.\n\nRodriguez will join the major-league roster for the first time in his career as the team gears up to begin a three-game series against the Padres at home beginning Monday. The 24-year-old has compiled a .330 average with two home runs, 14 RBI, 20 runs scored and four stolen bases over 100 at-bats in 24 contests with Sacramento this season. Rodriguez has operated primarily as a catcher with the Triple-A squad, starting 16 contests behind the plate, but he has also recorded starts at second base (2) and left field (5) in 2026."
+  },
+  {
+    "name": "Kyle Freeland",
+    "player": "Kyle Freeland",
+    "pos": "SP",
+    "team": "COL",
+    "when": "34M ago",
+    "headline": "Rockies' Kyle Freeland: Allows six runs in third loss",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/rockies-kyle-freeland-allows-six-runs-in-third-loss/",
+    "body": "Freeland (1-3) took the loss Sunday, allowing six runs on eight hits and three walks over 4.1 innings against Atlanta. He struck out seven.\n\nFreeland generated a game-high 17 whiffs and struck out a season-best seven batters, but the contact he allowed was damaging as Atlanta tagged the southpaw for six earned runs, including two homers. The 32-year-old opened the season by allowing four runs across 15.2 innings over his first three starts, but in his past two outings since being reinstated from the injured list with left shoulder inflammation, he has allowed 10 earned runs across 9.1 frames. Overall, Freeland owns a 5.04 ERA and 1.36 WHIP with a 24:8 K:BB across 25 innings in 2026 and will look to get back on track in his next start, tentatively scheduled for Saturday against Philadelphia."
+  },
+  {
+    "name": "Bryce Eldridge",
+    "player": "Bryce Eldridge",
+    "pos": "1B",
+    "team": "SF",
+    "when": "1H ago",
+    "headline": "Giants' Bryce Eldridge: Set to be called up Monday",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/giants-bryce-eldridge-set-to-be-called-up-monday-1001225/",
+    "body": "Eldridge is expected to be called up from Triple-A Sacramento on Monday, Susan Slusser of the San Francisco Chronicle reports.\n\nEldridge will join the Giants ahead of the team's six-game home stand beginning Monday against the Padres. The 21-year-old has been light's out at the Triple-A level this season, batting .333 with five home runs, 22 RBI and 25 runs scored over 114 at-bats in 30 games with Sacramento. Eldridge struggled in limited action with San Francisco last season, going 3-for-28 with two doubles, seven walks, four RBI and a run scored while striking out 13 times over 10 contests. He'll look to get off to a better start in his second go-around with the big-league club."
+  },
+  {
+    "name": "Spencer Strider",
+    "player": "Spencer Strider",
+    "pos": "SP",
+    "team": "ATL",
+    "when": "1H ago",
+    "headline": "Braves' Spencer Strider: Shaky control in season debut",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/braves-spencer-strider-shaky-control-in-season-debut/",
+    "body": "Strider (oblique) did not factor into the decision Sunday, allowing three runs on four hits and five walks over 3.1 innings against the Rockies. He struck out six.\n\nStrider made his first start of the season after opening on the injured list with a left oblique strain and struggled to consistently find the zone, throwing 48 of 87 pitches for strikes and issuing five free passes. It wasn't a strong outing for the right-hander, who also allowed a homer to TJ Rumfield in the third inning, but Strider did strike out six and simply being back on a big-league mound is a step in the right direction. After posting a 4.45 ERA and 1.40 WHIP with a 131:51 K:BB across 125.1 regular-season innings (23 starts) in 2025, the 27-year-old is looking to return closer to his form from 2022 and 2023 prior to injuries. Strider is tentatively scheduled to start Saturday against the Dodgers, though how Atlanta manages his workload will be worth monitoring."
+  },
+  {
+    "name": "C.J. Kayfus",
+    "player": "C.J. Kayfus",
+    "pos": "1B",
+    "team": "CLE",
+    "when": "1H ago",
+    "headline": "Guardians' CJ Kayfus: Recovering from oblique injury",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/guardians-cj-kayfus-recovering-from-oblique-injury/",
+    "body": "Kayfus has not played since April 24 due to oblique soreness, Tim Stebbins of MLB.com reports.\n\nKayfus, who was optioned to Triple-A Columbus on April 13, went from spotty work in Cleveland to playing every day for the Clippers, which contributed to the injury. After undergoing imaging, which revealed no strain, he began participating in baseball activities. Kayfus, who was not placed on the injured list, could rejoin the starting lineup in a couple of days."
+  },
+  {
+    "name": "Cooper Ingle",
+    "player": "Cooper Ingle",
+    "pos": "C",
+    "team": "CLE",
+    "when": "1H ago",
+    "headline": "Guardians' Cooper Ingle: Activated Sunday",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/guardians-cooper-ingle-activated-sunday/",
+    "body": "Ingle (hip) was activated off the 7-day injured list and rejoined Triple-A Columbus on Sunday, Tim Stebbins of MLB.com reports.\n\nIngle operated as the designated hitter for the Clippers and went hitless in four at-bats. The catching prospect caught 13 of the first 19 games and appeared in two others, so it's understandable given the workload that led to the injury, the organization takes Ingle's return slowly by using him at DH. He's gotten off to a good start, going 13-for-33 (.394) with four home runs, 16 RBI and 14 runs before suffering the injury."
+  },
+  {
+    "name": "Sonny Gray",
+    "player": "Sonny Gray",
+    "pos": "SP",
+    "team": "BOS",
+    "when": "2H ago",
+    "headline": "Red Sox's Sonny Gray: To throw bullpen Monday",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/red-soxs-sonny-gray-to-throw-bullpen-monday/",
+    "body": "Gray (hamstring) will throw a bullpen session Monday, Jen McCaffrey of The Athletic reports.\n\nThis will be the second throwing session in the last four days for Gray, who threw to batters last Friday. Red Sox interim manager Chad Tracy said the club will evaluate the right-hander and discuss next steps following Monday's session. The first day that Gray can be activated is Wednesday against Detroit, a game for which the Red Sox have not yet named a starter."
+  },
+  {
+    "name": "Kevin Defrank",
+    "player": "Kevin Defrank",
+    "pos": "SP",
+    "team": "MIA",
+    "when": "2H ago",
+    "headline": "Marlins' Kevin Defrank: Out for foreseeable future",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/marlins-kevin-defrank-out-for-foreseeable-future/",
+    "body": "Defrank has no timetable for a return after suffering a right biceps injury, Christina De Nicola of MLB.com reports.\n\nDefrank will not require surgery, so he's not necessarily out for the season, but he will be forced to miss substantial time. The 17-year-old was expected to pitch limited innings in the Florida Complex League this season, and it's unclear if he'll be able to pitch again in 2026."
+  },
+  {
+    "name": "Michael Busch",
+    "player": "Michael Busch",
+    "pos": "3B",
+    "team": "CHC",
+    "when": "2H ago",
+    "headline": "Cubs' Michael Busch: Drives in four Sunday",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/cubs-michael-busch-drives-in-four-sunday/",
+    "body": "Busch went 2-for-3 with a walk, a double, a triple, a run scored and four RBI in Sunday's 8-4 win over the Diamondbacks.\n\nBusch was all over the bases Sunday as he helped power the Cubs to victory, The first baseman is heating up with a .298 batting average, eight extra-base hits and 14 RBI across his last 12 games. Busch had the opportunity to bat first Saturday with Nico Hoerner out for a game with a neck issue, but the latter returned Sunday. That development pushed Busch down to sixth in the order, with Hoerner returning to the top spot."
+  },
+  {
+    "name": "Moises Ballesteros",
+    "player": "Moises Ballesteros",
+    "pos": "C",
+    "team": "CHC",
+    "when": "2H ago",
+    "headline": "Cubs' Moises Ballesteros: Powers team Sunday",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/cubs-moises-ballesteros-powers-team-sunday/",
+    "body": "Ballesteros went 2-for-4 with a walk, a two-run home run and an additional run scored in Sunday's 8-4 win over the Diamondbacks.\n\nBallesteros snapped an 0-for-16 slump across his previous four games with a strong performance Sunday. Even following the mini cold spell, the 22-year-old is having a tremendous season with a .317/.380/.598 slash line, six home runs and 18 RBI across 30 contests. The Cubs also announced recently that Ballesteros would begin to see more playing time behind the plate, which should only elevate his fantasy appeal once he gains eligibility at catcher in most formats."
+  },
+  {
+    "name": "Anthony Eyanson",
+    "player": "Anthony Eyanson",
+    "pos": "SP",
+    "team": "BOS",
+    "when": "2H ago",
+    "headline": "Red Sox's Anthony Eyanson: Moving up to Double-A",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/red-soxs-anthony-eyanson-moving-up-to-double-a/",
+    "body": "Eyanson was promoted to Double-A Portland on Sunday, Ari Alexander of 7 News Boston reports.\n\nEyanson will make the leap to the Double-A level after posting a dominant 0.44 ERA and 0.50 WHIP with an impressive 15.2 K/9 over 20.1 innings in five starts with High-A Greenville to open the season. The right-hander was selected by the Red Sox with the 87th overall pick in the 2025 First-Year Player Draft, and the early results have been nothing short of outstanding for the 21-year-old."
+  },
+  {
+    "name": "David Peterson",
+    "player": "David Peterson",
+    "pos": "SP",
     "team": "NYM",
-    "when": "1D ago",
-    "headline": "Mets' Luis Torrens: Lands two-year extension",
-    "url": "https://www.cbssports.com/fantasy/baseball/news/mets-luis-torrens-lands-two-year-extension/",
-    "body": "Torrens signed a two-year, $11.5 million contract extension with the Mets on Saturday, Will Sammon of The Athletic reports.\n\nTorrens' extension will ensure that he sticks with the Mets through the 2028 season. The 30-year-old backstop has struggled at the plate this season, logging a .467 OPS through 31 plate appearances, but he makes up for his lack of offensive production with his incredible defensive skills. He'll likely continue serving as a backup to Francisco Alvarez as long as the two are both in Queens."
+    "when": "2H ago",
+    "headline": "Mets' David Peterson: Set to operate in bulk role",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/mets-david-peterson-set-to-operate-in-bulk-role/",
+    "body": "Peterson will pitch in bulk relief behind an opener in Monday's series opener in Colorado, Anthony DiComo of MLB.com reports.\n\nPeterson will follow an opener for the second time this season, last doing so April 19 against the Cubs, tossing 3.2 scoreless innings while allowing three hits in the team's 2-1 loss to Chicago. He pitched behind right-hander Tobias Myers in that contest, and although nothing has been announced quite yet, it's certainly possible that Myers will be Monday's opener. Peterson has posted a disappointing 6.53 ERA and 1.71 WHIP with 29 strikeouts over 30.1 innings in seven appearances, including five starts, with New York this season."
   },
   {
-    "name": "Nick Yorke",
-    "player": "Nick Yorke",
-    "pos": "",
-    "team": "PIT",
-    "when": "5D ago",
-    "headline": "Pirates' Nick Yorke: Sent back to Triple-A",
-    "url": "https://www.cbssports.com/fantasy/baseball/news/pirates-nick-yorke-sent-back-to-triple-a/",
-    "body": "The Pirates optioned Yorke to Triple-A Indianapolis on Saturday.\n\nThe 24-year-old will be pushed off the active roster as a result of Jared Triolo's (knee) return from the injured list. Yorke has slashed .221/.308/.309 in the majors this season while adding a home run, six RBI and six runs scored through 78 plate appearances. His defensive versatility will make it easier for him to return to the majors later this year if Pittsburgh's depth is tested."
+    "name": "Richard Lovelady",
+    "player": "Richard Lovelady",
+    "pos": "RP",
+    "team": "WAS",
+    "when": "3H ago",
+    "headline": "Nationals' Richard Lovelady: Nabs rare save Sunday",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/nationals-richard-lovelady-nabs-rare-save-sunday/",
+    "body": "Lovelady notched save Sunday against the Brewers, allowing no runs on one hit and no walks in two-thirds of an inning. He struck out one.\n\nLovelady was brought in for matchup-related reasons Sunday during his first save opportunity of the year. The left-hander faced a pair of left-handed hitters in Jake Bauers and Garrett Mitchell, retiring Mitchell, before striking out Brandon Lockridge for the final out. Since coming over from the Mets via trade, Lovelady has a 1.29 ERA, 1.71 WHIP and 7:5 K:BB over seven innings for Washington."
   },
   {
-    "name": "Jared Triolo",
-    "player": "Jared Triolo",
-    "pos": "",
+    "name": "Jarren Duran",
+    "player": "Jarren Duran",
+    "pos": "CF",
+    "team": "BOS",
+    "when": "3H ago",
+    "headline": "Red Sox's Jarren Duran: Provides offense in loss",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/red-soxs-jarren-duran-provides-offense-in-loss/",
+    "body": "Duran went 2-for-5 with a solo home run in Sunday's 3-1 extra-inning loss to Houston.\n\nDuran launched his third home run of the season in the fifth inning, the second long ball in the last three games. He took over the leadoff spot against right-handers recently and has hit safely in three straight contests after an initial 0-for-13 run over his first three games atop the order. Duran is slashing .186/.246/.310 over 29 games (122 plate appearances)."
+  },
+  {
+    "name": "Zack Littell",
+    "player": "Zack Littell",
+    "pos": "SP",
+    "team": "WAS",
+    "when": "3H ago",
+    "headline": "Nationals' Zack Littell: Gets into win column",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/nationals-zack-littell-gets-into-win-column/",
+    "body": "Littell (1-4) earned the win Sunday against the Brewers, allowing one run on one hit and one walk in 3.2 innings. He struck out one.\n\nWorking behind opener PJ Poulin on Sunday, Littell quietly gave the Nationals one of his better performances of 2026 in long relief. It was just the right-hander's second appearance of the year with fewer than three runs allowed, and he kept the ball in the yard for just the second time in seven outings this season. Littell still has a rough 7.24 ERA, 1.61 WHIP and 17:12 K:BB over 32.1 innings, so fantasy managers can likely find more appealing streaming options."
+  },
+  {
+    "name": "Anthony Volpe",
+    "player": "Anthony Volpe",
+    "pos": "SS",
+    "team": "NYY",
+    "when": "3H ago",
+    "headline": "Yankees' Anthony Volpe: Reinstated, optioned to Triple-A",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/yankees-anthony-volpe-reinstated-optioned-to-triple-a/",
+    "body": "Volpe (shoulder) was reinstated from the 10-day injured list and optioned to Triple-A Scranton/Wilkes-Barre on Sunday.\n\nVolpe will officially make his return to action after missing the entirety of the 2026 campaign to this point while recovering from left shoulder surgery that he underwent in October. In a notable turn of events, the 25-year-old will not be joining the Yankees after his activation, but he will head to the Triple-A level instead. Volpe produced a .250 average with a home run, six RBI, eight runs scored and two stolen bases over 13 contests with Double-A Somerset and Triple-A Scranton/Wilkes-Barre during his minor-league rehab assignment. The Yankees appear to be comfortable with continuing to roll with Jose Caballero at shortstop for the time being, while Volpe will be afforded the opportunity to operate in an everyday role at Triple-A in the meantime."
+  },
+  {
+    "name": "Logan Henderson",
+    "player": "Logan Henderson",
+    "pos": "SP",
+    "team": "MIL",
+    "when": "3H ago",
+    "headline": "Brewers' Logan Henderson: Eight Ks in six strong innings",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/brewers-logan-henderson-eight-ks-in-six-strong-innings/",
+    "body": "Henderson (0-1) took the loss Sunday against the Nationals, allowing two runs on three hits and zero walks in six innings. He struck out eight.\n\nHenderson hardly deserved the loss Sunday, throwing 56 of his 76 pitches for strikes in a quality start. It was somewhat surprising to see the right-hander get pulled when with a fairly low pitch count, but it was just his second major-league start of 2026 after he worked as a swingman for Triple-Nashville earlier this year. Henderson is set to see at least a handful of turns in Milwaukee's rotation with Brandon Woodruff (shoulder) on the injured list, next lining up for a tough test versus the Yankees."
+  },
+  {
+    "name": "Chris Paddack",
+    "player": "Chris Paddack",
+    "pos": "SP",
+    "team": "MIA",
+    "when": "3H ago",
+    "headline": "Marlins' Chris Paddack: Losing ways continue Sunday",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/marlins-chris-paddack-losing-ways-continue-sunday/",
+    "body": "Paddack (0-5) took the loss Sunday against the Phillies, allowing seven runs on six hits and three walks in 2.2 innings. He struck out one.\n\nThe Phillies ambushed Paddack on Sunday, throttling the hurler for six runs in the opening frame. The right-hander remains with just one quality start in 2026, and he's been unable to get through five innings in his other six outings. Still winless on the season, Paddack won't be a recommended fantasy option when he takes a 7.63 ERA, 1.66 WHIP and 27:10 over 30.2 frames into his next scheduled outing versus the division-rival Nationals."
+  },
+  {
+    "name": "Jesus Luzardo",
+    "player": "Jesus Luzardo",
+    "pos": "SP",
+    "team": "PHI",
+    "when": "3H ago",
+    "headline": "Phillies' Jesus Luzardo: Dominates in third win",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/phillies-jesus-luzardo-dominates-in-third-win/",
+    "body": "Luzardo (3-3) earned the win Sunday against the Marlins, allowing two runs on eight hits and no walks in 6.1 innings. He struck out 10.\n\nThe hard-throwing left-hander worked aggressively Sunday, tallying double-digit strikeouts for the second time this year while throwing 66 of his 102 pitches for strikes. Although the eight hits allowed were his second most of the year, Luzardo also registered an impressive 16 whiffs on the afternoon. He's been inconsistent overall in 2026, as evidenced by a 5.09 ERA and 1.28 WHIP over 40.2 frames, but Luzardo is set to carry a stellar 51:9 K:BB into a favorable home matchup versus the Rockies his next time out."
+  },
+  {
+    "name": "Raisel Iglesias",
+    "player": "Raisel Iglesias",
+    "pos": "RP",
+    "team": "ATL",
+    "when": "3H ago",
+    "headline": "Braves' Raisel Iglesias: Set to be activated Tuesday",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/braves-raisel-iglesias-set-to-be-activated-tuesday/",
+    "body": "Iglesias (shoulder) is expected to be activated from the 15-day injured list Tuesday, Chad Bishop of The Atlanta Journal-Constitution reports.\n\nIglesias has been sidelined since being placed on the 15-day IL on April 21 with right shoulder inflammation, but manager Walt Weiss said following Sunday's 11-6 win over the Rockies that he expects the closer to join Atlanta's major-league squad on the road Tuesday in Seattle. The right-hander appears to be set to return to action after the minimum 15 days on the injured list while also not having to go on a minor-league rehab assignment. Iglesias will likely immediately push Robert Suarez back into a set-up role upon his activation."
+  },
+  {
+    "name": "Braxton Ashcraft",
+    "player": "Braxton Ashcraft",
+    "pos": "P",
     "team": "PIT",
-    "when": "3D ago",
-    "headline": "Pirates' Jared Triolo: Activated from IL",
-    "url": "https://www.cbssports.com/fantasy/baseball/news/pirates-jared-triolo-activated-from-il/",
-    "body": "The Pirates reinstated Triolo (knee) from the injured list Saturday.\n\nTriolo has been sidelined by a right patellar tendon injury since April 5. He's spent the past week in the minors on a rehab assignment, during which he went 5-for-18 with a homer, three RBI, four runs scored and a steal. Now fully healthy, the 28-year-old will likely compete for playing time at the hot corner with Nick Gonzales, who is batting .457 (21-for-46) over his last 12 games. Nick Yorke was optioned to Triple-A in a corresponding move."
+    "when": "3H ago",
+    "headline": "Pirates' Braxton Ashcraft: Spins career-high 7.2 innings",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/pirates-braxton-ashcraft-spins-career-high-7-2-innings/",
+    "body": "Ashcraft took a no-decision Sunday against the Reds, allowing no runs on four hits and two walks in 7.2 innings. He struck out six.\n\nSunday was the longest start of Ashcraft's career, and he worked very efficiently while tossing 82 pitches. The right-hander has been consistent for the Pirates and fantasy managers alike thus far, pitching at least five innings while giving up two runs or fewer in six of his seven starts. Ashcraft will bring a strong 3.02 ERA, 1.08 WHIP and 45:14 K:BB over 41.2 frames into his next scheduled appearance versus the Giants."
+  },
+  {
+    "name": "Chase Burns",
+    "player": "Chase Burns",
+    "pos": "P",
+    "team": "CIN",
+    "when": "3H ago",
+    "headline": "Reds' Chase Burns: Fires season-high seven innings",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/reds-chase-burns-fires-season-high-seven-innings/",
+    "body": "Burns took a no-decision Sunday against the Pirates, allowing no runs on three hits and one walk in seven innings. He struck out seven.\n\nThe hard-throwing right-hander turned in arguably his strongest showing of the campaign so far. Burns generated an impressive 18 whiffs and scattered three singles Sunday, spinning a season-high seven innings during his third scoreless start of the year. He'll take an outstanding 2.20 ERA, 1.02 WHIP and 46:13 K:BB over 41 frames into his next start, which is slated to come against the Astros."
+  },
+  {
+    "name": "Jhoan Duran",
+    "player": "Jhoan Duran",
+    "pos": "RP",
+    "team": "PHI",
+    "when": "4H ago",
+    "headline": "Phillies' Jhoan Duran: May bypass rehab assignment",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/phillies-jhoan-duran-may-bypass-rehab-assignment/",
+    "body": "Phillies interim manager Don Mattingly said Sunday that Duran (oblique) may not require a rehab assignment prior to being activated from the 15-day injured list, Todd Zolecki of MLB.com reports.\n\nMattingly's comments came after Duran checked out fine following his bullpen session Saturday, during which the right-hander touched 100 miles per hour with his fastball. The Phillies are still deciding on the next steps for Duran, who is eligible to come off the IL at any point after missing more than 15 days due to a left oblique strain. Brad Keller has collected the Phillies' lone save since Duran hit the shelf, but the closer's role should be Duran's for the taking once he's activated."
+  },
+  {
+    "name": "Shane Murphy",
+    "player": "Shane Murphy",
+    "pos": "SP",
+    "team": "CHW",
+    "when": "4H ago",
+    "headline": "White Sox's Shane Murphy: Moving up to Triple-A",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/white-soxs-shane-murphy-moving-up-to-triple-a/",
+    "body": "Murphy was promoted to Triple-A Charlotte on Sunday, James Fegan of SoxMachine.com reports.\n\nMurphy will make his way to Charlotte after posting a 3.99 ERA and 1.19 WHIP with 21 strikeouts over 29.1 innings in five starts with Double-A Birmingham this season. The southpaw is now just one step away from potentially making his major-league debut down the road this season."
+  },
+  {
+    "name": "Dylan Dodd",
+    "player": "Dylan Dodd",
+    "pos": "SP",
+    "team": "ATL",
+    "when": "4H ago",
+    "headline": "Braves' Dylan Dodd: Set to launch rehab assignment",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/braves-dylan-dodd-set-to-launch-rehab-assignment/",
+    "body": "Dodd (back) is expected to begin a minor-league rehab assignment with Triple-A Gwinnett in the coming days, Lindsay Crosby of BravesToday.com reports.\n\nDodd has been on the 15-day injured list since April 23 while recovering from left thoracic spine inflammation, but southpaw now appears to be nearing a return to action. Dodd has made two appearances with Atlanta this season, giving up one run on three hits and a walk while striking out four batters over four innings."
+  },
+  {
+    "name": "Angel Genao",
+    "player": "Angel Genao",
+    "pos": "SS",
+    "team": "CLE",
+    "when": "4H ago",
+    "headline": "Guardians' Angel Genao: Elevated to Triple-A",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/guardians-angel-genao-elevated-to-triple-a/",
+    "body": "The Guardians promoted Genao from Double-A Akron to Triple-A Columbus on Sunday.\n\nAfter posting a .682 OPS over 77 games with Akron in 2025, Genao improved that mark by more than 100 points this season to earn the bump up to Triple-A. The 21-year-old shortstop hasn't displayed much growth in the power department, but he's made stark improvement with his plate discipline. He walked in 21.6 percent of his 105 plate appearances in 2026, well above the 8.6 percent walk rate he posted a season ago."
+  },
+  {
+    "name": "Ranger Suarez",
+    "player": "Ranger Suarez",
+    "pos": "SP",
+    "team": "BOS",
+    "when": "4H ago",
+    "headline": "Red Sox's Ranger Suarez: Not expected to undergo MRI",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/red-soxs-ranger-suarez-not-expected-to-undergo-mri/",
+    "body": "Suarez (hamstring) is hopeful he will be ready to go for his next scheduled start, Gabrielle Starr of the Boston Herald reports.\n\nSuarez exited his start Sunday against the Astros in the fifth inning with right hamstring tightness, but the left-hander is not expected to be sent for an MRI by the Red Sox . The 30-year-old was confident following Sunday's 3-1 extra-inning loss that he will avoid a stint on the injured list, stating that he dealt with a similar situation last season, per Marcos Grunfeld of ElEmergente.com. Suarez is set to remain in Boston while the team travels to Detroit for a three-game set beginning Monday. The southpaw will be monitored by the training staff, and the hope is that he'll be to go for his next outing, which is tentatively set to come Friday at home versus the Rays."
+  },
+  {
+    "name": "Jaison Chourio",
+    "player": "Jaison Chourio",
+    "pos": "CF",
+    "team": "CLE",
+    "when": "4H ago",
+    "headline": "Guardians' Jaison Chourio: Elevated to Double-A",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/guardians-jaison-chourio-elevated-to-double-a/",
+    "body": "The Guardians promoted Chourio from High-A Lake County to Double-A Akron on Sunday.\n\nThe younger brother of Brewers outfielder Jackson Chourio (hand), Jaison has emerged as an interesting prospect in his own right since signing with the Guardians in January 2022. The 20-year-old switch-hitting outfielder will move on to Akron after slashing .317/.431/.476 with two home runs and 10 stolen bases over 22 games at High-A to begin the season."
+  },
+  {
+    "name": "Arjun Nimmala",
+    "player": "Arjun Nimmala",
+    "pos": "SS",
+    "team": "TOR",
+    "when": "4H ago",
+    "headline": "Blue Jays' Arjun Nimmala: Moves up to Double-A",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/blue-jays-arjun-nimmala-moves-up-to-double-a/",
+    "body": "The Blue Jays promoted Nimmala from High-A Vancouver to Double-A New Hampshire on Sunday.\n\nNimmala will make the jump to Double-A after submitting a .241/.362/.483 slash line with four home runs and two stolen bases over 105 plate appearances for Vancouver to begin the season. Not set to turn 21 years old until October, Nimmala will be one of the youngest players in the Eastern League, so if he can produce at even a league-average level for New Hampshire, it would bode well for his chances of emerging as the everyday shortstop for Toronto at some point in 2027."
+  },
+  {
+    "name": "Agustin Ramirez",
+    "player": "Agustin Ramirez",
+    "pos": "C",
+    "team": "MIA",
+    "when": "4H ago",
+    "headline": "Marlins' Agustin Ramirez: Heading to Triple-A",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/marlins-agustin-ramirez-heading-to-triple-a/",
+    "body": "Ramirez is expected to be optioned to Triple-A Jacksonville on Monday, Craig Mish of FanDuel Sports Network Florida reports.\n\nRamirez will head to Jacksonville after posting a disappointing .230/.345/.345 slash line with two home runs, 14 RBI, 14 runs scored and three stolen bases over 113 at-bats in 31 contests with the Marlins this season. The 24-year-old has struggled to a .200 average while striking out 13 times over 50 at-bats in his last 14 games, and he will now look to reset at the Triple-A level. In a corresponding move, Miami's top catching prospect Joe Mack is set to join the major-league roster, and he may garner the lion's share of starts behind the plate for the time being while splitting the role with Liam Hicks."
+  },
+  {
+    "name": "Joe Mack",
+    "player": "Joe Mack",
+    "pos": "C",
+    "team": "MIA",
+    "when": "4H ago",
+    "headline": "Marlins' Joe Mack: Set to join major-league roster",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/marlins-joe-mack-set-to-join-major-league-roster/",
+    "body": "Mack is expected to be called up from Triple-A Jacksonville on Monday, Craig Mish of FanDuel Sports Network Florida reports.\n\nMack will get a chance to join the major-league roster for the first time in his career ahead of the team's series finale against the Phillies on Monday. The catcher is considered to be one of Miami's top prospects, and he's posted a .244 average with three home runs, nine RBI, 10 runs scored and a stolen base over 82 at-bats in 24 games with Jacksonville so far this year. Agustin Ramirez is set to be sent down to Triple-A Jacksonville in a corresponding move, so Mack will split time behind the plate with Liam Hicks for the time being."
+  },
+  {
+    "name": "Bryan Abreu",
+    "player": "Bryan Abreu",
+    "pos": "RP",
+    "team": "HOU",
+    "when": "4H ago",
+    "headline": "Astros' Bryan Abreu: Picks up first win",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/astros-bryan-abreu-picks-up-first-win/",
+    "body": "Abreu (1-2) earned the win Sunday over the Red Sox, allowing a hit and a walk while striking out one over two innings.\n\nAfter Abreu worked around a one-out single in the ninth inning, the Astros tallied a pair of runs in the top of the 10th. Abreu would come back out in the bottom half, where he'd coax a game-ending double play off the bat of Ceddanne Rafaela to close out his first win this year. It's certainly a step in the right direction for Abreu. The right-hander was expected to serve as Houston's closer in the absence of Josh Hader (biceps), though he got off to a brutal start this season, allowing at least one run in eight of his first 11 appearances. Abreu's ERA now sits at 10.32 with a 2.47 WHIP and 17:16 K:BB across 11.1 innings."
+  },
+  {
+    "name": "Angel Zerpa",
+    "player": "Angel Zerpa",
+    "pos": "RP",
+    "team": "MIL",
+    "when": "4H ago",
+    "headline": "Brewers' Angel Zerpa: May need Tommy John surgery",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/brewers-angel-zerpa-may-need-tommy-john-surgery/",
+    "body": "Manager Pat Murphy said Sunday that Zerpa (forearm) is deciding whether or not to undergo Tommy John surgery, Todd Rosiak of the Milwaukee Journal Sentinel reports.\n\nThe left-hander landed on the injured list Wednesday due to forearm tightness, and he could end up being out for the season and beyond. Even if Zerpa doesn't end up needing Tommy John surgery, he seems likely to be sidelined for multiple months."
+  },
+  {
+    "name": "Steven Okert",
+    "player": "Steven Okert",
+    "pos": "RP",
+    "team": "HOU",
+    "when": "4H ago",
+    "headline": "Astros' Steven Okert: Set to operate as opener",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/astros-steven-okert-set-to-operate-as-opener/",
+    "body": "Okert will operate as the Astros ' opening pitcher in Monday's series opener against the Dodgers, Matt Kawahara of the Houston Chronicle reports.\n\nOkert will make his first start of the 2026 campaign, helping bridge the gap in Houston's rotation ahead of Peter Lambert's expected start Tuesday. The right-hander has appeared in 16 contests so far this season, posting a 4.50 ERA and 1.21 WHIP with nine strikeouts over 14 innings. It's unclear who will follow Okert out of the bullpen as the team's bulk pitcher against Los Angeles, but Colton Gordon is a candidate to be called up from Triple-A Sugar Land and handle that role."
+  },
+  {
+    "name": "Christian Moore",
+    "player": "Christian Moore",
+    "pos": "2B",
+    "team": "LAA",
+    "when": "4H ago",
+    "headline": "Angels' Christian Moore: Shelved at Triple-A with leg injury",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/angels-christian-moore-shelved-at-triple-a-with-leg-injury/",
+    "body": "Triple-A Salt Lake placed Moore on its 7-day injured list Sunday due to a leg injury, Rhett Bollinger of MLB.com reports.\n\nMoore hadn't played since April 25 on account of the injury, which Angels general manager Perry Minasian relayed is a minor issue that won't keep the young infielder on the shelf for too long. Before succumbing to the injury, Moore failed to win a spot on the Angels' Opening Day roster but had gotten off to a nice start to the season at Salt Lake with a .219/.437/.452 slash line and more walks (28) than strikeouts (24) over his 103 plate appearances."
+  },
+  {
+    "name": "Max Fried",
+    "player": "Max Fried",
+    "pos": "SP",
+    "team": "NYY",
+    "when": "4H ago",
+    "headline": "Yankees' Max Fried: No-decision vs. Orioles",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/yankees-max-fried-no-decision-vs-orioles/",
+    "body": "Fried didn't factor into the decision Sunday against the Orioles, allowing three runs on six hits and three walks over 5.1 innings. He struck out six.\n\nAfter holding opponents scoreless over 14 innings in his previous two starts, Fried matched his season high in both walks and hits allowed Sunday, though the Yankees would rally late in an eventual 11-3 victory. Fried has delivered quality starts in six of his eight outings to open the year, posting a 2.39 ERA with a 0.89 WHIP and 43:15 K: BB across 52.2 innings. The left-hander is currently lined up to face the Brewers on the road his next time out."
+  },
+  {
+    "name": "Shawn Dubin",
+    "player": "Shawn Dubin",
+    "pos": "RP",
+    "team": "ARI",
+    "when": "5H ago",
+    "headline": "Nationals' Shawn Dubin: Lands deal with Washington",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/nationals-shawn-dubin-lands-deal-with-washington/",
+    "body": "Dubin signed a minor-league contract with the Nationals on Friday.\n\nDubin made his organizational debut Sunday with Triple-A Rochester, tossing a scoreless inning out of the bullpen. The right-handed reliever most recently saw action at the big-league level with Houston and Baltimore in 2025, when he turned in a 5.08 ERA and 1.43 WHIP across 33.2 innings."
+  },
+  {
+    "name": "Braden Montgomery",
+    "player": "Braden Montgomery",
+    "pos": "OF",
+    "team": "CHW",
+    "when": "5H ago",
+    "headline": "White Sox's Braden Montgomery: Promoted to Triple-A",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/white-soxs-braden-montgomery-promoted-to-triple-a/",
+    "body": "Montgomery was promoted to Triple-A Charlotte on Sunday, James Fegan of SoxMachine.com reports.\n\nMontgomery will move up a level in Chicago's minor-league farm system after posting a .313 average with six home runs, 22 RBI, 20 runs scored and two stolen bases over 99 at-bats in 27 games with Double-A Birmingham so far this season. The 23-year-old is considered to be one of Chicago's top prospects and the No. 31 overall prospect by MLB.com, and if he can continue his strong start to the year as he makes the jump to the Triple-A level, there's a chance that his major-league debut will arrive in the coming months."
   },
   {
     "name": "Trey Gibson",
     "player": "Trey Gibson",
-    "pos": "",
+    "pos": "SP",
     "team": "BAL",
-    "when": "",
-    "headline": "Orioles' Trey Gibson: Joins taxi squad",
-    "url": "https://www.cbssports.com/fantasy/baseball/news/orioles-trey-gibson-joins-taxi-squad/",
-    "body": "Gibson joined the Orioles ' taxi squad Saturday, Jake Rill of MLB.com reports.\n\nThe Orioles haven't announced a starter for Sunday's series finale against the Yankees, and Gibson joining the big club in the Bronx on Saturday is a sign that he'll end up getting the nod to make his MLB debut. The 23-year-old righty has made six starts this season at Triple-A Norfolk and owns a 4.01 ERA and 1.65 WHIP as well as a 25L12 K:BB through 24.2 innings."
-  },
-  {
-    "name": "Matt Strahm",
-    "player": "Matt Strahm",
-    "pos": "",
-    "team": "KC",
-    "when": "",
-    "headline": "Royals' Matt Strahm: Tallies eighth hold",
-    "url": "https://www.cbssports.com/fantasy/baseball/news/royals-matt-strahm-tallies-eighth-hold/",
-    "body": "Strahm allowed no hits and a walk while striking out two over a scoreless inning in Friday's win against the Mariners.\n\nStrahm entered with a one-run lead in the eighth inning and worked a clean frame to record his eighth hold of the season. The southpaw has logged nine scoreless outings across 12 appearances in 2026. Across 11.2 innings, the 34-year-old owns a 3.86 ERA and 1.37 WHIP with a 14:6 K:BB and has served as one of the Royals ' top high-leverage arms, though the ninth inning has belonged to Lucas Erceg while Carlos Estevez (foot) has been sidelined."
-  },
-  {
-    "name": "Albert Suarez",
-    "player": "Albert Suarez",
-    "pos": "",
-    "team": "BAL",
-    "when": "19H ago",
-    "headline": "Orioles' Albert Suarez: Designated for assignment",
-    "url": "https://www.cbssports.com/fantasy/baseball/news/orioles-albert-suarez-designated-for-assignment/",
-    "body": "The Oroles designated Suarez for assignment Saturday.\n\nSuarez has now been DFA'd by Baltimore twice within the past week, this time to make room for Dietrich Enns' (foot) return from the IL and Nick Raquet's promotion from Triple-A. The 36-year-old Suarez went unclaimed off waivers when he was last pushed off the Orioles ' 40-man roster, and there's a high chance he clears waivers again."
-  },
-  {
-    "name": "Tyler Wells",
-    "player": "Tyler Wells",
-    "pos": "",
-    "team": "BAL",
-    "when": "15D ago",
-    "headline": "Orioles' Tyler Wells: Optioned to Norfolk",
-    "url": "https://www.cbssports.com/fantasy/baseball/news/orioles-tyler-wells-optioned-to-norfolk/",
-    "body": "The Orioles optioned Wells to Triple-A Norfolk on Saturday.\n\nWells owns a 3.44 ERA and 1.20 WHIP through 18.1 innings this season, but the O's will send him to the minors to help make room on the active roster for Dietrich Enns' (foot) return from the injured list and Nick Raquet's promotion from Triple-A. Wells will likely be welcomed back to Baltimore's bullpen once the team needs a fresh arm."
+    "when": "5H ago",
+    "headline": "Orioles' Trey Gibson: Goes 4.2 innings in debut",
+    "url": "https://www.cbssports.com/fantasy/baseball/news/orioles-trey-gibson-goes-4-2-innings-in-debut/",
+    "body": "Gibson did not factor into the decision Sunday against the Yankees, allowing three runs on four hits and two walks over 4.2 innings. He struck out two.\n\nMaking his major-league debut, Gibson gave up a solo home run to Ben Rice in the first inning before Aaron Judge added a two-run blast in the third. Overall, it was a decent debut for Gibson against one of the league's premier offenses. Still, he'll likely return to Triple-A with Trevor Rogers (illness) expected to rejoin the rotation soon."
   }
 ]
