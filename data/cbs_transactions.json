@@ -1,5 +1,298 @@
 [
   {
+    "date": "5/7/26 2:33 AM ET",
+    "teamId": "1",
+    "teamName": "Weird Fishes / Arrighetti",
+    "team": "Weird Fishes / Arrighetti",
+    "players": [
+      {
+        "name": "Jack Perkins",
+        "pos": "RP",
+        "mlbTeam": "ATH",
+        "action": "Activated"
+      },
+      {
+        "name": "Emilio Pagan",
+        "pos": "RP",
+        "mlbTeam": "CIN",
+        "action": "Dropped"
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 2:33 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Anthony Eyanson",
+        "pos": "SP",
+        "mlbTeam": "BOS",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Lazaro Montes",
+        "pos": "RF",
+        "mlbTeam": "SEA",
+        "action": "Activated"
+      },
+      {
+        "name": "Lawrence Butler",
+        "pos": "CF,RF",
+        "mlbTeam": "ATH",
+        "action": "Dropped"
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 2:33 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Sean Burke",
+        "pos": "SP",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Noah Cameron",
+        "pos": "SP",
+        "mlbTeam": "KC",
+        "action": "Dropped"
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 2:33 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Antonio Senzatela",
+        "pos": "SP,RP",
+        "mlbTeam": "COL",
+        "action": "Activated"
+      },
+      {
+        "name": "Ryan Walker",
+        "pos": "RP",
+        "mlbTeam": "SF",
+        "action": "Dropped"
+      },
+      {
+        "name": "Miguel Vargas",
+        "pos": "1B,3B",
+        "mlbTeam": "CHW",
+        "action": "Activated"
+      },
+      {
+        "name": "Carlos Correa",
+        "pos": "3B,SS",
+        "mlbTeam": "HOU",
+        "action": "Dropped"
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "1",
+    "team": "Weird Fishes / Arrighetti",
+    "teamName": "Weird Fishes / Arrighetti",
+    "synthetic": true,
+    "note": "roster_sync: was Dropped on 5/7/26 2:33 AM ET",
+    "players": [
+      {
+        "name": "Emilio Pagan",
+        "action": "Added",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "3",
+    "team": "Colonel Corbin's Ascent",
+    "teamName": "Colonel Corbin's Ascent",
+    "synthetic": true,
+    "note": "roster_sync: was Dropped on 5/7/26 2:33 AM ET",
+    "players": [
+      {
+        "name": "Lawrence Butler",
+        "action": "Added",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "3",
+    "team": "Colonel Corbin's Ascent",
+    "teamName": "Colonel Corbin's Ascent",
+    "synthetic": true,
+    "note": "roster_sync: was Dropped on 5/6/26 2:23 AM ET",
+    "players": [
+      {
+        "name": "Cooper Ingle",
+        "action": "Added",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "6",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "synthetic": true,
+    "note": "roster_sync: was Dropped on 5/7/26 2:33 AM ET",
+    "players": [
+      {
+        "name": "Noah Cameron",
+        "action": "Added",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "7",
+    "team": "Everythings McGonigle Green",
+    "teamName": "Everythings McGonigle Green",
+    "synthetic": true,
+    "note": "roster_sync: was Dropped on 5/6/26 11:51 AM ET",
+    "players": [
+      {
+        "name": "Ryan Pepiot",
+        "action": "Added",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "8",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "synthetic": true,
+    "note": "roster_sync: was Dropped on 5/6/26 8:32 AM ET",
+    "players": [
+      {
+        "name": "Elmer Rodriguez",
+        "action": "Added",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "10",
+    "team": "Blame it on the Rainiel",
+    "teamName": "Blame it on the Rainiel",
+    "synthetic": true,
+    "note": "roster_sync: was Dropped on 5/7/26 2:33 AM ET",
+    "players": [
+      {
+        "name": "Carlos Correa",
+        "action": "Added",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "10",
+    "team": "Blame it on the Rainiel",
+    "teamName": "Blame it on the Rainiel",
+    "synthetic": true,
+    "note": "roster_sync: was Dropped on 5/6/26 7:36 AM ET",
+    "players": [
+      {
+        "name": "Tyler Kinley",
+        "action": "Added",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "10",
+    "team": "Blame it on the Rainiel",
+    "teamName": "Blame it on the Rainiel",
+    "synthetic": true,
+    "note": "roster_sync: was Dropped on 5/7/26 2:33 AM ET",
+    "players": [
+      {
+        "name": "Ryan Walker",
+        "action": "Added",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "3",
+    "team": "Colonel Corbin's Ascent",
+    "teamName": "Colonel Corbin's Ascent",
+    "synthetic": true,
+    "note": "roster_sync: not on any CBS roster",
+    "players": [
+      {
+        "name": "Pedro Ramirez",
+        "action": "Dropped",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "10",
+    "team": "Blame it on the Rainiel",
+    "teamName": "Blame it on the Rainiel",
+    "synthetic": true,
+    "note": "roster_sync: not on any CBS roster",
+    "players": [
+      {
+        "name": "Peter Lambert",
+        "action": "Dropped",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "3",
+    "team": "Colonel Corbin's Ascent",
+    "teamName": "Colonel Corbin's Ascent",
+    "synthetic": true,
+    "note": "roster_sync: not on any CBS roster",
+    "players": [
+      {
+        "name": "Anthony Eyanson",
+        "action": "Dropped",
+        "synthetic": true
+      }
+    ]
+  },
+  {
+    "date": "5/7/26 12:00 AM ET",
+    "teamId": "6",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "synthetic": true,
+    "note": "roster_sync: not on any CBS roster",
+    "players": [
+      {
+        "name": "Sean Burke",
+        "action": "Dropped",
+        "synthetic": true
+      }
+    ]
+  },
+  {
     "date": "5/6/26 11:51 AM ET",
     "teamId": "7",
     "teamName": "Whoop Whoop that's the sound of Dylan Cease",
@@ -92,10 +385,8 @@
   {
     "date": "5/6/26 12:00 AM ET",
     "teamId": "2",
-    "team": "Dinosaur Jr Caminero",
     "teamName": "Dinosaur Jr Caminero",
-    "synthetic": true,
-    "note": "roster_sync: was Dropped on 5/5/26 2:44 AM ET",
+    "team": "Dinosaur Jr Caminero",
     "players": [
       {
         "name": "Taylor Rogers",
@@ -107,29 +398,22 @@
   {
     "date": "5/6/26 12:00 AM ET",
     "teamId": "3",
-    "team": "Colonel Corbin's Ascent",
     "teamName": "Colonel Corbin's Ascent",
-    "synthetic": true,
-    "note": "roster_sync: was Dropped on 5/6/26 2:23 AM ET",
+    "team": "Colonel Corbin's Ascent",
     "players": [
       {
         "name": "Cooper Ingle",
         "action": "Added",
         "synthetic": true
-      }
-    ]
-  },
-  {
-    "date": "5/6/26 12:00 AM ET",
-    "teamId": "3",
-    "team": "Colonel Corbin's Ascent",
-    "teamName": "Colonel Corbin's Ascent",
-    "synthetic": true,
-    "note": "roster_sync: was Dropped on 5/5/26 2:44 AM ET",
-    "players": [
+      },
       {
         "name": "Braden Montgomery",
         "action": "Added",
+        "synthetic": true
+      },
+      {
+        "name": "Pedro Ramirez",
+        "action": "Dropped",
         "synthetic": true
       }
     ]
@@ -137,14 +421,17 @@
   {
     "date": "5/6/26 12:00 AM ET",
     "teamId": "7",
-    "team": "Everythings McGonigle Green",
-    "teamName": "Everythings McGonigle Green",
-    "synthetic": true,
-    "note": "roster_sync: was Dropped on 5/6/26 11:51 AM ET",
+    "teamName": "Whoop Whoop that's the sound of Dylan Cease",
+    "team": "Whoop Whoop that's the sound of Dylan Cease",
     "players": [
       {
         "name": "Ryan Pepiot",
         "action": "Added",
+        "synthetic": true
+      },
+      {
+        "name": "Drew Anderson",
+        "action": "Dropped",
         "synthetic": true
       }
     ]
@@ -152,10 +439,8 @@
   {
     "date": "5/6/26 12:00 AM ET",
     "teamId": "8",
-    "team": "Ballesteros, Let the Rhythm Take You Over",
     "teamName": "Ballesteros, Let the Rhythm Take You Over",
-    "synthetic": true,
-    "note": "roster_sync: was Dropped on 5/6/26 8:32 AM ET",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
     "players": [
       {
         "name": "Elmer Rodriguez",
@@ -167,29 +452,27 @@
   {
     "date": "5/6/26 12:00 AM ET",
     "teamId": "10",
-    "team": "Blame it on the Rainiel",
     "teamName": "Blame it on the Rainiel",
-    "synthetic": true,
-    "note": "roster_sync: was Dropped on 5/6/26 7:36 AM ET",
+    "team": "Blame it on the Rainiel",
     "players": [
       {
         "name": "Tyler Kinley",
         "action": "Added",
         "synthetic": true
-      }
-    ]
-  },
-  {
-    "date": "5/6/26 12:00 AM ET",
-    "teamId": "10",
-    "team": "Blame it on the Rainiel",
-    "teamName": "Blame it on the Rainiel",
-    "synthetic": true,
-    "note": "roster_sync: was Dropped on 5/5/26 2:44 AM ET",
-    "players": [
+      },
       {
         "name": "Erick Fedde",
         "action": "Added",
+        "synthetic": true
+      },
+      {
+        "name": "Bailey Ober",
+        "action": "Dropped",
+        "synthetic": true
+      },
+      {
+        "name": "Peter Lambert",
+        "action": "Dropped",
         "synthetic": true
       }
     ]
@@ -197,116 +480,24 @@
   {
     "date": "5/6/26 12:00 AM ET",
     "teamId": "11",
-    "team": "Before and After Shohei",
     "teamName": "Before and After Shohei",
-    "synthetic": true,
-    "note": "roster_sync: was Dropped on 5/5/26 2:44 AM ET",
+    "team": "Before and After Shohei",
     "players": [
       {
         "name": "Alejandro Kirk",
         "action": "Added",
         "synthetic": true
-      }
-    ]
-  },
-  {
-    "date": "5/6/26 12:00 AM ET",
-    "teamId": "11",
-    "team": "Before and After Shohei",
-    "teamName": "Before and After Shohei",
-    "synthetic": true,
-    "note": "roster_sync: was Dropped on 5/5/26 2:44 AM ET",
-    "players": [
+      },
       {
         "name": "Jack Perkins",
         "action": "Added",
         "synthetic": true
-      }
-    ]
-  },
-  {
-    "date": "5/6/26 12:00 AM ET",
-    "teamId": "12",
-    "team": "Popped A Mahle I'm Sweating",
-    "teamName": "Popped A Mahle I'm Sweating",
-    "synthetic": true,
-    "note": "roster_sync: was Dropped on 5/5/26 2:44 AM ET",
-    "players": [
-      {
-        "name": "Francisco Alvarez",
-        "action": "Added",
-        "synthetic": true
-      }
-    ]
-  },
-  {
-    "date": "5/6/26 12:00 AM ET",
-    "teamId": "12",
-    "team": "Popped A Mahle I'm Sweating",
-    "teamName": "Popped A Mahle I'm Sweating",
-    "synthetic": true,
-    "note": "roster_sync: was Dropped on 5/4/26 5:51 PM ET",
-    "players": [
-      {
-        "name": "Quinn Priester",
-        "action": "Added",
-        "synthetic": true
-      }
-    ]
-  },
-  {
-    "date": "5/6/26 12:00 AM ET",
-    "teamId": "11",
-    "team": "Before and After Shohei",
-    "teamName": "Before and After Shohei",
-    "synthetic": true,
-    "note": "roster_sync: not on any CBS roster",
-    "players": [
+      },
       {
         "name": "Max Meyer",
         "action": "Dropped",
         "synthetic": true
-      }
-    ]
-  },
-  {
-    "date": "5/6/26 12:00 AM ET",
-    "teamId": "7",
-    "team": "Whoop Whoop that's the sound of Dylan Cease",
-    "teamName": "Whoop Whoop that's the sound of Dylan Cease",
-    "synthetic": true,
-    "note": "roster_sync: not on any CBS roster",
-    "players": [
-      {
-        "name": "Drew Anderson",
-        "action": "Dropped",
-        "synthetic": true
-      }
-    ]
-  },
-  {
-    "date": "5/6/26 12:00 AM ET",
-    "teamId": "10",
-    "team": "Blame it on the Rainiel",
-    "teamName": "Blame it on the Rainiel",
-    "synthetic": true,
-    "note": "roster_sync: not on any CBS roster",
-    "players": [
-      {
-        "name": "Bailey Ober",
-        "action": "Dropped",
-        "synthetic": true
-      }
-    ]
-  },
-  {
-    "date": "5/6/26 12:00 AM ET",
-    "teamId": "11",
-    "team": "Before and After Shohei",
-    "teamName": "Before and After Shohei",
-    "synthetic": true,
-    "note": "roster_sync: not on any CBS roster",
-    "players": [
+      },
       {
         "name": "Connor Prielipp",
         "action": "Dropped",
@@ -316,30 +507,18 @@
   },
   {
     "date": "5/6/26 12:00 AM ET",
-    "teamId": "3",
-    "team": "Colonel Corbin's Ascent",
-    "teamName": "Colonel Corbin's Ascent",
-    "synthetic": true,
-    "note": "roster_sync: not on any CBS roster",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
     "players": [
       {
-        "name": "Pedro Ramirez",
-        "action": "Dropped",
+        "name": "Francisco Alvarez",
+        "action": "Added",
         "synthetic": true
-      }
-    ]
-  },
-  {
-    "date": "5/6/26 12:00 AM ET",
-    "teamId": "10",
-    "team": "Blame it on the Rainiel",
-    "teamName": "Blame it on the Rainiel",
-    "synthetic": true,
-    "note": "roster_sync: not on any CBS roster",
-    "players": [
+      },
       {
-        "name": "Peter Lambert",
-        "action": "Dropped",
+        "name": "Quinn Priester",
+        "action": "Added",
         "synthetic": true
       }
     ]
@@ -5913,6 +6092,26 @@
   },
   {
     "date": "3/17/26 12:38 PM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Nick Kurtz",
+        "pos": "1B",
+        "mlbTeam": "ATH",
+        "action": "Traded from Okamotomami"
+      },
+      {
+        "name": "Nick Lodolo",
+        "pos": "SP",
+        "mlbTeam": "CIN",
+        "action": "Traded from Okamotomami"
+      }
+    ]
+  },
+  {
+    "date": "3/17/26 12:38 PM ET",
     "teamId": "4",
     "teamName": "Okamotomami",
     "team": "Okamotomami",
@@ -5934,26 +6133,6 @@
         "pos": "3B",
         "mlbTeam": "TOR",
         "action": "Traded from Colonel Corbin's Ascent"
-      }
-    ]
-  },
-  {
-    "date": "3/17/26 12:38 PM ET",
-    "teamId": "3",
-    "teamName": "Colonel Corbin's Ascent",
-    "team": "Colonel Corbin's Ascent",
-    "players": [
-      {
-        "name": "Nick Kurtz",
-        "pos": "1B",
-        "mlbTeam": "ATH",
-        "action": "Traded from Okamotomami"
-      },
-      {
-        "name": "Nick Lodolo",
-        "pos": "SP",
-        "mlbTeam": "CIN",
-        "action": "Traded from Okamotomami"
       }
     ]
   },
