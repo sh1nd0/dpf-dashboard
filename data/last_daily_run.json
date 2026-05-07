@@ -1,20 +1,21 @@
 {
-  "completedAt": "2026-05-07T13:13:58.560145Z",
+  "completedAt": "2026-05-07T16:29:08.795546Z",
   "phaseA": {
     "stats": "ok",
     "injuries": "ok",
     "news": "ok"
   },
   "phaseB": {
-    "cbs_auth": "missing",
-    "transactions": "skipped",
-    "rosters": "skipped",
-    "matchup": "skipped"
+    "cbs_auth": "ok",
+    "transactions": "ok",
+    "rosters": "ok",
+    "matchup": "ok"
   },
   "notes": [
-    "fetch_stuffplus.py non-fatal: pybaseball not installed (FanGraphs blocked anyway)",
-    "CBS league pages return 404 / unauthenticated 'Log In' state \u2014 Phase B skipped per protocol",
-    "Injuries: 244 records scraped from public CBS injuries page",
-    "News: 50 records scraped from public CBS player news pages 1-5"
+    "Phase A: stuffplus skipped (pybaseball not installed; non-fatal)",
+    "Phase B: 262 raw transactions across 12 teams; merge_tx cleaned to 244",
+    "Phase B: 12 rosters scraped (389 total players), roster_sync added 13 synthetic txns",
+    "Phase B: trades-recent and transactions/trade pages had 0 rows (no recent trades)",
+    "Phase B: period 3 (Apr 27-May 10) Okamotomami vs A Pete Crow-Armstrong Looked at Me, score 8-8"
   ]
 }
