@@ -18,7 +18,17 @@ function debouncedRender() {
 }
 
 document.getElementById('searchBox').addEventListener('input', debouncedRender);
-document.getElementById('draftFilter').addEventListener('change', render);
+document.getElementById('draftFilter').addEventListener('change', function() {
+  // When switching to "Available", clear the team filter — looking at the
+  // waiver pool with a team selected was almost always a leftover scoping
+  // bug rather than intent. Reset to "All Owners" so the user actually sees
+  // the available pool.
+  if (this.value === 'available') {
+    const tf = document.getElementById('teamFilter');
+    if (tf && tf.value !== 'all') tf.value = 'all';
+  }
+  render();
+});
 document.getElementById('tagFilter').addEventListener('change', render);
 document.getElementById('minPAFilter').addEventListener('change', function() {
   DPF.table.filterMinPA = parseInt(this.value) || 0;

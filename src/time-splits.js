@@ -361,7 +361,7 @@ function _initOriginalLcvValues() {
 
     const split = p.type === 'PIT'
       ? computePitSplitLcv(p, 14)
-      : computeBatSplitLcv(p, 14);
+      : computeBatSplitLcv(p, 14, { minPa: 25 });
     if (!split) return;
     p.rollingLcv14 = split.actualLcv;
     p.rollingLcvDelta14 = split.lcvDelta;  // kept as caller-side metadata only
