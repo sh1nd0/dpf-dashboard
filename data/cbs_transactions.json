@@ -9,13 +9,15 @@
         "name": "C.J. Abrams",
         "pos": "SS",
         "mlbTeam": "WAS",
-        "action": "Added"
+        "action": "Added",
+        "team": "WAS"
       },
       {
         "name": "David Bednar",
         "pos": "RP",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "3/25/26"
@@ -30,7 +32,8 @@
         "name": "Dylan Lee",
         "pos": "RP",
         "mlbTeam": "ATL",
-        "action": "Added"
+        "action": "Added",
+        "team": "ATL"
       }
     ],
     "effective": "3/25/26"
@@ -45,7 +48,8 @@
         "name": "Joe Boyle",
         "pos": "SP",
         "mlbTeam": "TB",
-        "action": "Added"
+        "action": "Added",
+        "team": "TB"
       }
     ],
     "effective": "3/25/26"
@@ -58,9 +62,10 @@
     "players": [
       {
         "name": "Lars Nootbaar",
-        "pos": "LF,RF",
-        "mlbTeam": "STL",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -75,13 +80,15 @@
         "name": "Bryson Stott",
         "pos": "2B",
         "mlbTeam": "PHI",
-        "action": "Added"
+        "action": "Added",
+        "team": "PHI"
       },
       {
         "name": "Owen Caissie",
         "pos": "RF",
         "mlbTeam": "MIA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIA"
       }
     ],
     "effective": "3/25/26"
@@ -96,13 +103,15 @@
         "name": "Ryan Sloan",
         "pos": "SP",
         "mlbTeam": "SEA",
-        "action": "Added"
+        "action": "Added",
+        "team": "SEA"
       },
       {
         "name": "Hogan Harris",
         "pos": "RP",
         "mlbTeam": "ATH",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ATH"
       }
     ],
     "effective": "3/25/26"
@@ -117,7 +126,8 @@
         "name": "Phil Maton",
         "pos": "RP",
         "mlbTeam": "CHC",
-        "action": "Added"
+        "action": "Added",
+        "team": "CHC"
       }
     ],
     "effective": "3/25/26"
@@ -132,19 +142,22 @@
         "name": "Jac Caglianone",
         "pos": "RF",
         "mlbTeam": "KC",
-        "action": "Traded from Colonel Corbin's Ascent"
+        "action": "Traded from Colonel Corbin's Ascent",
+        "team": "KC"
       },
       {
         "name": "Vladimir Guerrero Jr.",
         "pos": "1B",
         "mlbTeam": "TOR",
-        "action": "Traded from Colonel Corbin's Ascent"
+        "action": "Traded from Colonel Corbin's Ascent",
+        "team": "TOR"
       },
       {
         "name": "Kazuma Okamoto",
         "pos": "3B",
         "mlbTeam": "TOR",
-        "action": "Traded from Colonel Corbin's Ascent"
+        "action": "Traded from Colonel Corbin's Ascent",
+        "team": "TOR"
       }
     ]
   },
@@ -158,13 +171,15 @@
         "name": "Nick Kurtz",
         "pos": "1B",
         "mlbTeam": "ATH",
-        "action": "Traded from Okamotomami"
+        "action": "Traded from Okamotomami",
+        "team": "ATH"
       },
       {
         "name": "Nick Lodolo",
         "pos": "SP",
         "mlbTeam": "CIN",
-        "action": "Traded from Okamotomami"
+        "action": "Traded from Okamotomami",
+        "team": "CIN"
       }
     ]
   },
@@ -176,9 +191,10 @@
     "players": [
       {
         "name": "Nasim Nunez",
-        "pos": "2B,SS",
-        "mlbTeam": "WAS",
-        "action": "Added"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -193,7 +209,8 @@
         "name": "Chad Patrick",
         "pos": "SP",
         "mlbTeam": "MIL",
-        "action": "Added"
+        "action": "Added",
+        "team": "MIL"
       }
     ],
     "effective": "3/25/26"
@@ -208,7 +225,8 @@
         "name": "Graham Ashcraft",
         "pos": "RP",
         "mlbTeam": "CIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CIN"
       }
     ],
     "effective": "3/25/26"
@@ -223,7 +241,8 @@
         "name": "Joe Boyle",
         "pos": "SP",
         "mlbTeam": "TB",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TB"
       }
     ],
     "effective": "3/25/26"
@@ -238,7 +257,8 @@
         "name": "TJ Rumfield",
         "pos": "1B",
         "mlbTeam": "COL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "COL"
       }
     ],
     "effective": "3/25/26"
@@ -251,9 +271,10 @@
     "players": [
       {
         "name": "Jordan Beck",
-        "pos": "LF,RF",
-        "mlbTeam": "COL",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -268,7 +289,8 @@
         "name": "Braxton Garrett",
         "pos": "SP",
         "mlbTeam": "MIA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIA"
       }
     ],
     "effective": "3/25/26"
@@ -283,7 +305,8 @@
         "name": "Carson Williams",
         "pos": "SS",
         "mlbTeam": "TB",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TB"
       }
     ],
     "effective": "3/25/26"
@@ -296,9 +319,10 @@
     "players": [
       {
         "name": "Nasim Nunez",
-        "pos": "2B,SS",
-        "mlbTeam": "WAS",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -313,7 +337,8 @@
         "name": "Shawn Armstrong",
         "pos": "RP",
         "mlbTeam": "CLE",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CLE"
       }
     ],
     "effective": "3/25/26"
@@ -328,13 +353,15 @@
         "name": "Camilo Doval",
         "pos": "RP",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       },
       {
         "name": "Colt Keith",
-        "pos": "2B,3B",
-        "mlbTeam": "DET",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -349,7 +376,8 @@
         "name": "Spencer Arrighetti",
         "pos": "SP",
         "mlbTeam": "HOU",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "HOU"
       }
     ],
     "effective": "3/25/26"
@@ -364,13 +392,15 @@
         "name": "Giancarlo Stanton",
         "pos": "DH",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       },
       {
         "name": "Tyler Stephenson",
         "pos": "C",
         "mlbTeam": "CIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CIN"
       }
     ],
     "effective": "3/25/26"
@@ -385,7 +415,8 @@
         "name": "Max Meyer",
         "pos": "SP",
         "mlbTeam": "MIA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIA"
       }
     ],
     "effective": "3/25/26"
@@ -400,7 +431,8 @@
         "name": "Adolis Garcia",
         "pos": "RF",
         "mlbTeam": "PHI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PHI"
       }
     ],
     "effective": "3/25/26"
@@ -415,7 +447,8 @@
         "name": "Sean Manaea",
         "pos": "SP",
         "mlbTeam": "NYM",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYM"
       }
     ],
     "effective": "3/25/26"
@@ -430,7 +463,8 @@
         "name": "Nolan Schanuel",
         "pos": "1B",
         "mlbTeam": "LAA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "LAA"
       }
     ],
     "effective": "3/25/26"
@@ -445,7 +479,8 @@
         "name": "Matt Strahm",
         "pos": "RP",
         "mlbTeam": "KC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "KC"
       }
     ],
     "effective": "3/25/26"
@@ -460,7 +495,8 @@
         "name": "Alfredo Duno",
         "pos": "C",
         "mlbTeam": "CIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CIN"
       }
     ],
     "effective": "3/25/26"
@@ -475,7 +511,8 @@
         "name": "George Lombard",
         "pos": "SS",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "3/25/26"
@@ -490,7 +527,8 @@
         "name": "Carlos Lagrange",
         "pos": "SP",
         "mlbTeam": "NYY",
-        "action": "Added"
+        "action": "Added",
+        "team": "NYY"
       }
     ],
     "effective": "3/25/26"
@@ -505,13 +543,15 @@
         "name": "Yusei Kikuchi",
         "pos": "SP",
         "mlbTeam": "LAA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "LAA"
       },
       {
         "name": "Joey Cantillo",
-        "pos": "SP,RP",
-        "mlbTeam": "CLE",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -526,13 +566,15 @@
         "name": "Royce Lewis",
         "pos": "3B",
         "mlbTeam": "MIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIN"
       },
       {
         "name": "Jeff McNeil",
-        "pos": "2B,CF",
-        "mlbTeam": "ATH",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -545,9 +587,10 @@
     "players": [
       {
         "name": "Luis Arraez",
-        "pos": "1B,2B",
-        "mlbTeam": "SF",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -562,7 +605,8 @@
         "name": "Alec Bohm",
         "pos": "3B",
         "mlbTeam": "PHI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PHI"
       }
     ],
     "effective": "3/25/26"
@@ -577,7 +621,8 @@
         "name": "Jameson Taillon",
         "pos": "SP",
         "mlbTeam": "CHC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHC"
       }
     ],
     "effective": "3/25/26"
@@ -592,7 +637,8 @@
         "name": "Jorge Polanco",
         "pos": "2B",
         "mlbTeam": "NYM",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYM"
       }
     ],
     "effective": "3/25/26"
@@ -605,9 +651,10 @@
     "players": [
       {
         "name": "Jung Hoo Lee",
-        "pos": "CF,RF",
-        "mlbTeam": "SF",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -622,7 +669,8 @@
         "name": "David Peterson",
         "pos": "SP",
         "mlbTeam": "NYM",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYM"
       }
     ],
     "effective": "3/25/26"
@@ -637,13 +685,15 @@
         "name": "Didier Fuentes",
         "pos": "SP",
         "mlbTeam": "ATL",
-        "action": "Added"
+        "action": "Added",
+        "team": "ATL"
       },
       {
         "name": "Roki Sasaki",
         "pos": "SP",
         "mlbTeam": "LAD",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "LAD"
       }
     ],
     "effective": "3/25/26"
@@ -656,9 +706,10 @@
     "players": [
       {
         "name": "Otto Lopez",
-        "pos": "2B,SS",
-        "mlbTeam": "MIA",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -673,7 +724,8 @@
         "name": "Trent Grisham",
         "pos": "CF",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "3/25/26"
@@ -688,7 +740,8 @@
         "name": "George Soriano",
         "pos": "RP",
         "mlbTeam": "STL",
-        "action": "Added"
+        "action": "Added",
+        "team": "STL"
       }
     ],
     "effective": "3/25/26"
@@ -701,9 +754,10 @@
     "players": [
       {
         "name": "Willi Castro",
-        "pos": "2B,3B,LF,RF",
-        "mlbTeam": "COL",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -718,25 +772,29 @@
         "name": "Alec Bohm",
         "pos": "3B",
         "mlbTeam": "PHI",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "PHI"
       },
       {
         "name": "Carlos Lagrange",
         "pos": "SP",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       },
       {
         "name": "Royce Lewis",
         "pos": "3B",
         "mlbTeam": "MIN",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "MIN"
       },
       {
         "name": "Jasson Dominguez",
         "pos": "LF",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "3/25/26"
@@ -751,7 +809,8 @@
         "name": "Royce Lewis",
         "pos": "3B",
         "mlbTeam": "MIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIN"
       }
     ],
     "effective": "3/25/26"
@@ -766,7 +825,8 @@
         "name": "Evan Carter",
         "pos": "CF",
         "mlbTeam": "TEX",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TEX"
       }
     ],
     "effective": "3/25/26"
@@ -779,9 +839,10 @@
     "players": [
       {
         "name": "Coby Mayo",
-        "pos": "1B,3B",
-        "mlbTeam": "BAL",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -796,13 +857,15 @@
         "name": "Ben Joyce",
         "pos": "RP",
         "mlbTeam": "LAA",
-        "action": "Added"
+        "action": "Added",
+        "team": "LAA"
       },
       {
         "name": "Brooks Raley",
         "pos": "RP",
-        "mlbTeam": "NYM",
-        "action": "Dropped"
+        "mlbTeam": "NYY",
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "3/25/26"
@@ -815,9 +878,10 @@
     "players": [
       {
         "name": "Nasim Nunez",
-        "pos": "2B,SS",
-        "mlbTeam": "WAS",
-        "action": "Added"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -832,7 +896,8 @@
         "name": "Jose Butto",
         "pos": "RP",
         "mlbTeam": "SF",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SF"
       }
     ],
     "effective": "3/25/26"
@@ -847,13 +912,15 @@
         "name": "Cade Smith",
         "pos": "SP",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       },
       {
         "name": "Josue Briceno",
         "pos": "C",
         "mlbTeam": "DET",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "DET"
       }
     ],
     "effective": "3/25/26"
@@ -868,7 +935,8 @@
         "name": "Carson Whisenhunt",
         "pos": "SP",
         "mlbTeam": "SF",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SF"
       }
     ],
     "effective": "3/25/26"
@@ -883,7 +951,8 @@
         "name": "Javier Assad",
         "pos": "SP",
         "mlbTeam": "CHC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHC"
       }
     ],
     "effective": "3/25/26"
@@ -898,7 +967,8 @@
         "name": "Shane Drohan",
         "pos": "SP",
         "mlbTeam": "MIL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIL"
       }
     ],
     "effective": "3/25/26"
@@ -913,7 +983,8 @@
         "name": "Johan Oviedo",
         "pos": "SP",
         "mlbTeam": "BOS",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "BOS"
       }
     ],
     "effective": "3/25/26"
@@ -928,7 +999,8 @@
         "name": "Bryan King",
         "pos": "RP",
         "mlbTeam": "HOU",
-        "action": "Added"
+        "action": "Added",
+        "team": "HOU"
       }
     ],
     "effective": "3/25/26"
@@ -943,13 +1015,15 @@
         "name": "Matt Strahm",
         "pos": "RP",
         "mlbTeam": "KC",
-        "action": "Added"
+        "action": "Added",
+        "team": "KC"
       },
       {
         "name": "Edwin Uceta",
         "pos": "RP",
         "mlbTeam": "TB",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TB"
       }
     ],
     "effective": "3/25/26"
@@ -964,13 +1038,15 @@
         "name": "Jared Koenig",
         "pos": "RP",
         "mlbTeam": "MIL",
-        "action": "Added"
+        "action": "Added",
+        "team": "MIL"
       },
       {
         "name": "Jose Ferrer",
         "pos": "RP",
         "mlbTeam": "SEA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SEA"
       }
     ],
     "effective": "3/25/26"
@@ -983,9 +1059,10 @@
     "players": [
       {
         "name": "Marcelo Mayer",
-        "pos": "2B,3B",
-        "mlbTeam": "BOS",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -1000,7 +1077,8 @@
         "name": "Hunter Barco",
         "pos": "RP",
         "mlbTeam": "PIT",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PIT"
       }
     ],
     "effective": "3/25/26"
@@ -1015,7 +1093,8 @@
         "name": "Ha-seong Kim",
         "pos": "SS",
         "mlbTeam": "ATL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ATL"
       }
     ],
     "effective": "3/25/26"
@@ -1030,13 +1109,15 @@
         "name": "Andrew Benintendi",
         "pos": "LF",
         "mlbTeam": "CHW",
-        "action": "Added"
+        "action": "Added",
+        "team": "CHW"
       },
       {
         "name": "Andrew Vaughn",
         "pos": "1B",
         "mlbTeam": "MIL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIL"
       }
     ],
     "effective": "3/25/26"
@@ -1051,13 +1132,15 @@
         "name": "Trent Grisham",
         "pos": "CF",
         "mlbTeam": "NYY",
-        "action": "Added"
+        "action": "Added",
+        "team": "NYY"
       },
       {
         "name": "Andrew Benintendi",
         "pos": "LF",
         "mlbTeam": "CHW",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHW"
       }
     ],
     "effective": "3/25/26"
@@ -1072,7 +1155,8 @@
         "name": "Chris Martin",
         "pos": "RP",
         "mlbTeam": "TEX",
-        "action": "Added"
+        "action": "Added",
+        "team": "TEX"
       }
     ],
     "effective": "3/25/26"
@@ -1087,7 +1171,8 @@
         "name": "Dylan Lee",
         "pos": "RP",
         "mlbTeam": "ATL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ATL"
       }
     ],
     "effective": "3/25/26"
@@ -1102,7 +1187,8 @@
         "name": "Mike Soroka",
         "pos": "SP",
         "mlbTeam": "ARI",
-        "action": "Added"
+        "action": "Added",
+        "team": "ARI"
       }
     ],
     "effective": "3/25/26"
@@ -1115,9 +1201,10 @@
     "players": [
       {
         "name": "Jack Dreyer",
-        "pos": "SP,RP",
-        "mlbTeam": "LAD",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/25/26"
@@ -1132,7 +1219,8 @@
         "name": "Yusei Kikuchi",
         "pos": "SP",
         "mlbTeam": "LAA",
-        "action": "Added"
+        "action": "Added",
+        "team": "LAA"
       }
     ],
     "effective": "3/25/26"
@@ -1147,7 +1235,8 @@
         "name": "Orion Kerkering",
         "pos": "RP",
         "mlbTeam": "PHI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PHI"
       }
     ],
     "effective": "3/25/26"
@@ -1162,7 +1251,8 @@
         "name": "Ryan Zeferjahn",
         "pos": "RP",
         "mlbTeam": "LAA",
-        "action": "Added"
+        "action": "Added",
+        "team": "LAA"
       }
     ],
     "effective": "3/25/26"
@@ -1177,13 +1267,15 @@
         "name": "Jorge Polanco",
         "pos": "2B",
         "mlbTeam": "NYM",
-        "action": "Added"
+        "action": "Added",
+        "team": "NYM"
       },
       {
         "name": "Brayan Bello",
         "pos": "SP",
         "mlbTeam": "BOS",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "BOS"
       }
     ],
     "effective": "3/25/26"
@@ -1198,13 +1290,15 @@
         "name": "A.J. Minter",
         "pos": "RP",
         "mlbTeam": "NYM",
-        "action": "Added"
+        "action": "Added",
+        "team": "NYM"
       },
       {
         "name": "Andrew Kittredge",
         "pos": "RP",
         "mlbTeam": "BAL",
-        "action": "Added"
+        "action": "Added",
+        "team": "BAL"
       }
     ],
     "effective": "3/25/26"
@@ -1219,13 +1313,15 @@
         "name": "Jose Alvarado",
         "pos": "RP",
         "mlbTeam": "PHI",
-        "action": "Added"
+        "action": "Added",
+        "team": "PHI"
       },
       {
         "name": "Gabe Speier",
         "pos": "RP",
         "mlbTeam": "SEA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SEA"
       }
     ],
     "effective": "3/25/26"
@@ -1240,7 +1336,8 @@
         "name": "Carson Williams",
         "pos": "SS",
         "mlbTeam": "TB",
-        "action": "Added"
+        "action": "Added",
+        "team": "TB"
       }
     ],
     "effective": "3/26/26"
@@ -1255,7 +1352,8 @@
         "name": "Tyler Mahle",
         "pos": "SP",
         "mlbTeam": "SF",
-        "action": "Added"
+        "action": "Added",
+        "team": "SF"
       }
     ],
     "effective": "3/26/26"
@@ -1270,7 +1368,8 @@
         "name": "A.J. Minter",
         "pos": "RP",
         "mlbTeam": "NYM",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYM"
       }
     ],
     "effective": "3/26/26"
@@ -1285,7 +1384,8 @@
         "name": "Javier Assad",
         "pos": "SP",
         "mlbTeam": "CHC",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CHC"
       }
     ],
     "effective": "3/27/26"
@@ -1300,7 +1400,8 @@
         "name": "Javier Assad",
         "pos": "SP",
         "mlbTeam": "CHC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHC"
       }
     ],
     "effective": "3/27/26"
@@ -1315,13 +1416,15 @@
         "name": "Jordan Romano",
         "pos": "RP",
         "mlbTeam": "LAA",
-        "action": "Added"
+        "action": "Added",
+        "team": "LAA"
       },
       {
         "name": "Louie Varland",
         "pos": "RP",
         "mlbTeam": "TOR",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TOR"
       }
     ],
     "effective": "3/27/26"
@@ -1336,7 +1439,8 @@
         "name": "Tanner McDougal",
         "pos": "SP",
         "mlbTeam": "CHW",
-        "action": "Added"
+        "action": "Added",
+        "team": "CHW"
       }
     ],
     "effective": "3/27/26"
@@ -1351,7 +1455,8 @@
         "name": "George Lombard",
         "pos": "SS",
         "mlbTeam": "NYY",
-        "action": "Added"
+        "action": "Added",
+        "team": "NYY"
       }
     ],
     "effective": "3/27/26"
@@ -1366,13 +1471,15 @@
         "name": "Erik Sabrowski",
         "pos": "RP",
         "mlbTeam": "CLE",
-        "action": "Added"
+        "action": "Added",
+        "team": "CLE"
       },
       {
         "name": "Carlos Estevez",
         "pos": "RP",
         "mlbTeam": "KC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "KC"
       }
     ],
     "effective": "3/29/26"
@@ -1387,13 +1494,15 @@
         "name": "Emerson Hancock",
         "pos": "SP",
         "mlbTeam": "SEA",
-        "action": "Added"
+        "action": "Added",
+        "team": "SEA"
       },
       {
         "name": "Jacob Latz",
-        "pos": "SP,RP",
-        "mlbTeam": "TEX",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "3/30/26"
@@ -1408,7 +1517,8 @@
         "name": "Royce Lewis",
         "pos": "3B",
         "mlbTeam": "MIN",
-        "action": "Added"
+        "action": "Added",
+        "team": "MIN"
       }
     ],
     "effective": "3/30/26"
@@ -1423,7 +1533,8 @@
         "name": "Anthony Volpe",
         "pos": "SS",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "3/30/26"
@@ -1438,7 +1549,8 @@
         "name": "Cole Sands",
         "pos": "RP",
         "mlbTeam": "MIN",
-        "action": "Added"
+        "action": "Added",
+        "team": "MIN"
       }
     ],
     "effective": "3/30/26"
@@ -1453,7 +1565,8 @@
         "name": "Jordan Walker",
         "pos": "RF",
         "mlbTeam": "STL",
-        "action": "Added"
+        "action": "Added",
+        "team": "STL"
       }
     ],
     "effective": "3/31/26"
@@ -1468,7 +1581,8 @@
         "name": "Kyle Manzardo",
         "pos": "1B",
         "mlbTeam": "CLE",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CLE"
       }
     ],
     "effective": "3/31/26"
@@ -1483,7 +1597,8 @@
         "name": "Logan Henderson",
         "pos": "SP",
         "mlbTeam": "MIL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIL"
       }
     ],
     "effective": "3/31/26"
@@ -1498,7 +1613,8 @@
         "name": "Randy Vasquez",
         "pos": "SP",
         "mlbTeam": "SD",
-        "action": "Added"
+        "action": "Added",
+        "team": "SD"
       }
     ],
     "effective": "3/31/26"
@@ -1513,7 +1629,8 @@
         "name": "Lance McCullers",
         "pos": "SP",
         "mlbTeam": "HOU",
-        "action": "Added"
+        "action": "Added",
+        "team": "HOU"
       }
     ],
     "effective": "3/31/26"
@@ -1528,13 +1645,15 @@
         "name": "Owen Caissie",
         "pos": "RF",
         "mlbTeam": "MIA",
-        "action": "Added"
+        "action": "Added",
+        "team": "MIA"
       },
       {
         "name": "Noelvi Marte",
-        "pos": "3B,RF",
-        "mlbTeam": "CIN",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/1/26"
@@ -1547,15 +1666,17 @@
     "players": [
       {
         "name": "Colt Keith",
-        "pos": "2B,3B",
-        "mlbTeam": "DET",
-        "action": "Added"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added",
+        "team": ""
       },
       {
         "name": "Josh Jung",
         "pos": "3B",
         "mlbTeam": "TEX",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TEX"
       }
     ],
     "effective": "4/2/26"
@@ -1570,13 +1691,15 @@
         "name": "Taj Bradley",
         "pos": "SP",
         "mlbTeam": "MIN",
-        "action": "Added"
+        "action": "Added",
+        "team": "MIN"
       },
       {
         "name": "Payton Tolle",
-        "pos": "RP",
-        "mlbTeam": "BOS",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/2/26"
@@ -1591,7 +1714,8 @@
         "name": "Hogan Harris",
         "pos": "RP",
         "mlbTeam": "ATH",
-        "action": "Added"
+        "action": "Added",
+        "team": "ATH"
       }
     ],
     "effective": "4/2/26"
@@ -1606,7 +1730,8 @@
         "name": "Willy Adames",
         "pos": "SS",
         "mlbTeam": "SF",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SF"
       }
     ],
     "effective": "4/2/26"
@@ -1621,13 +1746,15 @@
         "name": "Paul Sewald",
         "pos": "RP",
         "mlbTeam": "ARI",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ARI"
       },
       {
         "name": "Kevin Ginkel",
         "pos": "RP",
         "mlbTeam": "ARI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ARI"
       }
     ],
     "effective": "4/3/26"
@@ -1642,25 +1769,29 @@
         "name": "TJ Rumfield",
         "pos": "1B",
         "mlbTeam": "COL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "COL"
       },
       {
         "name": "Carson Williams",
         "pos": "SS",
         "mlbTeam": "TB",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TB"
       },
       {
         "name": "Graham Ashcraft",
         "pos": "RP",
         "mlbTeam": "CIN",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "CIN"
       },
       {
         "name": "Chris Martin",
         "pos": "RP",
         "mlbTeam": "TEX",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TEX"
       }
     ],
     "effective": "4/4/26"
@@ -1675,13 +1806,15 @@
         "name": "Bryan Baker",
         "pos": "RP",
         "mlbTeam": "TB",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "TB"
       },
       {
         "name": "Phil Maton",
         "pos": "RP",
         "mlbTeam": "CHC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHC"
       }
     ],
     "effective": "4/4/26"
@@ -1696,13 +1829,15 @@
         "name": "Aaron Ashby",
         "pos": "RP",
         "mlbTeam": "MIL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "MIL"
       },
       {
         "name": "Caleb Durbin",
         "pos": "3B",
         "mlbTeam": "BOS",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "BOS"
       }
     ],
     "effective": "4/4/26"
@@ -1715,15 +1850,17 @@
     "players": [
       {
         "name": "Caleb Kilian",
-        "pos": "SP,RP",
-        "mlbTeam": "SF",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Emmet Sheehan",
         "pos": "SP",
         "mlbTeam": "LAD",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "LAD"
       }
     ],
     "effective": "4/4/26"
@@ -1738,7 +1875,8 @@
         "name": "Joe Musgrove",
         "pos": "SP",
         "mlbTeam": "SD",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SD"
       }
     ],
     "effective": "4/5/26"
@@ -1753,25 +1891,29 @@
         "name": "Mitch Keller",
         "pos": "SP",
         "mlbTeam": "PIT",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "PIT"
       },
       {
         "name": "Slade Cecconi",
         "pos": "SP",
         "mlbTeam": "CLE",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CLE"
       },
       {
         "name": "Andres Gimenez",
-        "pos": "2B,SS",
-        "mlbTeam": "TOR",
-        "action": "Activated"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Activated",
+        "team": ""
       },
       {
         "name": "Jorge Polanco",
         "pos": "2B",
         "mlbTeam": "NYM",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYM"
       }
     ],
     "effective": "4/5/26"
@@ -1786,13 +1928,15 @@
         "name": "Joe Boyle",
         "pos": "SP",
         "mlbTeam": "TB",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "TB"
       },
       {
         "name": "Cristian Javier",
         "pos": "SP",
         "mlbTeam": "HOU",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "HOU"
       }
     ],
     "effective": "4/5/26"
@@ -1805,15 +1949,17 @@
     "players": [
       {
         "name": "Jose Fernandez",
-        "pos": "1B,SS",
-        "mlbTeam": "ARI",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Jose Alvarado",
         "pos": "RP",
         "mlbTeam": "PHI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PHI"
       }
     ],
     "effective": "4/5/26"
@@ -1828,7 +1974,8 @@
         "name": "J.T. Realmuto",
         "pos": "C",
         "mlbTeam": "PHI",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "PHI"
       }
     ],
     "effective": "4/5/26"
@@ -1841,9 +1988,10 @@
     "players": [
       {
         "name": "Jesus Sanchez",
-        "pos": "LF,RF",
-        "mlbTeam": "TOR",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       }
     ],
     "effective": "4/5/26"
@@ -1858,13 +2006,15 @@
         "name": "Kyle Isbel",
         "pos": "CF",
         "mlbTeam": "KC",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "KC"
       },
       {
         "name": "Brenton Doyle",
         "pos": "CF",
         "mlbTeam": "COL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "COL"
       }
     ],
     "effective": "4/6/26"
@@ -1879,13 +2029,15 @@
         "name": "Tim Hill",
         "pos": "RP",
         "mlbTeam": "NYY",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "NYY"
       },
       {
         "name": "George Soriano",
         "pos": "RP",
         "mlbTeam": "STL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "STL"
       }
     ],
     "effective": "4/6/26"
@@ -1898,21 +2050,24 @@
     "players": [
       {
         "name": "Miguel Vargas",
-        "pos": "1B,3B",
-        "mlbTeam": "CHW",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Addison Barger",
-        "pos": "3B,RF",
-        "mlbTeam": "TOR",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       },
       {
         "name": "Christian Walker",
         "pos": "1B",
         "mlbTeam": "HOU",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "HOU"
       }
     ],
     "effective": "4/7/26"
@@ -1927,13 +2082,15 @@
         "name": "Seth Lugo",
         "pos": "SP",
         "mlbTeam": "KC",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "KC"
       },
       {
         "name": "Jesus Sanchez",
-        "pos": "LF,RF",
-        "mlbTeam": "TOR",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/7/26"
@@ -1948,13 +2105,15 @@
         "name": "Emmet Sheehan",
         "pos": "SP",
         "mlbTeam": "LAD",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "LAD"
       },
       {
         "name": "Lance McCullers",
         "pos": "SP",
         "mlbTeam": "HOU",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "HOU"
       }
     ],
     "effective": "4/7/26"
@@ -1969,13 +2128,15 @@
         "name": "Giancarlo Stanton",
         "pos": "DH",
         "mlbTeam": "NYY",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "NYY"
       },
       {
         "name": "Heliot Ramos",
         "pos": "LF",
         "mlbTeam": "SF",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SF"
       }
     ],
     "effective": "4/7/26"
@@ -1990,13 +2151,15 @@
         "name": "Mark Leiter",
         "pos": "RP",
         "mlbTeam": "ATH",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "ATH"
       },
       {
         "name": "Jared Koenig",
         "pos": "RP",
         "mlbTeam": "MIL",
-        "action": "Moved to IR"
+        "action": "Moved to IR",
+        "team": "MIL"
       }
     ],
     "effective": "4/8/26"
@@ -2009,15 +2172,17 @@
     "players": [
       {
         "name": "Mark Vientos",
-        "pos": "1B,3B",
-        "mlbTeam": "NYM",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Alec Bohm",
         "pos": "3B",
         "mlbTeam": "PHI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PHI"
       }
     ],
     "effective": "4/8/26"
@@ -2032,13 +2197,15 @@
         "name": "Bryce Elder",
         "pos": "SP",
         "mlbTeam": "ATL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ATL"
       },
       {
         "name": "Ramon Laureano",
-        "pos": "LF,RF",
-        "mlbTeam": "SD",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/8/26"
@@ -2051,15 +2218,17 @@
     "players": [
       {
         "name": "Noelvi Marte",
-        "pos": "3B,RF",
-        "mlbTeam": "CIN",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Cody Ponce",
         "pos": "RP",
         "mlbTeam": "TOR",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TOR"
       }
     ],
     "effective": "4/8/26"
@@ -2074,13 +2243,15 @@
         "name": "Will Warren",
         "pos": "SP",
         "mlbTeam": "NYY",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "NYY"
       },
       {
         "name": "Cole Sands",
         "pos": "RP",
         "mlbTeam": "MIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIN"
       }
     ],
     "effective": "4/8/26"
@@ -2093,15 +2264,17 @@
     "players": [
       {
         "name": "Max Muncy",
-        "pos": "2B,3B",
-        "mlbTeam": "ATH",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Will Warren",
         "pos": "SP",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "4/9/26"
@@ -2116,13 +2289,15 @@
         "name": "Janson Junk",
         "pos": "SP",
         "mlbTeam": "MIA",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "MIA"
       },
       {
         "name": "Cade Horton",
         "pos": "SP",
         "mlbTeam": "CHC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHC"
       }
     ],
     "effective": "4/9/26"
@@ -2137,7 +2312,8 @@
         "name": "Mick Abel",
         "pos": "SP",
         "mlbTeam": "MIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIN"
       }
     ],
     "effective": "4/10/26"
@@ -2150,15 +2326,17 @@
     "players": [
       {
         "name": "Tyler Alexander",
-        "pos": "SP,RP",
-        "mlbTeam": "TEX",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Max Muncy",
-        "pos": "2B,3B",
-        "mlbTeam": "ATH",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/10/26"
@@ -2173,13 +2351,15 @@
         "name": "James Tibbs",
         "pos": "RF",
         "mlbTeam": "LAD",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "LAD"
       },
       {
         "name": "Bryson Stott",
         "pos": "2B",
         "mlbTeam": "PHI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PHI"
       }
     ],
     "effective": "4/10/26"
@@ -2192,15 +2372,17 @@
     "players": [
       {
         "name": "Liam Hicks",
-        "pos": "C,1B",
-        "mlbTeam": "MIA",
-        "action": "Activated"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Activated",
+        "team": ""
       },
       {
         "name": "Gabriel Moreno",
         "pos": "C",
         "mlbTeam": "ARI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ARI"
       }
     ],
     "effective": "4/10/26"
@@ -2213,15 +2395,17 @@
     "players": [
       {
         "name": "Joey Cantillo",
-        "pos": "SP,RP",
-        "mlbTeam": "CLE",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Shane Smith",
         "pos": "SP",
         "mlbTeam": "CHW",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHW"
       }
     ],
     "effective": "4/10/26"
@@ -2236,7 +2420,8 @@
         "name": "Mick Abel",
         "pos": "SP",
         "mlbTeam": "MIN",
-        "action": "Added"
+        "action": "Added",
+        "team": "MIN"
       }
     ],
     "effective": "4/10/26"
@@ -2249,9 +2434,10 @@
     "players": [
       {
         "name": "Josh H. Smith",
-        "pos": "1B,2B,3B,SS",
-        "mlbTeam": "TEX",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/11/26"
@@ -2264,15 +2450,17 @@
     "players": [
       {
         "name": "Jung Hoo Lee",
-        "pos": "CF,RF",
-        "mlbTeam": "SF",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Chad Patrick",
         "pos": "SP",
         "mlbTeam": "MIL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIL"
       }
     ],
     "effective": "4/11/26"
@@ -2287,13 +2475,15 @@
         "name": "Cole Sands",
         "pos": "RP",
         "mlbTeam": "MIN",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "MIN"
       },
       {
         "name": "Matt Svanson",
         "pos": "RP",
         "mlbTeam": "STL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "STL"
       }
     ],
     "effective": "4/11/26"
@@ -2308,7 +2498,8 @@
         "name": "Brady Singer",
         "pos": "SP",
         "mlbTeam": "CIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CIN"
       }
     ],
     "effective": "4/11/26"
@@ -2323,13 +2514,15 @@
         "name": "Ryne Stanek",
         "pos": "RP",
         "mlbTeam": "STL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "STL"
       },
       {
         "name": "Tyler Alexander",
-        "pos": "SP,RP",
-        "mlbTeam": "TEX",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/12/26"
@@ -2342,9 +2535,10 @@
     "players": [
       {
         "name": "Luis Arraez",
-        "pos": "1B,2B",
-        "mlbTeam": "SF",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       }
     ],
     "effective": "4/12/26"
@@ -2357,27 +2551,31 @@
     "players": [
       {
         "name": "Sam Antonacci",
-        "pos": "2B,LF",
-        "mlbTeam": "CHW",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Jung Hoo Lee",
-        "pos": "CF,RF",
-        "mlbTeam": "SF",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       },
       {
         "name": "Noah Schultz",
         "pos": "SP",
         "mlbTeam": "CHW",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CHW"
       },
       {
         "name": "Andrew Kittredge",
         "pos": "RP",
         "mlbTeam": "BAL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "BAL"
       }
     ],
     "effective": "4/13/26"
@@ -2392,7 +2590,8 @@
         "name": "Victor Vodnik",
         "pos": "RP",
         "mlbTeam": "COL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "COL"
       }
     ],
     "effective": "4/13/26"
@@ -2405,15 +2604,17 @@
     "players": [
       {
         "name": "Ramon Laureano",
-        "pos": "LF,RF",
-        "mlbTeam": "SD",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Joe Boyle",
         "pos": "SP",
         "mlbTeam": "TB",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TB"
       }
     ],
     "effective": "4/13/26"
@@ -2428,13 +2629,15 @@
         "name": "Luis Severino",
         "pos": "SP",
         "mlbTeam": "ATH",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ATH"
       },
       {
         "name": "Jeremiah Estrada",
         "pos": "RP",
         "mlbTeam": "SD",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SD"
       }
     ],
     "effective": "4/13/26"
@@ -2449,7 +2652,8 @@
         "name": "James Tibbs",
         "pos": "RF",
         "mlbTeam": "LAD",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "LAD"
       }
     ],
     "effective": "4/13/26"
@@ -2464,7 +2668,8 @@
         "name": "Kirby Yates",
         "pos": "RP",
         "mlbTeam": "LAA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "LAA"
       }
     ],
     "effective": "4/13/26"
@@ -2477,27 +2682,31 @@
     "players": [
       {
         "name": "Tyler Wells",
-        "pos": "SP,RP",
-        "mlbTeam": "BAL",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Jackson Jobe",
         "pos": "SP",
         "mlbTeam": "DET",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "DET"
       },
       {
         "name": "Seth Hernandez",
         "pos": "SP",
         "mlbTeam": "PIT",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "PIT"
       },
       {
         "name": "Gage Jump",
         "pos": "SP",
         "mlbTeam": "ATH",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ATH"
       }
     ],
     "effective": "4/14/26"
@@ -2510,15 +2719,17 @@
     "players": [
       {
         "name": "Matt Shaw",
-        "pos": "3B,RF",
-        "mlbTeam": "CHC",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Victor Vodnik",
         "pos": "RP",
         "mlbTeam": "COL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "COL"
       }
     ],
     "effective": "4/14/26"
@@ -2533,13 +2744,15 @@
         "name": "Slade Cecconi",
         "pos": "SP",
         "mlbTeam": "CLE",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CLE"
       },
       {
         "name": "Cade Cavalli",
         "pos": "SP",
         "mlbTeam": "WAS",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "WAS"
       }
     ],
     "effective": "4/14/26"
@@ -2554,13 +2767,15 @@
         "name": "Adolis Garcia",
         "pos": "RF",
         "mlbTeam": "PHI",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "PHI"
       },
       {
         "name": "Noelvi Marte",
-        "pos": "3B,RF",
-        "mlbTeam": "CIN",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/14/26"
@@ -2575,13 +2790,15 @@
         "name": "Jeffrey Springs",
         "pos": "SP",
         "mlbTeam": "ATH",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ATH"
       },
       {
         "name": "Hunter Harvey",
         "pos": "RP",
         "mlbTeam": "CHC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHC"
       }
     ],
     "effective": "4/14/26"
@@ -2594,9 +2811,10 @@
     "players": [
       {
         "name": "Max Muncy",
-        "pos": "2B,3B",
-        "mlbTeam": "ATH",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       }
     ],
     "effective": "4/14/26"
@@ -2611,7 +2829,8 @@
         "name": "Dustin May",
         "pos": "SP",
         "mlbTeam": "STL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "STL"
       }
     ],
     "effective": "4/14/26"
@@ -2626,25 +2845,29 @@
         "name": "David Peterson",
         "pos": "SP",
         "mlbTeam": "NYM",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "NYM"
       },
       {
         "name": "Chris Bassitt",
         "pos": "SP",
         "mlbTeam": "BAL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "BAL"
       },
       {
         "name": "Angel Martinez",
-        "pos": "2B,LF,CF,RF",
-        "mlbTeam": "CLE",
-        "action": "Activated"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Activated",
+        "team": ""
       },
       {
         "name": "Andres Gimenez",
-        "pos": "2B,SS",
-        "mlbTeam": "TOR",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/15/26"
@@ -2659,13 +2882,15 @@
         "name": "Rico Garcia",
         "pos": "RP",
         "mlbTeam": "BAL",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "BAL"
       },
       {
         "name": "Ryne Stanek",
         "pos": "RP",
         "mlbTeam": "STL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "STL"
       }
     ],
     "effective": "4/15/26"
@@ -2680,13 +2905,15 @@
         "name": "Jake Junis",
         "pos": "RP",
         "mlbTeam": "TEX",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "TEX"
       },
       {
         "name": "Luke Weaver",
         "pos": "RP",
         "mlbTeam": "NYM",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYM"
       }
     ],
     "effective": "4/15/26"
@@ -2701,13 +2928,15 @@
         "name": "Isaac Mattson",
         "pos": "RP",
         "mlbTeam": "PIT",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "PIT"
       },
       {
         "name": "Tyler Wells",
-        "pos": "SP,RP",
-        "mlbTeam": "BAL",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/16/26"
@@ -2722,7 +2951,8 @@
         "name": "Davis Martin",
         "pos": "SP",
         "mlbTeam": "CHW",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CHW"
       }
     ],
     "effective": "4/16/26"
@@ -2737,13 +2967,15 @@
         "name": "Dillon Dingler",
         "pos": "C",
         "mlbTeam": "DET",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "DET"
       },
       {
         "name": "Jose Fernandez",
-        "pos": "1B,SS",
-        "mlbTeam": "ARI",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/16/26"
@@ -2756,15 +2988,17 @@
     "players": [
       {
         "name": "Mauricio Dubon",
-        "pos": "2B,3B,SS,LF",
-        "mlbTeam": "ATL",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Mark Vientos",
-        "pos": "1B,3B",
-        "mlbTeam": "NYM",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/16/26"
@@ -2779,13 +3013,15 @@
         "name": "Will Warren",
         "pos": "SP",
         "mlbTeam": "NYY",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "NYY"
       },
       {
         "name": "Isaac Mattson",
         "pos": "RP",
         "mlbTeam": "PIT",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PIT"
       }
     ],
     "effective": "4/17/26"
@@ -2800,13 +3036,15 @@
         "name": "Aaron Civale",
         "pos": "SP",
         "mlbTeam": "ATH",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ATH"
       },
       {
         "name": "Tyler Mahle",
         "pos": "SP",
         "mlbTeam": "SF",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SF"
       }
     ],
     "effective": "4/17/26"
@@ -2821,13 +3059,15 @@
         "name": "Brady House",
         "pos": "3B",
         "mlbTeam": "WAS",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "WAS"
       },
       {
         "name": "Miguel Vargas",
-        "pos": "1B,3B",
-        "mlbTeam": "CHW",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/17/26"
@@ -2840,9 +3080,10 @@
     "players": [
       {
         "name": "Nasim Nunez",
-        "pos": "2B,SS",
-        "mlbTeam": "WAS",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/17/26"
@@ -2855,21 +3096,24 @@
     "players": [
       {
         "name": "Antonio Senzatela",
-        "pos": "SP,RP",
-        "mlbTeam": "COL",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Isaac Paredes",
         "pos": "3B",
         "mlbTeam": "HOU",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "HOU"
       },
       {
         "name": "Franklin Arias",
         "pos": "SS",
         "mlbTeam": "BOS",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "BOS"
       }
     ],
     "effective": "4/18/26"
@@ -2884,13 +3128,15 @@
         "name": "Louie Varland",
         "pos": "RP",
         "mlbTeam": "TOR",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "TOR"
       },
       {
         "name": "Matt Shaw",
-        "pos": "3B,RF",
-        "mlbTeam": "CHC",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/18/26"
@@ -2905,7 +3151,8 @@
         "name": "Joel Kuhnel",
         "pos": "RP",
         "mlbTeam": "ATH",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ATH"
       }
     ],
     "effective": "4/18/26"
@@ -2920,13 +3167,15 @@
         "name": "Keaton Winn",
         "pos": "RP",
         "mlbTeam": "SF",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "SF"
       },
       {
         "name": "Jordan Romano",
         "pos": "RP",
         "mlbTeam": "LAA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "LAA"
       }
     ],
     "effective": "4/19/26"
@@ -2939,15 +3188,17 @@
     "players": [
       {
         "name": "Ben Brown",
-        "pos": "SP,RP",
-        "mlbTeam": "CHC",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Luis Severino",
         "pos": "SP",
         "mlbTeam": "ATH",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ATH"
       }
     ],
     "effective": "4/19/26"
@@ -2960,15 +3211,17 @@
     "players": [
       {
         "name": "Jeremiah Jackson",
-        "pos": "2B,RF",
-        "mlbTeam": "BAL",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Antonio Senzatela",
-        "pos": "SP,RP",
-        "mlbTeam": "COL",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/20/26"
@@ -2981,15 +3234,17 @@
     "players": [
       {
         "name": "Otto Lopez",
-        "pos": "2B,SS",
-        "mlbTeam": "MIA",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "TJ Rumfield",
         "pos": "1B",
         "mlbTeam": "COL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "COL"
       }
     ],
     "effective": "4/20/26"
@@ -3002,15 +3257,17 @@
     "players": [
       {
         "name": "Brandon Marsh",
-        "pos": "LF,CF",
-        "mlbTeam": "PHI",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Colton Cowser",
-        "pos": "LF,CF,RF",
-        "mlbTeam": "BAL",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/20/26"
@@ -3023,51 +3280,59 @@
     "players": [
       {
         "name": "Tyler Alexander",
-        "pos": "SP,RP",
-        "mlbTeam": "TEX",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Aaron Civale",
         "pos": "SP",
         "mlbTeam": "ATH",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ATH"
       },
       {
         "name": "Andres Gimenez",
-        "pos": "2B,SS",
-        "mlbTeam": "TOR",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Kerry Carpenter",
-        "pos": "LF,RF",
-        "mlbTeam": "DET",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       },
       {
         "name": "Spencer Arrighetti",
         "pos": "SP",
         "mlbTeam": "HOU",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "HOU"
       },
       {
         "name": "Andrew Abbott",
         "pos": "SP",
         "mlbTeam": "CIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CIN"
       },
       {
         "name": "Blake Treinen",
         "pos": "RP",
         "mlbTeam": "LAD",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "LAD"
       },
       {
         "name": "Corbin Burnes",
         "pos": "SP",
         "mlbTeam": "ARI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ARI"
       }
     ],
     "effective": "4/21/26"
@@ -3082,19 +3347,22 @@
         "name": "Brenton Doyle",
         "pos": "CF",
         "mlbTeam": "COL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "COL"
       },
       {
         "name": "Josh Jung",
         "pos": "3B",
         "mlbTeam": "TEX",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "TEX"
       },
       {
         "name": "Mauricio Dubon",
-        "pos": "2B,3B,SS,LF",
-        "mlbTeam": "ATL",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/21/26"
@@ -3109,25 +3377,29 @@
         "name": "Juan Morillo",
         "pos": "RP",
         "mlbTeam": "ARI",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ARI"
       },
       {
         "name": "Will Vest",
         "pos": "RP",
         "mlbTeam": "DET",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "DET"
       },
       {
         "name": "Dalton Rushing",
         "pos": "C",
         "mlbTeam": "LAD",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "LAD"
       },
       {
         "name": "Sam Antonacci",
-        "pos": "2B,LF",
-        "mlbTeam": "CHW",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/22/26"
@@ -3142,7 +3414,8 @@
         "name": "Dylan Lee",
         "pos": "RP",
         "mlbTeam": "ATL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ATL"
       }
     ],
     "effective": "4/22/26"
@@ -3157,7 +3430,8 @@
         "name": "Yainer Diaz",
         "pos": "C",
         "mlbTeam": "HOU",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "HOU"
       }
     ],
     "effective": "4/22/26"
@@ -3172,7 +3446,8 @@
         "name": "David Peterson",
         "pos": "SP",
         "mlbTeam": "NYM",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYM"
       }
     ],
     "effective": "4/23/26"
@@ -3187,7 +3462,8 @@
         "name": "Adolis Garcia",
         "pos": "RF",
         "mlbTeam": "PHI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PHI"
       }
     ],
     "effective": "4/23/26"
@@ -3202,13 +3478,15 @@
         "name": "Chase Dollander",
         "pos": "SP",
         "mlbTeam": "COL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "COL"
       },
       {
         "name": "Giancarlo Stanton",
         "pos": "DH",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "4/23/26"
@@ -3223,13 +3501,15 @@
         "name": "Caleb Thielbar",
         "pos": "RP",
         "mlbTeam": "CHC",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CHC"
       },
       {
         "name": "Ben Brown",
-        "pos": "SP,RP",
-        "mlbTeam": "CHC",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/23/26"
@@ -3244,13 +3524,15 @@
         "name": "Ryan Jeffers",
         "pos": "C",
         "mlbTeam": "MIN",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "MIN"
       },
       {
         "name": "J.T. Realmuto",
         "pos": "C",
         "mlbTeam": "PHI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PHI"
       }
     ],
     "effective": "4/23/26"
@@ -3263,9 +3545,10 @@
     "players": [
       {
         "name": "Max Muncy",
-        "pos": "2B,3B",
-        "mlbTeam": "ATH",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "4/23/26"
@@ -3278,27 +3561,31 @@
     "players": [
       {
         "name": "Justin Wrobleski",
-        "pos": "SP,RP",
-        "mlbTeam": "LAD",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Spencer Arrighetti",
         "pos": "SP",
         "mlbTeam": "HOU",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "HOU"
       },
       {
         "name": "Enyel De Los Santos",
         "pos": "RP",
         "mlbTeam": "HOU",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "HOU"
       },
       {
         "name": "Bryan King",
         "pos": "RP",
         "mlbTeam": "HOU",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "HOU"
       }
     ],
     "effective": "4/24/26"
@@ -3311,9 +3598,10 @@
     "players": [
       {
         "name": "Miguel Vargas",
-        "pos": "1B,3B",
-        "mlbTeam": "CHW",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       }
     ],
     "effective": "4/24/26"
@@ -3326,15 +3614,17 @@
     "players": [
       {
         "name": "Oswald Peraza",
-        "pos": "2B,3B",
-        "mlbTeam": "LAA",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Brady House",
         "pos": "3B",
         "mlbTeam": "WAS",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "WAS"
       }
     ],
     "effective": "4/24/26"
@@ -3349,13 +3639,15 @@
         "name": "Mason Montgomery",
         "pos": "RP",
         "mlbTeam": "PIT",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "PIT"
       },
       {
         "name": "Matthew Liberatore",
         "pos": "SP",
         "mlbTeam": "STL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "STL"
       }
     ],
     "effective": "4/25/26"
@@ -3370,7 +3662,8 @@
         "name": "Tim Hill",
         "pos": "RP",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "4/25/26"
@@ -3385,13 +3678,15 @@
         "name": "Carlos Cortes",
         "pos": "RF",
         "mlbTeam": "ATH",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ATH"
       },
       {
         "name": "Caleb Thielbar",
         "pos": "RP",
         "mlbTeam": "CHC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHC"
       }
     ],
     "effective": "4/26/26"
@@ -3404,15 +3699,17 @@
     "players": [
       {
         "name": "Ben Brown",
-        "pos": "SP,RP",
-        "mlbTeam": "CHC",
-        "action": "Activated"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Activated",
+        "team": ""
       },
       {
         "name": "Joel Kuhnel",
         "pos": "RP",
         "mlbTeam": "ATH",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ATH"
       }
     ],
     "effective": "4/26/26"
@@ -3427,13 +3724,15 @@
         "name": "Jasson Dominguez",
         "pos": "LF",
         "mlbTeam": "NYY",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "NYY"
       },
       {
         "name": "Brenton Doyle",
         "pos": "CF",
         "mlbTeam": "COL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "COL"
       }
     ],
     "effective": "4/27/26"
@@ -3446,27 +3745,31 @@
     "players": [
       {
         "name": "Payton Tolle",
-        "pos": "RP",
-        "mlbTeam": "BOS",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Lawrence Butler",
-        "pos": "CF,RF",
-        "mlbTeam": "ATH",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       },
       {
         "name": "Jeremiah Estrada",
         "pos": "RP",
         "mlbTeam": "SD",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "SD"
       },
       {
         "name": "Marcus Semien",
         "pos": "2B",
         "mlbTeam": "NYM",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYM"
       }
     ],
     "effective": "4/28/26"
@@ -3481,7 +3784,8 @@
         "name": "Trevor Story",
         "pos": "SS",
         "mlbTeam": "BOS",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "BOS"
       }
     ],
     "effective": "4/28/26"
@@ -3494,15 +3798,17 @@
     "players": [
       {
         "name": "Ryne Nelson",
-        "pos": "SP,RP",
-        "mlbTeam": "ARI",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       },
       {
         "name": "Justin Steele",
         "pos": "SP",
         "mlbTeam": "CHC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHC"
       }
     ],
     "effective": "4/28/26"
@@ -3517,7 +3823,8 @@
         "name": "Kodai Senga",
         "pos": "SP",
         "mlbTeam": "NYM",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYM"
       }
     ],
     "effective": "4/29/26"
@@ -3532,19 +3839,22 @@
         "name": "Orion Kerkering",
         "pos": "RP",
         "mlbTeam": "PHI",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "PHI"
       },
       {
         "name": "Matt Shaw",
-        "pos": "3B,RF",
-        "mlbTeam": "CHC",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Foster Griffin",
-        "pos": "SP,RP",
-        "mlbTeam": "WAS",
-        "action": "Activated"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Activated",
+        "team": ""
       }
     ],
     "effective": "4/29/26"
@@ -3559,7 +3869,8 @@
         "name": "Isaac Paredes",
         "pos": "3B",
         "mlbTeam": "HOU",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "HOU"
       }
     ],
     "effective": "4/29/26"
@@ -3574,13 +3885,15 @@
         "name": "Spencer Arrighetti",
         "pos": "SP",
         "mlbTeam": "HOU",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "HOU"
       },
       {
         "name": "Luis Castillo",
         "pos": "SP",
         "mlbTeam": "SEA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SEA"
       }
     ],
     "effective": "4/29/26"
@@ -3593,15 +3906,17 @@
     "players": [
       {
         "name": "Nathan Church",
-        "pos": "LF,CF",
-        "mlbTeam": "STL",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Owen Caissie",
         "pos": "RF",
         "mlbTeam": "MIA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIA"
       }
     ],
     "effective": "4/29/26"
@@ -3616,7 +3931,8 @@
         "name": "Aaron Nola",
         "pos": "SP",
         "mlbTeam": "PHI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PHI"
       }
     ],
     "effective": "4/29/26"
@@ -3629,27 +3945,31 @@
     "players": [
       {
         "name": "Ildemaro Vargas",
-        "pos": "1B,2B",
-        "mlbTeam": "ARI",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Jack Leiter",
         "pos": "SP",
         "mlbTeam": "TEX",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TEX"
       },
       {
         "name": "Antonio Senzatela",
-        "pos": "SP,RP",
-        "mlbTeam": "COL",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Pete Fairbanks",
         "pos": "RP",
         "mlbTeam": "MIA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIA"
       }
     ],
     "effective": "4/30/26"
@@ -3664,13 +3984,15 @@
         "name": "Erick Fedde",
         "pos": "SP",
         "mlbTeam": "CHW",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CHW"
       },
       {
         "name": "Jack Flaherty",
         "pos": "SP",
         "mlbTeam": "DET",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "DET"
       }
     ],
     "effective": "4/30/26"
@@ -3683,27 +4005,31 @@
     "players": [
       {
         "name": "Jung Hoo Lee",
-        "pos": "CF,RF",
-        "mlbTeam": "SF",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Jordan Westburg",
         "pos": "3B",
         "mlbTeam": "BAL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "BAL"
       },
       {
         "name": "Lawrence Butler",
-        "pos": "CF,RF",
-        "mlbTeam": "ATH",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Jasson Dominguez",
         "pos": "LF",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "5/1/26"
@@ -3718,7 +4044,8 @@
         "name": "Edward Florentino",
         "pos": "CF",
         "mlbTeam": "PIT",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PIT"
       }
     ],
     "effective": "5/1/26"
@@ -3733,7 +4060,8 @@
         "name": "Edward Florentino",
         "pos": "CF",
         "mlbTeam": "PIT",
-        "action": "Added"
+        "action": "Added",
+        "team": "PIT"
       }
     ],
     "effective": "5/1/26"
@@ -3748,7 +4076,8 @@
         "name": "Tyler Kinley",
         "pos": "RP",
         "mlbTeam": "ATL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ATL"
       }
     ],
     "effective": "5/2/26"
@@ -3761,15 +4090,17 @@
     "players": [
       {
         "name": "Jacob Latz",
-        "pos": "SP,RP",
-        "mlbTeam": "TEX",
-        "action": "Activated"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Activated",
+        "team": ""
       },
       {
         "name": "Hunter Gaddis",
         "pos": "RP",
         "mlbTeam": "CLE",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CLE"
       }
     ],
     "effective": "5/2/26"
@@ -3784,7 +4115,8 @@
         "name": "Walbert Urena",
         "pos": "SP",
         "mlbTeam": "LAA",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "LAA"
       }
     ],
     "effective": "5/2/26"
@@ -3797,15 +4129,17 @@
     "players": [
       {
         "name": "Spencer Steer",
-        "pos": "1B,LF,RF",
-        "mlbTeam": "CIN",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Nathan Church",
-        "pos": "LF,CF",
-        "mlbTeam": "STL",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/2/26"
@@ -3818,9 +4152,10 @@
     "players": [
       {
         "name": "Nick Martinez",
-        "pos": "SP,RP",
-        "mlbTeam": "TB",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       }
     ],
     "effective": "5/2/26"
@@ -3833,39 +4168,45 @@
     "players": [
       {
         "name": "Nasim Nunez",
-        "pos": "2B,SS",
-        "mlbTeam": "WAS",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Miguel Vargas",
-        "pos": "1B,3B",
-        "mlbTeam": "CHW",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       },
       {
         "name": "Jack Leiter",
         "pos": "SP",
         "mlbTeam": "TEX",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "TEX"
       },
       {
         "name": "Slade Cecconi",
         "pos": "SP",
         "mlbTeam": "CLE",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CLE"
       },
       {
         "name": "Jack Perkins",
         "pos": "SP",
         "mlbTeam": "PHI",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "PHI"
       },
       {
         "name": "Keaton Winn",
         "pos": "RP",
         "mlbTeam": "SF",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SF"
       }
     ],
     "effective": "5/3/26"
@@ -3880,7 +4221,8 @@
         "name": "Walbert Urena",
         "pos": "SP",
         "mlbTeam": "LAA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "LAA"
       }
     ],
     "effective": "5/3/26"
@@ -3895,37 +4237,43 @@
         "name": "Logan Henderson",
         "pos": "SP",
         "mlbTeam": "MIL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "MIL"
       },
       {
         "name": "Jeremiah Jackson",
-        "pos": "2B,RF",
-        "mlbTeam": "BAL",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       },
       {
         "name": "Braden Montgomery",
         "pos": "CF",
         "mlbTeam": "CHW",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CHW"
       },
       {
         "name": "Jung Hoo Lee",
-        "pos": "CF,RF",
-        "mlbTeam": "SF",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       },
       {
         "name": "Cooper Ingle",
         "pos": "C",
         "mlbTeam": "CLE",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CLE"
       },
       {
         "name": "Randy Vasquez",
         "pos": "SP",
         "mlbTeam": "SD",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SD"
       }
     ],
     "effective": "5/4/26"
@@ -3940,31 +4288,36 @@
         "name": "Gabe Speier",
         "pos": "RP",
         "mlbTeam": "SEA",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "SEA"
       },
       {
         "name": "Jared Koenig",
         "pos": "RP",
         "mlbTeam": "MIL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIL"
       },
       {
         "name": "Kody Funderburk",
         "pos": "RP",
         "mlbTeam": "MIN",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "MIN"
       },
       {
         "name": "Cole Sands",
         "pos": "RP",
         "mlbTeam": "MIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIN"
       },
       {
         "name": "Jordan Westburg",
         "pos": "3B",
         "mlbTeam": "BAL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "BAL"
       }
     ],
     "effective": "5/4/26"
@@ -3977,15 +4330,17 @@
     "players": [
       {
         "name": "Ian Seymour",
-        "pos": "SP,RP",
-        "mlbTeam": "TB",
-        "action": "Activated"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Activated",
+        "team": ""
       },
       {
         "name": "Antonio Senzatela",
-        "pos": "SP,RP",
-        "mlbTeam": "COL",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/4/26"
@@ -4000,7 +4355,8 @@
         "name": "Kyle Isbel",
         "pos": "CF",
         "mlbTeam": "KC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "KC"
       }
     ],
     "effective": "5/4/26"
@@ -4015,7 +4371,8 @@
         "name": "Quinn Priester",
         "pos": "SP",
         "mlbTeam": "MIL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIL"
       }
     ],
     "effective": "5/5/26"
@@ -4030,25 +4387,29 @@
         "name": "Max Meyer",
         "pos": "SP",
         "mlbTeam": "MIA",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "MIA"
       },
       {
         "name": "Jack Perkins",
         "pos": "SP",
         "mlbTeam": "PHI",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "PHI"
       },
       {
         "name": "Connor Prielipp",
         "pos": "SP",
         "mlbTeam": "MIN",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "MIN"
       },
       {
         "name": "Alejandro Kirk",
         "pos": "C",
         "mlbTeam": "TOR",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TOR"
       }
     ],
     "effective": "5/5/26"
@@ -4061,15 +4422,17 @@
     "players": [
       {
         "name": "Kai-Wei Teng",
-        "pos": "SP,RP",
-        "mlbTeam": "HOU",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Braden Montgomery",
         "pos": "CF",
         "mlbTeam": "CHW",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHW"
       }
     ],
     "effective": "5/5/26"
@@ -4084,13 +4447,15 @@
         "name": "Bailey Ober",
         "pos": "SP",
         "mlbTeam": "MIN",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "MIN"
       },
       {
         "name": "Erick Fedde",
         "pos": "SP",
         "mlbTeam": "CHW",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHW"
       }
     ],
     "effective": "5/5/26"
@@ -4105,13 +4470,15 @@
         "name": "Carson Kelly",
         "pos": "C",
         "mlbTeam": "CHC",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "CHC"
       },
       {
         "name": "Francisco Alvarez",
         "pos": "C",
         "mlbTeam": "NYM",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYM"
       }
     ],
     "effective": "5/5/26"
@@ -4126,13 +4493,15 @@
         "name": "Daniel Lynch",
         "pos": "RP",
         "mlbTeam": "KC",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "KC"
       },
       {
         "name": "Taylor Rogers",
         "pos": "RP",
         "mlbTeam": "MIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIN"
       }
     ],
     "effective": "5/5/26"
@@ -4147,7 +4516,8 @@
         "name": "Drew Anderson",
         "pos": "RP",
         "mlbTeam": "DET",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "DET"
       }
     ],
     "effective": "5/5/26"
@@ -4162,13 +4532,15 @@
         "name": "Pedro Ramirez",
         "pos": "3B",
         "mlbTeam": "CHC",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CHC"
       },
       {
         "name": "Cooper Ingle",
         "pos": "C",
         "mlbTeam": "CLE",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CLE"
       }
     ],
     "effective": "5/6/26"
@@ -4181,9 +4553,10 @@
     "players": [
       {
         "name": "Peter Lambert",
-        "pos": "SP,RP",
-        "mlbTeam": "HOU",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       }
     ],
     "effective": "5/6/26"
@@ -4198,7 +4571,8 @@
         "name": "Tyler Kinley",
         "pos": "RP",
         "mlbTeam": "ATL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ATL"
       }
     ],
     "effective": "5/6/26"
@@ -4213,7 +4587,8 @@
         "name": "Elmer Rodriguez",
         "pos": "SP",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "5/6/26"
@@ -4226,9 +4601,10 @@
     "players": [
       {
         "name": "Kai-Wei Teng",
-        "pos": "SP,RP",
-        "mlbTeam": "HOU",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/6/26"
@@ -4243,7 +4619,8 @@
         "name": "Ryan Pepiot",
         "pos": "SP",
         "mlbTeam": "TB",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TB"
       }
     ],
     "effective": "5/6/26"
@@ -4256,27 +4633,31 @@
     "players": [
       {
         "name": "Antonio Senzatela",
-        "pos": "SP,RP",
-        "mlbTeam": "COL",
-        "action": "Activated"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Activated",
+        "team": ""
       },
       {
         "name": "Ryan Walker",
         "pos": "RP",
         "mlbTeam": "SF",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SF"
       },
       {
         "name": "Miguel Vargas",
-        "pos": "1B,3B",
-        "mlbTeam": "CHW",
-        "action": "Activated"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Activated",
+        "team": ""
       },
       {
         "name": "Carlos Correa",
-        "pos": "3B,SS",
-        "mlbTeam": "HOU",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/7/26"
@@ -4291,19 +4672,22 @@
         "name": "Anthony Eyanson",
         "pos": "SP",
         "mlbTeam": "BOS",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "BOS"
       },
       {
         "name": "Lazaro Montes",
         "pos": "RF",
         "mlbTeam": "SEA",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "SEA"
       },
       {
         "name": "Lawrence Butler",
-        "pos": "CF,RF",
-        "mlbTeam": "ATH",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/7/26"
@@ -4318,13 +4702,15 @@
         "name": "Jack Perkins",
         "pos": "RP",
         "mlbTeam": "ATH",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "ATH"
       },
       {
         "name": "Emilio Pagan",
         "pos": "RP",
         "mlbTeam": "CIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CIN"
       }
     ],
     "effective": "5/7/26"
@@ -4339,13 +4725,15 @@
         "name": "Sean Burke",
         "pos": "SP",
         "mlbTeam": "CHW",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CHW"
       },
       {
         "name": "Noah Cameron",
         "pos": "SP",
         "mlbTeam": "KC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "KC"
       }
     ],
     "effective": "5/7/26"
@@ -4360,7 +4748,8 @@
         "name": "Anthony Eyanson",
         "pos": "SP",
         "mlbTeam": "BOS",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "BOS"
       }
     ],
     "effective": "5/8/26"
@@ -4375,13 +4764,15 @@
         "name": "Nate Lowe",
         "pos": "1B",
         "mlbTeam": "CIN",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CIN"
       },
       {
         "name": "Matthew Boyd",
         "pos": "SP",
         "mlbTeam": "CHC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHC"
       }
     ],
     "effective": "5/8/26"
@@ -4394,9 +4785,10 @@
     "players": [
       {
         "name": "Andres Gimenez",
-        "pos": "2B,SS",
-        "mlbTeam": "TOR",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/8/26"
@@ -4411,7 +4803,8 @@
         "name": "Pedro Ramirez",
         "pos": "3B",
         "mlbTeam": "CHC",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CHC"
       }
     ],
     "effective": "5/8/26"
@@ -4426,13 +4819,15 @@
         "name": "Marcus Semien",
         "pos": "2B",
         "mlbTeam": "NYM",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "NYM"
       },
       {
         "name": "Jack Dreyer",
-        "pos": "SP,RP",
-        "mlbTeam": "LAD",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       }
     ],
     "effective": "5/9/26"
@@ -4447,7 +4842,8 @@
         "name": "Brent Headrick",
         "pos": "RP",
         "mlbTeam": "NYY",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "NYY"
       }
     ],
     "effective": "5/9/26"
@@ -4462,7 +4858,8 @@
         "name": "Braden Montgomery",
         "pos": "CF",
         "mlbTeam": "CHW",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "CHW"
       }
     ],
     "effective": "5/9/26"
@@ -4477,7 +4874,8 @@
         "name": "Reynaldo Lopez",
         "pos": "SP",
         "mlbTeam": "ATL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ATL"
       }
     ],
     "effective": "5/9/26"
@@ -4492,7 +4890,8 @@
         "name": "Rhett Lowder",
         "pos": "SP",
         "mlbTeam": "CIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CIN"
       }
     ],
     "effective": "5/9/26"
@@ -4505,15 +4904,17 @@
     "players": [
       {
         "name": "Brooks Lee",
-        "pos": "2B,3B,SS",
-        "mlbTeam": "MIN",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Lazaro Montes",
         "pos": "RF",
         "mlbTeam": "SEA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SEA"
       }
     ],
     "effective": "5/10/26"
@@ -4528,13 +4929,15 @@
         "name": "Kevin Kelly",
         "pos": "RP",
         "mlbTeam": "TB",
-        "action": "Activated"
+        "action": "Activated",
+        "team": "TB"
       },
       {
         "name": "Bennett Sousa",
         "pos": "RP",
         "mlbTeam": "HOU",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "HOU"
       }
     ],
     "effective": "5/10/26"
@@ -4549,13 +4952,15 @@
         "name": "Michael McGreevy",
         "pos": "SP",
         "mlbTeam": "STL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "STL"
       },
       {
         "name": "Ramon Laureano",
-        "pos": "LF,RF",
-        "mlbTeam": "SD",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/10/26"
@@ -4570,13 +4975,15 @@
         "name": "Anthony Eyanson",
         "pos": "SP",
         "mlbTeam": "BOS",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "BOS"
       },
       {
         "name": "Brody Hopkins",
         "pos": "SP",
         "mlbTeam": "TB",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TB"
       }
     ],
     "effective": "5/10/26"
@@ -4589,15 +4996,17 @@
     "players": [
       {
         "name": "Addison Barger",
-        "pos": "3B,RF",
-        "mlbTeam": "TOR",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Matt Chapman",
         "pos": "3B",
         "mlbTeam": "SF",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "SF"
       }
     ],
     "effective": "5/10/26"
@@ -4612,7 +5021,8 @@
         "name": "Carlos Cortes",
         "pos": "RF",
         "mlbTeam": "ATH",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "ATH"
       }
     ],
     "effective": "5/10/26"
@@ -4627,7 +5037,8 @@
         "name": "Spencer Jones",
         "pos": "CF",
         "mlbTeam": "NYY",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYY"
       }
     ],
     "effective": "5/11/26"
@@ -4642,13 +5053,15 @@
         "name": "Henry Bolte",
         "pos": "RF",
         "mlbTeam": "ATH",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ATH"
       },
       {
         "name": "Dalton Rushing",
         "pos": "C",
         "mlbTeam": "LAD",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "LAD"
       }
     ],
     "effective": "5/11/26"
@@ -4663,7 +5076,8 @@
         "name": "Pete Fairbanks",
         "pos": "RP",
         "mlbTeam": "MIA",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "MIA"
       }
     ],
     "effective": "5/11/26"
@@ -4678,7 +5092,8 @@
         "name": "Sal Frelick",
         "pos": "RF",
         "mlbTeam": "MIL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIL"
       }
     ],
     "effective": "5/12/26"
@@ -4691,9 +5106,10 @@
     "players": [
       {
         "name": "Austin Martin",
-        "pos": "LF,RF",
-        "mlbTeam": "MIN",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       }
     ],
     "effective": "5/12/26"
@@ -4708,7 +5124,8 @@
         "name": "Nate Lowe",
         "pos": "1B",
         "mlbTeam": "CIN",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "CIN"
       }
     ],
     "effective": "5/12/26"
@@ -4723,7 +5140,8 @@
         "name": "Tatsuya Imai",
         "pos": "SP",
         "mlbTeam": "HOU",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "HOU"
       }
     ],
     "effective": "5/13/26"
@@ -4738,25 +5156,29 @@
         "name": "Ha-seong Kim",
         "pos": "SS",
         "mlbTeam": "ATL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ATL"
       },
       {
         "name": "Jeff Hoffman",
         "pos": "RP",
         "mlbTeam": "TOR",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TOR"
       },
       {
         "name": "Carlos Cortes",
         "pos": "RF",
         "mlbTeam": "ATH",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "ATH"
       },
       {
         "name": "Addison Barger",
-        "pos": "3B,RF",
-        "mlbTeam": "TOR",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/13/26"
@@ -4771,13 +5193,15 @@
         "name": "Willy Adames",
         "pos": "SS",
         "mlbTeam": "SF",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "SF"
       },
       {
         "name": "Marcus Semien",
         "pos": "2B",
         "mlbTeam": "NYM",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "NYM"
       }
     ],
     "effective": "5/13/26"
@@ -4790,9 +5214,10 @@
     "players": [
       {
         "name": "Jarren Duran",
-        "pos": "LF,CF",
-        "mlbTeam": "BOS",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/13/26"
@@ -4807,7 +5232,8 @@
         "name": "Isaac Paredes",
         "pos": "3B",
         "mlbTeam": "HOU",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "HOU"
       }
     ],
     "effective": "5/13/26"
@@ -4820,9 +5246,10 @@
     "players": [
       {
         "name": "Spencer Steer",
-        "pos": "1B,LF,RF",
-        "mlbTeam": "CIN",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/14/26"
@@ -4837,7 +5264,8 @@
         "name": "Kaelen Culpepper",
         "pos": "SS",
         "mlbTeam": "MIN",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "MIN"
       }
     ],
     "effective": "5/14/26"
@@ -4852,13 +5280,15 @@
         "name": "Dalton Rushing",
         "pos": "C",
         "mlbTeam": "LAD",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "LAD"
       },
       {
         "name": "Agustin Ramirez",
         "pos": "C",
         "mlbTeam": "MIA",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "MIA"
       }
     ],
     "effective": "5/14/26"
@@ -4871,15 +5301,17 @@
     "players": [
       {
         "name": "J.J. Bleday",
-        "pos": "LF,CF,RF",
-        "mlbTeam": "CIN",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Colt Keith",
-        "pos": "2B,3B",
-        "mlbTeam": "DET",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/15/26"
@@ -4894,13 +5326,15 @@
         "name": "Cole Carrigg",
         "pos": "CF",
         "mlbTeam": "COL",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "COL"
       },
       {
         "name": "Brooks Lee",
-        "pos": "2B,3B,SS",
-        "mlbTeam": "MIN",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/15/26"
@@ -4915,13 +5349,15 @@
         "name": "Mike Sirota",
         "pos": "CF",
         "mlbTeam": "LAD",
-        "action": "Added off Waivers"
+        "action": "Added off Waivers",
+        "team": "LAD"
       },
       {
         "name": "Brandon Nimmo",
-        "pos": "LF,RF",
-        "mlbTeam": "TEX",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/15/26"
@@ -4934,15 +5370,17 @@
     "players": [
       {
         "name": "Ryne Nelson",
-        "pos": "SP,RP",
-        "mlbTeam": "ARI",
-        "action": "Activated"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Activated",
+        "team": ""
       },
       {
         "name": "Jake Junis",
         "pos": "RP",
         "mlbTeam": "TEX",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "TEX"
       }
     ],
     "effective": "5/16/26"
@@ -4955,15 +5393,17 @@
     "players": [
       {
         "name": "Addison Barger",
-        "pos": "3B,RF",
-        "mlbTeam": "TOR",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       },
       {
         "name": "Ian Seymour",
-        "pos": "SP,RP",
-        "mlbTeam": "TB",
-        "action": "Dropped"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Dropped",
+        "team": ""
       }
     ],
     "effective": "5/16/26"
@@ -4976,9 +5416,10 @@
     "players": [
       {
         "name": "Luis Garcia",
-        "pos": "1B,2B",
-        "mlbTeam": "WAS",
-        "action": "Added off Waivers"
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
       }
     ],
     "effective": "5/16/26"
@@ -4993,7 +5434,8 @@
         "name": "Jordan Westburg",
         "pos": "3B",
         "mlbTeam": "BAL",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "BAL"
       }
     ],
     "effective": "5/16/26"
@@ -5008,9 +5450,125 @@
         "name": "Blake Snell",
         "pos": "SP",
         "mlbTeam": "LAD",
-        "action": "Dropped"
+        "action": "Dropped",
+        "team": "LAD"
       }
     ],
     "effective": "5/16/26"
+  },
+  {
+    "date": "5/17/26 2:36 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Mark Vientos",
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
+      },
+      {
+        "name": "Ha-seong Kim",
+        "pos": "SS",
+        "mlbTeam": "ATL",
+        "action": "Dropped",
+        "team": "ATL"
+      },
+      {
+        "name": "Zack Gelof",
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
+      },
+      {
+        "name": "Carlos Cortes",
+        "pos": "RF",
+        "mlbTeam": "ATH",
+        "action": "Dropped",
+        "team": "ATH"
+      }
+    ],
+    "effective": "5/17/26"
+  },
+  {
+    "date": "5/17/26 2:36 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Tyler Wells",
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
+      },
+      {
+        "name": "Cole Carrigg",
+        "pos": "CF",
+        "mlbTeam": "COL",
+        "action": "Dropped",
+        "team": "COL"
+      }
+    ],
+    "effective": "5/17/26"
+  },
+  {
+    "date": "5/17/26 2:36 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Corbin Burnes",
+        "pos": "SP",
+        "mlbTeam": "ARI",
+        "action": "Added off Waivers",
+        "team": "ARI"
+      }
+    ],
+    "effective": "5/17/26"
+  },
+  {
+    "date": "5/17/26 2:36 AM ET",
+    "teamId": "8",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "players": [
+      {
+        "name": "Jake Bauers",
+        "pos": "",
+        "mlbTeam": "",
+        "action": "Added off Waivers",
+        "team": ""
+      }
+    ],
+    "effective": "5/17/26"
+  },
+  {
+    "date": "5/17/26 2:36 AM ET",
+    "teamId": "5",
+    "teamName": "Buddy Buddy Buddy All On Base",
+    "team": "Buddy Buddy Buddy All On Base",
+    "players": [
+      {
+        "name": "Miguel Amaya",
+        "pos": "C",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers",
+        "team": "CHC"
+      },
+      {
+        "name": "Royce Lewis",
+        "pos": "3B",
+        "mlbTeam": "MIN",
+        "action": "Dropped",
+        "team": "MIN"
+      }
+    ],
+    "effective": "5/17/26"
   }
 ]

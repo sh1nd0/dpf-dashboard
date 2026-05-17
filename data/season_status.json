@@ -5,74 +5,74 @@
   "opponent": "Popped A Mahle I'm Sweating",
   "opponentTeam": "Popped A Mahle I'm Sweating",
   "currentScore": {
-    "me": 4.5,
-    "opp": 11.5,
+    "me": 4.0,
+    "opp": 12.0,
     "tied": 0
   },
   "categoryBreakdown": {
     "BA": {
-      "me": "0.165",
-      "opp": "0.331",
+      "me": "0.170",
+      "opp": "0.321",
       "won": false
     },
     "HR": {
-      "me": "5",
+      "me": "6",
       "opp": "7",
       "won": false
     },
     "RBI": {
-      "me": "7",
-      "opp": "22",
+      "me": "11",
+      "opp": "25",
       "won": false
     },
     "R": {
-      "me": "15",
-      "opp": "24",
+      "me": "20",
+      "opp": "26",
       "won": false
     },
     "SB": {
       "me": "0",
-      "opp": "8",
+      "opp": "11",
       "won": false
     },
     "KO": {
-      "me": "40",
-      "opp": "26",
+      "me": "46",
+      "opp": "37",
       "won": false
     },
     "OBP": {
-      "me": "0.263",
-      "opp": "0.407",
+      "me": "0.270",
+      "opp": "0.392",
       "won": false
     },
     "SLG": {
-      "me": "0.293",
-      "opp": "0.548",
+      "me": "0.303",
+      "opp": "0.513",
       "won": false
     },
     "K": {
-      "me": "36",
-      "opp": "24",
+      "me": "43",
+      "opp": "35",
       "won": true
     },
     "ERA": {
-      "me": "3.8152",
-      "opp": "5.0233",
-      "won": true
+      "me": "4.6216",
+      "opp": "4.1221",
+      "won": false
     },
     "WHIP": {
-      "me": "1.3043",
-      "opp": "1.2209",
+      "me": "1.2973",
+      "opp": "1.0763",
       "won": false
     },
     "W": {
       "me": "0",
-      "opp": "1",
+      "opp": "2",
       "won": false
     },
     "S": {
       "me": "4",
-      "opp": "1",
+      "opp": "2",
       "won": true
     },
     "HD": {
@@ -82,51 +82,57 @@
     },
     "HRA": {
       "me": "5",
-      "opp": "5",
-      "won": "0.5"
+      "opp": "7",
+      "won": true
     },
     "QS": {
       "me": "1",
-      "opp": "3",
+      "opp": "5",
       "won": false
     }
   },
   "allMatchups": [
     {
-      "away": "ROTH",
-      "home": "OMM",
-      "awayScore": 11.5,
-      "homeScore": 4.5
+      "mid": 1,
+      "away": "Ballesteros, Let the Rhythm Take You Over",
+      "home": "Buddy Buddy Buddy All On Base",
+      "awayScore": 7.0,
+      "homeScore": 9.0
     },
     {
-      "away": "woba",
-      "home": "BBBaoB",
-      "awayScore": 9.5,
-      "homeScore": 6.5
+      "mid": 2,
+      "away": "Everythings McGonigle Green",
+      "home": "Blame it on the Rainiel",
+      "awayScore": 4.5,
+      "homeScore": 11.5
     },
     {
-      "away": "Drew",
-      "home": "Milli",
-      "awayScore": 5.0,
-      "homeScore": 11.0
+      "mid": 3,
+      "away": "Before and After Shohei",
+      "home": "A Pete Crow-Armstrong Looked at Me",
+      "awayScore": 4.0,
+      "homeScore": 12.0
     },
     {
-      "away": "SHOH",
-      "home": "PCA",
-      "awayScore": 3.5,
-      "homeScore": 12.5
-    },
-    {
-      "away": "YSVG",
-      "home": "RESCAN",
+      "mid": 4,
+      "away": "Yesavage Garden",
+      "home": "Dinosaur Jr Caminero",
       "awayScore": 10.5,
       "homeScore": 5.5
     },
     {
-      "away": "Fran",
-      "home": "Icculus",
-      "awayScore": 10.0,
-      "homeScore": 6.0
+      "mid": 5,
+      "away": "Popped A Mahle I'm Sweating",
+      "home": "Okamotomami",
+      "awayScore": 12.0,
+      "homeScore": 4.0
+    },
+    {
+      "mid": 6,
+      "away": "Weird Fishes / Arrighetti",
+      "home": "Colonel Corbin's Ascent",
+      "awayScore": 9.0,
+      "homeScore": 7.0
     }
   ],
   "myRecord": "3-0-0",
@@ -137,6 +143,9 @@
       "w": 3,
       "l": 0,
       "t": 0,
+      "pct": "1.000",
+      "gb": "0",
+      "streak": "W3",
       "pts": 0
     },
     {
@@ -145,6 +154,9 @@
       "w": 3,
       "l": 0,
       "t": 0,
+      "pct": "1.000",
+      "gb": "0",
+      "streak": "W3",
       "pts": 0
     },
     {
@@ -153,6 +165,9 @@
       "w": 3,
       "l": 0,
       "t": 0,
+      "pct": "1.000",
+      "gb": "0",
+      "streak": "W3",
       "pts": 0
     },
     {
@@ -161,6 +176,9 @@
       "w": 2,
       "l": 1,
       "t": 0,
+      "pct": "0.667",
+      "gb": "1",
+      "streak": "L1",
       "pts": 0
     },
     {
@@ -169,6 +187,9 @@
       "w": 1,
       "l": 1,
       "t": 1,
+      "pct": "0.500",
+      "gb": "1.5",
+      "streak": "T1",
       "pts": 0
     },
     {
@@ -177,6 +198,9 @@
       "w": 1,
       "l": 2,
       "t": 0,
+      "pct": "0.333",
+      "gb": "2",
+      "streak": "W1",
       "pts": 0
     },
     {
@@ -185,6 +209,9 @@
       "w": 1,
       "l": 2,
       "t": 0,
+      "pct": "0.333",
+      "gb": "2",
+      "streak": "L1",
       "pts": 0
     },
     {
@@ -193,6 +220,9 @@
       "w": 1,
       "l": 2,
       "t": 0,
+      "pct": "0.333",
+      "gb": "2",
+      "streak": "L1",
       "pts": 0
     },
     {
@@ -201,6 +231,9 @@
       "w": 1,
       "l": 2,
       "t": 0,
+      "pct": "0.333",
+      "gb": "2",
+      "streak": "L2",
       "pts": 0
     },
     {
@@ -209,6 +242,9 @@
       "w": 1,
       "l": 2,
       "t": 0,
+      "pct": "0.333",
+      "gb": "2",
+      "streak": "W1",
       "pts": 0
     },
     {
@@ -217,6 +253,9 @@
       "w": 0,
       "l": 2,
       "t": 1,
+      "pct": "0.167",
+      "gb": "2.5",
+      "streak": "T1",
       "pts": 0
     },
     {
@@ -225,9 +264,12 @@
       "w": 0,
       "l": 3,
       "t": 0,
+      "pct": "0.000",
+      "gb": "3",
+      "streak": "L3",
       "pts": 0
     }
   ],
-  "updated": "2026-05-16T16:09:12.115043Z",
-  "lastUpdated": "2026-05-16 (period 4 in progress)"
+  "updated": "2026-05-17T16:26:38.482553Z",
+  "lastUpdated": "2026-05-17 (period 4 in progress)"
 }
