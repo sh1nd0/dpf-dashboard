@@ -1,54 +1,54 @@
 [
   {
-    "name": "Brooks Kriske",
-    "team": "ATH",
+    "name": "G. HoglundGunnar Hoglund",
+    "team": "OAK",
+    "pos": "P",
+    "status": "IL",
+    "injury": "Hip",
+    "returnDate": "Expected to be out until at least Feb 1"
+  },
+  {
+    "name": "B. KriskeBrooks Kriske",
+    "team": "OAK",
     "pos": "RP",
     "status": "IL",
     "injury": "Shoulder",
     "returnDate": "Expected to be out until at least Jul 1"
   },
   {
-    "name": "Denzel Clarke",
-    "team": "ATH",
+    "name": "D. ClarkeDenzel Clarke",
+    "team": "OAK",
     "pos": "OF",
     "status": "IL",
     "injury": "Foot",
     "returnDate": "Expected to be out until at least May 21"
   },
   {
-    "name": "Max Muncy",
-    "team": "ATH",
+    "name": "M. MuncyMax Muncy",
+    "team": "OAK",
     "pos": "SS",
     "status": "IL",
     "injury": "Hand",
     "returnDate": "Expected to be out until at least Jun 12"
   },
   {
-    "name": "Jacob Wilson",
-    "team": "ATH",
+    "name": "J. WilsonJacob Wilson",
+    "team": "OAK",
     "pos": "SS",
     "status": "IL",
     "injury": "Shoulder",
     "returnDate": "Expected to be out until at least Jun 15"
   },
   {
-    "name": "Gunnar Hoglund",
-    "team": "ATH",
-    "pos": "P",
-    "status": "IL",
-    "injury": "Knee",
-    "returnDate": "Expected to be out until at least Jun 2"
-  },
-  {
-    "name": "Carlos Santana",
+    "name": "C. SantanaCarlos Santana",
     "team": "ARI",
     "pos": "1B",
     "status": "IL",
     "injury": "Thigh",
-    "returnDate": "Expected to be out until at least May 20"
+    "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "James McCann",
+    "name": "J. McCannJames McCann",
     "team": "ARI",
     "pos": "C",
     "status": "IL",
@@ -56,7 +56,7 @@
     "returnDate": "Expected to be out until at least Jun 26"
   },
   {
-    "name": "Jordan Lawlar",
+    "name": "J. LawlarJordan Lawlar",
     "team": "ARI",
     "pos": "SS",
     "status": "IL",
@@ -64,7 +64,7 @@
     "returnDate": "Expected to be out until at least Jun 15"
   },
   {
-    "name": "Pavin Smith",
+    "name": "P. SmithPavin Smith",
     "team": "ARI",
     "pos": "RF",
     "status": "IL",
@@ -72,7 +72,7 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "A.J. Puk",
+    "name": "A. PukA.J. Puk",
     "team": "ARI",
     "pos": "RP",
     "status": "IL",
@@ -80,7 +80,7 @@
     "returnDate": "Expected to be out until at least Jun 15"
   },
   {
-    "name": "Blake Walston",
+    "name": "B. WalstonBlake Walston",
     "team": "ARI",
     "pos": "SP",
     "status": "IL",
@@ -88,7 +88,7 @@
     "returnDate": "Expected to be out until at least Jul 1"
   },
   {
-    "name": "Cristian Mena",
+    "name": "C. MenaCristian Mena",
     "team": "ARI",
     "pos": "SP",
     "status": "IL",
@@ -96,23 +96,7 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Corbin Burnes",
-    "team": "ARI",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to be out until at least Jul 17"
-  },
-  {
-    "name": "Andrew Saalfrank",
-    "team": "ARI",
-    "pos": "RP",
-    "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Expected to be out until at least Feb 1"
-  },
-  {
-    "name": "Justin Martinez",
+    "name": "J. MartinezJustin Martinez",
     "team": "ARI",
     "pos": "RP",
     "status": "IL",
@@ -120,7 +104,23 @@
     "returnDate": "Expected to be out until at least Aug 21"
   },
   {
-    "name": "Hurston Waldrep",
+    "name": "C. BurnesCorbin Burnes",
+    "team": "ARI",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to be out until at least Jul 17"
+  },
+  {
+    "name": "A. SaalfrankAndrew Saalfrank",
+    "team": "ARI",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Shoulder",
+    "returnDate": "Expected to be out until at least Feb 1"
+  },
+  {
+    "name": "H. WaldrepHurston Waldrep",
     "team": "ATL",
     "pos": "SP",
     "status": "IL",
@@ -128,7 +128,7 @@
     "returnDate": "Expected to be out until at least Jun 30"
   },
   {
-    "name": "Drake Baldwin",
+    "name": "D. BaldwinDrake Baldwin",
     "team": "ATL",
     "pos": "C",
     "status": "IL",
@@ -136,7 +136,7 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Joe Jimenez",
+    "name": "J. JimenezJoe Jimenez",
     "team": "ATL",
     "pos": "RP",
     "status": "IL",
@@ -144,7 +144,7 @@
     "returnDate": "Expected to be out until at least Aug 1"
   },
   {
-    "name": "Sean Murphy",
+    "name": "S. MurphySean Murphy",
     "team": "ATL",
     "pos": "C",
     "status": "IL",
@@ -152,7 +152,7 @@
     "returnDate": "Expected to be out until at least Jul 10"
   },
   {
-    "name": "Spencer Schwellenbach",
+    "name": "S. SchwellenbachSpencer Schwellenbach",
     "team": "ATL",
     "pos": "P",
     "status": "IL",
@@ -160,7 +160,7 @@
     "returnDate": "Expected to be out until at least Aug 1"
   },
   {
-    "name": "Danny Young",
+    "name": "D. YoungDanny Young",
     "team": "ATL",
     "pos": "RP",
     "status": "IL",
@@ -168,7 +168,7 @@
     "returnDate": "Expected to be out until at least Jul 1"
   },
   {
-    "name": "A.J. Smith-Shawver",
+    "name": "A. Smith-ShawverA.J. Smith-Shawver",
     "team": "ATL",
     "pos": "SP",
     "status": "IL",
@@ -176,7 +176,7 @@
     "returnDate": "Expected to be out until at least Aug 1"
   },
   {
-    "name": "Joey Wentz",
+    "name": "J. WentzJoey Wentz",
     "team": "ATL",
     "pos": "SP",
     "status": "IL",
@@ -184,7 +184,15 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Cade Povich",
+    "name": "D. KremerDean Kremer",
+    "team": "BAL",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Quadriceps",
+    "returnDate": "Expected to be out until at least Jun 3"
+  },
+  {
+    "name": "C. PovichCade Povich",
     "team": "BAL",
     "pos": "SP",
     "status": "IL",
@@ -192,7 +200,7 @@
     "returnDate": "Expected to be out until at least Jun 5"
   },
   {
-    "name": "Colin Selby",
+    "name": "C. SelbyColin Selby",
     "team": "BAL",
     "pos": "RP",
     "status": "IL",
@@ -200,7 +208,7 @@
     "returnDate": "Expected to be out until at least Jul 17"
   },
   {
-    "name": "Ryan Helsley",
+    "name": "R. HelsleyRyan Helsley",
     "team": "BAL",
     "pos": "RP",
     "status": "IL",
@@ -208,7 +216,7 @@
     "returnDate": "Expected to be out until at least Jun 12"
   },
   {
-    "name": "Ryan Mountcastle",
+    "name": "R. MountcastleRyan Mountcastle",
     "team": "BAL",
     "pos": "1B",
     "status": "IL",
@@ -216,7 +224,7 @@
     "returnDate": "Expected to be out until at least Jun 26"
   },
   {
-    "name": "Jordan Westburg",
+    "name": "J. WestburgJordan Westburg",
     "team": "BAL",
     "pos": "2B",
     "status": "IL",
@@ -224,7 +232,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Dylan Beavers",
+    "name": "D. BeaversDylan Beavers",
     "team": "BAL",
     "pos": "OF",
     "status": "IL",
@@ -232,7 +240,7 @@
     "returnDate": "Expected to be out until at least May 28"
   },
   {
-    "name": "Grant Wolfram",
+    "name": "G. WolframGrant Wolfram",
     "team": "BAL",
     "pos": "P",
     "status": "IL",
@@ -240,7 +248,7 @@
     "returnDate": "Expected to be out until at least May 24"
   },
   {
-    "name": "Heston Kjerstad",
+    "name": "H. KjerstadHeston Kjerstad",
     "team": "BAL",
     "pos": "DH",
     "status": "IL",
@@ -248,15 +256,7 @@
     "returnDate": "Expected to be out until at least May 24"
   },
   {
-    "name": "Dean Kremer",
-    "team": "BAL",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Quadriceps",
-    "returnDate": "Expected to be out until at least May 28"
-  },
-  {
-    "name": "Yaramil Hiraldo",
+    "name": "Y. HiraldoYaramil Hiraldo",
     "team": "BAL",
     "pos": "RP",
     "status": "IL",
@@ -264,7 +264,7 @@
     "returnDate": "Expected to be out until at least Jun 4"
   },
   {
-    "name": "Felix Bautista",
+    "name": "F. BautistaFelix Bautista",
     "team": "BAL",
     "pos": "RP",
     "status": "IL",
@@ -272,7 +272,7 @@
     "returnDate": "Expected to be out until at least Sep 7"
   },
   {
-    "name": "Zach Eflin",
+    "name": "Z. EflinZach Eflin",
     "team": "BAL",
     "pos": "SP",
     "status": "IL",
@@ -280,15 +280,15 @@
     "returnDate": "Expected to be out until at least Jul 1, 2027"
   },
   {
-    "name": "Danny Coulombe",
+    "name": "D. CoulombeDanny Coulombe",
     "team": "BOS",
     "pos": "RP",
     "status": "IL",
     "injury": "Neck",
-    "returnDate": "Expected to be out until at least May 20"
+    "returnDate": "Expected to be out until at least May 21"
   },
   {
-    "name": "Roman Anthony",
+    "name": "R. AnthonyRoman Anthony",
     "team": "BOS",
     "pos": "OF",
     "status": "IL",
@@ -296,7 +296,7 @@
     "returnDate": "Expected to be out until at least Jun 2"
   },
   {
-    "name": "Trevor Story",
+    "name": "T. StoryTrevor Story",
     "team": "BOS",
     "pos": "SS",
     "status": "IL",
@@ -304,7 +304,7 @@
     "returnDate": "Expected to be out until at least Jun 29"
   },
   {
-    "name": "Garrett Crochet",
+    "name": "G. CrochetGarrett Crochet",
     "team": "BOS",
     "pos": "RP",
     "status": "IL",
@@ -312,7 +312,7 @@
     "returnDate": "Expected to be out until at least May 28"
   },
   {
-    "name": "Tanner Houck",
+    "name": "T. HouckTanner Houck",
     "team": "BOS",
     "pos": "SP",
     "status": "IL",
@@ -320,7 +320,7 @@
     "returnDate": "Expected to be out until at least Sep 1"
   },
   {
-    "name": "Kutter Crawford",
+    "name": "K. CrawfordKutter Crawford",
     "team": "BOS",
     "pos": "SP",
     "status": "IL",
@@ -328,7 +328,7 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Patrick Sandoval",
+    "name": "P. SandovalPatrick Sandoval",
     "team": "BOS",
     "pos": "SP",
     "status": "IL",
@@ -336,7 +336,7 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Triston Casas",
+    "name": "T. CasasTriston Casas",
     "team": "BOS",
     "pos": "1B",
     "status": "IL",
@@ -344,7 +344,7 @@
     "returnDate": "Expected to be out until at least Jun 2"
   },
   {
-    "name": "Johan Oviedo",
+    "name": "J. OviedoJohan Oviedo",
     "team": "BOS",
     "pos": "SP",
     "status": "IL",
@@ -352,7 +352,7 @@
     "returnDate": "Expected to be out until at least Jun 17"
   },
   {
-    "name": "Romy Gonzalez",
+    "name": "R. GonzalezRomy Gonzalez",
     "team": "BOS",
     "pos": "2B",
     "status": "IL",
@@ -360,7 +360,15 @@
     "returnDate": "Expected to be out until at least May 26"
   },
   {
-    "name": "Hunter Harvey",
+    "name": "E. CabreraEdward Cabrera",
+    "team": "CHC",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Finger",
+    "returnDate": "Expected to be out until at least May 26"
+  },
+  {
+    "name": "H. HarveyHunter Harvey",
     "team": "CHC",
     "pos": "RP",
     "status": "IL",
@@ -368,7 +376,7 @@
     "returnDate": "Expected to be out until at least Jun 26"
   },
   {
-    "name": "Matthew Boyd",
+    "name": "M. BoydMatthew Boyd",
     "team": "CHC",
     "pos": "SP",
     "status": "IL",
@@ -376,7 +384,7 @@
     "returnDate": "Expected to be out until at least Jun 19"
   },
   {
-    "name": "Tyler Austin",
+    "name": "T. AustinTyler Austin",
     "team": "CHC",
     "pos": "RF",
     "status": "IL",
@@ -384,7 +392,7 @@
     "returnDate": "Expected to be out until at least Jul 1"
   },
   {
-    "name": "Justin Steele",
+    "name": "J. SteeleJustin Steele",
     "team": "CHC",
     "pos": "SP",
     "status": "IL",
@@ -392,7 +400,7 @@
     "returnDate": "Expected to be out until at least Aug 1"
   },
   {
-    "name": "Riley Martin",
+    "name": "R. MartinRiley Martin",
     "team": "CHC",
     "pos": "P",
     "status": "IL",
@@ -400,7 +408,7 @@
     "returnDate": "Expected to be out until at least Jun 22"
   },
   {
-    "name": "Porter Hodge",
+    "name": "P. HodgePorter Hodge",
     "team": "CHC",
     "pos": "SP",
     "status": "IL",
@@ -408,7 +416,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Cade Horton",
+    "name": "C. HortonCade Horton",
     "team": "CHC",
     "pos": "P",
     "status": "IL",
@@ -416,7 +424,7 @@
     "returnDate": "Expected to be out until at least Aug 1, 2027"
   },
   {
-    "name": "Shelby Miller",
+    "name": "S. MillerShelby Miller",
     "team": "CHC",
     "pos": "RP",
     "status": "IL",
@@ -424,87 +432,95 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Everson Pereira",
-    "team": "CHW",
+    "name": "E. PereiraEverson Pereira",
+    "team": "CWS",
     "pos": "LF",
     "status": "IL",
     "injury": "Pectoral",
-    "returnDate": "Expected to be out until at least May 20"
+    "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Kyle Teel",
-    "team": "CHW",
+    "name": "M. VargasMiguel Vargas",
+    "team": "CWS",
+    "pos": "3B",
+    "status": "IL",
+    "injury": "Hand",
+    "returnDate": "Expected to be out until at least May 22"
+  },
+  {
+    "name": "K. TeelKyle Teel",
+    "team": "CWS",
     "pos": "C",
     "status": "IL",
     "injury": "Hamstring",
     "returnDate": "Expected to be out until at least Jun 22"
   },
   {
-    "name": "Austin Hays",
-    "team": "CHW",
+    "name": "A. HaysAustin Hays",
+    "team": "CWS",
     "pos": "LF",
     "status": "IL",
     "injury": "Calf",
     "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Prelander Berroa",
-    "team": "CHW",
+    "name": "P. BerroaPrelander Berroa",
+    "team": "CWS",
     "pos": "RP",
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to be out until at least Jun 26"
   },
   {
-    "name": "Drew Thorpe",
-    "team": "CHW",
+    "name": "D. ThorpeDrew Thorpe",
+    "team": "CWS",
     "pos": "P",
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Tanner Murray",
-    "team": "CHW",
+    "name": "T. MurrayTanner Murray",
+    "team": "CWS",
     "pos": "3B",
     "status": "IL",
     "injury": "Shoulder",
     "returnDate": "Expected to be out until at least Aug 28"
   },
   {
-    "name": "Brooks Baldwin",
-    "team": "CHW",
+    "name": "B. BaldwinBrooks Baldwin",
+    "team": "CWS",
     "pos": "SS",
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Mike Vasil",
-    "team": "CHW",
+    "name": "M. VasilMike Vasil",
+    "team": "CWS",
     "pos": "P",
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to be out until at least Jul 1, 2027"
   },
   {
-    "name": "Ky Bush",
-    "team": "CHW",
+    "name": "K. BushKy Bush",
+    "team": "CWS",
     "pos": "P",
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Caleb Ferguson",
+    "name": "C. FergusonCaleb Ferguson",
     "team": "CIN",
     "pos": "RP",
     "status": "IL",
     "injury": "Oblique",
-    "returnDate": "Expected to be out until at least May 20"
+    "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Jose Trevino",
+    "name": "J. TrevinoJose Trevino",
     "team": "CIN",
     "pos": "C",
     "status": "IL",
@@ -512,7 +528,7 @@
     "returnDate": "Expected to be out until at least Jun 12"
   },
   {
-    "name": "Rhett Lowder",
+    "name": "R. LowderRhett Lowder",
     "team": "CIN",
     "pos": "SP",
     "status": "IL",
@@ -520,7 +536,7 @@
     "returnDate": "Expected to be out until at least May 26"
   },
   {
-    "name": "Eugenio Suarez",
+    "name": "E. SuarezEugenio Suarez",
     "team": "CIN",
     "pos": "3B",
     "status": "IL",
@@ -528,15 +544,7 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Emilio Pagan",
-    "team": "CIN",
-    "pos": "RP",
-    "status": "IL",
-    "injury": "Hamstring",
-    "returnDate": "Expected to be out until at least Jun 12"
-  },
-  {
-    "name": "Brandon Williamson",
+    "name": "B. WilliamsonBrandon Williamson",
     "team": "CIN",
     "pos": "SP",
     "status": "IL",
@@ -544,7 +552,15 @@
     "returnDate": "Expected to be out until at least Jun 29"
   },
   {
-    "name": "Hunter Greene",
+    "name": "E. PaganEmilio Pagan",
+    "team": "CIN",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Hamstring",
+    "returnDate": "Expected to be out until at least Jun 12"
+  },
+  {
+    "name": "H. GreeneHunter Greene",
     "team": "CIN",
     "pos": "SP",
     "status": "IL",
@@ -552,7 +568,7 @@
     "returnDate": "Expected to be out until at least Jul 1"
   },
   {
-    "name": "Gabriel Arias",
+    "name": "G. AriasGabriel Arias",
     "team": "CLE",
     "pos": "SS",
     "status": "IL",
@@ -560,15 +576,31 @@
     "returnDate": "Expected to be out until at least Jun 16"
   },
   {
-    "name": "Brenton Doyle",
+    "name": "B. DoyleBrenton Doyle",
     "team": "COL",
     "pos": "CF",
     "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Probable for May 20"
+    "injury": "Oblique",
+    "returnDate": "Probable for May 21"
   },
   {
-    "name": "Jordan Beck",
+    "name": "V. VodnikVictor Vodnik",
+    "team": "COL",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to be out until at least Jun 5"
+  },
+  {
+    "name": "C. DollanderChase Dollander",
+    "team": "COL",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to be out until at least Jul 1"
+  },
+  {
+    "name": "J. BeckJordan Beck",
     "team": "COL",
     "pos": "LF",
     "status": "IL",
@@ -576,15 +608,7 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Chase Dollander",
-    "team": "COL",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to be out until at least Jun 19"
-  },
-  {
-    "name": "Jimmy Herget",
+    "name": "J. HergetJimmy Herget",
     "team": "COL",
     "pos": "RP",
     "status": "IL",
@@ -592,7 +616,7 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Ryan Feltner",
+    "name": "R. FeltnerRyan Feltner",
     "team": "COL",
     "pos": "SP",
     "status": "IL",
@@ -600,7 +624,7 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Jeff Criswell",
+    "name": "J. CriswellJeff Criswell",
     "team": "COL",
     "pos": "P",
     "status": "IL",
@@ -608,7 +632,7 @@
     "returnDate": "Expected to be out until at least May 25"
   },
   {
-    "name": "McCade Brown",
+    "name": "M. BrownMcCade Brown",
     "team": "COL",
     "pos": "P",
     "status": "IL",
@@ -616,7 +640,7 @@
     "returnDate": "Expected to be out until at least May 24"
   },
   {
-    "name": "RJ Petit",
+    "name": "R. PetitRJ Petit",
     "team": "COL",
     "pos": "SP",
     "status": "IL",
@@ -624,7 +648,7 @@
     "returnDate": "Expected to be out until at least Jun 1, 2027"
   },
   {
-    "name": "Pierson Ohl",
+    "name": "P. OhlPierson Ohl",
     "team": "COL",
     "pos": "RP",
     "status": "IL",
@@ -632,7 +656,7 @@
     "returnDate": "Expected to be out until at least Apr 1"
   },
   {
-    "name": "Kris Bryant",
+    "name": "K. BryantKris Bryant",
     "team": "COL",
     "pos": "RF",
     "status": "IL",
@@ -640,15 +664,7 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Trey Sweeney",
-    "team": "DET",
-    "pos": "SS",
-    "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Expected to be out until at least Jun 10"
-  },
-  {
-    "name": "Bailey Horn",
+    "name": "B. HornBailey Horn",
     "team": "DET",
     "pos": "P",
     "status": "IL",
@@ -656,15 +672,7 @@
     "returnDate": "Expected to be out until at least Jun 8"
   },
   {
-    "name": "Parker Meadows",
-    "team": "DET",
-    "pos": "CF",
-    "status": "IL",
-    "injury": "Arm",
-    "returnDate": "Expected to be out until at least Jun 14"
-  },
-  {
-    "name": "Gleyber Torres",
+    "name": "G. TorresGleyber Torres",
     "team": "DET",
     "pos": "2B",
     "status": "IL",
@@ -672,7 +680,7 @@
     "returnDate": "Expected to be out until at least May 26"
   },
   {
-    "name": "Reese Olson",
+    "name": "R. OlsonReese Olson",
     "team": "DET",
     "pos": "SP",
     "status": "IL",
@@ -680,7 +688,23 @@
     "returnDate": "Expected to be out until at least Mar 1"
   },
   {
-    "name": "Troy Melton",
+    "name": "T. SweeneyTrey Sweeney",
+    "team": "DET",
+    "pos": "SS",
+    "status": "IL",
+    "injury": "Shoulder",
+    "returnDate": "Expected to be out until at least Jun 10"
+  },
+  {
+    "name": "P. MeadowsParker Meadows",
+    "team": "DET",
+    "pos": "CF",
+    "status": "IL",
+    "injury": "Arm",
+    "returnDate": "Expected to be out until at least Jun 14"
+  },
+  {
+    "name": "T. MeltonTroy Melton",
     "team": "DET",
     "pos": "P",
     "status": "IL",
@@ -688,7 +712,7 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Kerry Carpenter",
+    "name": "K. CarpenterKerry Carpenter",
     "team": "DET",
     "pos": "RF",
     "status": "IL",
@@ -696,7 +720,7 @@
     "returnDate": "Expected to be out until at least May 26"
   },
   {
-    "name": "Ty Madden",
+    "name": "T. MaddenTy Madden",
     "team": "DET",
     "pos": "P",
     "status": "IL",
@@ -704,7 +728,7 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Tarik Skubal",
+    "name": "T. SkubalTarik Skubal",
     "team": "DET",
     "pos": "SP",
     "status": "IL",
@@ -712,7 +736,7 @@
     "returnDate": "Expected to be out until at least Jun 19"
   },
   {
-    "name": "Justin Verlander",
+    "name": "J. VerlanderJustin Verlander",
     "team": "DET",
     "pos": "SP",
     "status": "IL",
@@ -720,7 +744,7 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Beau Brieske",
+    "name": "B. BrieskeBeau Brieske",
     "team": "DET",
     "pos": "RP",
     "status": "IL",
@@ -728,7 +752,7 @@
     "returnDate": "Expected to be out until at least May 26"
   },
   {
-    "name": "Javier Baez",
+    "name": "J. BaezJavier Baez",
     "team": "DET",
     "pos": "SS",
     "status": "IL",
@@ -736,7 +760,7 @@
     "returnDate": "Expected to be out until at least May 26"
   },
   {
-    "name": "Jackson Jobe",
+    "name": "J. JobeJackson Jobe",
     "team": "DET",
     "pos": "P",
     "status": "IL",
@@ -744,7 +768,15 @@
     "returnDate": "Expected to be out until at least Aug 15"
   },
   {
-    "name": "Lance McCullers",
+    "name": "H. BrownHunter Brown",
+    "team": "HOU",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Shoulder",
+    "returnDate": "Expected to be out until at least Jun 14"
+  },
+  {
+    "name": "L. McCullersLance McCullers",
     "team": "HOU",
     "pos": "SP",
     "status": "IL",
@@ -752,7 +784,7 @@
     "returnDate": "Expected to be out until at least May 31"
   },
   {
-    "name": "Yainer Diaz",
+    "name": "Y. DiazYainer Diaz",
     "team": "HOU",
     "pos": "C",
     "status": "IL",
@@ -760,23 +792,7 @@
     "returnDate": "Expected to be out until at least May 23"
   },
   {
-    "name": "Taylor Trammell",
-    "team": "HOU",
-    "pos": "LF",
-    "status": "IL",
-    "injury": "Groin",
-    "returnDate": "Expected to be out until at least May 25"
-  },
-  {
-    "name": "Jose Altuve",
-    "team": "HOU",
-    "pos": "2B",
-    "status": "IL",
-    "injury": "Oblique",
-    "returnDate": "Expected to be out until at least Jun 19"
-  },
-  {
-    "name": "Joey Loperfido",
+    "name": "J. LoperfidoJoey Loperfido",
     "team": "HOU",
     "pos": "OF",
     "status": "IL",
@@ -784,15 +800,23 @@
     "returnDate": "Expected to be out until at least May 25"
   },
   {
-    "name": "Hunter Brown",
+    "name": "J. AltuveJose Altuve",
     "team": "HOU",
-    "pos": "SP",
+    "pos": "2B",
     "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Expected to be out until at least Jun 15"
+    "injury": "Oblique",
+    "returnDate": "Expected to be out until at least Jun 19"
   },
   {
-    "name": "Josh Hader",
+    "name": "T. TrammellTaylor Trammell",
+    "team": "HOU",
+    "pos": "LF",
+    "status": "IL",
+    "injury": "Groin",
+    "returnDate": "Expected to be out until at least May 25"
+  },
+  {
+    "name": "J. HaderJosh Hader",
     "team": "HOU",
     "pos": "RP",
     "status": "IL",
@@ -800,7 +824,7 @@
     "returnDate": "Expected to be out until at least May 25"
   },
   {
-    "name": "Bennett Sousa",
+    "name": "B. SousaBennett Sousa",
     "team": "HOU",
     "pos": "RP",
     "status": "IL",
@@ -808,7 +832,7 @@
     "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Carlos Correa",
+    "name": "C. CorreaCarlos Correa",
     "team": "HOU",
     "pos": "SS",
     "status": "IL",
@@ -816,7 +840,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Cristian Javier",
+    "name": "C. JavierCristian Javier",
     "team": "HOU",
     "pos": "SP",
     "status": "IL",
@@ -824,7 +848,7 @@
     "returnDate": "Expected to be out until at least Jun 25"
   },
   {
-    "name": "Ronel Blanco",
+    "name": "R. BlancoRonel Blanco",
     "team": "HOU",
     "pos": "RP",
     "status": "IL",
@@ -832,7 +856,7 @@
     "returnDate": "Expected to be out until at least Aug 1"
   },
   {
-    "name": "Hayden Wesneski",
+    "name": "H. WesneskiHayden Wesneski",
     "team": "HOU",
     "pos": "RP",
     "status": "IL",
@@ -840,7 +864,7 @@
     "returnDate": "Expected to be out until at least Aug 1"
   },
   {
-    "name": "Brandon Walter",
+    "name": "B. WalterBrandon Walter",
     "team": "HOU",
     "pos": "RP",
     "status": "IL",
@@ -848,15 +872,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "James McArthur",
-    "team": "KC",
-    "pos": "RP",
-    "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to be out until at least Jun 1"
-  },
-  {
-    "name": "Kris Bubic",
+    "name": "K. BubicKris Bubic",
     "team": "KC",
     "pos": "SP",
     "status": "IL",
@@ -864,7 +880,15 @@
     "returnDate": "Expected to be out until at least Jun 9"
   },
   {
-    "name": "Matt Strahm",
+    "name": "J. McArthurJames McArthur",
+    "team": "KC",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to be out until at least Jun 1"
+  },
+  {
+    "name": "M. StrahmMatt Strahm",
     "team": "KC",
     "pos": "RP",
     "status": "IL",
@@ -872,7 +896,7 @@
     "returnDate": "Expected to be out until at least May 31"
   },
   {
-    "name": "Cole Ragans",
+    "name": "C. RagansCole Ragans",
     "team": "KC",
     "pos": "RP",
     "status": "IL",
@@ -880,7 +904,7 @@
     "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Carlos Estevez",
+    "name": "C. EstevezCarlos Estevez",
     "team": "KC",
     "pos": "RP",
     "status": "IL",
@@ -888,7 +912,7 @@
     "returnDate": "Expected to be out until at least Jun 15"
   },
   {
-    "name": "Jonathan India",
+    "name": "J. IndiaJonathan India",
     "team": "KC",
     "pos": "2B",
     "status": "IL",
@@ -896,7 +920,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Alec Marsh",
+    "name": "A. MarshAlec Marsh",
     "team": "KC",
     "pos": "RP",
     "status": "IL",
@@ -904,7 +928,15 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Ben Joyce",
+    "name": "T. d'ArnaudTravis d'Arnaud",
+    "team": "LAA",
+    "pos": "C",
+    "status": "IL",
+    "injury": "Foot",
+    "returnDate": "Expected to be out until at least Jun 12"
+  },
+  {
+    "name": "B. JoyceBen Joyce",
     "team": "LAA",
     "pos": "RP",
     "status": "IL",
@@ -912,15 +944,7 @@
     "returnDate": "Expected to be out until at least May 26"
   },
   {
-    "name": "Travis d'Arnaud",
-    "team": "LAA",
-    "pos": "C",
-    "status": "IL",
-    "injury": "Foot",
-    "returnDate": "Expected to be out until at least Jun 12"
-  },
-  {
-    "name": "Drew Pomeranz",
+    "name": "D. PomeranzDrew Pomeranz",
     "team": "LAA",
     "pos": "RP",
     "status": "IL",
@@ -928,7 +952,7 @@
     "returnDate": "Expected to be out until at least May 28"
   },
   {
-    "name": "Yusei Kikuchi",
+    "name": "Y. KikuchiYusei Kikuchi",
     "team": "LAA",
     "pos": "SP",
     "status": "IL",
@@ -936,7 +960,7 @@
     "returnDate": "Expected to be out until at least Jul 2"
   },
   {
-    "name": "Robert Stephenson",
+    "name": "R. StephensonRobert Stephenson",
     "team": "LAA",
     "pos": "RP",
     "status": "IL",
@@ -944,7 +968,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Anthony Rendon",
+    "name": "A. RendonAnthony Rendon",
     "team": "LAA",
     "pos": "3B",
     "status": "IL",
@@ -952,15 +976,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Tyler Glasnow",
-    "team": "LAD",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Back",
-    "returnDate": "Expected to be out until at least Jun 15"
-  },
-  {
-    "name": "Tommy Edman",
+    "name": "T. EdmanTommy Edman",
     "team": "LAD",
     "pos": "2B",
     "status": "IL",
@@ -968,7 +984,15 @@
     "returnDate": "Expected to be out until at least Jun 22"
   },
   {
-    "name": "Brusdar Graterol",
+    "name": "T. GlasnowTyler Glasnow",
+    "team": "LAD",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Back",
+    "returnDate": "Expected to be out until at least Jun 15"
+  },
+  {
+    "name": "B. GraterolBrusdar Graterol",
     "team": "LAD",
     "pos": "RP",
     "status": "IL",
@@ -976,7 +1000,7 @@
     "returnDate": "Expected to be out until at least Jul 1"
   },
   {
-    "name": "Ben Casparius",
+    "name": "B. CaspariusBen Casparius",
     "team": "LAD",
     "pos": "P",
     "status": "IL",
@@ -984,7 +1008,7 @@
     "returnDate": "Expected to be out until at least Jun 13"
   },
   {
-    "name": "Jack Dreyer",
+    "name": "J. DreyerJack Dreyer",
     "team": "LAD",
     "pos": "P",
     "status": "IL",
@@ -992,7 +1016,7 @@
     "returnDate": "Expected to be out until at least May 31"
   },
   {
-    "name": "Blake Snell",
+    "name": "B. SnellBlake Snell",
     "team": "LAD",
     "pos": "SP",
     "status": "IL",
@@ -1000,15 +1024,7 @@
     "returnDate": "Expected to be out until at least Jul 1"
   },
   {
-    "name": "Brock Stewart",
-    "team": "LAD",
-    "pos": "RP",
-    "status": "IL",
-    "injury": "Foot",
-    "returnDate": "Expected to be out until at least May 31"
-  },
-  {
-    "name": "Edwin Diaz",
+    "name": "E. DiazEdwin Diaz",
     "team": "LAD",
     "pos": "RP",
     "status": "IL",
@@ -1016,7 +1032,15 @@
     "returnDate": "Expected to be out until at least Jul 17"
   },
   {
-    "name": "Landon Knack",
+    "name": "B. StewartBrock Stewart",
+    "team": "LAD",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Foot",
+    "returnDate": "Expected to be out until at least May 31"
+  },
+  {
+    "name": "L. KnackLandon Knack",
     "team": "LAD",
     "pos": "SP",
     "status": "IL",
@@ -1024,15 +1048,7 @@
     "returnDate": "Expected to be out until at least May 24"
   },
   {
-    "name": "Gavin Stone",
-    "team": "LAD",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Expected to be out until at least May 22"
-  },
-  {
-    "name": "Jake Cousins",
+    "name": "J. CousinsJake Cousins",
     "team": "LAD",
     "pos": "RP",
     "status": "IL",
@@ -1040,7 +1056,15 @@
     "returnDate": "Expected to be out until at least Aug 1"
   },
   {
-    "name": "Bobby Miller",
+    "name": "G. StoneGavin Stone",
+    "team": "LAD",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Shoulder",
+    "returnDate": "Expected to be out until at least May 22"
+  },
+  {
+    "name": "B. MillerBobby Miller",
     "team": "LAD",
     "pos": "SP",
     "status": "IL",
@@ -1048,7 +1072,7 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Enrique Hernandez",
+    "name": "E. HernandezEnrique Hernandez",
     "team": "LAD",
     "pos": "SS",
     "status": "IL",
@@ -1056,7 +1080,15 @@
     "returnDate": "Expected to be out until at least May 24"
   },
   {
-    "name": "Robby Snelling",
+    "name": "L. JimenezLeonardo Jimenez",
+    "team": "MIA",
+    "pos": "3B",
+    "status": "IL",
+    "injury": "Head",
+    "returnDate": "Probable for May 21"
+  },
+  {
+    "name": "R. SnellingRobby Snelling",
     "team": "MIA",
     "pos": "SP",
     "status": "IL",
@@ -1064,7 +1096,7 @@
     "returnDate": "Expected to be out until at least Jun 19"
   },
   {
-    "name": "Griffin Conine",
+    "name": "G. ConineGriffin Conine",
     "team": "MIA",
     "pos": "RF",
     "status": "IL",
@@ -1072,7 +1104,7 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Adam Mazur",
+    "name": "A. MazurAdam Mazur",
     "team": "MIA",
     "pos": "P",
     "status": "IL",
@@ -1080,7 +1112,7 @@
     "returnDate": "Expected to be out until at least Apr 1"
   },
   {
-    "name": "Ronny Henriquez",
+    "name": "R. HenriquezRonny Henriquez",
     "team": "MIA",
     "pos": "RP",
     "status": "IL",
@@ -1088,7 +1120,15 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Brandon Woodruff",
+    "name": "G. MitchellGarrett Mitchell",
+    "team": "MIL",
+    "pos": "CF",
+    "status": "IL",
+    "injury": "Back",
+    "returnDate": "Expected to be out until at least May 22"
+  },
+  {
+    "name": "B. WoodruffBrandon Woodruff",
     "team": "MIL",
     "pos": "SP",
     "status": "IL",
@@ -1096,7 +1136,7 @@
     "returnDate": "Expected to be out until at least Jun 3"
   },
   {
-    "name": "Brandon Lockridge",
+    "name": "B. LockridgeBrandon Lockridge",
     "team": "MIL",
     "pos": "OF",
     "status": "IL",
@@ -1104,7 +1144,15 @@
     "returnDate": "Expected to be out until at least Jun 16"
   },
   {
-    "name": "Angel Zerpa",
+    "name": "Q. PriesterQuinn Priester",
+    "team": "MIL",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Shoulder",
+    "returnDate": "Expected to be out until at least Jun 1"
+  },
+  {
+    "name": "A. ZerpaAngel Zerpa",
     "team": "MIL",
     "pos": "RP",
     "status": "IL",
@@ -1112,15 +1160,7 @@
     "returnDate": "Expected to be out until at least Jul 1, 2027"
   },
   {
-    "name": "Quinn Priester",
-    "team": "MIL",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Expected to be out until at least Jun 1"
-  },
-  {
-    "name": "Jared Koenig",
+    "name": "J. KoenigJared Koenig",
     "team": "MIL",
     "pos": "SP",
     "status": "IL",
@@ -1128,7 +1168,7 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Rob Zastryzny",
+    "name": "R. ZastryznyRob Zastryzny",
     "team": "MIL",
     "pos": "RP",
     "status": "IL",
@@ -1136,7 +1176,7 @@
     "returnDate": "Expected to be out until at least May 25"
   },
   {
-    "name": "Akil Baddoo",
+    "name": "A. BaddooAkil Baddoo",
     "team": "MIL",
     "pos": "LF",
     "status": "IL",
@@ -1144,15 +1184,15 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Garrett Acton",
+    "name": "T. BradleyTaj Bradley",
     "team": "MIN",
-    "pos": "RP",
+    "pos": "SP",
     "status": "IL",
-    "injury": "Strain",
-    "returnDate": "Expected to be out until at least Jun 26"
+    "injury": "Pectoral",
+    "returnDate": "Expected to be out until at least May 23"
   },
   {
-    "name": "Ryan Jeffers",
+    "name": "R. JeffersRyan Jeffers",
     "team": "MIN",
     "pos": "C",
     "status": "IL",
@@ -1160,7 +1200,23 @@
     "returnDate": "Expected to be out until at least Jul 3"
   },
   {
-    "name": "Cole Sands",
+    "name": "G. ActonGarrett Acton",
+    "team": "MIN",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Strain",
+    "returnDate": "Expected to be out until at least Jun 26"
+  },
+  {
+    "name": "M. AbelMick Abel",
+    "team": "MIN",
+    "pos": "P",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to be out until at least Jun 8"
+  },
+  {
+    "name": "C. SandsCole Sands",
     "team": "MIN",
     "pos": "RP",
     "status": "IL",
@@ -1168,31 +1224,7 @@
     "returnDate": "Expected to be out until at least Jun 4"
   },
   {
-    "name": "David Festa",
-    "team": "MIN",
-    "pos": "P",
-    "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Expected to be out until at least Jul 17"
-  },
-  {
-    "name": "Taj Bradley",
-    "team": "MIN",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Pectoral",
-    "returnDate": "Expected to be out until at least May 27"
-  },
-  {
-    "name": "Mick Abel",
-    "team": "MIN",
-    "pos": "P",
-    "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to be out until at least Jun 8"
-  },
-  {
-    "name": "Cody Laweryson",
+    "name": "C. LawerysonCody Laweryson",
     "team": "MIN",
     "pos": "RP",
     "status": "IL",
@@ -1200,7 +1232,15 @@
     "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Pablo Lopez",
+    "name": "D. FestaDavid Festa",
+    "team": "MIN",
+    "pos": "P",
+    "status": "IL",
+    "injury": "Shoulder",
+    "returnDate": "Expected to be out until at least Jul 17"
+  },
+  {
+    "name": "P. LopezPablo Lopez",
     "team": "MIN",
     "pos": "SP",
     "status": "IL",
@@ -1208,7 +1248,7 @@
     "returnDate": "Expected to be out until at least Apr 1"
   },
   {
-    "name": "Clay Holmes",
+    "name": "C. HolmesClay Holmes",
     "team": "NYM",
     "pos": "RP",
     "status": "IL",
@@ -1216,15 +1256,7 @@
     "returnDate": "Expected to be out until at least Aug 25"
   },
   {
-    "name": "A.J. Minter",
-    "team": "NYM",
-    "pos": "RP",
-    "status": "IL",
-    "injury": "Lat",
-    "returnDate": "Expected to be out until at least May 25"
-  },
-  {
-    "name": "Jared Young",
+    "name": "J. YoungJared Young",
     "team": "NYM",
     "pos": "1B",
     "status": "IL",
@@ -1232,7 +1264,15 @@
     "returnDate": "Expected to be out until at least May 25"
   },
   {
-    "name": "Francisco Lindor",
+    "name": "A. MinterA.J. Minter",
+    "team": "NYM",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Lat",
+    "returnDate": "Expected to be out until at least May 25"
+  },
+  {
+    "name": "F. LindorFrancisco Lindor",
     "team": "NYM",
     "pos": "SS",
     "status": "IL",
@@ -1240,7 +1280,7 @@
     "returnDate": "Expected to be out until at least Jun 18"
   },
   {
-    "name": "Francisco Alvarez",
+    "name": "F. AlvarezFrancisco Alvarez",
     "team": "NYM",
     "pos": "C",
     "status": "IL",
@@ -1248,7 +1288,7 @@
     "returnDate": "Expected to be out until at least Jul 16"
   },
   {
-    "name": "Luis Robert",
+    "name": "L. RobertLuis Robert",
     "team": "NYM",
     "pos": "CF",
     "status": "IL",
@@ -1256,7 +1296,7 @@
     "returnDate": "Expected to be out until at least Jun 9"
   },
   {
-    "name": "Jorge Polanco",
+    "name": "J. PolancoJorge Polanco",
     "team": "NYM",
     "pos": "1B",
     "status": "IL",
@@ -1264,7 +1304,7 @@
     "returnDate": "Expected to be out until at least May 25"
   },
   {
-    "name": "Ronny Mauricio",
+    "name": "R. MauricioRonny Mauricio",
     "team": "NYM",
     "pos": "2B",
     "status": "IL",
@@ -1272,7 +1312,7 @@
     "returnDate": "Expected to be out until at least Jun 15"
   },
   {
-    "name": "Kodai Senga",
+    "name": "K. SengaKodai Senga",
     "team": "NYM",
     "pos": "SP",
     "status": "IL",
@@ -1280,7 +1320,7 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Justin Hagenman",
+    "name": "J. HagenmanJustin Hagenman",
     "team": "NYM",
     "pos": "SP",
     "status": "IL",
@@ -1288,7 +1328,7 @@
     "returnDate": "Expected to be out until at least May 27"
   },
   {
-    "name": "Reed Garrett",
+    "name": "R. GarrettReed Garrett",
     "team": "NYM",
     "pos": "RP",
     "status": "IL",
@@ -1296,7 +1336,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Dedniel Nunez",
+    "name": "D. NunezDedniel Nunez",
     "team": "NYM",
     "pos": "SP",
     "status": "IL",
@@ -1304,7 +1344,7 @@
     "returnDate": "Expected to be out until at least Sep 1"
   },
   {
-    "name": "Tylor Megill",
+    "name": "T. MegillTylor Megill",
     "team": "NYM",
     "pos": "SP",
     "status": "IL",
@@ -1312,15 +1352,15 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Gerrit Cole",
+    "name": "T. GrishamTrent Grisham",
     "team": "NYY",
-    "pos": "SP",
+    "pos": "CF",
     "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to be out until at least May 22"
+    "injury": "Knee",
+    "returnDate": "Probable for May 21"
   },
   {
-    "name": "Giancarlo Stanton",
+    "name": "G. StantonGiancarlo Stanton",
     "team": "NYY",
     "pos": "DH",
     "status": "IL",
@@ -1328,7 +1368,15 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Max Fried",
+    "name": "G. ColeGerrit Cole",
+    "team": "NYY",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to be out until at least May 22"
+  },
+  {
+    "name": "M. FriedMax Fried",
     "team": "NYY",
     "pos": "SP",
     "status": "IL",
@@ -1336,7 +1384,7 @@
     "returnDate": "Expected to be out until at least Jun 16"
   },
   {
-    "name": "Jasson Dominguez",
+    "name": "J. DominguezJasson Dominguez",
     "team": "NYY",
     "pos": "CF",
     "status": "IL",
@@ -1344,7 +1392,7 @@
     "returnDate": "Expected to be out until at least Jun 2"
   },
   {
-    "name": "Jose Caballero",
+    "name": "J. CaballeroJose Caballero",
     "team": "NYY",
     "pos": "2B",
     "status": "IL",
@@ -1352,7 +1400,7 @@
     "returnDate": "Expected to be out until at least May 21"
   },
   {
-    "name": "Clarke Schmidt",
+    "name": "C. SchmidtClarke Schmidt",
     "team": "NYY",
     "pos": "SP",
     "status": "IL",
@@ -1360,15 +1408,7 @@
     "returnDate": "Expected to be out until at least Aug 1"
   },
   {
-    "name": "Zach Pop",
-    "team": "PHI",
-    "pos": "RP",
-    "status": "IL",
-    "injury": "Calf",
-    "returnDate": "Expected to be out until at least May 20"
-  },
-  {
-    "name": "Kyle Schwarber",
+    "name": "K. SchwarberKyle Schwarber",
     "team": "PHI",
     "pos": "DH",
     "status": "IL",
@@ -1376,7 +1416,15 @@
     "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Kyle Backhus",
+    "name": "Z. PopZach Pop",
+    "team": "PHI",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Calf",
+    "returnDate": "Expected to be out until at least May 22"
+  },
+  {
+    "name": "K. BackhusKyle Backhus",
     "team": "PHI",
     "pos": "RP",
     "status": "IL",
@@ -1384,7 +1432,7 @@
     "returnDate": "Expected to be out until at least May 25"
   },
   {
-    "name": "Max Lazar",
+    "name": "M. LazarMax Lazar",
     "team": "PHI",
     "pos": "P",
     "status": "IL",
@@ -1392,7 +1440,23 @@
     "returnDate": "Expected to be out until at least May 23"
   },
   {
-    "name": "Joey Bart",
+    "name": "J. JonesJared Jones",
+    "team": "PIT",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to be out until at least May 27"
+  },
+  {
+    "name": "R. O'HearnRyan O'Hearn",
+    "team": "PIT",
+    "pos": "RF",
+    "status": "IL",
+    "injury": "Quadriceps",
+    "returnDate": "Expected to be out until at least Jun 15"
+  },
+  {
+    "name": "J. BartJoey Bart",
     "team": "PIT",
     "pos": "C",
     "status": "IL",
@@ -1400,15 +1464,7 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Ryan O'Hearn",
-    "team": "PIT",
-    "pos": "RF",
-    "status": "IL",
-    "injury": "Quadriceps",
-    "returnDate": "Expected to be out until at least Jun 15"
-  },
-  {
-    "name": "Chris Devenski",
+    "name": "C. DevenskiChris Devenski",
     "team": "PIT",
     "pos": "RP",
     "status": "IL",
@@ -1416,23 +1472,23 @@
     "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Jared Jones",
-    "team": "PIT",
-    "pos": "SP",
+    "name": "J. MerrillJackson Merrill",
+    "team": "SD",
+    "pos": "CF",
     "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to be out until at least May 25"
+    "injury": "Back",
+    "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Jake Cronenworth",
+    "name": "J. CronenworthJake Cronenworth",
     "team": "SD",
     "pos": "1B",
     "status": "IL",
     "injury": "Concussion",
-    "returnDate": "Expected to be out until at least May 20"
+    "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Matt Waldron",
+    "name": "M. WaldronMatt Waldron",
     "team": "SD",
     "pos": "SP",
     "status": "IL",
@@ -1440,7 +1496,7 @@
     "returnDate": "Expected to be out until at least May 30"
   },
   {
-    "name": "German Marquez",
+    "name": "G. MarquezGerman Marquez",
     "team": "SD",
     "pos": "SP",
     "status": "IL",
@@ -1448,7 +1504,7 @@
     "returnDate": "Expected to be out until at least Jun 8"
   },
   {
-    "name": "Joe Musgrove",
+    "name": "J. MusgroveJoe Musgrove",
     "team": "SD",
     "pos": "SP",
     "status": "IL",
@@ -1456,7 +1512,7 @@
     "returnDate": "Expected to be out until at least Jun 12"
   },
   {
-    "name": "Luis Campusano",
+    "name": "L. CampusanoLuis Campusano",
     "team": "SD",
     "pos": "C",
     "status": "IL",
@@ -1464,7 +1520,7 @@
     "returnDate": "Expected to be out until at least Jun 7"
   },
   {
-    "name": "Bryan Hoeing",
+    "name": "B. HoeingBryan Hoeing",
     "team": "SD",
     "pos": "RP",
     "status": "IL",
@@ -1472,7 +1528,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Nick Pivetta",
+    "name": "N. PivettaNick Pivetta",
     "team": "SD",
     "pos": "RP",
     "status": "IL",
@@ -1480,7 +1536,15 @@
     "returnDate": "Expected to be out until at least Jun 15"
   },
   {
-    "name": "Reiver Sanmartin",
+    "name": "L. WebbLogan Webb",
+    "team": "SF",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Knee",
+    "returnDate": "Expected to be out until at least May 27"
+  },
+  {
+    "name": "R. SanmartinReiver Sanmartin",
     "team": "SF",
     "pos": "RP",
     "status": "IL",
@@ -1488,23 +1552,15 @@
     "returnDate": "Expected to be out until at least Jun 2"
   },
   {
-    "name": "Jung Hoo Lee",
+    "name": "J. LeeJung Hoo Lee",
     "team": "SF",
     "pos": "RF",
     "status": "IL",
     "injury": "Back",
-    "returnDate": "Probable for May 20"
+    "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Logan Webb",
-    "team": "SF",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Knee",
-    "returnDate": "Expected to be out until at least May 25"
-  },
-  {
-    "name": "Heliot Ramos",
+    "name": "H. RamosHeliot Ramos",
     "team": "SF",
     "pos": "LF",
     "status": "IL",
@@ -1512,7 +1568,7 @@
     "returnDate": "Expected to be out until at least Jun 5"
   },
   {
-    "name": "Jared Oliva",
+    "name": "J. OlivaJared Oliva",
     "team": "SF",
     "pos": "RF",
     "status": "IL",
@@ -1520,7 +1576,7 @@
     "returnDate": "Expected to be out until at least Jun 15"
   },
   {
-    "name": "Jason Foley",
+    "name": "J. FoleyJason Foley",
     "team": "SF",
     "pos": "RP",
     "status": "IL",
@@ -1528,7 +1584,7 @@
     "returnDate": "Expected to be out until at least May 25"
   },
   {
-    "name": "Jose Butto",
+    "name": "J. ButtoJose Butto",
     "team": "SF",
     "pos": "SP",
     "status": "IL",
@@ -1536,7 +1592,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Hayden Birdsong",
+    "name": "H. BirdsongHayden Birdsong",
     "team": "SF",
     "pos": "P",
     "status": "IL",
@@ -1544,7 +1600,7 @@
     "returnDate": "Expected to be out until at least Jun 1, 2027"
   },
   {
-    "name": "Randy Rodriguez",
+    "name": "R. RodriguezRandy Rodriguez",
     "team": "SF",
     "pos": "RP",
     "status": "IL",
@@ -1552,7 +1608,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Rowan Wick",
+    "name": "R. WickRowan Wick",
     "team": "SF",
     "pos": "RP",
     "status": "IL",
@@ -1560,31 +1616,31 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Victor Robles",
+    "name": "J. CrawfordJ.P. Crawford",
+    "team": "SEA",
+    "pos": "SS",
+    "status": "IL",
+    "injury": "Triceps",
+    "returnDate": "Expected to be out until at least May 22"
+  },
+  {
+    "name": "V. RoblesVictor Robles",
     "team": "SEA",
     "pos": "CF",
     "status": "IL",
     "injury": "Pectoral",
-    "returnDate": "Expected to be out until at least May 20"
+    "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Gabe Speier",
+    "name": "G. SpeierGabe Speier",
     "team": "SEA",
     "pos": "RP",
     "status": "IL",
     "injury": "Shoulder",
-    "returnDate": "Expected to be out until at least May 20"
+    "returnDate": "Expected to be out until at least May 27"
   },
   {
-    "name": "Matt Brash",
-    "team": "SEA",
-    "pos": "RP",
-    "status": "IL",
-    "injury": "Lat",
-    "returnDate": "Expected to be out until at least May 20"
-  },
-  {
-    "name": "Brendan Donovan",
+    "name": "B. DonovanBrendan Donovan",
     "team": "SEA",
     "pos": "2B",
     "status": "IL",
@@ -1592,7 +1648,7 @@
     "returnDate": "Expected to be out until at least Jun 5"
   },
   {
-    "name": "Cal Raleigh",
+    "name": "C. RaleighCal Raleigh",
     "team": "SEA",
     "pos": "C",
     "status": "IL",
@@ -1600,7 +1656,7 @@
     "returnDate": "Expected to be out until at least Jun 5"
   },
   {
-    "name": "Will Wilson",
+    "name": "W. WilsonWill Wilson",
     "team": "SEA",
     "pos": "SS",
     "status": "IL",
@@ -1608,7 +1664,7 @@
     "returnDate": "Expected to be out until at least Jun 10"
   },
   {
-    "name": "Miles Mastrobuoni",
+    "name": "M. MastrobuoniMiles Mastrobuoni",
     "team": "SEA",
     "pos": "3B",
     "status": "IL",
@@ -1616,7 +1672,7 @@
     "returnDate": "Expected to be out until at least May 24"
   },
   {
-    "name": "Carlos Vargas",
+    "name": "C. VargasCarlos Vargas",
     "team": "SEA",
     "pos": "RP",
     "status": "IL",
@@ -1624,7 +1680,7 @@
     "returnDate": "Expected to be out until at least May 23"
   },
   {
-    "name": "Logan Evans",
+    "name": "L. EvansLogan Evans",
     "team": "SEA",
     "pos": "RP",
     "status": "IL",
@@ -1632,23 +1688,15 @@
     "returnDate": "Expected to be out until at least Apr 1"
   },
   {
-    "name": "Masyn Winn",
-    "team": "STL",
-    "pos": "SS",
-    "status": "IL",
-    "injury": "Knee",
-    "returnDate": "Probable for May 20"
-  },
-  {
-    "name": "Ramon Urias",
+    "name": "R. UriasRamon Urias",
     "team": "STL",
     "pos": "3B",
     "status": "IL",
     "injury": "Elbow",
-    "returnDate": "Expected to be out until at least May 22"
+    "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Lars Nootbaar",
+    "name": "L. NootbaarLars Nootbaar",
     "team": "STL",
     "pos": "CF",
     "status": "IL",
@@ -1656,7 +1704,15 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Yandy Diaz",
+    "name": "R. GenovesRicardo Genoves",
+    "team": "TB",
+    "pos": "C",
+    "status": "IL",
+    "injury": "Undisclosed",
+    "returnDate": "Expected to be out until at least May 21"
+  },
+  {
+    "name": "Y. DiazYandy Diaz",
     "team": "TB",
     "pos": "DH",
     "status": "IL",
@@ -1664,15 +1720,7 @@
     "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Ricardo Genoves",
-    "team": "TB",
-    "pos": "C",
-    "status": "IL",
-    "injury": "Undisclosed",
-    "returnDate": "Expected to be out until at least May 20"
-  },
-  {
-    "name": "Ben Williamson",
+    "name": "B. WilliamsonBen Williamson",
     "team": "TB",
     "pos": "2B",
     "status": "IL",
@@ -1680,7 +1728,7 @@
     "returnDate": "Expected to be out until at least May 27"
   },
   {
-    "name": "Jake Fraley",
+    "name": "J. FraleyJake Fraley",
     "team": "TB",
     "pos": "RF",
     "status": "IL",
@@ -1688,7 +1736,7 @@
     "returnDate": "Expected to be out until at least Jul 17"
   },
   {
-    "name": "Cole Sulser",
+    "name": "C. SulserCole Sulser",
     "team": "TB",
     "pos": "RP",
     "status": "IL",
@@ -1696,7 +1744,7 @@
     "returnDate": "Expected to be out until at least May 30"
   },
   {
-    "name": "Gavin Lux",
+    "name": "G. LuxGavin Lux",
     "team": "TB",
     "pos": "SS",
     "status": "IL",
@@ -1704,7 +1752,7 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Michael Grove",
+    "name": "M. GroveMichael Grove",
     "team": "TB",
     "pos": "SP",
     "status": "IL",
@@ -1712,7 +1760,7 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Ryan Pepiot",
+    "name": "R. PepiotRyan Pepiot",
     "team": "TB",
     "pos": "RP",
     "status": "IL",
@@ -1720,7 +1768,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Edwin Uceta",
+    "name": "E. UcetaEdwin Uceta",
     "team": "TB",
     "pos": "RP",
     "status": "IL",
@@ -1728,7 +1776,7 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Steven Wilson",
+    "name": "S. WilsonSteven Wilson",
     "team": "TB",
     "pos": "RP",
     "status": "IL",
@@ -1736,7 +1784,7 @@
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Manuel Rodriguez",
+    "name": "M. RodriguezManuel Rodriguez",
     "team": "TB",
     "pos": "RP",
     "status": "IL",
@@ -1744,15 +1792,15 @@
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Luis Curvelo",
+    "name": "B. NimmoBrandon Nimmo",
     "team": "TEX",
-    "pos": "RP",
+    "pos": "RF",
     "status": "IL",
-    "injury": "Shoulder",
-    "returnDate": "Expected to be out until at least May 20"
+    "injury": "Hamstring",
+    "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "MacKenzie Gore",
+    "name": "M. GoreMacKenzie Gore",
     "team": "TEX",
     "pos": "SP",
     "status": "IL",
@@ -1760,7 +1808,15 @@
     "returnDate": "Expected to be out until at least May 24"
   },
   {
-    "name": "Wyatt Langford",
+    "name": "C. SeagerCorey Seager",
+    "team": "TEX",
+    "pos": "SS",
+    "status": "IL",
+    "injury": "Back",
+    "returnDate": "Expected to be out until at least May 25"
+  },
+  {
+    "name": "W. LangfordWyatt Langford",
     "team": "TEX",
     "pos": "OF",
     "status": "IL",
@@ -1768,15 +1824,7 @@
     "returnDate": "Expected to be out until at least May 25"
   },
   {
-    "name": "Corey Seager",
-    "team": "TEX",
-    "pos": "SS",
-    "status": "IL",
-    "injury": "Back",
-    "returnDate": "Expected to be out until at least May 25"
-  },
-  {
-    "name": "Josh H. Smith",
+    "name": "J. SmithJosh H. Smith",
     "team": "TEX",
     "pos": "SS",
     "status": "IL",
@@ -1784,7 +1832,7 @@
     "returnDate": "Expected to be out until at least Jun 5"
   },
   {
-    "name": "Cody Freeman",
+    "name": "C. FreemanCody Freeman",
     "team": "TEX",
     "pos": "SS",
     "status": "IL",
@@ -1792,15 +1840,7 @@
     "returnDate": "Expected to be out until at least Jun 5"
   },
   {
-    "name": "Carter Baumler",
-    "team": "TEX",
-    "pos": "RP",
-    "status": "IL",
-    "injury": "Ribs",
-    "returnDate": "Expected to be out until at least May 25"
-  },
-  {
-    "name": "Cody Bradford",
+    "name": "C. BradfordCody Bradford",
     "team": "TEX",
     "pos": "RP",
     "status": "IL",
@@ -1808,7 +1848,15 @@
     "returnDate": "Expected to be out until at least Jun 18"
   },
   {
-    "name": "Robert Garcia",
+    "name": "C. BaumlerCarter Baumler",
+    "team": "TEX",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Ribs",
+    "returnDate": "Expected to be out until at least May 25"
+  },
+  {
+    "name": "R. GarciaRobert Garcia",
     "team": "TEX",
     "pos": "RP",
     "status": "IL",
@@ -1816,7 +1864,7 @@
     "returnDate": "Expected to be out until at least May 22"
   },
   {
-    "name": "Jordan Montgomery",
+    "name": "J. MontgomeryJordan Montgomery",
     "team": "TEX",
     "pos": "SP",
     "status": "IL",
@@ -1824,31 +1872,31 @@
     "returnDate": "Expected to be out until at least Jul 1"
   },
   {
-    "name": "Joe Mantiply",
-    "team": "TOR",
-    "pos": "RP",
-    "status": "IL",
-    "injury": "Knee",
-    "returnDate": "Expected to be out until at least Jun 2"
-  },
-  {
-    "name": "Ernie Clement",
-    "team": "TOR",
-    "pos": "2B",
-    "status": "IL",
-    "injury": "Illness",
-    "returnDate": "Probable for May 20"
-  },
-  {
-    "name": "Addison Barger",
+    "name": "A. BargerAddison Barger",
     "team": "TOR",
     "pos": "3B",
     "status": "IL",
     "injury": "Elbow",
-    "returnDate": "Expected to be out until at least May 29"
+    "returnDate": "Expected to be out until at least Jun 5"
   },
   {
-    "name": "Alejandro Kirk",
+    "name": "J. SanchezJesus Sanchez",
+    "team": "TOR",
+    "pos": "RF",
+    "status": "IL",
+    "injury": "Chest",
+    "returnDate": "Probable for May 21"
+  },
+  {
+    "name": "J. BerriosJose Berrios",
+    "team": "TOR",
+    "pos": "SP",
+    "status": "IL",
+    "injury": "Elbow",
+    "returnDate": "Expected to be out until at least Aug 1, 2027"
+  },
+  {
+    "name": "A. KirkAlejandro Kirk",
     "team": "TOR",
     "pos": "C",
     "status": "IL",
@@ -1856,7 +1904,15 @@
     "returnDate": "Expected to be out until at least Jun 2"
   },
   {
-    "name": "Max Scherzer",
+    "name": "J. MantiplyJoe Mantiply",
+    "team": "TOR",
+    "pos": "RP",
+    "status": "IL",
+    "injury": "Knee",
+    "returnDate": "Expected to be out until at least Jun 2"
+  },
+  {
+    "name": "M. ScherzerMax Scherzer",
     "team": "TOR",
     "pos": "SP",
     "status": "IL",
@@ -1864,7 +1920,7 @@
     "returnDate": "Expected to be out until at least Jun 5"
   },
   {
-    "name": "Tommy Nance",
+    "name": "T. NanceTommy Nance",
     "team": "TOR",
     "pos": "RP",
     "status": "IL",
@@ -1872,15 +1928,7 @@
     "returnDate": "Expected to be out until at least Jun 2"
   },
   {
-    "name": "Jose Berrios",
-    "team": "TOR",
-    "pos": "SP",
-    "status": "IL",
-    "injury": "Elbow",
-    "returnDate": "Expected to be out until at least Sep 1"
-  },
-  {
-    "name": "Nathan Lukes",
+    "name": "N. LukesNathan Lukes",
     "team": "TOR",
     "pos": "RF",
     "status": "IL",
@@ -1888,7 +1936,7 @@
     "returnDate": "Expected to be out until at least May 25"
   },
   {
-    "name": "Yimi Garcia",
+    "name": "Y. GarciaYimi Garcia",
     "team": "TOR",
     "pos": "RP",
     "status": "IL",
@@ -1896,7 +1944,7 @@
     "returnDate": "Expected to be out until at least May 25"
   },
   {
-    "name": "Shane Bieber",
+    "name": "S. BieberShane Bieber",
     "team": "TOR",
     "pos": "SP",
     "status": "IL",
@@ -1904,7 +1952,7 @@
     "returnDate": "Expected to be out until at least Jun 22"
   },
   {
-    "name": "Cody Ponce",
+    "name": "C. PonceCody Ponce",
     "team": "TOR",
     "pos": "RP",
     "status": "IL",
@@ -1912,7 +1960,7 @@
     "returnDate": "Expected to be out until at least Feb 1"
   },
   {
-    "name": "Anthony Santander",
+    "name": "A. SantanderAnthony Santander",
     "team": "TOR",
     "pos": "RF",
     "status": "IL",
@@ -1920,7 +1968,7 @@
     "returnDate": "Expected to be out until at least Aug 1"
   },
   {
-    "name": "Bowden Francis",
+    "name": "B. FrancisBowden Francis",
     "team": "TOR",
     "pos": "RP",
     "status": "IL",
@@ -1928,64 +1976,56 @@
     "returnDate": "Expected to be out until at least Apr 1"
   },
   {
-    "name": "Jacob Young",
-    "team": "WSH",
-    "pos": "CF",
-    "status": "IL",
-    "injury": "Ribs",
-    "returnDate": "Probable for May 20"
-  },
-  {
-    "name": "Clayton Beeter",
-    "team": "WSH",
+    "name": "C. BeeterClayton Beeter",
+    "team": "WAS",
     "pos": "RP",
     "status": "IL",
     "injury": "Forearm",
     "returnDate": "Expected to be out until at least May 21"
   },
   {
-    "name": "Cole Henry",
-    "team": "WSH",
+    "name": "C. HenryCole Henry",
+    "team": "WAS",
     "pos": "RP",
     "status": "IL",
     "injury": "Shoulder",
     "returnDate": "Expected to be out until at least May 23"
   },
   {
-    "name": "Max Kranick",
-    "team": "WSH",
+    "name": "M. KranickMax Kranick",
+    "team": "WAS",
     "pos": "RP",
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to be out until at least Jun 15"
   },
   {
-    "name": "Ken Waldichuk",
-    "team": "WSH",
+    "name": "K. WaldichukKen Waldichuk",
+    "team": "WAS",
     "pos": "SP",
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Josiah Gray",
-    "team": "WSH",
+    "name": "J. GrayJosiah Gray",
+    "team": "WAS",
     "pos": "SP",
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to be out until at least May 29"
   },
   {
-    "name": "Trevor Williams",
-    "team": "WSH",
+    "name": "T. WilliamsTrevor Williams",
+    "team": "WAS",
     "pos": "SP",
     "status": "IL",
     "injury": "Elbow",
     "returnDate": "Expected to be out until at least Jun 1"
   },
   {
-    "name": "Davidjohn Herz",
-    "team": "WSH",
+    "name": "D. HerzDavidjohn Herz",
+    "team": "WAS",
     "pos": "P",
     "status": "IL",
     "injury": "Elbow",
