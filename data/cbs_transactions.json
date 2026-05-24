@@ -4640,7 +4640,7 @@
     "players": [
       {
         "name": "Henry Bolte",
-        "pos": "RF",
+        "pos": "CF,RF",
         "mlbTeam": "ATH",
         "action": "Added off Waivers"
       },
@@ -5591,5 +5591,26 @@
       }
     ],
     "effective": "5/23/26"
+  },
+  {
+    "date": "5/24/26 2:38 AM ET",
+    "teamId": "5",
+    "teamName": "Buddy Buddy Buddy All On Base",
+    "team": "Buddy Buddy Buddy All On Base",
+    "players": [
+      {
+        "name": "Keibert Ruiz",
+        "pos": "C",
+        "mlbTeam": "WAS",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Miguel Amaya",
+        "pos": "C",
+        "mlbTeam": "CHC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/24/26"
   }
 ]
