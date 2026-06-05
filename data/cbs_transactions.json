@@ -6570,5 +6570,56 @@
       }
     ],
     "effective": "6/4/26"
+  },
+  {
+    "date": "6/4/26 10:03 AM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Bryan Hudson",
+        "pos": "RP",
+        "mlbTeam": "CHW",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/4/26"
+  },
+  {
+    "date": "6/5/26 2:33 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Noelvi Marte",
+        "pos": "3B,RF",
+        "mlbTeam": "CIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Joshua Baez",
+        "pos": "RF",
+        "mlbTeam": "STL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/5/26"
+  },
+  {
+    "date": "6/5/26 2:33 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Noah Cameron",
+        "pos": "SP",
+        "mlbTeam": "KC",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/5/26"
   }
 ]
