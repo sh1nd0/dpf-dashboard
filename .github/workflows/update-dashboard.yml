@@ -74,8 +74,13 @@ jobs:
         continue-on-error: true  # Don't fail the deploy if Savant is down
 
       - name: Fetch FanGraphs Stuff+ / Location+ / Pitching+
+        # Reads the MLB-wide Stuff+ file that the thatsball.baby project
+        # scrapes via browserless (FanGraphs 403s direct/pybaseball fetches
+        # from CI). Needs a token with contents:read on that private repo.
+        env:
+          TBB_READ_TOKEN: ${{ secrets.TBB_READ_TOKEN }}
         run: python fetch_stuffplus.py
-        continue-on-error: true  # Don't fail the deploy if FanGraphs is down
+        continue-on-error: true  # Don't fail the deploy if the source is unavailable
 
       - name: Scrape CBS league (transactions + rosters) via cookies
         env:
