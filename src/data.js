@@ -1,5 +1,5 @@
 // ── Password Authentication ────────────────────────────────────────────────
-const PASSWORD_HASH = '76819e4ffa9e984236f44df89b5a156e0d637c0c622cbca3fdb11104116da1e8';
+const PASSWORD_HASH = '2b7051fbf461c99ef6ddd81b4dfd12f59555da74d37ba9d4221421fb67026a1e';
 
 async function hashPassword(pwd) {
   const encoder = new TextEncoder();
