@@ -2756,7 +2756,7 @@
     "players": [
       {
         "name": "Mauricio Dubon",
-        "pos": "2B,3B,SS,LF",
+        "pos": "2B,3B,SS,LF,CF",
         "mlbTeam": "ATL",
         "action": "Added off Waivers"
       },
@@ -2904,7 +2904,7 @@
       {
         "name": "Joel Kuhnel",
         "pos": "RP",
-        "mlbTeam": "ATH",
+        "mlbTeam": "MIL",
         "action": "Added off Waivers"
       }
     ],
@@ -3092,7 +3092,7 @@
       },
       {
         "name": "Mauricio Dubon",
-        "pos": "2B,3B,SS,LF",
+        "pos": "2B,3B,SS,LF,CF",
         "mlbTeam": "ATL",
         "action": "Dropped"
       }
@@ -3411,7 +3411,7 @@
       {
         "name": "Joel Kuhnel",
         "pos": "RP",
-        "mlbTeam": "ATH",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -6796,5 +6796,41 @@
       }
     ],
     "effective": "6/6/26"
+  },
+  {
+    "date": "6/6/26 1:57 PM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Luis Garcia",
+        "pos": "1B,2B",
+        "mlbTeam": "WAS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/7/26"
+  },
+  {
+    "date": "6/7/26 2:21 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Hunter Gaddis",
+        "pos": "RP",
+        "mlbTeam": "CLE",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jeff Hoffman",
+        "pos": "RP",
+        "mlbTeam": "TOR",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/7/26"
   }
 ]
