@@ -38,9 +38,36 @@ jobs:
       - name: Install dependencies
         run: pip install pandas numpy pybaseball requests beautifulsoup4
 
-      - name: Fetch 2026 stats (saves daily snapshots to data/snapshots/)
+      - name: Fetch 2026 stats (current bat_2026.csv / pit_2026.csv)
         run: python fetch_stats.py
         continue-on-error: true  # Don't fail if season hasn't started
+
+      - name: Snapshot today's stats + rebuild rolling index
+        # fetch_stats.py only writes the *current* CSVs. The rolling/trend
+        # columns (14d HOT/COLD, 7d+ LCV delta) need a dated snapshot per day
+        # plus index.json/lcv_stats.json rebuilt from them. This was part of the
+        # old local routine and was missing after the CI migration.
+        run: |
+          DATE=$(TZ='America/New_York' date +%F)
+          made=0
+          if [ -s data/bat_2026.csv ] && [ "$(wc -l < data/bat_2026.csv)" -gt 1 ]; then
+            cp data/bat_2026.csv "data/snapshots/bat_${DATE}.csv"
+            echo "Wrote data/snapshots/bat_${DATE}.csv"; made=1
+          else
+            echo "bat_2026.csv empty/missing — skipping bat snapshot"
+          fi
+          if [ -s data/pit_2026.csv ] && [ "$(wc -l < data/pit_2026.csv)" -gt 1 ]; then
+            cp data/pit_2026.csv "data/snapshots/pit_${DATE}.csv"
+            echo "Wrote data/snapshots/pit_${DATE}.csv"; made=1
+          else
+            echo "pit_2026.csv empty/missing — skipping pit snapshot"
+          fi
+          if [ "$made" = "1" ]; then
+            python tools/build_snapshots_index.py
+          else
+            echo "No fresh stat CSVs — leaving rolling index unchanged"
+          fi
+        continue-on-error: true  # Don't block deploy if the stats fetch produced nothing
 
       - name: Fetch Baseball Savant statcast + percentile ranks
         run: python fetch_savant.py
@@ -69,7 +96,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/snapshots/ data/bat_statcast_2026.csv data/stuff_plus_2026.csv data/savant_percentiles_bat_2026.csv data/savant_percentiles_pit_2026.csv data/cbs_transactions.json data/cbs_rosters.json data/season_status.json data/last_daily_run.json || true
+          git add data/snapshots/ data/bat_2026.csv data/pit_2026.csv data/bat_statcast_2026.csv data/stuff_plus_2026.csv data/savant_percentiles_bat_2026.csv data/savant_percentiles_pit_2026.csv data/cbs_transactions.json data/cbs_rosters.json data/season_status.json data/last_daily_run.json || true
           if git diff --cached --quiet; then
             echo "No new snapshot files to commit"
           else
