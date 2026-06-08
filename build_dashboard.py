@@ -217,6 +217,46 @@ pit['era']  = pit['era'] / 100
 pit['whip'] = pit['whip'] / 1000
 pit['war']  = pit['war'] / 10
 
+# ── Include rostered players missing from the draft pool ──────────────────
+# dc_bat_full.csv is a frozen pre-season draft universe; players who debuted
+# after the draft (recent call-ups) aren't in it, so a rostered call-up would
+# render with no stats even with live numbers. Pull any CBS-rostered batter
+# that has live 2026 stats but isn't in the draft pool, mapped into the pool's
+# (already-decoded) shape with live stats. Projection-only columns (WAR) are
+# left at 0. This keeps the draft universe as the analytics base while
+# guaranteeing every rostered player actually shows up.
+try:
+    _rostered = set()
+    with open('data/cbs_rosters.json') as _rf:
+        for _plist in json.load(_rf).values():
+            if isinstance(_plist, list):
+                _rostered.update(p.strip() for p in _plist if isinstance(p, str))
+    _bat26_team = {}
+    if 'bat26' in dir():
+        for _, _r in bat26.iterrows():
+            _bat26_team[_r['name']] = _r.get('team', '')
+    _dc_names = set(bat['name'])
+    _add_rows = []
+    for _nm in sorted(_rostered):
+        if _nm in _dc_names or _nm not in bat26_lookup:
+            continue
+        _s = bat26_lookup[_nm]
+        _add_rows.append({
+            'name': _nm, 'team': _bat26_team.get(_nm, ''),
+            'pos': cbs_pos.get(_nm) or 'UT',
+            'pa': _s['pa'], 'hr': _s['hr'], 'r': _s['r'], 'rbi': _s['rbi'],
+            'sb': _s['sb'], 'so': _s['so'],
+            'avg': _s['avg'], 'obp': _s['obp'], 'slg': _s['slg'], 'war': 0.0,
+        })
+    if _add_rows:
+        bat = pd.concat([bat, pd.DataFrame(_add_rows)], ignore_index=True)
+        print(f"Roster-pool augmentation: added {len(_add_rows)} call-ups "
+              f"missing from draft pool ({', '.join(r['name'] for r in _add_rows)})")
+    else:
+        print("Roster-pool augmentation: no missing rostered batters")
+except Exception as _e:
+    print(f"WARN: roster-pool augmentation skipped: {_e}")
+
 # ── Filter to meaningful players ──────────────────────────────────────────
 bat_pool = bat[bat['pa'] >= 100].copy()
 pit_pool = pit[pit['ip'] >= 30].copy()
