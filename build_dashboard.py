@@ -218,10 +218,10 @@ pit['whip'] = pit['whip'] / 1000
 pit['war']  = pit['war'] / 10
 
 # ── Filter to meaningful players ──────────────────────────────────────────
-bat_pool = bat[bat['pa'] >= 200].copy()
+bat_pool = bat[bat['pa'] >= 100].copy()
 pit_pool = pit[pit['ip'] >= 30].copy()
 
-print(f"Batter pool: {len(bat_pool)} players (PA>=200)")
+print(f"Batter pool: {len(bat_pool)} players (PA>=100)")
 print(f"Pitcher pool: {len(pit_pool)} players (IP>=30)")
 
 # ── CBS position mapping ─────────────────────────────────────────────────
