@@ -6832,5 +6832,20 @@
       }
     ],
     "effective": "6/7/26"
+  },
+  {
+    "date": "6/7/26 11:58 PM ET",
+    "teamId": "5",
+    "teamName": "Buddy Buddy Buddy All On Base",
+    "team": "Buddy Buddy Buddy All On Base",
+    "players": [
+      {
+        "name": "Robert Garcia",
+        "pos": "RP",
+        "mlbTeam": "TEX",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/8/26"
   }
 ]
