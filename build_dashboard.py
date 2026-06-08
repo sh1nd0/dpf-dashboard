@@ -257,6 +257,50 @@ try:
 except Exception as _e:
     print(f"WARN: roster-pool augmentation skipped: {_e}")
 
+# ── Include rostered pitchers missing from the draft pool ─────────────────
+# Same frozen-draft-file issue as batters: dc_pit_full.csv is a pre-season
+# snapshot, so a rostered post-draft call-up pitcher would render with no
+# stats. Add any CBS-rostered pitcher with live 2026 stats that isn't in the
+# draft pool. role (SP/RP) drives the SP/RP z-score split, so resolve it from
+# CBS position, falling back to a QS-based heuristic; gs/g are unused.
+try:
+    _rostered_p = set()
+    with open('data/cbs_rosters.json') as _rf:
+        for _plist in json.load(_rf).values():
+            if isinstance(_plist, list):
+                _rostered_p.update(p.strip() for p in _plist if isinstance(p, str))
+    _pit26_team = {}
+    if 'pit26' in dir():
+        for _, _r in pit26.iterrows():
+            _pit26_team[_r['name']] = _r.get('team', '')
+    _dc_pnames = set(pit['name'])
+    _add_p = []
+    for _nm in sorted(_rostered_p):
+        if _nm in _dc_pnames or _nm not in pit26_lookup:
+            continue
+        _s = pit26_lookup[_nm]
+        _cbs = (cbs_pos.get(_nm) or '').upper()
+        if 'SP' in _cbs:
+            _role = 'SP'
+        elif 'RP' in _cbs:
+            _role = 'RP'
+        else:
+            _role = 'SP' if _s['qs'] > 0 else 'RP'
+        _add_p.append({
+            'name': _nm, 'team': _pit26_team.get(_nm, ''), 'role': _role,
+            'ip': _s['ip'], 'w': _s['w'], 'sv': _s['sv'], 'hld': _s['hld'],
+            'era': _s['era'], 'whip': _s['whip'], 'so': _s['so'],
+            'hr': _s['hr'], 'qs': _s['qs'], 'gs': 0, 'g': 0, 'war': 0.0,
+        })
+    if _add_p:
+        pit = pd.concat([pit, pd.DataFrame(_add_p)], ignore_index=True)
+        print(f"Roster-pool augmentation (pit): added {len(_add_p)} call-ups "
+              f"({', '.join(r['name'] for r in _add_p)})")
+    else:
+        print("Roster-pool augmentation (pit): no missing rostered pitchers")
+except Exception as _e:
+    print(f"WARN: pitcher roster-pool augmentation skipped: {_e}")
+
 # ── Filter to meaningful players ──────────────────────────────────────────
 bat_pool = bat[bat['pa'] >= 100].copy()
 pit_pool = pit[pit['ip'] >= 30].copy()
