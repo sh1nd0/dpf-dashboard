@@ -135,117 +135,117 @@
       "homeScore": 10.0
     }
   ],
-  "myRecord": "3-1-0",
+  "myRecord": "3-2-0",
   "standings": [
     {
-      "team": "Blame it on the Rainiel",
-      "W": 4,
-      "L": 0,
-      "T": 0,
-      "PCT": 1.0,
-      "GB": 0.0,
-      "streak": "W4"
-    },
-    {
       "team": "Weird Fishes / Arrighetti",
-      "W": 3,
+      "W": 4,
       "L": 1,
       "T": 0,
-      "PCT": 0.75,
-      "GB": 1.0,
-      "streak": "L1"
-    },
-    {
-      "team": "Colonel Corbin's Ascent",
-      "W": 3,
-      "L": 1,
-      "T": 0,
-      "PCT": 0.75,
-      "GB": 1.0,
+      "PCT": 0.8,
+      "GB": 0.0,
       "streak": "W1"
     },
     {
-      "team": "Okamotomami",
-      "W": 3,
+      "team": "Colonel Corbin's Ascent",
+      "W": 4,
       "L": 1,
       "T": 0,
-      "PCT": 0.75,
-      "GB": 1.0,
+      "PCT": 0.8,
+      "GB": 0.0,
+      "streak": "W2"
+    },
+    {
+      "team": "Blame it on the Rainiel",
+      "W": 4,
+      "L": 1,
+      "T": 0,
+      "PCT": 0.8,
+      "GB": 0.0,
       "streak": "L1"
     },
     {
       "team": "Dinosaur Jr Caminero",
-      "W": 2,
+      "W": 3,
       "L": 2,
       "T": 0,
-      "PCT": 0.5,
-      "GB": 2.0,
-      "streak": "W2"
+      "PCT": 0.6,
+      "GB": 1.0,
+      "streak": "W3"
+    },
+    {
+      "team": "Okamotomami",
+      "W": 3,
+      "L": 2,
+      "T": 0,
+      "PCT": 0.6,
+      "GB": 1.0,
+      "streak": "L2"
     },
     {
       "team": "Buddy Buddy Buddy All On Base",
-      "W": 2,
+      "W": 3,
       "L": 2,
       "T": 0,
-      "PCT": 0.5,
-      "GB": 2.0,
-      "streak": "W1"
-    },
-    {
-      "team": "A Pete Crow-Armstrong Looked at Me",
-      "W": 2,
-      "L": 2,
-      "T": 0,
-      "PCT": 0.5,
-      "GB": 2.0,
-      "streak": "W1"
+      "PCT": 0.6,
+      "GB": 1.0,
+      "streak": "W2"
     },
     {
       "team": "Popped A Mahle I'm Sweating",
       "W": 2,
       "L": 2,
-      "T": 0,
+      "T": 1,
       "PCT": 0.5,
-      "GB": 2.0,
-      "streak": "W2"
+      "GB": 1.5,
+      "streak": "T1"
     },
     {
-      "team": "Before and After Shohei",
-      "W": 1,
-      "L": 2,
-      "T": 1,
-      "PCT": 0.375,
-      "GB": 2.5,
+      "team": "A Pete Crow-Armstrong Looked at Me",
+      "W": 2,
+      "L": 3,
+      "T": 0,
+      "PCT": 0.4,
+      "GB": 2.0,
       "streak": "L1"
     },
     {
       "team": "Everythings McGonigle Green",
-      "W": 1,
+      "W": 2,
       "L": 3,
       "T": 0,
-      "PCT": 0.25,
-      "GB": 3.0,
-      "streak": "L3"
+      "PCT": 0.4,
+      "GB": 2.0,
+      "streak": "W1"
+    },
+    {
+      "team": "Before and After Shohei",
+      "W": 1,
+      "L": 3,
+      "T": 1,
+      "PCT": 0.3,
+      "GB": 2.5,
+      "streak": "L2"
     },
     {
       "team": "Yesavage Garden",
       "W": 0,
       "L": 3,
-      "T": 1,
-      "PCT": 0.125,
-      "GB": 3.5,
-      "streak": "L1"
+      "T": 2,
+      "PCT": 0.2,
+      "GB": 3.0,
+      "streak": "T1"
     },
     {
       "team": "Ballesteros, Let the Rhythm Take You Over",
       "W": 0,
-      "L": 4,
+      "L": 5,
       "T": 0,
       "PCT": 0.0,
       "GB": 4.0,
-      "streak": "L4"
+      "streak": "L5"
     }
   ],
-  "updated": "2026-06-08T05:26:48.094302Z",
+  "updated": "2026-06-08T14:05:48.278473Z",
   "lastUpdated": "2026-06-08 (period 6 in progress, standings only — category breakdown from last local run)"
 }

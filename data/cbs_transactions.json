@@ -191,7 +191,7 @@
     "players": [
       {
         "name": "Chad Patrick",
-        "pos": "SP",
+        "pos": "SP,RP",
         "mlbTeam": "MIL",
         "action": "Added"
       }
@@ -2270,7 +2270,7 @@
       },
       {
         "name": "Chad Patrick",
-        "pos": "SP",
+        "pos": "SP,RP",
         "mlbTeam": "MIL",
         "action": "Dropped"
       }
@@ -4475,7 +4475,7 @@
     "players": [
       {
         "name": "Reynaldo Lopez",
-        "pos": "SP",
+        "pos": "SP,RP",
         "mlbTeam": "ATL",
         "action": "Dropped"
       }
@@ -5828,7 +5828,7 @@
       },
       {
         "name": "Chad Patrick",
-        "pos": "SP",
+        "pos": "SP,RP",
         "mlbTeam": "MIL",
         "action": "Added off Waivers"
       },
@@ -6173,7 +6173,7 @@
       },
       {
         "name": "Chad Patrick",
-        "pos": "SP",
+        "pos": "SP,RP",
         "mlbTeam": "MIL",
         "action": "Dropped"
       }
@@ -6444,7 +6444,7 @@
       },
       {
         "name": "Matt McLain",
-        "pos": "2B",
+        "pos": "2B,SS",
         "mlbTeam": "CIN",
         "action": "Dropped"
       },
@@ -6462,7 +6462,7 @@
       },
       {
         "name": "Chad Patrick",
-        "pos": "SP",
+        "pos": "SP,RP",
         "mlbTeam": "MIL",
         "action": "Activated"
       },
@@ -6843,6 +6843,120 @@
         "name": "Robert Garcia",
         "pos": "RP",
         "mlbTeam": "TEX",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/8/26"
+  },
+  {
+    "date": "6/8/26 2:14 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Brent Headrick",
+        "pos": "RP",
+        "mlbTeam": "NYY",
+        "action": "Activated"
+      },
+      {
+        "name": "Tony Santillan",
+        "pos": "RP",
+        "mlbTeam": "CIN",
+        "action": "Dropped"
+      },
+      {
+        "name": "Brandon Valenzuela",
+        "pos": "C",
+        "mlbTeam": "TOR",
+        "action": "Activated"
+      },
+      {
+        "name": "Carson Kelly",
+        "pos": "C",
+        "mlbTeam": "CHC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/8/26"
+  },
+  {
+    "date": "6/8/26 2:14 AM ET",
+    "teamId": "5",
+    "teamName": "Buddy Buddy Buddy All On Base",
+    "team": "Buddy Buddy Buddy All On Base",
+    "players": [
+      {
+        "name": "Curtis Mead",
+        "pos": "1B,3B",
+        "mlbTeam": "WAS",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Nolan Arenado",
+        "pos": "3B",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
+      },
+      {
+        "name": "Jake McCarthy",
+        "pos": "LF,CF",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Willy Adames",
+        "pos": "SS",
+        "mlbTeam": "SF",
+        "action": "Activated"
+      },
+      {
+        "name": "Xander Bogaerts",
+        "pos": "SS",
+        "mlbTeam": "SD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/8/26"
+  },
+  {
+    "date": "6/8/26 2:14 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Tyler Holton",
+        "pos": "SP,RP",
+        "mlbTeam": "DET",
+        "action": "Activated"
+      },
+      {
+        "name": "Jack Leiter",
+        "pos": "SP",
+        "mlbTeam": "TEX",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/8/26"
+  },
+  {
+    "date": "6/8/26 2:14 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Jung Hoo Lee",
+        "pos": "CF,RF",
+        "mlbTeam": "SF",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Carlos Cortes",
+        "pos": "RF",
+        "mlbTeam": "ATH",
         "action": "Dropped"
       }
     ],
