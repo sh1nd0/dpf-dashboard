@@ -7003,5 +7003,33 @@
       }
     ],
     "effective": "6/9/26"
+  },
+  {
+    "date": "6/9/26 8:55 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Ceddanne Rafaela",
+        "pos": "2B,CF",
+        "mlbTeam": "BOS",
+        "action": "Traded from Weird Fishes / Arrighetti"
+      }
+    ]
+  },
+  {
+    "date": "6/9/26 8:55 AM ET",
+    "teamId": "1",
+    "teamName": "Weird Fishes / Arrighetti",
+    "team": "Weird Fishes / Arrighetti",
+    "players": [
+      {
+        "name": "Jose Altuve",
+        "pos": "2B,LF",
+        "mlbTeam": "HOU",
+        "action": "Traded from Yesavage Garden"
+      }
+    ]
   }
 ]
