@@ -7031,5 +7031,101 @@
         "action": "Traded from Yesavage Garden"
       }
     ]
+  },
+  {
+    "date": "6/9/26 3:04 PM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Brayan Rocchio",
+        "pos": "2B,SS",
+        "mlbTeam": "CLE",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/9/26"
+  },
+  {
+    "date": "6/10/26 3:29 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Jackson Jobe",
+        "pos": "SP",
+        "mlbTeam": "DET",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Hunter Gaddis",
+        "pos": "RP",
+        "mlbTeam": "CLE",
+        "action": "Dropped"
+      },
+      {
+        "name": "Addison Barger",
+        "pos": "3B,RF",
+        "mlbTeam": "TOR",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "David Hamilton",
+        "pos": "2B,3B,SS",
+        "mlbTeam": "MIL",
+        "action": "Dropped"
+      },
+      {
+        "name": "Cole Carrigg",
+        "pos": "CF",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Daulton Varsho",
+        "pos": "CF",
+        "mlbTeam": "TOR",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/10/26"
+  },
+  {
+    "date": "6/10/26 3:29 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Sam Bachman",
+        "pos": "RP",
+        "mlbTeam": "LAA",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/10/26"
+  },
+  {
+    "date": "6/10/26 3:29 AM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Jimmy Crooks",
+        "pos": "C",
+        "mlbTeam": "STL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Shane Drohan",
+        "pos": "SP,RP",
+        "mlbTeam": "MIL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/10/26"
   }
 ]
