@@ -1,3 +1,26 @@
+// ── League-average thresholds for 2026 quality-metric coloring ───────────
+// K%, xwOBA, Brl%, HH% cells color green/red relative to these averages.
+// Pools use a small playing-time floor (50 PA / 10 IP) so cup-of-coffee
+// call-ups don't drag the averages. Computed once per page load.
+let _s26LeagueAvgs = null;
+function getS26LeagueAvgs() {
+  if (_s26LeagueAvgs) return _s26LeagueAvgs;
+  const mean = arr => arr.length ? arr.reduce((s, v) => s + v, 0) / arr.length : null;
+  const vals = (pool, key) => pool.map(p => parseFloat(p[key])).filter(Number.isFinite);
+  const bats = ALL.filter(p => p.type === 'BAT' && (parseFloat(p.s26_pa) || 0) >= 50);
+  const pits = ALL.filter(p => p.type === 'PIT' && (parseFloat(p.s26_ip) || 0) >= 10);
+  _s26LeagueAvgs = {
+    bat: {
+      kpct: mean(vals(bats, 's26_kpct')),
+      xwoba: mean(vals(bats, 's26_xwoba')),
+      barrel: mean(vals(bats, 's26_barrel')),
+      hardhit: mean(vals(bats, 's26_hardhit'))
+    },
+    pit: { kpct: mean(vals(pits, 's26_kpct')) }
+  };
+  return _s26LeagueAvgs;
+}
+
 // ── Render ─────────────────────────────────────────────────────────────────
 function render() {
   const isPlayerTab = (DPF.ui.currentTab === 'all');
@@ -388,8 +411,32 @@ function render() {
         const v = parseInt(val);
         cls += v >= 110 ? ' val-pos' : v <= 90 ? ' val-neg' : '';
       }
-      else if (c.key === 's26_woba' || c.key === 's26_xwoba') val = parseFloat(val).toFixed(3);
-      else if (c.key === 's26_barrel' || c.key === 's26_hardhit') val = parseFloat(val).toFixed(1) + '%';
+      else if (c.key === 's26_woba' || c.key === 's26_xwoba') {
+        const v = parseFloat(val);
+        val = v.toFixed(3);
+        if (c.key === 's26_xwoba' && p.type === 'BAT') {
+          const a = getS26LeagueAvgs().bat.xwoba;
+          if (a != null) cls += v > a ? ' val-pos' : v < a ? ' val-neg' : '';
+        }
+      }
+      else if (c.key === 's26_barrel' || c.key === 's26_hardhit') {
+        const v = parseFloat(val);
+        val = v.toFixed(1) + '%';
+        if (p.type === 'BAT') {
+          const a = getS26LeagueAvgs().bat[c.key === 's26_barrel' ? 'barrel' : 'hardhit'];
+          if (a != null) cls += v > a ? ' val-pos' : v < a ? ' val-neg' : '';
+        }
+      }
+      else if (c.key === 's26_kpct') {
+        const v = parseFloat(val);
+        const a = getS26LeagueAvgs()[p.type === 'BAT' ? 'bat' : 'pit'].kpct;
+        // Batter K%: lower is better (K is a negative league category).
+        // Pitcher K%: higher is better.
+        if (a != null && Number.isFinite(v) && v !== a) {
+          const better = p.type === 'BAT' ? v < a : v > a;
+          cls += better ? ' val-pos' : ' val-neg';
+        }
+      }
       else if (c.key === 's26_xwDelta') {
         const v = parseFloat(val);
         cls += v > 0 ? ' val-pos' : v < 0 ? ' val-neg' : '';
