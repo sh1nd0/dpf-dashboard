@@ -7181,5 +7181,41 @@
       }
     ],
     "effective": "6/11/26"
+  },
+  {
+    "date": "6/11/26 11:39 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Colin Holderman",
+        "pos": "RP",
+        "mlbTeam": "CLE",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/11/26"
+  },
+  {
+    "date": "6/12/26 2:05 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Luis Castillo",
+        "pos": "SP",
+        "mlbTeam": "SEA",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jeffrey Springs",
+        "pos": "SP",
+        "mlbTeam": "ATH",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/12/26"
   }
 ]
