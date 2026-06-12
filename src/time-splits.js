@@ -359,6 +359,17 @@ function _initOriginalLcvValues() {
       p._splitConfidence7 = split7.splitConfidence;
     }
 
+    // 30-day rolling LCV — same thresholds as the 14-day pass (25 PA, 10 IP /
+    // 3 IP RP); the wider window just makes those easier to clear.
+    const split30 = p.type === 'PIT'
+      ? computePitSplitLcv(p, 30)
+      : computeBatSplitLcv(p, 30, { minPa: 25 });
+    if (split30) {
+      p.rollingLcv30 = split30.actualLcv;
+      p.rollingLcvDelta30 = split30.lcvDelta;
+      p._splitConfidence30 = split30.splitConfidence;
+    }
+
     const split = p.type === 'PIT'
       ? computePitSplitLcv(p, 14)
       : computeBatSplitLcv(p, 14, { minPa: 25 });
@@ -410,6 +421,17 @@ function _initOriginalLcvValues() {
   _applyPlus(_bats7, 'rollingLcv7', 'rollingLcvPlus7');
   _applyPlus(_sps7,  'rollingLcv7', 'rollingLcvPlus7');
   _applyPlus(_rps7,  'rollingLcv7', 'rollingLcvPlus7');
+
+  // Same wRC+-style scaling for the 30-day rolling LCV → rollingLcvPlus30.
+  // The within-pool z-scoring also washes out the unit mismatch between 30d
+  // counting stats and the 14d-window pool means in LCV_STATS.
+  const _withRolling30 = ALL.filter(p => Number.isFinite(p.rollingLcv30));
+  const _bats30 = _withRolling30.filter(p => p.type === 'BAT');
+  const _sps30 = _withRolling30.filter(p => p.type === 'PIT' && (p.pos === 'SP' || p.primaryPos === 'SP'));
+  const _rps30 = _withRolling30.filter(p => p.type === 'PIT' && p.pos !== 'SP' && p.primaryPos !== 'SP');
+  _applyPlus(_bats30, 'rollingLcv30', 'rollingLcvPlus30');
+  _applyPlus(_sps30,  'rollingLcv30', 'rollingLcvPlus30');
+  _applyPlus(_rps30,  'rollingLcv30', 'rollingLcvPlus30');
 
   // HOT / COLD label tied to the SAME observed 14d+ value the user sees
   // in the column. wRC+ thresholds:

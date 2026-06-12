@@ -81,19 +81,19 @@ const batCols26A = [
   {key:'recScorePlus',label:'Rec+',w:55,cls:'lcv-col',tip:'Rec+: blended recommendation score on wRC+ scale (100 = pool average, 115 = +1sigma). 60% aLCV + 15% positional flexibility + 15% age + 10% projected LCV, z-scored within type pool. Drives Roster/Trade/Waiver recs.'},
   {key:'rollingLcvPlus7',label:'7d+',w:60,cls:'lcv-col',tip:'7d+: rolling 7-day LCV on the 100-scale (100 = pool average, 115 = +1sigma). Same wRC+-style scale as 14d+, but only the last 7 snapshots count (10 PA / 5 IP min).'},
   {key:'rollingLcvPlus14',label:'14d+',w:60,cls:'lcv-col',tip:'14d+: rolling 14-day LCV on the 100-scale (100 = pool average, 115 = +1sigma). Same wRC+-style scale as aLCV+, but only the last 14 snapshots count.'},
-  {key:'s26_pa',label:'PA',w:50}, {key:'s26_avg',label:'AVG',w:55}, {key:'s26_obp',label:'OBP',w:55},
-  {key:'s26_slg',label:'SLG',w:55}, {key:'s26_hr',label:'HR',w:45}, {key:'s26_r',label:'R',w:45},
-  {key:'s26_rbi',label:'RBI',w:45}, {key:'s26_sb',label:'SB',w:45}, {key:'s26_so',label:'K',w:45},
-  // Simplified 2026 batter view: removed s26_iso (derivable from SLG-AVG),
-  // s26_woba/dWoba (xwOBA captures the underlying quality better). BABIP kept as
-  // regression indicator; K%/BB% kept (useful rate stats for an -K league).
-  {key:'s26_bb',label:'BB',w:45,tip:'2026 walks'},
+  {key:'rollingLcvPlus30',label:'30d+',w:60,cls:'lcv-col',tip:'30d+: rolling 30-day LCV on the 100-scale (100 = pool average, 115 = +1sigma). Same wRC+-style scale as aLCV+, but only the last 30 snapshots count.'},
+  // Quality/rate metrics first (per user direction), then the counting stats.
+  // Removed: s26_so (K) and s26_bb (BB) counting columns \u2014 K%/BB% carry the
+  // same signal as rates. Also previously removed: s26_iso, s26_woba/dWoba.
+  {key:'s26_barrel',label:'Brl%',w:50,tip:'2026 barrel rate (Statcast)'}, {key:'dBarrel',label:'\u0394Brl',w:50,tip:'2026 Brl% minus 2025 Brl%'},
+  {key:'s26_hardhit',label:'HH%',w:50,tip:'2026 hard hit rate (95+ mph exit velo)'}, {key:'dHardhit',label:'\u0394HH',w:50,tip:'2026 HH% minus 2025 HH%'},
+  {key:'s26_xwoba',label:'xwOBA',w:55,tip:'2026 xwOBA (Statcast expected). Better than wOBA for future-predictive signal'}, {key:'dXwoba',label:'\u0394xwOBA',w:58,tip:'2026 xwOBA minus 2025 xwOBA. Positive = underlying quality improving'},
   {key:'s26_kpct',label:'K%',w:48,tip:'2026 strikeout rate (K/PA). High = swing-and-miss; this league penalizes Ks'},
   {key:'s26_bbpct',label:'BB%',w:48,tip:'2026 walk rate (BB/PA). High = plate discipline'},
   {key:'s26_babip',label:'BABIP',w:55,tip:'2026 Batting Average on Balls in Play. Regression indicator: outliers tend to normalize'},
-  {key:'s26_xwoba',label:'xwOBA',w:55,tip:'2026 xwOBA (Statcast expected). Better than wOBA for future-predictive signal'}, {key:'dXwoba',label:'\u0394xwOBA',w:58,tip:'2026 xwOBA minus 2025 xwOBA. Positive = underlying quality improving'},
-  {key:'s26_barrel',label:'Brl%',w:50,tip:'2026 barrel rate (Statcast)'}, {key:'dBarrel',label:'\u0394Brl',w:50,tip:'2026 Brl% minus 2025 Brl%'},
-  {key:'s26_hardhit',label:'HH%',w:50,tip:'2026 hard hit rate (95+ mph exit velo)'}, {key:'dHardhit',label:'\u0394HH',w:50,tip:'2026 HH% minus 2025 HH%'}
+  {key:'s26_pa',label:'PA',w:50}, {key:'s26_avg',label:'AVG',w:55}, {key:'s26_obp',label:'OBP',w:55},
+  {key:'s26_slg',label:'SLG',w:55}, {key:'s26_hr',label:'HR',w:45}, {key:'s26_r',label:'R',w:45},
+  {key:'s26_rbi',label:'RBI',w:45}, {key:'s26_sb',label:'SB',w:45}
 ];
 const pitCols26A = [
   {key:'name',label:'Player',w:160}, {key:'team',label:'Team',w:50}, {key:'pos',label:'Pos',w:50},
@@ -101,18 +101,19 @@ const pitCols26A = [
   {key:'recScorePlus',label:'Rec+',w:55,cls:'lcv-col',tip:'Rec+: blended recommendation score on wRC+ scale (100 = pool average, 115 = +1sigma). 60% aLCV + 15% posFlex + 15% age + 10% LCV, z-scored within SP/RP pool.'},
   {key:'rollingLcvPlus7',label:'7d+',w:60,cls:'lcv-col',tip:'7d+: rolling 7-day LCV on the 100-scale (100 = pool average, 115 = +1sigma). Same wRC+-style scale as 14d+, but only the last 7 snapshots count (10 PA / 5 IP min).'},
   {key:'rollingLcvPlus14',label:'14d+',w:60,cls:'lcv-col',tip:'14d+: rolling 14-day LCV on the 100-scale (100 = pool average, 115 = +1sigma). Same wRC+-style scale as aLCV+, but only the last 14 snapshots count.'},
-  {key:'s26_ip',label:'IP',w:50}, {key:'s26_era',label:'ERA',w:55}, {key:'s26_whip',label:'WHIP',w:60},
-  {key:'s26_fip',label:'FIP',w:50,tip:'2026 FIP = (13×HR + 3×(BB+HBP) − 2×K) / IP + 3.10. ERA estimator that strips luck'},
-  {key:'s26_so',label:'K',w:50}, {key:'s26_w',label:'W',w:40}, {key:'s26_sv',label:'SV',w:40},
-  {key:'s26_hld',label:'HD',w:40}, {key:'s26_qs',label:'QS',w:40}, {key:'s26_hr',label:'HRA',w:45},
-  // Simplified 2026 pitcher view: removed s26_hr9 (derivable from HRA/IP),
-  // s26_pitching/dPitching (combo of Stuff+ and Loc+ — keep the components).
+  {key:'rollingLcvPlus30',label:'30d+',w:60,cls:'lcv-col',tip:'30d+: rolling 30-day LCV on the 100-scale (100 = pool average, 115 = +1sigma). Same wRC+-style scale as aLCV+, but only the last 30 snapshots count.'},
+  // Quality/rate metrics first (per user direction), then the counting stats.
+  // Removed: s26_so (K) and s26_bb (BB) counting columns — K%/BB% carry the
+  // same signal as rates. Also previously removed: s26_hr9, s26_pitching/dPitching.
   // FIP retained as a luck-free ERA estimator.
-  {key:'s26_bb',label:'BB',w:45,tip:'2026 walks allowed'},
+  {key:'s26_fip',label:'FIP',w:50,tip:'2026 FIP = (13×HR + 3×(BB+HBP) − 2×K) / IP + 3.10. ERA estimator that strips luck'},
   {key:'s26_kpct',label:'K%',w:48,tip:'2026 strikeout rate (K/BF). 25%+ is above average'},
   {key:'s26_bbpct',label:'BB%',w:48,tip:'2026 walk rate (BB/BF). Sub-8% is good control'},
   {key:'s26_stuff',label:'Stf+',w:50,tip:'2026 Stuff+ (pitch quality, 100=avg)'}, {key:'dStuff',label:'\u0394Stf',w:50,tip:'2026 Stuff+ minus 2025. Positive = stuff improving'},
-  {key:'s26_loc',label:'Loc+',w:50,tip:'2026 Location+ (command, 100=avg)'}, {key:'dLoc',label:'\u0394Loc',w:50,tip:'2026 Loc+ minus 2025. Positive = command improving'}
+  {key:'s26_loc',label:'Loc+',w:50,tip:'2026 Location+ (command, 100=avg)'}, {key:'dLoc',label:'\u0394Loc',w:50,tip:'2026 Loc+ minus 2025. Positive = command improving'},
+  {key:'s26_ip',label:'IP',w:50}, {key:'s26_era',label:'ERA',w:55}, {key:'s26_whip',label:'WHIP',w:60},
+  {key:'s26_w',label:'W',w:40}, {key:'s26_sv',label:'SV',w:40},
+  {key:'s26_hld',label:'HD',w:40}, {key:'s26_qs',label:'QS',w:40}, {key:'s26_hr',label:'HRA',w:45}
 ];
 // Mixed bat+pit view — shows advanced metrics alongside core stats.
 // Batting cells are blank for pitchers and vice versa.
@@ -123,23 +124,24 @@ const allCols26A = [
   {key:'recScorePlus',label:'Rec+',w:55,cls:'lcv-col',tip:'Rec+: blended recommendation score on wRC+ scale (100 = pool average, 115 = +1sigma). 60% aLCV + 15% posFlex + 15% age + 10% LCV.'},
   {key:'rollingLcvPlus7',label:'7d+',w:55,cls:'lcv-col',tip:'7d+: rolling 7-day LCV on the 100-scale (100 = pool average, 115 = +1sigma)'},
   {key:'rollingLcvPlus14',label:'14d+',w:55,cls:'lcv-col',tip:'14d+: rolling 14-day LCV on the 100-scale (100 = pool average, 115 = +1sigma)'},
-  // Batting core (blank for pitchers)
+  {key:'rollingLcvPlus30',label:'30d+',w:55,cls:'lcv-col',tip:'30d+: rolling 30-day LCV on the 100-scale (100 = pool average, 115 = +1sigma)'},
+  // Advanced batter metrics (quality first, per user direction; blank for pitchers)
+  {key:'s26_kpct',label:'K%',w:48,tip:'2026 K rate (batters)'},
+  {key:'s26_xwoba',label:'xwOBA',w:55,tip:'2026 xwOBA (Statcast expected)'},
+  {key:'s26_barrel',label:'Brl%',w:50,tip:'2026 barrel rate'},
+  {key:'s26_hardhit',label:'HH%',w:50,tip:'2026 hard-hit rate'},
+  // Advanced pitcher metrics (blank for batters)
+  {key:'s26_fip',label:'FIP',w:50,tip:'2026 FIP (luck-free ERA estimator)'},
+  {key:'s26_stuff',label:'Stf+',w:50,tip:'2026 Stuff+ (pitch quality, 100=avg)'},
+  {key:'s26_loc',label:'Loc+',w:50,tip:'2026 Location+ (command, 100=avg)'},
+  // Batting core (blank for pitchers; K and BB removed per user direction)
   {key:'s26_pa',label:'PA',w:45}, {key:'s26_avg',label:'AVG',w:50},
   {key:'s26_hr',label:'HR',w:38}, {key:'s26_r',label:'R',w:38}, {key:'s26_rbi',label:'RBI',w:38},
   {key:'s26_sb',label:'SB',w:38},
   // Pitching core (blank for batters)
   {key:'s26_ip',label:'IP',w:45}, {key:'s26_era',label:'ERA',w:50},
-  {key:'s26_whip',label:'WHIP',w:55}, {key:'s26_so',label:'K',w:38}, {key:'s26_sv',label:'SV',w:38},
-  {key:'s26_qs',label:'QS',w:38},
-  // Advanced batter metrics
-  {key:'s26_kpct',label:'K%',w:48,tip:'2026 K rate (batters)'},
-  {key:'s26_xwoba',label:'xwOBA',w:55,tip:'2026 xwOBA (Statcast expected)'},
-  {key:'s26_barrel',label:'Brl%',w:50,tip:'2026 barrel rate'},
-  {key:'s26_hardhit',label:'HH%',w:50,tip:'2026 hard-hit rate'},
-  // Advanced pitcher metrics
-  {key:'s26_fip',label:'FIP',w:50,tip:'2026 FIP (luck-free ERA estimator)'},
-  {key:'s26_stuff',label:'Stf+',w:50,tip:'2026 Stuff+ (pitch quality, 100=avg)'},
-  {key:'s26_loc',label:'Loc+',w:50,tip:'2026 Location+ (command, 100=avg)'}
+  {key:'s26_whip',label:'WHIP',w:55}, {key:'s26_sv',label:'SV',w:38},
+  {key:'s26_qs',label:'QS',w:38}
 ];
 
 // Actual vs Projected comparison columns (side by side: proj then actual then delta)

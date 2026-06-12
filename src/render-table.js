@@ -56,7 +56,7 @@ function render() {
 
   let filtered = data.filter(p => {
     if (q && !p.name.toLowerCase().includes(q) && !(p.team||'').toLowerCase().includes(q)) return false;
-    if (DPF.table.filterPos !== 'ALL' && p.primaryPos !== DPF.table.filterPos && !p.pos.includes(DPF.table.filterPos)) return false;
+    if (DPF.table.filterPos !== 'ALL' && p.primaryPos !== DPF.table.filterPos && !(p.pos || '').split('/').includes(DPF.table.filterPos)) return false;
     if (teamFilter !== 'all') {
       const tObj = LEAGUE_TEAMS.find(t => t.name === teamFilter);
       const onTeam = tObj && tObj.mine ? (state.myTeam||[]).includes(p.name) : (state.leagueTeams[teamFilter]||[]).includes(p.name);
@@ -360,7 +360,7 @@ function render() {
         cls += v >= 0 ? ' val-pos' : ' val-neg';
         val = (v > 0 ? '+' : '') + v.toFixed(2);
       }
-      else if (c.key === 'rollingLcvPlus7' || c.key === 'rollingLcvPlus14') {
+      else if (c.key === 'rollingLcvPlus7' || c.key === 'rollingLcvPlus14' || c.key === 'rollingLcvPlus30') {
         // Rolling LCV on the wRC+ scale: 100 = pool avg, 115 = +1sigma, 85 = -1sigma.
         const v = parseFloat(val);
         if (!isFinite(v)) { val = '—'; }
