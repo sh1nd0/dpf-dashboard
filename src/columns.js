@@ -103,16 +103,16 @@ const pitCols26A = [
   {key:'rollingLcvPlus14',label:'14d+',w:60,cls:'lcv-col',tip:'14d+: rolling 14-day LCV on the 100-scale (100 = pool average, 115 = +1sigma). Same wRC+-style scale as aLCV+, but only the last 14 snapshots count.'},
   {key:'rollingLcvPlus30',label:'30d+',w:60,cls:'lcv-col',tip:'30d+: rolling 30-day LCV on the 100-scale (100 = pool average, 115 = +1sigma). Same wRC+-style scale as aLCV+, but only the last 30 snapshots count.'},
   // Quality/rate metrics first (per user direction), then the counting stats.
-  // Removed: s26_so (K) and s26_bb (BB) counting columns — K%/BB% carry the
-  // same signal as rates. Also previously removed: s26_hr9, s26_pitching/dPitching.
-  // FIP retained as a luck-free ERA estimator.
+  // Removed: s26_bb (BB) counting column — BB% carries the same signal as a
+  // rate. K kept (league category). Also previously removed: s26_hr9,
+  // s26_pitching/dPitching. FIP retained as a luck-free ERA estimator.
   {key:'s26_fip',label:'FIP',w:50,tip:'2026 FIP = (13×HR + 3×(BB+HBP) − 2×K) / IP + 3.10. ERA estimator that strips luck'},
   {key:'s26_kpct',label:'K%',w:48,tip:'2026 strikeout rate (K/BF). 25%+ is above average'},
   {key:'s26_bbpct',label:'BB%',w:48,tip:'2026 walk rate (BB/BF). Sub-8% is good control'},
   {key:'s26_stuff',label:'Stf+',w:50,tip:'2026 Stuff+ (pitch quality, 100=avg)'}, {key:'dStuff',label:'\u0394Stf',w:50,tip:'2026 Stuff+ minus 2025. Positive = stuff improving'},
   {key:'s26_loc',label:'Loc+',w:50,tip:'2026 Location+ (command, 100=avg)'}, {key:'dLoc',label:'\u0394Loc',w:50,tip:'2026 Loc+ minus 2025. Positive = command improving'},
   {key:'s26_ip',label:'IP',w:50}, {key:'s26_era',label:'ERA',w:55}, {key:'s26_whip',label:'WHIP',w:60},
-  {key:'s26_w',label:'W',w:40}, {key:'s26_sv',label:'SV',w:40},
+  {key:'s26_so',label:'K',w:50}, {key:'s26_w',label:'W',w:40}, {key:'s26_sv',label:'SV',w:40},
   {key:'s26_hld',label:'HD',w:40}, {key:'s26_qs',label:'QS',w:40}, {key:'s26_hr',label:'HRA',w:45}
 ];
 // Mixed bat+pit view — shows advanced metrics alongside core stats.
@@ -140,7 +140,7 @@ const allCols26A = [
   {key:'s26_sb',label:'SB',w:38},
   // Pitching core (blank for batters)
   {key:'s26_ip',label:'IP',w:45}, {key:'s26_era',label:'ERA',w:50},
-  {key:'s26_whip',label:'WHIP',w:55}, {key:'s26_sv',label:'SV',w:38},
+  {key:'s26_whip',label:'WHIP',w:55}, {key:'s26_so',label:'K',w:38}, {key:'s26_sv',label:'SV',w:38},
   {key:'s26_qs',label:'QS',w:38}
 ];
 
