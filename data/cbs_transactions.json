@@ -5366,7 +5366,7 @@
     "players": [
       {
         "name": "Jacob Gonzalez",
-        "pos": "2B",
+        "pos": "1B,2B",
         "mlbTeam": "CHW",
         "action": "Added off Waivers"
       }
@@ -7217,5 +7217,41 @@
       }
     ],
     "effective": "6/12/26"
+  },
+  {
+    "date": "6/12/26 5:30 PM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Sean Newcomb",
+        "pos": "SP,RP",
+        "mlbTeam": "CHW",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/12/26"
+  },
+  {
+    "date": "6/13/26 2:39 AM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Shane Drohan",
+        "pos": "SP,RP",
+        "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Mitch Keller",
+        "pos": "SP",
+        "mlbTeam": "PIT",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/13/26"
   }
 ]
