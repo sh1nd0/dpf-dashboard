@@ -7253,5 +7253,93 @@
       }
     ],
     "effective": "6/13/26"
+  },
+  {
+    "date": "6/13/26 8:16 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Brent Headrick",
+        "pos": "RP",
+        "mlbTeam": "NYY",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      },
+      {
+        "name": "A.J. Ewing",
+        "pos": "CF",
+        "mlbTeam": "NYM",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      }
+    ]
+  },
+  {
+    "date": "6/13/26 8:16 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Devin Fitz-Gerald",
+        "pos": "SS",
+        "mlbTeam": "WAS",
+        "action": "Traded from Yesavage Garden"
+      },
+      {
+        "name": "Robert Suarez",
+        "pos": "RP",
+        "mlbTeam": "ATL",
+        "action": "Traded from Yesavage Garden"
+      }
+    ]
+  },
+  {
+    "date": "6/14/26 3:31 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Nick Gonzales",
+        "pos": "2B,3B",
+        "mlbTeam": "PIT",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Dylan Crews",
+        "pos": "RF",
+        "mlbTeam": "WAS",
+        "action": "Dropped"
+      },
+      {
+        "name": "Jett Williams",
+        "pos": "SS",
+        "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/14/26"
+  },
+  {
+    "date": "6/14/26 3:31 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Brayan Rocchio",
+        "pos": "2B,SS",
+        "mlbTeam": "CLE",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Aaron Nola",
+        "pos": "SP",
+        "mlbTeam": "PHI",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/14/26"
   }
 ]
