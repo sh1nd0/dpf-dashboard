@@ -7404,5 +7404,146 @@
       }
     ],
     "effective": "6/15/26"
+  },
+  {
+    "date": "6/16/26 12:55 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Ben Joyce",
+        "pos": "RP",
+        "mlbTeam": "LAA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/16/26"
+  },
+  {
+    "date": "6/16/26 5:53 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Yohandy Morales",
+        "pos": "1B",
+        "mlbTeam": "WAS",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "River Ryan",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Spencer Steer",
+        "pos": "1B,2B,LF,RF",
+        "mlbTeam": "CIN",
+        "action": "Dropped"
+      },
+      {
+        "name": "Paul Goldschmidt",
+        "pos": "1B",
+        "mlbTeam": "NYY",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Luis Lara",
+        "pos": "CF",
+        "mlbTeam": "MIL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/16/26"
+  },
+  {
+    "date": "6/16/26 5:53 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Jeff Hoffman",
+        "pos": "RP",
+        "mlbTeam": "TOR",
+        "action": "Activated"
+      }
+    ],
+    "effective": "6/16/26"
+  },
+  {
+    "date": "6/16/26 5:53 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Ryan Jeffers",
+        "pos": "C",
+        "mlbTeam": "MIN",
+        "action": "Activated"
+      },
+      {
+        "name": "Brandon Valenzuela",
+        "pos": "C",
+        "mlbTeam": "TOR",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/16/26"
+  },
+  {
+    "date": "6/16/26 5:53 AM ET",
+    "teamId": "1",
+    "teamName": "Weird Fishes / Arrighetti",
+    "team": "Weird Fishes / Arrighetti",
+    "players": [
+      {
+        "name": "Ezequiel Tovar",
+        "pos": "SS",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Kerry Carpenter",
+        "pos": "LF,RF",
+        "mlbTeam": "DET",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/16/26"
+  },
+  {
+    "date": "6/16/26 9:29 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Didier Fuentes",
+        "pos": "SP,RP",
+        "mlbTeam": "ATL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/16/26"
+  },
+  {
+    "date": "6/16/26 10:41 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Jakob Marsee",
+        "pos": "CF",
+        "mlbTeam": "MIA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/16/26"
   }
 ]
