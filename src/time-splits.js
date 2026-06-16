@@ -205,13 +205,27 @@ function computeBatSplitLcv(player, windowDays, opts) {
   return { actualLcv: Math.round(lcv * 100) / 100, lcvDelta: Math.round((lcv - projLcv) * 100) / 100, splitConfidence };
 }
 
+// Role for window-LCV bucketing + IP gating. Mirrors the SP/RP split in
+// build_snapshots_index.py (which builds the pool means/stds): classify by
+// ACTUAL USAGE — a quality start ⇒ SP, else a save/hold ⇒ RP — rather than by
+// CBS position eligibility. This keeps a pitcher gated against, and z-scored
+// against, the same pool his window stats were aggregated into. Without it an
+// SP-eligible-but-reliever-used arm (e.g. 0 QS, has holds) got the starter's
+// 10-IP/14d floor and the SP pool, so sparse usage left 7d/14d aLCV blank.
+// No QS/SV/HLD signal yet ⇒ fall back to position eligibility.
+function _pitcherUsageRole(p) {
+  if ((p.qs || 0) > 0) return 'SP';
+  if ((p.sv || 0) > 0 || (p.hld || 0) > 0) return 'RP';
+  return (p.pos === 'SP' || p.primaryPos === 'SP') ? 'SP' : 'RP';
+}
+
 /**
  * Compute actual LCV for a pitcher in a given time window.
  * Returns { actualLcv, lcvDelta, splitConfidence } or null.
  */
 function computePitSplitLcv(player, windowDays, opts) {
   const stats = computePitSplitStats(player.name, windowDays);
-  const isRP = (player.pos === 'RP' || player.primaryPos === 'RP');
+  const isRP = _pitcherUsageRole(player) === 'RP';
   // IP threshold: 3 IP for RPs, 10 IP for SPs by default. Callers (e.g. the
   // 7-day window) may override with opts.minIp / opts.minIpRp.
   let minIp;
@@ -405,8 +419,8 @@ function _initOriginalLcvValues() {
   }
   const _withRolling = ALL.filter(p => Number.isFinite(p.rollingLcv14));
   const _bats = _withRolling.filter(p => p.type === 'BAT');
-  const _sps = _withRolling.filter(p => p.type === 'PIT' && (p.pos === 'SP' || p.primaryPos === 'SP'));
-  const _rps = _withRolling.filter(p => p.type === 'PIT' && p.pos !== 'SP' && p.primaryPos !== 'SP');
+  const _sps = _withRolling.filter(p => p.type === 'PIT' && _pitcherUsageRole(p) === 'SP');
+  const _rps = _withRolling.filter(p => p.type === 'PIT' && _pitcherUsageRole(p) === 'RP');
   _applyPlus(_bats, 'rollingLcv14', 'rollingLcvPlus14');
   _applyPlus(_sps,  'rollingLcv14', 'rollingLcvPlus14');
   _applyPlus(_rps,  'rollingLcv14', 'rollingLcvPlus14');
@@ -416,8 +430,8 @@ function _initOriginalLcvValues() {
   // also lands at ~115 within its own role.
   const _withRolling7 = ALL.filter(p => Number.isFinite(p.rollingLcv7));
   const _bats7 = _withRolling7.filter(p => p.type === 'BAT');
-  const _sps7 = _withRolling7.filter(p => p.type === 'PIT' && (p.pos === 'SP' || p.primaryPos === 'SP'));
-  const _rps7 = _withRolling7.filter(p => p.type === 'PIT' && p.pos !== 'SP' && p.primaryPos !== 'SP');
+  const _sps7 = _withRolling7.filter(p => p.type === 'PIT' && _pitcherUsageRole(p) === 'SP');
+  const _rps7 = _withRolling7.filter(p => p.type === 'PIT' && _pitcherUsageRole(p) === 'RP');
   _applyPlus(_bats7, 'rollingLcv7', 'rollingLcvPlus7');
   _applyPlus(_sps7,  'rollingLcv7', 'rollingLcvPlus7');
   _applyPlus(_rps7,  'rollingLcv7', 'rollingLcvPlus7');
@@ -427,8 +441,8 @@ function _initOriginalLcvValues() {
   // counting stats and the 14d-window pool means in LCV_STATS.
   const _withRolling30 = ALL.filter(p => Number.isFinite(p.rollingLcv30));
   const _bats30 = _withRolling30.filter(p => p.type === 'BAT');
-  const _sps30 = _withRolling30.filter(p => p.type === 'PIT' && (p.pos === 'SP' || p.primaryPos === 'SP'));
-  const _rps30 = _withRolling30.filter(p => p.type === 'PIT' && p.pos !== 'SP' && p.primaryPos !== 'SP');
+  const _sps30 = _withRolling30.filter(p => p.type === 'PIT' && _pitcherUsageRole(p) === 'SP');
+  const _rps30 = _withRolling30.filter(p => p.type === 'PIT' && _pitcherUsageRole(p) === 'RP');
   _applyPlus(_bats30, 'rollingLcv30', 'rollingLcvPlus30');
   _applyPlus(_sps30,  'rollingLcv30', 'rollingLcvPlus30');
   _applyPlus(_rps30,  'rollingLcv30', 'rollingLcvPlus30');
