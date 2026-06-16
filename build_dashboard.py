@@ -302,8 +302,22 @@ except Exception as _e:
     print(f"WARN: pitcher roster-pool augmentation skipped: {_e}")
 
 # ── Filter to meaningful players ──────────────────────────────────────────
-bat_pool = bat[bat['pa'] >= 100].copy()
-pit_pool = pit[pit['ip'] >= 30].copy()
+# The PA/IP floor trims the unrostered long tail, but a player who's actually
+# on a CBS fantasy roster must NEVER be dropped — a rostered call-up (e.g. a
+# SP with ~20 IP) needs to show in the pool and on his owner's team view.
+# The roster-pool augmentation above adds such players; without this exemption
+# the floor would immediately strip them back out.
+try:
+    _floor_rostered = set()
+    with open('data/cbs_rosters.json') as _rf:
+        for _plist in json.load(_rf).values():
+            if isinstance(_plist, list):
+                _floor_rostered.update(p.strip() for p in _plist if isinstance(p, str))
+except Exception as _e:
+    print(f"WARN: roster floor-exemption skipped: {_e}")
+    _floor_rostered = set()
+bat_pool = bat[(bat['pa'] >= 100) | (bat['name'].isin(_floor_rostered))].copy()
+pit_pool = pit[(pit['ip'] >= 30) | (pit['name'].isin(_floor_rostered))].copy()
 
 print(f"Batter pool: {len(bat_pool)} players (PA>=100)")
 print(f"Pitcher pool: {len(pit_pool)} players (IP>=30)")

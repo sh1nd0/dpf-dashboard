@@ -50,7 +50,18 @@ document.getElementById('minIPFilter').addEventListener('change', function() {
   LEAGUE_TEAMS.filter(t => !t.mine).sort((a,b) => a.owner.localeCompare(b.owner)).forEach(t => {
     const o = document.createElement('option'); o.value = t.name; o.textContent = t.owner; tf.appendChild(o);
   });
-  tf.addEventListener('change', render);
+  tf.addEventListener('change', function() {
+    // Picking a specific team means you want that team's ROSTER — but the
+    // "Available" filter hides every owned player, so the roster would render
+    // empty. Flip the draft filter back to "All Players" so the players show.
+    // (Mirror of the draftFilter handler above, which clears the team filter
+    // when you switch to Available.)
+    if (this.value !== 'all') {
+      const df = document.getElementById('draftFilter');
+      if (df && df.value === 'available') df.value = 'all';
+    }
+    render();
+  });
 })();
 document.addEventListener('click', e => {
   if (!e.target.closest('.autocomplete') && !e.target.closest('.draft-input')) draftAC.style.display = 'none';
