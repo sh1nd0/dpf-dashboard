@@ -524,7 +524,7 @@
     "players": [
       {
         "name": "Royce Lewis",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "MIN",
         "action": "Dropped"
       },
@@ -728,7 +728,7 @@
       },
       {
         "name": "Royce Lewis",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "MIN",
         "action": "Added off Waivers"
       },
@@ -749,7 +749,7 @@
     "players": [
       {
         "name": "Royce Lewis",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "MIN",
         "action": "Dropped"
       }
@@ -1406,7 +1406,7 @@
     "players": [
       {
         "name": "Royce Lewis",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "MIN",
         "action": "Added"
       }
@@ -5111,7 +5111,7 @@
       },
       {
         "name": "Royce Lewis",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "MIN",
         "action": "Dropped"
       }
@@ -5954,7 +5954,7 @@
     "players": [
       {
         "name": "Bryan Hudson",
-        "pos": "RP",
+        "pos": "SP,RP",
         "mlbTeam": "CHW",
         "action": "Activated"
       },
@@ -6549,7 +6549,7 @@
     "players": [
       {
         "name": "Royce Lewis",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "MIN",
         "action": "Added off Waivers"
       }
@@ -6579,7 +6579,7 @@
     "players": [
       {
         "name": "Bryan Hudson",
-        "pos": "RP",
+        "pos": "SP,RP",
         "mlbTeam": "CHW",
         "action": "Dropped"
       }
@@ -7782,5 +7782,56 @@
       }
     ],
     "effective": "6/18/26"
+  },
+  {
+    "date": "6/19/26 2:32 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Spencer Jones",
+        "pos": "CF",
+        "mlbTeam": "NYY",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/19/26"
+  },
+  {
+    "date": "6/19/26 2:32 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Didier Fuentes",
+        "pos": "SP,RP",
+        "mlbTeam": "ATL",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/19/26"
+  },
+  {
+    "date": "6/19/26 2:32 AM ET",
+    "teamId": "7",
+    "teamName": "Whoop Whoop that's the sound of Dylan Cease",
+    "team": "Whoop Whoop that's the sound of Dylan Cease",
+    "players": [
+      {
+        "name": "Zac Veen",
+        "pos": "LF",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Ryan Zeferjahn",
+        "pos": "RP",
+        "mlbTeam": "LAA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/19/26"
   }
 ]
