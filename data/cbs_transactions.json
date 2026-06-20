@@ -130,7 +130,7 @@
     "players": [
       {
         "name": "Jac Caglianone",
-        "pos": "RF",
+        "pos": "1B,RF",
         "mlbTeam": "KC",
         "action": "Traded from Colonel Corbin's Ascent"
       },
@@ -7833,5 +7833,68 @@
       }
     ],
     "effective": "6/19/26"
+  },
+  {
+    "date": "6/20/26 3:07 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Jake Mangum",
+        "pos": "LF,CF,RF",
+        "mlbTeam": "PIT",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Elvis Alvarado",
+        "pos": "RP",
+        "mlbTeam": "ATH",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/20/26"
+  },
+  {
+    "date": "6/20/26 3:07 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Eduard Bazardo",
+        "pos": "RP",
+        "mlbTeam": "SEA",
+        "action": "Activated"
+      },
+      {
+        "name": "Ryne Nelson",
+        "pos": "SP,RP",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/20/26"
+  },
+  {
+    "date": "6/20/26 3:07 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Cooper Ingle",
+        "pos": "C",
+        "mlbTeam": "CLE",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Yohandy Morales",
+        "pos": "1B",
+        "mlbTeam": "WAS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/20/26"
   }
 ]
