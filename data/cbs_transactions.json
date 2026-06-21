@@ -2861,7 +2861,7 @@
       },
       {
         "name": "Isaac Paredes",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "HOU",
         "action": "Dropped"
       },
@@ -3557,7 +3557,7 @@
     "players": [
       {
         "name": "Isaac Paredes",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "HOU",
         "action": "Added off Waivers"
       }
@@ -3905,7 +3905,7 @@
       },
       {
         "name": "Braden Montgomery",
-        "pos": "CF",
+        "pos": "CF,RF",
         "mlbTeam": "CHW",
         "action": "Added off Waivers"
       },
@@ -4067,7 +4067,7 @@
       },
       {
         "name": "Braden Montgomery",
-        "pos": "CF",
+        "pos": "CF,RF",
         "mlbTeam": "CHW",
         "action": "Dropped"
       }
@@ -4460,7 +4460,7 @@
     "players": [
       {
         "name": "Braden Montgomery",
-        "pos": "CF",
+        "pos": "CF,RF",
         "mlbTeam": "CHW",
         "action": "Added off Waivers"
       }
@@ -4805,7 +4805,7 @@
     "players": [
       {
         "name": "Isaac Paredes",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "HOU",
         "action": "Dropped"
       }
@@ -6071,7 +6071,7 @@
     "players": [
       {
         "name": "Isaac Paredes",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "HOU",
         "action": "Added off Waivers"
       }
@@ -6901,7 +6901,7 @@
       },
       {
         "name": "Jake McCarthy",
-        "pos": "LF,CF",
+        "pos": "LF,CF,RF",
         "mlbTeam": "COL",
         "action": "Added off Waivers"
       },
@@ -7896,5 +7896,47 @@
       }
     ],
     "effective": "6/20/26"
+  },
+  {
+    "date": "6/21/26 3:06 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Tim Herrin",
+        "pos": "RP",
+        "mlbTeam": "CLE",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Anthony Bender",
+        "pos": "RP",
+        "mlbTeam": "MIA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/21/26"
+  },
+  {
+    "date": "6/21/26 3:06 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Gage Jump",
+        "pos": "SP",
+        "mlbTeam": "ATH",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "River Ryan",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/21/26"
   }
 ]
