@@ -1498,7 +1498,7 @@ function renderRoster() {
   function tradePlayerTag(n) {
     const p = _plyrI(n);
     const ki = getKeeperInfoCached(n);
-    const lcvStr = p ? (Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—') : '?';
+    const lcvStr = p ? (p.aLCVPlus != null ? Math.round(p.aLCVPlus).toString() : (Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() + '*' : '—')) : '?';
     const rdStr = ki.draftRound ? `R${ki.draftRound}` : 'FA';
     const keeperBadge = ki.keepable2027
       ? `<span style="color:var(--green);font-size:10px;" title="2027 keeper cost R${ki.cost2027}, ${ki.yearsLeft}yr control">${rdStr}→R${ki.cost2027} (${ki.yearsLeft}yr)</span>`
@@ -1508,7 +1508,7 @@ function renderRoster() {
     return `<div style="display:flex;justify-content:space-between;align-items:center;padding:3px 0;font-size:11px;border-bottom:1px solid var(--border);">` +
       `<div><b>${n}</b></div>` +
       `<div style="display:flex;gap:6px;align-items:center;">` +
-      `<span style="color:var(--text2);">LCV ${lcvStr}</span>` +
+      `<span style="color:var(--text2);" title="2026 actual aLCV+ (100 = pool avg). * = no 2026 sample, projected shown.">aLCV+ ${lcvStr}</span>` +
       keeperBadge +
       surpStr +
       `<span class="trade-remove" data-name="${encodeURIComponent(n)}" style="cursor:pointer;color:var(--red);font-weight:700;font-size:10px;margin-left:2px;">✕</span>` +
@@ -1551,7 +1551,8 @@ function renderRoster() {
           const ki = getKeeperInfoCached(p.name);
           const rdTag = ki.draftRound ? `R${ki.draftRound}` : 'FA';
           const costTag = ki.keepable2027 ? `→R${ki.cost2027}` : '';
-          return `<div class="trade-ac-item" data-name="${encodeURIComponent(p.name)}" style="padding:4px 6px;font-size:11px;cursor:pointer;border-bottom:1px solid var(--border);">${p.name} <small style="color:var(--text2)">${p.primaryPos} LCV:${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')} ${rdTag}${costTag}</small></div>`;
+          const acAlcv = p.aLCVPlus != null ? Math.round(p.aLCVPlus).toString() : (Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() + '*' : '—');
+          return `<div class="trade-ac-item" data-name="${encodeURIComponent(p.name)}" style="padding:4px 6px;font-size:11px;cursor:pointer;border-bottom:1px solid var(--border);">${p.name} <small style="color:var(--text2)">${p.primaryPos} aLCV+:${acAlcv} ${rdTag}${costTag}</small></div>`;
         }).join('') + '</div>';
       acDiv.querySelectorAll('.trade-ac-item').forEach(item => {
         item.addEventListener('click', () => {
@@ -1591,9 +1592,10 @@ function renderRoster() {
     if (g.length === 0 && r.length === 0 && gPicks.length === 0 && getPicks.length === 0) { sumDiv.style.display = 'none'; return; }
     sumDiv.style.display = 'block';
 
-    // LCV totals (players only - picks don't produce stats this year)
-    const giveLCV = g.reduce((s,n) => { const p=_plyrI(n); return s+(p?(p.lcv||0):0); }, 0);
-    const getLCV = r.reduce((s,n) => { const p=_plyrI(n); return s+(p?(p.lcv||0):0); }, 0);
+    // Production totals — 2026 actual (aLCV), falling back to projection only
+    // for players with no in-season sample. Picks don't produce stats this year.
+    const giveLCV = g.reduce((s,n) => s + _prodLCV(_plyrI(n)), 0);
+    const getLCV = r.reduce((s,n) => s + _prodLCV(_plyrI(n)), 0);
     const lcvDiff = getLCV - giveLCV;
     const lcvClr = lcvDiff >= 0 ? 'var(--green)' : 'var(--red)';
 
@@ -1635,7 +1637,10 @@ function renderRoster() {
     r.forEach(n => { if (!myNames.includes(n)) myNames.push(n); });
     const preLCV = calcRosterLCV(state.myTeam || [], state.rosterOverrides || {});
     const postLCV = calcOptimalLCV(myNames);
-    const rosterDiff = postLCV.startingLCV - preLCV.startingLCV;
+    // 2026 actual starting strength (falls back to projection per-player inside _prodLCV)
+    const preStart = preLCV.startingActualLCV != null ? preLCV.startingActualLCV : preLCV.startingLCV;
+    const postStart = postLCV.startingActualLCV != null ? postLCV.startingActualLCV : postLCV.startingLCV;
+    const rosterDiff = postStart - preStart;
     const rClr = rosterDiff >= 0 ? 'var(--green)' : 'var(--red)';
 
     // Build summary HTML
@@ -1655,7 +1660,7 @@ function renderRoster() {
     sh += '<table style="width:100%;font-size:10px;border-collapse:collapse;margin-bottom:6px;">';
     sh += '<tr style="color:var(--text2);border-bottom:1px solid var(--border);"><th style="text-align:left;padding:2px;">Metric</th><th style="text-align:right;padding:2px;">I Give</th><th style="text-align:right;padding:2px;">I Get</th><th style="text-align:right;padding:2px;">Net</th></tr>';
 
-    sh += `<tr><td style="padding:2px;">LCV (production)</td><td style="text-align:right;padding:2px;">${giveLCV.toFixed(1)}</td><td style="text-align:right;padding:2px;">${getLCV.toFixed(1)}</td><td style="text-align:right;padding:2px;color:${lcvClr};font-weight:700;">${lcvDiff>=0?'+':''}${lcvDiff.toFixed(1)}</td></tr>`;
+    sh += `<tr><td style="padding:2px;" title="2026 actual production (aLCV), projection used only for players with no in-season sample">aLCV (2026 production)</td><td style="text-align:right;padding:2px;">${giveLCV.toFixed(1)}</td><td style="text-align:right;padding:2px;">${getLCV.toFixed(1)}</td><td style="text-align:right;padding:2px;color:${lcvClr};font-weight:700;">${lcvDiff>=0?'+':''}${lcvDiff.toFixed(1)}</td></tr>`;
 
     const prospectDiff = getProspectVal - giveProspectVal;
     const prospectClr = prospectDiff >= 0 ? 'var(--green)' : 'var(--red)';
@@ -1669,10 +1674,10 @@ function renderRoster() {
 
     sh += `<tr><td style="padding:2px;">Years of Control</td><td style="text-align:right;padding:2px;">${giveYrs}</td><td style="text-align:right;padding:2px;">${getYrs}</td><td style="text-align:right;padding:2px;font-weight:600;">${yrsDiff>=0?'+':''}${yrsDiff}</td></tr>`;
 
-    sh += `<tr style="border-top:1px solid var(--border);"><td style="padding:2px;font-weight:600;">Roster LCV impact</td><td colspan="2"></td><td style="text-align:right;padding:2px;color:${rClr};font-weight:700;">${rosterDiff>=0?'+':''}${rosterDiff.toFixed(1)}</td></tr>`;
+    sh += `<tr style="border-top:1px solid var(--border);"><td style="padding:2px;font-weight:600;" title="Change in your optimal starting lineup's 2026 actual production">Roster aLCV impact</td><td colspan="2"></td><td style="text-align:right;padding:2px;color:${rClr};font-weight:700;">${rosterDiff>=0?'+':''}${rosterDiff.toFixed(1)}</td></tr>`;
     sh += '</table>';
 
-    sh += `<div style="color:var(--text2);font-size:10px;">Post-trade starting LCV: ${postLCV.startingLCV.toFixed(1)} (current: ${preLCV.startingLCV.toFixed(1)})</div>`;
+    sh += `<div style="color:var(--text2);font-size:10px;">Post-trade starting aLCV: ${postStart.toFixed(1)} (current: ${preStart.toFixed(1)})</div>`;
 
     // Verdict — balanced composite factoring in production, future value, and prospect upside
     const absLcv = Math.abs(lcvDiff);
@@ -1692,11 +1697,11 @@ function renderRoster() {
     const futureUp = surplusDiff + prospectDiff > 0.5;
     const futureDown = surplusDiff + prospectDiff < -0.5;
 
-    if (prodUp && futureUp) sh += `<span>Clear win — better production (+${rosterDiff.toFixed(1)} roster LCV) and future value</span>`;
-    else if (prodUp && futureDown) sh += `<span>Win-now trade — better production (+${rosterDiff.toFixed(1)} roster LCV) but less future value</span>`;
+    if (prodUp && futureUp) sh += `<span>Clear win — better production (+${rosterDiff.toFixed(1)} roster aLCV) and future value</span>`;
+    else if (prodUp && futureDown) sh += `<span>Win-now trade — better production (+${rosterDiff.toFixed(1)} roster aLCV) but less future value</span>`;
     else if (prodDown && futureUp) sh += `<span>Dynasty play — less production now but building future assets (${(surplusDiff+prospectDiff) > 2 ? 'significant' : 'moderate'} upside)</span>`;
     else if (prodDown && futureDown) sh += `<span>Unfavorable — losing both production and future value</span>`;
-    else if (prodUp) sh += `<span>Favorable — better production (+${rosterDiff.toFixed(1)} roster LCV) with roughly equal future value</span>`;
+    else if (prodUp) sh += `<span>Favorable — better production (+${rosterDiff.toFixed(1)} roster aLCV) with roughly equal future value</span>`;
     else if (prodDown) sh += `<span>Slight downgrade — marginally less production with similar future value</span>`;
     else sh += '<span>Roughly even trade — similar production and future value</span>';
     sh += '</div>';
@@ -1749,86 +1754,115 @@ function renderRoster() {
 
   function renderSuggestions() {
     if (!sugPanel) return;
-    // Compute my positional needs
+
+    // ── 1. My positional needs (2026 actual): where am I below league average? ──
     const myPl2 = (state.myTeam || []).map(n => _plyrI(n)).filter(Boolean);
     const myAssigned2 = computeNeedsForTeam(myPl2);
-    const myNeeds2 = {};
+    const myNeeds2 = {};     // my starters' avg − league avg at each pos (neg = weakness)
+    const myAvgByPos = {};   // my starters' avg 2026 production at each pos
     for (const [pos, slots] of Object.entries(ROSTER_SLOTS)) {
       const top = myAssigned2[pos] || [];
-      const avgLcv = top.length > 0 ? top.reduce((s,p) => s + (p.lcv||0), 0) / top.length : 0;
+      const avgProd = top.length > 0 ? top.reduce((s,p) => s + _prodLCV(p), 0) / top.length : 0;
+      myAvgByPos[pos] = avgProd;
       const leagueAvgs = [];
       LEAGUE_TEAMS.filter(t => !t.mine).forEach(t => {
         const tPl = (state.leagueTeams[t.name]||[]).map(n => _plyrI(n)).filter(Boolean);
         const tA = computeNeedsForTeam(tPl);
         const tTop = tA[pos] || [];
-        if (tTop.length > 0) leagueAvgs.push(tTop.reduce((s,p)=>s+(p.lcv||0),0)/tTop.length);
+        if (tTop.length > 0) leagueAvgs.push(tTop.reduce((s,p)=>s+_prodLCV(p),0)/tTop.length);
       });
       const leagueAvg = leagueAvgs.length > 0 ? leagueAvgs.reduce((s,v)=>s+v,0)/leagueAvgs.length : 0;
-      myNeeds2[pos] = avgLcv - leagueAvg;
+      myNeeds2[pos] = avgProd - leagueAvg;
     }
+    const NEED_THRESHOLD = -0.4;  // below league avg by this much = a genuine need
+    const myWeakPos = Object.keys(myNeeds2).filter(pos => myNeeds2[pos] < NEED_THRESHOLD);
 
-    // Score all players on other teams
+    // ── 2. Find rival SURPLUS that fills one of my needs ──
+    // A realistic target is a player a rival can SPARE (they have depth at his
+    // position beyond the slots they must fill) who also UPGRADES a spot I'm
+    // weak at. This avoids surfacing untouchable stars a rival would never move.
     const candidates = [];
     LEAGUE_TEAMS.filter(t => !t.mine).forEach(t => {
-      const roster = state.leagueTeams[t.name] || [];
-      roster.forEach(name => {
-        const p = _plyrI(name);
-        if (!p) return;
-        // Skip players already in trade lists
+      const roster = (state.leagueTeams[t.name] || []).map(n => _plyrI(n)).filter(Boolean);
+      if (roster.length === 0) return;
+      const tAssigned = computeNeedsForTeam(roster);     // their optimal starters
+      const tStarters = new Set();
+      Object.values(tAssigned).forEach(arr => arr.forEach(p => tStarters.add(p.name)));
+      // How many rosterable bodies they have eligible at each position
+      const tDepth = {};
+      Object.keys(ROSTER_SLOTS).forEach(pos => {
+        tDepth[pos] = roster.filter(p =>
+          p.primaryPos === pos ||
+          (p.pos || p.primaryPos || '').split('/').includes(pos) ||
+          DUAL_ELIGIBLE[p.name] === pos
+        ).length;
+      });
+
+      roster.forEach(p => {
+        const name = p.name;
         if ((state._tradeGet||[]).includes(name) || (state._tradeGive||[]).includes(name)) return;
-        const positions = (p.pos || p.primaryPos || '').split('/');
-        let bestNeed = 99;
-        let needPos = '';
-        positions.forEach(pos => {
-          if (myNeeds2[pos] !== undefined && myNeeds2[pos] < bestNeed) {
-            bestNeed = myNeeds2[pos]; needPos = pos;
-          }
+        const eligPos = new Set([p.primaryPos, ...((p.pos||'').split('/'))].filter(Boolean));
+        if (!['SP','RP'].includes(p.primaryPos)) eligPos.add('DH'); // any bat fills DH
+
+        let bestPos = '', bestScore = -Infinity, bestSurplus = 0;
+        myWeakPos.forEach(pos => {
+          if (!eligPos.has(pos)) return;
+          const slots = ROSTER_SLOTS[pos] || 1;
+          const surplus = tDepth[pos] - slots;            // bodies they can spare here
+          if (surplus < 1) return;                        // no surplus → they won't deal him
+          const upgrade = _prodLCV(p) - (myAvgByPos[pos] || 0);
+          if (upgrade <= 0) return;                       // not actually an upgrade for me
+          const gap = -myNeeds2[pos];                     // size of my need (positive)
+          const score = gap + surplus * 0.6 + Math.min(upgrade, 6) * 0.3;
+          if (score > bestScore) { bestScore = score; bestPos = pos; bestSurplus = surplus; }
         });
-        // DH fallback
-        if (!['SP','RP'].includes(p.primaryPos) && myNeeds2['DH'] !== undefined && myNeeds2['DH'] < bestNeed) {
-          bestNeed = myNeeds2['DH']; needPos = 'DH';
-        }
+        if (!bestPos) return;
 
         const ki = getKeeperInfoCached(name);
-        const keeperScore = ki.keepable2027 ? Math.min(Math.max(0, ki.multiYearSurplus) * 0.3, 2.0) : 0;
-        const needScore = Math.max(0, -bestNeed) * 1.2;
-        // Primary driver: recScore (60% aLCV + 15% posFlex + 15% age + 10% LCV).
-        // Fallback to LCV for players w/o in-season sample.
-        const rec = p.recScore != null ? p.recScore : Math.max(-2, Math.min(2, (p.lcv||0) / 6));
-        const recScoreContrib = Math.max(-0.5, Math.min(2.0, rec * 1.5));
-        const fitScore = needScore + recScoreContrib + keeperScore;
-
-        if (fitScore > 0.5) {
-          candidates.push({ name, pos: needPos, gap: bestNeed, score: fitScore, lcv: p.lcv||0, rec, team: t.name, ki, primaryPos: p.primaryPos, p });
-        }
+        const keeperScore = ki.keepable2027 ? Math.min(Math.max(0, ki.multiYearSurplus) * 0.2, 1.0) : 0;
+        candidates.push({
+          name, pos: bestPos, gap: myNeeds2[bestPos], score: bestScore + keeperScore,
+          surplus: bestSurplus, depth: tDepth[bestPos], isBench: !tStarters.has(name),
+          upgrade: _prodLCV(p) - (myAvgByPos[bestPos] || 0),
+          lcv: p.lcv||0, team: t.name, ki, primaryPos: p.primaryPos, p,
+        });
       });
     });
 
     candidates.sort((a,b) => b.score - a.score);
-    const top12 = candidates.slice(0, 12);
+    // Spread across needs: cap targets per position so the biggest single gap
+    // doesn't crowd out every other spot you're weak at.
+    const PER_POS_CAP = 3;
+    const posSeen = {};
+    const top12 = [];
+    for (const c of candidates) {
+      if ((posSeen[c.pos] || 0) >= PER_POS_CAP) continue;
+      posSeen[c.pos] = (posSeen[c.pos] || 0) + 1;
+      top12.push(c);
+      if (top12.length >= 12) break;
+    }
 
     if (top12.length === 0) {
-      sugPanel.innerHTML = '<div style="font-size:10px;color:var(--text2);padding:4px;">No strong trade targets found based on your current roster needs.</div>';
+      sugPanel.innerHTML = '<div style="font-size:10px;color:var(--text2);padding:4px;">No realistic targets right now — no rival has tradeable surplus at a position where you\'re below league average. (Needs are measured on 2026 actual aLCV.)</div>';
       return;
     }
 
-    let sh = '<div style="font-size:10px;color:var(--text2);margin-bottom:4px;">Click a player to add them to "I Get"</div>';
+    let sh = '<div style="font-size:10px;color:var(--text2);margin-bottom:4px;">Rivals who can <b>spare</b> a player (positional surplus) who <b>upgrades</b> a spot you\'re weak at. Click to add to "I Get".</div>';
     sh += '<table style="width:100%;font-size:10px;border-collapse:collapse;">';
-    sh += '<tr style="color:var(--text2);font-size:9px;"><th style="text-align:left;padding:2px 3px;">Player</th><th style="text-align:left;padding:2px 3px;">Team</th><th style="text-align:center;padding:2px 3px;">Fills</th><th style="text-align:right;padding:2px 3px;" title="Rec+: blended recommendation on wRC+ scale. 100 = pool average, 115 = +1sigma.">Rec+</th><th style="text-align:right;padding:2px 3px;" title="aLCV+ on wRC+ scale: 100 = pool average, 115 = +1sigma">aLCV+</th><th style="text-align:right;padding:2px 3px;" title="pLCV+: projected LCV on the wRC+ scale (100 = pool avg, 115 = +1sigma)">pLCV+</th><th style="text-align:center;padding:2px 3px;">Keeper</th><th style="text-align:right;padding:2px 3px;">Fit</th></tr>';
+    sh += '<tr style="color:var(--text2);font-size:9px;"><th style="text-align:left;padding:2px 3px;">Player</th><th style="text-align:left;padding:2px 3px;">Team</th><th style="text-align:center;padding:2px 3px;" title="Position of yours this player would upgrade">Fills</th><th style="text-align:right;padding:2px 3px;" title="aLCV+ on wRC+ scale: 100 = pool average, 115 = +1sigma. 2026 actual.">aLCV+</th><th style="text-align:right;padding:2px 3px;" title="Production gain vs your current starters at that spot (2026 aLCV)">Upgr</th><th style="text-align:left;padding:2px 3px;" title="Why this is a realistic ask">Why spare</th><th style="text-align:center;padding:2px 3px;">Keeper</th><th style="text-align:right;padding:2px 3px;">Fit</th></tr>';
     top12.forEach(c => {
       const keepStr = c.ki.keepable2027 ? `R${c.ki.cost2027} (${c.ki.yearsLeft}yr)` : '<span style="color:var(--red);">N/A</span>';
       const gapStr = c.gap < -1 ? '<span style="color:var(--red);">⚠</span>' : '';
-      const recStr = c.p && c.p.recScorePlus != null ? Math.round(c.p.recScorePlus).toString() : '—';
-      const recClr = c.p && c.p.recScorePlus != null ? (c.p.recScorePlus >= 109 ? 'color:var(--green);font-weight:700;' : c.p.recScorePlus >= 100 ? 'color:var(--green);' : c.p.recScorePlus <= 88 ? 'color:var(--red);' : 'color:var(--text2);') : 'color:var(--text2);';
-      const alcvStr = c.p && c.p.aLCVPlus != null ? Math.round(c.p.aLCVPlus).toString() : '—';
+      const alcvStr = c.p && c.p.aLCVPlus != null ? Math.round(c.p.aLCVPlus).toString() : (Number.isFinite(c.p && c.p.lcvPlus) ? Math.round(c.p.lcvPlus).toString()+'*' : '—');
       const alcvClr = c.p && c.p.aLCVPlus != null ? (c.p.aLCVPlus >= 115 ? 'color:var(--green);font-weight:700;' : c.p.aLCVPlus >= 100 ? 'color:var(--green);' : c.p.aLCVPlus <= 85 ? 'color:var(--red);' : 'color:var(--text2);') : 'color:var(--text2);';
+      const whyStr = `${c.depth} at ${c.pos}${c.isBench ? ' · benched' : ''}`;
       sh += `<tr class="trade-suggest-row" data-name="${encodeURIComponent(c.name)}" style="cursor:pointer;border-bottom:1px solid var(--border);" onmouseover="this.style.background='rgba(234,179,8,0.1)'" onmouseout="this.style.background=''">`;
       sh += `<td style="padding:3px;font-weight:600;">${c.name}</td>`;
       sh += `<td style="padding:3px;color:var(--text2);">${c.team}</td>`;
       sh += `<td style="text-align:center;padding:3px;">${c.pos} ${gapStr}</td>`;
-      sh += `<td style="text-align:right;padding:3px;${recClr}">${recStr}</td>`;
       sh += `<td style="text-align:right;padding:3px;${alcvClr}">${alcvStr}</td>`;
-      sh += `<td style="text-align:right;padding:3px;color:var(--text2);">${(Number.isFinite(c.lcvPlus) ? Math.round(c.lcvPlus).toString() : '—')}</td>`;
+      sh += `<td style="text-align:right;padding:3px;color:var(--green);">+${c.upgrade.toFixed(1)}</td>`;
+      sh += `<td style="padding:3px;color:var(--text2);">${whyStr}</td>`;
       sh += `<td style="text-align:center;padding:3px;">${keepStr}</td>`;
       sh += `<td style="text-align:right;padding:3px;font-weight:600;color:var(--accent);">${c.score.toFixed(1)}</td>`;
       sh += '</tr>';

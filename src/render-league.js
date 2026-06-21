@@ -53,15 +53,15 @@ function calcOptimalLCV(playerNames) {
 
   // startingALCV/totalALCV are sums of (aLCVPlus - 100) so 0 = league-average team
   // and, e.g., +150 = team is cumulatively 150 wRC+-style points above average.
-  let startingLCV = 0, startingALCV = 0;
-  for (const p of Object.values(filled)) { startingLCV += (p.lcv || 0); if (p.aLCVPlus != null) startingALCV += (p.aLCVPlus - 100); }
-  for (const p of startingSP) { startingLCV += (p.lcv || 0); if (p.aLCVPlus != null) startingALCV += (p.aLCVPlus - 100); }
-  for (const p of startingRP) { startingLCV += (p.lcv || 0); if (p.aLCVPlus != null) startingALCV += (p.aLCVPlus - 100); }
+  let startingLCV = 0, startingALCV = 0, startingActualLCV = 0;
+  for (const p of Object.values(filled)) { startingLCV += (p.lcv || 0); startingActualLCV += _prodLCV(p); if (p.aLCVPlus != null) startingALCV += (p.aLCVPlus - 100); }
+  for (const p of startingSP) { startingLCV += (p.lcv || 0); startingActualLCV += _prodLCV(p); if (p.aLCVPlus != null) startingALCV += (p.aLCVPlus - 100); }
+  for (const p of startingRP) { startingLCV += (p.lcv || 0); startingActualLCV += _prodLCV(p); if (p.aLCVPlus != null) startingALCV += (p.aLCVPlus - 100); }
 
-  let totalLCV = 0, totalALCV = 0;
-  for (const p of players) { totalLCV += (p.lcv || 0); if (p.aLCVPlus != null) totalALCV += (p.aLCVPlus - 100); }
+  let totalLCV = 0, totalALCV = 0, totalActualLCV = 0;
+  for (const p of players) { totalLCV += (p.lcv || 0); totalActualLCV += _prodLCV(p); if (p.aLCVPlus != null) totalALCV += (p.aLCVPlus - 100); }
 
-  return { startingLCV, totalLCV, startingALCV, totalALCV, count: players.length };
+  return { startingLCV, totalLCV, startingALCV, totalALCV, startingActualLCV, totalActualLCV, count: players.length };
 }
 
 // Moved to DPF namespace in render-league.js initialization

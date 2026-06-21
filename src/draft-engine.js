@@ -162,6 +162,14 @@ function clearAllDrafted() {
   render();
 }
 
+// 2026-actual production value: in-season actualLcv when we have a sample,
+// else fall back to the preseason projection. Same z-score scale as `lcv`,
+// so every threshold tuned on projected LCV stays calibrated.
+function _prodLCV(p) {
+  if (!p) return 0;
+  return Number.isFinite(p.actualLcv) ? p.actualLcv : (p.lcv || 0);
+}
+
 function calcRosterLCV(playerNames, overrides) {
   // Like calcOptimalLCV but respects manual roster overrides.
   // Players overridden to 'il' or 'reserve' are excluded from starting LCV.
@@ -239,17 +247,17 @@ function calcRosterLCV(playerNames, overrides) {
     if (!used.has(rp.name)) { filledRP.push(rp); used.add(rp.name); }
   }
 
-  let startingLCV = 0;
+  let startingLCV = 0, startingActualLCV = 0;
   for (const arr of Object.values(filledBat)) {
-    for (const p of arr) startingLCV += (p.lcv || 0);
+    for (const p of arr) { startingLCV += (p.lcv || 0); startingActualLCV += _prodLCV(p); }
   }
-  for (const p of filledSP.slice(0, 5)) startingLCV += (p.lcv || 0);
-  for (const p of filledRP.slice(0, 5)) startingLCV += (p.lcv || 0);
+  for (const p of filledSP.slice(0, 5)) { startingLCV += (p.lcv || 0); startingActualLCV += _prodLCV(p); }
+  for (const p of filledRP.slice(0, 5)) { startingLCV += (p.lcv || 0); startingActualLCV += _prodLCV(p); }
 
-  let totalLCV = 0;
-  for (const p of players) totalLCV += (p.lcv || 0);
+  let totalLCV = 0, totalActualLCV = 0;
+  for (const p of players) { totalLCV += (p.lcv || 0); totalActualLCV += _prodLCV(p); }
 
-  return { startingLCV, totalLCV, count: players.length };
+  return { startingLCV, totalLCV, startingActualLCV, totalActualLCV, count: players.length };
 }
 
 // ── Interactive Mock Draft ─────────────────────────────────────────────────
