@@ -4,10 +4,14 @@
 //
 //   KEEPER_ADVANCE = 4         → "Annual Advancement: each keeper moves up 4 rounds per year"
 //   KEEPER_FLOOR = 4           → "Players valued in R1-R4 are not keepable; once a player
-//                                  reaches R1-R4, he becomes permanently ineligible". The
-//                                  > comparison below means a player whose 2026 cost is R5
-//                                  (advancing to R1 in 2027) is correctly flagged as not
-//                                  keepable for 2027.
+//                                  reaches R1-R4, he becomes permanently ineligible".
+//                                  Eligibility keys off the round you're keeping FROM, not
+//                                  the advanced cost: any player drafted after Round 4 in
+//                                  2026 (round > 4) is keepable for 2027. Advancing may put
+//                                  their 2027 cost in R1-R4 (e.g. an R6 pick → R2) — that is
+//                                  simply their FINAL keeper year; they're ineligible the
+//                                  season after. Only players already at R1-R4 in 2026
+//                                  (round <= 4) can't be kept at all.
 //   UNDRAFTED_KEEPER_START=15  → "Undrafted players begin keeper life in Round 15. Former
 //                                  rookie keepers converting to major league status also
 //                                  begin in Round 15. All then advance 4 rounds annually."
@@ -17,9 +21,9 @@
 //     per team be kept at R1 despite normally being ineligible. It does NOT
 //     extend the player's keeper life into 2027 — every R1-R4 keeper in 2026
 //     is unkeepable for 2027, mulligan or not. The keepable2027 math here
-//     already enforces this (a R1 mulligan-keeper has cost2027 = -3, fails
-//     the > KEEPER_FLOOR test). So no special-casing is needed in this file;
-//     the per-team flag in league_config.json is purely informational.
+//     already enforces this (a R1 mulligan-keeper has effectiveRound = 1, which
+//     fails the `effectiveRound > KEEPER_FLOOR` test). So no special-casing is
+//     needed in this file; the per-team flag in league_config.json is informational.
 //   - Round Conflicts (when two keepers land in the same round, owner picks)
 const DRAFT_PICKS = __DRAFT_PICKS_JSON__;
 const KEEPER_ADVANCE = 4;  // LEAGUE_RULES.md → Annual Advancement
@@ -41,16 +45,20 @@ function getKeeperInfo(playerName) {
   // If not in draft, they're a potential FA pickup → R15 start
   const effectiveRound = draftRound || UNDRAFTED_KEEPER_START;
 
-  // 2027 keeper cost = this year's round - 4
+  // 2027 keeper cost = this year's round - 4 (advance 4 rounds)
   const cost2027 = effectiveRound - KEEPER_ADVANCE;
 
-  // Can this player be kept in 2027?
-  const keepable2027 = cost2027 > KEEPER_FLOOR;
+  // Can this player be kept in 2027? Eligibility is set by the round you're
+  // keeping FROM: any player drafted after Round 4 in 2026 (round > 4) is
+  // keepable for 2027 — even when advancing lands the cost in R1-R4, which just
+  // makes 2027 their final keeper year. Players already at R1-R4 in 2026 aren't.
+  const keepable2027 = effectiveRound > KEEPER_FLOOR;
 
-  // How many more years keepable? (including 2027)
+  // How many more years keepable (including 2027)? You may keep while the round
+  // you're keeping from is still > 4; the year it advances into R1-R4 is the last.
   let yearsLeft = 0;
   let r = effectiveRound;
-  while (r - KEEPER_ADVANCE > KEEPER_FLOOR) {
+  while (r > KEEPER_FLOOR) {
     yearsLeft++;
     r -= KEEPER_ADVANCE;
   }
@@ -75,7 +83,7 @@ function getKeeperInfo(playerName) {
   let multiYearSurplus = 0;
   r = effectiveRound;
   let yr = 0;
-  while (r - KEEPER_ADVANCE > KEEPER_FLOOR) {
+  while (r > KEEPER_FLOOR) {
     r -= KEEPER_ADVANCE;
     yr++;
     const futureSlotVal = Math.max(0, (32 - r) * 0.20);
