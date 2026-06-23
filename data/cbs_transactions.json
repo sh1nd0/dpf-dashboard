@@ -7959,5 +7959,117 @@
       }
     ],
     "effective": "6/22/26"
+  },
+  {
+    "date": "6/22/26 11:11 PM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Jose Ramirez",
+        "pos": "3B",
+        "mlbTeam": "CLE",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      },
+      {
+        "name": "Gavin Williams",
+        "pos": "SP",
+        "mlbTeam": "CLE",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      },
+      {
+        "name": "Rafael Devers",
+        "pos": "1B",
+        "mlbTeam": "SF",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      }
+    ]
+  },
+  {
+    "date": "6/22/26 11:11 PM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Corbin Carroll",
+        "pos": "RF",
+        "mlbTeam": "ARI",
+        "action": "Traded from Colonel Corbin's Ascent"
+      },
+      {
+        "name": "Eduardo Quintero",
+        "pos": "CF",
+        "mlbTeam": "LAD",
+        "action": "Traded from Colonel Corbin's Ascent"
+      },
+      {
+        "name": "Tyler Soderstrom",
+        "pos": "1B,LF",
+        "mlbTeam": "ATH",
+        "action": "Traded from Colonel Corbin's Ascent"
+      }
+    ]
+  },
+  {
+    "date": "6/23/26 2:23 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Gabe Speier",
+        "pos": "RP",
+        "mlbTeam": "SEA",
+        "action": "Activated"
+      },
+      {
+        "name": "Juan Morillo",
+        "pos": "RP",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
+      },
+      {
+        "name": "Matthew Boyd",
+        "pos": "SP",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/23/26"
+  },
+  {
+    "date": "6/23/26 2:23 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Caleb Durbin",
+        "pos": "3B",
+        "mlbTeam": "BOS",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Tim Herrin",
+        "pos": "RP",
+        "mlbTeam": "CLE",
+        "action": "Dropped"
+      },
+      {
+        "name": "Nasim Nunez",
+        "pos": "2B,SS",
+        "mlbTeam": "WAS",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jackson Jobe",
+        "pos": "SP",
+        "mlbTeam": "DET",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/23/26"
   }
 ]
