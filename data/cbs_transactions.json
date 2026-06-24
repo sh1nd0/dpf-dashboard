@@ -8071,5 +8071,141 @@
       }
     ],
     "effective": "6/23/26"
+  },
+  {
+    "date": "6/23/26 11:22 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Jacob Gonzalez",
+        "pos": "1B,2B",
+        "mlbTeam": "CHW",
+        "action": "Dropped"
+      },
+      {
+        "name": "Luis Castillo",
+        "pos": "SP",
+        "mlbTeam": "SEA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/23/26"
+  },
+  {
+    "date": "6/23/26 10:05 PM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Gage Jump",
+        "pos": "SP",
+        "mlbTeam": "ATH",
+        "action": "Traded from Colonel Corbin's Ascent"
+      },
+      {
+        "name": "Jackson Chourio",
+        "pos": "LF,CF,RF",
+        "mlbTeam": "MIL",
+        "action": "Traded from Colonel Corbin's Ascent"
+      },
+      {
+        "name": "Tanner Scott",
+        "pos": "RP",
+        "mlbTeam": "LAD",
+        "action": "Traded from Colonel Corbin's Ascent"
+      },
+      {
+        "name": "Paul Goldschmidt",
+        "pos": "1B",
+        "mlbTeam": "NYY",
+        "action": "Traded from Colonel Corbin's Ascent"
+      },
+      {
+        "name": "Ryan Sloan",
+        "pos": "SP",
+        "mlbTeam": "SEA",
+        "action": "Traded from Colonel Corbin's Ascent"
+      }
+    ]
+  },
+  {
+    "date": "6/23/26 10:05 PM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Jose Soriano",
+        "pos": "SP",
+        "mlbTeam": "LAA",
+        "action": "Traded from Okamotomami"
+      },
+      {
+        "name": "Vladimir Guerrero Jr.",
+        "pos": "1B",
+        "mlbTeam": "TOR",
+        "action": "Traded from Okamotomami"
+      },
+      {
+        "name": "Jhoan Duran",
+        "pos": "RP",
+        "mlbTeam": "PHI",
+        "action": "Traded from Okamotomami"
+      },
+      {
+        "name": "Sam Antonacci",
+        "pos": "2B,LF",
+        "mlbTeam": "CHW",
+        "action": "Traded from Okamotomami"
+      },
+      {
+        "name": "Jung Hoo Lee",
+        "pos": "CF,RF",
+        "mlbTeam": "SF",
+        "action": "Traded from Okamotomami"
+      }
+    ]
+  },
+  {
+    "date": "6/24/26 3:13 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "James Tibbs",
+        "pos": "RF",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Cole Ragans",
+        "pos": "SP",
+        "mlbTeam": "KC",
+        "action": "Dropped"
+      },
+      {
+        "name": "River Ryan",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Noelvi Marte",
+        "pos": "3B,RF",
+        "mlbTeam": "CIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Matthew Boyd",
+        "pos": "SP",
+        "mlbTeam": "CHC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/24/26"
   }
 ]
