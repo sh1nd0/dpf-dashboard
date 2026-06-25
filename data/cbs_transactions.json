@@ -734,7 +734,7 @@
       },
       {
         "name": "Jasson Dominguez",
-        "pos": "LF",
+        "pos": "LF,RF",
         "mlbTeam": "NYY",
         "action": "Dropped"
       }
@@ -3425,7 +3425,7 @@
     "players": [
       {
         "name": "Jasson Dominguez",
-        "pos": "LF",
+        "pos": "LF,RF",
         "mlbTeam": "NYY",
         "action": "Added off Waivers"
       },
@@ -3701,7 +3701,7 @@
       },
       {
         "name": "Jasson Dominguez",
-        "pos": "LF",
+        "pos": "LF,RF",
         "mlbTeam": "NYY",
         "action": "Dropped"
       }
@@ -8207,5 +8207,71 @@
       }
     ],
     "effective": "6/24/26"
+  },
+  {
+    "date": "6/24/26 11:56 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "James Tibbs",
+        "pos": "RF",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/24/26"
+  },
+  {
+    "date": "6/24/26 11:57 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Emmet Sheehan",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/24/26"
+  },
+  {
+    "date": "6/25/26 3:20 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Alex Lange",
+        "pos": "RP",
+        "mlbTeam": "KC",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Caleb Durbin",
+        "pos": "3B",
+        "mlbTeam": "BOS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/25/26"
+  },
+  {
+    "date": "6/25/26 3:20 AM ET",
+    "teamId": "5",
+    "teamName": "Buddy Buddy Buddy All On Base",
+    "team": "Buddy Buddy Buddy All On Base",
+    "players": [
+      {
+        "name": "Emilio Pagan",
+        "pos": "RP",
+        "mlbTeam": "CIN",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/25/26"
   }
 ]
