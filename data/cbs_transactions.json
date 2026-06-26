@@ -621,7 +621,7 @@
       {
         "name": "David Peterson",
         "pos": "SP",
-        "mlbTeam": "NYM",
+        "mlbTeam": "CHC",
         "action": "Dropped"
       }
     ],
@@ -2625,7 +2625,7 @@
       {
         "name": "David Peterson",
         "pos": "SP",
-        "mlbTeam": "NYM",
+        "mlbTeam": "CHC",
         "action": "Added off Waivers"
       },
       {
@@ -3171,7 +3171,7 @@
       {
         "name": "David Peterson",
         "pos": "SP",
-        "mlbTeam": "NYM",
+        "mlbTeam": "CHC",
         "action": "Dropped"
       }
     ],
@@ -5585,7 +5585,7 @@
     "players": [
       {
         "name": "Bryce Eldridge",
-        "pos": "DH",
+        "pos": "1B",
         "mlbTeam": "SF",
         "action": "Dropped"
       }
@@ -6338,7 +6338,7 @@
     "players": [
       {
         "name": "Bryce Eldridge",
-        "pos": "DH",
+        "pos": "1B",
         "mlbTeam": "SF",
         "action": "Added off Waivers"
       },
@@ -8273,5 +8273,20 @@
       }
     ],
     "effective": "6/25/26"
+  },
+  {
+    "date": "6/25/26 7:57 PM ET",
+    "teamId": "5",
+    "teamName": "Buddy Buddy Buddy All On Base",
+    "team": "Buddy Buddy Buddy All On Base",
+    "players": [
+      {
+        "name": "Keibert Ruiz",
+        "pos": "C",
+        "mlbTeam": "WAS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/26/26"
   }
 ]
