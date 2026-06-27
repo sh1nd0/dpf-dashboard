@@ -8288,5 +8288,95 @@
       }
     ],
     "effective": "6/26/26"
+  },
+  {
+    "date": "6/27/26 3:25 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Sean Keys",
+        "pos": "3B",
+        "mlbTeam": "TOR",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "James Tibbs",
+        "pos": "RF",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/27/26"
+  },
+  {
+    "date": "6/27/26 3:25 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Yennier Cano",
+        "pos": "RP",
+        "mlbTeam": "BAL",
+        "action": "Activated"
+      },
+      {
+        "name": "Alfredo Duno",
+        "pos": "C",
+        "mlbTeam": "CIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Lawrence Butler",
+        "pos": "CF,RF",
+        "mlbTeam": "ATH",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/27/26"
+  },
+  {
+    "date": "6/27/26 3:25 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Caleb Ferguson",
+        "pos": "RP",
+        "mlbTeam": "CIN",
+        "action": "Activated"
+      },
+      {
+        "name": "Alex Lange",
+        "pos": "RP",
+        "mlbTeam": "KC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/27/26"
+  },
+  {
+    "date": "6/27/26 3:25 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Michael Petersen",
+        "pos": "RP",
+        "mlbTeam": "MIA",
+        "action": "Activated"
+      },
+      {
+        "name": "George Soriano",
+        "pos": "RP",
+        "mlbTeam": "STL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/27/26"
   }
 ]
