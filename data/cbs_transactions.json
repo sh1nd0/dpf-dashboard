@@ -4316,7 +4316,7 @@
     "players": [
       {
         "name": "Jack Perkins",
-        "pos": "RP",
+        "pos": "SP,RP",
         "mlbTeam": "ATH",
         "action": "Activated"
       },
@@ -8378,5 +8378,95 @@
       }
     ],
     "effective": "6/27/26"
+  },
+  {
+    "date": "6/27/26 11:06 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Jarren Duran",
+        "pos": "LF,CF",
+        "mlbTeam": "BOS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/27/26"
+  },
+  {
+    "date": "6/27/26 11:11 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Noelvi Marte",
+        "pos": "3B,RF",
+        "mlbTeam": "CIN",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/27/26"
+  },
+  {
+    "date": "6/28/26 3:34 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Henry Bolte",
+        "pos": "CF,RF",
+        "mlbTeam": "ATH",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Nick Lodolo",
+        "pos": "SP",
+        "mlbTeam": "CIN",
+        "action": "Dropped"
+      },
+      {
+        "name": "Cole Carrigg",
+        "pos": "CF",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "River Ryan",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      },
+      {
+        "name": "Brooks Lee",
+        "pos": "2B,3B,SS",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/28/26"
+  },
+  {
+    "date": "6/28/26 3:34 AM ET",
+    "teamId": "1",
+    "teamName": "Weird Fishes / Arrighetti",
+    "team": "Weird Fishes / Arrighetti",
+    "players": [
+      {
+        "name": "TJ Rumfield",
+        "pos": "1B",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Ezequiel Tovar",
+        "pos": "SS",
+        "mlbTeam": "COL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/28/26"
   }
 ]
