@@ -3383,7 +3383,7 @@
     "players": [
       {
         "name": "Carlos Cortes",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "ATH",
         "action": "Added off Waivers"
       },
@@ -4610,7 +4610,7 @@
     "players": [
       {
         "name": "Carlos Cortes",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "ATH",
         "action": "Dropped"
       }
@@ -4748,7 +4748,7 @@
       },
       {
         "name": "Carlos Cortes",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "ATH",
         "action": "Added off Waivers"
       },
@@ -5039,7 +5039,7 @@
       },
       {
         "name": "Carlos Cortes",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "ATH",
         "action": "Dropped"
       }
@@ -5345,7 +5345,7 @@
     "players": [
       {
         "name": "Carlos Cortes",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "ATH",
         "action": "Added off Waivers"
       },
@@ -6955,7 +6955,7 @@
       },
       {
         "name": "Carlos Cortes",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "ATH",
         "action": "Dropped"
       }
@@ -8597,5 +8597,187 @@
       }
     ],
     "effective": "6/29/26"
+  },
+  {
+    "date": "6/29/26 11:24 AM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Randy Arozarena",
+        "pos": "LF",
+        "mlbTeam": "SEA",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      },
+      {
+        "name": "Eduard Bazardo",
+        "pos": "RP",
+        "mlbTeam": "SEA",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      }
+    ]
+  },
+  {
+    "date": "6/29/26 11:24 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Taylor Ward",
+        "pos": "LF",
+        "mlbTeam": "BAL",
+        "action": "Traded from Dinosaur Jr Caminero"
+      },
+      {
+        "name": "Josh Hader",
+        "pos": "RP",
+        "mlbTeam": "HOU",
+        "action": "Traded from Dinosaur Jr Caminero"
+      }
+    ]
+  },
+  {
+    "date": "6/29/26 11:59 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Cooper Ingle",
+        "pos": "C",
+        "mlbTeam": "CLE",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/29/26"
+  },
+  {
+    "date": "6/29/26 7:11 PM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Kyle Tucker",
+        "pos": "RF",
+        "mlbTeam": "LAD",
+        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
+      }
+    ]
+  },
+  {
+    "date": "6/29/26 7:11 PM ET",
+    "teamId": "8",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "players": [
+      {
+        "name": "Franklin Arias",
+        "pos": "SS",
+        "mlbTeam": "BOS",
+        "action": "Traded from Colonel Corbin's Ascent"
+      }
+    ]
+  },
+  {
+    "date": "6/30/26 3:51 AM ET",
+    "teamId": "3",
+    "teamName": "Colonel Corbin's Ascent",
+    "team": "Colonel Corbin's Ascent",
+    "players": [
+      {
+        "name": "Lazaro Montes",
+        "pos": "RF",
+        "mlbTeam": "SEA",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Luis Lara",
+        "pos": "CF",
+        "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/30/26"
+  },
+  {
+    "date": "6/30/26 3:51 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Jarren Duran",
+        "pos": "LF,CF",
+        "mlbTeam": "BOS",
+        "action": "Activated"
+      },
+      {
+        "name": "Spencer Jones",
+        "pos": "CF",
+        "mlbTeam": "NYY",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/30/26"
+  },
+  {
+    "date": "6/30/26 3:51 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Caleb Durbin",
+        "pos": "3B",
+        "mlbTeam": "BOS",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Addison Barger",
+        "pos": "3B,RF",
+        "mlbTeam": "TOR",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/30/26"
+  },
+  {
+    "date": "6/30/26 3:51 AM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Tristan Peters",
+        "pos": "CF,RF",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "J.T. Realmuto",
+        "pos": "C",
+        "mlbTeam": "PHI",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/30/26"
+  },
+  {
+    "date": "6/30/26 7:45 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Antonio Senzatela",
+        "pos": "SP,RP",
+        "mlbTeam": "COL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/30/26"
   }
 ]
