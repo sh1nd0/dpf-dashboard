@@ -8958,5 +8958,41 @@
       }
     ],
     "effective": "7/2/26"
+  },
+  {
+    "date": "7/3/26 3:31 AM ET",
+    "teamId": "8",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "players": [
+      {
+        "name": "Antonio Senzatela",
+        "pos": "SP,RP",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Randy Vasquez",
+        "pos": "SP",
+        "mlbTeam": "SD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/3/26"
+  },
+  {
+    "date": "7/3/26 3:31 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Cristian Javier",
+        "pos": "SP",
+        "mlbTeam": "HOU",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "7/3/26"
   }
 ]
