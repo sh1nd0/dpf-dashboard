@@ -4212,7 +4212,7 @@
     "players": [
       {
         "name": "Pedro Ramirez",
-        "pos": "3B",
+        "pos": "2B,3B",
         "mlbTeam": "CHC",
         "action": "Added off Waivers"
       },
@@ -4464,7 +4464,7 @@
     "players": [
       {
         "name": "Pedro Ramirez",
-        "pos": "3B",
+        "pos": "2B,3B",
         "mlbTeam": "CHC",
         "action": "Dropped"
       }
