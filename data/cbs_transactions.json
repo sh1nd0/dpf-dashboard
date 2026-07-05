@@ -1275,7 +1275,7 @@
       {
         "name": "Jordan Romano",
         "pos": "RP",
-        "mlbTeam": "LAA",
+        "mlbTeam": "COL",
         "action": "Added"
       },
       {
@@ -2916,7 +2916,7 @@
       {
         "name": "Jordan Romano",
         "pos": "RP",
-        "mlbTeam": "LAA",
+        "mlbTeam": "COL",
         "action": "Dropped"
       }
     ],
@@ -8994,5 +8994,26 @@
       }
     ],
     "effective": "7/3/26"
+  },
+  {
+    "date": "7/5/26 4:05 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Jake Bennett",
+        "pos": "SP",
+        "mlbTeam": "BOS",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Samad Taylor",
+        "pos": "LF,RF",
+        "mlbTeam": "SD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/5/26"
   }
 ]
