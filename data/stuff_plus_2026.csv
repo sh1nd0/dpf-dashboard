@@ -20,7 +20,7 @@ Chris Sale|117|107|119
 Max Lazar|102|120|119
 Jacob deGrom|109|109|119
 Bryan Baker|118|104|118
-Tyler Ferguson|107|117|118
+Tyler Ferguson|108|116|117
 Jhoan Duran|120|96|117
 Cristopher Sánchez|118|100|117
 Jonathan Loáisiga|106|112|117
@@ -46,7 +46,7 @@ Gabe Speier|111|108|113
 Cade Smith|112|103|113
 Cam Schlittler|110|105|113
 Dylan Lee|113|103|113
-Tim Mayza|99|113|113
+Tim Mayza|100|113|113
 Zack Wheeler|105|107|113
 Cade Horton|99|116|113
 Mason Montgomery|108|103|112
@@ -89,7 +89,7 @@ Brandyn Garcia|121|92|109
 Drew Pomeranz|108|101|109
 Ryan Weathers|101|109|109
 Anthony Molina|100|112|109
-Casey Legumina|111|99|109
+Casey Legumina|111|100|109
 Brock Stewart|104|103|109
 Paul Skenes|99|111|109
 Cam Booser|115|102|109
@@ -133,6 +133,7 @@ Kevin Kelly|116|95|107
 Blake Treinen|107|105|107
 Enyel De Los Santos|94|114|107
 Reiver Sanmartin|101|111|107
+Wandy Peralta|100|106|107
 Emmet Sheehan|99|107|107
 Gage Jump|109|100|107
 Juan Morillo|108|100|107
@@ -147,7 +148,6 @@ Greg Weissert|107|104|106
 Joel Peguero|99|108|106
 Gavin Williams|104|104|106
 Dylan Cease|107|97|106
-Wandy Peralta|100|106|106
 Ryan Helsley|120|88|106
 Walbert Ureña|100|104|106
 José Soriano|99|104|106
@@ -166,15 +166,15 @@ Ryne Stanek|113|96|105
 Jake Bennett|92|116|105
 Brendon Little|107|92|105
 Luis Castillo|98|111|105
+Craig Kimbrel|110|95|105
 Parker Messick|96|106|105
 Angel Zerpa|107|104|105
-Craig Kimbrel|110|95|105
 Ryan Zeferjahn|115|89|105
 Riley O'Brien|108|100|105
 Justin Bruihl|102|104|105
 Sean Newcomb|107|100|105
-Paul Sewald|107|99|105
 Will Klein|96|108|105
+Paul Sewald|107|99|105
 Daniel Espino|111|94|105
 Blake Snell|119|92|105
 Dustin May|103|102|105
@@ -189,9 +189,9 @@ Aaron Civale|97|110|105
 Kevin Gausman|98|107|105
 Jack Perkins|102|103|104
 Caleb Ferguson|105|104|104
-Austin Warren|97|104|104
 Nick Martinez|99|105|104
 Kevin Ginkel|95|111|104
+Austin Warren|97|104|104
 Tyler Kinley|105|101|104
 Tanner Bibee|105|101|104
 Andrés Muñoz|116|89|104
@@ -237,7 +237,7 @@ William Kempner|116|90|102
 Erik Sabrowski|111|94|102
 Erik Miller|115|86|102
 Hoby Milner|106|99|102
-Ryan Rolison|100|101|102
+Ryan Rolison|100|100|102
 Kyle Bradish|101|99|102
 Shane Drohan|100|104|102
 Lucas Erceg|99|104|102
@@ -277,8 +277,8 @@ Blade Tidwell|113|93|100
 José Urquidy|102|105|100
 Hogan Harris|104|98|100
 Zac Gallen|87|110|100
-Sean Burke|98|103|100
 Trevor Rogers|101|102|100
+Sean Burke|98|103|100
 Tyler Schweitzer|99|99|100
 Bryse Wilson|97|110|100
 Gregory Santos|99|100|100
@@ -298,13 +298,13 @@ Brock Burke|106|93|100
 Seth Johnson|108|90|100
 Mason Barnett|101|102|100
 Jonathan Hernández|105|95|100
-Carson Palmquist|99|102|100
 Cole Winn|99|100|100
 Jesse Scholtens|92|106|100
 Chad Patrick|100|99|99
 Andrew Kittredge|98|103|99
 Edward Cabrera|94|105|99
 Jordan Leasure|105|94|99
+Carson Palmquist|100|101|99
 Ben Brown|101|99|99
 MacKenzie Gore|98|101|99
 Joel Payamps|96|102|99
@@ -349,29 +349,31 @@ Taylor Rogers|104|98|97
 Cole Sands|94|103|97
 Wilber Dotel|103|94|97
 Erick Fedde|90|107|97
-Cade Cavalli|103|96|97
 Brent Suter|100|103|97
+Cade Cavalli|103|96|97
 Dax Fulton|107|85|97
 Brent Headrick|103|95|97
 Jose Corniell|89|106|97
+JR Ritchie|94|96|97
 Alex Lange|97|96|97
 Cade Gibson|104|95|97
 Danny Coulombe|94|95|97
 Edwin Díaz|107|93|97
+Kade Morris|93|104|97
 Connor Brogdon|95|98|97
 JT Brubaker|92|104|97
 Zach Pop|105|92|97
 Trey Yesavage|109|88|97
 Kris Bubic|93|100|97
 Calvin Faucher|104|91|97
+Brandon Eisert|83|109|97
 Jake Irvin|99|100|97
 Sam Moll|101|93|97
-Tyler Samaniego|101|95|97
 José Suarez|96|99|97
+Tyler Samaniego|101|95|97
 Lance McCullers Jr.|97|96|97
-JR Ritchie|95|96|96
-Brandon Eisert|83|108|96
 Tyler Phillips|96|99|96
+Cal Quantrill|90|109|96
 Brooks Kriske|98|100|96
 Luis Medina|102|93|96
 Matthew Liberatore|98|101|96
@@ -381,6 +383,7 @@ Michael King|95|100|96
 Seranthony Domínguez|109|88|96
 Walker Buehler|95|99|96
 Mitchell Parker|95|102|96
+Sean Manaea|104|97|96
 Joe Ross|90|103|96
 Eric Orze|96|98|96
 Brant Hurter|117|82|96
@@ -388,7 +391,6 @@ Lake Bachar|98|97|96
 Cole Ragans|109|87|96
 Carmen Mlodzinski|92|104|96
 Hunter Gaddis|98|96|96
-Sean Manaea|104|96|96
 Mark Leiter Jr.|91|102|96
 Jacob Lopez|93|101|96
 Anthony Nunez|105|89|96
@@ -411,7 +413,6 @@ Mitch Keller|92|102|95
 Kyle Freeland|91|104|95
 AJ Blubaugh|100|94|95
 Jonathan Pintaro|109|90|95
-Cal Quantrill|90|108|95
 Juan Burgos|112|85|95
 Kodai Senga|96|94|95
 Jedixson Paez|81|103|95
@@ -421,12 +422,12 @@ Zebby Matthews|95|101|95
 David Sandlin|100|95|95
 Jack Flaherty|100|95|95
 Tyler Uberstine|107|95|95
-Keider Montero|94|102|95
 Merrill Kelly|89|101|95
 Brennan Bernardino|91|107|95
 Paxton Schultz|91|103|95
-Tejay Antone|99|98|95
+Keider Montero|94|102|95
 Braydon Fisher|99|97|95
+Tejay Antone|99|98|95
 Spencer Arrighetti|99|93|95
 Phil Maton|102|89|95
 Michael McGreevy|81|112|94
@@ -451,8 +452,8 @@ Yoendrys Gómez|114|81|94
 Robby Snelling|105|92|94
 John King|93|99|94
 Ryan Borucki|98|92|94
-Jovani Morán|99|94|94
 Jayden Murray|95|101|94
+Jovani Morán|99|94|94
 Brady Basso|101|96|94
 David Peterson|89|101|94
 Matt Festa|102|92|94
@@ -499,7 +500,6 @@ Anthony Banda|103|89|92
 Beck Way|98|91|92
 Ryan Feltner|93|96|92
 Joey Cantillo|97|94|92
-Adam Macko|97|95|91
 Brad Lord|95|100|91
 Chris Roycroft|97|94|91
 Cam Sanders|106|83|91
@@ -512,6 +512,7 @@ Jalen Beeks|89|101|91
 Nick Davila|93|98|91
 Chase Lee|91|91|91
 Shane Smith|97|92|91
+Adam Macko|97|95|91
 Noah Schultz|98|95|91
 Hunter Barco|102|88|91
 Brandon Williamson|98|91|91
@@ -535,7 +536,6 @@ Rhett Lowder|85|101|90
 Robbie Ray|96|93|90
 Brady Singer|92|98|89
 Jared Shuster|91|90|89
-Kade Morris|97|94|89
 Michael Lorenzen|87|100|89
 Jonah Tong|97|91|89
 Vince Velasquez|89|102|89
@@ -552,12 +552,12 @@ Brycen Mautz|98|85|88
 Reynaldo López|90|98|88
 Robert Gasser|104|89|88
 Philip Abner|89|95|88
-Sam Aldegheri|90|98|88
 Seth Halvorsen|105|83|88
 Tatsuya Imai|87|99|88
 Zach Thornton|99|91|88
 Brandon Leibrandt|88|94|87
 Eli Morgan|96|92|87
+Sam Aldegheri|89|98|87
 Germán Márquez|86|101|87
 Tim Herrin|100|87|87
 PJ Poulin|94|95|87
@@ -582,12 +582,12 @@ Jack Anderson|90|99|86
 Tayler Saucedo|94|85|86
 Taylor Rashi|91|96|86
 Andrew Wantz|107|83|86
+Zack Littell|83|101|86
 Corbin Martin|93|89|86
 Dennis Santana|91|95|86
 Ty Madden|86|97|86
 Osvaldo Bido|99|89|85
 Domingo Gonzalez|95|85|85
-Zack Littell|83|101|85
 Christian Roa|97|89|85
 Kendry Rojas|105|79|85
 Dietrich Enns|100|87|85
@@ -595,11 +595,11 @@ Jared Koenig|107|84|85
 Cody Laweryson|93|93|85
 Mitch Bratt|102|91|85
 Drey Jameson|96|87|85
-Griffin Canning|89|90|85
 Bailey Falter|88|91|85
 Simeon Woods Richardson|87|93|85
 Victor Mederos|127|55|84
 Carson Whisenhunt|95|84|84
+Griffin Canning|89|90|84
 Nick Raquet|99|85|84
 Bryan Abreu|97|84|84
 Jonathan Heasley|92|94|84
