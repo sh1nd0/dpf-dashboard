@@ -171,7 +171,7 @@ const CBS_ID_TO_LEAGUE = {};
 const CBS_TEAM_MAP = {
   1: 'Weird Fishes / Arrighetti',          // Chris Kaskie (renamed from "Dennis Santana...")
   2: 'Dinosaur Jr Caminero',               // Anthony Rescan
-  3: "Colonel Corbin's Ascent",             // David Roth
+  3: "The Kurtzain With",                   // David Roth (renamed from "Colonel Corbin's Ascent" 2026-07)
   4: 'Okamotomami',                         // Mark Pytlik (mine)
   5: 'Buddy Buddy Buddy All On Base',       // Fran Devinney
   6: 'A Pete Crow-Armstrong Looked at Me',  // Ian Wolfe

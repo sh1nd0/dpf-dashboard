@@ -25,6 +25,7 @@ CBS_TEAM_IDS = {
     'Weird Fishes / Arrighetti': '1',
     'Dinosaur Jr Caminero': '2',
     "Colonel Corbin's Ascent": '3',
+    'The Kurtzain With': '3',  # renamed from Colonel Corbin's Ascent 2026-07
     'Okamotomami': '4',
     'Buddy Buddy Buddy All On Base': '5',
     'A Pete Crow-Armstrong Looked at Me': '6',

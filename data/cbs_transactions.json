@@ -67,8 +67,9 @@
   },
   {
     "date": "3/16/26 12:10 PM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Bryson Stott",
@@ -87,8 +88,9 @@
   },
   {
     "date": "3/16/26 12:55 PM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Ryan Sloan",
@@ -107,8 +109,9 @@
   },
   {
     "date": "3/16/26 1:42 PM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Phil Maton",
@@ -120,9 +123,56 @@
     "effective": "3/25/26"
   },
   {
-    "date": "3/17/26 12:43 PM ET",
-    "team": "The Kurtzain With",
+    "date": "3/17/26 12:38 PM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Jac Caglianone",
+        "pos": "1B,RF",
+        "mlbTeam": "KC",
+        "action": "Traded from The Kurtzain With"
+      },
+      {
+        "name": "Vladimir Guerrero Jr.",
+        "pos": "1B",
+        "mlbTeam": "TOR",
+        "action": "Traded from The Kurtzain With"
+      },
+      {
+        "name": "Kazuma Okamoto",
+        "pos": "3B",
+        "mlbTeam": "TOR",
+        "action": "Traded from The Kurtzain With"
+      }
+    ]
+  },
+  {
+    "date": "3/17/26 12:38 PM ET",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Nick Kurtz",
+        "pos": "1B",
+        "mlbTeam": "ATH",
+        "action": "Traded from Okamotomami"
+      },
+      {
+        "name": "Nick Lodolo",
+        "pos": "SP",
+        "mlbTeam": "CIN",
+        "action": "Traded from Okamotomami"
+      }
+    ]
+  },
+  {
+    "date": "3/17/26 12:43 PM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Nasim Nunez",
@@ -135,8 +185,9 @@
   },
   {
     "date": "3/17/26 12:49 PM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Chad Patrick",
@@ -224,8 +275,9 @@
   },
   {
     "date": "3/19/26 3:05 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Carson Williams",
@@ -238,8 +290,9 @@
   },
   {
     "date": "3/19/26 3:06 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Nasim Nunez",
@@ -252,8 +305,9 @@
   },
   {
     "date": "3/19/26 3:14 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Shawn Armstrong",
@@ -266,23 +320,16 @@
   },
   {
     "date": "3/19/26 3:16 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Camilo Doval",
         "pos": "RP",
         "mlbTeam": "NYY",
         "action": "Dropped"
-      }
-    ],
-    "effective": "3/25/26"
-  },
-  {
-    "date": "3/19/26 3:16 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Colt Keith",
         "pos": "2B,3B",
@@ -420,8 +467,9 @@
   },
   {
     "date": "3/19/26 11:27 PM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "George Lombard",
@@ -434,8 +482,9 @@
   },
   {
     "date": "3/20/26 1:11 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Carlos Lagrange",
@@ -580,8 +629,9 @@
   },
   {
     "date": "3/21/26 12:45 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Didier Fuentes",
@@ -660,8 +710,9 @@
   },
   {
     "date": "3/23/26 1:09 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Alec Bohm",
@@ -674,15 +725,7 @@
         "pos": "SP",
         "mlbTeam": "NYY",
         "action": "Dropped"
-      }
-    ],
-    "effective": "3/25/26"
-  },
-  {
-    "date": "3/23/26 1:09 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Royce Lewis",
         "pos": "1B,3B",
@@ -700,8 +743,9 @@
   },
   {
     "date": "3/23/26 9:22 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Royce Lewis",
@@ -765,8 +809,9 @@
   },
   {
     "date": "3/24/26 1:22 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Nasim Nunez",
@@ -1145,23 +1190,16 @@
   },
   {
     "date": "3/25/26 2:55 PM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "A.J. Minter",
         "pos": "RP",
         "mlbTeam": "NYM",
         "action": "Added"
-      }
-    ],
-    "effective": "3/25/26"
-  },
-  {
-    "date": "3/25/26 2:55 PM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Andrew Kittredge",
         "pos": "RP",
@@ -1224,8 +1262,9 @@
   },
   {
     "date": "3/26/26 11:24 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "A.J. Minter",
@@ -1319,8 +1358,9 @@
   },
   {
     "date": "3/28/26 10:59 PM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Erik Sabrowski",
@@ -1435,8 +1475,9 @@
   },
   {
     "date": "3/31/26 2:14 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Logan Henderson",
@@ -1449,8 +1490,9 @@
   },
   {
     "date": "3/31/26 2:19 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Randy Vasquez",
@@ -1463,8 +1505,9 @@
   },
   {
     "date": "3/31/26 8:48 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Lance McCullers",
@@ -1666,28 +1709,15 @@
   },
   {
     "date": "4/4/26 3:06 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Bryan Baker",
         "pos": "RP",
         "mlbTeam": "TB",
         "action": "Activated"
-      }
-    ],
-    "effective": "4/4/26"
-  },
-  {
-    "date": "4/4/26 3:06 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Bryan Baker",
-        "pos": "RP",
-        "mlbTeam": "TB",
-        "action": "Added off Waivers"
       },
       {
         "name": "Phil Maton",
@@ -1931,28 +1961,15 @@
   },
   {
     "date": "4/7/26 2:07 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Emmet Sheehan",
         "pos": "SP",
         "mlbTeam": "LAD",
         "action": "Activated"
-      }
-    ],
-    "effective": "4/7/26"
-  },
-  {
-    "date": "4/7/26 2:07 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Emmet Sheehan",
-        "pos": "SP",
-        "mlbTeam": "LAD",
-        "action": "Added off Waivers"
       },
       {
         "name": "Lance McCullers",
@@ -2049,8 +2066,9 @@
   },
   {
     "date": "4/8/26 3:06 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Mark Vientos",
@@ -2189,8 +2207,9 @@
   },
   {
     "date": "4/10/26 3:09 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "James Tibbs",
@@ -2260,8 +2279,9 @@
   },
   {
     "date": "4/11/26 2:53 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Jung Hoo Lee",
@@ -2388,8 +2408,9 @@
   },
   {
     "date": "4/13/26 1:59 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Sam Antonacci",
@@ -2402,15 +2423,7 @@
         "pos": "CF,RF",
         "mlbTeam": "SF",
         "action": "Dropped"
-      }
-    ],
-    "effective": "4/13/26"
-  },
-  {
-    "date": "4/13/26 1:59 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Noah Schultz",
         "pos": "SP",
@@ -2428,8 +2441,9 @@
   },
   {
     "date": "4/13/26 9:04 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "James Tibbs",
@@ -2736,8 +2750,9 @@
   },
   {
     "date": "4/16/26 2:34 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Mauricio Dubon",
@@ -2819,8 +2834,9 @@
   },
   {
     "date": "4/17/26 11:33 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Nasim Nunez",
@@ -2869,8 +2885,9 @@
   },
   {
     "date": "4/18/26 3:03 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Antonio Senzatela",
@@ -2883,15 +2900,7 @@
         "pos": "1B,3B",
         "mlbTeam": "HOU",
         "action": "Dropped"
-      }
-    ],
-    "effective": "4/18/26"
-  },
-  {
-    "date": "4/18/26 3:03 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Franklin Arias",
         "pos": "SS",
@@ -2987,8 +2996,9 @@
   },
   {
     "date": "4/20/26 1:56 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Jeremiah Jackson",
@@ -3064,42 +3074,21 @@
   },
   {
     "date": "4/21/26 2:15 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Brenton Doyle",
         "pos": "CF",
         "mlbTeam": "COL",
         "action": "Added off Waivers"
-      }
-    ],
-    "effective": "4/21/26"
-  },
-  {
-    "date": "4/21/26 2:15 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Josh Jung",
         "pos": "3B",
         "mlbTeam": "TEX",
         "action": "Activated"
-      }
-    ],
-    "effective": "4/21/26"
-  },
-  {
-    "date": "4/21/26 2:15 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Josh Jung",
-        "pos": "3B",
-        "mlbTeam": "TEX",
-        "action": "Added off Waivers"
       },
       {
         "name": "Mauricio Dubon",
@@ -3127,8 +3116,9 @@
   },
   {
     "date": "4/22/26 2:33 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Juan Morillo",
@@ -3141,15 +3131,7 @@
         "pos": "RP",
         "mlbTeam": "DET",
         "action": "Dropped"
-      }
-    ],
-    "effective": "4/22/26"
-  },
-  {
-    "date": "4/22/26 2:33 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Dalton Rushing",
         "pos": "C",
@@ -3437,8 +3419,9 @@
   },
   {
     "date": "4/27/26 1:59 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Jasson Dominguez",
@@ -3694,8 +3677,9 @@
   },
   {
     "date": "5/1/26 2:03 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Jung Hoo Lee",
@@ -3708,15 +3692,7 @@
         "pos": "3B",
         "mlbTeam": "BAL",
         "action": "Dropped"
-      }
-    ],
-    "effective": "5/1/26"
-  },
-  {
-    "date": "5/1/26 2:03 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Lawrence Butler",
         "pos": "CF,RF",
@@ -3971,8 +3947,9 @@
   },
   {
     "date": "5/4/26 2:18 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Logan Henderson",
@@ -3985,15 +3962,7 @@
         "pos": "2B,RF",
         "mlbTeam": "BAL",
         "action": "Dropped"
-      }
-    ],
-    "effective": "5/4/26"
-  },
-  {
-    "date": "5/4/26 2:18 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Braden Montgomery",
         "pos": "CF,RF",
@@ -4005,15 +3974,7 @@
         "pos": "CF,RF",
         "mlbTeam": "SF",
         "action": "Dropped"
-      }
-    ],
-    "effective": "5/4/26"
-  },
-  {
-    "date": "5/4/26 2:18 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Cooper Ingle",
         "pos": "C",
@@ -4172,8 +4133,9 @@
   },
   {
     "date": "5/5/26 2:44 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Kai-Wei Teng",
@@ -4207,8 +4169,9 @@
   },
   {
     "date": "5/6/26 2:23 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Pedro Ramirez",
@@ -4257,8 +4220,9 @@
   },
   {
     "date": "5/6/26 9:12 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Kai-Wei Teng",
@@ -4361,42 +4325,21 @@
   },
   {
     "date": "5/7/26 2:33 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Anthony Eyanson",
         "pos": "SP",
         "mlbTeam": "BOS",
         "action": "Added off Waivers"
-      }
-    ],
-    "effective": "5/7/26"
-  },
-  {
-    "date": "5/7/26 2:33 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Lazaro Montes",
         "pos": "RF",
         "mlbTeam": "SEA",
         "action": "Activated"
-      }
-    ],
-    "effective": "5/7/26"
-  },
-  {
-    "date": "5/7/26 2:33 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Lazaro Montes",
-        "pos": "RF",
-        "mlbTeam": "SEA",
-        "action": "Added off Waivers"
       },
       {
         "name": "Lawrence Butler",
@@ -4409,8 +4352,9 @@
   },
   {
     "date": "5/7/26 12:43 PM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Anthony Eyanson",
@@ -4459,8 +4403,9 @@
   },
   {
     "date": "5/8/26 8:40 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Pedro Ramirez",
@@ -4503,23 +4448,16 @@
   },
   {
     "date": "5/9/26 2:33 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Marcus Semien",
         "pos": "2B",
         "mlbTeam": "NYM",
         "action": "Added off Waivers"
-      }
-    ],
-    "effective": "5/9/26"
-  },
-  {
-    "date": "5/9/26 2:33 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Jack Dreyer",
         "pos": "SP,RP",
@@ -4645,8 +4583,9 @@
   },
   {
     "date": "5/10/26 2:35 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Brooks Lee",
@@ -4710,8 +4649,9 @@
   },
   {
     "date": "5/11/26 2:41 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Henry Bolte",
@@ -4823,8 +4763,9 @@
   },
   {
     "date": "5/13/26 2:34 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Willy Adames",
@@ -4966,8 +4907,9 @@
   },
   {
     "date": "5/15/26 2:34 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Cole Carrigg",
@@ -5157,8 +5099,9 @@
   },
   {
     "date": "5/17/26 2:36 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Tyler Wells",
@@ -5240,8 +5183,9 @@
   },
   {
     "date": "5/18/26 1:59 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Brooks Lee",
@@ -5254,15 +5198,7 @@
         "pos": "SP,RP",
         "mlbTeam": "BAL",
         "action": "Dropped"
-      }
-    ],
-    "effective": "5/18/26"
-  },
-  {
-    "date": "5/18/26 1:59 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Jarren Duran",
         "pos": "LF,CF",
@@ -5715,8 +5651,9 @@
   },
   {
     "date": "5/25/26 2:01 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Austin Martin",
@@ -5729,15 +5666,7 @@
         "pos": "SP,RP",
         "mlbTeam": "ATL",
         "action": "Dropped"
-      }
-    ],
-    "effective": "5/25/26"
-  },
-  {
-    "date": "5/25/26 2:01 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Brandon Nimmo",
         "pos": "LF,RF",
@@ -5749,15 +5678,7 @@
         "pos": "SS",
         "mlbTeam": "SF",
         "action": "Dropped"
-      }
-    ],
-    "effective": "5/25/26"
-  },
-  {
-    "date": "5/25/26 2:01 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Spencer Steer",
         "pos": "1B,2B,LF,RF",
@@ -5826,8 +5747,9 @@
   },
   {
     "date": "5/26/26 4:22 PM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Noah Schultz",
@@ -5840,8 +5762,9 @@
   },
   {
     "date": "5/26/26 4:23 PM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Luis Robert",
@@ -5854,51 +5777,22 @@
   },
   {
     "date": "5/27/26 2:36 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Graham Ashcraft",
         "pos": "RP",
         "mlbTeam": "CIN",
         "action": "Activated"
-      }
-    ],
-    "effective": "5/27/26"
-  },
-  {
-    "date": "5/27/26 2:36 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Kai-Wei Teng",
         "pos": "SP,RP",
         "mlbTeam": "HOU",
         "action": "Added off Waivers"
-      }
-    ],
-    "effective": "5/27/26"
-  },
-  {
-    "date": "5/27/26 2:36 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Graham Ashcraft",
-        "pos": "RP",
-        "mlbTeam": "CIN",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "5/27/26"
-  },
-  {
-    "date": "5/27/26 2:36 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Cole Carrigg",
         "pos": "CF",
@@ -5958,8 +5852,9 @@
   },
   {
     "date": "5/28/26 2:05 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Didier Fuentes",
@@ -5972,15 +5867,7 @@
         "pos": "CF,RF",
         "mlbTeam": "ATH",
         "action": "Dropped"
-      }
-    ],
-    "effective": "5/28/26"
-  },
-  {
-    "date": "5/28/26 2:05 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Chad Patrick",
         "pos": "SP,RP",
@@ -6040,8 +5927,9 @@
   },
   {
     "date": "5/29/26 1:56 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Noelvi Marte",
@@ -6156,28 +6044,15 @@
   },
   {
     "date": "5/30/26 3:07 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Keaton Winn",
         "pos": "RP",
         "mlbTeam": "SF",
         "action": "Activated"
-      }
-    ],
-    "effective": "5/30/26"
-  },
-  {
-    "date": "5/30/26 3:07 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Keaton Winn",
-        "pos": "RP",
-        "mlbTeam": "SF",
-        "action": "Added off Waivers"
       },
       {
         "name": "Graham Ashcraft",
@@ -6301,8 +6176,9 @@
   },
   {
     "date": "6/1/26 2:06 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Luis Lara",
@@ -6372,8 +6248,9 @@
   },
   {
     "date": "6/2/26 2:37 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Joshua Baez",
@@ -6476,38 +6353,6 @@
   },
   {
     "date": "6/3/26 2:08 PM ET",
-    "teamId": "2",
-    "teamName": "Dinosaur Jr Caminero",
-    "team": "Dinosaur Jr Caminero",
-    "players": [
-      {
-        "name": "Bobby Witt",
-        "pos": "SS",
-        "mlbTeam": "KC",
-        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
-      },
-      {
-        "name": "Aaron Judge",
-        "pos": "RF",
-        "mlbTeam": "NYY",
-        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
-      },
-      {
-        "name": "Orion Kerkering",
-        "pos": "RP",
-        "mlbTeam": "PHI",
-        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
-      },
-      {
-        "name": "Will Smith",
-        "pos": "C",
-        "mlbTeam": "LAD",
-        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
-      }
-    ]
-  },
-  {
-    "date": "6/3/26 2:08 PM ET",
     "teamId": "8",
     "teamName": "Ballesteros, Let the Rhythm Take You Over",
     "team": "Ballesteros, Let the Rhythm Take You Over",
@@ -6535,6 +6380,38 @@
         "pos": "SS",
         "mlbTeam": "PHI",
         "action": "Traded from Dinosaur Jr Caminero"
+      }
+    ]
+  },
+  {
+    "date": "6/3/26 2:08 PM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Bobby Witt",
+        "pos": "SS",
+        "mlbTeam": "KC",
+        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
+      },
+      {
+        "name": "Aaron Judge",
+        "pos": "RF",
+        "mlbTeam": "NYY",
+        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
+      },
+      {
+        "name": "Orion Kerkering",
+        "pos": "RP",
+        "mlbTeam": "PHI",
+        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
+      },
+      {
+        "name": "Will Smith",
+        "pos": "C",
+        "mlbTeam": "LAD",
+        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
       }
     ]
   },
@@ -6648,43 +6525,22 @@
   },
   {
     "date": "6/4/26 2:06 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Colin Holderman",
         "pos": "RP",
         "mlbTeam": "CLE",
         "action": "Activated"
-      }
-    ],
-    "effective": "6/4/26"
-  },
-  {
-    "date": "6/4/26 2:06 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Colin Holderman",
-        "pos": "RP",
-        "mlbTeam": "CLE",
-        "action": "Added off Waivers"
       },
       {
         "name": "Keaton Winn",
         "pos": "RP",
         "mlbTeam": "SF",
         "action": "Dropped"
-      }
-    ],
-    "effective": "6/4/26"
-  },
-  {
-    "date": "6/4/26 2:06 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Ian Seymour",
         "pos": "SP,RP",
@@ -6747,8 +6603,9 @@
   },
   {
     "date": "6/5/26 2:33 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Noelvi Marte",
@@ -6796,24 +6653,63 @@
     "effective": "6/6/26"
   },
   {
-    "date": "6/5/26 9:51 PM ET",
-    "team": "The Kurtzain With",
+    "date": "6/5/26 9:49 PM ET",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Riley Greene",
+        "pos": "LF",
+        "mlbTeam": "DET",
+        "action": "Traded from Yesavage Garden"
+      },
+      {
+        "name": "Joe Ryan",
+        "pos": "SP",
+        "mlbTeam": "MIN",
+        "action": "Traded from Yesavage Garden"
+      },
+      {
+        "name": "William Contreras",
+        "pos": "C",
+        "mlbTeam": "MIL",
+        "action": "Traded from Yesavage Garden"
+      }
+    ]
+  },
+  {
+    "date": "6/5/26 9:49 PM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Logan Henderson",
+        "pos": "SP",
+        "mlbTeam": "MIL",
+        "action": "Traded from The Kurtzain With"
+      },
+      {
+        "name": "Ben Rice",
+        "pos": "C,1B",
+        "mlbTeam": "NYY",
+        "action": "Traded from The Kurtzain With"
+      }
+    ]
+  },
+  {
+    "date": "6/5/26 9:51 PM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Austin Martin",
         "pos": "LF,RF",
         "mlbTeam": "MIN",
         "action": "Dropped"
-      }
-    ],
-    "effective": "6/6/26"
-  },
-  {
-    "date": "6/5/26 9:51 PM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Kai-Wei Teng",
         "pos": "SP,RP",
@@ -6825,8 +6721,9 @@
   },
   {
     "date": "6/5/26 9:53 PM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Ian Seymour",
@@ -7088,8 +6985,9 @@
   },
   {
     "date": "6/9/26 7:08 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Joshua Baez",
@@ -7108,20 +7006,6 @@
   },
   {
     "date": "6/9/26 8:55 AM ET",
-    "teamId": "9",
-    "teamName": "Yesavage Garden",
-    "team": "Yesavage Garden",
-    "players": [
-      {
-        "name": "Ceddanne Rafaela",
-        "pos": "2B,CF",
-        "mlbTeam": "BOS",
-        "action": "Traded from Weird Fishes / Arrighetti"
-      }
-    ]
-  },
-  {
-    "date": "6/9/26 8:55 AM ET",
     "teamId": "1",
     "teamName": "Weird Fishes / Arrighetti",
     "team": "Weird Fishes / Arrighetti",
@@ -7131,6 +7015,20 @@
         "pos": "2B,LF",
         "mlbTeam": "HOU",
         "action": "Traded from Yesavage Garden"
+      }
+    ]
+  },
+  {
+    "date": "6/9/26 8:55 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Ceddanne Rafaela",
+        "pos": "2B,CF",
+        "mlbTeam": "BOS",
+        "action": "Traded from Weird Fishes / Arrighetti"
       }
     ]
   },
@@ -7217,8 +7115,9 @@
   },
   {
     "date": "6/10/26 3:29 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Sam Bachman",
@@ -7285,8 +7184,9 @@
   },
   {
     "date": "6/11/26 11:39 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Colin Holderman",
@@ -7356,26 +7256,6 @@
   },
   {
     "date": "6/13/26 8:16 AM ET",
-    "teamId": "9",
-    "teamName": "Yesavage Garden",
-    "team": "Yesavage Garden",
-    "players": [
-      {
-        "name": "Brent Headrick",
-        "pos": "RP",
-        "mlbTeam": "NYY",
-        "action": "Traded from Popped A Mahle I'm Sweating"
-      },
-      {
-        "name": "A.J. Ewing",
-        "pos": "CF",
-        "mlbTeam": "NYM",
-        "action": "Traded from Popped A Mahle I'm Sweating"
-      }
-    ]
-  },
-  {
-    "date": "6/13/26 8:16 AM ET",
     "teamId": "12",
     "teamName": "Popped A Mahle I'm Sweating",
     "team": "Popped A Mahle I'm Sweating",
@@ -7391,6 +7271,26 @@
         "pos": "RP",
         "mlbTeam": "ATL",
         "action": "Traded from Yesavage Garden"
+      }
+    ]
+  },
+  {
+    "date": "6/13/26 8:16 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Brent Headrick",
+        "pos": "RP",
+        "mlbTeam": "NYY",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      },
+      {
+        "name": "A.J. Ewing",
+        "pos": "CF",
+        "mlbTeam": "NYM",
+        "action": "Traded from Popped A Mahle I'm Sweating"
       }
     ]
   },
@@ -7579,23 +7479,16 @@
   },
   {
     "date": "6/16/26 5:53 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Yohandy Morales",
         "pos": "1B",
         "mlbTeam": "WAS",
         "action": "Added off Waivers"
-      }
-    ],
-    "effective": "6/16/26"
-  },
-  {
-    "date": "6/16/26 5:53 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "River Ryan",
         "pos": "SP",
@@ -7607,15 +7500,7 @@
         "pos": "1B,2B,LF,RF",
         "mlbTeam": "CIN",
         "action": "Dropped"
-      }
-    ],
-    "effective": "6/16/26"
-  },
-  {
-    "date": "6/16/26 5:53 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Paul Goldschmidt",
         "pos": "1B",
@@ -7633,8 +7518,9 @@
   },
   {
     "date": "6/16/26 9:29 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Didier Fuentes",
@@ -7992,8 +7878,9 @@
   },
   {
     "date": "6/20/26 3:07 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Cooper Ingle",
@@ -8033,8 +7920,9 @@
   },
   {
     "date": "6/21/26 3:06 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Gage Jump",
@@ -8073,6 +7961,58 @@
     "effective": "6/22/26"
   },
   {
+    "date": "6/22/26 11:11 PM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Jose Ramirez",
+        "pos": "3B",
+        "mlbTeam": "CLE",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      },
+      {
+        "name": "Gavin Williams",
+        "pos": "SP",
+        "mlbTeam": "CLE",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      },
+      {
+        "name": "Rafael Devers",
+        "pos": "1B",
+        "mlbTeam": "SF",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      }
+    ]
+  },
+  {
+    "date": "6/22/26 11:11 PM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Corbin Carroll",
+        "pos": "RF",
+        "mlbTeam": "ARI",
+        "action": "Traded from The Kurtzain With"
+      },
+      {
+        "name": "Eduardo Quintero",
+        "pos": "CF",
+        "mlbTeam": "LAD",
+        "action": "Traded from The Kurtzain With"
+      },
+      {
+        "name": "Tyler Soderstrom",
+        "pos": "1B,LF",
+        "mlbTeam": "ATH",
+        "action": "Traded from The Kurtzain With"
+      }
+    ]
+  },
+  {
     "date": "6/23/26 2:23 AM ET",
     "teamId": "9",
     "teamName": "Yesavage Garden",
@@ -8107,43 +8047,22 @@
   },
   {
     "date": "6/23/26 2:23 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Gabe Speier",
         "pos": "RP",
         "mlbTeam": "SEA",
         "action": "Activated"
-      }
-    ],
-    "effective": "6/23/26"
-  },
-  {
-    "date": "6/23/26 2:23 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Gabe Speier",
-        "pos": "RP",
-        "mlbTeam": "SEA",
-        "action": "Added off Waivers"
       },
       {
         "name": "Juan Morillo",
         "pos": "RP",
         "mlbTeam": "ARI",
         "action": "Dropped"
-      }
-    ],
-    "effective": "6/23/26"
-  },
-  {
-    "date": "6/23/26 2:23 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Matthew Boyd",
         "pos": "SP",
@@ -8175,9 +8094,86 @@
     "effective": "6/23/26"
   },
   {
-    "date": "6/24/26 3:13 AM ET",
-    "team": "The Kurtzain With",
+    "date": "6/23/26 10:05 PM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Gage Jump",
+        "pos": "SP",
+        "mlbTeam": "ATH",
+        "action": "Traded from The Kurtzain With"
+      },
+      {
+        "name": "Jackson Chourio",
+        "pos": "LF,CF,RF",
+        "mlbTeam": "MIL",
+        "action": "Traded from The Kurtzain With"
+      },
+      {
+        "name": "Tanner Scott",
+        "pos": "RP",
+        "mlbTeam": "LAD",
+        "action": "Traded from The Kurtzain With"
+      },
+      {
+        "name": "Paul Goldschmidt",
+        "pos": "1B",
+        "mlbTeam": "NYY",
+        "action": "Traded from The Kurtzain With"
+      },
+      {
+        "name": "Ryan Sloan",
+        "pos": "SP",
+        "mlbTeam": "SEA",
+        "action": "Traded from The Kurtzain With"
+      }
+    ]
+  },
+  {
+    "date": "6/23/26 10:05 PM ET",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Jose Soriano",
+        "pos": "SP",
+        "mlbTeam": "LAA",
+        "action": "Traded from Okamotomami"
+      },
+      {
+        "name": "Vladimir Guerrero Jr.",
+        "pos": "1B",
+        "mlbTeam": "TOR",
+        "action": "Traded from Okamotomami"
+      },
+      {
+        "name": "Jhoan Duran",
+        "pos": "RP",
+        "mlbTeam": "PHI",
+        "action": "Traded from Okamotomami"
+      },
+      {
+        "name": "Sam Antonacci",
+        "pos": "2B,LF",
+        "mlbTeam": "CHW",
+        "action": "Traded from Okamotomami"
+      },
+      {
+        "name": "Jung Hoo Lee",
+        "pos": "CF,RF",
+        "mlbTeam": "SF",
+        "action": "Traded from Okamotomami"
+      }
+    ]
+  },
+  {
+    "date": "6/24/26 3:13 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "James Tibbs",
@@ -8190,29 +8186,13 @@
         "pos": "SP",
         "mlbTeam": "KC",
         "action": "Dropped"
-      }
-    ],
-    "effective": "6/24/26"
-  },
-  {
-    "date": "6/24/26 3:13 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "River Ryan",
         "pos": "SP",
         "mlbTeam": "LAD",
         "action": "Added off Waivers"
-      }
-    ],
-    "effective": "6/24/26"
-  },
-  {
-    "date": "6/24/26 3:13 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Noelvi Marte",
         "pos": "3B,RF",
@@ -8230,8 +8210,9 @@
   },
   {
     "date": "6/24/26 11:56 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "James Tibbs",
@@ -8244,8 +8225,9 @@
   },
   {
     "date": "6/24/26 11:57 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Emmet Sheehan",
@@ -8378,23 +8360,16 @@
   },
   {
     "date": "6/27/26 3:25 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Sean Keys",
         "pos": "3B",
         "mlbTeam": "TOR",
         "action": "Added off Waivers"
-      }
-    ],
-    "effective": "6/27/26"
-  },
-  {
-    "date": "6/27/26 3:25 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "James Tibbs",
         "pos": "RF",
@@ -8406,8 +8381,9 @@
   },
   {
     "date": "6/27/26 11:06 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Jarren Duran",
@@ -8420,8 +8396,9 @@
   },
   {
     "date": "6/27/26 11:11 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Noelvi Marte",
@@ -8455,8 +8432,9 @@
   },
   {
     "date": "6/28/26 3:34 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Henry Bolte",
@@ -8469,15 +8447,7 @@
         "pos": "SP",
         "mlbTeam": "CIN",
         "action": "Dropped"
-      }
-    ],
-    "effective": "6/28/26"
-  },
-  {
-    "date": "6/28/26 3:34 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Cole Carrigg",
         "pos": "CF",
@@ -8489,15 +8459,7 @@
         "pos": "SP",
         "mlbTeam": "LAD",
         "action": "Dropped"
-      }
-    ],
-    "effective": "6/28/26"
-  },
-  {
-    "date": "6/28/26 3:34 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Brooks Lee",
         "pos": "2B,3B,SS",
@@ -8509,8 +8471,9 @@
   },
   {
     "date": "6/28/26 9:56 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Sean Keys",
@@ -8523,8 +8486,9 @@
   },
   {
     "date": "6/28/26 9:59 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Cole Carrigg",
@@ -8615,23 +8579,16 @@
   },
   {
     "date": "6/29/26 3:43 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Tyler Wells",
         "pos": "SP,RP",
         "mlbTeam": "BAL",
         "action": "Added off Waivers"
-      }
-    ],
-    "effective": "6/29/26"
-  },
-  {
-    "date": "6/29/26 3:43 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Trevor Rogers",
         "pos": "SP",
@@ -8640,26 +8597,6 @@
       }
     ],
     "effective": "6/29/26"
-  },
-  {
-    "date": "6/29/26 11:24 AM ET",
-    "teamId": "2",
-    "teamName": "Dinosaur Jr Caminero",
-    "team": "Dinosaur Jr Caminero",
-    "players": [
-      {
-        "name": "Randy Arozarena",
-        "pos": "LF",
-        "mlbTeam": "SEA",
-        "action": "Traded from Popped A Mahle I'm Sweating"
-      },
-      {
-        "name": "Eduard Bazardo",
-        "pos": "RP",
-        "mlbTeam": "SEA",
-        "action": "Traded from Popped A Mahle I'm Sweating"
-      }
-    ]
   },
   {
     "date": "6/29/26 11:24 AM ET",
@@ -8682,9 +8619,30 @@
     ]
   },
   {
+    "date": "6/29/26 11:24 AM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Randy Arozarena",
+        "pos": "LF",
+        "mlbTeam": "SEA",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      },
+      {
+        "name": "Eduard Bazardo",
+        "pos": "RP",
+        "mlbTeam": "SEA",
+        "action": "Traded from Popped A Mahle I'm Sweating"
+      }
+    ]
+  },
+  {
     "date": "6/29/26 11:59 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Cooper Ingle",
@@ -8694,6 +8652,34 @@
       }
     ],
     "effective": "6/29/26"
+  },
+  {
+    "date": "6/29/26 7:11 PM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Kyle Tucker",
+        "pos": "RF",
+        "mlbTeam": "LAD",
+        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
+      }
+    ]
+  },
+  {
+    "date": "6/29/26 7:11 PM ET",
+    "teamId": "8",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "players": [
+      {
+        "name": "Franklin Arias",
+        "pos": "SS",
+        "mlbTeam": "BOS",
+        "action": "Traded from The Kurtzain With"
+      }
+    ]
   },
   {
     "date": "6/30/26 3:51 AM ET",
@@ -8760,23 +8746,16 @@
   },
   {
     "date": "6/30/26 3:51 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Lazaro Montes",
         "pos": "RF",
         "mlbTeam": "SEA",
         "action": "Added off Waivers"
-      }
-    ],
-    "effective": "6/30/26"
-  },
-  {
-    "date": "6/30/26 3:51 AM ET",
-    "team": "The Kurtzain With",
-    "teamName": "The Kurtzain With",
-    "players": [
+      },
       {
         "name": "Luis Lara",
         "pos": "CF",
@@ -8803,8 +8782,9 @@
   },
   {
     "date": "6/30/26 10:54 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Henry Bolte",
@@ -9078,8 +9058,9 @@
   },
   {
     "date": "7/7/26 4:06 AM ET",
-    "team": "The Kurtzain With",
+    "teamId": "3",
     "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
     "players": [
       {
         "name": "Steven Okert",

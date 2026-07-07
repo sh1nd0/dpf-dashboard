@@ -65,7 +65,7 @@ LEAGUE_BASE = f"https://{LEAGUE_HOST}"
 TEAMS = [
     {"id": 1,  "name": "Weird Fishes / Arrighetti"},
     {"id": 2,  "name": "Dinosaur Jr Caminero"},
-    {"id": 3,  "name": "Colonel Corbin's Ascent"},
+    {"id": 3,  "name": "The Kurtzain With"},  # was "Colonel Corbin's Ascent" until 2026-07
     {"id": 4,  "name": "Okamotomami"},
     {"id": 5,  "name": "Buddy Buddy Buddy All On Base"},
     {"id": 6,  "name": "A Pete Crow-Armstrong Looked at Me"},

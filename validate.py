@@ -207,6 +207,7 @@ def check_transactions(report: Report, cfg: dict | None):
         'choured in the usa.',
         'Are we not men? We are Devers!',
         'Everythings McGonigle Green',
+        "Colonel Corbin's Ascent",
     }
     for tid, seen in id_to_names.items():
         unknown = sorted(n for n in seen if n not in cfg_team_names and n not in known_old)
