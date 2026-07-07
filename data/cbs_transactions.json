@@ -9060,5 +9060,40 @@
       }
     ],
     "effective": "7/6/26"
+  },
+  {
+    "date": "7/7/26 4:06 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Luis Castillo",
+        "pos": "SP",
+        "mlbTeam": "SEA",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "7/7/26"
+  },
+  {
+    "date": "7/7/26 4:06 AM ET",
+    "team": "The Kurtzain With",
+    "teamName": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Steven Okert",
+        "pos": "RP",
+        "mlbTeam": "HOU",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Sam Bachman",
+        "pos": "RP",
+        "mlbTeam": "LAA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/7/26"
   }
 ]
