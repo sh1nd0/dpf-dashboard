@@ -59,7 +59,23 @@ ALL.forEach((p,i) => p._id = i);
 const PLAYER_MAP = new Map(ALL.map(p => [p.name, p]));
 const PLAYER_MAP_LC = new Map(ALL.map(p => [p.name.toLowerCase(), p]));
 const _stripAccents = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-const PLAYER_MAP_NORM = new Map(ALL.map(p => [_stripAccents(p.name).toLowerCase(), p]));
+// Fuzzy maps only keep UNIQUE normalized keys. When two distinct MLB players
+// collapse to the same normalized form ("Luis García Jr." the WSH 2B and
+// "Luis García" the NYM RP both normalize to "luis garcia"), a last-write-wins
+// map silently returns the wrong player. Ambiguous keys are dropped instead —
+// no match beats the wrong match; build_dashboard.py resolves those cases at
+// build time using CBS position eligibility, so rosters carry exact names.
+const _buildUniqueMap = keyFn => {
+  const m = new Map(); const dup = new Set();
+  ALL.forEach(p => {
+    const k = keyFn(p.name);
+    if (m.has(k)) { if (m.get(k) !== p) dup.add(k); }
+    else m.set(k, p);
+  });
+  dup.forEach(k => m.delete(k));
+  return m;
+};
+const PLAYER_MAP_NORM = _buildUniqueMap(n => _stripAccents(n).toLowerCase());
 // Aggressive normalization: strip accents, lowercase, remove punctuation
 // (spaces, periods, apostrophes, hyphens), drop generational suffixes
 // (Jr/Sr/II/III/IV). This lets us match common CBS↔pool drift:
@@ -70,7 +86,7 @@ const PLAYER_MAP_NORM = new Map(ALL.map(p => [_stripAccents(p.name).toLowerCase(
 const _normAggressive = s => _stripAccents(s).toLowerCase()
   .replace(/[\.\s'`\-]+/g, '')
   .replace(/(jr|sr|iii|iv|ii)$/g, '');
-const PLAYER_MAP_AGGRESSIVE = new Map(ALL.map(p => [_normAggressive(p.name), p]));
+const PLAYER_MAP_AGGRESSIVE = _buildUniqueMap(_normAggressive);
 // Name aliases: alternative names → canonical name in player pool. Use for
 // nickname variants that normalization can't catch (Mike↔Michael, Louie↔Louis,
 // Alex↔Alexander, etc.) and for anything else that needs to collapse.
@@ -78,6 +94,10 @@ const NAME_ALIASES = {
   'Cameron Schlittler': 'Cam Schlittler',
   'Luis Robert': 'Luis Robert Jr.',
   'Jazz Chisholm': 'Jazz Chisholm Jr.',
+  // CBS strips accents AND suffixes: its "Luis Garcia" (1B/2B, WSH — the one
+  // rostered in this league) is Luis García Jr., NOT the NYM RP "Luis García".
+  // League-scoped call: if someone ever rosters the RP, revisit.
+  'Luis Garcia': 'Luis García Jr.',
   // Nickname variants (CBS uses casual form; pool uses formal)
   'Mike Soroka': 'Michael Soroka',
   'Louie Varland': 'Louis Varland',

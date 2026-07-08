@@ -1162,12 +1162,17 @@ if _os.path.exists(_cbs_rosters_path):
     # name that doesn't match exactly results in a player without stats. Map
     # CBS → MLB at build time so the JS gets canonical names.
     _mlb_pool_names = set()
+    _pit_pool_names = set()   # which pool names are pitchers — used to
+                              # disambiguate duplicate MLB names (see _pick)
     for _csv in ['data/bat_2026.csv', 'data/pit_2026.csv']:
         if _os.path.exists(_csv):
             with open(_csv) as _f:
                 next(_f)
                 for _ln in _f:
-                    _mlb_pool_names.add(_ln.split('|', 1)[0])
+                    _nm = _ln.split('|', 1)[0]
+                    _mlb_pool_names.add(_nm)
+                    if 'pit' in _csv:
+                        _pit_pool_names.add(_nm)
     def _strip(name):
         nfkd = _uni.normalize('NFKD', name)
         nfkd = ''.join(c for c in nfkd if not _uni.combining(c))
@@ -1185,22 +1190,52 @@ if _os.path.exists(_cbs_rosters_path):
         'nicholas': 'nick', 'nick': 'nicholas',
         'andrew': 'andy', 'andy': 'andrew',
     }
-    _pool_by_strip = {_strip(n): n for n in _mlb_pool_names}
-    _pool_by_no_suffix = {_no_suffix(n): n for n in _mlb_pool_names}
+    from collections import defaultdict as _dd
+    _pool_by_strip = _dd(list)
+    _pool_by_no_suffix = _dd(list)
+    for _n in _mlb_pool_names:
+        _pool_by_strip[_strip(_n)].append(_n)
+        _pool_by_no_suffix[_no_suffix(_n)].append(_n)
+    def _pick(cands, cbs_name):
+        """Resolve a normalized-name collision between distinct MLB players
+        (e.g. CBS 'Luis Garcia' → 'Luis García Jr.' the WSH 2B vs
+        'Luis García' the NYM RP). CBS eligibility says which KIND of player
+        the league object refers to; use it to pick the matching pool record.
+        Returns None when still ambiguous — no stats beats the wrong player."""
+        if len(cands) == 1:
+            return cands[0]
+        _elig = (cbs_pos.get(cbs_name) or '').upper()
+        if not _elig:
+            return None
+        _want_pit = 'SP' in _elig or 'RP' in _elig or _elig == 'P'
+        _typed = [c for c in cands if (c in _pit_pool_names) == _want_pit]
+        return _typed[0] if len(_typed) == 1 else None
     def _normalize_to_pool(cbs_name):
         if cbs_name in _mlb_pool_names: return cbs_name
-        s1 = _strip(cbs_name)
-        if s1 in _pool_by_strip: return _pool_by_strip[s1]
-        s2 = _no_suffix(cbs_name)
-        if s2 in _pool_by_no_suffix: return _pool_by_no_suffix[s2]
-        if s2 in _pool_by_strip: return _pool_by_strip[s2]
-        # First-name alias
-        parts = s2.split()
-        if parts and parts[0] in _ALIASES:
-            alt = ' '.join([_ALIASES[parts[0]]] + parts[1:])
-            if alt in _pool_by_no_suffix: return _pool_by_no_suffix[alt]
-            if alt in _pool_by_strip: return _pool_by_strip[alt]
-        return cbs_name  # not found — leave as-is, the player just won't have stats
+        # Gather candidates across ALL index levels BEFORE picking: CBS's
+        # suffix-less 'Luis Garcia' hits the strip index uniquely (the NYM RP)
+        # while the player it actually means ('Luis García Jr.') only appears
+        # at the no-suffix level — an early single-hit return picks the wrong
+        # player without ever seeing the ambiguity.
+        s1, s2 = _strip(cbs_name), _no_suffix(cbs_name)
+        cands = []
+        for _key, _index in ((s1, _pool_by_strip),
+                             (s2, _pool_by_no_suffix),
+                             (s2, _pool_by_strip)):
+            for _c in _index.get(_key, []):
+                if _c not in cands: cands.append(_c)
+        if not cands:
+            # First-name alias
+            parts = s2.split()
+            if parts and parts[0] in _ALIASES:
+                alt = ' '.join([_ALIASES[parts[0]]] + parts[1:])
+                for _index in (_pool_by_no_suffix, _pool_by_strip):
+                    for _c in _index.get(alt, []):
+                        if _c not in cands: cands.append(_c)
+        _hit = _pick(cands, cbs_name) if cands else None
+        # not found / unresolvably ambiguous — leave as-is; the player just
+        # won't have stats, which beats showing another player's stats.
+        return _hit if _hit else cbs_name
     _renamed = 0; _kept = 0; _missing = []
     _cbs_rosters_normalized = {}
     for _team, _plyrs in _cbs_rosters_data.items():
