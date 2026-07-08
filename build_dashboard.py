@@ -393,6 +393,26 @@ def _cbs_get(full_name):
     no_suffix = _SUFFIXES.sub('', key).strip()
     return cbs_lookup.get(no_suffix)
 
+# MLB Stats API primary positions (data/mlb_positions.json from fetch_stats.py).
+# Last-resort fallback for post-draft call-ups with no CBS entry and no row in
+# the frozen FanGraphs draft pool — without it they all display as DH.
+mlb_lookup = {}
+try:
+    with open('data/mlb_positions.json') as _mf:
+        for _n, _p in json.load(_mf).items():
+            _k = strip_accents(_n.strip().lower())
+            mlb_lookup[_k] = _p
+            _ns = _SUFFIXES.sub('', _k).strip()
+            if _ns != _k and _ns not in mlb_lookup:
+                mlb_lookup[_ns] = _p
+except FileNotFoundError:
+    print("NOTE: data/mlb_positions.json missing — run fetch_stats.py to enable "
+          "MLB position fallback for call-ups")
+
+def _mlb_get(full_name):
+    key = strip_accents(full_name.strip().lower())
+    return mlb_lookup.get(key) or mlb_lookup.get(_SUFFIXES.sub('', key).strip())
+
 VALID_POS = {'LF', 'CF', 'RF', 'C', '1B', '2B', '3B', 'SS', 'DH', 'SP', 'RP', 'U'}
 
 def get_cbs_position(full_name, fg_pos):
@@ -485,15 +505,24 @@ def get_all_positions(name, fg_pos):
     cbs_positions = get_cbs_all_positions(name)
     if cbs_positions:
         return cbs_positions
-    if pd.isna(fg_pos):
-        return ['DH']
     # No CBS data → use ONLY the first FG position (their primary). Trims
     # away FG-secondaries that don't meet our league's stricter rule.
-    parts = str(fg_pos).split('/')
-    if not parts:
-        return ['DH']
-    primary = resolve_pos(parts[0], name)
-    return [primary] if primary else ['DH']
+    if not pd.isna(fg_pos):
+        parts = str(fg_pos).split('/')
+        if parts:
+            primary = resolve_pos(parts[0], name)
+            if primary:
+                return [primary]
+    # Post-draft call-ups have neither: not in cbs_positions.json, not in the
+    # frozen FG draft pool. Their MLB primary position (harvested by
+    # fetch_stats.py) is a single position, not league eligibility, but it
+    # beats the DH catch-all.
+    mlb = _mlb_get(name)
+    if mlb:
+        primary = resolve_pos(mlb, name)
+        if primary:
+            return [primary]
+    return ['DH']
 
 def get_primary_pos(name, fg_pos):
     positions = get_all_positions(name, fg_pos)

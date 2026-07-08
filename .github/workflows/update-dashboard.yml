@@ -82,7 +82,7 @@ jobs:
         run: python fetch_stuffplus.py
         continue-on-error: true  # Don't fail the deploy if the source is unavailable
 
-      - name: Scrape CBS league (transactions + rosters) via cookies
+      - name: Scrape CBS league (transactions + rosters + positions) via cookies
         env:
           CBS_COOKIES_JSON: ${{ secrets.CBS_COOKIES_JSON }}
         run: |
@@ -92,6 +92,7 @@ jobs:
           fi
           printf '%s' "$CBS_COOKIES_JSON" > /tmp/cbs-cookies.json
           python scrape_cbs.py transactions --cookies /tmp/cbs-cookies.json
+          # rosters also merges per-player eligibility into data/cbs_positions.json
           python scrape_cbs.py rosters      --cookies /tmp/cbs-cookies.json
           python scrape_cbs.py matchup      --cookies /tmp/cbs-cookies.json
           rm -f /tmp/cbs-cookies.json
@@ -101,7 +102,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/snapshots/ data/bat_2026.csv data/pit_2026.csv data/bat_statcast_2026.csv data/stuff_plus_2026.csv data/savant_percentiles_bat_2026.csv data/savant_percentiles_pit_2026.csv data/cbs_transactions.json data/cbs_rosters.json data/season_status.json data/last_daily_run.json || true
+          git add data/snapshots/ data/bat_2026.csv data/pit_2026.csv data/mlb_positions.json data/bat_statcast_2026.csv data/stuff_plus_2026.csv data/savant_percentiles_bat_2026.csv data/savant_percentiles_pit_2026.csv data/cbs_transactions.json data/cbs_rosters.json data/cbs_positions.json data/season_status.json data/last_daily_run.json || true
           if git diff --cached --quiet; then
             echo "No new snapshot files to commit"
           else

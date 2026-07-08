@@ -3,7 +3,8 @@
 No third-party baseball libraries required — uses only requests.
 
 Run this periodically to update the dashboard with real stats.
-Creates data/bat_2026.csv and data/pit_2026.csv for the build script.
+Creates data/bat_2026.csv, data/pit_2026.csv and data/mlb_positions.json
+for the build script.
 
 Usage: python3 fetch_stats.py
 """
@@ -35,6 +36,61 @@ def norm_team(abbr):
     """Normalize MLB API team abbreviation to FanGraphs style."""
     return MLB_TO_FG.get(abbr, abbr) if abbr else ''
 
+
+# Primary positions harvested from the same stats payloads, keyed by MLB full
+# name. build_dashboard.py uses this as a last-resort fallback for post-draft
+# call-ups that have no CBS eligibility entry and aren't in the frozen
+# FanGraphs draft pool (they'd otherwise all display as DH).
+POSITIONS_BAT = {}   # fielding positions from the hitting splits
+POSITIONS_PIT = {}   # SP/RP derived from the pitching splits
+_FIELD_POS = {'C', '1B', '2B', '3B', 'SS', 'LF', 'CF', 'RF', 'OF', 'DH'}
+
+
+def fetch_season_splits(group):
+    """Fetch ALL season splits for a stat group, paginating past the API's
+    per-request cap (a flat limit=600 silently dropped ~130 pitchers and ~60
+    batters by mid-season — including exactly the fringe call-ups the
+    dashboard needs)."""
+    splits = []
+    offset = 0
+    while True:
+        url = (f'{MLB_API}/stats?stats=season&season={SEASON}&group={group}'
+               f'&gameType=R&limit=600&offset={offset}&playerPool=ALL'
+               f'&sportId=1&hydrate=team')
+        r = requests.get(url, timeout=20)
+        r.raise_for_status()
+        stats = r.json().get('stats', [{}])[0]
+        page = stats.get('splits', [])
+        splits.extend(page)
+        total = int(stats.get('totalSplits', 0) or 0)
+        offset += len(page)
+        if not page or offset >= total:
+            return splits
+
+
+def write_mlb_positions():
+    """Merge harvested positions into data/mlb_positions.json.
+
+    Batting positions win over pitching ones so a position player's blowout
+    mop-up appearance (which puts him in the pitching splits as RP) doesn't
+    mislabel him. Merged over the existing file so one failed fetch can't
+    wipe the other group's entries."""
+    fresh = {**POSITIONS_PIT, **POSITIONS_BAT}
+    if not fresh:
+        print("No MLB positions harvested — leaving mlb_positions.json untouched")
+        return
+    path = os.path.join(OUTDIR, 'mlb_positions.json')
+    merged = {}
+    try:
+        with open(path) as f:
+            merged = json.load(f)
+    except FileNotFoundError:
+        pass
+    merged.update(fresh)
+    with open(path, 'w') as f:
+        json.dump(merged, f, indent=2, ensure_ascii=False)
+    print(f"Saved {len(merged)} MLB primary positions to {path}")
+
 def parse_ip(ip_str):
     """Parse MLB API inningsPitched string (e.g. '6.2' = 6 innings + 2 outs = 6.667).
     Returns a float representing true innings pitched."""
@@ -49,12 +105,8 @@ def parse_ip(ip_str):
 def fetch_pitching_stats():
     """Fetch 2026 pitching stats for all MLB pitchers."""
     print("Fetching 2026 pitching stats from MLB Stats API...")
-    url = (f'{MLB_API}/stats?stats=season&season={SEASON}&group=pitching'
-           f'&gameType=R&limit=600&playerPool=ALL&sportId=1&hydrate=team')
     try:
-        r = requests.get(url, timeout=20)
-        r.raise_for_status()
-        splits = r.json().get('stats', [{}])[0].get('splits', [])
+        splits = fetch_season_splits('pitching')
         print(f"  Got {len(splits)} pitchers from API")
     except Exception as e:
         print(f"  ERROR fetching pitching stats: {e}")
@@ -105,6 +157,11 @@ def fetch_pitching_stats():
         rows.append(row)
         if gs >= 1 and pid:
             starters.append((pid, name))
+
+        # SP if he starts at least half his appearances, else RP
+        g = int(stat.get('gamesPlayed', 0) or 0)
+        if name and g > 0:
+            POSITIONS_PIT[name] = 'SP' if gs * 2 >= g else 'RP'
 
     # Calculate Quality Starts from game logs
     print(f"  Computing QS for {len(starters)} starters via game logs...")
@@ -172,12 +229,8 @@ def fetch_pitching_stats():
 def fetch_batting_stats():
     """Fetch 2026 batting stats for all MLB batters."""
     print("Fetching 2026 batting stats from MLB Stats API...")
-    url = (f'{MLB_API}/stats?stats=season&season={SEASON}&group=hitting'
-           f'&gameType=R&limit=600&playerPool=ALL&sportId=1&hydrate=team')
     try:
-        r = requests.get(url, timeout=20)
-        r.raise_for_status()
-        splits = r.json().get('stats', [{}])[0].get('splits', [])
+        splits = fetch_season_splits('hitting')
         print(f"  Got {len(splits)} batters from API")
     except Exception as e:
         print(f"  ERROR fetching batting stats: {e}")
@@ -193,6 +246,10 @@ def fetch_batting_stats():
         pa = int(stat.get('plateAppearances', 0) or 0)
         if pa == 0:
             continue
+
+        pos_abbr = (s.get('position') or {}).get('abbreviation', '')
+        if name and pos_abbr in _FIELD_POS:
+            POSITIONS_BAT[name] = pos_abbr
 
         def safe_float_b(v, default=0.0):
             try:
@@ -243,6 +300,7 @@ if __name__ == '__main__':
 
     bat_ok = fetch_batting_stats()
     pit_ok = fetch_pitching_stats()
+    write_mlb_positions()
 
     elapsed = round(time.time() - start, 1)
     print(f"\nDone in {elapsed}s.")

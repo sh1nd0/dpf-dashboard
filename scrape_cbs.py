@@ -25,6 +25,7 @@ Usage examples:
 Outputs (under data/):
   cbs_transactions.json   (merged via merge_tx.py)
   cbs_rosters.json        (overwrites)
+  cbs_positions.json      (merged — rosters/positions modes; eligibility per player)
   cbs_picks_full.json     (overwrites)
 
 The actual HTML parsing is left as TODO in each scraper function — the URL
@@ -160,9 +161,18 @@ def scrape_transactions(s: requests.Session, teams: Iterable[dict]) -> list[dict
     return _parse_transactions_page(r.text, teamid_by_name)
 
 
-def scrape_rosters(s: requests.Session, teams: Iterable[dict]) -> dict[str, list[str]]:
-    """Hit each team's roster page and return {canonical_team_name: [player_name, ...]}."""
+def scrape_rosters(
+    s: requests.Session, teams: Iterable[dict]
+) -> tuple[dict[str, list[str]], dict[str, str]]:
+    """Hit each team's roster page and return
+    ({canonical_team_name: [player_name, ...]}, {player_name: "POS,POS"}).
+
+    The positions dict is each player's CBS eligibility string (e.g. "2B,3B")
+    from the playerPositionAndTeam span — the same league-rule eligibility the
+    dashboard's cbs_positions.json needs, refreshed for every rostered player.
+    """
     out: dict[str, list[str]] = {}
+    positions: dict[str, str] = {}
     for t in teams:
         url = f"{LEAGUE_BASE}/teams/{t['id']}"
         print(f"  GET {url}")
@@ -170,10 +180,11 @@ def scrape_rosters(s: requests.Session, teams: Iterable[dict]) -> dict[str, list
         if r.status_code != 200:
             print(f"    ! HTTP {r.status_code} for team {t['id']}")
             continue
-        canonical, players = _parse_roster_page(r.text, t)
+        canonical, players, team_pos = _parse_roster_page(r.text, t)
         out[canonical] = players
+        positions.update(team_pos)
         time.sleep(0.5)
-    return out
+    return out, positions
 
 
 def scrape_season_status(s: requests.Session, teams: Iterable[dict]) -> dict | None:
@@ -349,12 +360,38 @@ def _parse_trades_page(html: str) -> list[dict]:
     return []
 
 
-def _parse_roster_page(html: str, team: dict) -> tuple[str, list[str]]:
-    """Return (canonical_team_name, [player_name, ...]) from /teams/{id}.
+
+# Position tokens CBS can emit in a playerPositionAndTeam span. Superset of
+# build_dashboard.VALID_POS ('UT'/'OF' appear on some pages); anything outside
+# this set means we mis-parsed the span and the entry is dropped.
+_CBS_POS_TOKENS = {"C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "OF",
+                   "DH", "U", "UT", "SP", "RP", "P"}
+
+
+def _parse_position_span(container) -> str:
+    """Extract 'POS,POS' eligibility from a playerPositionAndTeam span inside
+    `container` (format 'SS • ATL' / '2B,3B • NYY'). Returns '' if absent or
+    the tokens don't look like positions."""
+    span = container.select_one("span.playerPositionAndTeam")
+    if span is None:
+        return ""
+    parts = [p.strip() for p in _normalize_text(span.get_text(" ")).split("•")]
+    pos = parts[0] if parts else ""
+    tokens = [t.strip() for t in pos.split(",") if t.strip()]
+    if not tokens or any(t not in _CBS_POS_TOKENS for t in tokens):
+        return ""
+    return ",".join(tokens)
+
+
+def _parse_roster_page(html: str, team: dict) -> tuple[str, list[str], dict[str, str]]:
+    """Return (canonical_team_name, [player_name, ...], {player_name: "POS,POS"})
+    from /teams/{id}.
 
     The roster page has a single table.data; players are anchors with
-    class="playerLink". Canonical team name comes from the team-picker
-    <select>'s matching option (text is "<Team Name> (<Owner>)").
+    class="playerLink", each followed (in the same cell) by a
+    span.playerPositionAndTeam carrying eligibility. Canonical team name comes
+    from the team-picker <select>'s matching option (text is
+    "<Team Name> (<Owner>)").
     """
     _need_bs4()
     soup = BeautifulSoup(html, "html.parser")
@@ -370,6 +407,7 @@ def _parse_roster_page(html: str, team: dict) -> tuple[str, list[str]]:
 
     seen: set[str] = set()
     players: list[str] = []
+    positions: dict[str, str] = {}
     table = soup.select_one("table.data")
     if table is not None:
         for a in table.select("a.playerLink"):
@@ -377,7 +415,14 @@ def _parse_roster_page(html: str, team: dict) -> tuple[str, list[str]]:
             if n and n not in seen:
                 seen.add(n)
                 players.append(n)
-    return canonical, players
+                # Eligibility span lives in the same cell as the link; scope
+                # the lookup to the parent <td> so a missing span can't grab
+                # the next player's positions.
+                cell = a.find_parent("td")
+                pos = _parse_position_span(cell) if cell is not None else ""
+                if pos:
+                    positions[n] = pos
+    return canonical, players, positions
 
 
 def _parse_standings_page(html: str) -> list[dict]:
@@ -544,6 +589,54 @@ def write_rosters(rosters: dict[str, list[str]]):
     # phantom-add bugs.
 
 
+def update_positions(roster_positions: dict[str, str]):
+    """MERGE freshly scraped eligibility into data/cbs_positions.json.
+
+    Merge, never replace: the file also holds entries for free agents from the
+    original draft-day build, and a partial scrape (a team page 404ing) must
+    not wipe them. Precedence per player:
+      roster page (current)  >  transactions log (recent-ish)  >  existing file
+    The transactions fill covers unrostered call-ups (the hot-call-up pool in
+    build_dashboard.py) who would otherwise fall back to DH.
+    """
+    if not roster_positions:
+        print("No positions scraped — leaving cbs_positions.json untouched.")
+        return
+    path = os.path.join(DATA_DIR, "cbs_positions.json")
+    try:
+        with open(path) as f:
+            existing: dict[str, str] = json.load(f)
+    except FileNotFoundError:
+        existing = {}
+
+    # Fill-only pass from the transactions log: players not on any roster now
+    # but seen in a transaction row. Rows are newest-first, so keep the first
+    # (most recent) position string per player.
+    tx_fill: dict[str, str] = {}
+    try:
+        with open(os.path.join(DATA_DIR, "cbs_transactions.json")) as f:
+            for row in json.load(f):
+                for p in row.get("players", []):
+                    name, pos = p.get("name"), p.get("pos", "")
+                    tokens = [t.strip() for t in pos.split(",") if t.strip()]
+                    if (name and name not in tx_fill and tokens
+                            and all(t in _CBS_POS_TOKENS for t in tokens)):
+                        tx_fill[name] = ",".join(tokens)
+    except Exception as e:
+        print(f"    ! transactions position fill skipped: {e}")
+
+    merged = dict(existing)
+    merged.update(tx_fill)
+    merged.update(roster_positions)
+
+    added = sum(1 for k in merged if k not in existing)
+    changed = sum(1 for k, v in merged.items() if k in existing and existing[k] != v)
+    with open(path, "w") as f:
+        json.dump(merged, f, indent=2, ensure_ascii=False)
+    print(f"Wrote {len(merged)} position entries → {path} "
+          f"({added} new, {changed} updated, roster={len(roster_positions)}, tx-fill={len(tx_fill)})")
+
+
 def write_season_status(status: dict | None):
     if not status:
         print("No season status scraped — refusing to overwrite season_status.json.")
@@ -567,7 +660,8 @@ def write_picks(picks: list[dict]):
 # ── CLI ─────────────────────────────────────────────────────────────────────
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("mode", choices=["transactions", "rosters", "matchup", "picks", "all", "check-auth"])
+    parser.add_argument("mode", choices=["transactions", "rosters", "positions", "matchup",
+                                         "picks", "all", "check-auth"])
     parser.add_argument("--cookies", help="path to JSON cookies export")
     parser.add_argument("--session-token", help="raw pid_session cookie value")
     parser.add_argument("--skip-merge", action="store_true",
@@ -594,10 +688,12 @@ def main() -> int:
         rows = scrape_transactions(s, TEAMS)
         if not args.skip_merge:
             write_transactions(rows)
-    if args.mode in ("rosters", "all"):
-        rosters = scrape_rosters(s, TEAMS)
+    if args.mode in ("rosters", "positions", "all"):
+        rosters, positions = scrape_rosters(s, TEAMS)
         if not args.skip_merge:
-            write_rosters(rosters)
+            if args.mode != "positions":
+                write_rosters(rosters)
+            update_positions(positions)
     if args.mode in ("matchup", "all"):
         status = scrape_season_status(s, TEAMS)
         if not args.skip_merge:
