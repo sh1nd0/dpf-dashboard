@@ -217,6 +217,45 @@ pit['era']  = pit['era'] / 100
 pit['whip'] = pit['whip'] / 1000
 pit['war']  = pit['war'] / 10
 
+# ── Hot call-ups: recent 30-day volume from daily snapshots ───────────────
+# The 100-PA/30-IP pool floor hides unrostered call-ups who are playing every
+# day (e.g. a June call-up sitting at 50 PA — exactly the waiver targets the
+# dashboard exists to surface). Anyone with real recent volume joins the pool
+# and the augmentation below; the qualified-params z-scoring keeps their small
+# samples from distorting anyone else's values.
+HOT_PA_30D, HOT_IP_30D = 25, 10.0
+_hot_bat, _hot_pit = set(), set()
+try:
+    with open('data/snapshots/index.json') as _sf:
+        _sidx = json.load(_sf)
+    _sdates = sorted(_sidx.get('dates') or [])
+    if len(_sdates) >= 2:
+        import datetime as _dt
+        _slatest = _sdates[-1]
+        _stgt = (_dt.date.fromisoformat(_slatest) - _dt.timedelta(days=30)).isoformat()
+        _searlier = None
+        for _d in _sdates:
+            if _d <= _stgt: _searlier = _d
+            else: break
+        if _searlier is None:
+            _searlier = _sdates[0]
+        for _nm, _snaps in (_sidx.get('bat') or {}).items():
+            _l = _snaps.get(_slatest)
+            if not _l: continue
+            _e = _snaps.get(_searlier)
+            if _l[0] - (_e[0] if _e else 0) >= HOT_PA_30D:
+                _hot_bat.add(_nm)
+        for _nm, _snaps in (_sidx.get('pit') or {}).items():
+            _l = _snaps.get(_slatest)
+            if not _l: continue
+            _e = _snaps.get(_searlier)
+            if _l[0] - (_e[0] if _e else 0) >= HOT_IP_30D:
+                _hot_pit.add(_nm)
+        print(f"Hot call-up exemption: {len(_hot_bat)} batters >={HOT_PA_30D} PA/30d, "
+              f"{len(_hot_pit)} pitchers >={HOT_IP_30D} IP/30d")
+except Exception as _e:
+    print(f"WARN: hot call-up exemption skipped: {_e}")
+
 # ── Include rostered players missing from the draft pool ──────────────────
 # dc_bat_full.csv is a frozen pre-season draft universe; players who debuted
 # after the draft (recent call-ups) aren't in it, so a rostered call-up would
@@ -237,7 +276,7 @@ try:
             _bat26_team[_r['name']] = _r.get('team', '')
     _dc_names = set(bat['name'])
     _add_rows = []
-    for _nm in sorted(_rostered):
+    for _nm in sorted(_rostered | _hot_bat):
         if _nm in _dc_names or _nm not in bat26_lookup:
             continue
         _s = bat26_lookup[_nm]
@@ -275,7 +314,7 @@ try:
             _pit26_team[_r['name']] = _r.get('team', '')
     _dc_pnames = set(pit['name'])
     _add_p = []
-    for _nm in sorted(_rostered_p):
+    for _nm in sorted(_rostered_p | _hot_pit):
         if _nm in _dc_pnames or _nm not in pit26_lookup:
             continue
         _s = pit26_lookup[_nm]
@@ -316,8 +355,8 @@ try:
 except Exception as _e:
     print(f"WARN: roster floor-exemption skipped: {_e}")
     _floor_rostered = set()
-bat_pool = bat[(bat['pa'] >= 100) | (bat['name'].isin(_floor_rostered))].copy()
-pit_pool = pit[(pit['ip'] >= 30) | (pit['name'].isin(_floor_rostered))].copy()
+bat_pool = bat[(bat['pa'] >= 100) | bat['name'].isin(_floor_rostered) | bat['name'].isin(_hot_bat)].copy()
+pit_pool = pit[(pit['ip'] >= 30) | pit['name'].isin(_floor_rostered) | pit['name'].isin(_hot_pit)].copy()
 
 print(f"Batter pool: {len(bat_pool)} players (PA>=100)")
 print(f"Pitcher pool: {len(pit_pool)} players (IP>=30)")
@@ -375,34 +414,46 @@ def get_cbs_all_positions(full_name):
     return [p.strip() for p in cbs.split(',') if p.strip() in VALID_POS]
 
 # ── Z-score functions ─────────────────────────────────────────────────────
-def zscore(series):
-    m, s = series.mean(), series.std()
-    if s == 0: return pd.Series(0, index=series.index)
+def zscore(series, qual=None):
+    """z-score `series` against the mean/std of the QUALIFIED subset (defaults
+    to the whole series). The pool floor admits small-sample players (rostered
+    call-ups, hot 30d call-ups) so they render; scoring stays honest, but their
+    extreme small-sample rates must not set the pool params — sub-100-PA
+    players inflate AVG/OBP/SLG stds ~1.4-1.5x while leaving counting-stat
+    stds ~1.0x, which silently underweights the league's three rate categories."""
+    ref = series[qual] if qual is not None else series
+    m, s = ref.mean(), ref.std()
+    if s == 0 or pd.isna(s): return pd.Series(0.0, index=series.index)
     return (series - m) / s
 
 # ── Batter LCV ────────────────────────────────────────────────────────────
-bat_pool['z_avg'] = zscore(bat_pool['avg'])
-bat_pool['z_hr']  = zscore(bat_pool['hr'])
-bat_pool['z_obp'] = zscore(bat_pool['obp'])
-bat_pool['z_slg'] = zscore(bat_pool['slg'])
-bat_pool['z_r']   = zscore(bat_pool['r'])
-bat_pool['z_rbi'] = zscore(bat_pool['rbi'])
-bat_pool['z_sb']  = zscore(bat_pool['sb'])
-bat_pool['z_so']  = zscore(bat_pool['so'])
+# Params from the projected-regular pool only (the pre-exemption floor).
+_bat_qual = bat_pool['pa'] >= 100
+if _bat_qual.sum() < 30: _bat_qual = None  # degenerate pool — use everyone
+bat_pool['z_avg'] = zscore(bat_pool['avg'], _bat_qual)
+bat_pool['z_hr']  = zscore(bat_pool['hr'], _bat_qual)
+bat_pool['z_obp'] = zscore(bat_pool['obp'], _bat_qual)
+bat_pool['z_slg'] = zscore(bat_pool['slg'], _bat_qual)
+bat_pool['z_r']   = zscore(bat_pool['r'], _bat_qual)
+bat_pool['z_rbi'] = zscore(bat_pool['rbi'], _bat_qual)
+bat_pool['z_sb']  = zscore(bat_pool['sb'], _bat_qual)
+bat_pool['z_so']  = zscore(bat_pool['so'], _bat_qual)
 
 bat_pool['lcv'] = (bat_pool['z_avg'] + bat_pool['z_hr'] + bat_pool['z_obp'] +
                    bat_pool['z_slg'] + bat_pool['z_r'] + bat_pool['z_rbi'] +
                    bat_pool['z_sb'] - bat_pool['z_so'])
 
 # ── Pitcher LCV ───────────────────────────────────────────────────────────
-pit_pool['z_era']  = zscore(pit_pool['era'])
-pit_pool['z_hld']  = zscore(pit_pool['hld'])
-pit_pool['z_hr']   = zscore(pit_pool['hr'])
-pit_pool['z_so']   = zscore(pit_pool['so'])
-pit_pool['z_sv']   = zscore(pit_pool['sv'])
-pit_pool['z_w']    = zscore(pit_pool['w'])
-pit_pool['z_whip'] = zscore(pit_pool['whip'])
-pit_pool['z_qs']   = zscore(pit_pool['qs'])
+_pit_qual = pit_pool['ip'] >= 30
+if _pit_qual.sum() < 30: _pit_qual = None
+pit_pool['z_era']  = zscore(pit_pool['era'], _pit_qual)
+pit_pool['z_hld']  = zscore(pit_pool['hld'], _pit_qual)
+pit_pool['z_hr']   = zscore(pit_pool['hr'], _pit_qual)
+pit_pool['z_so']   = zscore(pit_pool['so'], _pit_qual)
+pit_pool['z_sv']   = zscore(pit_pool['sv'], _pit_qual)
+pit_pool['z_w']    = zscore(pit_pool['w'], _pit_qual)
+pit_pool['z_whip'] = zscore(pit_pool['whip'], _pit_qual)
+pit_pool['z_qs']   = zscore(pit_pool['qs'], _pit_qual)
 
 pit_pool['lcv'] = (-pit_pool['z_era'] + pit_pool['z_hld'] - pit_pool['z_hr'] +
                    pit_pool['z_so'] + pit_pool['z_sv'] + pit_pool['z_w'] -
@@ -767,11 +818,14 @@ for _, r in pit_pool.iterrows():
 # Critical: pitchers are split into SP vs RP pools before z-scoring.
 # Otherwise SPs get hammered on SV/HLD (they have none) and RPs on QS/K
 # volume, which made starters like Dollander score ~0 despite great rates.
-def _apply_plus_metric(pool, raw_key, plus_key, scale=15.0):
+def _apply_plus_metric(pool, raw_key, plus_key, scale=15.0, params_pool=None):
     """wRC+/OPS+-style: 100 + (x - mean)/std * scale. Integer, per-pool.
     Players outside the pool (below min_val) don't get a plus value.
-    Returns (mean, std) for debug/logging."""
-    vals = [r[raw_key] for r in pool if isinstance(r.get(raw_key), (int, float))]
+    params_pool: optional qualified subset that sets the mean/std (everyone in
+    `pool` still gets scored) — keeps small-sample players from defining the
+    scale. Returns (mean, std) for debug/logging."""
+    ref = params_pool if params_pool is not None and len(params_pool) >= 30 else pool
+    vals = [r[raw_key] for r in ref if isinstance(r.get(raw_key), (int, float))]
     if len(vals) < 5:
         return None, None
     m = sum(vals) / len(vals)
@@ -784,14 +838,25 @@ def _apply_plus_metric(pool, raw_key, plus_key, scale=15.0):
             r[plus_key] = int(round(100 + (v - m) / s * scale))
     return m, s
 
-def _compute_actual_lcv(records, stat_cols_signs, min_key, min_val):
-    """Compute actualLcv in-place for records passing min_val. Single pool."""
+def _compute_actual_lcv(records, stat_cols_signs, min_key, min_val, stats_min=None):
+    """Compute actualLcv in-place for records passing min_val. Single pool.
+
+    stats_min: optional higher gate for the PARAMS pool (mean/std). Everyone
+    >= min_val still gets scored, but only established players (e.g. 100+ PA)
+    define the scale — small samples inflate rate-stat stds ~1.4-1.5x while
+    counting stds stay ~1.0x, silently underweighting the league's three rate
+    categories in aLCV. Falls back to the scored pool early-season."""
     pool = [r for r in records
             if isinstance(r.get(min_key), (int, float)) and r.get(min_key, 0) >= min_val]
     if len(pool) < 15:
         return
+    params_pool = pool
+    if stats_min is not None:
+        qual = [r for r in pool if r.get(min_key, 0) >= stats_min]
+        if len(qual) >= 30:
+            params_pool = qual
     for stat, sign in stat_cols_signs:
-        vals = [r[stat] for r in pool if isinstance(r.get(stat), (int, float)) and r.get(stat) != '']
+        vals = [r[stat] for r in params_pool if isinstance(r.get(stat), (int, float)) and r.get(stat) != '']
         if len(vals) < 5:
             continue
         m = sum(vals) / len(vals)
@@ -806,23 +871,40 @@ def _compute_actual_lcv(records, stat_cols_signs, min_key, min_val):
         if '_alv' in r:
             r['actualLcv'] = round(r.pop('_alv'), 2)
             r['lcvDelta'] = round(r['actualLcv'] - r.get('lcv', 0), 2)
-    _apply_plus_metric([r for r in pool if 'actualLcv' in r], 'actualLcv', 'aLCVPlus')
+    scored = [r for r in pool if 'actualLcv' in r]
+    _params_ids = {id(r) for r in params_pool}
+    _apply_plus_metric(scored, 'actualLcv', 'aLCVPlus',
+                       params_pool=[r for r in scored if id(r) in _params_ids] if params_pool is not pool else None)
 
-def _compute_actual_lcv_split(records, sp_stats, rp_stats, role_key, sp_label, min_key, min_val):
+def _compute_actual_lcv_split(records, sp_stats, rp_stats, role_key, sp_label, min_key, min_val,
+                              stats_min_sp=None, stats_min_rp=None):
     """Compute actualLcv for pitchers, splitting SP vs RP pools so SPs aren't
     penalized for missing SV/HLD and RPs aren't penalized for low QS/K volume.
     Each role uses its own category mix and its own z-score pool.
-    """
+
+    stats_min_sp/rp: optional higher gates for each role's PARAMS pool — same
+    rationale as _compute_actual_lcv's stats_min (small samples inflate
+    rate-stat stds and dilute ERA/WHIP weight). Scoring still covers everyone
+    >= min_val; falls back to the role pool early-season."""
     pool = [r for r in records
             if isinstance(r.get(min_key), (int, float)) and r.get(min_key, 0) >= min_val]
     if len(pool) < 15:
         return
     sp_pool = [r for r in pool if r.get(role_key) == sp_label]
     rp_pool = [r for r in pool if r.get(role_key) != sp_label]
-    for sub_pool, stat_cols in ((sp_pool, sp_stats), (rp_pool, rp_stats)):
-        sub_pool_eff = sub_pool if len(sub_pool) >= 5 else pool  # fallback
+
+    def _qualified(sub_pool, stats_min):
+        if stats_min is None:
+            return sub_pool
+        qual = [r for r in sub_pool if r.get(min_key, 0) >= stats_min]
+        return qual if len(qual) >= 30 else sub_pool
+
+    sp_params = _qualified(sp_pool, stats_min_sp)
+    rp_params = _qualified(rp_pool, stats_min_rp)
+    for sub_pool, params, stat_cols in ((sp_pool, sp_params, sp_stats), (rp_pool, rp_params, rp_stats)):
+        params_eff = params if len(params) >= 5 else pool  # fallback
         for stat, sign in stat_cols:
-            vals = [r[stat] for r in sub_pool_eff if isinstance(r.get(stat), (int, float)) and r.get(stat) != '']
+            vals = [r[stat] for r in params_eff if isinstance(r.get(stat), (int, float)) and r.get(stat) != '']
             if len(vals) < 5:
                 continue
             m = sum(vals) / len(vals)
@@ -839,8 +921,11 @@ def _compute_actual_lcv_split(records, sp_stats, rp_stats, role_key, sp_label, m
             r['lcvDelta'] = round(r['actualLcv'] - r.get('lcv', 0), 2)
     # SP/RP split: each role gets its own aLCV+ pool so a +1.8 SP and +1.8 RP
     # both map to ~127 within their own role, not against the merged pool.
-    _apply_plus_metric([r for r in sp_pool if 'actualLcv' in r], 'actualLcv', 'aLCVPlus')
-    _apply_plus_metric([r for r in rp_pool if 'actualLcv' in r], 'actualLcv', 'aLCVPlus')
+    for role_pool, role_params in ((sp_pool, sp_params), (rp_pool, rp_params)):
+        scored = [r for r in role_pool if 'actualLcv' in r]
+        _rp_ids = {id(r) for r in role_params}
+        _apply_plus_metric(scored, 'actualLcv', 'aLCVPlus',
+                           params_pool=[r for r in scored if id(r) in _rp_ids] if role_params is not role_pool else None)
 
 _bat_s26_stats = [
     ('s26_avg', 1), ('s26_hr', 1), ('s26_obp', 1), ('s26_slg', 1),
@@ -856,12 +941,16 @@ _pit_s26_rp_stats = [
     ('s26_era', -1), ('s26_whip', -1), ('s26_hr', -1),
     ('s26_so', 1), ('s26_sv', 1), ('s26_hld', 1),
 ]
-_compute_actual_lcv(bat_records, _bat_s26_stats, 's26_pa', 10)
+# Score everyone above the display gates (10 PA / 5 IP) but let only
+# established samples define the pool params (100 PA; 30 IP SP / 15 IP RP) —
+# see _compute_actual_lcv docstring for why.
+_compute_actual_lcv(bat_records, _bat_s26_stats, 's26_pa', 10, stats_min=100)
 _compute_actual_lcv_split(
     pit_records,
     _pit_s26_sp_stats, _pit_s26_rp_stats,
     role_key='pos', sp_label='SP',
     min_key='s26_ip', min_val=5,
+    stats_min_sp=30, stats_min_rp=15,
 )
 print(f"actualLcv computed for {sum(1 for r in bat_records if 'actualLcv' in r)} batters, "
       f"{sum(1 for r in pit_records if 'actualLcv' in r)} pitchers "
@@ -875,9 +964,14 @@ print(f"actualLcv computed for {sum(1 for r in bat_records if 'actualLcv' in r)}
 # pool. Drives every place that used to display raw projected lcv.
 _pit_sp_records = [r for r in pit_records if r.get('pos') == 'SP']
 _pit_rp_records = [r for r in pit_records if r.get('pos') != 'SP']
-_apply_plus_metric(bat_records,    'lcv', 'lcvPlus')
-_apply_plus_metric(_pit_sp_records, 'lcv', 'lcvPlus')
-_apply_plus_metric(_pit_rp_records, 'lcv', 'lcvPlus')
+# Same qualified-params rule as aLCVPlus: floor-exempt small samples get a
+# lcvPlus score but don't define the 100-point scale.
+_apply_plus_metric(bat_records,    'lcv', 'lcvPlus',
+                   params_pool=[r for r in bat_records if r.get('pa', 0) >= 100])
+_apply_plus_metric(_pit_sp_records, 'lcv', 'lcvPlus',
+                   params_pool=[r for r in _pit_sp_records if r.get('ip', 0) >= 30])
+_apply_plus_metric(_pit_rp_records, 'lcv', 'lcvPlus',
+                   params_pool=[r for r in _pit_rp_records if r.get('ip', 0) >= 30])
 print(f"lcvPlus computed for {sum(1 for r in bat_records if 'lcvPlus' in r)} batters, "
       f"{sum(1 for r in pit_records if 'lcvPlus' in r)} pitchers")
 

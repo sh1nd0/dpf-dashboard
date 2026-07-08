@@ -55,6 +55,33 @@ function _zscore(val, mean, std) {
   return (val - mean) / std;
 }
 
+// Pool params for a given window length. lcv_stats.json carries per-window
+// params under 'windows' (7/14/30/60) — counting-stat scale grows with window
+// length while rate-stat scale doesn't, so every window must be z-scored
+// against its OWN pool. Scoring a 30d window against 14d params inflated
+// counting-category weight ~1.5-1.9x (and 7d deflated it to ~0.6x), tilting
+// rankings away from the league's equal-weight categories. Falls back to the
+// legacy top-level (14d) params for older lcv_stats files, and to the nearest
+// available window for nonstandard day counts.
+function _windowParams(windowDays, kind) {
+  const wins = LCV_STATS.windows;
+  if (wins) {
+    if (wins[String(windowDays)] && wins[String(windowDays)][kind]) {
+      return wins[String(windowDays)][kind];
+    }
+    // Nearest available window (e.g. a future custom 21d window → 14d params)
+    const avail = Object.keys(wins).map(Number).filter(Number.isFinite).sort((a, b) => a - b);
+    let best = null;
+    for (const d of avail) {
+      if (best === null || Math.abs(d - windowDays) < Math.abs(best - windowDays)) best = d;
+    }
+    if (best !== null && wins[String(best)] && wins[String(best)][kind]) {
+      return wins[String(best)][kind];
+    }
+  }
+  return LCV_STATS[kind];
+}
+
 // Find the snapshot date closest to (but not after) targetDate
 function _findClosestDate(dates, targetDate) {
   let best = null;
@@ -180,11 +207,11 @@ function computeBatSplitLcv(player, windowDays, opts) {
   const minPa = (opts && opts.minPa != null) ? opts.minPa : 30;
   if (!stats || stats.pa < minPa) return null;
 
-  const bs = LCV_STATS.bat;
-  // OBSERVED 14d performance only. No projection blending — the pool
-  // means in LCV_STATS are from each batter's actual 14d window so units
-  // match. (User direction: the rolling number must be pure observation;
-  // any speculation belongs in the projection columns elsewhere.)
+  const bs = _windowParams(windowDays, 'bat');
+  // OBSERVED window performance only. No projection blending — the pool
+  // means in LCV_STATS are from each batter's actual same-length window so
+  // units match. (User direction: the rolling number must be pure
+  // observation; any speculation belongs in the projection columns.)
   const rawLcv = _zscore(stats.avg, bs.avg.mean, bs.avg.std)
     + _zscore(stats.hr,  bs.hr.mean,  bs.hr.std)
     + _zscore(stats.obp, bs.obp.mean, bs.obp.std)
@@ -237,12 +264,12 @@ function computePitSplitLcv(player, windowDays, opts) {
   if (!stats || stats.ip < minIp) return null;
 
   // Use the SP-window pool for SPs, RP-window pool for RPs. The pool means
-  // are computed in build_snapshots_index.py from each pitcher's actual 14d
-  // window stats (NOT cumulative season totals), so units match — no pace
-  // multiplier needed. Without this, paced 21->186 K vs season-cumulative
-  // 14.7 K mean would give Dollander a +20 sigma blowup that later collapsed
-  // to ~80 via regression.
-  const ps = isRP ? LCV_STATS.rp : LCV_STATS.sp;
+  // are computed in build_snapshots_index.py from each pitcher's actual
+  // same-length window stats (NOT cumulative season totals), so units match —
+  // no pace multiplier needed. Without this, paced 21->186 K vs
+  // season-cumulative 14.7 K mean would give Dollander a +20 sigma blowup
+  // that later collapsed to ~80 via regression.
+  const ps = _windowParams(windowDays, isRP ? 'rp' : 'sp');
   if (!ps || !ps.era) {
     // Fallback for older lcv_stats (no SP/RP split): use legacy path.
     const psLegacy = LCV_STATS.pit || {};
@@ -334,9 +361,15 @@ function applySplitWindow(windowKey) {
       return;
     }
 
+    // Same gates as the always-on rolling columns (7d+/14d+/30d+) so the
+    // dropdown view shows the same cohort — and the same cohort the pool
+    // params in lcv_stats.json were built from (WINDOW_GATES there).
+    const gateOpts = win.days <= 7
+      ? { minPa: 10, minIp: 5.0, minIpRp: 3.0 }
+      : win.days <= 30 ? { minPa: 25 } : {};
     const splitResult = p.type === 'PIT'
-      ? computePitSplitLcv(p, win.days)
-      : computeBatSplitLcv(p, win.days);
+      ? computePitSplitLcv(p, win.days, gateOpts)
+      : computeBatSplitLcv(p, win.days, gateOpts);
 
     if (splitResult) {
       p.actualLcv = splitResult.actualLcv;
@@ -437,8 +470,8 @@ function _initOriginalLcvValues() {
   _applyPlus(_rps7,  'rollingLcv7', 'rollingLcvPlus7');
 
   // Same wRC+-style scaling for the 30-day rolling LCV → rollingLcvPlus30.
-  // The within-pool z-scoring also washes out the unit mismatch between 30d
-  // counting stats and the 14d-window pool means in LCV_STATS.
+  // (Raw values are z-scored against true 30d pool params via _windowParams,
+  // so no unit mismatch to wash out.)
   const _withRolling30 = ALL.filter(p => Number.isFinite(p.rollingLcv30));
   const _bats30 = _withRolling30.filter(p => p.type === 'BAT');
   const _sps30 = _withRolling30.filter(p => p.type === 'PIT' && _pitcherUsageRole(p) === 'SP');
