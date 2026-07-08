@@ -219,8 +219,7 @@ function renderMockDraftUI() {
         const bg = isKeeper ? 'rgba(99,102,241,0.15)' : 'rgba(16,185,129,0.15)';
         const border = isKeeper ? 'var(--accent)' : 'var(--green)';
         html += `<div style="background:${bg};border:1px solid ${border};border-radius:4px;padding:2px 6px;font-size:10px;white-space:nowrap;">`;
-        const enoTag = p.eno_rank ? ` <span class="eno-rank" style="font-size:8px;" title="Eno 150 Best Pitchers #${p.eno_rank}">P${p.eno_rank}</span>` : '';
-        html += `<span style="color:var(--text2);font-weight:600;">${pos}</span> ${p.name}${_injBadge(p.name)}${enoTag} <small style="opacity:0.6">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</small>`;
+        html += `<span style="color:var(--text2);font-weight:600;">${pos}</span> ${p.name} <small style="opacity:0.6">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</small>`;
         if (isKeeper) html += ' <small style="color:var(--accent);">K</small>';
         html += '</div>';
       } else {
@@ -256,8 +255,7 @@ function renderMockDraftUI() {
     const isMine = p.isUser;
     const teamLabel = isMine ? '<b style="color:var(--accent)">YOU</b>' : (LEAGUE_TEAMS[p.teamIdx].owner || p.teamName).split(' ')[0];
     const pickPlayer = _plyrI(p.name);
-    const pickEno = pickPlayer && pickPlayer.eno_rank ? ` <span class="eno-rank" style="font-size:8px;">P${pickPlayer.eno_rank}</span>` : '';
-    html += `<tr style="${isMine?'background:rgba(99,102,241,0.1);':''}"><td style="padding:2px 4px;font-size:10px;color:var(--text2);">${p.round}.${p.overall}</td><td style="padding:2px 4px;">${teamLabel}</td><td style="padding:2px 4px;font-weight:${isMine?'700':'400'};">${p.name}${pickEno}</td><td style="padding:2px 4px;">${p.pos}</td></tr>`;
+    html += `<tr style="${isMine?'background:rgba(99,102,241,0.1);':''}"><td style="padding:2px 4px;font-size:10px;color:var(--text2);">${p.round}.${p.overall}</td><td style="padding:2px 4px;">${teamLabel}</td><td style="padding:2px 4px;font-weight:${isMine?'700':'400'};">${p.name}</td><td style="padding:2px 4px;">${p.pos}</td></tr>`;
   });
   html += '</table></div>';
 
@@ -318,8 +316,7 @@ function renderMockDraftUI() {
       const tagDot = tag === 'want' ? '<span style="color:var(--green);">●</span> ' : tag === 'avoid' ? '<span style="color:var(--red);">●</span> ' : tag === 'sleeper' ? '<span style="color:var(--yellow);">●</span> ' : tag === 'injured' ? '<span style="color:#a855f7;">●</span> ' : '';
       html += `<tr class="mock-player-row" style="border-bottom:1px solid var(--border);cursor:pointer;" data-name="${encodeURIComponent(p.name)}" data-pos="${p.pos}" data-type="${p.type}">`;
       html += `<td style="padding:4px 6px;font-weight:600;">${p.dp.toFixed(1)}</td>`;
-      const enoB = p.eno_rank ? `<span class="eno-rank" title="Eno 150 Best Pitchers #${p.eno_rank}">P${p.eno_rank}</span> ` : '';
-      html += `<td style="padding:4px 6px;">${tagDot}${p.name} ${enoB}</td>`;
+      html += `<td style="padding:4px 6px;">${tagDot}${p.name}</td>`;
       html += `<td style="padding:4px 6px;">${p.pos}</td>`;
       html += `<td style="padding:4px 6px;">${p.team}</td>`;
       html += `<td style="text-align:right;padding:4px 6px;">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</td>`;
@@ -340,8 +337,7 @@ function renderMockDraftUI() {
       html += '<div style="font-size:11px;display:flex;flex-wrap:wrap;gap:4px;">';
       teamPicks.forEach(p => {
         const rpPlayer = _plyrI(p.name);
-        const rpEno = rpPlayer && rpPlayer.eno_rank ? ` <span class="eno-rank" style="font-size:8px;">P${rpPlayer.eno_rank}</span>` : '';
-        html += `<span style="background:var(--bg);padding:2px 6px;border-radius:3px;">Rd${p.round} ${p.name}${rpEno} <small style="opacity:0.6">(${p.pos})</small></span>`;
+        html += `<span style="background:var(--bg);padding:2px 6px;border-radius:3px;">Rd${p.round} ${p.name} <small style="opacity:0.6">(${p.pos})</small></span>`;
       });
       html += '</div></div>';
     });
@@ -670,7 +666,7 @@ function _renderAnalyticsInner(section) {
       const bg = state._keeperPlan[x.name] ? 'background:rgba(99,102,241,0.06);' : '';
       h += `<tr style="border-bottom:1px solid var(--border);${bg}">`;
       h += `<td style="padding:4px 6px;text-align:center;"><input type="checkbox" class="keeper-plan-cb" data-name="${encodeURIComponent(x.name)}" ${checked} style="cursor:pointer;"></td>`;
-      h += `<td style="padding:4px 6px;font-weight:600;">${x.name}${_injBadge(x.name)}</td>`;
+      h += `<td style="padding:4px 6px;font-weight:600;">${x.name}</td>`;
       h += `<td style="padding:4px 6px;text-align:center;"><span class="pos-badge pos-${x.primaryPos}">${x.primaryPos}</span></td>`;
       h += `<td style="padding:4px 6px;text-align:right;">${(Number.isFinite(x.lcvPlus) ? Math.round(x.lcvPlus).toString() : '—')}</td>`;
       h += `<td style="padding:4px 6px;text-align:center;font-weight:700;">R${x.ki.cost2027}</td>`;
@@ -1106,7 +1102,7 @@ function _renderAnalyticsInner(section) {
 
         h += `<tr style="border-bottom:1px solid var(--border);">`;
         h += `<td style="padding:3px 6px;font-weight:600;">${pos}${i > 0 ? (i+1) : ''}</td>`;
-        h += `<td style="padding:3px 6px;">${starter.name}${_injBadge(starter.name)}</td>`;
+        h += `<td style="padding:3px 6px;">${starter.name}</td>`;
         h += `<td style="padding:3px 6px;text-align:right;">${starterLcv.toFixed(1)}</td>`;
         h += `<td style="padding:3px 6px;color:var(--text2);">${bestAlt ? bestAlt.name : '—'}</td>`;
         h += `<td style="padding:3px 6px;text-align:right;color:var(--text2);">${bestAlt ? altLcv.toFixed(1) : '—'}</td>`;

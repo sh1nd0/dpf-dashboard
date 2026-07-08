@@ -521,22 +521,11 @@ function render() {
           }).join(' ');
           buzz = buzzHtml ? ` ${buzzHtml}` : '';
         }
-        const enoR = p.eno_rank ? ` <span class="eno-rank" title="Eno 150 Best Pitchers #${p.eno_rank}">P${p.eno_rank}</span>` : '';
-        // Analytics badges (v5.0) — inline after name, never wrap
-        let aBadges = '';
-        if (p._buySell === 'buy') {
-          const _bsDelta = (p.s26_xwoba && p.s26_woba) ? (parseFloat(p.s26_xwoba) - parseFloat(p.s26_woba)) : (p.s25_delta || 0);
-          const _bsYr = (p.s26_xwoba && p.s26_woba) ? '2026' : '2025';
-          aBadges += ' <span class="pbadge" title="Buy-low (' + _bsYr + '): xwOBA ' + (_bsDelta*1000).toFixed(0) + ' pts above wOBA (unlucky)" style="background:#16a34a;color:#fff;">BUY</span>';
-        }
-        if (p._buySell === 'sell') {
-          const _bsDelta = (p.s26_xwoba && p.s26_woba) ? (parseFloat(p.s26_xwoba) - parseFloat(p.s26_woba)) : (p.s25_delta || 0);
-          const _bsYr = (p.s26_xwoba && p.s26_woba) ? '2026' : '2025';
-          aBadges += ' <span class="pbadge" title="Sell-high (' + _bsYr + '): xwOBA ' + (Math.abs(_bsDelta)*1000).toFixed(0) + ' pts below wOBA (lucky)" style="background:#dc2626;color:#fff;">SELL</span>';
-        }
-        if (p._sbBreakout) aBadges += ' <span class="pbadge" title="SB breakout: ' + (p.sprintSpeed||'?') + ' ft/s speed, only ' + (p.sb||0) + ' proj SB" style="background:#7c3aed;color:#fff;">SB</span>';
-        aBadges += (p._kAdj || '') + (p._parkBadge || '') + (p._closerBadge || '') + (p._stuffTrend || '') + (p._luckBadge || '');
-        return `<td style="font-weight:600;white-space:nowrap;">${val}${_injBadge(p.name)}${enoR}${aBadges}${ownerBadge}${kp}</td>`;
+        // Name-cell badges trimmed to draft-round info only (owner R{n} pill +
+        // keeper K{n} pill) per user direction 2026-07. Injury/Eno/analytics
+        // badges removed from names; the underlying caches (p._buySell etc.)
+        // still feed the Waiver War Room tags column and filters.
+        return `<td style="font-weight:600;white-space:nowrap;">${val}${ownerBadge}${kp}</td>`;
       }
       return `<td class="${cls}">${val}</td>`;
     }).join('')}</tr>`;

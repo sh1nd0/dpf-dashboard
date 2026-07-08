@@ -102,13 +102,12 @@ function renderDraftBoard() {
         const lp = _plyrI(livePick.name);
         const pos = lp ? lp.primaryPos : '';
         const lcv = lp ? (Number.isFinite(lp.lcvPlus) ? Math.round(lp.lcvPlus).toString() : '—') : '';
-        const enoR = lp && lp.eno_rank ? ' P' + lp.eno_rank : '';
         if (livePick.mine) {
           cellBg = 'background:rgba(34,197,94,0.15);border:2px solid rgba(34,197,94,0.4);';
-          cellContent = `<span style="color:#22c55e;font-weight:700;">${livePick.name}</span><br><small style="opacity:0.7">${pos} ${lcv}${enoR}</small>`;
+          cellContent = `<span style="color:#22c55e;font-weight:700;">${livePick.name}</span><br><small style="opacity:0.7">${pos} ${lcv}</small>`;
         } else {
           cellBg = 'background:rgba(239,68,68,0.08);';
-          cellContent = `<span style="font-weight:600;opacity:0.85;">${livePick.name}</span><br><small style="opacity:0.5">${pos} ${lcv}${enoR}</small>`;
+          cellContent = `<span style="font-weight:600;opacity:0.85;">${livePick.name}</span><br><small style="opacity:0.5">${pos} ${lcv}</small>`;
         }
         cellTitle = `Pick #${overallPick}: ${livePick.name} (${pos}) LCV=${lcv}`;
       } else {
@@ -225,9 +224,8 @@ function renderDraftBoard() {
         const isK = myKeepNamesB.has(p.name);
         const bg = isK ? 'rgba(99,102,241,0.15)' : 'rgba(16,185,129,0.15)';
         const brd = isK ? 'var(--accent)' : 'var(--green)';
-        const eTag = p.eno_rank ? ` <span class="eno-rank" style="font-size:8px;">P${p.eno_rank}</span>` : '';
         html += `<div style="background:${bg};border:1px solid ${brd};border-radius:4px;padding:3px 8px;font-size:11px;white-space:nowrap;">`;
-        html += `<b style="color:var(--text2);">${pos}</b> ${p.name}${_injBadge(p.name)}${eTag} <small style="opacity:0.6">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</small>`;
+        html += `<b style="color:var(--text2);">${pos}</b> ${p.name} <small style="opacity:0.6">${(Number.isFinite(p.lcvPlus) ? Math.round(p.lcvPlus).toString() : '—')}</small>`;
         if (isK) html += ' <small style="color:var(--accent);">K</small>';
         html += '</div>';
       } else {

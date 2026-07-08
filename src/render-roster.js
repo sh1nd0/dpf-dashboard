@@ -268,7 +268,7 @@ function renderRoster() {
     let tr = `<tr class="roster-row" draggable="true" data-player="${encodeURIComponent(p.name)}" style="cursor:grab;">`;
     cols.forEach(c => {
       if (c.key === null) { tr += `<td style="padding:3px 4px;font-weight:600;font-size:11px;white-space:nowrap;">${slotLabel}</td>`; return; }
-      if (c.key === 'name') { tr += `<td style="padding:3px 4px;font-weight:600;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:130px;">${p.name}${_injBadge(p.name)}</td>`; return; }
+      if (c.key === 'name') { tr += `<td style="padding:3px 4px;font-weight:600;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:130px;">${p.name}</td>`; return; }
       if (c.key === 'pos') { tr += `<td style="padding:3px 4px;text-align:center;font-size:10px;">${p.primaryPos ? '<span class="pos-badge pos-'+p.primaryPos+'" style="padding:1px 4px;font-size:9px;">'+p.primaryPos+'</span>' : ''}</td>`; return; }
       // OPS computation: obp + slg from appropriate prefix
       let val;
@@ -687,7 +687,7 @@ function renderRoster() {
       const prAge = pr && pr.age ? `${pr.age.toFixed(0)}y` : '';
       const prInfo = [prPos, prOrg, prFV, prRank, prAge].filter(Boolean).join(' · ');
       const colsUsed = rosterView === 'player' ? numBatCols : colSpan;
-      html += `<tr><td style="padding:3px 6px;font-weight:600;font-size:11px;">MiLB</td><td colspan="${colsUsed-1}" style="padding:3px 6px;font-size:12px;">${name}${_injBadge(name)} <span style="color:var(--accent);font-size:10px;">${prInfo}</span></td></tr>`;
+      html += `<tr><td style="padding:3px 6px;font-weight:600;font-size:11px;">MiLB</td><td colspan="${colsUsed-1}" style="padding:3px 6px;font-size:12px;">${name} <span style="color:var(--accent);font-size:10px;">${prInfo}</span></td></tr>`;
     }
   });
   if (teamMilb.length === 0) html += `<tr><td colspan="${colSpan}" style="padding:4px 6px;color:var(--text2);font-size:11px;">No minor leaguers</td></tr>`;

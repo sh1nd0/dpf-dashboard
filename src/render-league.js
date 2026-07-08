@@ -238,7 +238,7 @@ function renderLeague() {
         const costClr = ki.keepable2027 ? '' : 'color:var(--red);';
         const rowBg = row.isKeeper ? 'background:rgba(74,107,255,0.04);' : '';
         html += `<tr style="${rowBg}">`;
-        html += `<td style="padding:3px 4px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${row.name}${_injBadge(row.name)}</td>`;
+        html += `<td style="padding:3px 4px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${row.name}</td>`;
         html += `<td style="padding:3px 4px;text-align:center;"><span class="pos-badge pos-${row.pos}" style="padding:1px 4px;font-size:9px;">${row.pos}</span></td>`;
         html += `<td style="text-align:right;padding:3px 4px;">${keeperStr}</td>`;
         html += `<td style="text-align:right;padding:3px 4px;${costClr}">${costStr}</td>`;

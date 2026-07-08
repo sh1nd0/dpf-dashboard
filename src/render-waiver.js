@@ -249,12 +249,6 @@ function _renderWaiverInner(section) {
   const cap = 150;
   filtered.slice(0, cap).forEach((c, i) => {
     const p = c.p;
-    const hotBadge = p.hotCold14 === 'HOT'
-      ? ' <span class="pbadge" style="background:#dc2626;color:#fff;">HOT</span>'
-      : p.hotCold14 === 'COLD'
-        ? ' <span class="pbadge" style="background:#2563eb;color:#fff;">COLD</span>'
-        : '';
-    const injBadge = _injBadge(p.name);
     const deltaFmt = c.delta === 0
       ? '—'
       : (c.delta > 0 ? '+' : '') + c.delta.toFixed(1);
@@ -275,7 +269,7 @@ function _renderWaiverInner(section) {
 
     html += `<tr style="border-bottom:1px solid var(--border);">`;
     html += `<td style="padding:6px 10px;color:var(--text2);">${i + 1}</td>`;
-    html += `<td style="padding:6px 10px;font-weight:600;">${p.name}${hotBadge}${injBadge}</td>`;
+    html += `<td style="padding:6px 10px;font-weight:600;">${p.name}</td>`;
     html += `<td style="padding:6px 10px;">${p.primaryPos || p.pos || ''}</td>`;
     html += `<td style="padding:6px 10px;color:var(--text2);">${p.team || ''}</td>`;
     html += `<td style="padding:6px 10px;color:var(--text2);">${p.age != null ? p.age : ''}</td>`;
