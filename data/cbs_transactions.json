@@ -9076,5 +9076,89 @@
       }
     ],
     "effective": "7/7/26"
+  },
+  {
+    "date": "7/8/26 2:19 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Gabe Speier",
+        "pos": "RP",
+        "mlbTeam": "SEA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/8/26"
+  },
+  {
+    "date": "7/8/26 3:25 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Victor Bericoto",
+        "pos": "1B,LF,RF",
+        "mlbTeam": "SF",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Alejandro Kirk",
+        "pos": "C",
+        "mlbTeam": "TOR",
+        "action": "Dropped"
+      },
+      {
+        "name": "Heliot Ramos",
+        "pos": "LF",
+        "mlbTeam": "SF",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Austin Riley",
+        "pos": "3B",
+        "mlbTeam": "ATL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/8/26"
+  },
+  {
+    "date": "7/8/26 3:25 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Bryce Rainer",
+        "pos": "SS",
+        "mlbTeam": "DET",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "7/8/26"
+  },
+  {
+    "date": "7/8/26 3:25 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Jackson Jobe",
+        "pos": "SP",
+        "mlbTeam": "DET",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Owen Caissie",
+        "pos": "RF",
+        "mlbTeam": "MIA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/8/26"
   }
 ]
