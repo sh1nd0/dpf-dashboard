@@ -14,7 +14,7 @@
   "Sam Haggerty": "LF",
   "Welinton Herrera": "RP",
   "P.J. Higgins": "C",
-  "Gabriel Hughes": "RP",
+  "Gabriel Hughes": "SP",
   "William Kempner": "RP",
   "Brooks Kriske": "RP",
   "Jorge Mateo": "SS",
@@ -1260,7 +1260,7 @@
   "Jonathan Cannon": "RP",
   "Blake Hunt": "C",
   "Ivan Johnson": "LF",
-  "Luis Lara": "CF",
+  "Luis Lara": "RF",
   "Nick Morabito": "LF",
   "Tommy Pham": "LF",
   "César Prieto": "3B",
@@ -1272,5 +1272,8 @@
   "Jhony Brito": "RP",
   "Evan Phillips": "RP",
   "Matt Seelinger": "RP",
-  "Jack Brannigan": "3B"
+  "Jack Brannigan": "3B",
+  "Luis Gastelum": "RP",
+  "Xzavion Curry": "RP",
+  "Alan Roden": "RF"
 }
