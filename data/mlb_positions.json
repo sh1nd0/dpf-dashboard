@@ -1099,7 +1099,7 @@
   "Freddy Fermin": "C",
   "Austin Wells": "C",
   "Steward Berroa": "CF",
-  "Cam Cauley": "2B",
+  "Cam Cauley": "CF",
   "Nate Eaton": "LF",
   "Daniel Johnson": "CF",
   "Joey Meneses": "DH",
@@ -1142,7 +1142,7 @@
   "Jonatan Clase": "LF",
   "Trei Cruz": "LF",
   "Kyler Fedko": "CF",
-  "Brett Harris": "3B",
+  "Brett Harris": "1B",
   "Luis Mey": "RP",
   "Trey Gibson": "SP",
   "Kyle Freeland": "SP",
@@ -1275,5 +1275,8 @@
   "Jack Brannigan": "3B",
   "Luis Gastelum": "RP",
   "Xzavion Curry": "RP",
-  "Alan Roden": "RF"
+  "Alan Roden": "RF",
+  "Patrick Sandoval": "SP",
+  "Woo-Suk Go": "RP",
+  "Eduardo Valencia": "DH"
 }

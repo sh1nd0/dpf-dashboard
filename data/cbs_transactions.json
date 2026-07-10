@@ -9196,5 +9196,68 @@
       }
     ],
     "effective": "7/9/26"
+  },
+  {
+    "date": "7/10/26 3:53 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Jarlin Susana",
+        "pos": "SP",
+        "mlbTeam": "WAS",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jacob Webb",
+        "pos": "RP",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Edwin Arroyo",
+        "pos": "2B,SS",
+        "mlbTeam": "CIN",
+        "action": "Dropped"
+      },
+      {
+        "name": "Bryan King",
+        "pos": "RP",
+        "mlbTeam": "HOU",
+        "action": "Activated"
+      },
+      {
+        "name": "Andrew Morris",
+        "pos": "SP,RP",
+        "mlbTeam": "MIN",
+        "action": "Activated"
+      },
+      {
+        "name": "JoJo Romero",
+        "pos": "RP",
+        "mlbTeam": "STL",
+        "action": "Dropped"
+      },
+      {
+        "name": "Noah Cameron",
+        "pos": "SP",
+        "mlbTeam": "KC",
+        "action": "Dropped"
+      },
+      {
+        "name": "Troy Melton",
+        "pos": "SP,RP",
+        "mlbTeam": "DET",
+        "action": "Activated"
+      },
+      {
+        "name": "Spencer Arrighetti",
+        "pos": "SP",
+        "mlbTeam": "HOU",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/10/26"
   }
 ]
