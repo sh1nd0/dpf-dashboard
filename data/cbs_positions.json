@@ -389,7 +389,7 @@
   "Edward Florentino": "CF",
   "Ildemaro Vargas": "1B,2B",
   "Antonio Senzatela": "SP,RP",
-  "Erick Fedde": "SP",
+  "Erick Fedde": "SP,RP",
   "Matt Shaw": "3B,RF",
   "Foster Griffin": "SP,RP",
   "Owen Caissie": "RF",
@@ -617,5 +617,7 @@
   "Andrew Morris": "SP,RP",
   "Troy Melton": "SP,RP",
   "Daniel Lynch IV": "RP",
-  "Trent Thornton": "RP"
+  "Trent Thornton": "RP",
+  "Kody Clemens": "1B,2B,LF,RF",
+  "Tayron Guerrero": "RP"
 }

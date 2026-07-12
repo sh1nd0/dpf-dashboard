@@ -3662,7 +3662,7 @@
     "players": [
       {
         "name": "Erick Fedde",
-        "pos": "SP",
+        "pos": "SP,RP",
         "mlbTeam": "CHW",
         "action": "Added off Waivers"
       },
@@ -4088,7 +4088,7 @@
       },
       {
         "name": "Erick Fedde",
-        "pos": "SP",
+        "pos": "SP,RP",
         "mlbTeam": "CHW",
         "action": "Dropped"
       }
@@ -5367,7 +5367,7 @@
       {
         "name": "Jacob Gonzalez",
         "pos": "1B,2B",
-        "mlbTeam": "CHW",
+        "mlbTeam": "PIT",
         "action": "Added off Waivers"
       }
     ],
@@ -8081,7 +8081,7 @@
       {
         "name": "Jacob Gonzalez",
         "pos": "1B,2B",
-        "mlbTeam": "CHW",
+        "mlbTeam": "PIT",
         "action": "Dropped"
       },
       {
@@ -9320,7 +9320,7 @@
       {
         "name": "Jacob Gonzalez",
         "pos": "1B,2B",
-        "mlbTeam": "CHW",
+        "mlbTeam": "PIT",
         "action": "Added off Waivers"
       }
     ],
@@ -9340,5 +9340,53 @@
       }
     ],
     "effective": "7/11/26"
+  },
+  {
+    "date": "7/12/26 3:38 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Kody Clemens",
+        "pos": "1B,2B,LF,RF",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Cole Carrigg",
+        "pos": "CF",
+        "mlbTeam": "COL",
+        "action": "Dropped"
+      },
+      {
+        "name": "Garrett Cleavinger",
+        "pos": "RP",
+        "mlbTeam": "TB",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Grayson Rodriguez",
+        "pos": "SP",
+        "mlbTeam": "LAA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/12/26"
+  },
+  {
+    "date": "7/12/26 3:38 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Tayron Guerrero",
+        "pos": "RP",
+        "mlbTeam": "BOS",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "7/12/26"
   }
 ]
