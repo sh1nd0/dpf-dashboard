@@ -9388,5 +9388,20 @@
       }
     ],
     "effective": "7/12/26"
+  },
+  {
+    "date": "7/12/26 7:37 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Alex Bregman",
+        "pos": "3B",
+        "mlbTeam": "CHC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/12/26"
   }
 ]
