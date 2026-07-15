@@ -9403,5 +9403,26 @@
       }
     ],
     "effective": "7/12/26"
+  },
+  {
+    "date": "7/15/26 2:28 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Alex Bregman",
+        "pos": "3B",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jarren Duran",
+        "pos": "LF,CF",
+        "mlbTeam": "BOS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/15/26"
   }
 ]
