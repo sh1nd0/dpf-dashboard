@@ -9424,5 +9424,26 @@
       }
     ],
     "effective": "7/15/26"
+  },
+  {
+    "date": "7/16/26 2:01 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Colin Holderman",
+        "pos": "RP",
+        "mlbTeam": "CLE",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Michael Petersen",
+        "pos": "RP",
+        "mlbTeam": "MIA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/16/26"
   }
 ]
