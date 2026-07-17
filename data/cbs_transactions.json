@@ -9445,5 +9445,41 @@
       }
     ],
     "effective": "7/16/26"
+  },
+  {
+    "date": "7/17/26 2:01 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Sean Manaea",
+        "pos": "SP,RP",
+        "mlbTeam": "NYM",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Luis Castillo",
+        "pos": "SP",
+        "mlbTeam": "SEA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/17/26"
+  },
+  {
+    "date": "7/17/26 2:01 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Austin Riley",
+        "pos": "3B",
+        "mlbTeam": "ATL",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "7/17/26"
   }
 ]
