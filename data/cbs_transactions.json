@@ -2799,7 +2799,7 @@
       {
         "name": "Aaron Civale",
         "pos": "SP",
-        "mlbTeam": "ATH",
+        "mlbTeam": "CHC",
         "action": "Added off Waivers"
       },
       {
@@ -3030,7 +3030,7 @@
       {
         "name": "Aaron Civale",
         "pos": "SP",
-        "mlbTeam": "ATH",
+        "mlbTeam": "CHC",
         "action": "Dropped"
       },
       {
@@ -3347,7 +3347,7 @@
     "players": [
       {
         "name": "Mason Montgomery",
-        "pos": "RP",
+        "pos": "SP,RP",
         "mlbTeam": "PIT",
         "action": "Added off Waivers"
       },
@@ -5279,7 +5279,7 @@
       },
       {
         "name": "Mason Montgomery",
-        "pos": "RP",
+        "pos": "SP,RP",
         "mlbTeam": "PIT",
         "action": "Dropped"
       }

@@ -1,5 +1,5 @@
 {
-  "Logan Allen": "RP",
+  "Logan Allen": "SP",
   "Tanner Andrews": "RP",
   "Spencer Bivens": "RP",
   "Ty Blach": "RP",
@@ -168,7 +168,7 @@
   "David Bednar": "RP",
   "Antonio Senzatela": "RP",
   "Grant Taylor": "RP",
-  "Shane Drohan": "RP",
+  "Shane Drohan": "SP",
   "Brock Burke": "RP",
   "Brandon Woodruff": "SP",
   "Clayton Beeter": "RP",
@@ -781,7 +781,7 @@
   "Ty France": "1B",
   "Luke Keaschall": "2B",
   "Jose Siri": "CF",
-  "Jacob Gonzalez": "1B",
+  "Jacob Gonzalez": "SS",
   "Drake Baldwin": "C",
   "Kyle Schwarber": "DH",
   "Pete Alonso": "1B",
@@ -892,7 +892,7 @@
   "Braden Montgomery": "RF",
   "Jose Altuve": "2B",
   "Hunter Feduccia": "C",
-  "Vaughn Grissom": "1B",
+  "Vaughn Grissom": "2B",
   "Kerry Carpenter": "RF",
   "Everson Pereira": "RF",
   "Sterlin Thompson": "LF",
@@ -1109,7 +1109,7 @@
   "Nick Solak": "DH",
   "Ke'Bryan Hayes": "3B",
   "Drew Romo": "C",
-  "Jahmai Jones": "DH",
+  "Jahmai Jones": "LF",
   "Rob Refsnyder": "DH",
   "Hayden Senger": "C",
   "Rodolfo Durán": "C",
@@ -1290,5 +1290,8 @@
   "Yunior Tur": "RP",
   "Harry Ford": "C",
   "Lucas Spence": "CF",
-  "Tommy White": "1B"
+  "Tommy White": "1B",
+  "Khristian Curtis": "RP",
+  "Max Kranick": "RP",
+  "Christian Encarnacion-Strand": "3B"
 }
