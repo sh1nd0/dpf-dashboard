@@ -277,7 +277,7 @@
   "Tyler Kinley": "RP",
   "Albert Suárez": "RP",
   "Adam Macko": "RP",
-  "Andrew Alvarez": "RP",
+  "Andrew Alvarez": "SP",
   "Logan Webb": "SP",
   "Zach Pop": "RP",
   "Yoendrys Gómez": "RP",
@@ -369,7 +369,7 @@
   "Kevin Gausman": "SP",
   "Joey Gerber": "RP",
   "Pierce Johnson": "RP",
-  "Erick Fedde": "RP",
+  "Erick Fedde": "SP",
   "Zach Thornton": "SP",
   "Kai-Wei Teng": "RP",
   "Chase Petty": "RP",
@@ -652,7 +652,7 @@
   "Trevor Larnach": "LF",
   "Freddie Freeman": "1B",
   "Jordan Walker": "RF",
-  "Ryan O'Hearn": "RF",
+  "Ryan O'Hearn": "1B",
   "Eloy Jiménez": "DH",
   "Miguel Rojas": "2B",
   "Riley Greene": "LF",
@@ -1042,7 +1042,7 @@
   "Jackson Holliday": "2B",
   "Tyler O'Neill": "RF",
   "Thomas Saggese": "LF",
-  "Braxton Fulford": "DH",
+  "Braxton Fulford": "C",
   "Jordan Beck": "LF",
   "Jorge Barrosa": "CF",
   "CJ Kayfus": "LF",
@@ -1295,5 +1295,6 @@
   "Max Kranick": "RP",
   "Christian Encarnacion-Strand": "3B",
   "Zac Thornton": "SP",
-  "Tyler Locklear": "1B"
+  "Tyler Locklear": "1B",
+  "Ronel Blanco": "SP"
 }

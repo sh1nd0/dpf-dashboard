@@ -9667,5 +9667,20 @@
       }
     ],
     "effective": "7/20/26"
+  },
+  {
+    "date": "7/20/26 3:27 PM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Bryce Elder",
+        "pos": "SP",
+        "mlbTeam": "ATL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/20/26"
   }
 ]
