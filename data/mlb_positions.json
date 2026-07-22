@@ -633,7 +633,7 @@
   "Blaze Alexander": "3B",
   "Jake Mangum": "LF",
   "Brandon Marsh": "LF",
-  "Jake McCarthy": "CF",
+  "Jake McCarthy": "LF",
   "Xavier Edwards": "2B",
   "Juan Soto": "LF",
   "Alex Jackson": "C",
@@ -780,7 +780,7 @@
   "Samuel Basallo": "C",
   "Ty France": "1B",
   "Luke Keaschall": "2B",
-  "Jose Siri": "CF",
+  "Jose Siri": "LF",
   "Jacob Gonzalez": "SS",
   "Drake Baldwin": "C",
   "Kyle Schwarber": "DH",
@@ -1130,7 +1130,7 @@
   "Chuckie Robinson": "C",
   "Carlos Santana": "1B",
   "Otto Kemp": "LF",
-  "Austin Wynns": "C",
+  "Austin Wynns": "DH",
   "Sean Murphy": "C",
   "Ha-Seong Kim": "SS",
   "César Salazar": "C",
@@ -1296,5 +1296,8 @@
   "Christian Encarnacion-Strand": "3B",
   "Zac Thornton": "SP",
   "Tyler Locklear": "1B",
-  "Ronel Blanco": "SP"
+  "Ronel Blanco": "SP",
+  "Scott Blewett": "RP",
+  "Marco Gonzales": "RP",
+  "Kohl Drake": "SP"
 }

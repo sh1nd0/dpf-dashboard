@@ -39,7 +39,7 @@ Aaron Ashby|120|91|115
 Chase Burns|113|100|114
 Cam Schlittler|111|104|114
 Bryan Woo|109|109|114
-Tyler Ferguson|106|113|114
+Tyler Ferguson|106|113|113
 Zack Wheeler|104|108|113
 José A. Ferrer|127|91|113
 Logan Gilbert|109|105|113
@@ -124,8 +124,8 @@ Brian Fitzpatrick|99|108|107
 Daniel Lynch IV|106|98|107
 Drew Pomeranz|106|100|107
 Luis Curvelo|99|110|107
-Wandy Peralta|100|107|107
 Dylan Cease|108|99|107
+Wandy Peralta|100|107|107
 Paul Skenes|98|109|107
 Max Lazar|98|109|107
 Juan Morillo|108|100|107
@@ -156,8 +156,8 @@ Garrett Whitlock|99|109|106
 Jake Bird|112|97|106
 Abner Uribe|109|100|106
 Dylan Dodd|106|103|106
+Casey Legumina|111|97|106
 Aaron Nola|105|102|106
-Casey Legumina|111|96|106
 Ben Casparius|103|99|106
 Andrew Nardi|108|98|106
 Bubba Chandler|104|100|106
@@ -199,7 +199,7 @@ Keaton Winn|100|104|104
 Tyler Alexander|99|107|104
 Khristian Curtis|91|107|104
 Alec Gamboa|107|97|104
-Ryan Rolison|100|103|104
+Ryan Rolison|100|102|104
 Ryne Stanek|112|95|104
 Tyler Schweitzer|98|103|104
 Caleb Ferguson|105|102|104
@@ -221,17 +221,17 @@ Mason Englert|95|109|103
 Sonny Gray|102|98|103
 Cole Sulser|97|105|103
 Riley O'Brien|108|98|103
-Javier Assad|98|103|103
 Justin Bruihl|101|101|103
+Javier Assad|98|103|103
 Austin Warren|98|103|103
 Shota Imanaga|93|110|103
 Kyle Bradish|101|100|103
 Framber Valdez|102|99|103
 Sean Newcomb|106|98|103
-Chase Petty|100|102|103
 Will Klein|95|106|103
 Brad Keller|109|94|103
 Yusei Kikuchi|98|103|103
+Chase Petty|100|102|103
 Noah Cameron|96|105|102
 Andrew Alvarez|96|102|102
 Kyle Backhus|109|101|102
@@ -254,8 +254,8 @@ Emerson Hancock|100|106|102
 Eduard Bazardo|104|103|102
 Jakob Junis|93|109|102
 Trevor Rogers|101|103|102
+Steven Cruz|107|97|102
 Lucas Erceg|99|104|101
-Steven Cruz|107|97|101
 Jake Woodford|99|104|101
 Tyler Glasnow|104|95|101
 Chad Patrick|100|101|101
@@ -325,7 +325,6 @@ Brent Suter|99|105|99
 Tyler Holton|101|98|99
 Adrian Houser|89|108|99
 José Fermin|106|95|99
-Tommy Nance|107|92|99
 Garrett Acton|101|99|99
 Jordan Hicks|111|90|99
 Peyton Gray|90|107|99
@@ -337,6 +336,7 @@ Casey Mize|89|107|99
 Huascar Brazobán|96|100|99
 Daniel Duarte|100|107|99
 J.T. Ginn|92|102|98
+Tommy Nance|107|91|98
 Hunter Gaddis|99|98|98
 Johan Oviedo|104|94|98
 Foster Griffin|98|102|98
@@ -356,11 +356,11 @@ Troy Melton|100|95|98
 Jack Leiter|102|94|98
 Nate Pearson|105|90|98
 TJ Shook|84|111|98
-Erick Fedde|90|107|98
 Ryan Yarbrough|100|101|98
 José Suarez|96|100|98
 Ben Peoples|99|98|98
 Brent Headrick|104|95|98
+Erick Fedde|90|107|98
 Taylor Rogers|105|98|98
 Jeffrey Springs|97|101|97
 Seth Johnson|108|87|97
@@ -419,8 +419,8 @@ Merrill Kelly|90|101|95
 Cal Quantrill|89|107|95
 Michael McGreevy|82|112|95
 Mason Black|94|99|95
-Kyle Freeland|91|104|95
 Chris Murphy|108|89|95
+Kyle Freeland|91|104|95
 Andrew Abbott|95|101|95
 Matt Svanson|96|100|95
 Keider Montero|95|102|95
@@ -434,9 +434,9 @@ Nick Davila|94|102|95
 Jonathan Pintaro|109|89|95
 Juan Burgos|112|85|95
 Brennan Bernardino|92|106|95
-Lake Bachar|98|96|95
 Jedixson Paez|81|103|95
-Braydon Fisher|100|96|95
+Braydon Fisher|100|97|95
+Lake Bachar|98|96|95
 Chris Devenski|106|99|95
 Seth Lugo|89|105|95
 Bryse Wilson|96|105|95
@@ -475,11 +475,11 @@ Ryan Borucki|98|92|94
 Jayden Murray|95|101|94
 Jason Adam|98|97|94
 Mark Leiter Jr.|92|99|94
-Brandon Eisert|82|105|93
 Mason Barnett|98|97|93
 Ryan Fernandez|96|95|93
 Yoendrys Gómez|113|81|93
 Rolddy Muñoz|93|103|93
+Brandon Eisert|82|105|93
 Trey Gibson|97|92|93
 Ricky Vanasco|89|102|93
 Ryan Weiss|102|90|93
@@ -503,11 +503,11 @@ Danny Coulombe|95|91|92
 Peter Lambert|92|100|92
 Bryce Elder|85|104|92
 Gordon Graceffo|91|98|92
-Danny Young|111|82|92
 Kumar Rocker|92|98|92
 Tanner Gordon|86|107|92
 Martín Pérez|87|102|92
 Austin Hedges|68|120|92
+Danny Young|111|82|92
 Beck Way|100|92|92
 Carson Whisenhunt|99|91|92
 Carlos Rodón|108|85|92
@@ -550,9 +550,9 @@ Yerry De los Santos|93|98|90
 Max Scherzer|91|98|90
 JP Sears|90|99|90
 Rhett Lowder|85|102|90
-Adam Macko|98|94|90
 Angel Chivilli|94|91|90
 Nick Sandlin|99|87|90
+Adam Macko|98|94|90
 Shawn Armstrong|102|89|90
 Zac Thornton|98|91|89
 Michael Lorenzen|87|100|89
@@ -681,9 +681,9 @@ Carlos Rodriguez|86|83|74
 Scott Barlow|91|81|74
 Charlie Barnes|74|93|74
 Lou Trivino III|90|82|73
-Matt Krook|117|62|73
 Tom Cosgrove|103|77|73
 Zach McCambley|98|77|73
+Matt Krook|117|61|73
 Tayler Saucedo|95|77|73
 Hurston Waldrep|91|73|72
 Yaramil Hiraldo|104|68|72
