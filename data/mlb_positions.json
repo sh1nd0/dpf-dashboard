@@ -840,7 +840,7 @@
   "Jonah Heim": "C",
   "Amed Rosario": "3B",
   "Mickey Gasper": "C",
-  "Taylor Trammell": "CF",
+  "Taylor Trammell": "LF",
   "Kody Clemens": "1B",
   "Drew Gilbert": "CF",
   "Tyler Soderstrom": "LF",
@@ -987,10 +987,10 @@
   "Austin Riley": "3B",
   "Colt Emerson": "SS",
   "Cedric Mullins": "CF",
-  "Weston Wilson": "RF",
+  "Weston Wilson": "3B",
   "Salvador Perez": "DH",
   "Brenton Doyle": "CF",
-  "Tyrone Taylor": "CF",
+  "Tyrone Taylor": "LF",
   "Dansby Swanson": "SS",
   "Trevor Story": "SS",
   "Luis Rengifo": "2B",
@@ -1299,5 +1299,9 @@
   "Ronel Blanco": "SP",
   "Scott Blewett": "RP",
   "Marco Gonzales": "RP",
-  "Kohl Drake": "SP"
+  "Kohl Drake": "SP",
+  "Alex McFarlane": "RP",
+  "Gerardo Carrillo": "RP",
+  "Bryan De La Cruz": "RF",
+  "Andrew Velazquez": "SS"
 }
