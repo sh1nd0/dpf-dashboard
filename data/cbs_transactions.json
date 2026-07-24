@@ -9889,5 +9889,53 @@
       }
     ],
     "effective": "7/23/26"
+  },
+  {
+    "date": "7/23/26 9:35 AM ET",
+    "teamId": "8",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "players": [
+      {
+        "name": "Matt Shaw",
+        "pos": "3B,RF",
+        "mlbTeam": "CHC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/23/26"
+  },
+  {
+    "date": "7/24/26 3:43 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Tommy Edman",
+        "pos": "2B,LF,CF",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Christian Yelich",
+        "pos": "DH",
+        "mlbTeam": "MIL",
+        "action": "Dropped"
+      },
+      {
+        "name": "Brady Singer",
+        "pos": "SP",
+        "mlbTeam": "CIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Taylor Ward",
+        "pos": "LF",
+        "mlbTeam": "BAL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/24/26"
   }
 ]

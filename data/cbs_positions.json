@@ -72,7 +72,7 @@
   "Seiya Suzuki": "RF",
   "Nolan McLean": "SP",
   "Gunnar Henderson": "SS",
-  "Christian Yelich": "U",
+  "Christian Yelich": "DH",
   "Devin Williams": "RP",
   "Carlos Rodon": "SP",
   "Brandon Woodruff": "SP",
@@ -632,5 +632,6 @@
   "Cooper Pratt": "SS",
   "Griffin Conine": "LF,RF",
   "Zach Thornton": "SP",
-  "Joey Bart": "C"
+  "Joey Bart": "C",
+  "Tommy Edman": "2B,LF,CF"
 }
