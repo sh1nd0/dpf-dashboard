@@ -9937,5 +9937,68 @@
       }
     ],
     "effective": "7/24/26"
+  },
+  {
+    "date": "7/24/26 7:34 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Tayron Guerrero",
+        "pos": "RP",
+        "mlbTeam": "BOS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/24/26"
+  },
+  {
+    "date": "7/25/26 3:30 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Sean Newcomb",
+        "pos": "SP,RP",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Tyler Holton",
+        "pos": "SP,RP",
+        "mlbTeam": "DET",
+        "action": "Dropped"
+      },
+      {
+        "name": "Connor Prielipp",
+        "pos": "SP",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Max Meyer",
+        "pos": "SP",
+        "mlbTeam": "MIA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/25/26"
+  },
+  {
+    "date": "7/25/26 3:30 AM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Tristan Peters",
+        "pos": "CF,RF",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "7/25/26"
   }
 ]
