@@ -6167,7 +6167,7 @@
     "players": [
       {
         "name": "Luis Lara",
-        "pos": "CF",
+        "pos": "CF,RF",
         "mlbTeam": "MIL",
         "action": "Added off Waivers"
       },
@@ -7452,7 +7452,7 @@
       },
       {
         "name": "Luis Lara",
-        "pos": "CF",
+        "pos": "CF,RF",
         "mlbTeam": "MIL",
         "action": "Dropped"
       }
@@ -8695,7 +8695,7 @@
       },
       {
         "name": "Luis Lara",
-        "pos": "CF",
+        "pos": "CF,RF",
         "mlbTeam": "MIL",
         "action": "Added off Waivers"
       }
@@ -10000,5 +10000,41 @@
       }
     ],
     "effective": "7/25/26"
+  },
+  {
+    "date": "7/26/26 3:28 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Jake Junis",
+        "pos": "RP",
+        "mlbTeam": "TEX",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Rico Garcia",
+        "pos": "RP",
+        "mlbTeam": "BAL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/26/26"
+  },
+  {
+    "date": "7/26/26 3:48 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Brooks Lee",
+        "pos": "2B,3B,SS",
+        "mlbTeam": "MIN",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/26/26"
   }
 ]
