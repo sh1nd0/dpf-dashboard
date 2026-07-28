@@ -2677,7 +2677,7 @@
     "team": "Popped A Mahle I'm Sweating",
     "players": [
       {
-        "name": "Jake Junis",
+        "name": "Jakob Junis",
         "pos": "RP",
         "mlbTeam": "TEX",
         "action": "Activated"
@@ -4939,7 +4939,7 @@
         "action": "Activated"
       },
       {
-        "name": "Jake Junis",
+        "name": "Jakob Junis",
         "pos": "RP",
         "mlbTeam": "TEX",
         "action": "Dropped"
@@ -10008,7 +10008,7 @@
     "team": "Blame it on the Rainiel",
     "players": [
       {
-        "name": "Jake Junis",
+        "name": "Jakob Junis",
         "pos": "RP",
         "mlbTeam": "TEX",
         "action": "Added off Waivers"
@@ -10090,5 +10090,47 @@
       }
     ],
     "effective": "7/27/26"
+  },
+  {
+    "date": "7/28/26 3:44 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Mason Montgomery",
+        "pos": "SP,RP",
+        "mlbTeam": "PIT",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Will Warren",
+        "pos": "SP",
+        "mlbTeam": "NYY",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/28/26"
+  },
+  {
+    "date": "7/28/26 3:44 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Roki Sasaki",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Will Klein",
+        "pos": "RP",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/28/26"
   }
 ]
