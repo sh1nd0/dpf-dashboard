@@ -555,7 +555,7 @@
   "Jesse Scholtens": "RP",
   "Sean Newcomb": "SP,RP",
   "Jamie Arnold": "SP",
-  "Jacob Gonzalez": "1B,2B",
+  "Jacob Gonzalez": "1B,2B,SS",
   "Scott Barlow": "RP",
   "Brayan Rocchio": "2B,SS",
   "Theo Gillen": "CF",
@@ -634,5 +634,7 @@
   "Zach Thornton": "SP",
   "Joey Bart": "C",
   "Tommy Edman": "2B,LF,CF",
-  "Jakob Junis": "RP"
+  "Jakob Junis": "RP",
+  "Kumar Rocker": "SP",
+  "Kyle Leahy": "SP,RP"
 }

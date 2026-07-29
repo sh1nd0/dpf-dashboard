@@ -5366,7 +5366,7 @@
     "players": [
       {
         "name": "Jacob Gonzalez",
-        "pos": "1B,2B",
+        "pos": "1B,2B,SS",
         "mlbTeam": "PIT",
         "action": "Added off Waivers"
       }
@@ -8080,7 +8080,7 @@
     "players": [
       {
         "name": "Jacob Gonzalez",
-        "pos": "1B,2B",
+        "pos": "1B,2B,SS",
         "mlbTeam": "PIT",
         "action": "Dropped"
       },
@@ -9319,7 +9319,7 @@
     "players": [
       {
         "name": "Jacob Gonzalez",
-        "pos": "1B,2B",
+        "pos": "1B,2B,SS",
         "mlbTeam": "PIT",
         "action": "Added off Waivers"
       }
@@ -10132,5 +10132,47 @@
       }
     ],
     "effective": "7/28/26"
+  },
+  {
+    "date": "7/29/26 3:32 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Kumar Rocker",
+        "pos": "SP",
+        "mlbTeam": "TEX",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Isaac Paredes",
+        "pos": "1B,3B",
+        "mlbTeam": "HOU",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "7/29/26"
+  },
+  {
+    "date": "7/29/26 3:32 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Kyle Leahy",
+        "pos": "SP,RP",
+        "mlbTeam": "STL",
+        "action": "Activated"
+      },
+      {
+        "name": "Roki Sasaki",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/29/26"
   }
 ]

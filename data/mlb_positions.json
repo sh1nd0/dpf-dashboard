@@ -604,7 +604,7 @@
   "Jair Camargo": "C",
   "Gabriel Gonzalez": "LF",
   "Joshua Kuroda-Grauer": "3B",
-  "Justin Dean": "RF",
+  "Justin Dean": "CF",
   "Michael Stefanic": "2B",
   "Tommy Edman": "2B",
   "Otto Lopez": "SS",
@@ -1280,7 +1280,7 @@
   "Woo-Suk Go": "RP",
   "Eduardo Valencia": "DH",
   "Tom Cosgrove": "RP",
-  "Grant McCray": "LF",
+  "Grant McCray": "CF",
   "Landon Knack": "RP",
   "Brewer Hicklen": "RF",
   "Abimelec Ortiz": "DH",
@@ -1307,5 +1307,8 @@
   "Elieser Hernández": "RP",
   "Brian Keller": "RP",
   "James Triantos": "2B",
-  "Shawn Ross": "C"
+  "Shawn Ross": "C",
+  "Peter Strzelecki": "RP",
+  "Pedro Ramírez": "2B",
+  "Yohel Pozo": "C"
 }
