@@ -10174,5 +10174,77 @@
       }
     ],
     "effective": "7/29/26"
+  },
+  {
+    "date": "7/29/26 10:43 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Heliot Ramos",
+        "pos": "LF",
+        "mlbTeam": "SF",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/29/26"
+  },
+  {
+    "date": "7/30/26 4:02 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Steven Cruz",
+        "pos": "RP",
+        "mlbTeam": "KC",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Alex Lange",
+        "pos": "RP",
+        "mlbTeam": "KC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/30/26"
+  },
+  {
+    "date": "7/30/26 4:02 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Matthew Boyd",
+        "pos": "SP",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "7/30/26"
+  },
+  {
+    "date": "7/30/26 4:02 AM ET",
+    "teamId": "5",
+    "teamName": "Buddy Buddy Buddy All On Base",
+    "team": "Buddy Buddy Buddy All On Base",
+    "players": [
+      {
+        "name": "Luis Rengifo",
+        "pos": "2B,3B",
+        "mlbTeam": "SD",
+        "action": "Activated"
+      },
+      {
+        "name": "Curtis Mead",
+        "pos": "1B,3B",
+        "mlbTeam": "BOS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "7/30/26"
   }
 ]
