@@ -346,7 +346,7 @@
   "Reid Detmers": "SP",
   "Caleb Kilian": "RP",
   "Will Warren": "SP",
-  "Javier Assad": "RP",
+  "Javier Assad": "SP",
   "Brad Keller": "RP",
   "John Klein": "RP",
   "Grant Wolfram": "RP",
@@ -604,7 +604,7 @@
   "Jair Camargo": "C",
   "Gabriel Gonzalez": "LF",
   "Joshua Kuroda-Grauer": "3B",
-  "Justin Dean": "CF",
+  "Justin Dean": "RF",
   "Michael Stefanic": "2B",
   "Tommy Edman": "2B",
   "Otto Lopez": "SS",
@@ -1239,7 +1239,7 @@
   "Michael Kelly": "RP",
   "Tyler Gilbert": "RP",
   "Matt Krook": "RP",
-  "Tyler Tolbert": "RP",
+  "Tyler Tolbert": "SS",
   "Jedixson Paez": "RP",
   "Mitch Spence": "RP",
   "Hunter Greene": "SP",
@@ -1315,5 +1315,6 @@
   "AJ Smith-Shawver": "SP",
   "Hayden Wesneski": "SP",
   "Thomas Pannone": "SP",
-  "Osleivis Basabe": "2B"
+  "Osleivis Basabe": "2B",
+  "Noah Murdock": "RP"
 }
