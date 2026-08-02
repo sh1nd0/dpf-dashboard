@@ -327,7 +327,7 @@
       {
         "name": "Camilo Doval",
         "pos": "RP",
-        "mlbTeam": "NYY",
+        "mlbTeam": "PIT",
         "action": "Dropped"
       },
       {
@@ -10339,5 +10339,59 @@
       }
     ],
     "effective": "7/31/26"
+  },
+  {
+    "date": "8/1/26 7:36 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Daniel Lynch IV",
+        "pos": "RP",
+        "mlbTeam": "KC",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Paul Sewald",
+        "pos": "RP",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
+      },
+      {
+        "name": "Roki Sasaki",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Brady Singer",
+        "pos": "SP",
+        "mlbTeam": "CIN",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/1/26"
+  },
+  {
+    "date": "8/1/26 7:36 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Vahn Lackey",
+        "pos": "C",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Lazaro Montes",
+        "pos": "RF",
+        "mlbTeam": "SEA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/1/26"
   }
 ]
