@@ -530,7 +530,7 @@
       },
       {
         "name": "Jeff McNeil",
-        "pos": "2B,CF",
+        "pos": "1B,2B,CF",
         "mlbTeam": "ATH",
         "action": "Dropped"
       }
@@ -576,7 +576,7 @@
       {
         "name": "Jameson Taillon",
         "pos": "SP",
-        "mlbTeam": "CHC",
+        "mlbTeam": "TOR",
         "action": "Dropped"
       }
     ],
@@ -3579,7 +3579,7 @@
       {
         "name": "Luis Castillo",
         "pos": "SP",
-        "mlbTeam": "SEA",
+        "mlbTeam": "CHW",
         "action": "Dropped"
       }
     ],
@@ -7206,7 +7206,7 @@
       {
         "name": "Luis Castillo",
         "pos": "SP",
-        "mlbTeam": "SEA",
+        "mlbTeam": "CHW",
         "action": "Added off Waivers"
       },
       {
@@ -7435,7 +7435,7 @@
       {
         "name": "River Ryan",
         "pos": "SP",
-        "mlbTeam": "LAD",
+        "mlbTeam": "DET",
         "action": "Added off Waivers"
       },
       {
@@ -7933,7 +7933,7 @@
       {
         "name": "River Ryan",
         "pos": "SP",
-        "mlbTeam": "LAD",
+        "mlbTeam": "DET",
         "action": "Dropped"
       }
     ],
@@ -8087,7 +8087,7 @@
       {
         "name": "Luis Castillo",
         "pos": "SP",
-        "mlbTeam": "SEA",
+        "mlbTeam": "CHW",
         "action": "Dropped"
       }
     ],
@@ -8190,7 +8190,7 @@
       {
         "name": "River Ryan",
         "pos": "SP",
-        "mlbTeam": "LAD",
+        "mlbTeam": "DET",
         "action": "Added off Waivers"
       },
       {
@@ -8436,7 +8436,7 @@
       {
         "name": "River Ryan",
         "pos": "SP",
-        "mlbTeam": "LAD",
+        "mlbTeam": "DET",
         "action": "Dropped"
       },
       {
@@ -9023,7 +9023,7 @@
       {
         "name": "Seranthony Dominguez",
         "pos": "RP",
-        "mlbTeam": "CHW",
+        "mlbTeam": "SEA",
         "action": "Dropped"
       },
       {
@@ -9071,7 +9071,7 @@
       {
         "name": "Luis Castillo",
         "pos": "SP",
-        "mlbTeam": "SEA",
+        "mlbTeam": "CHW",
         "action": "Added off Waivers"
       }
     ],
@@ -9461,7 +9461,7 @@
       {
         "name": "Luis Castillo",
         "pos": "SP",
-        "mlbTeam": "SEA",
+        "mlbTeam": "CHW",
         "action": "Dropped"
       }
     ],
@@ -10393,5 +10393,50 @@
       }
     ],
     "effective": "8/1/26"
+  },
+  {
+    "date": "8/2/26 11:00 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Casey Schmitt",
+        "pos": "1B,2B,3B,LF",
+        "mlbTeam": "SF",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/2/26"
+  },
+  {
+    "date": "8/3/26 3:52 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Tayron Guerrero",
+        "pos": "RP",
+        "mlbTeam": "BOS",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/3/26"
+  },
+  {
+    "date": "8/3/26 7:01 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Isaac Paredes",
+        "pos": "1B,3B",
+        "mlbTeam": "HOU",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/3/26"
   }
 ]
