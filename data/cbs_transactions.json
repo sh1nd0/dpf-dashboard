@@ -59,7 +59,7 @@
       {
         "name": "Lars Nootbaar",
         "pos": "LF,RF",
-        "mlbTeam": "STL",
+        "mlbTeam": "ARI",
         "action": "Dropped"
       }
     ],
@@ -267,7 +267,7 @@
       {
         "name": "Braxton Garrett",
         "pos": "SP",
-        "mlbTeam": "MIA",
+        "mlbTeam": "CHC",
         "action": "Dropped"
       }
     ],
@@ -546,7 +546,7 @@
       {
         "name": "Luis Arraez",
         "pos": "1B,2B",
-        "mlbTeam": "SF",
+        "mlbTeam": "PHI",
         "action": "Dropped"
       }
     ],
@@ -801,7 +801,7 @@
       {
         "name": "Brooks Raley",
         "pos": "RP",
-        "mlbTeam": "NYM",
+        "mlbTeam": "PHI",
         "action": "Dropped"
       }
     ],
@@ -1161,7 +1161,7 @@
       {
         "name": "Ryan Zeferjahn",
         "pos": "RP",
-        "mlbTeam": "LAA",
+        "mlbTeam": "CHC",
         "action": "Added"
       }
     ],
@@ -1254,7 +1254,7 @@
       {
         "name": "Tyler Mahle",
         "pos": "SP",
-        "mlbTeam": "SF",
+        "mlbTeam": "ATL",
         "action": "Added"
       }
     ],
@@ -1716,7 +1716,7 @@
       {
         "name": "Caleb Kilian",
         "pos": "SP,RP",
-        "mlbTeam": "SF",
+        "mlbTeam": "PHI",
         "action": "Added off Waivers"
       },
       {
@@ -1863,7 +1863,7 @@
       {
         "name": "Brenton Doyle",
         "pos": "CF",
-        "mlbTeam": "COL",
+        "mlbTeam": "CHW",
         "action": "Dropped"
       }
     ],
@@ -1974,7 +1974,7 @@
       {
         "name": "Heliot Ramos",
         "pos": "LF",
-        "mlbTeam": "SF",
+        "mlbTeam": "NYY",
         "action": "Dropped"
       }
     ],
@@ -2193,7 +2193,7 @@
       {
         "name": "Liam Hicks",
         "pos": "C,1B",
-        "mlbTeam": "MIA",
+        "mlbTeam": "TB",
         "action": "Activated"
       },
       {
@@ -2250,7 +2250,7 @@
       {
         "name": "Josh H. Smith",
         "pos": "1B,2B,3B,SS",
-        "mlbTeam": "TEX",
+        "mlbTeam": "TOR",
         "action": "Dropped"
       }
     ],
@@ -2343,7 +2343,7 @@
       {
         "name": "Luis Arraez",
         "pos": "1B,2B",
-        "mlbTeam": "SF",
+        "mlbTeam": "PHI",
         "action": "Added off Waivers"
       }
     ],
@@ -2391,7 +2391,7 @@
       {
         "name": "Victor Vodnik",
         "pos": "RP",
-        "mlbTeam": "COL",
+        "mlbTeam": "MIA",
         "action": "Added off Waivers"
       }
     ],
@@ -2463,7 +2463,7 @@
       {
         "name": "Kirby Yates",
         "pos": "RP",
-        "mlbTeam": "LAA",
+        "mlbTeam": "PIT",
         "action": "Dropped"
       }
     ],
@@ -2478,7 +2478,7 @@
       {
         "name": "Tyler Wells",
         "pos": "SP,RP",
-        "mlbTeam": "BAL",
+        "mlbTeam": "TB",
         "action": "Added off Waivers"
       },
       {
@@ -2517,7 +2517,7 @@
       {
         "name": "Victor Vodnik",
         "pos": "RP",
-        "mlbTeam": "COL",
+        "mlbTeam": "MIA",
         "action": "Dropped"
       }
     ],
@@ -2610,7 +2610,7 @@
       {
         "name": "Dustin May",
         "pos": "SP",
-        "mlbTeam": "STL",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -2685,7 +2685,7 @@
       {
         "name": "Luke Weaver",
         "pos": "RP",
-        "mlbTeam": "NYM",
+        "mlbTeam": "PIT",
         "action": "Dropped"
       }
     ],
@@ -2706,7 +2706,7 @@
       {
         "name": "Tyler Wells",
         "pos": "SP,RP",
-        "mlbTeam": "BAL",
+        "mlbTeam": "TB",
         "action": "Dropped"
       }
     ],
@@ -2805,7 +2805,7 @@
       {
         "name": "Tyler Mahle",
         "pos": "SP",
-        "mlbTeam": "SF",
+        "mlbTeam": "ATL",
         "action": "Dropped"
       }
     ],
@@ -2856,7 +2856,7 @@
       {
         "name": "Antonio Senzatela",
         "pos": "SP,RP",
-        "mlbTeam": "COL",
+        "mlbTeam": "MIL",
         "action": "Added off Waivers"
       },
       {
@@ -2967,7 +2967,7 @@
       {
         "name": "Antonio Senzatela",
         "pos": "SP,RP",
-        "mlbTeam": "COL",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -3081,7 +3081,7 @@
       {
         "name": "Brenton Doyle",
         "pos": "CF",
-        "mlbTeam": "COL",
+        "mlbTeam": "CHW",
         "action": "Added off Waivers"
       },
       {
@@ -3432,7 +3432,7 @@
       {
         "name": "Brenton Doyle",
         "pos": "CF",
-        "mlbTeam": "COL",
+        "mlbTeam": "CHW",
         "action": "Dropped"
       }
     ],
@@ -3543,7 +3543,7 @@
       {
         "name": "Foster Griffin",
         "pos": "SP,RP",
-        "mlbTeam": "WAS",
+        "mlbTeam": "CLE",
         "action": "Activated"
       }
     ],
@@ -3642,7 +3642,7 @@
       {
         "name": "Antonio Senzatela",
         "pos": "SP,RP",
-        "mlbTeam": "COL",
+        "mlbTeam": "MIL",
         "action": "Added off Waivers"
       },
       {
@@ -3984,7 +3984,7 @@
       {
         "name": "Antonio Senzatela",
         "pos": "SP,RP",
-        "mlbTeam": "COL",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -4257,7 +4257,7 @@
       {
         "name": "Antonio Senzatela",
         "pos": "SP,RP",
-        "mlbTeam": "COL",
+        "mlbTeam": "MIL",
         "action": "Activated"
       },
       {
@@ -4374,7 +4374,7 @@
       {
         "name": "Nate Lowe",
         "pos": "1B",
-        "mlbTeam": "CIN",
+        "mlbTeam": "CLE",
         "action": "Added off Waivers"
       },
       {
@@ -4707,7 +4707,7 @@
       {
         "name": "Nate Lowe",
         "pos": "1B",
-        "mlbTeam": "CIN",
+        "mlbTeam": "CLE",
         "action": "Dropped"
       }
     ],
@@ -4743,7 +4743,7 @@
       {
         "name": "Jeff Hoffman",
         "pos": "RP",
-        "mlbTeam": "TOR",
+        "mlbTeam": "MIN",
         "action": "Dropped"
       },
       {
@@ -4977,7 +4977,7 @@
       {
         "name": "Luis Garcia",
         "pos": "1B,2B",
-        "mlbTeam": "WAS",
+        "mlbTeam": "NYY",
         "action": "Added off Waivers"
       }
     ],
@@ -5055,7 +5055,7 @@
       {
         "name": "Tyler Wells",
         "pos": "SP,RP",
-        "mlbTeam": "BAL",
+        "mlbTeam": "TB",
         "action": "Added off Waivers"
       },
       {
@@ -5133,7 +5133,7 @@
       {
         "name": "Tyler Wells",
         "pos": "SP,RP",
-        "mlbTeam": "BAL",
+        "mlbTeam": "TB",
         "action": "Dropped"
       },
       {
@@ -5247,7 +5247,7 @@
       {
         "name": "Luke Weaver",
         "pos": "RP",
-        "mlbTeam": "NYM",
+        "mlbTeam": "PIT",
         "action": "Activated"
       },
       {
@@ -5667,7 +5667,7 @@
       {
         "name": "Jeff Hoffman",
         "pos": "RP",
-        "mlbTeam": "TOR",
+        "mlbTeam": "MIN",
         "action": "Added off Waivers"
       },
       {
@@ -6030,7 +6030,7 @@
       {
         "name": "Dustin May",
         "pos": "SP",
-        "mlbTeam": "STL",
+        "mlbTeam": "MIL",
         "action": "Added off Waivers"
       },
       {
@@ -6806,7 +6806,7 @@
       {
         "name": "Luis Garcia",
         "pos": "1B,2B",
-        "mlbTeam": "WAS",
+        "mlbTeam": "NYY",
         "action": "Dropped"
       }
     ],
@@ -6827,7 +6827,7 @@
       {
         "name": "Jeff Hoffman",
         "pos": "RP",
-        "mlbTeam": "TOR",
+        "mlbTeam": "MIN",
         "action": "Dropped"
       }
     ],
@@ -6971,7 +6971,7 @@
       {
         "name": "Brooks Raley",
         "pos": "RP",
-        "mlbTeam": "NYM",
+        "mlbTeam": "PHI",
         "action": "Added off Waivers"
       },
       {
@@ -7086,7 +7086,7 @@
       {
         "name": "Daulton Varsho",
         "pos": "CF",
-        "mlbTeam": "TOR",
+        "mlbTeam": "HOU",
         "action": "Dropped"
       }
     ],
@@ -7468,7 +7468,7 @@
       {
         "name": "Jeff Hoffman",
         "pos": "RP",
-        "mlbTeam": "TOR",
+        "mlbTeam": "MIN",
         "action": "Activated"
       }
     ],
@@ -7828,7 +7828,7 @@
       {
         "name": "Ryan Zeferjahn",
         "pos": "RP",
-        "mlbTeam": "LAA",
+        "mlbTeam": "CHC",
         "action": "Dropped"
       }
     ],
@@ -8140,7 +8140,7 @@
       {
         "name": "Jose Soriano",
         "pos": "SP",
-        "mlbTeam": "LAA",
+        "mlbTeam": "TOR",
         "action": "Traded from Okamotomami"
       },
       {
@@ -8346,7 +8346,7 @@
       {
         "name": "Caleb Ferguson",
         "pos": "RP",
-        "mlbTeam": "CIN",
+        "mlbTeam": "STL",
         "action": "Activated"
       },
       {
@@ -8523,7 +8523,7 @@
       {
         "name": "Tyler Wells",
         "pos": "SP,RP",
-        "mlbTeam": "BAL",
+        "mlbTeam": "TB",
         "action": "Added off Waivers"
       },
       {
@@ -8544,7 +8544,7 @@
       {
         "name": "Luis Garcia",
         "pos": "1B,2B",
-        "mlbTeam": "WAS",
+        "mlbTeam": "NYY",
         "action": "Added off Waivers"
       },
       {
@@ -8627,7 +8627,7 @@
       {
         "name": "Taylor Ward",
         "pos": "LF",
-        "mlbTeam": "BAL",
+        "mlbTeam": "SEA",
         "action": "Traded from Dinosaur Jr Caminero"
       },
       {
@@ -8774,7 +8774,7 @@
       {
         "name": "Antonio Senzatela",
         "pos": "SP,RP",
-        "mlbTeam": "COL",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -8948,7 +8948,7 @@
       {
         "name": "Antonio Senzatela",
         "pos": "SP,RP",
-        "mlbTeam": "COL",
+        "mlbTeam": "MIL",
         "action": "Added off Waivers"
       },
       {
@@ -9011,7 +9011,7 @@
       {
         "name": "Caleb Ferguson",
         "pos": "RP",
-        "mlbTeam": "CIN",
+        "mlbTeam": "STL",
         "action": "Dropped"
       },
       {
@@ -9113,7 +9113,7 @@
       {
         "name": "Heliot Ramos",
         "pos": "LF",
-        "mlbTeam": "SF",
+        "mlbTeam": "NYY",
         "action": "Added off Waivers"
       },
       {
@@ -9524,7 +9524,7 @@
       {
         "name": "Huascar Brazoban",
         "pos": "SP,RP",
-        "mlbTeam": "NYM",
+        "mlbTeam": "CHW",
         "action": "Activated"
       },
       {
@@ -9641,7 +9641,7 @@
       {
         "name": "Dustin May",
         "pos": "SP",
-        "mlbTeam": "STL",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -9884,7 +9884,7 @@
       {
         "name": "Joey Bart",
         "pos": "C",
-        "mlbTeam": "ATL",
+        "mlbTeam": "CHW",
         "action": "Added off Waivers"
       }
     ],
@@ -9932,7 +9932,7 @@
       {
         "name": "Taylor Ward",
         "pos": "LF",
-        "mlbTeam": "BAL",
+        "mlbTeam": "SEA",
         "action": "Dropped"
       }
     ],
@@ -10058,7 +10058,7 @@
       {
         "name": "Taylor Ward",
         "pos": "LF",
-        "mlbTeam": "BAL",
+        "mlbTeam": "SEA",
         "action": "Added off Waivers"
       },
       {
@@ -10184,7 +10184,7 @@
       {
         "name": "Heliot Ramos",
         "pos": "LF",
-        "mlbTeam": "SF",
+        "mlbTeam": "NYY",
         "action": "Dropped"
       }
     ],
@@ -10319,7 +10319,7 @@
       {
         "name": "Caleb Kilian",
         "pos": "SP,RP",
-        "mlbTeam": "SF",
+        "mlbTeam": "PHI",
         "action": "Dropped"
       }
     ],
@@ -10438,5 +10438,95 @@
       }
     ],
     "effective": "8/3/26"
+  },
+  {
+    "date": "8/3/26 4:48 PM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Jung Hoo Lee",
+        "pos": "CF,RF",
+        "mlbTeam": "SF",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/3/26"
+  },
+  {
+    "date": "8/4/26 3:43 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Robert Gasser",
+        "pos": "SP",
+        "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jake Bennett",
+        "pos": "SP",
+        "mlbTeam": "BOS",
+        "action": "Dropped"
+      },
+      {
+        "name": "Andrew Kittredge",
+        "pos": "RP",
+        "mlbTeam": "BAL",
+        "action": "Activated"
+      },
+      {
+        "name": "Mason Montgomery",
+        "pos": "SP,RP",
+        "mlbTeam": "PIT",
+        "action": "Dropped"
+      },
+      {
+        "name": "Heliot Ramos",
+        "pos": "LF",
+        "mlbTeam": "NYY",
+        "action": "Activated"
+      },
+      {
+        "name": "Taylor Ward",
+        "pos": "LF",
+        "mlbTeam": "SEA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/4/26"
+  },
+  {
+    "date": "8/4/26 3:43 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Lazaro Montes",
+        "pos": "RF",
+        "mlbTeam": "SEA",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/4/26"
+  },
+  {
+    "date": "8/4/26 5:32 AM ET",
+    "teamId": "5",
+    "teamName": "Buddy Buddy Buddy All On Base",
+    "team": "Buddy Buddy Buddy All On Base",
+    "players": [
+      {
+        "name": "Quinn Mathews",
+        "pos": "SP",
+        "mlbTeam": "STL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/4/26"
   }
 ]

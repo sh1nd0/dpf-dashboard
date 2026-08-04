@@ -277,7 +277,7 @@
   "Tyler Kinley": "RP",
   "Albert Suárez": "RP",
   "Adam Macko": "RP",
-  "Andrew Alvarez": "RP",
+  "Andrew Alvarez": "SP",
   "Logan Webb": "SP",
   "Zach Pop": "RP",
   "Yoendrys Gómez": "RP",
@@ -438,7 +438,7 @@
   "Dennis Santana": "RP",
   "Joel Kuhnel": "RP",
   "Cole Ragans": "SP",
-  "Brandon Pfaadt": "RP",
+  "Brandon Pfaadt": "SP",
   "Seranthony Domínguez": "RP",
   "Devin Williams": "RP",
   "Cody Laweryson": "RP",
@@ -1283,7 +1283,7 @@
   "Grant McCray": "CF",
   "Landon Knack": "RP",
   "Brewer Hicklen": "RF",
-  "Abimelec Ortiz": "DH",
+  "Abimelec Ortiz": "1B",
   "Jason Foley": "RP",
   "CJ Van Eyk": "RP",
   "Emiliano Teodo": "RP",
@@ -1326,5 +1326,8 @@
   "Kevin Herget": "RP",
   "Quinn Mathews": "SP",
   "Robert Stock": "SP",
-  "Ben Bowden": "RP"
+  "Ben Bowden": "RP",
+  "Nolan Kingham": "RP",
+  "Kenny Piper": "C",
+  "Nate Furman": "2B"
 }
