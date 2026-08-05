@@ -348,7 +348,7 @@
       {
         "name": "Spencer Arrighetti",
         "pos": "SP",
-        "mlbTeam": "HOU",
+        "mlbTeam": "TOR",
         "action": "Dropped"
       }
     ],
@@ -472,7 +472,7 @@
     "team": "The Kurtzain With",
     "players": [
       {
-        "name": "George Lombard",
+        "name": "George Lombard Jr.",
         "pos": "SS",
         "mlbTeam": "NYY",
         "action": "Dropped"
@@ -984,7 +984,7 @@
       {
         "name": "Marcelo Mayer",
         "pos": "2B,3B,SS",
-        "mlbTeam": "BOS",
+        "mlbTeam": "SF",
         "action": "Dropped"
       }
     ],
@@ -1348,7 +1348,7 @@
     "team": "Before and After Shohei",
     "players": [
       {
-        "name": "George Lombard",
+        "name": "George Lombard Jr.",
         "pos": "SS",
         "mlbTeam": "NYY",
         "action": "Added"
@@ -3048,7 +3048,7 @@
       {
         "name": "Spencer Arrighetti",
         "pos": "SP",
-        "mlbTeam": "HOU",
+        "mlbTeam": "TOR",
         "action": "Added off Waivers"
       },
       {
@@ -3285,7 +3285,7 @@
       {
         "name": "Spencer Arrighetti",
         "pos": "SP",
-        "mlbTeam": "HOU",
+        "mlbTeam": "TOR",
         "action": "Dropped"
       },
       {
@@ -3573,7 +3573,7 @@
       {
         "name": "Spencer Arrighetti",
         "pos": "SP",
-        "mlbTeam": "HOU",
+        "mlbTeam": "TOR",
         "action": "Activated"
       },
       {
@@ -4290,7 +4290,7 @@
       {
         "name": "Anthony Eyanson",
         "pos": "SP",
-        "mlbTeam": "BOS",
+        "mlbTeam": "BAL",
         "action": "Added off Waivers"
       },
       {
@@ -4359,7 +4359,7 @@
       {
         "name": "Anthony Eyanson",
         "pos": "SP",
-        "mlbTeam": "BOS",
+        "mlbTeam": "BAL",
         "action": "Dropped"
       }
     ],
@@ -4569,7 +4569,7 @@
       {
         "name": "Anthony Eyanson",
         "pos": "SP",
-        "mlbTeam": "BOS",
+        "mlbTeam": "BAL",
         "action": "Added off Waivers"
       },
       {
@@ -5352,7 +5352,7 @@
       {
         "name": "JoJo Romero",
         "pos": "RP",
-        "mlbTeam": "STL",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -5529,7 +5529,7 @@
       {
         "name": "JoJo Romero",
         "pos": "RP",
-        "mlbTeam": "STL",
+        "mlbTeam": "MIL",
         "action": "Added off Waivers"
       },
       {
@@ -5673,7 +5673,7 @@
       {
         "name": "JoJo Romero",
         "pos": "RP",
-        "mlbTeam": "STL",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -6009,7 +6009,7 @@
       {
         "name": "JoJo Romero",
         "pos": "RP",
-        "mlbTeam": "STL",
+        "mlbTeam": "MIL",
         "action": "Activated"
       },
       {
@@ -6324,7 +6324,7 @@
       {
         "name": "JoJo Romero",
         "pos": "RP",
-        "mlbTeam": "STL",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -6484,7 +6484,7 @@
       {
         "name": "Arjun Nimmala",
         "pos": "SS",
-        "mlbTeam": "TOR",
+        "mlbTeam": "LAA",
         "action": "Added off Waivers"
       },
       {
@@ -6764,7 +6764,7 @@
       {
         "name": "JoJo Romero",
         "pos": "RP",
-        "mlbTeam": "STL",
+        "mlbTeam": "MIL",
         "action": "Activated"
       },
       {
@@ -9236,7 +9236,7 @@
       {
         "name": "JoJo Romero",
         "pos": "RP",
-        "mlbTeam": "STL",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       },
       {
@@ -9254,7 +9254,7 @@
       {
         "name": "Spencer Arrighetti",
         "pos": "SP",
-        "mlbTeam": "HOU",
+        "mlbTeam": "TOR",
         "action": "Dropped"
       }
     ],
@@ -10528,5 +10528,209 @@
       }
     ],
     "effective": "8/4/26"
+  },
+  {
+    "date": "8/4/26 10:52 AM ET",
+    "teamId": "1",
+    "teamName": "Weird Fishes / Arrighetti",
+    "team": "Weird Fishes / Arrighetti",
+    "players": [
+      {
+        "name": "Spencer Strider",
+        "pos": "SP",
+        "mlbTeam": "ATL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/4/26"
+  },
+  {
+    "date": "8/4/26 2:10 PM ET",
+    "teamId": "8",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "players": [
+      {
+        "name": "Moises Ballesteros",
+        "pos": "DH",
+        "mlbTeam": "LAA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/4/26"
+  },
+  {
+    "date": "8/4/26 3:32 PM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Bryce Rainer",
+        "pos": "SS",
+        "mlbTeam": "DET",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/4/26"
+  },
+  {
+    "date": "8/4/26 3:34 PM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Cooper Pratt",
+        "pos": "SS",
+        "mlbTeam": "MIL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/4/26"
+  },
+  {
+    "date": "8/4/26 3:35 PM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Slade Cecconi",
+        "pos": "SP",
+        "mlbTeam": "CLE",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/4/26"
+  },
+  {
+    "date": "8/4/26 7:26 PM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Cam Smith",
+        "pos": "RF",
+        "mlbTeam": "HOU",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/5/26"
+  },
+  {
+    "date": "8/5/26 4:20 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Brooks Lee",
+        "pos": "2B,3B,SS",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jose Caballero",
+        "pos": "2B,3B,SS,RF",
+        "mlbTeam": "NYY",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/5/26"
+  },
+  {
+    "date": "8/5/26 4:20 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Andrew Painter",
+        "pos": "SP",
+        "mlbTeam": "PHI",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Ryan Zeferjahn",
+        "pos": "RP",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/5/26"
+  },
+  {
+    "date": "8/5/26 4:20 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Yennier Cano",
+        "pos": "RP",
+        "mlbTeam": "BAL",
+        "action": "Activated"
+      },
+      {
+        "name": "Andrew Kittredge",
+        "pos": "RP",
+        "mlbTeam": "BAL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/5/26"
+  },
+  {
+    "date": "8/5/26 4:20 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Cole Young",
+        "pos": "2B",
+        "mlbTeam": "SEA",
+        "action": "Activated"
+      },
+      {
+        "name": "Jacob Gonzalez",
+        "pos": "1B,2B,SS",
+        "mlbTeam": "PIT",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/5/26"
+  },
+  {
+    "date": "8/5/26 4:20 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Jarren Duran",
+        "pos": "LF,CF",
+        "mlbTeam": "BOS",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/5/26"
+  },
+  {
+    "date": "8/5/26 4:20 AM ET",
+    "teamId": "8",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "players": [
+      {
+        "name": "Jake Burger",
+        "pos": "1B",
+        "mlbTeam": "TEX",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/5/26"
   }
 ]
