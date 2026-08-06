@@ -84,7 +84,7 @@
   "Daulton Varsho": "CF",
   "Evan Carter": "CF",
   "Kyle Harrison": "SP",
-  "Royce Lewis": "1B,3B",
+  "Royce Lewis": "1B,2B,3B",
   "Giancarlo Stanton": "DH",
   "Dansby Swanson": "SS",
   "Luis Robert": "CF",
@@ -513,7 +513,7 @@
   "Hagen Smith": "SP",
   "Chase DeLauter": "RF",
   "Tommy Troy": "2B,LF,CF",
-  "Spencer Jones": "CF",
+  "Spencer Jones": "CF,RF",
   "Connelly Early": "SP",
   "Carson Benge": "LF,CF,RF",
   "Bryce Eldridge": "1B",
@@ -647,5 +647,8 @@
   "Robert Gasser": "SP",
   "George Lombard Jr.": "SS",
   "Cole Young": "2B",
-  "Jake Burger": "1B"
+  "Jake Burger": "1B",
+  "Sammy Natera": "RP",
+  "Jackson Flora": "SP",
+  "Josiah Hartshorn": "RF"
 }

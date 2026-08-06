@@ -524,7 +524,7 @@
     "players": [
       {
         "name": "Royce Lewis",
-        "pos": "1B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "MIN",
         "action": "Dropped"
       },
@@ -728,7 +728,7 @@
       },
       {
         "name": "Royce Lewis",
-        "pos": "1B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "MIN",
         "action": "Added off Waivers"
       },
@@ -749,7 +749,7 @@
     "players": [
       {
         "name": "Royce Lewis",
-        "pos": "1B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "MIN",
         "action": "Dropped"
       }
@@ -1406,7 +1406,7 @@
     "players": [
       {
         "name": "Royce Lewis",
-        "pos": "1B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "MIN",
         "action": "Added"
       }
@@ -4625,7 +4625,7 @@
     "players": [
       {
         "name": "Spencer Jones",
-        "pos": "CF",
+        "pos": "CF,RF",
         "mlbTeam": "NYY",
         "action": "Dropped"
       }
@@ -5111,7 +5111,7 @@
       },
       {
         "name": "Royce Lewis",
-        "pos": "1B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "MIN",
         "action": "Dropped"
       }
@@ -6549,7 +6549,7 @@
     "players": [
       {
         "name": "Royce Lewis",
-        "pos": "1B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "MIN",
         "action": "Added off Waivers"
       }
@@ -7791,7 +7791,7 @@
     "players": [
       {
         "name": "Spencer Jones",
-        "pos": "CF",
+        "pos": "CF,RF",
         "mlbTeam": "NYY",
         "action": "Added off Waivers"
       }
@@ -8716,7 +8716,7 @@
       },
       {
         "name": "Spencer Jones",
-        "pos": "CF",
+        "pos": "CF,RF",
         "mlbTeam": "NYY",
         "action": "Dropped"
       }
@@ -8818,7 +8818,7 @@
     "players": [
       {
         "name": "Royce Lewis",
-        "pos": "1B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "MIN",
         "action": "Dropped"
       }
@@ -10732,5 +10732,98 @@
       }
     ],
     "effective": "8/5/26"
+  },
+  {
+    "date": "8/5/26 8:37 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Michael Petersen",
+        "pos": "RP",
+        "mlbTeam": "MIA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/5/26"
+  },
+  {
+    "date": "8/5/26 10:18 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Brooks Lee",
+        "pos": "2B,3B,SS",
+        "mlbTeam": "MIN",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/5/26"
+  },
+  {
+    "date": "8/5/26 11:00 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Tayron Guerrero",
+        "pos": "RP",
+        "mlbTeam": "BOS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/5/26"
+  },
+  {
+    "date": "8/6/26 3:48 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Sammy Natera",
+        "pos": "RP",
+        "mlbTeam": "LAA",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jackson Flora",
+        "pos": "SP",
+        "mlbTeam": "SF",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Blake Snell",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/6/26"
+  },
+  {
+    "date": "8/6/26 3:48 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Josiah Hartshorn",
+        "pos": "RF",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Edward Florentino",
+        "pos": "CF",
+        "mlbTeam": "PIT",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/6/26"
   }
 ]
