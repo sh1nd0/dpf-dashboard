@@ -563,7 +563,7 @@
   "Garrett Crochet": "SP",
   "Justin Slaten": "RP",
   "Brandan Bidois": "RP",
-  "Brayan Bello": "SP",
+  "Brayan Bello": "RP",
   "Zac Gallen": "SP",
   "Alex Hoppe": "RP",
   "Angel Zerpa": "RP",
@@ -631,7 +631,7 @@
   "Cole Carrigg": "CF",
   "Trey Mancini": "1B",
   "Blaze Alexander": "3B",
-  "Jake Mangum": "LF",
+  "Jake Mangum": "CF",
   "Brandon Marsh": "LF",
   "Jake McCarthy": "LF",
   "Xavier Edwards": "2B",
@@ -708,7 +708,7 @@
   "Nick Madrigal": "2B",
   "Nick Kurtz": "1B",
   "Ezequiel Duran": "SS",
-  "Lars Nootbaar": "LF",
+  "Lars Nootbaar": "DH",
   "A.J. Ewing": "CF",
   "Byron Buxton": "CF",
   "Jonny DeLuca": "RF",
@@ -1342,6 +1342,8 @@
   "Ben Joyce": "RP",
   "Dedniel Núñez": "RP",
   "Jefry Yan": "RP",
-  "Angel Genao": "3B",
-  "Ronny Simon": "LF"
+  "Angel Genao": "2B",
+  "Ronny Simon": "LF",
+  "Andrew Pinckney": "LF",
+  "Cristian Pache": "LF"
 }

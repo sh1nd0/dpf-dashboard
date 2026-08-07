@@ -10825,5 +10825,77 @@
       }
     ],
     "effective": "8/6/26"
+  },
+  {
+    "date": "8/6/26 11:04 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Freddy Peralta",
+        "pos": "SP",
+        "mlbTeam": "TB",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/6/26"
+  },
+  {
+    "date": "8/7/26 3:41 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Jake Bennett",
+        "pos": "SP",
+        "mlbTeam": "BOS",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/7/26"
+  },
+  {
+    "date": "8/7/26 3:41 AM ET",
+    "teamId": "8",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "players": [
+      {
+        "name": "Keibert Ruiz",
+        "pos": "C",
+        "mlbTeam": "WAS",
+        "action": "Activated"
+      },
+      {
+        "name": "Joey Bart",
+        "pos": "C",
+        "mlbTeam": "CHW",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/7/26"
+  },
+  {
+    "date": "8/7/26 3:41 AM ET",
+    "teamId": "5",
+    "teamName": "Buddy Buddy Buddy All On Base",
+    "team": "Buddy Buddy Buddy All On Base",
+    "players": [
+      {
+        "name": "Royce Lewis",
+        "pos": "1B,2B,3B",
+        "mlbTeam": "MIN",
+        "action": "Activated"
+      },
+      {
+        "name": "Luis Rengifo",
+        "pos": "2B,3B",
+        "mlbTeam": "SD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/7/26"
   }
 ]
