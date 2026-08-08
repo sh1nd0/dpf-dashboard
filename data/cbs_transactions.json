@@ -10234,7 +10234,7 @@
     "players": [
       {
         "name": "Luis Rengifo",
-        "pos": "2B,3B",
+        "pos": "2B,3B,LF",
         "mlbTeam": "SD",
         "action": "Activated"
       },
@@ -10891,7 +10891,7 @@
       },
       {
         "name": "Luis Rengifo",
-        "pos": "2B,3B",
+        "pos": "2B,3B,LF",
         "mlbTeam": "SD",
         "action": "Dropped"
       }
