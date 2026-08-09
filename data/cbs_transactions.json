@@ -7268,7 +7268,7 @@
       },
       {
         "name": "A.J. Ewing",
-        "pos": "CF",
+        "pos": "LF,CF",
         "mlbTeam": "NYM",
         "action": "Traded from Popped A Mahle I'm Sweating"
       }
@@ -10897,5 +10897,65 @@
       }
     ],
     "effective": "8/7/26"
+  },
+  {
+    "date": "8/8/26 7:52 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Brayan Rocchio",
+        "pos": "2B,SS",
+        "mlbTeam": "CLE",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/8/26"
+  },
+  {
+    "date": "8/8/26 9:45 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Ian Seymour",
+        "pos": "SP,RP",
+        "mlbTeam": "TB",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/8/26"
+  },
+  {
+    "date": "8/8/26 5:56 PM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Hunter Greene",
+        "pos": "SP",
+        "mlbTeam": "CIN",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/9/26"
+  },
+  {
+    "date": "8/9/26 4:20 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Max Meyer",
+        "pos": "SP",
+        "mlbTeam": "MIA",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/9/26"
   }
 ]
