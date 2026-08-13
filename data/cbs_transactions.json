@@ -1620,7 +1620,7 @@
       {
         "name": "Paul Sewald",
         "pos": "RP",
-        "mlbTeam": "ARI",
+        "mlbTeam": "TOR",
         "action": "Added off Waivers"
       },
       {
@@ -10355,7 +10355,7 @@
       {
         "name": "Paul Sewald",
         "pos": "RP",
-        "mlbTeam": "ARI",
+        "mlbTeam": "TOR",
         "action": "Dropped"
       },
       {
@@ -10785,7 +10785,7 @@
     "team": "The Kurtzain With",
     "players": [
       {
-        "name": "Sammy Natera",
+        "name": "Samy Natera Jr.",
         "pos": "RP",
         "mlbTeam": "LAA",
         "action": "Added off Waivers"
@@ -11032,7 +11032,7 @@
     "team": "The Kurtzain With",
     "players": [
       {
-        "name": "Sammy Natera",
+        "name": "Samy Natera Jr.",
         "pos": "RP",
         "mlbTeam": "LAA",
         "action": "Dropped"
@@ -11319,5 +11319,120 @@
       }
     ],
     "effective": "8/12/26"
+  },
+  {
+    "date": "8/12/26 10:21 PM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Bryce Miller",
+        "pos": "SP",
+        "mlbTeam": "SEA",
+        "action": "Traded from Blame it on the Rainiel"
+      }
+    ]
+  },
+  {
+    "date": "8/12/26 10:21 PM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Emil Morales",
+        "pos": "SS",
+        "mlbTeam": "LAD",
+        "action": "Traded from Dinosaur Jr Caminero"
+      },
+      {
+        "name": "Walbert Urena",
+        "pos": "SP",
+        "mlbTeam": "LAA",
+        "action": "Traded from Dinosaur Jr Caminero"
+      }
+    ]
+  },
+  {
+    "date": "8/13/26 4:04 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Jack Dreyer",
+        "pos": "SP,RP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Lawrence Butler",
+        "pos": "CF,RF",
+        "mlbTeam": "ATH",
+        "action": "Dropped"
+      },
+      {
+        "name": "Esteury Ruiz",
+        "pos": "LF,CF,RF",
+        "mlbTeam": "MIA",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Heliot Ramos",
+        "pos": "LF",
+        "mlbTeam": "NYY",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/13/26"
+  },
+  {
+    "date": "8/13/26 4:04 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Dylan Dodd",
+        "pos": "RP",
+        "mlbTeam": "ATL",
+        "action": "Activated"
+      },
+      {
+        "name": "Brooks Raley",
+        "pos": "RP",
+        "mlbTeam": "PHI",
+        "action": "Dropped"
+      },
+      {
+        "name": "Noah Cameron",
+        "pos": "SP",
+        "mlbTeam": "KC",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Shane Bieber",
+        "pos": "SP",
+        "mlbTeam": "TOR",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/13/26"
+  },
+  {
+    "date": "8/13/26 4:04 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Jung Hoo Lee",
+        "pos": "CF,RF",
+        "mlbTeam": "SF",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/13/26"
   }
 ]

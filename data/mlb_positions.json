@@ -346,7 +346,7 @@
   "Reid Detmers": "SP",
   "Caleb Kilian": "RP",
   "Will Warren": "SP",
-  "Javier Assad": "SP",
+  "Javier Assad": "RP",
   "Brad Keller": "RP",
   "John Klein": "RP",
   "Grant Wolfram": "RP",
@@ -990,7 +990,7 @@
   "Weston Wilson": "3B",
   "Salvador Perez": "DH",
   "Brenton Doyle": "CF",
-  "Tyrone Taylor": "CF",
+  "Tyrone Taylor": "LF",
   "Dansby Swanson": "SS",
   "Trevor Story": "SS",
   "Luis Rengifo": "LF",
@@ -1358,5 +1358,9 @@
   "Jihwan Bae": "2B",
   "Jonah Bride": "3B",
   "Seth Martinez": "RP",
-  "Michael Toglia": "1B"
+  "Michael Toglia": "1B",
+  "Tanner Rainey": "RP",
+  "Jackson Kent": "SP",
+  "Zac Veen": "RF",
+  "Corey Julks": "RF"
 }
