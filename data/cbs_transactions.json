@@ -73,7 +73,7 @@
     "players": [
       {
         "name": "Bryson Stott",
-        "pos": "2B",
+        "pos": "2B,3B",
         "mlbTeam": "PHI",
         "action": "Added"
       },
@@ -1034,7 +1034,7 @@
       },
       {
         "name": "Andrew Vaughn",
-        "pos": "1B",
+        "pos": "1B,3B",
         "mlbTeam": "MIL",
         "action": "Dropped"
       }
@@ -2177,7 +2177,7 @@
       },
       {
         "name": "Bryson Stott",
-        "pos": "2B",
+        "pos": "2B,3B",
         "mlbTeam": "PHI",
         "action": "Dropped"
       }
@@ -5294,7 +5294,7 @@
     "players": [
       {
         "name": "Bryson Stott",
-        "pos": "2B",
+        "pos": "2B,3B",
         "mlbTeam": "PHI",
         "action": "Added off Waivers"
       },
@@ -5480,7 +5480,7 @@
       },
       {
         "name": "Bryson Stott",
-        "pos": "2B",
+        "pos": "2B,3B",
         "mlbTeam": "PHI",
         "action": "Dropped"
       }
@@ -5717,7 +5717,7 @@
     "players": [
       {
         "name": "Bryson Stott",
-        "pos": "2B",
+        "pos": "2B,3B",
         "mlbTeam": "PHI",
         "action": "Added off Waivers"
       },
@@ -6281,7 +6281,7 @@
       },
       {
         "name": "Bryson Stott",
-        "pos": "2B",
+        "pos": "2B,3B",
         "mlbTeam": "PHI",
         "action": "Dropped"
       }
@@ -8752,7 +8752,7 @@
     "players": [
       {
         "name": "Tristan Peters",
-        "pos": "CF,RF",
+        "pos": "LF,CF,RF",
         "mlbTeam": "CHW",
         "action": "Added off Waivers"
       },
@@ -9811,7 +9811,7 @@
       },
       {
         "name": "Tristan Peters",
-        "pos": "CF,RF",
+        "pos": "LF,CF,RF",
         "mlbTeam": "CHW",
         "action": "Dropped"
       }
@@ -9994,7 +9994,7 @@
     "players": [
       {
         "name": "Tristan Peters",
-        "pos": "CF,RF",
+        "pos": "LF,CF,RF",
         "mlbTeam": "CHW",
         "action": "Added off Waivers"
       }
@@ -11241,7 +11241,7 @@
     "players": [
       {
         "name": "Tristan Peters",
-        "pos": "CF,RF",
+        "pos": "LF,CF,RF",
         "mlbTeam": "CHW",
         "action": "Dropped"
       }
@@ -11434,5 +11434,211 @@
       }
     ],
     "effective": "8/13/26"
+  },
+  {
+    "date": "8/13/26 3:34 PM ET",
+    "teamId": "8",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "players": [
+      {
+        "name": "Payton Tolle",
+        "pos": "SP,RP",
+        "mlbTeam": "BOS",
+        "action": "Traded from Yesavage Garden"
+      }
+    ]
+  },
+  {
+    "date": "8/13/26 3:34 PM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Steven Kwan",
+        "pos": "LF,CF",
+        "mlbTeam": "CLE",
+        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
+      },
+      {
+        "name": "Luke Weaver",
+        "pos": "RP",
+        "mlbTeam": "PIT",
+        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
+      },
+      {
+        "name": "Logan Webb",
+        "pos": "SP",
+        "mlbTeam": "SF",
+        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
+      }
+    ]
+  },
+  {
+    "date": "8/13/26 7:35 PM ET",
+    "teamId": "1",
+    "teamName": "Weird Fishes / Arrighetti",
+    "team": "Weird Fishes / Arrighetti",
+    "players": [
+      {
+        "name": "Joshua Baez",
+        "pos": "RF",
+        "mlbTeam": "STL",
+        "action": "Traded from The Kurtzain With"
+      },
+      {
+        "name": "Nick Kurtz",
+        "pos": "1B",
+        "mlbTeam": "ATH",
+        "action": "Traded from The Kurtzain With"
+      }
+    ]
+  },
+  {
+    "date": "8/13/26 7:35 PM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Cam Schlittler",
+        "pos": "SP",
+        "mlbTeam": "NYY",
+        "action": "Traded from Weird Fishes / Arrighetti"
+      },
+      {
+        "name": "Chandler Simpson",
+        "pos": "LF,CF",
+        "mlbTeam": "TB",
+        "action": "Traded from Weird Fishes / Arrighetti"
+      }
+    ]
+  },
+  {
+    "date": "8/13/26 7:48 PM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Robbie Ray",
+        "pos": "SP",
+        "mlbTeam": "SD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/14/26"
+  },
+  {
+    "date": "8/13/26 10:42 PM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Esteury Ruiz",
+        "pos": "LF,CF,RF",
+        "mlbTeam": "MIA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/14/26"
+  },
+  {
+    "date": "8/13/26 10:43 PM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Yennier Cano",
+        "pos": "RP",
+        "mlbTeam": "BAL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/14/26"
+  },
+  {
+    "date": "8/13/26 10:47 PM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Tommy Edman",
+        "pos": "2B,LF,CF",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/14/26"
+  },
+  {
+    "date": "8/14/26 4:06 AM ET",
+    "teamId": "3",
+    "teamName": "The Kurtzain With",
+    "team": "The Kurtzain With",
+    "players": [
+      {
+        "name": "Edward Florentino",
+        "pos": "CF",
+        "mlbTeam": "PIT",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/14/26"
+  },
+  {
+    "date": "8/14/26 4:06 AM ET",
+    "teamId": "1",
+    "teamName": "Weird Fishes / Arrighetti",
+    "team": "Weird Fishes / Arrighetti",
+    "players": [
+      {
+        "name": "Freddy Peralta",
+        "pos": "SP",
+        "mlbTeam": "TB",
+        "action": "Activated"
+      }
+    ],
+    "effective": "8/14/26"
+  },
+  {
+    "date": "8/14/26 4:06 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Michael Petersen",
+        "pos": "RP",
+        "mlbTeam": "MIA",
+        "action": "Activated"
+      },
+      {
+        "name": "Kevin Ginkel",
+        "pos": "RP",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/14/26"
+  },
+  {
+    "date": "8/14/26 4:06 AM ET",
+    "teamId": "8",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "players": [
+      {
+        "name": "Mauricio Dubon",
+        "pos": "2B,3B,SS,LF,CF",
+        "mlbTeam": "ATL",
+        "action": "Activated"
+      }
+    ],
+    "effective": "8/14/26"
   }
 ]
