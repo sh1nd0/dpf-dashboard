@@ -67,9 +67,8 @@
   },
   {
     "date": "3/16/26 12:10 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Bryson Stott",
@@ -88,9 +87,8 @@
   },
   {
     "date": "3/16/26 12:55 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Ryan Sloan",
@@ -109,9 +107,8 @@
   },
   {
     "date": "3/16/26 1:42 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Phil Maton",
@@ -123,56 +120,9 @@
     "effective": "3/25/26"
   },
   {
-    "date": "3/17/26 12:38 PM ET",
-    "teamId": "4",
-    "teamName": "Okamotomami",
-    "team": "Okamotomami",
-    "players": [
-      {
-        "name": "Jac Caglianone",
-        "pos": "1B,RF",
-        "mlbTeam": "KC",
-        "action": "Traded from The Kurtzain With"
-      },
-      {
-        "name": "Vladimir Guerrero Jr.",
-        "pos": "1B",
-        "mlbTeam": "TOR",
-        "action": "Traded from The Kurtzain With"
-      },
-      {
-        "name": "Kazuma Okamoto",
-        "pos": "3B",
-        "mlbTeam": "TOR",
-        "action": "Traded from The Kurtzain With"
-      }
-    ]
-  },
-  {
-    "date": "3/17/26 12:38 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Nick Kurtz",
-        "pos": "1B",
-        "mlbTeam": "ATH",
-        "action": "Traded from Okamotomami"
-      },
-      {
-        "name": "Nick Lodolo",
-        "pos": "SP",
-        "mlbTeam": "CIN",
-        "action": "Traded from Okamotomami"
-      }
-    ]
-  },
-  {
     "date": "3/17/26 12:43 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Nasim Nunez",
@@ -185,9 +135,8 @@
   },
   {
     "date": "3/17/26 12:49 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Chad Patrick",
@@ -275,9 +224,8 @@
   },
   {
     "date": "3/19/26 3:05 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Carson Williams",
@@ -290,9 +238,8 @@
   },
   {
     "date": "3/19/26 3:06 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Nasim Nunez",
@@ -305,9 +252,8 @@
   },
   {
     "date": "3/19/26 3:14 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Shawn Armstrong",
@@ -320,16 +266,23 @@
   },
   {
     "date": "3/19/26 3:16 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Camilo Doval",
         "pos": "RP",
         "mlbTeam": "PIT",
         "action": "Dropped"
-      },
+      }
+    ],
+    "effective": "3/25/26"
+  },
+  {
+    "date": "3/19/26 3:16 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "Colt Keith",
         "pos": "2B,3B",
@@ -467,9 +420,8 @@
   },
   {
     "date": "3/19/26 11:27 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "George Lombard Jr.",
@@ -482,9 +434,8 @@
   },
   {
     "date": "3/20/26 1:11 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Carlos Lagrange",
@@ -629,9 +580,8 @@
   },
   {
     "date": "3/21/26 12:45 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Didier Fuentes",
@@ -710,9 +660,8 @@
   },
   {
     "date": "3/23/26 1:09 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Alec Bohm",
@@ -725,7 +674,15 @@
         "pos": "SP",
         "mlbTeam": "NYY",
         "action": "Dropped"
-      },
+      }
+    ],
+    "effective": "3/25/26"
+  },
+  {
+    "date": "3/23/26 1:09 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "Royce Lewis",
         "pos": "1B,2B,3B",
@@ -743,9 +700,8 @@
   },
   {
     "date": "3/23/26 9:22 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Royce Lewis",
@@ -809,9 +765,8 @@
   },
   {
     "date": "3/24/26 1:22 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Nasim Nunez",
@@ -1190,16 +1145,23 @@
   },
   {
     "date": "3/25/26 2:55 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "A.J. Minter",
         "pos": "RP",
         "mlbTeam": "MIN",
         "action": "Added"
-      },
+      }
+    ],
+    "effective": "3/25/26"
+  },
+  {
+    "date": "3/25/26 2:55 PM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "Andrew Kittredge",
         "pos": "RP",
@@ -1262,9 +1224,8 @@
   },
   {
     "date": "3/26/26 11:24 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "A.J. Minter",
@@ -1358,9 +1319,8 @@
   },
   {
     "date": "3/28/26 10:59 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Erik Sabrowski",
@@ -1475,9 +1435,8 @@
   },
   {
     "date": "3/31/26 2:14 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Logan Henderson",
@@ -1490,9 +1449,8 @@
   },
   {
     "date": "3/31/26 2:19 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Randy Vasquez",
@@ -1505,9 +1463,8 @@
   },
   {
     "date": "3/31/26 8:48 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Lance McCullers",
@@ -1667,27 +1624,6 @@
   },
   {
     "date": "4/4/26 3:06 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Bryan Baker",
-        "pos": "RP",
-        "mlbTeam": "TB",
-        "action": "Activated"
-      },
-      {
-        "name": "Phil Maton",
-        "pos": "RP",
-        "mlbTeam": "CHC",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "4/4/26"
-  },
-  {
-    "date": "4/4/26 3:06 AM ET",
     "teamId": "1",
     "teamName": "Weird Fishes / Arrighetti",
     "team": "Weird Fishes / Arrighetti",
@@ -1723,6 +1659,40 @@
         "name": "Emmet Sheehan",
         "pos": "SP",
         "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "4/4/26"
+  },
+  {
+    "date": "4/4/26 3:06 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Bryan Baker",
+        "pos": "RP",
+        "mlbTeam": "TB",
+        "action": "Activated"
+      }
+    ],
+    "effective": "4/4/26"
+  },
+  {
+    "date": "4/4/26 3:06 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Bryan Baker",
+        "pos": "RP",
+        "mlbTeam": "TB",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Phil Maton",
+        "pos": "RP",
+        "mlbTeam": "CHC",
         "action": "Dropped"
       }
     ],
@@ -1940,27 +1910,6 @@
   },
   {
     "date": "4/7/26 2:07 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Emmet Sheehan",
-        "pos": "SP",
-        "mlbTeam": "LAD",
-        "action": "Activated"
-      },
-      {
-        "name": "Lance McCullers",
-        "pos": "SP",
-        "mlbTeam": "MIL",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "4/7/26"
-  },
-  {
-    "date": "4/7/26 2:07 AM ET",
     "teamId": "4",
     "teamName": "Okamotomami",
     "team": "Okamotomami",
@@ -1975,6 +1924,40 @@
         "name": "Heliot Ramos",
         "pos": "LF",
         "mlbTeam": "NYY",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "4/7/26"
+  },
+  {
+    "date": "4/7/26 2:07 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Emmet Sheehan",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Activated"
+      }
+    ],
+    "effective": "4/7/26"
+  },
+  {
+    "date": "4/7/26 2:07 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Emmet Sheehan",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Lance McCullers",
+        "pos": "SP",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -1997,27 +1980,6 @@
         "pos": "RP",
         "mlbTeam": "MIL",
         "action": "Moved to IR"
-      }
-    ],
-    "effective": "4/8/26"
-  },
-  {
-    "date": "4/8/26 3:06 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Mark Vientos",
-        "pos": "1B,3B",
-        "mlbTeam": "NYM",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Alec Bohm",
-        "pos": "1B,3B",
-        "mlbTeam": "PHI",
-        "action": "Dropped"
       }
     ],
     "effective": "4/8/26"
@@ -2080,6 +2042,26 @@
         "name": "Cole Sands",
         "pos": "RP",
         "mlbTeam": "MIN",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "4/8/26"
+  },
+  {
+    "date": "4/8/26 3:06 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Mark Vientos",
+        "pos": "1B,3B",
+        "mlbTeam": "NYM",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Alec Bohm",
+        "pos": "1B,3B",
+        "mlbTeam": "PHI",
         "action": "Dropped"
       }
     ],
@@ -2165,27 +2147,6 @@
   },
   {
     "date": "4/10/26 3:09 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "James Tibbs",
-        "pos": "RF",
-        "mlbTeam": "LAD",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Bryson Stott",
-        "pos": "2B,3B",
-        "mlbTeam": "PHI",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "4/10/26"
-  },
-  {
-    "date": "4/10/26 3:09 AM ET",
     "teamId": "4",
     "teamName": "Okamotomami",
     "team": "Okamotomami",
@@ -2227,6 +2188,26 @@
     "effective": "4/10/26"
   },
   {
+    "date": "4/10/26 3:09 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "James Tibbs",
+        "pos": "RF",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Bryson Stott",
+        "pos": "2B,3B",
+        "mlbTeam": "PHI",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "4/10/26"
+  },
+  {
     "date": "4/10/26 11:33 AM ET",
     "teamId": "4",
     "teamName": "Okamotomami",
@@ -2258,27 +2239,6 @@
   },
   {
     "date": "4/11/26 2:53 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Jung Hoo Lee",
-        "pos": "CF,RF",
-        "mlbTeam": "SF",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Chad Patrick",
-        "pos": "SP,RP",
-        "mlbTeam": "MIL",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "4/11/26"
-  },
-  {
-    "date": "4/11/26 2:53 AM ET",
     "teamId": "8",
     "teamName": "Ballesteros, Let the Rhythm Take You Over",
     "team": "Ballesteros, Let the Rhythm Take You Over",
@@ -2293,6 +2253,26 @@
         "name": "Matt Svanson",
         "pos": "RP",
         "mlbTeam": "STL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "4/11/26"
+  },
+  {
+    "date": "4/11/26 2:53 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Jung Hoo Lee",
+        "pos": "CF,RF",
+        "mlbTeam": "SF",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Chad Patrick",
+        "pos": "SP,RP",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -2348,39 +2328,6 @@
       }
     ],
     "effective": "4/12/26"
-  },
-  {
-    "date": "4/13/26 1:59 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Sam Antonacci",
-        "pos": "2B,LF",
-        "mlbTeam": "CHW",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Jung Hoo Lee",
-        "pos": "CF,RF",
-        "mlbTeam": "SF",
-        "action": "Dropped"
-      },
-      {
-        "name": "Noah Schultz",
-        "pos": "SP",
-        "mlbTeam": "CHW",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Andrew Kittredge",
-        "pos": "RP",
-        "mlbTeam": "BAL",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "4/13/26"
   },
   {
     "date": "4/13/26 1:59 AM ET",
@@ -2440,10 +2387,49 @@
     "effective": "4/13/26"
   },
   {
+    "date": "4/13/26 1:59 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Sam Antonacci",
+        "pos": "2B,LF",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jung Hoo Lee",
+        "pos": "CF,RF",
+        "mlbTeam": "SF",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "4/13/26"
+  },
+  {
+    "date": "4/13/26 1:59 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Noah Schultz",
+        "pos": "SP",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Andrew Kittredge",
+        "pos": "RP",
+        "mlbTeam": "BAL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "4/13/26"
+  },
+  {
     "date": "4/13/26 9:04 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "James Tibbs",
@@ -2750,9 +2736,8 @@
   },
   {
     "date": "4/16/26 2:34 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Mauricio Dubon",
@@ -2834,9 +2819,8 @@
   },
   {
     "date": "4/17/26 11:33 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Nasim Nunez",
@@ -2846,33 +2830,6 @@
       }
     ],
     "effective": "4/17/26"
-  },
-  {
-    "date": "4/18/26 3:03 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Antonio Senzatela",
-        "pos": "SP,RP",
-        "mlbTeam": "MIL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Isaac Paredes",
-        "pos": "1B,3B",
-        "mlbTeam": "HOU",
-        "action": "Dropped"
-      },
-      {
-        "name": "Franklin Arias",
-        "pos": "SS",
-        "mlbTeam": "BOS",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "4/18/26"
   },
   {
     "date": "4/18/26 3:03 AM ET",
@@ -2905,6 +2862,40 @@
         "name": "Joel Kuhnel",
         "pos": "RP",
         "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "4/18/26"
+  },
+  {
+    "date": "4/18/26 3:03 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Antonio Senzatela",
+        "pos": "SP,RP",
+        "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Isaac Paredes",
+        "pos": "1B,3B",
+        "mlbTeam": "HOU",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "4/18/26"
+  },
+  {
+    "date": "4/18/26 3:03 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Franklin Arias",
+        "pos": "SS",
+        "mlbTeam": "BOS",
         "action": "Added off Waivers"
       }
     ],
@@ -2954,27 +2945,6 @@
   },
   {
     "date": "4/20/26 1:56 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Jeremiah Jackson",
-        "pos": "2B,RF",
-        "mlbTeam": "BAL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Antonio Senzatela",
-        "pos": "SP,RP",
-        "mlbTeam": "MIL",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "4/20/26"
-  },
-  {
-    "date": "4/20/26 1:56 AM ET",
     "teamId": "12",
     "teamName": "Popped A Mahle I'm Sweating",
     "team": "Popped A Mahle I'm Sweating",
@@ -3010,6 +2980,26 @@
         "name": "Colton Cowser",
         "pos": "LF,CF,RF",
         "mlbTeam": "BAL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "4/20/26"
+  },
+  {
+    "date": "4/20/26 1:56 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Jeremiah Jackson",
+        "pos": "2B,RF",
+        "mlbTeam": "BAL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Antonio Senzatela",
+        "pos": "SP,RP",
+        "mlbTeam": "MIL",
         "action": "Dropped"
       }
     ],
@@ -3074,21 +3064,42 @@
   },
   {
     "date": "4/21/26 2:15 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Brenton Doyle",
         "pos": "CF",
         "mlbTeam": "CHW",
         "action": "Added off Waivers"
-      },
+      }
+    ],
+    "effective": "4/21/26"
+  },
+  {
+    "date": "4/21/26 2:15 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "Josh Jung",
         "pos": "3B",
         "mlbTeam": "TEX",
         "action": "Activated"
+      }
+    ],
+    "effective": "4/21/26"
+  },
+  {
+    "date": "4/21/26 2:15 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Josh Jung",
+        "pos": "3B",
+        "mlbTeam": "TEX",
+        "action": "Added off Waivers"
       },
       {
         "name": "Mauricio Dubon",
@@ -3101,9 +3112,23 @@
   },
   {
     "date": "4/22/26 2:33 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Dylan Lee",
+        "pos": "RP",
+        "mlbTeam": "ATL",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "4/22/26"
+  },
+  {
+    "date": "4/22/26 2:33 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Juan Morillo",
@@ -3116,7 +3141,15 @@
         "pos": "RP",
         "mlbTeam": "DET",
         "action": "Dropped"
-      },
+      }
+    ],
+    "effective": "4/22/26"
+  },
+  {
+    "date": "4/22/26 2:33 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "Dalton Rushing",
         "pos": "C",
@@ -3128,21 +3161,6 @@
         "pos": "2B,LF",
         "mlbTeam": "CHW",
         "action": "Dropped"
-      }
-    ],
-    "effective": "4/22/26"
-  },
-  {
-    "date": "4/22/26 2:33 AM ET",
-    "teamId": "4",
-    "teamName": "Okamotomami",
-    "team": "Okamotomami",
-    "players": [
-      {
-        "name": "Dylan Lee",
-        "pos": "RP",
-        "mlbTeam": "ATL",
-        "action": "Added off Waivers"
       }
     ],
     "effective": "4/22/26"
@@ -3419,9 +3437,8 @@
   },
   {
     "date": "4/27/26 1:59 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Jasson Dominguez",
@@ -3677,9 +3694,8 @@
   },
   {
     "date": "5/1/26 2:03 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Jung Hoo Lee",
@@ -3692,7 +3708,15 @@
         "pos": "3B",
         "mlbTeam": "BAL",
         "action": "Dropped"
-      },
+      }
+    ],
+    "effective": "5/1/26"
+  },
+  {
+    "date": "5/1/26 2:03 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "Lawrence Butler",
         "pos": "CF,RF",
@@ -3887,51 +3911,6 @@
   },
   {
     "date": "5/4/26 2:18 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Logan Henderson",
-        "pos": "SP",
-        "mlbTeam": "MIL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Jeremiah Jackson",
-        "pos": "2B,RF",
-        "mlbTeam": "BAL",
-        "action": "Dropped"
-      },
-      {
-        "name": "Braden Montgomery",
-        "pos": "CF,RF",
-        "mlbTeam": "CHW",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Jung Hoo Lee",
-        "pos": "CF,RF",
-        "mlbTeam": "SF",
-        "action": "Dropped"
-      },
-      {
-        "name": "Cooper Ingle",
-        "pos": "C",
-        "mlbTeam": "CLE",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Randy Vasquez",
-        "pos": "SP",
-        "mlbTeam": "SD",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "5/4/26"
-  },
-  {
-    "date": "5/4/26 2:18 AM ET",
     "teamId": "8",
     "teamName": "Ballesteros, Let the Rhythm Take You Over",
     "team": "Ballesteros, Let the Rhythm Take You Over",
@@ -3985,6 +3964,66 @@
         "name": "Antonio Senzatela",
         "pos": "SP,RP",
         "mlbTeam": "MIL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/4/26"
+  },
+  {
+    "date": "5/4/26 2:18 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Logan Henderson",
+        "pos": "SP",
+        "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jeremiah Jackson",
+        "pos": "2B,RF",
+        "mlbTeam": "BAL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/4/26"
+  },
+  {
+    "date": "5/4/26 2:18 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Braden Montgomery",
+        "pos": "CF,RF",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jung Hoo Lee",
+        "pos": "CF,RF",
+        "mlbTeam": "SF",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/4/26"
+  },
+  {
+    "date": "5/4/26 2:18 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Cooper Ingle",
+        "pos": "C",
+        "mlbTeam": "CLE",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Randy Vasquez",
+        "pos": "SP",
+        "mlbTeam": "SD",
         "action": "Dropped"
       }
     ],
@@ -4048,27 +4087,6 @@
         "name": "Alejandro Kirk",
         "pos": "C",
         "mlbTeam": "TOR",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "5/5/26"
-  },
-  {
-    "date": "5/5/26 2:44 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Kai-Wei Teng",
-        "pos": "SP,RP",
-        "mlbTeam": "HOU",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Braden Montgomery",
-        "pos": "CF,RF",
-        "mlbTeam": "CHW",
         "action": "Dropped"
       }
     ],
@@ -4153,25 +4171,24 @@
     "effective": "5/5/26"
   },
   {
-    "date": "5/6/26 2:23 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "date": "5/5/26 2:44 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
-        "name": "Pedro Ramirez",
-        "pos": "2B,3B",
-        "mlbTeam": "CHC",
+        "name": "Kai-Wei Teng",
+        "pos": "SP,RP",
+        "mlbTeam": "HOU",
         "action": "Added off Waivers"
       },
       {
-        "name": "Cooper Ingle",
-        "pos": "C",
-        "mlbTeam": "CLE",
+        "name": "Braden Montgomery",
+        "pos": "CF,RF",
+        "mlbTeam": "CHW",
         "action": "Dropped"
       }
     ],
-    "effective": "5/6/26"
+    "effective": "5/5/26"
   },
   {
     "date": "5/6/26 2:23 AM ET",
@@ -4184,6 +4201,26 @@
         "pos": "SP,RP",
         "mlbTeam": "HOU",
         "action": "Added off Waivers"
+      }
+    ],
+    "effective": "5/6/26"
+  },
+  {
+    "date": "5/6/26 2:23 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Pedro Ramirez",
+        "pos": "2B,3B",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Cooper Ingle",
+        "pos": "C",
+        "mlbTeam": "CLE",
+        "action": "Dropped"
       }
     ],
     "effective": "5/6/26"
@@ -4220,9 +4257,8 @@
   },
   {
     "date": "5/6/26 9:12 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Kai-Wei Teng",
@@ -4283,33 +4319,6 @@
   },
   {
     "date": "5/7/26 2:33 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Anthony Eyanson",
-        "pos": "SP",
-        "mlbTeam": "BAL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Lazaro Montes",
-        "pos": "RF",
-        "mlbTeam": "SEA",
-        "action": "Activated"
-      },
-      {
-        "name": "Lawrence Butler",
-        "pos": "CF,RF",
-        "mlbTeam": "ATH",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "5/7/26"
-  },
-  {
-    "date": "5/7/26 2:33 AM ET",
     "teamId": "1",
     "teamName": "Weird Fishes / Arrighetti",
     "team": "Weird Fishes / Arrighetti",
@@ -4351,10 +4360,57 @@
     "effective": "5/7/26"
   },
   {
+    "date": "5/7/26 2:33 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Anthony Eyanson",
+        "pos": "SP",
+        "mlbTeam": "BAL",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "5/7/26"
+  },
+  {
+    "date": "5/7/26 2:33 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Lazaro Montes",
+        "pos": "RF",
+        "mlbTeam": "SEA",
+        "action": "Activated"
+      }
+    ],
+    "effective": "5/7/26"
+  },
+  {
+    "date": "5/7/26 2:33 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Lazaro Montes",
+        "pos": "RF",
+        "mlbTeam": "SEA",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Lawrence Butler",
+        "pos": "CF,RF",
+        "mlbTeam": "ATH",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/7/26"
+  },
+  {
     "date": "5/7/26 12:43 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Anthony Eyanson",
@@ -4403,9 +4459,8 @@
   },
   {
     "date": "5/8/26 8:40 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Pedro Ramirez",
@@ -4415,27 +4470,6 @@
       }
     ],
     "effective": "5/8/26"
-  },
-  {
-    "date": "5/9/26 2:33 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Marcus Semien",
-        "pos": "2B",
-        "mlbTeam": "NYM",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Jack Dreyer",
-        "pos": "SP,RP",
-        "mlbTeam": "LAD",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "5/9/26"
   },
   {
     "date": "5/9/26 2:33 AM ET",
@@ -4462,6 +4496,34 @@
         "name": "Braden Montgomery",
         "pos": "CF,RF",
         "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "5/9/26"
+  },
+  {
+    "date": "5/9/26 2:33 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Marcus Semien",
+        "pos": "2B",
+        "mlbTeam": "NYM",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "5/9/26"
+  },
+  {
+    "date": "5/9/26 2:33 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Jack Dreyer",
+        "pos": "SP,RP",
+        "mlbTeam": "LAD",
         "action": "Added off Waivers"
       }
     ],
@@ -4496,27 +4558,6 @@
       }
     ],
     "effective": "5/9/26"
-  },
-  {
-    "date": "5/10/26 2:35 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Brooks Lee",
-        "pos": "2B,3B,SS",
-        "mlbTeam": "MIN",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Lazaro Montes",
-        "pos": "RF",
-        "mlbTeam": "SEA",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "5/10/26"
   },
   {
     "date": "5/10/26 2:35 AM ET",
@@ -4603,6 +4644,26 @@
     "effective": "5/10/26"
   },
   {
+    "date": "5/10/26 2:35 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Brooks Lee",
+        "pos": "2B,3B,SS",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Lazaro Montes",
+        "pos": "RF",
+        "mlbTeam": "SEA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/10/26"
+  },
+  {
     "date": "5/10/26 10:49 AM ET",
     "teamId": "9",
     "teamName": "Yesavage Garden",
@@ -4634,9 +4695,23 @@
   },
   {
     "date": "5/11/26 2:41 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Pete Fairbanks",
+        "pos": "RP",
+        "mlbTeam": "MIA",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "5/11/26"
+  },
+  {
+    "date": "5/11/26 2:41 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Henry Bolte",
@@ -4649,21 +4724,6 @@
         "pos": "C",
         "mlbTeam": "LAD",
         "action": "Dropped"
-      }
-    ],
-    "effective": "5/11/26"
-  },
-  {
-    "date": "5/11/26 2:41 AM ET",
-    "teamId": "9",
-    "teamName": "Yesavage Garden",
-    "team": "Yesavage Garden",
-    "players": [
-      {
-        "name": "Pete Fairbanks",
-        "pos": "RP",
-        "mlbTeam": "MIA",
-        "action": "Added off Waivers"
       }
     ],
     "effective": "5/11/26"
@@ -4763,9 +4823,8 @@
   },
   {
     "date": "5/13/26 2:34 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Willy Adames",
@@ -4886,27 +4945,6 @@
   },
   {
     "date": "5/15/26 2:34 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Cole Carrigg",
-        "pos": "CF",
-        "mlbTeam": "COL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Brooks Lee",
-        "pos": "2B,3B,SS",
-        "mlbTeam": "MIN",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "5/15/26"
-  },
-  {
-    "date": "5/15/26 2:34 AM ET",
     "teamId": "2",
     "teamName": "Dinosaur Jr Caminero",
     "team": "Dinosaur Jr Caminero",
@@ -4921,6 +4959,26 @@
         "name": "Brandon Nimmo",
         "pos": "LF,RF",
         "mlbTeam": "TEX",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/15/26"
+  },
+  {
+    "date": "5/15/26 2:34 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Cole Carrigg",
+        "pos": "CF",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Brooks Lee",
+        "pos": "2B,3B,SS",
+        "mlbTeam": "MIN",
         "action": "Dropped"
       }
     ],
@@ -5048,27 +5106,6 @@
   },
   {
     "date": "5/17/26 2:36 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Tyler Wells",
-        "pos": "SP,RP",
-        "mlbTeam": "TB",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Cole Carrigg",
-        "pos": "CF",
-        "mlbTeam": "COL",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "5/17/26"
-  },
-  {
-    "date": "5/17/26 2:36 AM ET",
     "teamId": "6",
     "teamName": "A Pete Crow-Armstrong Looked at Me",
     "team": "A Pete Crow-Armstrong Looked at Me",
@@ -5119,37 +5156,24 @@
     "effective": "5/17/26"
   },
   {
-    "date": "5/18/26 1:59 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "date": "5/17/26 2:36 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
-      {
-        "name": "Brooks Lee",
-        "pos": "2B,3B,SS",
-        "mlbTeam": "MIN",
-        "action": "Added off Waivers"
-      },
       {
         "name": "Tyler Wells",
         "pos": "SP,RP",
         "mlbTeam": "TB",
-        "action": "Dropped"
-      },
-      {
-        "name": "Jarren Duran",
-        "pos": "LF,CF",
-        "mlbTeam": "BOS",
         "action": "Added off Waivers"
       },
       {
-        "name": "Jack Dreyer",
-        "pos": "SP,RP",
-        "mlbTeam": "LAD",
+        "name": "Cole Carrigg",
+        "pos": "CF",
+        "mlbTeam": "COL",
         "action": "Dropped"
       }
     ],
-    "effective": "5/18/26"
+    "effective": "5/17/26"
   },
   {
     "date": "5/18/26 1:59 AM ET",
@@ -5209,6 +5233,46 @@
         "name": "Trent Grisham",
         "pos": "CF",
         "mlbTeam": "NYY",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/18/26"
+  },
+  {
+    "date": "5/18/26 1:59 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Brooks Lee",
+        "pos": "2B,3B,SS",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Tyler Wells",
+        "pos": "SP,RP",
+        "mlbTeam": "TB",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/18/26"
+  },
+  {
+    "date": "5/18/26 1:59 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Jarren Duran",
+        "pos": "LF,CF",
+        "mlbTeam": "BOS",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jack Dreyer",
+        "pos": "SP,RP",
+        "mlbTeam": "LAD",
         "action": "Dropped"
       }
     ],
@@ -5615,51 +5679,6 @@
   },
   {
     "date": "5/25/26 2:01 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Austin Martin",
-        "pos": "LF,RF",
-        "mlbTeam": "MIN",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Didier Fuentes",
-        "pos": "SP,RP",
-        "mlbTeam": "ATL",
-        "action": "Dropped"
-      },
-      {
-        "name": "Brandon Nimmo",
-        "pos": "LF,RF",
-        "mlbTeam": "TEX",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Willy Adames",
-        "pos": "SS",
-        "mlbTeam": "SF",
-        "action": "Dropped"
-      },
-      {
-        "name": "Spencer Steer",
-        "pos": "1B,2B,LF,RF",
-        "mlbTeam": "CIN",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Brooks Lee",
-        "pos": "2B,3B,SS",
-        "mlbTeam": "MIN",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "5/25/26"
-  },
-  {
-    "date": "5/25/26 2:01 AM ET",
     "teamId": "9",
     "teamName": "Yesavage Garden",
     "team": "Yesavage Garden",
@@ -5690,6 +5709,66 @@
         "pos": "C",
         "mlbTeam": "TOR",
         "action": "Added off Waivers"
+      }
+    ],
+    "effective": "5/25/26"
+  },
+  {
+    "date": "5/25/26 2:01 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Austin Martin",
+        "pos": "LF,RF",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Didier Fuentes",
+        "pos": "SP,RP",
+        "mlbTeam": "ATL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/25/26"
+  },
+  {
+    "date": "5/25/26 2:01 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Brandon Nimmo",
+        "pos": "LF,RF",
+        "mlbTeam": "TEX",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Willy Adames",
+        "pos": "SS",
+        "mlbTeam": "SF",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/25/26"
+  },
+  {
+    "date": "5/25/26 2:01 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Spencer Steer",
+        "pos": "1B,2B,LF,RF",
+        "mlbTeam": "CIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Brooks Lee",
+        "pos": "2B,3B,SS",
+        "mlbTeam": "MIN",
+        "action": "Dropped"
       }
     ],
     "effective": "5/25/26"
@@ -5747,9 +5826,8 @@
   },
   {
     "date": "5/26/26 4:22 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Noah Schultz",
@@ -5762,9 +5840,8 @@
   },
   {
     "date": "5/26/26 4:23 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Luis Robert",
@@ -5777,22 +5854,51 @@
   },
   {
     "date": "5/27/26 2:36 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Graham Ashcraft",
         "pos": "RP",
         "mlbTeam": "CIN",
         "action": "Activated"
-      },
+      }
+    ],
+    "effective": "5/27/26"
+  },
+  {
+    "date": "5/27/26 2:36 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "Kai-Wei Teng",
         "pos": "SP,RP",
         "mlbTeam": "HOU",
         "action": "Added off Waivers"
-      },
+      }
+    ],
+    "effective": "5/27/26"
+  },
+  {
+    "date": "5/27/26 2:36 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Graham Ashcraft",
+        "pos": "RP",
+        "mlbTeam": "CIN",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "5/27/26"
+  },
+  {
+    "date": "5/27/26 2:36 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "Cole Carrigg",
         "pos": "CF",
@@ -5807,39 +5913,6 @@
       }
     ],
     "effective": "5/27/26"
-  },
-  {
-    "date": "5/28/26 2:05 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Didier Fuentes",
-        "pos": "SP,RP",
-        "mlbTeam": "ATL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Henry Bolte",
-        "pos": "CF,RF",
-        "mlbTeam": "ATH",
-        "action": "Dropped"
-      },
-      {
-        "name": "Chad Patrick",
-        "pos": "SP,RP",
-        "mlbTeam": "MIL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Cole Carrigg",
-        "pos": "CF",
-        "mlbTeam": "COL",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "5/28/26"
   },
   {
     "date": "5/28/26 2:05 AM ET",
@@ -5884,25 +5957,44 @@
     "effective": "5/28/26"
   },
   {
-    "date": "5/29/26 1:56 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "date": "5/28/26 2:05 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
-        "name": "Noelvi Marte",
-        "pos": "3B,RF",
-        "mlbTeam": "CIN",
+        "name": "Didier Fuentes",
+        "pos": "SP,RP",
+        "mlbTeam": "ATL",
         "action": "Added off Waivers"
       },
       {
-        "name": "Bryce Rainer",
-        "pos": "SS",
-        "mlbTeam": "DET",
+        "name": "Henry Bolte",
+        "pos": "CF,RF",
+        "mlbTeam": "ATH",
         "action": "Dropped"
       }
     ],
-    "effective": "5/29/26"
+    "effective": "5/28/26"
+  },
+  {
+    "date": "5/28/26 2:05 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Chad Patrick",
+        "pos": "SP,RP",
+        "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Cole Carrigg",
+        "pos": "CF",
+        "mlbTeam": "COL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/28/26"
   },
   {
     "date": "5/29/26 1:56 AM ET",
@@ -5947,6 +6039,26 @@
     "effective": "5/29/26"
   },
   {
+    "date": "5/29/26 1:56 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Noelvi Marte",
+        "pos": "3B,RF",
+        "mlbTeam": "CIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Bryce Rainer",
+        "pos": "SS",
+        "mlbTeam": "DET",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/29/26"
+  },
+  {
     "date": "5/30/26 3:07 AM ET",
     "teamId": "2",
     "teamName": "Dinosaur Jr Caminero",
@@ -5975,27 +6087,6 @@
         "pos": "RP",
         "mlbTeam": "CLE",
         "action": "Added off Waivers"
-      }
-    ],
-    "effective": "5/30/26"
-  },
-  {
-    "date": "5/30/26 3:07 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Keaton Winn",
-        "pos": "RP",
-        "mlbTeam": "SF",
-        "action": "Activated"
-      },
-      {
-        "name": "Graham Ashcraft",
-        "pos": "RP",
-        "mlbTeam": "CIN",
-        "action": "Dropped"
       }
     ],
     "effective": "5/30/26"
@@ -6058,6 +6149,40 @@
         "name": "Jamie Arnold",
         "pos": "SP",
         "mlbTeam": "ATH",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/30/26"
+  },
+  {
+    "date": "5/30/26 3:07 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Keaton Winn",
+        "pos": "RP",
+        "mlbTeam": "SF",
+        "action": "Activated"
+      }
+    ],
+    "effective": "5/30/26"
+  },
+  {
+    "date": "5/30/26 3:07 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Keaton Winn",
+        "pos": "RP",
+        "mlbTeam": "SF",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Graham Ashcraft",
+        "pos": "RP",
+        "mlbTeam": "CIN",
         "action": "Dropped"
       }
     ],
@@ -6161,9 +6286,23 @@
   },
   {
     "date": "6/1/26 2:06 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "teamId": "7",
+    "teamName": "Whoop Whoop that's the sound of Dylan Cease",
+    "team": "Whoop Whoop that's the sound of Dylan Cease",
+    "players": [
+      {
+        "name": "Taylor Clarke",
+        "pos": "RP",
+        "mlbTeam": "ARI",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/1/26"
+  },
+  {
+    "date": "6/1/26 2:06 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Luis Lara",
@@ -6176,21 +6315,6 @@
         "pos": "SP,RP",
         "mlbTeam": "MIL",
         "action": "Dropped"
-      }
-    ],
-    "effective": "6/1/26"
-  },
-  {
-    "date": "6/1/26 2:06 AM ET",
-    "teamId": "7",
-    "teamName": "Whoop Whoop that's the sound of Dylan Cease",
-    "team": "Whoop Whoop that's the sound of Dylan Cease",
-    "players": [
-      {
-        "name": "Taylor Clarke",
-        "pos": "RP",
-        "mlbTeam": "ARI",
-        "action": "Added off Waivers"
       }
     ],
     "effective": "6/1/26"
@@ -6227,27 +6351,6 @@
   },
   {
     "date": "6/2/26 2:37 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Joshua Baez",
-        "pos": "RF",
-        "mlbTeam": "STL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Noelvi Marte",
-        "pos": "3B,RF",
-        "mlbTeam": "CIN",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "6/2/26"
-  },
-  {
-    "date": "6/2/26 2:37 AM ET",
     "teamId": "2",
     "teamName": "Dinosaur Jr Caminero",
     "team": "Dinosaur Jr Caminero",
@@ -6262,6 +6365,26 @@
         "name": "Angel Martinez",
         "pos": "2B,LF,CF,RF",
         "mlbTeam": "CLE",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/2/26"
+  },
+  {
+    "date": "6/2/26 2:37 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Joshua Baez",
+        "pos": "RF",
+        "mlbTeam": "STL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Noelvi Marte",
+        "pos": "3B,RF",
+        "mlbTeam": "CIN",
         "action": "Dropped"
       }
     ],
@@ -6510,22 +6633,58 @@
   },
   {
     "date": "6/4/26 2:06 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Royce Lewis",
+        "pos": "1B,2B,3B",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/4/26"
+  },
+  {
+    "date": "6/4/26 2:06 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Colin Holderman",
         "pos": "RP",
         "mlbTeam": "CLE",
         "action": "Activated"
+      }
+    ],
+    "effective": "6/4/26"
+  },
+  {
+    "date": "6/4/26 2:06 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Colin Holderman",
+        "pos": "RP",
+        "mlbTeam": "CLE",
+        "action": "Added off Waivers"
       },
       {
         "name": "Keaton Winn",
         "pos": "RP",
         "mlbTeam": "SF",
         "action": "Dropped"
-      },
+      }
+    ],
+    "effective": "6/4/26"
+  },
+  {
+    "date": "6/4/26 2:06 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "Ian Seymour",
         "pos": "SP,RP",
@@ -6537,21 +6696,6 @@
         "pos": "LF,RF",
         "mlbTeam": "TEX",
         "action": "Dropped"
-      }
-    ],
-    "effective": "6/4/26"
-  },
-  {
-    "date": "6/4/26 2:06 AM ET",
-    "teamId": "4",
-    "teamName": "Okamotomami",
-    "team": "Okamotomami",
-    "players": [
-      {
-        "name": "Royce Lewis",
-        "pos": "1B,2B,3B",
-        "mlbTeam": "MIN",
-        "action": "Added off Waivers"
       }
     ],
     "effective": "6/4/26"
@@ -6588,9 +6732,23 @@
   },
   {
     "date": "6/5/26 2:33 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Noah Cameron",
+        "pos": "SP",
+        "mlbTeam": "KC",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/5/26"
+  },
+  {
+    "date": "6/5/26 2:33 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Noelvi Marte",
@@ -6603,21 +6761,6 @@
         "pos": "RF",
         "mlbTeam": "STL",
         "action": "Dropped"
-      }
-    ],
-    "effective": "6/5/26"
-  },
-  {
-    "date": "6/5/26 2:33 AM ET",
-    "teamId": "6",
-    "teamName": "A Pete Crow-Armstrong Looked at Me",
-    "team": "A Pete Crow-Armstrong Looked at Me",
-    "players": [
-      {
-        "name": "Noah Cameron",
-        "pos": "SP",
-        "mlbTeam": "KC",
-        "action": "Added off Waivers"
       }
     ],
     "effective": "6/5/26"
@@ -6653,63 +6796,24 @@
     "effective": "6/6/26"
   },
   {
-    "date": "6/5/26 9:49 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Riley Greene",
-        "pos": "LF",
-        "mlbTeam": "DET",
-        "action": "Traded from Yesavage Garden"
-      },
-      {
-        "name": "Joe Ryan",
-        "pos": "SP",
-        "mlbTeam": "MIN",
-        "action": "Traded from Yesavage Garden"
-      },
-      {
-        "name": "William Contreras",
-        "pos": "C",
-        "mlbTeam": "MIL",
-        "action": "Traded from Yesavage Garden"
-      }
-    ]
-  },
-  {
-    "date": "6/5/26 9:49 PM ET",
-    "teamId": "9",
-    "teamName": "Yesavage Garden",
-    "team": "Yesavage Garden",
-    "players": [
-      {
-        "name": "Logan Henderson",
-        "pos": "SP",
-        "mlbTeam": "MIL",
-        "action": "Traded from The Kurtzain With"
-      },
-      {
-        "name": "Ben Rice",
-        "pos": "C,1B",
-        "mlbTeam": "NYY",
-        "action": "Traded from The Kurtzain With"
-      }
-    ]
-  },
-  {
     "date": "6/5/26 9:51 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Austin Martin",
         "pos": "LF,RF",
         "mlbTeam": "MIN",
         "action": "Dropped"
-      },
+      }
+    ],
+    "effective": "6/6/26"
+  },
+  {
+    "date": "6/5/26 9:51 PM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "Kai-Wei Teng",
         "pos": "SP,RP",
@@ -6721,9 +6825,8 @@
   },
   {
     "date": "6/5/26 9:53 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Ian Seymour",
@@ -6985,9 +7088,8 @@
   },
   {
     "date": "6/9/26 7:08 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Joshua Baez",
@@ -7094,21 +7196,6 @@
   },
   {
     "date": "6/10/26 3:29 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Sam Bachman",
-        "pos": "RP",
-        "mlbTeam": "LAA",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "6/10/26"
-  },
-  {
-    "date": "6/10/26 3:29 AM ET",
     "teamId": "2",
     "teamName": "Dinosaur Jr Caminero",
     "team": "Dinosaur Jr Caminero",
@@ -7124,6 +7211,20 @@
         "pos": "SP,RP",
         "mlbTeam": "MIL",
         "action": "Dropped"
+      }
+    ],
+    "effective": "6/10/26"
+  },
+  {
+    "date": "6/10/26 3:29 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Sam Bachman",
+        "pos": "RP",
+        "mlbTeam": "LAA",
+        "action": "Added off Waivers"
       }
     ],
     "effective": "6/10/26"
@@ -7184,9 +7285,8 @@
   },
   {
     "date": "6/11/26 11:39 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Colin Holderman",
@@ -7422,45 +7522,6 @@
   },
   {
     "date": "6/16/26 5:53 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Yohandy Morales",
-        "pos": "1B",
-        "mlbTeam": "WAS",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "River Ryan",
-        "pos": "SP",
-        "mlbTeam": "DET",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Spencer Steer",
-        "pos": "1B,2B,LF,RF",
-        "mlbTeam": "CIN",
-        "action": "Dropped"
-      },
-      {
-        "name": "Paul Goldschmidt",
-        "pos": "1B",
-        "mlbTeam": "NYY",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Luis Lara",
-        "pos": "CF,RF",
-        "mlbTeam": "MIL",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "6/16/26"
-  },
-  {
-    "date": "6/16/26 5:53 AM ET",
     "teamId": "9",
     "teamName": "Yesavage Garden",
     "team": "Yesavage Garden",
@@ -7517,10 +7578,63 @@
     "effective": "6/16/26"
   },
   {
+    "date": "6/16/26 5:53 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Yohandy Morales",
+        "pos": "1B",
+        "mlbTeam": "WAS",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/16/26"
+  },
+  {
+    "date": "6/16/26 5:53 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "River Ryan",
+        "pos": "SP",
+        "mlbTeam": "DET",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Spencer Steer",
+        "pos": "1B,2B,LF,RF",
+        "mlbTeam": "CIN",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/16/26"
+  },
+  {
+    "date": "6/16/26 5:53 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Paul Goldschmidt",
+        "pos": "1B",
+        "mlbTeam": "NYY",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Luis Lara",
+        "pos": "CF,RF",
+        "mlbTeam": "MIL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/16/26"
+  },
+  {
     "date": "6/16/26 9:29 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Didier Fuentes",
@@ -7878,9 +7992,8 @@
   },
   {
     "date": "6/20/26 3:07 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Cooper Ingle",
@@ -7920,9 +8033,8 @@
   },
   {
     "date": "6/21/26 3:06 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Gage Jump",
@@ -7961,85 +8073,6 @@
     "effective": "6/22/26"
   },
   {
-    "date": "6/22/26 11:11 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Jose Ramirez",
-        "pos": "3B",
-        "mlbTeam": "CLE",
-        "action": "Traded from Popped A Mahle I'm Sweating"
-      },
-      {
-        "name": "Gavin Williams",
-        "pos": "SP",
-        "mlbTeam": "CLE",
-        "action": "Traded from Popped A Mahle I'm Sweating"
-      },
-      {
-        "name": "Rafael Devers",
-        "pos": "1B",
-        "mlbTeam": "SF",
-        "action": "Traded from Popped A Mahle I'm Sweating"
-      }
-    ]
-  },
-  {
-    "date": "6/22/26 11:11 PM ET",
-    "teamId": "12",
-    "teamName": "Popped A Mahle I'm Sweating",
-    "team": "Popped A Mahle I'm Sweating",
-    "players": [
-      {
-        "name": "Corbin Carroll",
-        "pos": "RF",
-        "mlbTeam": "ARI",
-        "action": "Traded from The Kurtzain With"
-      },
-      {
-        "name": "Eduardo Quintero",
-        "pos": "CF",
-        "mlbTeam": "LAD",
-        "action": "Traded from The Kurtzain With"
-      },
-      {
-        "name": "Tyler Soderstrom",
-        "pos": "1B,LF",
-        "mlbTeam": "ATH",
-        "action": "Traded from The Kurtzain With"
-      }
-    ]
-  },
-  {
-    "date": "6/23/26 2:23 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Gabe Speier",
-        "pos": "RP",
-        "mlbTeam": "SEA",
-        "action": "Activated"
-      },
-      {
-        "name": "Juan Morillo",
-        "pos": "RP",
-        "mlbTeam": "ARI",
-        "action": "Dropped"
-      },
-      {
-        "name": "Matthew Boyd",
-        "pos": "SP",
-        "mlbTeam": "CHC",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "6/23/26"
-  },
-  {
     "date": "6/23/26 2:23 AM ET",
     "teamId": "9",
     "teamName": "Yesavage Garden",
@@ -8073,6 +8106,54 @@
     "effective": "6/23/26"
   },
   {
+    "date": "6/23/26 2:23 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Gabe Speier",
+        "pos": "RP",
+        "mlbTeam": "SEA",
+        "action": "Activated"
+      }
+    ],
+    "effective": "6/23/26"
+  },
+  {
+    "date": "6/23/26 2:23 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Gabe Speier",
+        "pos": "RP",
+        "mlbTeam": "SEA",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Juan Morillo",
+        "pos": "RP",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/23/26"
+  },
+  {
+    "date": "6/23/26 2:23 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Matthew Boyd",
+        "pos": "SP",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/23/26"
+  },
+  {
     "date": "6/23/26 11:22 AM ET",
     "teamId": "6",
     "teamName": "A Pete Crow-Armstrong Looked at Me",
@@ -8094,86 +8175,9 @@
     "effective": "6/23/26"
   },
   {
-    "date": "6/23/26 10:05 PM ET",
-    "teamId": "4",
-    "teamName": "Okamotomami",
-    "team": "Okamotomami",
-    "players": [
-      {
-        "name": "Gage Jump",
-        "pos": "SP",
-        "mlbTeam": "ATH",
-        "action": "Traded from The Kurtzain With"
-      },
-      {
-        "name": "Jackson Chourio",
-        "pos": "LF,CF,RF",
-        "mlbTeam": "MIL",
-        "action": "Traded from The Kurtzain With"
-      },
-      {
-        "name": "Tanner Scott",
-        "pos": "RP",
-        "mlbTeam": "LAD",
-        "action": "Traded from The Kurtzain With"
-      },
-      {
-        "name": "Paul Goldschmidt",
-        "pos": "1B",
-        "mlbTeam": "NYY",
-        "action": "Traded from The Kurtzain With"
-      },
-      {
-        "name": "Ryan Sloan",
-        "pos": "SP",
-        "mlbTeam": "SEA",
-        "action": "Traded from The Kurtzain With"
-      }
-    ]
-  },
-  {
-    "date": "6/23/26 10:05 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Jose Soriano",
-        "pos": "SP",
-        "mlbTeam": "TOR",
-        "action": "Traded from Okamotomami"
-      },
-      {
-        "name": "Vladimir Guerrero Jr.",
-        "pos": "1B",
-        "mlbTeam": "TOR",
-        "action": "Traded from Okamotomami"
-      },
-      {
-        "name": "Jhoan Duran",
-        "pos": "RP",
-        "mlbTeam": "PHI",
-        "action": "Traded from Okamotomami"
-      },
-      {
-        "name": "Sam Antonacci",
-        "pos": "2B,LF",
-        "mlbTeam": "CHW",
-        "action": "Traded from Okamotomami"
-      },
-      {
-        "name": "Jung Hoo Lee",
-        "pos": "CF,RF",
-        "mlbTeam": "SF",
-        "action": "Traded from Okamotomami"
-      }
-    ]
-  },
-  {
     "date": "6/24/26 3:13 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "James Tibbs",
@@ -8186,13 +8190,29 @@
         "pos": "SP",
         "mlbTeam": "KC",
         "action": "Dropped"
-      },
+      }
+    ],
+    "effective": "6/24/26"
+  },
+  {
+    "date": "6/24/26 3:13 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "River Ryan",
         "pos": "SP",
         "mlbTeam": "DET",
         "action": "Added off Waivers"
-      },
+      }
+    ],
+    "effective": "6/24/26"
+  },
+  {
+    "date": "6/24/26 3:13 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
       {
         "name": "Noelvi Marte",
         "pos": "3B,RF",
@@ -8210,9 +8230,8 @@
   },
   {
     "date": "6/24/26 11:56 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "James Tibbs",
@@ -8225,9 +8244,8 @@
   },
   {
     "date": "6/24/26 11:57 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Emmet Sheehan",
@@ -8288,27 +8306,6 @@
       }
     ],
     "effective": "6/26/26"
-  },
-  {
-    "date": "6/27/26 3:25 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Sean Keys",
-        "pos": "3B",
-        "mlbTeam": "TOR",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "James Tibbs",
-        "pos": "RF",
-        "mlbTeam": "LAD",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "6/27/26"
   },
   {
     "date": "6/27/26 3:25 AM ET",
@@ -8380,10 +8377,37 @@
     "effective": "6/27/26"
   },
   {
+    "date": "6/27/26 3:25 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Sean Keys",
+        "pos": "3B",
+        "mlbTeam": "TOR",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/27/26"
+  },
+  {
+    "date": "6/27/26 3:25 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "James Tibbs",
+        "pos": "RF",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/27/26"
+  },
+  {
     "date": "6/27/26 11:06 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Jarren Duran",
@@ -8396,9 +8420,8 @@
   },
   {
     "date": "6/27/26 11:11 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Noelvi Marte",
@@ -8408,45 +8431,6 @@
       }
     ],
     "effective": "6/27/26"
-  },
-  {
-    "date": "6/28/26 3:34 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Henry Bolte",
-        "pos": "CF,RF",
-        "mlbTeam": "ATH",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Nick Lodolo",
-        "pos": "SP",
-        "mlbTeam": "CIN",
-        "action": "Dropped"
-      },
-      {
-        "name": "Cole Carrigg",
-        "pos": "CF",
-        "mlbTeam": "COL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "River Ryan",
-        "pos": "SP",
-        "mlbTeam": "DET",
-        "action": "Dropped"
-      },
-      {
-        "name": "Brooks Lee",
-        "pos": "2B,3B,SS",
-        "mlbTeam": "MIN",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "6/28/26"
   },
   {
     "date": "6/28/26 3:34 AM ET",
@@ -8470,10 +8454,63 @@
     "effective": "6/28/26"
   },
   {
+    "date": "6/28/26 3:34 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Henry Bolte",
+        "pos": "CF,RF",
+        "mlbTeam": "ATH",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Nick Lodolo",
+        "pos": "SP",
+        "mlbTeam": "CIN",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/28/26"
+  },
+  {
+    "date": "6/28/26 3:34 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Cole Carrigg",
+        "pos": "CF",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "River Ryan",
+        "pos": "SP",
+        "mlbTeam": "DET",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/28/26"
+  },
+  {
+    "date": "6/28/26 3:34 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Brooks Lee",
+        "pos": "2B,3B,SS",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/28/26"
+  },
+  {
     "date": "6/28/26 9:56 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Sean Keys",
@@ -8486,9 +8523,8 @@
   },
   {
     "date": "6/28/26 9:59 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Cole Carrigg",
@@ -8513,27 +8549,6 @@
       }
     ],
     "effective": "6/28/26"
-  },
-  {
-    "date": "6/29/26 3:43 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Tyler Wells",
-        "pos": "SP,RP",
-        "mlbTeam": "TB",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Trevor Rogers",
-        "pos": "SP",
-        "mlbTeam": "BAL",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "6/29/26"
   },
   {
     "date": "6/29/26 3:43 AM ET",
@@ -8599,6 +8614,34 @@
     "effective": "6/29/26"
   },
   {
+    "date": "6/29/26 3:43 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Tyler Wells",
+        "pos": "SP,RP",
+        "mlbTeam": "TB",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/29/26"
+  },
+  {
+    "date": "6/29/26 3:43 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Trevor Rogers",
+        "pos": "SP",
+        "mlbTeam": "BAL",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/29/26"
+  },
+  {
     "date": "6/29/26 11:24 AM ET",
     "teamId": "2",
     "teamName": "Dinosaur Jr Caminero",
@@ -8640,9 +8683,8 @@
   },
   {
     "date": "6/29/26 11:59 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Cooper Ingle",
@@ -8652,55 +8694,6 @@
       }
     ],
     "effective": "6/29/26"
-  },
-  {
-    "date": "6/29/26 7:11 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Kyle Tucker",
-        "pos": "RF",
-        "mlbTeam": "LAD",
-        "action": "Traded from Ballesteros, Let the Rhythm Take You Over"
-      }
-    ]
-  },
-  {
-    "date": "6/29/26 7:11 PM ET",
-    "teamId": "8",
-    "teamName": "Ballesteros, Let the Rhythm Take You Over",
-    "team": "Ballesteros, Let the Rhythm Take You Over",
-    "players": [
-      {
-        "name": "Franklin Arias",
-        "pos": "SS",
-        "mlbTeam": "BOS",
-        "action": "Traded from The Kurtzain With"
-      }
-    ]
-  },
-  {
-    "date": "6/30/26 3:51 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Lazaro Montes",
-        "pos": "RF",
-        "mlbTeam": "SEA",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Luis Lara",
-        "pos": "CF,RF",
-        "mlbTeam": "MIL",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "6/30/26"
   },
   {
     "date": "6/30/26 3:51 AM ET",
@@ -8766,6 +8759,34 @@
     "effective": "6/30/26"
   },
   {
+    "date": "6/30/26 3:51 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Lazaro Montes",
+        "pos": "RF",
+        "mlbTeam": "SEA",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/30/26"
+  },
+  {
+    "date": "6/30/26 3:51 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Luis Lara",
+        "pos": "CF,RF",
+        "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/30/26"
+  },
+  {
     "date": "6/30/26 7:45 AM ET",
     "teamId": "10",
     "teamName": "Blame it on the Rainiel",
@@ -8782,9 +8803,8 @@
   },
   {
     "date": "6/30/26 10:54 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Henry Bolte",
@@ -9043,9 +9063,23 @@
   },
   {
     "date": "7/7/26 4:06 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Luis Castillo",
+        "pos": "SP",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "7/7/26"
+  },
+  {
+    "date": "7/7/26 4:06 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Steven Okert",
@@ -9063,25 +9097,9 @@
     "effective": "7/7/26"
   },
   {
-    "date": "7/7/26 4:06 AM ET",
-    "teamId": "12",
-    "teamName": "Popped A Mahle I'm Sweating",
-    "team": "Popped A Mahle I'm Sweating",
-    "players": [
-      {
-        "name": "Luis Castillo",
-        "pos": "SP",
-        "mlbTeam": "CHW",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "7/7/26"
-  },
-  {
     "date": "7/8/26 2:19 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Gabe Speier",
@@ -9127,21 +9145,6 @@
   },
   {
     "date": "7/8/26 3:25 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Bryce Rainer",
-        "pos": "SS",
-        "mlbTeam": "DET",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "7/8/26"
-  },
-  {
-    "date": "7/8/26 3:25 AM ET",
     "teamId": "9",
     "teamName": "Yesavage Garden",
     "team": "Yesavage Garden",
@@ -9157,6 +9160,20 @@
         "pos": "RF",
         "mlbTeam": "MIA",
         "action": "Dropped"
+      }
+    ],
+    "effective": "7/8/26"
+  },
+  {
+    "date": "7/8/26 3:25 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Bryce Rainer",
+        "pos": "SS",
+        "mlbTeam": "DET",
+        "action": "Added off Waivers"
       }
     ],
     "effective": "7/8/26"
@@ -9262,9 +9279,8 @@
   },
   {
     "date": "7/10/26 11:11 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Josh Jung",
@@ -9376,9 +9392,8 @@
   },
   {
     "date": "7/12/26 3:38 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Tayron Guerrero",
@@ -9940,9 +9955,8 @@
   },
   {
     "date": "7/24/26 7:34 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Tayron Guerrero",
@@ -10024,9 +10038,8 @@
   },
   {
     "date": "7/26/26 3:48 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Brooks Lee",
@@ -10072,9 +10085,8 @@
   },
   {
     "date": "7/27/26 3:38 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Angel Genao",
@@ -10375,9 +10387,8 @@
   },
   {
     "date": "8/1/26 7:36 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Vahn Lackey",
@@ -10411,9 +10422,8 @@
   },
   {
     "date": "8/3/26 3:52 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Tayron Guerrero",
@@ -10441,9 +10451,8 @@
   },
   {
     "date": "8/3/26 4:48 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Jung Hoo Lee",
@@ -10501,9 +10510,8 @@
   },
   {
     "date": "8/4/26 3:43 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Lazaro Montes",
@@ -10561,9 +10569,8 @@
   },
   {
     "date": "8/4/26 3:32 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Bryce Rainer",
@@ -10615,27 +10622,6 @@
         "pos": "RF",
         "mlbTeam": "HOU",
         "action": "Dropped"
-      }
-    ],
-    "effective": "8/5/26"
-  },
-  {
-    "date": "8/5/26 4:20 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Brooks Lee",
-        "pos": "2B,3B,SS",
-        "mlbTeam": "MIN",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Jose Caballero",
-        "pos": "2B,3B,SS,RF",
-        "mlbTeam": "NYY",
-        "action": "Added off Waivers"
       }
     ],
     "effective": "8/5/26"
@@ -10734,6 +10720,34 @@
     "effective": "8/5/26"
   },
   {
+    "date": "8/5/26 4:20 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Brooks Lee",
+        "pos": "2B,3B,SS",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/5/26"
+  },
+  {
+    "date": "8/5/26 4:20 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Jose Caballero",
+        "pos": "2B,3B,SS,RF",
+        "mlbTeam": "NYY",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/5/26"
+  },
+  {
     "date": "8/5/26 8:37 AM ET",
     "teamId": "6",
     "teamName": "A Pete Crow-Armstrong Looked at Me",
@@ -10750,9 +10764,8 @@
   },
   {
     "date": "8/5/26 10:18 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Brooks Lee",
@@ -10765,9 +10778,8 @@
   },
   {
     "date": "8/5/26 11:00 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Tayron Guerrero",
@@ -10777,33 +10789,6 @@
       }
     ],
     "effective": "8/5/26"
-  },
-  {
-    "date": "8/6/26 3:48 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Samy Natera Jr.",
-        "pos": "RP",
-        "mlbTeam": "LAA",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Jackson Flora",
-        "pos": "SP",
-        "mlbTeam": "SF",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Blake Snell",
-        "pos": "SP",
-        "mlbTeam": "LAD",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "8/6/26"
   },
   {
     "date": "8/6/26 3:48 AM ET",
@@ -10827,10 +10812,51 @@
     "effective": "8/6/26"
   },
   {
+    "date": "8/6/26 3:48 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Samy Natera Jr.",
+        "pos": "RP",
+        "mlbTeam": "LAA",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/6/26"
+  },
+  {
+    "date": "8/6/26 3:48 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Jackson Flora",
+        "pos": "SP",
+        "mlbTeam": "SF",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/6/26"
+  },
+  {
+    "date": "8/6/26 3:48 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Blake Snell",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/6/26"
+  },
+  {
     "date": "8/6/26 11:04 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Freddy Peralta",
@@ -10840,21 +10866,6 @@
       }
     ],
     "effective": "8/6/26"
-  },
-  {
-    "date": "8/7/26 3:41 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Jake Bennett",
-        "pos": "SP",
-        "mlbTeam": "BOS",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "8/7/26"
   },
   {
     "date": "8/7/26 3:41 AM ET",
@@ -10894,6 +10905,20 @@
         "pos": "2B,3B,LF",
         "mlbTeam": "SD",
         "action": "Dropped"
+      }
+    ],
+    "effective": "8/7/26"
+  },
+  {
+    "date": "8/7/26 3:41 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Jake Bennett",
+        "pos": "SP",
+        "mlbTeam": "BOS",
+        "action": "Added off Waivers"
       }
     ],
     "effective": "8/7/26"
@@ -10959,62 +10984,9 @@
     "effective": "8/9/26"
   },
   {
-    "date": "8/9/26 12:43 PM ET",
-    "teamId": "4",
-    "teamName": "Okamotomami",
-    "team": "Okamotomami",
-    "players": [
-      {
-        "name": "Jacob Misiorowski",
-        "pos": "SP",
-        "mlbTeam": "MIL",
-        "action": "Traded from The Kurtzain With"
-      },
-      {
-        "name": "Angel Genao",
-        "pos": "SS",
-        "mlbTeam": "CLE",
-        "action": "Traded from The Kurtzain With"
-      }
-    ]
-  },
-  {
-    "date": "8/9/26 12:43 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Zachary Neto",
-        "pos": "SS",
-        "mlbTeam": "LAA",
-        "action": "Traded from Okamotomami"
-      },
-      {
-        "name": "Mason Miller",
-        "pos": "RP",
-        "mlbTeam": "SD",
-        "action": "Traded from Okamotomami"
-      },
-      {
-        "name": "Brandon Pfaadt",
-        "pos": "SP,RP",
-        "mlbTeam": "ARI",
-        "action": "Traded from Okamotomami"
-      },
-      {
-        "name": "Yoshinobu Yamamoto",
-        "pos": "SP",
-        "mlbTeam": "LAD",
-        "action": "Traded from Okamotomami"
-      }
-    ]
-  },
-  {
     "date": "8/9/26 1:58 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Luis Lara",
@@ -11027,9 +10999,8 @@
   },
   {
     "date": "8/9/26 11:14 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Samy Natera Jr.",
@@ -11056,27 +11027,6 @@
         "name": "Robert Gasser",
         "pos": "SP",
         "mlbTeam": "MIL",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "8/10/26"
-  },
-  {
-    "date": "8/10/26 4:32 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Mason Montgomery",
-        "pos": "SP,RP",
-        "mlbTeam": "PIT",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Jose Caballero",
-        "pos": "2B,3B,SS,RF",
-        "mlbTeam": "NYY",
         "action": "Dropped"
       }
     ],
@@ -11114,6 +11064,26 @@
         "pos": "2B,3B",
         "mlbTeam": "DET",
         "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/10/26"
+  },
+  {
+    "date": "8/10/26 4:32 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Mason Montgomery",
+        "pos": "SP,RP",
+        "mlbTeam": "PIT",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jose Caballero",
+        "pos": "2B,3B,SS,RF",
+        "mlbTeam": "NYY",
+        "action": "Dropped"
       }
     ],
     "effective": "8/10/26"
@@ -11250,9 +11220,8 @@
   },
   {
     "date": "8/11/26 5:31 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Mason Montgomery",
@@ -11422,9 +11391,8 @@
   },
   {
     "date": "8/13/26 4:04 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Jung Hoo Lee",
@@ -11476,50 +11444,9 @@
     ]
   },
   {
-    "date": "8/13/26 7:35 PM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Joshua Baez",
-        "pos": "RF",
-        "mlbTeam": "STL",
-        "action": "Traded from The Kurtzain With"
-      },
-      {
-        "name": "Nick Kurtz",
-        "pos": "1B",
-        "mlbTeam": "ATH",
-        "action": "Traded from The Kurtzain With"
-      }
-    ]
-  },
-  {
-    "date": "8/13/26 7:35 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Cam Schlittler",
-        "pos": "SP",
-        "mlbTeam": "NYY",
-        "action": "Traded from Weird Fishes / Arrighetti"
-      },
-      {
-        "name": "Chandler Simpson",
-        "pos": "LF,CF",
-        "mlbTeam": "TB",
-        "action": "Traded from Weird Fishes / Arrighetti"
-      }
-    ]
-  },
-  {
     "date": "8/13/26 7:48 PM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
     "players": [
       {
         "name": "Robbie Ray",
@@ -11577,21 +11504,6 @@
   },
   {
     "date": "8/14/26 4:06 AM ET",
-    "teamId": "3",
-    "teamName": "The Kurtzain With",
-    "team": "The Kurtzain With",
-    "players": [
-      {
-        "name": "Edward Florentino",
-        "pos": "CF",
-        "mlbTeam": "PIT",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "8/14/26"
-  },
-  {
-    "date": "8/14/26 4:06 AM ET",
     "teamId": "1",
     "teamName": "Weird Fishes / Arrighetti",
     "team": "Weird Fishes / Arrighetti",
@@ -11640,5 +11552,146 @@
       }
     ],
     "effective": "8/14/26"
+  },
+  {
+    "date": "8/14/26 4:06 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Edward Florentino",
+        "pos": "CF",
+        "mlbTeam": "PIT",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/14/26"
+  },
+  {
+    "date": "8/14/26 12:24 PM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Jung Hoo Lee",
+        "pos": "CF,RF",
+        "mlbTeam": "SF",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/14/26"
+  },
+  {
+    "date": "8/15/26 4:01 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Nick Lodolo",
+        "pos": "SP",
+        "mlbTeam": "CIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Willi Castro",
+        "pos": "1B,2B,3B,SS,LF,RF",
+        "mlbTeam": "COL",
+        "action": "Dropped"
+      },
+      {
+        "name": "Andrew Burress",
+        "pos": "CF",
+        "mlbTeam": "ATH",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/15/26"
+  },
+  {
+    "date": "8/15/26 4:01 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Brandyn Garcia",
+        "pos": "RP",
+        "mlbTeam": "ARI",
+        "action": "Activated"
+      },
+      {
+        "name": "Colin Holderman",
+        "pos": "RP",
+        "mlbTeam": "CLE",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/15/26"
+  },
+  {
+    "date": "8/15/26 4:01 AM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Tayron Guerrero",
+        "pos": "RP",
+        "mlbTeam": "BOS",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/15/26"
+  },
+  {
+    "date": "8/15/26 4:01 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Chase Meidroth",
+        "pos": "2B,SS",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/15/26"
+  },
+  {
+    "date": "8/15/26 4:01 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Bryson Stott",
+        "pos": "2B,3B",
+        "mlbTeam": "PHI",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Bryce Elder",
+        "pos": "SP",
+        "mlbTeam": "ATL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/15/26"
+  },
+  {
+    "date": "8/15/26 4:01 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Bryce Rainer",
+        "pos": "SS",
+        "mlbTeam": "DET",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/15/26"
   }
 ]

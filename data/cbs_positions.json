@@ -182,7 +182,7 @@
   "Aaron Nola": "SP",
   "Michael King": "SP",
   "Carlos Correa": "3B,SS",
-  "Jo Adell": "CF,RF",
+  "Jo Adell": "LF,CF,RF",
   "Colt Keith": "2B,3B",
   "Shea Langeliers": "C",
   "Kyle Stowers": "1B,LF,RF",
@@ -655,5 +655,8 @@
   "Andrew Fischer": "3B",
   "Gage Wood": "SP",
   "Samy Natera Jr.": "RP",
-  "Dylan Dodd": "RP"
+  "Dylan Dodd": "RP",
+  "Andrew Burress": "CF",
+  "Brandyn Garcia": "RP",
+  "Chase Meidroth": "2B,SS"
 }
