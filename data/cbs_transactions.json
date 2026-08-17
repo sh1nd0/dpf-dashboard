@@ -52,9 +52,8 @@
   },
   {
     "date": "3/15/26 7:26 PM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Lars Nootbaar",
@@ -360,9 +359,8 @@
   },
   {
     "date": "3/19/26 11:40 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Sean Manaea",
@@ -375,9 +373,8 @@
   },
   {
     "date": "3/19/26 11:44 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Nolan Schanuel",
@@ -390,9 +387,8 @@
   },
   {
     "date": "3/19/26 2:35 PM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Matt Strahm",
@@ -600,9 +596,8 @@
   },
   {
     "date": "3/21/26 11:22 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Otto Lopez",
@@ -615,9 +610,8 @@
   },
   {
     "date": "3/21/26 11:24 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Trent Grisham",
@@ -1173,9 +1167,8 @@
   },
   {
     "date": "3/25/26 2:58 PM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Jose Alvarado",
@@ -1624,27 +1617,6 @@
   },
   {
     "date": "4/4/26 3:06 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Aaron Ashby",
-        "pos": "RP",
-        "mlbTeam": "MIL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Caleb Durbin",
-        "pos": "3B",
-        "mlbTeam": "BOS",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "4/4/26"
-  },
-  {
-    "date": "4/4/26 3:06 AM ET",
     "teamId": "11",
     "teamName": "Before and After Shohei",
     "team": "Before and After Shohei",
@@ -1693,6 +1665,26 @@
         "name": "Phil Maton",
         "pos": "RP",
         "mlbTeam": "CHC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "4/4/26"
+  },
+  {
+    "date": "4/4/26 3:06 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Aaron Ashby",
+        "pos": "RP",
+        "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Caleb Durbin",
+        "pos": "3B",
+        "mlbTeam": "BOS",
         "action": "Dropped"
       }
     ],
@@ -1769,27 +1761,6 @@
   },
   {
     "date": "4/5/26 1:48 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Jose Fernandez",
-        "pos": "1B,3B,SS",
-        "mlbTeam": "ARI",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Jose Alvarado",
-        "pos": "RP",
-        "mlbTeam": "PHI",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "4/5/26"
-  },
-  {
-    "date": "4/5/26 1:48 AM ET",
     "teamId": "11",
     "teamName": "Before and After Shohei",
     "team": "Before and After Shohei",
@@ -1814,6 +1785,26 @@
         "pos": "LF,RF",
         "mlbTeam": "TOR",
         "action": "Added off Waivers"
+      }
+    ],
+    "effective": "4/5/26"
+  },
+  {
+    "date": "4/5/26 1:48 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Jose Fernandez",
+        "pos": "1B,3B,SS",
+        "mlbTeam": "ARI",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jose Alvarado",
+        "pos": "RP",
+        "mlbTeam": "PHI",
+        "action": "Dropped"
       }
     ],
     "effective": "4/5/26"
@@ -2331,21 +2322,6 @@
   },
   {
     "date": "4/13/26 1:59 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Victor Vodnik",
-        "pos": "RP",
-        "mlbTeam": "MIA",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "4/13/26"
-  },
-  {
-    "date": "4/13/26 1:59 AM ET",
     "teamId": "12",
     "teamName": "Popped A Mahle I'm Sweating",
     "team": "Popped A Mahle I'm Sweating",
@@ -2427,6 +2403,20 @@
     "effective": "4/13/26"
   },
   {
+    "date": "4/13/26 1:59 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Victor Vodnik",
+        "pos": "RP",
+        "mlbTeam": "MIA",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "4/13/26"
+  },
+  {
     "date": "4/13/26 9:04 AM ET",
     "team": "Schlit Open and Melt",
     "teamName": "Schlit Open and Melt",
@@ -2483,27 +2473,6 @@
         "name": "Gage Jump",
         "pos": "SP",
         "mlbTeam": "ATH",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "4/14/26"
-  },
-  {
-    "date": "4/14/26 3:10 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Matt Shaw",
-        "pos": "3B,RF",
-        "mlbTeam": "CHC",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Victor Vodnik",
-        "pos": "RP",
-        "mlbTeam": "MIA",
         "action": "Dropped"
       }
     ],
@@ -2583,6 +2552,26 @@
         "pos": "2B,3B",
         "mlbTeam": "ATH",
         "action": "Added off Waivers"
+      }
+    ],
+    "effective": "4/14/26"
+  },
+  {
+    "date": "4/14/26 3:10 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Matt Shaw",
+        "pos": "3B,RF",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Victor Vodnik",
+        "pos": "RP",
+        "mlbTeam": "MIA",
+        "action": "Dropped"
       }
     ],
     "effective": "4/14/26"
@@ -2715,9 +2704,8 @@
   },
   {
     "date": "4/16/26 2:34 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Dillon Dingler",
@@ -2833,27 +2821,6 @@
   },
   {
     "date": "4/18/26 3:03 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Louie Varland",
-        "pos": "RP",
-        "mlbTeam": "TOR",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Matt Shaw",
-        "pos": "3B,RF",
-        "mlbTeam": "CHC",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "4/18/26"
-  },
-  {
-    "date": "4/18/26 3:03 AM ET",
     "teamId": "8",
     "teamName": "Ballesteros, Let the Rhythm Take You Over",
     "team": "Ballesteros, Let the Rhythm Take You Over",
@@ -2882,6 +2849,26 @@
         "name": "Isaac Paredes",
         "pos": "1B,3B",
         "mlbTeam": "HOU",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "4/18/26"
+  },
+  {
+    "date": "4/18/26 3:03 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Louie Varland",
+        "pos": "RP",
+        "mlbTeam": "TOR",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Matt Shaw",
+        "pos": "3B,RF",
+        "mlbTeam": "CHC",
         "action": "Dropped"
       }
     ],
@@ -3167,9 +3154,8 @@
   },
   {
     "date": "4/22/26 10:24 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Yainer Diaz",
@@ -3490,9 +3476,8 @@
   },
   {
     "date": "4/28/26 9:16 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Trevor Story",
@@ -3532,7 +3517,7 @@
     "players": [
       {
         "name": "Kodai Senga",
-        "pos": "SP",
+        "pos": "SP,RP",
         "mlbTeam": "NYM",
         "action": "Dropped"
       }
@@ -3562,21 +3547,6 @@
         "pos": "SP,RP",
         "mlbTeam": "CLE",
         "action": "Activated"
-      }
-    ],
-    "effective": "4/29/26"
-  },
-  {
-    "date": "4/29/26 3:03 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Isaac Paredes",
-        "pos": "1B,3B",
-        "mlbTeam": "HOU",
-        "action": "Added off Waivers"
       }
     ],
     "effective": "4/29/26"
@@ -3624,10 +3594,23 @@
     "effective": "4/29/26"
   },
   {
+    "date": "4/29/26 3:03 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Isaac Paredes",
+        "pos": "1B,3B",
+        "mlbTeam": "HOU",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "4/29/26"
+  },
+  {
     "date": "4/29/26 10:45 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Aaron Nola",
@@ -3800,21 +3783,6 @@
   },
   {
     "date": "5/2/26 7:58 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Walbert Urena",
-        "pos": "SP",
-        "mlbTeam": "LAA",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "5/2/26"
-  },
-  {
-    "date": "5/2/26 7:58 AM ET",
     "teamId": "12",
     "teamName": "Popped A Mahle I'm Sweating",
     "team": "Popped A Mahle I'm Sweating",
@@ -3844,6 +3812,20 @@
         "name": "Nick Martinez",
         "pos": "SP,RP",
         "mlbTeam": "TB",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "5/2/26"
+  },
+  {
+    "date": "5/2/26 7:58 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Walbert Urena",
+        "pos": "SP",
+        "mlbTeam": "LAA",
         "action": "Added off Waivers"
       }
     ],
@@ -3896,9 +3878,8 @@
   },
   {
     "date": "5/3/26 9:33 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Walbert Urena",
@@ -4163,7 +4144,7 @@
     "players": [
       {
         "name": "Drew Anderson",
-        "pos": "RP",
+        "pos": "SP,RP",
         "mlbTeam": "DET",
         "action": "Added off Waivers"
       }
@@ -4319,27 +4300,6 @@
   },
   {
     "date": "5/7/26 2:33 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Jack Perkins",
-        "pos": "SP,RP",
-        "mlbTeam": "ATH",
-        "action": "Activated"
-      },
-      {
-        "name": "Emilio Pagan",
-        "pos": "RP",
-        "mlbTeam": "CIN",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "5/7/26"
-  },
-  {
-    "date": "5/7/26 2:33 AM ET",
     "teamId": "6",
     "teamName": "A Pete Crow-Armstrong Looked at Me",
     "team": "A Pete Crow-Armstrong Looked at Me",
@@ -4402,6 +4362,40 @@
         "name": "Lawrence Butler",
         "pos": "CF,RF",
         "mlbTeam": "ATH",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/7/26"
+  },
+  {
+    "date": "5/7/26 2:33 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Jack Perkins",
+        "pos": "SP,RP",
+        "mlbTeam": "ATH",
+        "action": "Activated"
+      }
+    ],
+    "effective": "5/7/26"
+  },
+  {
+    "date": "5/7/26 2:33 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Jack Perkins",
+        "pos": "SP,RP",
+        "mlbTeam": "ATH",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Emilio Pagan",
+        "pos": "RP",
+        "mlbTeam": "CIN",
         "action": "Dropped"
       }
     ],
@@ -4858,9 +4852,8 @@
   },
   {
     "date": "5/13/26 12:39 PM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Isaac Paredes",
@@ -4888,21 +4881,6 @@
   },
   {
     "date": "5/14/26 2:02 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Kaelen Culpepper",
-        "pos": "SS",
-        "mlbTeam": "MIN",
-        "action": "Added off Waivers"
-      }
-    ],
-    "effective": "5/14/26"
-  },
-  {
-    "date": "5/14/26 2:02 AM ET",
     "teamId": "7",
     "teamName": "Whoop Whoop that's the sound of Dylan Cease",
     "team": "Whoop Whoop that's the sound of Dylan Cease",
@@ -4918,6 +4896,20 @@
         "pos": "C",
         "mlbTeam": "MIA",
         "action": "Dropped"
+      }
+    ],
+    "effective": "5/14/26"
+  },
+  {
+    "date": "5/14/26 2:02 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Kaelen Culpepper",
+        "pos": "SS",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
       }
     ],
     "effective": "5/14/26"
@@ -5373,9 +5365,8 @@
   },
   {
     "date": "5/19/26 2:36 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Jamie Arnold",
@@ -5634,7 +5625,7 @@
     "players": [
       {
         "name": "Drew Anderson",
-        "pos": "RP",
+        "pos": "SP,RP",
         "mlbTeam": "DET",
         "action": "Dropped"
       }
@@ -6135,27 +6126,6 @@
   },
   {
     "date": "5/30/26 3:07 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Felnin Celesten",
-        "pos": "SS",
-        "mlbTeam": "SEA",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Jamie Arnold",
-        "pos": "SP",
-        "mlbTeam": "ATH",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "5/30/26"
-  },
-  {
-    "date": "5/30/26 3:07 AM ET",
     "team": "Schlit Open and Melt",
     "teamName": "Schlit Open and Melt",
     "players": [
@@ -6189,10 +6159,29 @@
     "effective": "5/30/26"
   },
   {
+    "date": "5/30/26 3:07 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Felnin Celesten",
+        "pos": "SS",
+        "mlbTeam": "SEA",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jamie Arnold",
+        "pos": "SP",
+        "mlbTeam": "ATH",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "5/30/26"
+  },
+  {
     "date": "5/31/26 2:39 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Isaac Paredes",
@@ -7107,34 +7096,6 @@
     "effective": "6/9/26"
   },
   {
-    "date": "6/9/26 8:55 AM ET",
-    "teamId": "9",
-    "teamName": "Yesavage Garden",
-    "team": "Yesavage Garden",
-    "players": [
-      {
-        "name": "Ceddanne Rafaela",
-        "pos": "2B,CF",
-        "mlbTeam": "BOS",
-        "action": "Traded from Weird Fishes / Arrighetti"
-      }
-    ]
-  },
-  {
-    "date": "6/9/26 8:55 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Jose Altuve",
-        "pos": "2B,LF",
-        "mlbTeam": "HOU",
-        "action": "Traded from Yesavage Garden"
-      }
-    ]
-  },
-  {
     "date": "6/9/26 3:04 PM ET",
     "teamId": "10",
     "teamName": "Blame it on the Rainiel",
@@ -7264,9 +7225,8 @@
   },
   {
     "date": "6/11/26 2:10 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Kerry Carpenter",
@@ -7558,27 +7518,6 @@
   },
   {
     "date": "6/16/26 5:53 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Ezequiel Tovar",
-        "pos": "SS",
-        "mlbTeam": "COL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Kerry Carpenter",
-        "pos": "LF,RF",
-        "mlbTeam": "DET",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "6/16/26"
-  },
-  {
-    "date": "6/16/26 5:53 AM ET",
     "team": "Schlit Open and Melt",
     "teamName": "Schlit Open and Melt",
     "players": [
@@ -7606,6 +7545,26 @@
         "name": "Spencer Steer",
         "pos": "1B,2B,LF,RF",
         "mlbTeam": "CIN",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "6/16/26"
+  },
+  {
+    "date": "6/16/26 5:53 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Ezequiel Tovar",
+        "pos": "SS",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Kerry Carpenter",
+        "pos": "LF,RF",
+        "mlbTeam": "DET",
         "action": "Dropped"
       }
     ],
@@ -7734,9 +7693,8 @@
   },
   {
     "date": "6/17/26 1:51 PM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Andrew Painter",
@@ -7776,27 +7734,6 @@
         "pos": "RP",
         "mlbTeam": "PHI",
         "action": "Dropped"
-      }
-    ],
-    "effective": "6/18/26"
-  },
-  {
-    "date": "6/18/26 2:38 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Jeffrey Springs",
-        "pos": "SP",
-        "mlbTeam": "ATH",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Joey Cantillo",
-        "pos": "SP,RP",
-        "mlbTeam": "CLE",
-        "action": "Activated"
       }
     ],
     "effective": "6/18/26"
@@ -7893,6 +7830,48 @@
         "pos": "RP",
         "mlbTeam": "HOU",
         "action": "Dropped"
+      }
+    ],
+    "effective": "6/18/26"
+  },
+  {
+    "date": "6/18/26 2:38 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Jeffrey Springs",
+        "pos": "SP",
+        "mlbTeam": "ATH",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/18/26"
+  },
+  {
+    "date": "6/18/26 2:38 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Joey Cantillo",
+        "pos": "SP,RP",
+        "mlbTeam": "CLE",
+        "action": "Activated"
+      }
+    ],
+    "effective": "6/18/26"
+  },
+  {
+    "date": "6/18/26 2:38 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Joey Cantillo",
+        "pos": "SP,RP",
+        "mlbTeam": "CLE",
+        "action": "Added off Waivers"
       }
     ],
     "effective": "6/18/26"
@@ -8434,27 +8413,6 @@
   },
   {
     "date": "6/28/26 3:34 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "TJ Rumfield",
-        "pos": "1B",
-        "mlbTeam": "COL",
-        "action": "Added off Waivers"
-      },
-      {
-        "name": "Ezequiel Tovar",
-        "pos": "SS",
-        "mlbTeam": "COL",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "6/28/26"
-  },
-  {
-    "date": "6/28/26 3:34 AM ET",
     "team": "Schlit Open and Melt",
     "teamName": "Schlit Open and Melt",
     "players": [
@@ -8503,6 +8461,26 @@
         "pos": "2B,3B,SS",
         "mlbTeam": "MIN",
         "action": "Added off Waivers"
+      }
+    ],
+    "effective": "6/28/26"
+  },
+  {
+    "date": "6/28/26 3:34 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "TJ Rumfield",
+        "pos": "1B",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Ezequiel Tovar",
+        "pos": "SS",
+        "mlbTeam": "COL",
+        "action": "Dropped"
       }
     ],
     "effective": "6/28/26"
@@ -9180,9 +9158,8 @@
   },
   {
     "date": "7/8/26 5:33 PM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Isaac Paredes",
@@ -9308,27 +9285,6 @@
   },
   {
     "date": "7/11/26 3:36 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Trent Thornton",
-        "pos": "RP",
-        "mlbTeam": "CHC",
-        "action": "Activated"
-      },
-      {
-        "name": "Dennis Santana",
-        "pos": "RP",
-        "mlbTeam": "PIT",
-        "action": "Dropped"
-      }
-    ],
-    "effective": "7/11/26"
-  },
-  {
-    "date": "7/11/26 3:36 AM ET",
     "teamId": "6",
     "teamName": "A Pete Crow-Armstrong Looked at Me",
     "team": "A Pete Crow-Armstrong Looked at Me",
@@ -9338,6 +9294,40 @@
         "pos": "1B,2B,SS",
         "mlbTeam": "PIT",
         "action": "Added off Waivers"
+      }
+    ],
+    "effective": "7/11/26"
+  },
+  {
+    "date": "7/11/26 3:36 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Trent Thornton",
+        "pos": "RP",
+        "mlbTeam": "CHC",
+        "action": "Activated"
+      }
+    ],
+    "effective": "7/11/26"
+  },
+  {
+    "date": "7/11/26 3:36 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Trent Thornton",
+        "pos": "RP",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Dennis Santana",
+        "pos": "RP",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
       }
     ],
     "effective": "7/11/26"
@@ -9565,9 +9555,8 @@
   },
   {
     "date": "7/18/26 2:57 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "A.J. Smith-Shawver",
@@ -10539,9 +10528,8 @@
   },
   {
     "date": "8/4/26 10:52 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Spencer Strider",
@@ -11146,64 +11134,6 @@
     "effective": "8/11/26"
   },
   {
-    "date": "8/11/26 2:39 PM ET",
-    "teamId": "2",
-    "teamName": "Dinosaur Jr Caminero",
-    "team": "Dinosaur Jr Caminero",
-    "players": [
-      {
-        "name": "Mike Trout",
-        "pos": "CF,RF",
-        "mlbTeam": "LAA",
-        "action": "Traded from Weird Fishes / Arrighetti"
-      },
-      {
-        "name": "Dillon Dingler",
-        "pos": "C",
-        "mlbTeam": "DET",
-        "action": "Traded from Weird Fishes / Arrighetti"
-      },
-      {
-        "name": "Dylan Cease",
-        "pos": "SP",
-        "mlbTeam": "TOR",
-        "action": "Traded from Weird Fishes / Arrighetti"
-      }
-    ]
-  },
-  {
-    "date": "8/11/26 2:39 PM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Alejandro Kirk",
-        "pos": "C",
-        "mlbTeam": "TOR",
-        "action": "Traded from Dinosaur Jr Caminero"
-      },
-      {
-        "name": "Julio Rodriguez",
-        "pos": "CF",
-        "mlbTeam": "SEA",
-        "action": "Traded from Dinosaur Jr Caminero"
-      },
-      {
-        "name": "Josuar De Jesus Gonzalez",
-        "pos": "SS",
-        "mlbTeam": "SF",
-        "action": "Traded from Dinosaur Jr Caminero"
-      },
-      {
-        "name": "Anthony Eyanson",
-        "pos": "SP",
-        "mlbTeam": "BAL",
-        "action": "Traded from Dinosaur Jr Caminero"
-      }
-    ]
-  },
-  {
     "date": "8/11/26 3:01 PM ET",
     "teamId": "2",
     "teamName": "Dinosaur Jr Caminero",
@@ -11276,9 +11206,8 @@
   },
   {
     "date": "8/12/26 3:46 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
     "players": [
       {
         "name": "Dustin May",
@@ -11504,21 +11433,6 @@
   },
   {
     "date": "8/14/26 4:06 AM ET",
-    "teamId": "1",
-    "teamName": "Weird Fishes / Arrighetti",
-    "team": "Weird Fishes / Arrighetti",
-    "players": [
-      {
-        "name": "Freddy Peralta",
-        "pos": "SP",
-        "mlbTeam": "TB",
-        "action": "Activated"
-      }
-    ],
-    "effective": "8/14/26"
-  },
-  {
-    "date": "8/14/26 4:06 AM ET",
     "teamId": "10",
     "teamName": "Blame it on the Rainiel",
     "team": "Blame it on the Rainiel",
@@ -11562,6 +11476,34 @@
         "name": "Edward Florentino",
         "pos": "CF",
         "mlbTeam": "PIT",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/14/26"
+  },
+  {
+    "date": "8/14/26 4:06 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Freddy Peralta",
+        "pos": "SP",
+        "mlbTeam": "TB",
+        "action": "Activated"
+      }
+    ],
+    "effective": "8/14/26"
+  },
+  {
+    "date": "8/14/26 4:06 AM ET",
+    "team": "Baez, Baez, Miss American Mize",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Freddy Peralta",
+        "pos": "SP",
+        "mlbTeam": "TB",
         "action": "Added off Waivers"
       }
     ],
@@ -11777,5 +11719,73 @@
       }
     ],
     "effective": "8/16/26"
+  },
+  {
+    "date": "8/17/26 4:55 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Bryan Hudson",
+        "pos": "SP,RP",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Dansby Swanson",
+        "pos": "SS",
+        "mlbTeam": "CHC",
+        "action": "Dropped"
+      },
+      {
+        "name": "Jeremiah Estrada",
+        "pos": "RP",
+        "mlbTeam": "SD",
+        "action": "Activated"
+      },
+      {
+        "name": "Justin Slaten",
+        "pos": "RP",
+        "mlbTeam": "BOS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/17/26"
+  },
+  {
+    "date": "8/17/26 4:55 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Seranthony Dominguez",
+        "pos": "RP",
+        "mlbTeam": "SEA",
+        "action": "Activated"
+      },
+      {
+        "name": "Brandyn Garcia",
+        "pos": "RP",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/17/26"
+  },
+  {
+    "date": "8/17/26 4:55 AM ET",
+    "team": "Schlit Open and Melt",
+    "teamName": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Cole Carrigg",
+        "pos": "CF",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/17/26"
   }
 ]
