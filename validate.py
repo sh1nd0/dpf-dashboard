@@ -208,6 +208,9 @@ def check_transactions(report: Report, cfg: dict | None):
         'Are we not men? We are Devers!',
         'Everythings McGonigle Green',
         "Colonel Corbin's Ascent",
+        'Weird Fishes / Arrighetti',
+        'The Kurtzain With',
+        "Whoop Whoop that's the sound of Dylan Cease",
     }
     for tid, seen in id_to_names.items():
         unknown = sorted(n for n in seen if n not in cfg_team_names and n not in known_old)
@@ -534,6 +537,9 @@ def check_roster_ground_truth(report: Report):
     # Known team-rename aliases — add here when an owner renames mid-season.
     rename_aliases = {
         "Whoop Whoop that's the sound of Dylan Cease": 'Everythings McGonigle Green',
+        'Weird Fishes / Arrighetti': 'Baez, Baez, Miss American Mize',
+        "Colonel Corbin's Ascent": 'Schlit Open and Melt',
+        'The Kurtzain With': 'Schlit Open and Melt',
     }
 
     def _norm(team):

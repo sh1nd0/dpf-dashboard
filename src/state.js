@@ -169,13 +169,13 @@ const CBS_ID_TO_LEAGUE = {};
 // CBS team IDs → team names (verified from CBS transactions page dropdown)
 // NOTE: CBS IDs do NOT correspond to draft pick numbers!
 const CBS_TEAM_MAP = {
-  1: 'Weird Fishes / Arrighetti',          // Chris Kaskie (renamed from "Dennis Santana...")
+  1: 'Baez, Baez, Miss American Mize',     // Chris Kaskie (was "Dennis Santana..." → "Weird Fishes / Arrighetti" → this, 2026-08)
   2: 'Dinosaur Jr Caminero',               // Anthony Rescan
-  3: "The Kurtzain With",                   // David Roth (renamed from "Colonel Corbin's Ascent" 2026-07)
+  3: "Schlit Open and Melt",                // David Roth (was "Colonel Corbin's Ascent" → "The Kurtzain With" → this, 2026-08)
   4: 'Okamotomami',                         // Mark Pytlik (mine)
   5: 'Buddy Buddy Buddy All On Base',       // Fran Devinney
   6: 'A Pete Crow-Armstrong Looked at Me',  // Ian Wolfe
-  7: "Whoop Whoop that's the sound of Dylan Cease", // Andrew Gaerig
+  7: "Everythings McGonigle Green",         // Andrew Gaerig (renamed back from "Whoop Whoop..." 2026-08)
   8: 'Ballesteros, Let the Rhythm Take You Over',   // Mark Azar
   9: 'Yesavage Garden',                     // Blake Murphy
   10: 'Blame it on the Rainiel',            // Trei Brundrett

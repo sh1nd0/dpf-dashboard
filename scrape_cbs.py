@@ -64,13 +64,13 @@ LEAGUE_BASE = f"https://{LEAGUE_HOST}"
 # truth — `name` is whatever each team is currently called on CBS, included
 # only for human-readable logging.
 TEAMS = [
-    {"id": 1,  "name": "Weird Fishes / Arrighetti"},
+    {"id": 1,  "name": "Baez, Baez, Miss American Mize"},  # was "Weird Fishes / Arrighetti" until 2026-08
     {"id": 2,  "name": "Dinosaur Jr Caminero"},
-    {"id": 3,  "name": "The Kurtzain With"},  # was "Colonel Corbin's Ascent" until 2026-07
+    {"id": 3,  "name": "Schlit Open and Melt"},  # was "Colonel Corbin's Ascent" → "The Kurtzain With" → this, 2026-08
     {"id": 4,  "name": "Okamotomami"},
     {"id": 5,  "name": "Buddy Buddy Buddy All On Base"},
     {"id": 6,  "name": "A Pete Crow-Armstrong Looked at Me"},
-    {"id": 7,  "name": "Whoop Whoop that's the sound of Dylan Cease"},
+    {"id": 7,  "name": "Everythings McGonigle Green"},  # renamed back from "Whoop Whoop..." 2026-08
     {"id": 8,  "name": "Ballesteros, Let the Rhythm Take You Over"},
     {"id": 9,  "name": "Yesavage Garden"},
     {"id": 10, "name": "Blame it on the Rainiel"},

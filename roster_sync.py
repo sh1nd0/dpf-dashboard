@@ -23,9 +23,11 @@ from datetime import datetime
 # stale scrape doesn't get dropped on the floor.
 CBS_TEAM_IDS = {
     'Weird Fishes / Arrighetti': '1',
+    'Baez, Baez, Miss American Mize': '1',  # renamed from Weird Fishes 2026-08
     'Dinosaur Jr Caminero': '2',
     "Colonel Corbin's Ascent": '3',
     'The Kurtzain With': '3',  # renamed from Colonel Corbin's Ascent 2026-07
+    'Schlit Open and Melt': '3',  # renamed from The Kurtzain With 2026-08
     'Okamotomami': '4',
     'Buddy Buddy Buddy All On Base': '5',
     'A Pete Crow-Armstrong Looked at Me': '6',

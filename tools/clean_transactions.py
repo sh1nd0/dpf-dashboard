@@ -37,13 +37,16 @@ TX_PATH = ROOT / "data" / "cbs_transactions.json"
 
 TEAM_IDS = {
     "Weird Fishes / Arrighetti": "1",
+    "Baez, Baez, Miss American Mize": "1",  # renamed from Weird Fishes / Arrighetti 2026-08; later entry wins ID_TO_NAME
     "Dinosaur Jr Caminero": "2",
     "Colonel Corbin's Ascent": "3",
-    "The Kurtzain With": "3",  # renamed from Colonel Corbin's Ascent 2026-07; later entry wins ID_TO_NAME so this is the canonical name
+    "The Kurtzain With": "3",  # renamed from Colonel Corbin's Ascent 2026-07
+    "Schlit Open and Melt": "3",  # renamed from The Kurtzain With 2026-08; later entry wins ID_TO_NAME
     "Okamotomami": "4",
     "Buddy Buddy Buddy All On Base": "5",
     "A Pete Crow-Armstrong Looked at Me": "6",
     "Whoop Whoop that's the sound of Dylan Cease": "7",
+    "Everythings McGonigle Green": "7",  # renamed BACK from Whoop Whoop 2026-08; later entry wins ID_TO_NAME
     "Ballesteros, Let the Rhythm Take You Over": "8",
     "Yesavage Garden": "9",
     "Blame it on the Rainiel": "10",

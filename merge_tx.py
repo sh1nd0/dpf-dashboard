@@ -19,9 +19,11 @@ from datetime import datetime
 
 TEAM_IDS = {
     "Weird Fishes / Arrighetti": 1,
+    "Baez, Baez, Miss American Mize": 1,
     "Dinosaur Jr Caminero": 2,
     "Colonel Corbin's Ascent": 3,
     "The Kurtzain With": 3,
+    "Schlit Open and Melt": 3,
     "Okamotomami": 4,
     "Buddy Buddy Buddy All On Base": 5,
     "A Pete Crow-Armstrong Looked at Me": 6,
