@@ -17,7 +17,7 @@
   "Gabriel Hughes": "SP",
   "William Kempner": "RP",
   "Brooks Kriske": "RP",
-  "Jorge Mateo": "RP",
+  "Jorge Mateo": "SS",
   "Easton McGee": "RP",
   "Reese McGuire": "C",
   "Victor Mederos": "RP",
@@ -839,7 +839,7 @@
   "Derek Hill": "RF",
   "Jonah Heim": "C",
   "Amed Rosario": "3B",
-  "Mickey Gasper": "C",
+  "Mickey Gasper": "DH",
   "Taylor Trammell": "LF",
   "Kody Clemens": "1B",
   "Drew Gilbert": "CF",
@@ -1374,5 +1374,7 @@
   "Adael Amador": "2B",
   "Brett Callahan": "LF",
   "Daz Cameron": "LF",
-  "Kent Emanuel": "SP"
+  "Kent Emanuel": "SP",
+  "Ray Kerr": "RP",
+  "Wyatt Olds": "RP"
 }
