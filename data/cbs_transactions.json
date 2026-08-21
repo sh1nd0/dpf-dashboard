@@ -12247,5 +12247,20 @@
       }
     ],
     "effective": "8/20/26"
+  },
+  {
+    "date": "8/21/26 2:49 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Javier Sanoja",
+        "pos": "2B,3B,LF,RF",
+        "mlbTeam": "MIA",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/21/26"
   }
 ]
