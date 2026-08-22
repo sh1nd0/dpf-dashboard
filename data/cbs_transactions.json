@@ -4625,7 +4625,7 @@
     "players": [
       {
         "name": "Spencer Jones",
-        "pos": "CF,RF",
+        "pos": "LF,CF,RF",
         "mlbTeam": "NYY",
         "action": "Dropped"
       }
@@ -7819,7 +7819,7 @@
     "players": [
       {
         "name": "Spencer Jones",
-        "pos": "CF,RF",
+        "pos": "LF,CF,RF",
         "mlbTeam": "NYY",
         "action": "Added off Waivers"
       }
@@ -8744,7 +8744,7 @@
       },
       {
         "name": "Spencer Jones",
-        "pos": "CF,RF",
+        "pos": "LF,CF,RF",
         "mlbTeam": "NYY",
         "action": "Dropped"
       }
@@ -12262,5 +12262,77 @@
       }
     ],
     "effective": "8/21/26"
+  },
+  {
+    "date": "8/21/26 11:12 AM ET",
+    "teamId": "8",
+    "teamName": "Ballesteros, Let the Rhythm Take You Over",
+    "team": "Ballesteros, Let the Rhythm Take You Over",
+    "players": [
+      {
+        "name": "Keibert Ruiz",
+        "pos": "C",
+        "mlbTeam": "WAS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/21/26"
+  },
+  {
+    "date": "8/22/26 3:18 AM ET",
+    "teamId": "3",
+    "teamName": "Schlit Open and Melt",
+    "team": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Cal Raleigh",
+        "pos": "C",
+        "mlbTeam": "SEA",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Abimelec Ortiz",
+        "pos": "1B",
+        "mlbTeam": "WAS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/22/26"
+  },
+  {
+    "date": "8/22/26 3:18 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Erik Miller",
+        "pos": "RP",
+        "mlbTeam": "BOS",
+        "action": "Activated"
+      },
+      {
+        "name": "Michael Petersen",
+        "pos": "RP",
+        "mlbTeam": "MIA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/22/26"
+  },
+  {
+    "date": "8/22/26 3:18 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Pedro Ramirez",
+        "pos": "2B,3B",
+        "mlbTeam": "CHC",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/22/26"
   }
 ]

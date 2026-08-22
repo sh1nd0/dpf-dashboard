@@ -790,7 +790,7 @@
   "Masyn Winn": "SS",
   "Kyle Tucker": "RF",
   "Brooks Lee": "3B",
-  "Taylor Ward": "RF",
+  "Taylor Ward": "DH",
   "Daylen Lile": "LF",
   "Ronald Acuña Jr.": "RF",
   "Francisco Alvarez": "C",
@@ -833,7 +833,7 @@
   "Esteury Ruiz": "RF",
   "Christian Yelich": "DH",
   "Jo Adell": "RF",
-  "Nick Allen": "2B",
+  "Nick Allen": "SS",
   "Kyle Isbel": "CF",
   "Oswald Peraza": "2B",
   "Derek Hill": "RF",
@@ -885,7 +885,7 @@
   "Andrés Giménez": "SS",
   "Trent Grisham": "CF",
   "Michael Busch": "1B",
-  "Spencer Jones": "CF",
+  "Spencer Jones": "RF",
   "Nick Loftin": "3B",
   "Dustin Harris": "LF",
   "Austin Hays": "LF",
@@ -1382,5 +1382,6 @@
   "Mark Manfredi": "RP",
   "Matt Wilkinson": "SP",
   "Ethan Pecko": "SP",
-  "Jhonathan Díaz": "RP"
+  "Jhonathan Díaz": "RP",
+  "Will Banfield": "C"
 }

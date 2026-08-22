@@ -513,7 +513,7 @@
   "Hagen Smith": "SP",
   "Chase DeLauter": "RF",
   "Tommy Troy": "2B,LF,CF",
-  "Spencer Jones": "CF,RF",
+  "Spencer Jones": "LF,CF,RF",
   "Connelly Early": "SP",
   "Carson Benge": "LF,CF,RF",
   "Bryce Eldridge": "1B",
@@ -664,5 +664,6 @@
   "Nathan Lavender": "RP",
   "Abimelec Ortiz": "1B",
   "Matt Wilkinson": "SP",
-  "Paul Blackburn": "RP"
+  "Paul Blackburn": "RP",
+  "Erik Miller": "RP"
 }
