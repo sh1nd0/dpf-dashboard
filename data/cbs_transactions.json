@@ -5061,7 +5061,7 @@
       },
       {
         "name": "Zack Gelof",
-        "pos": "2B,3B,CF",
+        "pos": "2B,3B,LF,CF",
         "mlbTeam": "ATH",
         "action": "Added off Waivers"
       },
@@ -12334,5 +12334,125 @@
       }
     ],
     "effective": "8/22/26"
+  },
+  {
+    "date": "8/22/26 9:09 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Garrett Cleavinger",
+        "pos": "RP",
+        "mlbTeam": "TB",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/22/26"
+  },
+  {
+    "date": "8/22/26 10:21 AM ET",
+    "teamId": "3",
+    "teamName": "Schlit Open and Melt",
+    "team": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Sam Antonacci",
+        "pos": "2B,LF",
+        "mlbTeam": "CHW",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/22/26"
+  },
+  {
+    "date": "8/23/26 2:56 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Teoscar Hernandez",
+        "pos": "LF,RF",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Tommy Troy",
+        "pos": "2B,LF,CF",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
+      },
+      {
+        "name": "Brandon Nimmo",
+        "pos": "LF,RF",
+        "mlbTeam": "TEX",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Maikel Garcia",
+        "pos": "3B",
+        "mlbTeam": "KC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/23/26"
+  },
+  {
+    "date": "8/23/26 2:56 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Kodai Senga",
+        "pos": "SP,RP",
+        "mlbTeam": "NYM",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Bryson Stott",
+        "pos": "2B,3B",
+        "mlbTeam": "PHI",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/23/26"
+  },
+  {
+    "date": "8/23/26 2:56 AM ET",
+    "teamId": "1",
+    "teamName": "Baez, Baez, Miss American Mize",
+    "team": "Baez, Baez, Miss American Mize",
+    "players": [
+      {
+        "name": "Bailey Ober",
+        "pos": "SP",
+        "mlbTeam": "MIN",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Freddy Peralta",
+        "pos": "SP",
+        "mlbTeam": "TB",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/23/26"
+  },
+  {
+    "date": "8/23/26 2:56 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Christian Zazueta",
+        "pos": "SP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/23/26"
   }
 ]

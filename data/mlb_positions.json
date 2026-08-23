@@ -1334,7 +1334,7 @@
   "Parker Mushinski": "RP",
   "Nick Frasso": "RP",
   "George Lombard Jr.": "SS",
-  "Christian Franklin": "CF",
+  "Christian Franklin": "LF",
   "Eddys Leonard": "LF",
   "Héctor Rodríguez": "RF",
   "Ben Rortvedt": "C",
@@ -1361,7 +1361,7 @@
   "Michael Toglia": "1B",
   "Tanner Rainey": "RP",
   "Jackson Kent": "SP",
-  "Zac Veen": "RF",
+  "Zac Veen": "LF",
   "Corey Julks": "RF",
   "Tanner McDougal": "RP",
   "Bradley Hanner": "RP",
@@ -1383,5 +1383,9 @@
   "Matt Wilkinson": "SP",
   "Ethan Pecko": "SP",
   "Jhonathan Díaz": "RP",
-  "Will Banfield": "C"
+  "Will Banfield": "C",
+  "Erik Tolman": "RP",
+  "Kade Anderson": "SP",
+  "Carlos Vargas": "RP",
+  "Gustavo Campero": "LF"
 }
