@@ -183,7 +183,7 @@
   "Michael King": "SP",
   "Carlos Correa": "3B,SS",
   "Jo Adell": "LF,CF,RF",
-  "Colt Keith": "2B,3B",
+  "Colt Keith": "1B,2B,3B",
   "Shea Langeliers": "C",
   "Kyle Stowers": "1B,LF,RF",
   "Agustin Ramirez": "C",
@@ -413,7 +413,7 @@
   "Sam Antonacci": "2B,LF",
   "Dylan Lee": "RP",
   "Tyler Alexander": "SP,RP",
-  "Aaron Civale": "SP",
+  "Aaron Civale": "SP,RP",
   "Andres Gimenez": "2B,SS",
   "Mauricio Dubon": "2B,3B,SS,LF,CF",
   "Blake Treinen": "RP",
@@ -508,7 +508,7 @@
   "Emmanuel Rodriguez": "CF",
   "Jett Williams": "SS",
   "Kade Anderson": "SP",
-  "Jordan Lawlar": "3B,CF",
+  "Jordan Lawlar": "3B,LF,CF",
   "Liam Doyle": "SP",
   "Hagen Smith": "SP",
   "Chase DeLauter": "RF",
@@ -630,7 +630,7 @@
   "Jordan Hicks": "SP,RP",
   "Ty France": "1B",
   "Cooper Pratt": "SS",
-  "Griffin Conine": "LF,RF",
+  "Griffin Conine": "1B,LF,RF",
   "Zach Thornton": "SP",
   "Joey Bart": "C",
   "Tommy Edman": "2B,LF,CF",
@@ -666,5 +666,6 @@
   "Matt Wilkinson": "SP",
   "Paul Blackburn": "RP",
   "Erik Miller": "RP",
-  "Christian Zazueta": "SP"
+  "Christian Zazueta": "SP",
+  "Cal Quantrill": "SP,RP"
 }

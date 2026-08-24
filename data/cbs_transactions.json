@@ -332,7 +332,7 @@
       },
       {
         "name": "Colt Keith",
-        "pos": "2B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "DET",
         "action": "Dropped"
       }
@@ -1547,7 +1547,7 @@
     "players": [
       {
         "name": "Colt Keith",
-        "pos": "2B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "DET",
         "action": "Added"
       },
@@ -2798,7 +2798,7 @@
     "players": [
       {
         "name": "Aaron Civale",
-        "pos": "SP",
+        "pos": "SP,RP",
         "mlbTeam": "CHC",
         "action": "Added off Waivers"
       },
@@ -3029,7 +3029,7 @@
       },
       {
         "name": "Aaron Civale",
-        "pos": "SP",
+        "pos": "SP,RP",
         "mlbTeam": "CHC",
         "action": "Dropped"
       },
@@ -4905,7 +4905,7 @@
       },
       {
         "name": "Colt Keith",
-        "pos": "2B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "DET",
         "action": "Dropped"
       }
@@ -9854,7 +9854,7 @@
     "players": [
       {
         "name": "Griffin Conine",
-        "pos": "LF,RF",
+        "pos": "1B,LF,RF",
         "mlbTeam": "MIA",
         "action": "Activated"
       },
@@ -11139,7 +11139,7 @@
     "players": [
       {
         "name": "Colt Keith",
-        "pos": "2B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "DET",
         "action": "Added off Waivers"
       }
@@ -11821,7 +11821,7 @@
     "players": [
       {
         "name": "Colt Keith",
-        "pos": "2B,3B",
+        "pos": "1B,2B,3B",
         "mlbTeam": "DET",
         "action": "Dropped"
       }
@@ -12454,5 +12454,62 @@
       }
     ],
     "effective": "8/23/26"
+  },
+  {
+    "date": "8/23/26 12:00 PM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Pedro Ramirez",
+        "pos": "2B,3B",
+        "mlbTeam": "CHC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/23/26"
+  },
+  {
+    "date": "8/24/26 3:09 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Cal Quantrill",
+        "pos": "SP,RP",
+        "mlbTeam": "TEX",
+        "action": "Activated"
+      },
+      {
+        "name": "Matthew Boyd",
+        "pos": "SP",
+        "mlbTeam": "CHC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/24/26"
+  },
+  {
+    "date": "8/24/26 3:09 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Robbie Ray",
+        "pos": "SP",
+        "mlbTeam": "SD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Sean Newcomb",
+        "pos": "SP,RP",
+        "mlbTeam": "CHW",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/24/26"
   }
 ]
