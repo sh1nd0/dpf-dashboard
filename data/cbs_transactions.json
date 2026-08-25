@@ -3747,7 +3747,7 @@
       {
         "name": "Tyler Kinley",
         "pos": "RP",
-        "mlbTeam": "ATL",
+        "mlbTeam": "DET",
         "action": "Added off Waivers"
       }
     ],
@@ -4197,7 +4197,7 @@
       {
         "name": "Tyler Kinley",
         "pos": "RP",
-        "mlbTeam": "ATL",
+        "mlbTeam": "DET",
         "action": "Dropped"
       }
     ],
@@ -12511,5 +12511,74 @@
       }
     ],
     "effective": "8/24/26"
+  },
+  {
+    "date": "8/25/26 2:07 AM ET",
+    "teamId": "3",
+    "teamName": "Schlit Open and Melt",
+    "team": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Jose Soriano",
+        "pos": "SP",
+        "mlbTeam": "TOR",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/25/26"
+  },
+  {
+    "date": "8/25/26 3:15 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Jack Dreyer",
+        "pos": "SP,RP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Robbie Ray",
+        "pos": "SP",
+        "mlbTeam": "SD",
+        "action": "Dropped"
+      },
+      {
+        "name": "Sam Antonacci",
+        "pos": "2B,LF",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Connor Prielipp",
+        "pos": "SP",
+        "mlbTeam": "MIN",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/25/26"
+  },
+  {
+    "date": "8/25/26 3:15 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Spencer Jones",
+        "pos": "LF,CF,RF",
+        "mlbTeam": "NYY",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "A.J. Ewing",
+        "pos": "LF,CF",
+        "mlbTeam": "NYM",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/25/26"
   }
 ]
