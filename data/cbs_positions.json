@@ -483,7 +483,7 @@
   "Justin Crawford": "CF",
   "Josue De Paula": "RF,LF",
   "Andrew Painter": "SP",
-  "Samuel Basallo": "C",
+  "Samuel Basallo": "C,1B",
   "Leo De Vries": "SS",
   "Aidan Miller": "SS",
   "JJ Wetherholt": "2B,SS",
@@ -563,7 +563,7 @@
   "J.T. Ginn": "SP",
   "Braydon Fisher": "SP,RP",
   "Keibert Ruiz": "C",
-  "Joshua Baez": "RF",
+  "Joshua Baez": "LF,RF",
   "Yoendrys Gomez": "SP,RP",
   "Angel Genao": "SS",
   "Bryan Hudson": "SP,RP",
@@ -667,5 +667,6 @@
   "Paul Blackburn": "RP",
   "Erik Miller": "RP",
   "Christian Zazueta": "SP",
-  "Cal Quantrill": "SP,RP"
+  "Cal Quantrill": "SP,RP",
+  "Brock Stewart": "RP"
 }

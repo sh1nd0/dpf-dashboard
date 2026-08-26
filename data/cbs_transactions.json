@@ -5898,7 +5898,7 @@
     "players": [
       {
         "name": "Joshua Baez",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "STL",
         "action": "Added off Waivers"
       },
@@ -5967,7 +5967,7 @@
       },
       {
         "name": "Joshua Baez",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "STL",
         "action": "Dropped"
       }
@@ -6261,7 +6261,7 @@
     "players": [
       {
         "name": "Joshua Baez",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "STL",
         "action": "Added off Waivers"
       },
@@ -6431,7 +6431,7 @@
       },
       {
         "name": "Samuel Basallo",
-        "pos": "C",
+        "pos": "C,1B",
         "mlbTeam": "BAL",
         "action": "Traded from Dinosaur Jr Caminero"
       },
@@ -6628,7 +6628,7 @@
       },
       {
         "name": "Joshua Baez",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "STL",
         "action": "Dropped"
       }
@@ -7019,7 +7019,7 @@
     "players": [
       {
         "name": "Joshua Baez",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "STL",
         "action": "Added off Waivers"
       },
@@ -11511,7 +11511,7 @@
     "players": [
       {
         "name": "Joshua Baez",
-        "pos": "RF",
+        "pos": "LF,RF",
         "mlbTeam": "STL",
         "action": "Traded from Schlit Open and Melt"
       },
@@ -12580,5 +12580,62 @@
       }
     ],
     "effective": "8/25/26"
+  },
+  {
+    "date": "8/26/26 2:56 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Bryson Stott",
+        "pos": "2B,3B",
+        "mlbTeam": "PHI",
+        "action": "Activated"
+      },
+      {
+        "name": "Cole Young",
+        "pos": "2B",
+        "mlbTeam": "SEA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/26/26"
+  },
+  {
+    "date": "8/26/26 2:56 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Grayson Rodriguez",
+        "pos": "SP",
+        "mlbTeam": "LAA",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jack Dreyer",
+        "pos": "SP,RP",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/26/26"
+  },
+  {
+    "date": "8/26/26 2:56 AM ET",
+    "teamId": "3",
+    "teamName": "Schlit Open and Melt",
+    "team": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Brock Stewart",
+        "pos": "RP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/26/26"
   }
 ]
