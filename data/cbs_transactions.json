@@ -12637,5 +12637,95 @@
       }
     ],
     "effective": "8/26/26"
+  },
+  {
+    "date": "8/26/26 10:11 AM ET",
+    "teamId": "3",
+    "teamName": "Schlit Open and Melt",
+    "team": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Brandon Pfaadt",
+        "pos": "SP,RP",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/26/26"
+  },
+  {
+    "date": "8/27/26 3:04 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Sean Manaea",
+        "pos": "SP,RP",
+        "mlbTeam": "NYM",
+        "action": "Activated"
+      },
+      {
+        "name": "Erik Sabrowski",
+        "pos": "RP",
+        "mlbTeam": "CLE",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Jeremiah Estrada",
+        "pos": "RP",
+        "mlbTeam": "SD",
+        "action": "Dropped"
+      },
+      {
+        "name": "Grayson Rodriguez",
+        "pos": "SP",
+        "mlbTeam": "LAA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/27/26"
+  },
+  {
+    "date": "8/27/26 3:04 AM ET",
+    "teamId": "10",
+    "teamName": "Blame it on the Rainiel",
+    "team": "Blame it on the Rainiel",
+    "players": [
+      {
+        "name": "Andrew Kittredge",
+        "pos": "RP",
+        "mlbTeam": "BAL",
+        "action": "Activated"
+      },
+      {
+        "name": "Seranthony Dominguez",
+        "pos": "RP",
+        "mlbTeam": "SEA",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/27/26"
+  },
+  {
+    "date": "8/27/26 3:04 AM ET",
+    "teamId": "3",
+    "teamName": "Schlit Open and Melt",
+    "team": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Henry Bolte",
+        "pos": "CF,RF",
+        "mlbTeam": "ATH",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Brock Stewart",
+        "pos": "RP",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/27/26"
   }
 ]

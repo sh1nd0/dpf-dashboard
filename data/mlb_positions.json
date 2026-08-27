@@ -17,7 +17,7 @@
   "Gabriel Hughes": "SP",
   "William Kempner": "RP",
   "Brooks Kriske": "RP",
-  "Jorge Mateo": "2B",
+  "Jorge Mateo": "SS",
   "Easton McGee": "RP",
   "Reese McGuire": "C",
   "Victor Mederos": "RP",
@@ -577,7 +577,7 @@
   "Mitchell Parker": "RP",
   "Cole Winn": "RP",
   "Ryan Walker": "RP",
-  "Griffin Canning": "SP",
+  "Griffin Canning": "RP",
   "Zach Agnos": "RP",
   "Travis Adams": "RP",
   "Tristan Beck": "RP",
@@ -944,7 +944,7 @@
   "Christian Vázquez": "C",
   "George Springer": "DH",
   "Tommy Troy": "LF",
-  "Gabriel Arias": "SS",
+  "Gabriel Arias": "2B",
   "Luisangel Acuña": "SS",
   "Steven Kwan": "LF",
   "Marcelo Mayer": "2B",
@@ -1393,6 +1393,7 @@
   "Manuel Rodríguez": "RP",
   "Blake Adams": "RP",
   "Michael Conforto": "DH",
-  "Shay Whitcomb": "3B",
-  "Mason Adams": "SP"
+  "Shay Whitcomb": "2B",
+  "Mason Adams": "SP",
+  "Luis Perales": "RP"
 }
