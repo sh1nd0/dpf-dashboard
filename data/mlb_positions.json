@@ -474,7 +474,7 @@
   "Brandon Sproat": "SP",
   "Matt Pushard": "RP",
   "Lucas Giolito": "SP",
-  "Sean Manaea": "RP",
+  "Sean Manaea": "SP",
   "Andrew Nardi": "RP",
   "Joe Boyle": "SP",
   "Jameson Taillon": "SP",
@@ -776,7 +776,7 @@
   "Giancarlo Stanton": "DH",
   "Nick Fortes": "C",
   "Iván Herrera": "DH",
-  "Jose Fernandez": "DH",
+  "Jose Fernandez": "3B",
   "Samuel Basallo": "C",
   "Ty France": "1B",
   "Luke Keaschall": "2B",
@@ -1393,7 +1393,9 @@
   "Manuel Rodríguez": "RP",
   "Blake Adams": "RP",
   "Michael Conforto": "DH",
-  "Shay Whitcomb": "2B",
+  "Shay Whitcomb": "3B",
   "Mason Adams": "SP",
-  "Luis Perales": "RP"
+  "Luis Perales": "RP",
+  "Anthony Gose": "RP",
+  "Matthew Lugo": "LF"
 }
