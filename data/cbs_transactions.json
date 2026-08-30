@@ -1973,7 +1973,7 @@
       },
       {
         "name": "Heliot Ramos",
-        "pos": "LF",
+        "pos": "LF,RF",
         "mlbTeam": "NYY",
         "action": "Dropped"
       }
@@ -4124,7 +4124,7 @@
     "players": [
       {
         "name": "Daniel Lynch IV",
-        "pos": "RP",
+        "pos": "SP,RP",
         "mlbTeam": "KC",
         "action": "Activated"
       },
@@ -7741,7 +7741,7 @@
       },
       {
         "name": "Daniel Lynch IV",
-        "pos": "RP",
+        "pos": "SP,RP",
         "mlbTeam": "KC",
         "action": "Dropped"
       }
@@ -9140,7 +9140,7 @@
       },
       {
         "name": "Heliot Ramos",
-        "pos": "LF",
+        "pos": "LF,RF",
         "mlbTeam": "NYY",
         "action": "Added off Waivers"
       },
@@ -10211,7 +10211,7 @@
     "players": [
       {
         "name": "Heliot Ramos",
-        "pos": "LF",
+        "pos": "LF,RF",
         "mlbTeam": "NYY",
         "action": "Dropped"
       }
@@ -10376,7 +10376,7 @@
     "players": [
       {
         "name": "Daniel Lynch IV",
-        "pos": "RP",
+        "pos": "SP,RP",
         "mlbTeam": "KC",
         "action": "Added off Waivers"
       },
@@ -10514,7 +10514,7 @@
       },
       {
         "name": "Heliot Ramos",
-        "pos": "LF",
+        "pos": "LF,RF",
         "mlbTeam": "NYY",
         "action": "Activated"
       },
@@ -11408,7 +11408,7 @@
       },
       {
         "name": "Heliot Ramos",
-        "pos": "LF",
+        "pos": "LF,RF",
         "mlbTeam": "NYY",
         "action": "Dropped"
       }
@@ -12880,5 +12880,74 @@
       }
     ],
     "effective": "8/29/26"
+  },
+  {
+    "date": "8/30/26 3:00 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Anthony Kay",
+        "pos": "SP,RP",
+        "mlbTeam": "CHW",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Sam Antonacci",
+        "pos": "2B,LF",
+        "mlbTeam": "CHW",
+        "action": "Dropped"
+      },
+      {
+        "name": "Seth Lugo",
+        "pos": "SP",
+        "mlbTeam": "KC",
+        "action": "Activated"
+      },
+      {
+        "name": "Tyler Wells",
+        "pos": "SP,RP",
+        "mlbTeam": "TB",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/30/26"
+  },
+  {
+    "date": "8/30/26 3:00 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Corbin Burnes",
+        "pos": "SP",
+        "mlbTeam": "ARI",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Maikel Garcia",
+        "pos": "3B",
+        "mlbTeam": "KC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "8/30/26"
+  },
+  {
+    "date": "8/30/26 3:00 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Edgardo Henriquez",
+        "pos": "RP",
+        "mlbTeam": "LAD",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "8/30/26"
   }
 ]

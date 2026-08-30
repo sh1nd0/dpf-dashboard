@@ -105,7 +105,7 @@
   "Anthony Volpe": "SS",
   "Michael Harris": "CF",
   "Cal Raleigh": "C",
-  "Heliot Ramos": "LF",
+  "Heliot Ramos": "LF,RF",
   "Trevor Rogers": "SP",
   "Jeff Hoffman": "RP",
   "Raisel Iglesias": "RP",
@@ -616,7 +616,7 @@
   "Jacob Webb": "RP",
   "Andrew Morris": "SP,RP",
   "Troy Melton": "SP,RP",
-  "Daniel Lynch IV": "RP",
+  "Daniel Lynch IV": "SP,RP",
   "Trent Thornton": "RP",
   "Kody Clemens": "1B,2B,LF,RF",
   "Tayron Guerrero": "RP",
@@ -670,5 +670,7 @@
   "Cal Quantrill": "SP,RP",
   "Brock Stewart": "RP",
   "Grant Holmes": "SP",
-  "Drew Sommers": "RP"
+  "Drew Sommers": "RP",
+  "Anthony Kay": "SP,RP",
+  "Edgardo Henriquez": "RP"
 }
