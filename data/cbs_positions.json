@@ -403,7 +403,7 @@
   "Miguel Vargas": "1B,3B",
   "Enyel De Los Santos": "RP",
   "Bryan King": "RP",
-  "Oswald Peraza": "2B,3B",
+  "Oswald Peraza": "2B,3B,SS",
   "Brady House": "3B",
   "Chase Dollander": "SP",
   "Ryan Jeffers": "C",
@@ -673,5 +673,9 @@
   "Drew Sommers": "RP",
   "Anthony Kay": "SP,RP",
   "Edgardo Henriquez": "RP",
-  "Christian Encarnacion-Strand": "1B,3B"
+  "Christian Encarnacion-Strand": "1B,3B",
+  "Daniel Duarte": "RP",
+  "Heriberto Hernandez": "LF",
+  "Tim Tawa": "1B,2B,3B,LF,CF",
+  "Jonathan Bowlan": "RP"
 }
