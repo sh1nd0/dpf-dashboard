@@ -13141,5 +13141,95 @@
       }
     ],
     "effective": "9/1/26"
+  },
+  {
+    "date": "9/1/26 9:59 AM ET",
+    "teamId": "3",
+    "teamName": "Schlit Open and Melt",
+    "team": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Daniel Duarte",
+        "pos": "RP",
+        "mlbTeam": "NYM",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/1/26"
+  },
+  {
+    "date": "9/1/26 10:01 AM ET",
+    "teamId": "3",
+    "teamName": "Schlit Open and Melt",
+    "team": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Jack Dreyer",
+        "pos": "SP,RP",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/1/26"
+  },
+  {
+    "date": "9/1/26 10:38 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Gage Jump",
+        "pos": "SP",
+        "mlbTeam": "ATH",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/1/26"
+  },
+  {
+    "date": "9/1/26 1:04 PM ET",
+    "teamId": "3",
+    "teamName": "Schlit Open and Melt",
+    "team": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Trevor Rogers",
+        "pos": "SP",
+        "mlbTeam": "BAL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/1/26"
+  },
+  {
+    "date": "9/1/26 5:42 PM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Tanner McDougal",
+        "pos": "SP",
+        "mlbTeam": "CHW",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/1/26"
+  },
+  {
+    "date": "9/2/26 6:00 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Tyler Stephenson",
+        "pos": "C",
+        "mlbTeam": "CIN",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/2/26"
   }
 ]
