@@ -114,7 +114,7 @@
   "Gavin Williams": "SP",
   "Ryan Pepiot": "SP",
   "Spencer Arrighetti": "SP",
-  "Taylor Ward": "LF",
+  "Taylor Ward": "LF,RF",
   "Trevor Megill": "RP",
   "Ha-seong Kim": "SS",
   "Jackson Chourio": "LF,CF,RF",
@@ -390,7 +390,7 @@
   "Ildemaro Vargas": "1B,2B",
   "Antonio Senzatela": "SP,RP",
   "Erick Fedde": "SP,RP",
-  "Matt Shaw": "3B,RF",
+  "Matt Shaw": "2B,3B,RF",
   "Foster Griffin": "SP,RP",
   "Owen Caissie": "RF",
   "Carlos Cortes": "LF,RF",
@@ -565,7 +565,7 @@
   "Keibert Ruiz": "C",
   "Joshua Baez": "LF,RF",
   "Yoendrys Gomez": "SP,RP",
-  "Angel Genao": "SS",
+  "Angel Genao": "2B,SS",
   "Bryan Hudson": "SP,RP",
   "Felnin Celesten": "SS",
   "Martin Perez": "SP",
@@ -677,5 +677,7 @@
   "Daniel Duarte": "RP",
   "Heriberto Hernandez": "LF",
   "Tim Tawa": "1B,2B,3B,LF,CF",
-  "Jonathan Bowlan": "RP"
+  "Jonathan Bowlan": "RP",
+  "Caden Bodine": "C",
+  "Jonah Cox": "CF"
 }
