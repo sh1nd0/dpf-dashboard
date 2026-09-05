@@ -565,7 +565,7 @@
   "Keibert Ruiz": "C",
   "Joshua Baez": "LF,RF",
   "Yoendrys Gomez": "SP,RP",
-  "Angel Genao": "2B,SS",
+  "Angel Genao": "2B,3B,SS",
   "Bryan Hudson": "SP,RP",
   "Felnin Celesten": "SS",
   "Martin Perez": "SP",
@@ -680,5 +680,6 @@
   "Jonathan Bowlan": "RP",
   "Caden Bodine": "C",
   "Jonah Cox": "CF",
-  "Hayden Wesneski": "SP"
+  "Hayden Wesneski": "SP",
+  "Max Scherzer": "SP"
 }
