@@ -13819,5 +13819,26 @@
       }
     ],
     "effective": "9/8/26"
+  },
+  {
+    "date": "9/9/26 2:23 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Will Warren",
+        "pos": "SP",
+        "mlbTeam": "NYY",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Sean Newcomb",
+        "pos": "SP,RP",
+        "mlbTeam": "CHW",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/9/26"
   }
 ]
