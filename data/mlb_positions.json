@@ -631,7 +631,7 @@
   "Cole Carrigg": "CF",
   "Trey Mancini": "1B",
   "Blaze Alexander": "3B",
-  "Jake Mangum": "CF",
+  "Jake Mangum": "LF",
   "Brandon Marsh": "LF",
   "Jake McCarthy": "LF",
   "Xavier Edwards": "2B",
@@ -1239,7 +1239,7 @@
   "Michael Kelly": "RP",
   "Tyler Gilbert": "RP",
   "Matt Krook": "RP",
-  "Tyler Tolbert": "SS",
+  "Tyler Tolbert": "RP",
   "Jedixson Paez": "RP",
   "Mitch Spence": "RP",
   "Hunter Greene": "SP",
@@ -1290,7 +1290,7 @@
   "Yunior Tur": "RP",
   "Harry Ford": "C",
   "Lucas Spence": "CF",
-  "Tommy White": "3B",
+  "Tommy White": "1B",
   "Khristian Curtis": "RP",
   "Max Kranick": "RP",
   "Christian Encarnacion-Strand": "3B",
@@ -1411,7 +1411,7 @@
   "Luis De León": "RP",
   "Blake Walston": "RP",
   "Yohandy Morales": "1B",
-  "Lazaro Montes": "RF",
+  "Lazaro Montes": "DH",
   "BJ Murray Jr.": "1B",
   "Leo Bernal": "C",
   "John Peck": "SS",
@@ -1431,5 +1431,6 @@
   "Michael Arroyo": "2B",
   "Vimael Machín": "3B",
   "Kyren Paris": "LF",
-  "Corbin Burnes": "SP"
+  "Corbin Burnes": "SP",
+  "Josue De Paula": "DH"
 }

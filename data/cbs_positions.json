@@ -172,7 +172,7 @@
   "Kazuma Okamoto": "1B,3B",
   "Ben Rice": "C,1B",
   "Gleyber Torres": "2B",
-  "Dylan Crews": "CF,RF",
+  "Dylan Crews": "LF,CF,RF",
   "Geraldo Perdomo": "SS",
   "Michael Busch": "1B",
   "Chandler Simpson": "LF,CF",
@@ -685,5 +685,6 @@
   "Chase Silseth": "RP",
   "Spencer Horwitz": "1B",
   "Felix Bautista": "RP",
-  "Rafael Flores": "C,1B"
+  "Rafael Flores": "C,1B",
+  "Hao Yu Lee": "2B,3B"
 }

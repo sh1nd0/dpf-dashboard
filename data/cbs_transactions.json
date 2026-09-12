@@ -7336,7 +7336,7 @@
       },
       {
         "name": "Dylan Crews",
-        "pos": "CF,RF",
+        "pos": "LF,CF,RF",
         "mlbTeam": "WAS",
         "action": "Dropped"
       },
@@ -13969,5 +13969,74 @@
       }
     ],
     "effective": "9/11/26"
+  },
+  {
+    "date": "9/12/26 2:36 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Shane Drohan",
+        "pos": "SP,RP",
+        "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Gabe Speier",
+        "pos": "RP",
+        "mlbTeam": "SEA",
+        "action": "Dropped"
+      },
+      {
+        "name": "Cole Carrigg",
+        "pos": "SS,CF",
+        "mlbTeam": "COL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Rafael Flores",
+        "pos": "C,1B",
+        "mlbTeam": "PIT",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/12/26"
+  },
+  {
+    "date": "9/12/26 2:36 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Freddy Peralta",
+        "pos": "SP",
+        "mlbTeam": "TB",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "9/12/26"
+  },
+  {
+    "date": "9/12/26 2:36 AM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Hao Yu Lee",
+        "pos": "2B,3B",
+        "mlbTeam": "DET",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Will Smith",
+        "pos": "C",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/12/26"
   }
 ]
