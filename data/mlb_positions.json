@@ -803,7 +803,7 @@
   "Logan Porter": "C",
   "Brian Serven": "C",
   "Chadwick Tromp": "C",
-  "Jorbit Vivas": "3B",
+  "Jorbit Vivas": "2B",
   "Josh Bell": "DH",
   "Bryson Stott": "2B",
   "Nathan Church": "CF",
@@ -825,7 +825,7 @@
   "Jake Burger": "1B",
   "Richie Palacios": "2B",
   "Geraldo Perdomo": "SS",
-  "Austin Martin": "RF",
+  "Austin Martin": "LF",
   "Sebastián Rivero": "C",
   "Kyle Stowers": "1B",
   "Nathaniel Lowe": "1B",
@@ -1389,7 +1389,7 @@
   "Carlos Vargas": "RP",
   "Gustavo Campero": "LF",
   "Jack Ralston": "RP",
-  "Andrew Sears": "RP",
+  "Andrew Sears": "SP",
   "Manuel Rodríguez": "RP",
   "Blake Adams": "RP",
   "Michael Conforto": "DH",
@@ -1432,5 +1432,10 @@
   "Vimael Machín": "3B",
   "Kyren Paris": "LF",
   "Corbin Burnes": "SP",
-  "Josue De Paula": "DH"
+  "Josue De Paula": "DH",
+  "Grant Holman": "RP",
+  "DaShawn Keirsey Jr.": "CF",
+  "Emmanuel Rodriguez": "CF",
+  "Heston Kjerstad": "RF",
+  "Rudy Martin Jr.": "LF"
 }
