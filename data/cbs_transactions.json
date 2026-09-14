@@ -5394,7 +5394,7 @@
     "players": [
       {
         "name": "Jacob Gonzalez",
-        "pos": "1B,2B,SS",
+        "pos": "1B,2B,3B,SS",
         "mlbTeam": "PIT",
         "action": "Added off Waivers"
       }
@@ -8108,7 +8108,7 @@
     "players": [
       {
         "name": "Jacob Gonzalez",
-        "pos": "1B,2B,SS",
+        "pos": "1B,2B,3B,SS",
         "mlbTeam": "PIT",
         "action": "Dropped"
       },
@@ -9347,7 +9347,7 @@
     "players": [
       {
         "name": "Jacob Gonzalez",
-        "pos": "1B,2B,SS",
+        "pos": "1B,2B,3B,SS",
         "mlbTeam": "PIT",
         "action": "Added off Waivers"
       }
@@ -10724,7 +10724,7 @@
       },
       {
         "name": "Jacob Gonzalez",
-        "pos": "1B,2B,SS",
+        "pos": "1B,2B,3B,SS",
         "mlbTeam": "PIT",
         "action": "Dropped"
       }
@@ -14116,5 +14116,128 @@
       }
     ],
     "effective": "9/13/26"
+  },
+  {
+    "date": "9/14/26 1:44 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Ryan Watson",
+        "pos": "SP,RP",
+        "mlbTeam": "LAA",
+        "action": "Activated"
+      },
+      {
+        "name": "Jose Soriano",
+        "pos": "SP",
+        "mlbTeam": "TOR",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Logan Webb",
+        "pos": "SP",
+        "mlbTeam": "SF",
+        "action": "Dropped"
+      },
+      {
+        "name": "Brent Headrick",
+        "pos": "RP",
+        "mlbTeam": "NYY",
+        "action": "Dropped"
+      },
+      {
+        "name": "Drew Sommers",
+        "pos": "RP",
+        "mlbTeam": "DET",
+        "action": "Activated"
+      },
+      {
+        "name": "Luke Weaver",
+        "pos": "RP",
+        "mlbTeam": "PIT",
+        "action": "Dropped"
+      },
+      {
+        "name": "Bryan Hudson",
+        "pos": "SP,RP",
+        "mlbTeam": "CHW",
+        "action": "Activated"
+      },
+      {
+        "name": "Nathan Lavender",
+        "pos": "RP",
+        "mlbTeam": "NYM",
+        "action": "Dropped"
+      },
+      {
+        "name": "Jonah Cox",
+        "pos": "CF",
+        "mlbTeam": "SF",
+        "action": "Activated"
+      },
+      {
+        "name": "Caleb Durbin",
+        "pos": "3B",
+        "mlbTeam": "BOS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/14/26"
+  },
+  {
+    "date": "9/14/26 1:44 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Andrew Morris",
+        "pos": "SP,RP",
+        "mlbTeam": "MIN",
+        "action": "Activated"
+      },
+      {
+        "name": "Matthew Boyd",
+        "pos": "SP",
+        "mlbTeam": "CHC",
+        "action": "Dropped"
+      },
+      {
+        "name": "Will Warren",
+        "pos": "SP",
+        "mlbTeam": "NYY",
+        "action": "Activated"
+      },
+      {
+        "name": "Shane Drohan",
+        "pos": "SP,RP",
+        "mlbTeam": "MIL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/14/26"
+  },
+  {
+    "date": "9/14/26 1:44 AM ET",
+    "teamId": "12",
+    "teamName": "Popped A Mahle I'm Sweating",
+    "team": "Popped A Mahle I'm Sweating",
+    "players": [
+      {
+        "name": "Brett Bateman",
+        "pos": "CF",
+        "mlbTeam": "TOR",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Daniel Lynch IV",
+        "pos": "SP,RP",
+        "mlbTeam": "KC",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/14/26"
   }
 ]

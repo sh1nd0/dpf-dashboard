@@ -555,7 +555,7 @@
   "Jesse Scholtens": "RP",
   "Sean Newcomb": "SP,RP",
   "Jamie Arnold": "SP",
-  "Jacob Gonzalez": "1B,2B,SS",
+  "Jacob Gonzalez": "1B,2B,3B,SS",
   "Scott Barlow": "RP",
   "Brayan Rocchio": "2B,SS",
   "Theo Gillen": "CF",
@@ -686,5 +686,7 @@
   "Spencer Horwitz": "1B",
   "Felix Bautista": "RP",
   "Rafael Flores": "C,1B",
-  "Hao Yu Lee": "2B,3B"
+  "Hao Yu Lee": "2B,3B",
+  "Ryan Watson": "SP,RP",
+  "Brett Bateman": "CF"
 }
