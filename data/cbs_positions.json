@@ -226,7 +226,7 @@
   "Alex Vesia": "RP",
   "Brett Baty": "1B,2B,3B,RF",
   "Nolan Schanuel": "1B",
-  "Josh H. Smith": "1B,2B,3B,SS",
+  "Josh H. Smith": "1B,2B,3B,SS,LF",
   "Marcelo Mayer": "2B,3B,SS",
   "Luis Arraez": "1B,2B",
   "Coby Mayo": "1B,3B",
@@ -688,5 +688,9 @@
   "Rafael Flores": "C,1B",
   "Hao Yu Lee": "2B,3B",
   "Ryan Watson": "SP,RP",
-  "Brett Bateman": "CF"
+  "Brett Bateman": "CF",
+  "Spencer Miles": "SP,RP",
+  "Luis Medina": "SP,RP",
+  "Ryan Johnson": "SP,RP",
+  "Leonardo Bernal": "C"
 }
