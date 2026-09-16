@@ -178,7 +178,7 @@
   "Trevor Megill": "RP",
   "Michael Petersen": "RP",
   "Marco Raya": "RP",
-  "Blade Tidwell": "RP",
+  "Blade Tidwell": "SP",
   "Tyler Wells": "RP",
   "Walbert Ureña": "SP",
   "Jovani Morán": "RP",
@@ -692,7 +692,7 @@
   "Konnor Griffin": "SS",
   "Chandler Simpson": "LF",
   "Brayan Rocchio": "SS",
-  "Jesús Sánchez": "LF",
+  "Jesús Sánchez": "DH",
   "Mauricio Dubón": "LF",
   "Heliot Ramos": "LF",
   "Brendan Donovan": "3B",
@@ -907,7 +907,7 @@
   "Willy Adames": "SS",
   "Agustín Ramírez": "DH",
   "Zach Neto": "SS",
-  "Roman Anthony": "DH",
+  "Roman Anthony": "LF",
   "Lane Thomas": "LF",
   "Jared Young": "1B",
   "Josh Smith": "3B",
@@ -1439,5 +1439,6 @@
   "Heston Kjerstad": "RF",
   "Rudy Martin Jr.": "LF",
   "Brody Hopkins": "RP",
-  "Scott Bandura": "RF"
+  "Scott Bandura": "RF",
+  "Brendan Cellucci": "RP"
 }
