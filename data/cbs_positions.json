@@ -213,7 +213,7 @@
   "Luke Weaver": "RP",
   "Jorge Polanco": "2B",
   "Alec Bohm": "1B,3B",
-  "Jose Caballero": "2B,3B,SS,RF",
+  "Jose Caballero": "2B,3B,SS,LF,RF",
   "Ramon Laureano": "LF,RF",
   "Munetaka Murakami": "1B",
   "Carter Jensen": "C",
@@ -679,7 +679,7 @@
   "Tim Tawa": "1B,2B,3B,LF,CF",
   "Jonathan Bowlan": "RP",
   "Caden Bodine": "C",
-  "Jonah Cox": "CF",
+  "Jonah Cox": "2B,CF",
   "Hayden Wesneski": "SP",
   "Max Scherzer": "SP",
   "Chase Silseth": "RP",
@@ -695,5 +695,6 @@
   "Leonardo Bernal": "C",
   "Mickey Gasper": "C,1B",
   "Nick Sogard": "1B,2B",
-  "Jonathan Loaisiga": "RP"
+  "Jonathan Loaisiga": "RP",
+  "Ethan Pecko": "SP"
 }
