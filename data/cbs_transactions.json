@@ -7849,7 +7849,7 @@
     "players": [
       {
         "name": "Zac Veen",
-        "pos": "LF",
+        "pos": "LF,RF",
         "mlbTeam": "COL",
         "action": "Added off Waivers"
       },
@@ -14539,5 +14539,47 @@
       }
     ],
     "effective": "9/17/26"
+  },
+  {
+    "date": "9/18/26 2:25 AM ET",
+    "teamId": "6",
+    "teamName": "A Pete Crow-Armstrong Looked at Me",
+    "team": "A Pete Crow-Armstrong Looked at Me",
+    "players": [
+      {
+        "name": "Ryan Watson",
+        "pos": "SP,RP",
+        "mlbTeam": "LAA",
+        "action": "Activated"
+      },
+      {
+        "name": "Justin Wrobleski",
+        "pos": "SP,RP",
+        "mlbTeam": "LAD",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/18/26"
+  },
+  {
+    "date": "9/18/26 2:25 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Bradgley Rodriguez",
+        "pos": "RP",
+        "mlbTeam": "SD",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Luke Weaver",
+        "pos": "RP",
+        "mlbTeam": "PIT",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/18/26"
   }
 ]
