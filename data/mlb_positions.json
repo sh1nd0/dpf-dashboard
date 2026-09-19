@@ -910,7 +910,7 @@
   "Roman Anthony": "LF",
   "Lane Thomas": "LF",
   "Jared Young": "1B",
-  "Josh Smith": "3B",
+  "Josh Smith": "2B",
   "Joey Bart": "C",
   "Taylor Walls": "SS",
   "Eli White": "CF",
@@ -1100,7 +1100,7 @@
   "Austin Wells": "C",
   "Steward Berroa": "CF",
   "Cam Cauley": "2B",
-  "Nate Eaton": "LF",
+  "Nate Eaton": "CF",
   "Daniel Johnson": "CF",
   "Joey Meneses": "1B",
   "Bo Naylor": "C",
@@ -1278,7 +1278,7 @@
   "Alan Roden": "RF",
   "Patrick Sandoval": "SP",
   "Woo-Suk Go": "RP",
-  "Eduardo Valencia": "DH",
+  "Eduardo Valencia": "C",
   "Tom Cosgrove": "RP",
   "Grant McCray": "LF",
   "Landon Knack": "RP",
@@ -1441,5 +1441,8 @@
   "Brody Hopkins": "RP",
   "Scott Bandura": "RF",
   "Brendan Cellucci": "RP",
-  "Clarke Schmidt": "RP"
+  "Clarke Schmidt": "RP",
+  "Josiah Gray": "RP",
+  "José Rodríguez": "RP",
+  "Julian Aguiar": "RP"
 }
