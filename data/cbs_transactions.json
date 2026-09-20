@@ -9377,7 +9377,7 @@
     "players": [
       {
         "name": "Kody Clemens",
-        "pos": "1B,2B,LF,RF",
+        "pos": "1B,2B,LF,CF,RF",
         "mlbTeam": "MIN",
         "action": "Added off Waivers"
       },
@@ -10091,7 +10091,7 @@
       },
       {
         "name": "Kody Clemens",
-        "pos": "1B,2B,LF,RF",
+        "pos": "1B,2B,LF,CF,RF",
         "mlbTeam": "MIN",
         "action": "Dropped"
       }
@@ -13465,7 +13465,7 @@
     "players": [
       {
         "name": "Kody Clemens",
-        "pos": "1B,2B,LF,RF",
+        "pos": "1B,2B,LF,CF,RF",
         "mlbTeam": "MIN",
         "action": "Added off Waivers"
       },
@@ -14227,7 +14227,7 @@
     "players": [
       {
         "name": "Brett Bateman",
-        "pos": "CF",
+        "pos": "CF,RF",
         "mlbTeam": "TOR",
         "action": "Added off Waivers"
       },
@@ -14656,5 +14656,68 @@
       }
     ],
     "effective": "9/19/26"
+  },
+  {
+    "date": "9/19/26 1:24 PM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Felix Bautista",
+        "pos": "RP",
+        "mlbTeam": "BAL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/19/26"
+  },
+  {
+    "date": "9/20/26 2:59 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Max Meyer",
+        "pos": "SP",
+        "mlbTeam": "MIA",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Alex McFarlane",
+        "pos": "SP,RP",
+        "mlbTeam": "PHI",
+        "action": "Activated"
+      },
+      {
+        "name": "Chase Silseth",
+        "pos": "RP",
+        "mlbTeam": "TEX",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/20/26"
+  },
+  {
+    "date": "9/20/26 2:59 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Jonah Tong",
+        "pos": "SP",
+        "mlbTeam": "NYM",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Trevor Rogers",
+        "pos": "SP",
+        "mlbTeam": "BAL",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/20/26"
   }
 ]

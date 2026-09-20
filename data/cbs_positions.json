@@ -618,7 +618,7 @@
   "Troy Melton": "SP,RP",
   "Daniel Lynch IV": "SP,RP",
   "Trent Thornton": "RP",
-  "Kody Clemens": "1B,2B,LF,RF",
+  "Kody Clemens": "1B,2B,LF,CF,RF",
   "Tayron Guerrero": "RP",
   "Jhonny Level": "SS",
   "Huascar Brazoban": "SP,RP",
@@ -688,7 +688,7 @@
   "Rafael Flores": "C,1B",
   "Hao Yu Lee": "2B,3B",
   "Ryan Watson": "SP,RP",
-  "Brett Bateman": "CF",
+  "Brett Bateman": "CF,RF",
   "Spencer Miles": "SP,RP",
   "Luis Medina": "SP,RP",
   "Ryan Johnson": "SP,RP",
@@ -696,5 +696,6 @@
   "Mickey Gasper": "C,1B",
   "Nick Sogard": "1B,2B",
   "Jonathan Loaisiga": "RP",
-  "Ethan Pecko": "SP"
+  "Ethan Pecko": "SP",
+  "Alex McFarlane": "SP,RP"
 }
