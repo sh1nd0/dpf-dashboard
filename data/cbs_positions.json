@@ -102,7 +102,7 @@
   "Caleb Durbin": "3B",
   "Tanner Bibee": "SP",
   "Reynaldo Lopez": "SP,RP",
-  "Anthony Volpe": "SS",
+  "Anthony Volpe": "2B,SS",
   "Michael Harris": "CF",
   "Cal Raleigh": "C",
   "Heliot Ramos": "LF,RF",
@@ -697,5 +697,6 @@
   "Nick Sogard": "1B,2B",
   "Jonathan Loaisiga": "RP",
   "Ethan Pecko": "SP",
-  "Alex McFarlane": "SP,RP"
+  "Alex McFarlane": "SP,RP",
+  "Drew Gilbert": "LF,CF,RF"
 }

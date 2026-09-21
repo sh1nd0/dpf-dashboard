@@ -271,7 +271,7 @@
   "Andre Pallante": "SP",
   "JoJo Romero": "RP",
   "Gregory Santos": "RP",
-  "Jonah Tong": "RP",
+  "Jonah Tong": "SP",
   "Carson Whisenhunt": "SP",
   "Mitch Farris": "RP",
   "Tyler Kinley": "RP",
@@ -707,7 +707,7 @@
   "Romy Gonzalez": "DH",
   "Nick Madrigal": "2B",
   "Nick Kurtz": "1B",
-  "Ezequiel Duran": "3B",
+  "Ezequiel Duran": "SS",
   "Lars Nootbaar": "LF",
   "A.J. Ewing": "CF",
   "Byron Buxton": "CF",
@@ -1008,7 +1008,7 @@
   "Drew Cavanaugh": "C",
   "Jhostynxon Garcia": "CF",
   "Luis Matos": "RF",
-  "Brice Matthews": "LF",
+  "Brice Matthews": "CF",
   "Christian Moore": "2B",
   "Brent Rooker": "DH",
   "Will Wilson": "3B",
@@ -1444,5 +1444,7 @@
   "Clarke Schmidt": "RP",
   "Josiah Gray": "RP",
   "José Rodríguez": "RP",
-  "Julian Aguiar": "RP"
+  "Julian Aguiar": "RP",
+  "Carson Spiers": "RP",
+  "Félix Bautista": "RP"
 }
