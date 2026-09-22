@@ -8325,7 +8325,7 @@
     "players": [
       {
         "name": "Sean Keys",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "TOR",
         "action": "Added off Waivers"
       },
@@ -8505,7 +8505,7 @@
     "players": [
       {
         "name": "Sean Keys",
-        "pos": "3B",
+        "pos": "1B,3B",
         "mlbTeam": "TOR",
         "action": "Dropped"
       }
@@ -14845,5 +14845,110 @@
       }
     ],
     "effective": "9/21/26"
+  },
+  {
+    "date": "9/21/26 9:12 AM ET",
+    "teamId": "3",
+    "teamName": "Schlit Open and Melt",
+    "team": "Schlit Open and Melt",
+    "players": [
+      {
+        "name": "Brandon Pfaadt",
+        "pos": "SP,RP",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/21/26"
+  },
+  {
+    "date": "9/21/26 4:11 PM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Nasim Nunez",
+        "pos": "2B,SS",
+        "mlbTeam": "WAS",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/21/26"
+  },
+  {
+    "date": "9/22/26 2:45 AM ET",
+    "teamId": "2",
+    "teamName": "Dinosaur Jr Caminero",
+    "team": "Dinosaur Jr Caminero",
+    "players": [
+      {
+        "name": "Jose Soriano",
+        "pos": "SP",
+        "mlbTeam": "TOR",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Luis Lara",
+        "pos": "CF,RF",
+        "mlbTeam": "MIL",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Michael Petersen",
+        "pos": "RP",
+        "mlbTeam": "MIA",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "9/22/26"
+  },
+  {
+    "date": "9/22/26 2:45 AM ET",
+    "teamId": "9",
+    "teamName": "Yesavage Garden",
+    "team": "Yesavage Garden",
+    "players": [
+      {
+        "name": "Brent Rooker",
+        "pos": "RF",
+        "mlbTeam": "ATH",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Nolan Arenado",
+        "pos": "3B",
+        "mlbTeam": "ARI",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Drew Sommers",
+        "pos": "RP",
+        "mlbTeam": "DET",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/22/26"
+  },
+  {
+    "date": "9/22/26 2:45 AM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Nathan Lavender",
+        "pos": "RP",
+        "mlbTeam": "NYM",
+        "action": "Added off Waivers"
+      },
+      {
+        "name": "Drew Gilbert",
+        "pos": "LF,CF,RF",
+        "mlbTeam": "SF",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/22/26"
   }
 ]
