@@ -218,7 +218,7 @@
   "Munetaka Murakami": "1B",
   "Carter Jensen": "C",
   "Francisco Alvarez": "C",
-  "C.J. Abrams": "SS",
+  "C.J. Abrams": "2B,SS",
   "Rhett Lowder": "SP",
   "Xander Bogaerts": "SS",
   "Tyler Holton": "SP,RP",
@@ -698,5 +698,8 @@
   "Jonathan Loaisiga": "RP",
   "Ethan Pecko": "SP",
   "Alex McFarlane": "SP,RP",
-  "Drew Gilbert": "LF,CF,RF"
+  "Drew Gilbert": "LF,CF,RF",
+  "Reese Olson": "SP",
+  "Mason Fluharty": "RP",
+  "John Rave": "LF,CF,RF"
 }

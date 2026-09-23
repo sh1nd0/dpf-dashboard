@@ -898,7 +898,7 @@
   "Sterlin Thompson": "LF",
   "Jake Fraley": "RF",
   "Xander Bogaerts": "SS",
-  "Moisés Ballesteros": "DH",
+  "Moisés Ballesteros": "C",
   "Griffin Conine": "RF",
   "Blaze Jordan": "3B",
   "Luke Raley": "RF",
@@ -1411,7 +1411,7 @@
   "Luis De León": "RP",
   "Blake Walston": "RP",
   "Yohandy Morales": "1B",
-  "Lazaro Montes": "DH",
+  "Lazaro Montes": "RF",
   "BJ Murray Jr.": "1B",
   "Leo Bernal": "C",
   "John Peck": "SS",
@@ -1439,7 +1439,7 @@
   "Heston Kjerstad": "RF",
   "Rudy Martin Jr.": "LF",
   "Brody Hopkins": "RP",
-  "Scott Bandura": "LF",
+  "Scott Bandura": "RF",
   "Brendan Cellucci": "RP",
   "Clarke Schmidt": "RP",
   "Josiah Gray": "RP",
@@ -1451,5 +1451,6 @@
   "DJ Herz": "SP",
   "Bo Davidson": "RF",
   "José Barrero": "2B",
-  "Aaron Sabato": "1B"
+  "Aaron Sabato": "1B",
+  "Tony Gonsolin": "RP"
 }
