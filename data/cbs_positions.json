@@ -540,7 +540,7 @@
   "Brooks Lee": "2B,3B,SS",
   "Kevin Kelly": "RP",
   "Michael McGreevy": "SP",
-  "Henry Bolte": "CF,RF",
+  "Henry Bolte": "LF,CF,RF",
   "Austin Martin": "LF,RF",
   "Kaelen Culpepper": "SS",
   "J.J. Bleday": "LF,CF,RF",
@@ -701,5 +701,6 @@
   "Drew Gilbert": "LF,CF,RF",
   "Reese Olson": "SP",
   "Mason Fluharty": "RP",
-  "John Rave": "LF,CF,RF"
+  "John Rave": "LF,CF,RF",
+  "Brock Burke": "RP"
 }

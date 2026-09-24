@@ -707,7 +707,7 @@
   "Romy Gonzalez": "DH",
   "Nick Madrigal": "2B",
   "Nick Kurtz": "1B",
-  "Ezequiel Duran": "SS",
+  "Ezequiel Duran": "3B",
   "Lars Nootbaar": "LF",
   "A.J. Ewing": "CF",
   "Byron Buxton": "CF",
@@ -1142,7 +1142,7 @@
   "Jonatan Clase": "LF",
   "Trei Cruz": "LF",
   "Kyler Fedko": "CF",
-  "Brett Harris": "3B",
+  "Brett Harris": "1B",
   "Luis Mey": "RP",
   "Trey Gibson": "SP",
   "Kyle Freeland": "SP",
@@ -1334,7 +1334,7 @@
   "Parker Mushinski": "RP",
   "Nick Frasso": "RP",
   "George Lombard Jr.": "SS",
-  "Christian Franklin": "CF",
+  "Christian Franklin": "LF",
   "Eddys Leonard": "LF",
   "Héctor Rodríguez": "RF",
   "Ben Rortvedt": "C",
@@ -1452,5 +1452,6 @@
   "Bo Davidson": "RF",
   "José Barrero": "2B",
   "Aaron Sabato": "1B",
-  "Tony Gonsolin": "RP"
+  "Tony Gonsolin": "RP",
+  "Josh Hendrickson": "RP"
 }
