@@ -15415,5 +15415,20 @@
       }
     ],
     "effective": "9/27/26"
+  },
+  {
+    "date": "9/27/26 1:09 PM ET",
+    "teamId": "11",
+    "teamName": "Before and After Shohei",
+    "team": "Before and After Shohei",
+    "players": [
+      {
+        "name": "Gabriel Moreno",
+        "pos": "C",
+        "mlbTeam": "ARI",
+        "action": "Dropped"
+      }
+    ],
+    "effective": "9/28/26"
   }
 ]
