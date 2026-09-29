@@ -135,34 +135,43 @@
       "homeScore": 10.0
     }
   ],
-  "myRecord": "7-5-0",
+  "myRecord": "8-5-0",
   "standings": [
     {
       "team": "A Pete Crow-Armstrong Looked at Me",
-      "W": 9,
+      "W": 10,
       "L": 3,
       "T": 0,
-      "PCT": 0.75,
+      "PCT": 0.769,
       "GB": 0.0,
-      "streak": "W7"
+      "streak": "W8"
     },
     {
       "team": "Dinosaur Jr Caminero",
       "W": 8,
-      "L": 4,
+      "L": 5,
       "T": 0,
-      "PCT": 0.667,
-      "GB": 1.0,
-      "streak": "W2"
+      "PCT": 0.615,
+      "GB": 2.0,
+      "streak": "L1"
+    },
+    {
+      "team": "Okamotomami",
+      "W": 8,
+      "L": 5,
+      "T": 0,
+      "PCT": 0.615,
+      "GB": 2.0,
+      "streak": "W1"
     },
     {
       "team": "Blame it on the Rainiel",
       "W": 8,
-      "L": 4,
+      "L": 5,
       "T": 0,
-      "PCT": 0.667,
-      "GB": 1.0,
-      "streak": "L1"
+      "PCT": 0.615,
+      "GB": 2.0,
+      "streak": "L2"
     },
     {
       "team": "Schlit Open and Melt",
@@ -170,17 +179,8 @@
       "L": 4,
       "T": 1,
       "PCT": 0.591,
-      "GB": 2.5,
+      "GB": 3.5,
       "streak": "W1"
-    },
-    {
-      "team": "Okamotomami",
-      "W": 7,
-      "L": 5,
-      "T": 0,
-      "PCT": 0.583,
-      "GB": 2.0,
-      "streak": "L1"
     },
     {
       "team": "Before and After Shohei",
@@ -188,7 +188,7 @@
       "L": 5,
       "T": 1,
       "PCT": 0.5,
-      "GB": 3.5,
+      "GB": 4.5,
       "streak": "L1"
     },
     {
@@ -197,7 +197,7 @@
       "L": 6,
       "T": 0,
       "PCT": 0.455,
-      "GB": 4.0,
+      "GB": 5.0,
       "streak": "L1"
     },
     {
@@ -206,7 +206,7 @@
       "L": 6,
       "T": 0,
       "PCT": 0.455,
-      "GB": 4.0,
+      "GB": 5.0,
       "streak": "L2"
     },
     {
@@ -215,7 +215,7 @@
       "L": 5,
       "T": 2,
       "PCT": 0.455,
-      "GB": 4.0,
+      "GB": 5.0,
       "streak": "L1"
     },
     {
@@ -224,7 +224,7 @@
       "L": 6,
       "T": 1,
       "PCT": 0.409,
-      "GB": 4.5,
+      "GB": 5.5,
       "streak": "L3"
     },
     {
@@ -233,7 +233,7 @@
       "L": 7,
       "T": 0,
       "PCT": 0.364,
-      "GB": 5.0,
+      "GB": 6.0,
       "streak": "W2"
     },
     {
@@ -242,10 +242,10 @@
       "L": 10,
       "T": 1,
       "PCT": 0.045,
-      "GB": 8.5,
+      "GB": 9.5,
       "streak": "L5"
     }
   ],
-  "updated": "2026-09-28T10:12:12.216833Z",
-  "lastUpdated": "2026-09-28 (period 14 in progress, standings only — category breakdown from last local run)"
+  "updated": "2026-09-29T10:11:34.634722Z",
+  "lastUpdated": "2026-09-29 (period 14 in progress, standings only — category breakdown from last local run)"
 }
