@@ -15511,5 +15511,20 @@
       }
     ],
     "effective": "9/28/26"
+  },
+  {
+    "date": "9/30/26 1:07 AM ET",
+    "teamId": "4",
+    "teamName": "Okamotomami",
+    "team": "Okamotomami",
+    "players": [
+      {
+        "name": "Gabriel Moreno",
+        "pos": "C",
+        "mlbTeam": "ARI",
+        "action": "Added off Waivers"
+      }
+    ],
+    "effective": "9/28/26"
   }
 ]
