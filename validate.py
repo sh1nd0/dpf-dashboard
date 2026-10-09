@@ -637,8 +637,9 @@ def check_data_freshness(report: Report):
     does. Adjust STALE_WARN_H / STALE_ERR_H in the constants if needed.
     """
     report.section("data freshness")
-    STALE_WARN_H = 36
-    STALE_ERR_H = 72
+    # Offseason: CBS scrape is monthly. Restore to 36 / 72 in spring.
+    STALE_WARN_H = 24 * 35
+    STALE_ERR_H = 24 * 45
 
     from datetime import datetime, timezone, timedelta
     now = datetime.now(timezone.utc)
@@ -700,7 +701,7 @@ def check_data_freshness(report: Report):
             try:
                 c_dt = datetime.fromisoformat(completed.replace('Z','+00:00'))
                 age_h = (now - c_dt).total_seconds() / 3600
-                if age_h > 36:
+                if age_h > STALE_WARN_H:
                     report.err(f"last_daily_run.json is {age_h:.1f}h old — scheduled task hasn't completed in over {STALE_WARN_H}h")
             except ValueError:
                 pass

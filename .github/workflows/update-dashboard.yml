@@ -86,6 +86,11 @@ jobs:
         env:
           CBS_COOKIES_JSON: ${{ secrets.CBS_COOKIES_JSON }}
         run: |
+          # Offseason: scrape on the 1st of the month or manual runs only. Restore to daily in spring.
+          if [ "$(date -u +%d)" != "01" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            echo "Offseason — CBS scrape runs monthly, skipping"
+            exit 0
+          fi
           if [ -z "$CBS_COOKIES_JSON" ]; then
             echo "CBS_COOKIES_JSON secret not set — skipping CBS scrape"
             exit 0
