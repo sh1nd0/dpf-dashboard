@@ -19,9 +19,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  gate:
+    # Scheduled refreshes are paused until 2027-03-01 (auto-resumes after).
+    # Delete this job and the `needs`/paused check below to remove the pause early.
+    runs-on: ubuntu-latest
+    outputs:
+      paused: ${{ steps.check.outputs.paused }}
+    steps:
+      - id: check
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%F)" \< "2027-03-01" ]; then
+            echo "paused=true" >> "$GITHUB_OUTPUT"
+            echo "Scheduled refresh paused until 2027-03-01"
+          else
+            echo "paused=false" >> "$GITHUB_OUTPUT"
+          fi
+
   build-deploy:
+    needs: gate
     # Skip runs triggered by the bot's own data-refresh commits to avoid cascade.
-    if: "github.event_name != 'push' || (github.actor != 'github-actions[bot]' && !startsWith(github.event.head_commit.message, 'chore: daily'))"
+    if: "needs.gate.outputs.paused != 'true' && (github.event_name != 'push' || (github.actor != 'github-actions[bot]' && !startsWith(github.event.head_commit.message, 'chore: daily')))"
     runs-on: ubuntu-latest
     environment:
       name: github-pages
